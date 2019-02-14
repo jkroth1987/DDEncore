@@ -1,0 +1,50 @@
+I was able to get the tool into a working state which is suitable to help others with your projects, but how useful this tool really turns out to be is up to the community. If you'd like to help out, here are some things which would make the project better for everyone!
+
+MORE OUTFITS, POSES, ACCESSORIES, OR FACES
+We can never have enough. Monika needs a casual outfit, and any nice looking outfits with all the appropriate arm poses can be added easily. Accessories which go in the extras folders are also welcome. The condition is that they must be permitted for any modder to use for any mod, not just something intended for a single mod or person.
+
+It is reasonable and expected for artists to be credited for their work, so we'll want a name to add to the project's credits file so modders have quick access to who they should be crediting for what they use.
+
+Ideally, any image files should match the 960x960 image size the base images use. (I've seen edits of Sayori with crazy eyes, but not in this size, so even uncredited I couldn't include it.)
+
+One thing though, no lewd content. If someone wants to add it to their personal copy of the tool to use in their mod (and they appropriately tag it as NSFW), that is their choice. But I don't want to accidentally dump NSFW content on people unexpectedly, so let's keep the base build wholesome.
+
+PERMISSIONS
+I haven't reached out for permission for the files marked "PERMISSION NEEDED" because of time constraints. We don't want to flood the people who made the edits with requests, but if you know how to track down the person who made something and see about getting permission from them, that would be seriously appreciated.
+
+The content creator MUST BE AWARE that you're asking for permission for ANYONE to use the image as long as they are credited. We don't want situations where someone thinks you were asking for one person and suddenly starts seeing their images everywhere.
+
+If you speak with the person through private messages or a chat, a screenshot of the moment they agree and the context around it is an acceptable way to show me permission is granted. If they have said in a public place (such as a thread where they posted their artwork) that this is okay for anyone, a link to that post is ideal.
+
+A COMMAND LINE ALTERNATIVE
+I don't mind using the command line for a few things now and then. I despise telling other people to use it. I think there might be some ways to run a Perl script without the command line and I would love to include instructions on how to do that. Whatever solution we find, we still need to be able to specify options the user can input, like the ever-important Direct Mode flag or character names for Just Mode. If you figure out a way to do this for one or more platforms, don't keep me in suspense!
+
+MC AND FeMC
+The classic set of main character sprites has been added to "i_Additional Resources" with the credits file updated accordingly. There's also a newer set of MC sprites by Cylent-Nite which don't have many variations just yet. If there are more poses and/or expressions added to these (which can be added by fans), I can include that variation as well. Link: https://redd.it/8oleal
+
+I've seen female MC sprites before, but don't know who made them or if they're free to use. This technically fits under permissions, but it's something I'd love a little help with tracking down.
+
+A TEST SCENE
+The cheat sheet in this project is fine, but what would be much better would be a scene where you can choose a character, adjust their pose piece by piece to see what it looks like, and copy the tag for that pose to your clipboard to use in your code. This is not an easy feat—first we need a way to load the image pieces for each character individually (so we're not creating 200,000+ tags just to see what they look like) AND be sure they render in the correct z-order. We also need to generate buttons for each adjustable part of the pose, and maybe have it context-aware for tags which aren't in the standard 7 character format.
+
+It won't be easy, but it can be done, and I may try to get it done myself eventually unless someone beats me to it. If this sounds like something you can do, all I ask is that you plan it out first. I would hate to find out you jumped into this with excitement only to find out it was a lot harder than it looked!
+
+CLEANING UP
+I am not a professional image editor. Some of my edits are a bit questionable or messy when you see them up close. Most of it is stuff you won't notice when playing someone's mod, so I deemed it acceptable, but if you notice flaws and can make better versions of some edits, feel free to share with me so I can make sure the project is up to date with the best versions.
+
+CODE
+Perl is a language I used in a college class where the professor had us write disposable programs, only caring if it does what it's supposed to rather than if it's pretty or future proof. If you happen to be a Perl programmer yourself, my word, feel free to look for improvements you can make to the code.
+
+EFFICIENCY
+Currently every line printed into .rpy files refers to every image it needs every time. I feel like there might be a better way to do this for faces which are referenced more than once, like setting up partial images and putting them together. Setting up some sort of shortcut method like this might keep file sizes down a little, but I haven't figured it out yet and it isn't a super important thing to figure out.
+
+UPDATING DOCUMENTS
+Some documents like the cheat sheet were a pain to put together. (If it's helpful, I'd love to hear that my effort was worth it!) As new images are added to the project, keeping them up to date isn't super high on my list of priorities. If you see an out-of-date document and feel the urge to update it, be my guest and show me the end result!
+
+FIXING INACCURACIES
+Similar to updating documents, if you see some artwork which has been credited to the wrong person or it's brought to your attention that some asset is in the project which shouldn't be, please feel free to speak up. I have no interest in slighting people for their work and I want this project to be as wholesome as possible.
+
+HELPING OTHERS
+If you see someone struggling with getting the tool to work and you know what to do, be friendly and see if you can help them out. Similarly, if you see someone working on a lot of trivial edits (things this tool already covers), don't try to force them to use the tool, but see if they're aware of it and interested in trying it out. The tool has its learning curve, but the whole point is to save people as much time and effort as possible.
+
+That said, if someone tries it, can't figure it out, and chooses to do things their own way, please be respectful of their choice. This tool is an alternative, not a requirement.

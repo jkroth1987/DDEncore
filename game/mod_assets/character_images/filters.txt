@@ -1,0 +1,45 @@
+ghost(image, a = 0.8): # Agent Gold
+return im.MatrixColor(image,  im.matrix.desaturate() * im.matrix.tint(0.71, 1.0, 0.95) * im.matrix.opacity(a))
+
+bw(image): # Basic Ren'Py Effect
+return im.MatrixColor(image, im.matrix.desaturate())
+
+sepia(image): # Basic Ren'Py Effect
+return im.Sepia(image)
+
+dawn(image): # Koya-Sato
+return im.MatrixColor(image, im.matrix.tint(0.5, 0.4, 0.6))
+
+morning(image): # Koya-Sato
+return im.MatrixColor(image, im.matrix.tint(0.8, 0.7, 0.6))
+
+sunset(image): # Koya-Sato
+return im.MatrixColor(image, im.matrix.tint(1.0, 0.8, 0.8))
+
+evening(image): # Koya-Sato
+return im.MatrixColor(image, im.matrix.tint(0.6, 0.6, 0.7))
+
+night(image): # Koya-Sato
+return im.MatrixColor(image, im.matrix.tint(0.4, 0.4, 0.6))
+
+shadow(image): # Agent Gold
+return im.MatrixColor(image, im.matrix.colorize("#000", "#000"))
+
+white(image): # Agent Gold
+return im.MatrixColor(image, im.matrix.colorize("#fff", "#fff"))
+
+cloudy(image, darken_sky = False): # Agent Gold
+custom_matrix = im.matrix.identity()
+if darken_sky:
+# This is actually a 4x5 matrix. You can split this into four rows of five to see that more clearly.
+custom_matrix = [ 0.45, 0.15, 0.4, 0.0, 0.0, 0.2, 0.5, 0.3, 0.0, 0.0, 0.25, 0.25, 0.5, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0 ]
+        
+image = im.MatrixColor(image, custom_matrix) # This would be more efficient if we could do "custom_matrix * im.matrix.saturation(0.7)", but for some reason that's throwing errors.
+return im.MatrixColor(image, im.matrix.saturation(0.7))
+
+flip(image): # Basic Ren'Py Effect
+return im.Flip(image, horizontal=True)
+
+gray(image, level=0.0): # Basic Ren'Py Effect
+# Allows the user to choose their level of gray scaling. Useful for gradual effects, but needs to be applied by hand.
+return im.MatrixColor(image, im.matrix.saturation(level))

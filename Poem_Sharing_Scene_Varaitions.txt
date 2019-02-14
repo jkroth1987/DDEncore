@@ -1,0 +1,735 @@
+#Declined Sayori's Confession, Spent Weekend With Natsuki
+
+#Spent Day 1 with Sayori
+
+"It was relatively inspiring actually."
+--------------------------------------------
+#Add new text for this varaition
+
+"Natsuki actually was the one who approached me, seemingly genuinely excited to read whatever I had made and to show me what she wrote."
+"She, of course, gave some advice but it came off more as her just complimenting my work."
+"But she really struggled to make eye contact with me, either out of guilt for being angry when I was around her today..."
+"Or the fact that last Sunday was still on her mind..."
+"Not that I can blame her."
+"But I think that I got at least some insight into what she's going through right now."
+"Natsuki's poem was in her trademark style of being short, sweet and to the point. It was about someone finding happiness by spending time with the person they loved the most, but was unsure if that person liked them back and how she was getting a lot of mixed signals."
+"Sayori's reaction is about what I expected. She says that's it really good, and gives some encouragement, though, I could tell that she was really forcing a smile."
+"I can't tell if it's her ‘rainclouds' acting up or she's still getting over the rejection..."
+"I can definitely tell she was still emotionally conflicted when I read her poem. Well, I could definitely tell that she was speaking from experience."
+"It was about about two friends, a boy and a girl, who were together for many years. When the girl finally confessed her feelings to the boy at his house, the boy hesitantly rejected her and walked back into the house, but oddly enough let the door open."
+"Reading Sayori's poem really made me feel guilty about what happened last Sunday. I just hope we can put what happened behind us..."
+"I was fortunately able to change the subject after we finished reading each other's poems, with our conversation shifting to about our school day and what homework we have."
+"Even through our conversation, the events of last Sunday weighed heavy in the air."
+"Despite Sayori's deep sighs and pained expressions, I can't help but notice how beautiful she looks in the sunlight."
+"The smell of Cinnamon that radiates from her hair..."
+"And the fact that we've been there for each other for practically forever, I feel like I let her down last Sunday.
+"Maybe I made the wrong choice..."
+"..."
+
+#End Scene
+
+_______________________________________________________________
+
+#Declined Sayori's Confession, Spent Weekend With Natsuki
+
+#Spent Day 1 with Natsuki
+
+#Natsuki's Core Route, fine as is.
+
+_______________________________________________________________
+
+#Declined Sayori's Confession, Spent Weekend With Natsuki
+
+#Spent Day 1 with Yuri
+
+#"I proceed to exchange my poem with the rest of the club members, who all seem to generally like it."
+--------------------------------------------
+#Add new text for this varaition
+
+"Sayori's poem was actually rather romantic, something that I wasn't used to see her write about."
+"It was about how a girl who finally found someone that's finally able to make her feel something other than loneliness and depression."
+show sayori u121341
+"I was able to quickly pick up that the poem was about us, and I was blushing the entire time I was reading it."
+show sayori 2s
+"Sayori said she loved my poem as well, which only made me more flustered."
+"Unfortuantely we weren't able to chat for long as we had to share our poems with the others."
+
+show natsuki 1i
+ 
+"Natsuki gave me her usual suggestion of not being too wordy, but she really struggled to make eye contact with me."               
+"During our time together, she seemed unusually unfocused, as if her mind is elsewhere..."
+
+"Either out of jealousy that I didn't spend time with her today..."
+"Or the fact that last Sunday was still on her mind..."              
+"But I think that I got at least some insight into what she's going through right now."
+                
+"Natsuki's poem was in her trademark style of being short, sweet and to the point."
+                
+show natsuki 5s
+                
+"It was about someone finding happiness by spending time with the person they loved the most, but was unsure if that person liked them back and how she was getting a lot of mixed signals."
+
+
+show monika 1r at t11 zorder 1
+       
+"While sharing my poem with Monika, I can tell that the festival was still on her mind, but she definitely seemed to be a lot better now than at the start of the club."
+show monika 5a at t11 zorder 1
+"Monika complimented me on how far I've come as a writer and noted how my style was suddenly becoming like Yuri's." 
+"Something which she teased me a little bit about."
+"Monika's poem was in her usual free-form and abstract style. I didn't really understand the meaning behind it as usual, but from my best interpretation the poem had something to do with second chances and new opportunities."
+ 
+"Monika and I then got into a bit of a philosophical discussion about how we should never give up and always take opportunities when they present themselves."
+show monika 2j
+        
+"It was relatively inspiring actually."
+show monika at thide
+ 
+hide monika
+
+
+"Yuri's poem was in her usual style of being deep and sophisticated, but it was unusually joyful for what she usually writes about."
+"Through my best interpretation of her poem, it seemed like it was about someone finally feeling wanted."
+"The poem told the story of how they've gone through a constant struggle of feeling isolated and unwanted, until one day, that all changed."
+show yuri 1c
+"Yuri seemed to really enjoy my poem, calling it one of the best poems I've written so far."
+"She also complimented me on how far I've come as a writer and that she hopes I keep up the good work."
+show yuri 1b
+"Our talks of poems quickly shifted to catching up with each to see how we've been since the festival."
+"During our conversation we at times struggled to make eye contact with each other."
+"Yuri and I never really got to spend much one on one time with each other, so it was a little awkward for both of us at first."
+"But within the first few minutes we more less moved past it and got to know each other a little bit better."
+"Yuri really is a deep and interesting person to be around."
+"Not to mention, I think I've started taking a liking to her little quirks."
+show yuri 1p at h11
+"I always did find it adorable whenever she gets flustered and doesn't know what to say or do next."
+show yuri 4e at t11
+"And she is breathtakingly beautiful and elegant...I often find myself getting lost in those beautiful dark purple eyes of hers."
+"I should definitely try to spend more time with her..."
+
+#End Scene
+
+_______________________________________________________________
+
+#Declined Sayori's Confession, Spent Weekend With Natsuki
+
+#Spent Day 1 with Monika
+
+
+#Monika's Core Route, fine as is
+_______________________________________________________________
+
+
+#Declined Sayori's Confession, Spent Weekend With Yuri
+
+#Spent Day 1 with Sayori
+
+
+"Despite the rather interesting exchange that I had with Yuri, she tries to act as if it didn't happen and gives me useful feedback."
+------------------------------------------------------------------------------
+#Add new text for this varaition
+
+"Yuri did seem enjoy my poem, calling it one of the best poems she's ever read."
+"She also complimented me on how far I've come as a writer and that she's proud that she was able to serve as a role model for me."
+"Yuri's poem was in her usual style of being deep and sophisticated, but it was unusually bittersweet for what she usually writes about."
+"Through my best interpretation of her poem, it seemed like it was about someone finding love and companionship for the very first time and they were trying to interpret their own feelings and debate about how they should go about it...."
+"But the person is also second guessing themselves and seems to be jealous as their interest is also spending time around other girls as well, and that the person 'feels like a ghost' when their interest isn't around them."
+"Our talks of poems quickly shifted to catching up with each to see how we've been since the festival."
+"During our conversation we at times struggled to make eye contact with each other."
+"It was clear that what happened last Sunday and the time we spent during the festival was very much on our minds."
+"But the awkwardness from the exchange we had earlier also hung in the air, but we tried to pretend that it didn't happen."
+"Unfortuantely, we really couldn't spend much together as we had to share our poems with the others."
+
+#Proceed as normal
+_______________________________________________________________
+
+
+
+#Declined Sayori's Confession, Spent Weekend With Yuri
+
+#Spent Day 1 with Natsuki
+
+
+"Despite the rather interesting exchange that I had with Yuri, she tries to act as if it didn't happen and gives me useful feedback."
+------------------------------------------------------------------------------
+#Add new text for this varaition
+
+"Yuri did seem enjoy my poem, calling it one of the best poems she's ever read."
+"She also complimented me on how far I've come as a writer and that she's proud that she was able to serve as a role model for me."
+"Yuri's poem was in her usual style of being deep and sophisticated, but it was unusually bittersweet for what she usually writes about."
+"Through my best interpretation of her poem, it seemed like it was about someone finding love and companionship for the very first time and they were trying to interpret their own feelings and debate about how they should go about it...."
+"But the person is also second guessing themselves and seems to be jealous as their interest is also spending time around other girls as well, and that the person 'feels like a ghost' when their interest isn't around them."
+"Our talks of poems quickly shifted to catching up with each to see how we've been since the festival."
+"During our conversation we at times struggled to make eye contact with each other."
+"It was clear that what happened last Sunday and the time we spent during the festival was very much on our minds."
+"But the awkwardness from the exchange we had earlier also hung in the air, but we tried to pretend that it didn't happen."
+"Unfortuantely, we really couldn't spend much together as we had to share our poems with the others."
+
+
+
+show monika 1r at t11 zorder 1
+       
+"While sharing my poem with Monika, I can tell that the festival was still on her mind, but she definitely seemed to be a lot better now than at the start of the club."
+show monika 5a at t11 zorder 1
+"Monika complimented me on how far I've come as a writer and noted how my style was suddenly becoming like Natsuki's." 
+"Something which she teased me a little bit about."
+"Monika's poem was in her usual free-form and abstract style. I didn't really understand the meaning behind it as usual, but from my best interpretation the poem had something to do with second chances and new opportunities."
+ 
+"Monika and I then got into a bit of a philosophical discussion about how we should never give up and always take opportunities when they present themselves."
+show monika 2j
+        
+"It was relatively inspiring actually."
+show monika at thide
+ 
+hide monika
+
+
+
+"Sayori's reaction is about what I expected. She tells me that my poem is good and gives me some encouragement, though, I could tell that she was really forcing a smile."
+        
+"I can't tell if it's her \‘rainclouds\' acting up or she's still getting over the rejection..."
+        
+show sayori 1g
+        
+"I can definitely tell she was still emotionally conflicted when I read her poem. Well, she clearly was speaking from experience."
+        
+show sayori 3k
+        
+"It was about two friends, a boy and a girl, who were together for many years."
+        
+"When the girl finally confessed her feelings to the boy at his house, the boy hesitantly rejected her and walked back into the house, but oddly enough left the door open."
+       
+"Reading Sayori's poem really made me feel guilty about what happened last Sunday. I just hope we can put what happened behind us..."
+
+
+show natsuki 2a at t11 zorder 1
+              
+"Natsuki actually was the one who approached me, seemingly genuinely interested to read whatever I had made and to show me what she wrote."
+                
+show natsuki 5y
+                
+"Surprsingly, she actually enjoyed my poem this time, joking that I've finally started listening to her."
+               
+show natsuki 5j
+                
+"Natsuki's poem was in her trademark style of being short, sweet and to the point. It was about someone finding happiness by spending time with the person they loved the most."
+                
+show natsuki 3l
+                
+"Our talks of poems quickly shifted to catching up with each to see how we've been since the festival."
+                
+show natsuki 3t
+                
+"During our conversation we at times struggled to make eye contact with each other."
+                
+"Natsuki and I never really got to spend much one on one time with each other, so it was a little awkward for both of us at first."
+"But within the first few minutes we more less moved past it and got to know each other a little bit better."."
+                
+"As it turns out, Natsuki really is great to be around!"
+                
+"Just being around her always seems to spark something in me. I don't know what it is, but she's always fun to be around."
+                
+"She's funny, passionate, a little hot headed..."
+                
+"But she's incredibly cute and I always get lost looking into her beautiful pink eyes..."
+                
+"I should definitely try to spend more time with her..."
+
+#End Scene
+_______________________________________________________________
+
+
+
+#Declined Sayori's Confession, Spent Weekend With Yuri
+
+#Spent Day 1 with Yuri
+
+#Yuri's Core Route, fine as is
+
+_______________________________________________________________
+
+
+
+
+#Declined Sayori's Confession, Spent Weekend With Yuri
+
+#Spent Day 1 with Monika
+
+"I proceed to exchange my poem with the rest of the club members, who all seem to generally like it."
+------------------------------------------------------------------------------
+#Add new text for this varaition
+
+
+
+"Natsuki gave me her usual suggestion of not being too wordy, but she really struggled to make eye contact with me for some reason."
+               
+show natsuki 1i
+                               
+"While I've always struggled to understand her, her poem might have given me some insight into what she's going through."
+                
+"Natsuki's poem was about someone who had a seemingly good friend group."
+                
+"But one day, the group added another member, and the new member spent time with just about everyone else..."
+                
+show natsuki 5s
+                
+"Except for her..."
+                
+"And the person wanted to get to know the new person because she found him ‘interesting', but it just never worked out and she's just left wanting to get their attention."
+                
+show natsuki at thide
+
+
+"Yuri seemed to really enjoy my poem. She complimented me on how far I've progressed as a writer and tells me to keep up the good work."
+"But, I noticed she really struggled to make eye contact with me..."
+"Either out of jealousy that I didn't spend time with her today..."
+"Or the fact that last Sunday was still on her mind..."
+"But, I think that I got at least some insight into what she's going through right now."
+"Yuri's poem was in her usual style of being deep and sophisticated, but it was unusually depressing for what she usually writes about."
+"Through my best interpretation of her poem, it seemed like it was about someone finally feeling wanted..."
+
+"...but wasn't sure if it was legitimate or it was just 'false hope' like it usually has been..."
+
+
+
+
+"Sayori's reaction is about what I expected. She tells me that my poem is good and gives me some encouragement, though, I could tell that she was really forcing a smile."
+        
+"I can't tell if it's her \‘rainclouds\' acting up or she's still getting over the rejection..."
+        
+show sayori 1g
+        
+"I can definitely tell she was still emotionally conflicted when I read her poem. Well, she clearly was speaking from experience."
+        
+show sayori 3k
+        
+"It was about two friends, a boy and a girl, who were together for many years."
+        
+"When the girl finally confessed her feelings to the boy at his house, the boy hesitantly rejected her and walked back into the house, but oddly enough left the door open."
+       
+"Reading Sayori's poem really made me feel guilty about what happened last Sunday. I just hope we can put what happened behind us..."
+
+
+#Monika's Poem interacton is fine as is
+
+
+_______________________________________________________________
+
+
+
+
+#Accepted Sayori's Confession, Spent Weekend With Yuri
+
+#Spent Day 1 With Sayori
+
+"Despite the rather interesting exchange that I had with Yuri, she tries to act as if it didn't happen and gives me useful feedback."
+------------------------------------------------------------------------------
+#Add new text for this varaition
+
+"I noticed she really struggled to make eye contact with me, either out of guilt for being angry when I was around her today..."
+"Or the fact that last Sunday was still on her mind..."
+"I have to tell her about me and Sayori sooner or later, but there's no telling how she'll take it..."
+"But, I think that I got at least some insight into what she's going through right now."
+"Yuri's poem was in her usual style of being deep and sophisticated, but it was unusually depressing for what she usually writes about."
+"Through my best interpretation of her poem, it seemed like it was about someone finally feeling wanted..."
+
+"...but wasn't sure if it was legitimate or it was just 'false hope' like it usually has been..."
+
+
+#Divert to normal script following the last line
+
+_______________________________________________________________________________________
+
+
+
+#Accepted Sayori's Confession, Spent Weekend With Yuri
+
+#Spent Day 1 With Natsuki
+
+
+"Despite the rather interesting exchange that I had with Yuri, she tries to act as if it didn't happen and gives me useful feedback."
+------------------------------------------------------------------------------
+#Add new text for this varaition
+
+"I noticed she really struggled to make eye contact with me, either out of guilt for being angry when I was around her today..."
+"Or the fact that last Sunday was still on her mind..."
+"I have to tell her about me and Sayori sooner or later, but there's no telling how she'll take it..."
+"But, I think that I got at least some insight into what she's going through right now."
+"Yuri's poem was in her usual style of being deep and sophisticated, but it was unusually depressing for what she usually writes about."
+"Through my best interpretation of her poem, it seemed like it was about someone finally feeling wanted..."
+
+"...but wasn't sure if it was legitimate or it was just 'false hope' like it usually has been..."
+
+
+
+show monika 1r at t11 zorder 1
+       
+"While sharing my poem with Monika, I can tell that the festival was still on her mind, but she definitely seemed to be a lot better now than at the start of the club."
+show monika 5a at t11 zorder 1
+"Monika complimented me on how far I've come as a writer and noted how my style was suddenly becoming like Natsuki's." 
+"Something which she teased me a little bit about."
+"Monika's poem was in her usual free-form and abstract style. I didn't really understand the meaning behind it as usual, but from my best interpretation the poem had something to do with second chances and new opportunities."
+ 
+"Monika and I then got into a bit of a philosophical discussion about how we should never give up and always take opportunities when they present themselves."
+show monika 2j
+        
+"It was relatively inspiring actually."
+show monika at thide
+ 
+hide monika
+
+
+"Sayori's poem was actually rather romantic, something that I wasn't used to see her write about."
+"It was about how a girl who finally found someone that's finally able to make her feel something other than loneliness and depression."
+show sayori u121341
+"I was able to quickly pick up that the poem was about us, and I was blushing the entire time I was reading it."
+show sayori 2s
+"Sayori said she loved my poem as well, which only made me more flustered."
+"Unfortuantely we weren't able to chat for long as we had to share our poems with the others."
+
+
+show natsuki 2a at t11 zorder 1
+              
+"Natsuki actually was the one who approached me, seemingly genuinely interested to read whatever I had made and to show me what she wrote."
+                
+show natsuki 5y
+                
+"Surprsingly, she actually enjoyed my poem this time, joking that I've finally started listening to her."
+               
+show natsuki 5j
+                
+"Natsuki's poem was in her trademark style of being short, sweet and to the point. It was about someone finding happiness by spending time with the person they loved the most."
+                
+show natsuki 3l
+                
+"Our talks of poems quickly shifted to catching up with each to see how we've been since the festival."
+                
+show natsuki 3t
+                
+"During our conversation we at times struggled to make eye contact with each other."
+                
+"Natsuki and I never really got to spend much one on one time with each other, so it was a little awkward for both of us at first."
+"But within the first few minutes we more less moved past it and got to know each other a little bit better."."
+                
+"As it turns out, Natsuki really is great to be around!"
+                
+"Just being around her always seems to spark something in me. I don't know what it is, but she's always fun to be around."
+                
+"She's funny, passionate, a little hot headed..."
+                
+"But she's incredibly cute and I always get lost looking into her beautiful pink eyes..."
+                
+"I should definitely try to spend more time with her..."
+
+#End Scene
+
+____________________________________________________________________________________________________
+
+
+#Accepted Sayori's Confession, Spent Weekend With Yuri
+
+#Spent Day 1 With Yuri
+
+
+"Despite the rather interesting exchanges that I had with Natsuki, she acts as if it didn't happen and gave me her usual suggestion of not being too wordy."
+                
+show natsuki 1i
+                
+"But during our time together, she seemed unusually unfocused, as if her mind is elsewhere."
+                
+"While I've always struggled to understand her, her poem might have given me some insight into what she's going through."
+                
+"Natsuki's poem was about someone who had a seemingly good friend group."
+                
+"But one day, the group added another member, and the new member spent time with just about everyone else..."
+                
+show natsuki 5s
+                
+"Except for her..."
+                
+"And the person wanted to get to know the new person because she found him ‘interesting', but it just never worked out and she's just left wanting to get their attention."
+                
+show natsuki at thide
+
+
+"Sayori's poem was actually rather romantic, something that I wasn't used to see her write about."
+"It was about how a girl who finally found someone that's finally able to make her feel something other than loneliness and depression."
+show sayori u121341
+"I was able to quickly pick up that the poem was about us, and I was blushing the entire time I was reading it."
+show sayori 2s
+"Sayori said she loved my poem as well, which only made me more flustered."
+"Unfortuantely we weren't able to chat for long as we had to share our poems with the others."
+
+
+show monika 1r at t11 zorder 1
+       
+"While sharing my poem with Monika, I can tell that the festival was still on her mind, but she definitely seemed to be a lot better now than at the start of the club."
+show monika 5a at t11 zorder 1
+"Monika complimented me on how far I've come as a writer and noted how my style was suddenly becoming like Yuri's." 
+"Something which she teased me a little bit about."
+"Monika's poem was in her usual free-form and abstract style. I didn't really understand the meaning behind it as usual, but from my best interpretation the poem had something to do with second chances and new opportunities."
+ 
+"Monika and I then got into a bit of a philosophical discussion about how we should never give up and always take opportunities when they present themselves."
+show monika 2j
+        
+"It was relatively inspiring actually."
+show monika at thide
+ 
+hide monika
+
+
+"Yuri seemed to really enjoy my poem. She complimented me on how far I've progressed as a writer and tells me to keep up the good work."
+"She also told me that she's proud that she was able to serve as a role model for me."
+"While catching up with Yuri since the festival, I come to the realization that sooner or later, I'll have to tell her about Sayori and I..."
+"But there's no telling how she'll take it..."
+"Or how she'll take it out on me..."
+"But, I think that I got at least some insight into her mindset right now."
+"Yuri's poem was in her usual style of being deep and sophisticated, but it was unusually joyful for what she usually writes about."
+      
+"Through my best interpretation of her poem, it seemed like it was about someone finding love and companionship for the very first time."
+       
+"And they were trying to interpret their own feelings and debate about how they should go about it."
+    
+
+
+
+#End Scene
+
+____________________________________________________________________________________________________
+
+
+
+#Accepted Sayori's Confession, Spent Weekend With Yuri
+
+#Spent Day 1 With Monika
+
+"I proceed to exchange my poem with the rest of the club members, who all seem to generally like it."
+------------------------------------------------------------------------------
+#Add new text for this varaition
+
+"Yuri seemed to really enjoy my poem. She complimented me on how far I've progressed as a writer and told me to keep up the good work."
+"Yuri's poem was in her usual style of being deep and sophisticated, but it was unusually depressing for what she usually writes about."
+"Through my best interpretation of her poem, it seemed like it was about a struggle for attention, love and acceptance."
+"I happened to notice that during our time together, she seemed unusually unfocused, as if her mind is elsewhere."
+"It's possible that last Sunday was still on her mind, but unfortuantley we didn't really get the chance to catch up."
+
+"Natsuki gave me her usual suggestion of not being too wordy, but she really struggled to make eye contact with me."
+"While I've always struggled to understand her, her poem might have given me some insight into what she's going through."
+"Natsuki's poem was about someone who had a seemingly good friend group."
+"But one day, the group added another member, and the new member spent time with just about everyone else..."
+"Except for her..."
+"And the person wanted to get to know the new person because she found him ‘interesting', but it just never worked out and she's just left wanting to get their attention."
+
+"Sayori's poem was actually rather romantic, something that I wasn't used to see her write about."
+"It was about how a girl who finally found someone that's finally able to make her feel something other than loneliness and depression."
+show sayori u121341
+"I was able to quickly pick up that the poem was about us, and I was blushing the entire time I was reading it."
+show sayori 2s
+"Sayori said she loved my poem as well, which only made me more flustered."
+"Unfortuantely we weren't able to chat for long as we had to share our poems with the others."
+
+
+#Monika's Poem Interaction on her Route is fine as is for this varaition
+
+____________________________________________________________________________________________________
+
+
+#Accepted Sayori's Confession, Spent Weekend With Natsuki
+
+#Spent Day 1 With Sayori
+
+#Sayori's Core Route, fine as is
+
+____________________________________________________________________________________________________
+
+#Accepted Sayori's Confession, Spent Weekend With Natsuki
+
+#Spent Day 1 With Natsuki
+
+"Despite the rather interesting exchange that I had with Yuri, she tries to act as if it didn't happen and gives me useful feedback."
+------------------------------------------------------------------------------
+#Add new text for this varaition
+
+"Yuri seemed to really enjoy my poem. She complimented me on how far I've progressed as a writer and told me to keep up the good work."
+"Yuri's poem was in her usual style of being deep and sophisticated, but it was unusually depressing for what she usually writes about."
+"Through my best interpretation of her poem, it seemed like it was about a struggle for attention, love and acceptance."
+"I happened to notice that during our time together, she seemed unusually unfocused, as if her mind is elsewhere."
+
+
+show monika 1r at t11 zorder 1
+       
+"While sharing my poem with Monika, I can tell that the festival was still on her mind, but she definitely seemed to be a lot better now than at the start of the club."
+show monika 5a at t11 zorder 1
+"Monika complimented me on how far I've come as a writer and noted how my style was suddenly becoming like Sayori's." 
+"Something which she teased me a little bit about."
+"Monika's poem was in her usual free-form and abstract style. I didn't really understand the meaning behind it as usual, but from my best interpretation the poem had something to do with second chances and new opportunities."
+ 
+"Monika and I then got into a bit of a philosophical discussion about how we should never give up and always take opportunities when they present themselves."
+show monika 2j
+        
+"It was relatively inspiring actually."
+show monika at thide
+ 
+hide monika
+
+"Sayori's poem was actually rather romantic, something that I wasn't used to see her write about."
+"It was about how a girl who finally found someone that's finally able to make her feel something other than loneliness and depression."
+show sayori u121341
+"I was able to quickly pick up that the poem was about us, and I was blushing the entire time I was reading it."
+show sayori 2s
+"Sayori said she loved my poem as well, which only made me more flustered."
+"Unfortuantely we weren't able to chat for long as we had to share our poems with the others."
+
+
+show natsuki 2a at t11 zorder 1
+              
+"Natsuki actually was the one who approached me, seemingly genuinely interested to read whatever I had made and to show me what she wrote."
+                
+show natsuki 5y
+                
+"Surprsingly, she actually enjoyed my poem this time, joking that I've finally started listening to her."
+               
+show natsuki 5j
+                
+"While catching up with Natsuki since the festival, I come to the realization that sooner or later, I'll have to tell her about Sayori and I..."                
+show natsuki 3t
+                
+"But there's no telling how she'll take it..."
+"Or how she'll take it out on me..."
+"But, I think that I got at least some insight into her mindset right now."
+show natsuki 3l
+"Natsuki's poem was in her trademark style of being short, sweet and to the point. It was about someone finding happiness by spending time with the person they loved the most."
+                
+
+
+#End Scene
+
+
+____________________________________________________________________________________________________
+
+
+#Accepted Sayori's Confession, Spent Weekend With Natsuki
+
+#Spent Day 1 With Yuri
+
+
+
+"Despite the rather interesting exchanges that I had with Natsuki, she acts as if it didn't happen and gave me her usual suggestion of not being too wordy."
+
+------------------------------------------------------------------------------
+#Add new text for this varaition
+                
+show natsuki 1i
+                
+"But during our time together, she seemed unusually unfocused, as if her mind is elsewhere."
+
+"Either out of jealousy that I didn't spend time with her today..."
+"Or the fact that last Sunday was still on her mind..."              
+But I think that I got at least some insight into what she's going through right now."
+                
+"Natsuki's poem was in her trademark style of being short, sweet and to the point."
+                
+show natsuki 5s
+                
+"It was about someone finding happiness by spending time with the person they loved the most, but was unsure if that person liked them back and how she was getting a lot of mixed signals."
+       
+
+
+"Sayori's poem was actually rather romantic, something that I wasn't used to see her write about."
+"It was about how a girl who finally found someone that's finally able to make her feel something other than loneliness and depression."
+show sayori u121341
+"I was able to quickly pick up that the poem was about us, and I was blushing the entire time I was reading it."
+show sayori 2s
+"Sayori said she loved my poem as well, which only made me more flustered."
+"Unfortuantely we weren't able to chat for long as we had to share our poems with the others."
+
+
+show monika 1r at t11 zorder 1
+       
+"While sharing my poem with Monika, I can tell that the festival was still on her mind, but she definitely seemed to be a lot better now than at the start of the club."
+show monika 5a at t11 zorder 1
+"Monika complimented me on how far I've come as a writer and noted how my style was suddenly becoming like Yuri's."
+"Something which she teased me a little bit about."
+"Monika's poem was in her usual free-form and abstract style. I didn't really understand the meaning behind it as usual, but from my best interpretation the poem had something to do with second chances and new opportunities."
+ 
+"Monika and I then got into a bit of a philosophical discussion about how we should never give up and always take opportunities when they present themselves."
+show monika 2j
+        
+"It was relatively inspiring actually."
+show monika at thide
+ 
+hide monika
+
+
+
+"Yuri's poem was in her usual style of being deep and sophisticated, but it was unusually joyful for what she usually writes about."
+"Through my best interpretation of her poem, it seemed like it was about someone finally feeling wanted."
+"The poem told the story of how they've gone through a constant struggle of feeling isolated and unwanted, until one day, that all changed."
+show yuri 1c
+"Yuri seemed to really enjoy my poem, calling it one of the best poems I've written so far."
+"She also complimented me on how far I've come as a writer and that she hopes I keep up the good work."
+show yuri 1b
+"Our talks of poems quickly shifted to catching up with each to see how we've been since the festival."
+"During our conversation we at times struggled to make eye contact with each other."
+"Yuri and I never really got to spend much one on one time with each other, so it was a little awkward for both of us at first."
+"But within the first few minutes we more less moved past it and got to know each other a little bit better."
+"Yuri really is a deep and interesting person to be around."
+"Not to mention, I think I've started taking a liking to her little quirks."
+show yuri 1p at h11
+"I always did find it adorable whenever she gets flustered and doesn't know what to say or do next."
+show yuri 4e at t11
+"And she is breathtakingly beautiful and elegant...I often find myself getting lost in those beautiful dark purple eyes of hers."
+"I should definitely try to spend more time with her..."
+
+#End Scene
+
+
+
+
+
+____________________________________________________________________________________________________
+
+
+
+#Accepted Sayori's Confession, Spent Weekend With Natsuki
+
+#Spent Day 1 With Monika
+
+"Despite the rather interesting exchanges that I had with Natsuki, she acts as if it didn't happen and gave me her usual suggestion of not being too wordy."
+
+------------------------------------------------------------------------------
+#Add new text for this varaition
+                
+show natsuki 1i
+                
+"But during our time together, she seemed unusually unfocused, as if her mind is elsewhere."
+
+"Either out of jealousy that I didn't spend time with her today..."
+"Or the fact that last Sunday was still on her mind..."              
+But I think that I got at least some insight into what she's going through right now."
+                
+"Natsuki's poem was in her trademark style of being short, sweet and to the point."
+                
+show natsuki 5s
+                
+"It was about someone finding happiness by spending time with the person they loved the most, but was unsure if that person liked them back and how she was getting a lot of mixed signals."
+       
+
+
+"Yuri seemed to really enjoy my poem. She complimented me on how far I've progressed as a writer and told me to keep up the good work."
+"Yuri's poem was in her usual style of being deep and sophisticated, but it was unusually depressing for what she usually writes about."
+"Through my best interpretation of her poem, it seemed like it was about a struggle for attention, love and acceptance."
+"I happened to notice that during our time together, she seemed unusually unfocused, as if her mind is elsewhere."
+
+
+"Sayori's poem was actually rather romantic, something that I wasn't used to see her write about."
+"It was about how a girl who finally found someone that's finally able to make her feel something other than loneliness and depression."
+show sayori u121341
+"I was able to quickly pick up that the poem was about us, and I was blushing the entire time I was reading it."
+show sayori 2s
+"Sayori said she loved my poem as well, which only made me more flustered."
+"Unfortuantely we weren't able to chat for long as we had to share our poems with the others."
+
+
+#Monika's Poem interaction is fine as is
+
+____________________________________________________________________________________________________

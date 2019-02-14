@@ -1,0 +1,68 @@
+This file contains info on the users who have helped to make this tool what it is (in no particular order). Assets listed in this file have been cleared for general use in DDLC mods so long as you credit the person or people listed. Everything took time, effort, and generosity to contribute, so please be sure to credit the people responsible for each thing you use in whatever way is most appropriate for your mod.
+
+More users can always be added here as new assets are contributed or permission is confirmed for the test purpose assets. If you'd like to contribute something of your own, please contact me (Agent Gold) through Reddit to discuss what you've got!
+
+Because this tool was created and distributed through the Reddit DDLC modding community, reddit user names are displayed for each contributor.
+
+
+DOKI DOKI LITERATURE CLUB
+(Not required, but polite to credit)
+Dan Salvato — Concept, Game Design, Writing, Programming, Music
+Satchely — Original Character Artwork
+
+DYNAMIC CHARACTER POSING TOOL
+J. Kyle Roth/Agent Gold [u/AgentGold]
+
+YURI'S GLASSES AND SUNGLASSES
+King Crabmaster [u/KingCrabmaster]
+
+MONIKA'S PHANTOM RUBY
+Neil (CPG Yuri from Doki Doki Forces) [u/reckonusm]
+
+YURI'S HOODIE
+DarkWind [u/xDarkWind7]
+
+CLASSIC MC SPRITES AND NEW MC SPRITES (USED BY DEFAULT AS "SENPAI")
+Sir French Fries/Childish-N
+http://fav.me/dbtu22s
+
+SAYORI PAJAMAS SPRITE
+Olivia N [u/OliverCNorton]
+
+BLEP MOUTH
+ThatOneDerpyBanana [u/ThatOneDerpyBanana]
+
+ADDITIONAL EXPRESSIONS
+LunaticRabbit [u/LunaticRabbit]
+Currently, any expression sprite not credited to another user (other than each girl's starry eyes) was probably an edit of his.
+Mostly-exhaustive set: https://imgur.com/a/U7It9xr
+
+SAYORI CASUAL FINGER TAPPING POSE
+MosileZ [u/MosileZ]
+
+MONIKA CRYING EXPRESSION (OPEN EYES)
+TheRadioactive4 [u/TheRadioactive4]
+
+MONIKA SHRUG
+Mouhantain [u/Mouhantain]
+
+CHAD MC SPRITES
+Original sprites by Cylent-Nite [u/Cylent-Nite]
+Additional expressions by SlightlySimple [u/SlightlySimple]
+
+PRESIDENT SAYORI SPRITES
+yagamirai10 [u/yagamirai10]
+Must be purchased separately to be used.
+
+KNIFE EDITS
+Phathom [u/Phathom]
+
+SAYORI SWEATER
+gurogurl [u/gurogurl]
+
+BUFFSUKI
+desperosolace
+
+SPECIAL THANKS
+smearglexd [u/smearglexd]
+- Taking the time to add many expressions to the tool!

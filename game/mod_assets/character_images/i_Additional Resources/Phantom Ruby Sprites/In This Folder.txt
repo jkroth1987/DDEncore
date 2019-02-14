@@ -1,0 +1,5 @@
+These are the original sprite edits which Neil (CPG Yuri from Doki Doki Forces) shared with me for the Phantom Ruby. In the end it turned out to be more effective to include it as an extra so we don't need duplicates of Monika's left and right body sides. However, some modders might find it useful to have the original sprites as an option depending on what you'd like to do, so they're included here for your convenience.
+
+Bear in mind that these edits are slightly off color from Monika's base sprites. Again, this may suit your purpose depending on what you'd like to do with your mod. You can use the standalone ruby sprites over Monika's base sprites to counteract the color difference.
+
+Also note that the version with the top half on Monika's left and the bottom on her right will result in part of the ruby being cut off since her right side will be drawn over her left. Once again, if you can think of a situation where this fits your mod, this may be useful to you.

@@ -1,0 +1,5 @@
+These are edits to Yuri's exposed arm which were used in the Brand New Day mod. These can be useful for all kinds of moments in story telling, but I don't know who actually created them or who we should ask for permission. These are not in the default build because it adds significantly to the amount of time needed to compute all of Yuri's permutations (even though it doesn't affect the final file size).
+
+There is no set of edits for Yuri's default casual outfit because we don't have a base image of her sleeve rolled up.
+
+You can take the images in these folders and add them to the matching folders in Yuri's set of files to use them in your project. Just bear in mind that we have not secured permission for these edits yet.

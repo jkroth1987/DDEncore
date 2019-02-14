@@ -1,0 +1,5 @@
+This is an alternate sprite for MC, commonly known as Chad MC in the community. Add this to the main directory to use the character with the image name "chadmc".
+
+This sprite uses yellow eyes by default. The 3_eyes folder is a set of red eyes. To use red eyes, replace chadmc > 2_face > 3_eyes with this folder.
+
+The original sprites were made by Cylent-Nite, and extra expressions were provided by SlightlySimple. Be sure to credit them!

@@ -1,0 +1,255 @@
+DAY 1 HANGOUT SCENES
+
+SAYORI
+
+#Sayori 9.0 & #Sayori 13.0
+
+elif encore_sayoriquestion_1 == False:
+encore_festivalquestion_2 == "Natsuki":
+
+elif encore_sayoriquestion_1 == False:
+encore_festivalquestion_2 == "Yuri":
+
+#They'll go the same way for this scene
+
+#Sayori Option Selected
+#Same as Sayori's Core Route (Sayori 1.0), until this line
+
+"I never thought that me spending less time with Sayori over the years would have that kind of effect on her."
+--------------
+#Put this text in for this varaition
+
+"And rejecting her confession probably didn't help matters."
+"God, I feel so stupid!"
+
+Divert to Sayori 1.0 script at this line: s 2t "I guess it just finally took enough of a toll on me to the point where I realized I had this."
+
+
+s "Don't feel guilty for the way I feel [player]."
+----------------------------------------------------------
+#For this variation, use this verison of text 
+
+s "I'm sorry I've gotten you upset! I'm a terrible friend!"
+
+Divert back to Sayori 1.0 Script in the next line. 
+
+
+----------------------------------------
+elif encore_sayoriquestion_1 == True:
+encore_festivalquestion_2 == "Yuri":
+
+Use exisiting Sayori Exclusive Scenes Script, it's fine as is
+
+______________________________________________________________________
+
+NATSUKI
+
+#Natsuki 5.0 
+
+elif encore_sayoriquestion_1 == True:
+encore_festivalquestion_2 == "Natsuki":
+
+#Natsuki Option Selected
+#Same as Natsuki's Core Route (Natsuki 1.0), until this line 
+
+[ ] - COMPLETED?
+n "BAKA! I can do it by myself!
+----------
+#Put this text in for this variation
+
+n "Wait, can you get a chair that I can stand on?"
+mc "You mean that swivel chair?"
+n "Yeah, why?"
+mc "Are you sure that's a good idea?"
+n "Yes! I'll be careful!"
+mc "Yeah, I'd rather not have you fall on me. Let me get something else."
+
+
+Divert to Natsuki 1.0 script at this line: "I start to walk towards the front of the room where there's a small chair that we can use."
+
+
+"Sayori takes a few minutes to compose herself."
+----------------------
+#Put this text in for this variation
+
+s "I'm sorry I got you so worried about me... I didn't mean to take away from Natsuki or anything like that!
+s "I'm a terrible girlfriend!"
+
+Divert Sayori excluisves script at this line: mc "No, you aren't Sayori. Don't say that."
+
+
+#Natsuki 13.0
+
+elif encore_sayoriquestion_1 == False:
+encore_festivalquestion_2 == "Yuri":
+
+#Natsuki Option Selected
+
+[ ] - COMPLETED?
+"I start to walk towards the front of the room where there's a small chair that we can use."
+-------------------------------
+#Put this text in for this varaition
+
+"Right before I can step out of the closest, I feel Natsuki grab my arm."
+n "Since when did you care so much about me?"
+"I stop dead in my tracks."
+"I feel the blood start to rush to my face."
+"I turn around to face Natsuki, who has a teasing look on her face."
+mc "Since when did you stop calling me gross?"
+
+Divert back to Natsuki Exclusive Scripts at this line: "Natsuki's expression drops back to her signature pout."
+
+"Sayori takes a few minutes to compose herself."
+----------------------
+#Put this text in for this variation
+
+s "I'm sorry I got you so worried about me... I didn't mean to take away from Natsuki or anything like that!
+s "I'm a terrible friend!"
+
+Divert Sayori excluisves script at this line: mc "No, you aren't Sayori. Don't say that."
+
+
+
+#Natsuki 10.0
+
+elif encore_sayoriquestion_1 == True:
+encore_festivalquestion_2 == "Yuri":
+
+#Natsuki Option Selected
+
+Same as #Natsuki 13.0 for this scene.
+
+
+____________________________________________________________
+
+#Yuri 5.0 
+
+elif encore_sayoriquestion_1 == True:
+encore_festivalquestion_2 == "Yuri":
+
+#Yuri Option Selected
+#Same as Yuri's Core Route (Yuri 1.0), until this line
+
+
+mc "Sooo... how's reading Portrait of Markov been?"
+----------------
+#Put this text in for this variation
+
+"While in my spare time over the last week, I decided to open up the book Yuri got me."
+"It's been a pretty interesting read so far."
+"Still, I feel kind of bad that Yuri and I haven't had the chance to really get to know each other."
+"Hopefully we can change that..."
+
+Divert to Yuri exclusice scenes script at this line: "Yuri snaps out of her gaze and back into reality."
+
+
+y "I don't believe there's a need for that. If you want, you could..."
+---------------------------------------------------------
+y "...sit next to me..." (Use this line in place of ...sit next to me again..." for this variation)
+Divert to Yuri exclusice scenes script at this line: y "I-if you want! I really have no preference!"
+
+"Sayori takes a few minutes to compose herself."
+----------------------
+#Put this text in for this variation
+
+s "I'm sorry I got you so worried about me... I didn't mean to take away from Yuri or anything like that!
+s "I'm a terrible girlfriend!"
+
+Divert Sayori excluisves script at this line: mc "No, you aren't Sayori. Don't say that."
+
+
+
+#Yuri 9.0
+
+#elif encore_sayoriquestion_1 == True:
+encore_festivalquestion_2 == "Natsuki":
+
+
+mc "I mean... yeah... it's been a while since the festival..."
+-------------------------------------------------
+#Put this text in for this variation
+
+y "Y-yeah...it has been, hasn't it?"
+"I feel kind of bad that Yuri and I haven't had the chance to really get to know each other."
+"I try to think of something quickly to escape the awkwardness."
+"I quickly remember finally getting around to reading the book that Yuri gave me last week..."
+"It's been a pretty interesting read so far."
+"Maybe I can try talking to her about that..."
+mc "Sooo... how's reading Portrait of Markov been?"
+
+Divert back to Yuri Exclusive Scenes Script at this line: "Yuri snaps out of her gaze and back into reality."
+
+
+y "I don't believe there's a need for that. If you want, you could..."
+---------------------------------------------------------------------
+y "...sit next to me..." (Use this line in place of ...sit next to me again..." for this variation)
+Divert to Yuri exclusice scenes script at this line: y "I-if you want! I really have no preference!"
+
+
+"Sayori takes a few minutes to compose herself."
+----------------------
+#Put this text in for this variation
+
+s "I'm sorry I got you so worried about me... I didn't mean to take away from Yuri or anything like that!
+s "I'm a terrible girlfriend!"
+
+Divert to Sayori excluisves script at this line: mc "No, you aren't Sayori. Don't say that."
+
+
+#Yuri 13.0
+
+elif encore_sayoriquestion_1 == False:
+encore_festivalquestion_2 == "Natsuki":
+
+Same as #Yuri 9.0 for this scene mostly 
+
+"Sayori takes a few minutes to compose herself."
+----------------------
+#Put this text in for this variation
+
+s "I'm sorry I got you so worried about me... I didn't mean to take away from Yuri or anything like that!
+s "I'm a terrible friend!"
+
+Divert to Sayori excluisves script at this line: mc "No, you aren't Sayori. Don't say that."
+
+
+_________________________________________________________________________
+
+MONIKA
+
+#Monika 5.0
+
+elif encore_sayoriquestion_1 == False:
+encore_festivalquestion_2 == "Yuri":
+
+(Same as Monika Exclusives Scene's Script)
+
+#Monika 9.0
+
+elif encore_sayoriquestion_1 == True:
+encore_festivalquestion_2 == "Yuri":
+
+
+"I quietly approach her but she quickly notices me."
+------------------------------------
+#Put this text in for this variation
+M "Oh, [player]! I thought you'd wanted to hangout with Sayori again?"
+M "Afterall, you guys are like two peas in a pod over there."
+"Monika says in a teasing tone."
+"I mean Sayori and I may be dating but that doesn't mean I can't spend my time around the other girls... right?"
+
+Divert to Monika excluisves script at this line: Mc "I just thought I should check up on you first, that's all."
+
+
+
+#Monika 10.0
+
+elif encore_sayoriquestion_1 == True:
+encore_festivalquestion_2 == "Natsuki":
+
+#Same as Monika 9.0
+
+
+
+
+

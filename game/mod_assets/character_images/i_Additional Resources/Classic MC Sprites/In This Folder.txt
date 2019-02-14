@@ -1,0 +1,17 @@
+This is a ready-to-go set of sprites for the classic MC sprites created by Sir French Fries/Childish-N. To use it in your project, copy it to the project's base directory (where the other characters' folders reside) and change the folder name to the one you like, such as "senpai" or "protag". The folder is marked "senpaim" by default to allow for "senpaif" later if a female protagonist is also free to use.
+
+Remember that the name of the folder chooses the name of the image that will be defined by the tool. Also remember to open "definitions.rpy" and add "image='senpai'" or whichever name is appropriate to the "mc" Dynamic Character. You can use the lines defining the other characters as your guide here.
+
+The default structure will have his tags follow the standard "u111111" structure as everyone else, but he currently has only one outfit and one pose. Nevertheless, I've forced tags to start with "u11" for consistency and future-proofing.
+
+Until he gets added to the cheat sheet proper, here's a reference to what his expressions look like. (I think he's the only one so far to have exactly four options in every face slot.)
+
+Poor Man's Cheat Sheet:
+Face	Mouth		Nose		Eyes		Brows
+1	Closed Smile	Normal		Forward		Standing Face
+2	Open Smile	Sweat		Closed (Down)	Happy/Surprised
+3	Frown		Blush		Hisui…?		Angry
+4	Teeth		Blush + Sweat	Forward Shrunk	Sad/Low
+
+
+The blush covers the whole face, and one of the default expressions showed no eyes while blushing. You can use 0 for eyes or eyebrows to hide them and let the blush consume his face, but drawing eyes and eyebrows over the blush shouldn't have any negative visual effects (assuming I did my editing well enough!).

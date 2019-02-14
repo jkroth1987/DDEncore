@@ -1,0 +1,33 @@
+November 18, 2018
+- Buffsuki is now available, compatible with Natsuki's normal face.
+- Sayori now has sweater sprites created by gurogurl.
+- Filters have been added. Full instructions in a separate file.
+- Slight improvements to check animation code which lists image names and tags within quotation marks.
+- Auto-generated files now include comment blocks at the top listing the version number of the tool and warning about manual changes to the file being lost the next time the tool is run.
+
+November 8, 2018
+- Many new expression pieces added, each part of an edit made by LunaticRabbit. Big thanks to smearglexd for taking the time to get these added to the collection!
+- Monika has a new special pose which I'm calling "zombie". Again, created by LunaticRabbit, added by smearglexd.
+- Monika also has a new special pose called "shrug". This was made by Mouhantain and has been used in a few memes.
+- Monika has two crying eyes sprites. The closed eyes sprite is by LunaticRabbit and added by smearglexd as above, but the open eyes crying sprite was made by TheRadioactive4.
+- Chad MC has been added to Additional Resources. To use him in your project, add the folder "chadmc" to your top level and start writing tags using an image with the same name. Credit for creating the sprite goes to Cylent-Nite, and additional expressions beyond the basic ones were created by SlightlySimple.
+- The tool is now compatible with the President Sayori sprite set created by yagamirai10 (where Sayori faces the player directly like Monika normally does). Since this is a paid sprite pack, it can't be included with the tool and must be distributed by the artist for those who have purchased the sprite pack. The major effect is that Sayori's "exceptions.txt" file has been updated to be compatible with those sprites—this is the same version of "exceptions.txt" included with the sprites. This change will not cause anything to break if you don't have the sprites, and the tool will come with the most current version of the file from this point forward.
+- Sayori's finger tapping pose now includes her casual outfit, provided by MosileZ. Sayori's finger tapping pose can now specify an outfit, such as "tu1111" or "tc1111". If no outfit is specified, the uniform will be used (meaning existing code will not break with this update).
+- Each girl now has a uniform sprite for holding a knife in each hand. These can be used by using "k" in the slot for that side of the body, such as "u1k4222" for Monika. These edits were made by Phathom.
+- Using "s" in the eye slot for the girls will give them starry eyes. For those moments when they need to be especially happy.
+- There was previously a discoloration associated with Monika's mouth number 4 (where you can see her teeth). The base game has since been updated to fix this graphical error, and the tool has been updated to reflect that change. You won't need to make any changes to existing code for this to take effect.
+- NOTE: Because so many new sprites were added for the four girls, it can cause the tool to take longer calculating all permutations for each girl. If you need to speed this up, remove any sprites you aren't using from that copy of the tool in your project.
+
+October 5, 2018
+- Some new sprites added to existing characters, including Sayori in pajamas, multiple new mouth and eye positions for Sayori, some new mouth, eye, and eyebrow positions for Monika, and new mouth, nose, eye, and eyebrow positions for Monika's leaning pose.
+- Sayori in pajamas has been added as one of Sayori's outfits.
+- The newer MC sprite made by Childish-N has been added and included as a default character with the image name "senpai". If you prefer something else such as "maincharacter" or "protag", changing the folder name will change the image name in your code accordingly.
+- Fixed a bug some users experienced where the tool would die when trying to write .rpy files directly to their game directory. Using "-d" should give you no problems now. Depending on your system, character definitions files might be written to the tool's folder instead of the game folder. In this case, you'll need to delete the old .rpy and .rpyc files from your game directory so Ren'Py knows to use the new ones. Thanks to u/Leo40Reddit for submitting this fix!
+
+June 5, 2018
+- Fixing some code bits which were ambiguous. These worked without issue on my computer, but cause program-stopping warnings on others just for being experimental features. These lines have been made explicit—nothing changes about their function, but Perl likes them a lot more when it runs.
+
+- Adding the classic male MC sprites to Additional Resources and credits, but not updating the Cheat Sheet with the combinations yet. By default, this creates images for "senpaim", leaving room for "senpaif" later. If you prefer a different image name such as "protag", change the folder name as you please before you start using it. (There is a newer sprite now, but it only has about 4 variations of the face at the moment. I can add it, but it won't do much until more variations are available.)
+
+June 2, 2018
+- Initial upload—Everything was new!

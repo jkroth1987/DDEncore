@@ -1,0 +1,15 @@
+This project was originally shared through the Reddit community for DDLC modding at: https://www.reddit.com/r/DDLCMods/
+
+As such, I think the most fitting way to get in touch with me is through Reddit. My account is u/AgentGold. If you have an account, you can message me directly here:
+https://www.reddit.com/message/compose/?to=AgentGold
+
+You can also reach out for help or with success stories on the subreddit. As of this writing, the activity on the subreddit is slow enough that it's easy to at least see every thread that gets added, so there's a good chance I'll see what you have to say. Even if I don't, you should be able to reach someone who can help you.
+
+I put a lot of time and effort into this tool, partially so that I can use it and save myself headaches in the future, and partially to allow others to do the same. If you have stories worth sharing while using this tool, I would be thrilled to hear them. I'm willing to help with issues to the best of my ability, and I'd love to hear about the first time you got the tool working or a scene you were able to construct which would have been a hassle otherwise. I'd be happy to know if the documents I've included were especially helpful or especially unhelpful, or if you have suggestions on what can be done better in the future. Basically, if you're thinking about reaching out to me and are worried that you might just be bothering me, kick that worry to the side. Even if I fail to reply, I still appreciate hearing whatever you have to say about the project.
+
+Lastly, this is my one self-plug in this entire project. While I like me some DDLC fan games, a friend and I run a small indie game dev company called GoldenCrab Studios. We have one game on our site available to download for free (Windows or Mac) and are working on more to release over time. I can't guarantee that supporting us will give me a chance to produce more tools or mods for people to enjoy, but if you like what I do, you might enjoy the other projects I have a hand in. If you're in a position where you can and wish to contribute to us, great, but really even just downloading our project, giving us your thoughts on it, and showing it to others helps us out a ton.
+
+Our site is here: http://goldencrabstudios.com/
+The free game is here: http://goldencrabstudios.com/ggg
+
+Thanks for reading! Even if the tool is a little confusing at first, I hope it's a big help to you in the long run!

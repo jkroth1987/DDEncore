@@ -1,0 +1,8 @@
+Lines Per File : 10000
+Image Size : (960, 960)
+
+# Set this to 0 to apply filters in the order they are listed.
+Last To First Filters: 1
+
+# Used for applying filters to outside images. This should be not be less than 500.
+Outside Image Init Level: 600

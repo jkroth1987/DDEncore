@@ -1,0 +1,27 @@
+This is not a legal document. This is meant as a human-readable guideline for using, changing, and distributing the files in this project. The intention is to clearly describe which files are under what licenses and restrictions. If there is any conflict between the description in this file and the actual licenses and legal documents involved, the terms of the licenses take priority.
+
+If your plan is to use the files included for modding Doki Doki Literature Club and you stay within Team Salvato's IP Guidelines, this program's legal details are nothing for you to worry about. For anyone else (or anyone curious), here's what you need to know.
+
+The main Perl script distributed in this project, Create_Definitions.pl, is under the GNU General Public License v3.0. A copy of this license was distributed under the file name GNU_GPL_License.txt. This means that the program is free to be used and distributed without cost. It also means anyone can make changes to the program and distribute it with those changes made as long as any distributions are under the same license or another compatible one. In short, this program is free to use and change, and your version will be too.
+
+Your mod is not a derivative work of this tool. The tool is technically not part of your project—it simply creates .rpy files which are added to your project. As such, using this tool does not require you to put your mod project under any licenses. This is true even if you distribute Create_Definitions.pl with your project (say, if you leave it in the project files when you create your build). Including the script is not necessary, but is also harmless to do since it is free to distribute.
+
+The instructional documents included with the project are under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International license (CC BY-NC-SA 4.0). This is a similar restriction for these files, making them free to use, distribute, and change as long as they are under the same license or another compatible one. This prevents people from making changes and trying to sell those changes for what should be a free project. The files under this license will have a small marker indicating the license attached to them.
+
+I used the non-commercial license because I couldn't think of a good reason to include these instructions in a commercial work. If you come up with something valid to do so with, contact me and we'll sort it out from there.
+
+While you have freedom, the license allows previsions for moral rights. In this case, I would consider intentionally editing the documents with misinformation to go against that, so please use good intentions and good faith when making edits.
+
+Team Salvato's IP Guidelines forbid hosting or distributing official assets from Doki Doki Literature Club except for the purpose of using them as a fan work. In compliance with that, these image files may be used in fan works, but not for any other purpose.
+
+Some images included are themselves fan works, contributed by fans of the game. Any files in the default build are permitted to be used in fan works as long as you credit the original creator in whichever way is appropriate. This project came with a file named "Credits and Contributions.txt" with instructions on who made what and how to credit them.
+
+This project came with a folder called "i_Additional Resources" with more images you may choose to add to your project. Some of these came from users who contributed images to the default build—these are marked with accompanying text files pointing out who made them. Other images are clearly marked "PERMISSION NEEDED" in the image itself. These are files which were used for testing or would be wonderful to include in the project, but permission has not yet been acquired and no info is ready to credit the creators. You may use these images for testing without consequence. However, I recommend leaving the permission notice intact until permission has been received, as this will help to keep you from accidentally releasing a build with an unpermitted image in it.
+
+(One good way to contribute to this project is to help seek permission for these images or provide alternatives which you give permission for. When seeking permission, it must be clear to the creator that this is permission for ANY mod of DDLC, not just the one you're working on—otherwise we cannot update the project with their permission info.)
+
+Generally speaking, you'll be fine if you remember that DDLC is a free game, fan works must be free, this tool was meant to be a free means to help people working on fan works, and that people who do creative work deserve credit for what they do. This legal info is to keep people from mistaking images as being free to use for anything just because the program is and to keep people from trying to profit from small changes when the majority of work done was meant to be given out for free.
+
+Team Salvato's IP Guidelines: http://teamsalvato.com/ip-guidelines/
+GNU General Public License Homepage: https://www.gnu.org/licenses/gpl.html
+Creative Commons License: https://creativecommons.org/licenses/by-nc-sa/4.0/
