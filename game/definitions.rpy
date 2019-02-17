@@ -8,12 +8,13 @@ define persistent.demo = False
 define persistent.steam = False
 define config.developer = True #Change this flag to True to enable dev tools
 
-python early:
-    import singleton
-    me = singleton.SingleInstance()
+#python early:
+#    import singleton
+#    me = singleton.SingleInstance()
 
 init python:
-    config.keymap['game_menu'].remove('mouseup_3')
+    if 'mouseup_3' in config.keymap['game_menu']:
+        config.keymap['game_menu'].remove('mouseup_3')
     config.keymap['hide_windows'].append('mouseup_3')
     config.keymap['self_voicing'] = []
     config.keymap['clipboard_voicing'] = []
@@ -1537,6 +1538,15 @@ image yuri u114221 = im.Composite((960, 960), (0, 0), "mod_assets/character_imag
 image yuri u125111 = im.Composite((960, 960), (0, 0), "mod_assets/character_images/yuri/1_uniform/1_body_left/1.png", (0, 0), "mod_assets/character_images/yuri/1_uniform/2_body_right/2.png", (0, 0), "mod_assets/character_images/yuri/2_face/base.png", (0, 0), "mod_assets/character_images/yuri/2_face/1_mouth/5.png", (0, 0), "mod_assets/character_images/yuri/2_face/2_nose/1.png", (0, 0), "mod_assets/character_images/yuri/2_face/3_eyes/1.png", (0, 0), "mod_assets/character_images/yuri/2_face/4_eyebrows/1.png")
 image yuri u123114 = im.Composite((960, 960), (0, 0), "mod_assets/character_images/yuri/1_uniform/1_body_left/1.png", (0, 0), "mod_assets/character_images/yuri/1_uniform/2_body_right/2.png", (0, 0), "mod_assets/character_images/yuri/2_face/base.png", (0, 0), "mod_assets/character_images/yuri/2_face/1_mouth/3.png", (0, 0), "mod_assets/character_images/yuri/2_face/2_nose/1.png", (0, 0), "mod_assets/character_images/yuri/2_face/3_eyes/1.png", (0, 0), "mod_assets/character_images/yuri/2_face/4_eyebrows/4.png")
 image yuri u111261 = im.Composite((960, 960), (0, 0), "mod_assets/character_images/yuri/1_uniform/1_body_left/1.png", (0, 0), "mod_assets/character_images/yuri/1_uniform/2_body_right/1.png", (0, 0), "mod_assets/character_images/yuri/2_face/base.png", (0, 0), "mod_assets/character_images/yuri/2_face/1_mouth/1.png", (0, 0), "mod_assets/character_images/yuri/2_face/2_nose/2.png", (0, 0), "mod_assets/character_images/yuri/2_face/3_eyes/6.png", (0, 0), "mod_assets/character_images/yuri/2_face/4_eyebrows/1.png")
+
+# Silhouettes
+image sayori 1shadow = shadow("mod_assets/sprites/char_bases/s_base")
+image sayori 1bshadow = shadow("mod_assets/sprites/char_bases/sb_base")
+image natsuki 1shadow = shadow("mod_assets/sprites/char_bases/n_base")
+image natsuki 1b shadow = shadow("mod_assets/sprites/char_bases/nb_base")
+image yuri 1shadow = shadow("mod_assets/sprites/char_bases/y_base")
+image yuri 1bshadow = shadow("mod_assets/sprites/char_bases/yb_base")
+image monika 1shadow = shadow("mod_assets/sprites/char_bases/m_base")
 
 #This channel is used for times when secondary tracks are needed to be played aside music.
 #like if we needed m1 to play AND heartbeat to play
