@@ -1,3 +1,4 @@
+
 #This is a copy of definitions.rpy from DDLC.
 #Use this as a starting point if you would like to override with your own.
 
