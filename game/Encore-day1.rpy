@@ -2088,7 +2088,7 @@ label day1_clubend:
         "Sayori's grin instantly disappears and reverts back to how she was just a moment ago."
         s 1v "It's n-nothing...{w=0.38} Look, I gotta go, bye!"
         #Can we have her run off here instead? If so, have her yeet off the screen to the left
-        show sayori at thide
+        show sayori at lhide
         hide sayori
         "Sayori runs off and hastily enters her house."
         "I can hear the door slam shut immediately once she enters."
