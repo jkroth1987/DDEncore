@@ -2087,7 +2087,6 @@ label day1_clubend:
         show sayori 1u at t11 zorder 1
         "Sayori's grin instantly disappears and reverts back to how she was just a moment ago."
         s 1v "It's n-nothing...{w=0.38} Look, I gotta go, bye!"
-        #Can we have her run off here instead? If so, have her yeet off the screen to the left
         show sayori at lhide
         hide sayori
         "Sayori runs off and hastily enters her house."
@@ -2791,7 +2790,6 @@ if hangout1 == "Yuri":
         show yuri 1y6 at face(y=600) zorder 1
         show yuri at t11
         y "[player]."
-        #she kind of flys back on screen at this point, see what you can do, try having her hop back (she's in his face at this point)
         show yuri 1y5
         y "What did you think?"
         show yuri 2y1

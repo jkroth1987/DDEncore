@@ -328,7 +328,7 @@ if encore_sayoriquestion_1 == False:
             "Natsuki turns to me, her face red and eyes glossy as if she was fighting back tears."
             n 5h "Y-yeah?"
             mc "I'm sure you'll find it sooner or later. I know it means alot to you that you find that copy."
-            "Trust me, I'd be pissed too if I lost something that was important to me."
+            mc "Trust me, I'd be pissed too if I lost something that was important to me."
             show natsuki 12b
             "Natsuki struggles to maintain eye contact with me for longer than a few seconds."
             mc "I know how you feel and I just wanted to let you know that my offer to help you still stands."
@@ -474,7 +474,7 @@ if encore_sayoriquestion_1 == True:
             "Natsuki turns to me, her face red and eyes glossy as if she was fighting back tears."
             n 5h "Y-yeah?"
             mc "I'm sure you'll find it sooner or later. I know it means alot to you that you find that copy."
-            "Trust me, I'd be pissed too if I lost something that was important to me."
+            mc "Trust me, I'd be pissed too if I lost something that was important to me."
             show natsuki 12b
             "Natsuki struggles to maintain eye contact with me for longer than a few seconds."
             mc "I know how you feel and I just wanted to let you know that my offer to help you still stands."
@@ -634,7 +634,7 @@ if encore_sayoriquestion_1 == False:
             "Natsuki turns to me, her face red and eyes glossy as if she was fighting back tears."
             n 5h "Y-yeah?"
             mc "I'm sure you'll find it sooner or later. I know it means alot to you that you find that copy."
-            "Trust me, I'd be pissed too if I lost something that was important to me."
+            mc "Trust me, I'd be pissed too if I lost something that was important to me."
             show natsuki 12b
             "Natsuki struggles to maintain eye contact with me for longer than a few seconds."
             mc "I know how you feel and I just wanted to let you know that my offer to help you still stands."
@@ -781,7 +781,7 @@ if encore_sayoriquestion_1 == True:
             "Natsuki turns to me, her face red and eyes glossy as if she was fighting back tears."
             n 5h "Y-yeah?"
             mc "I'm sure you'll find it sooner or later. I know it means alot to you that you find that copy."
-            "Trust me, I'd be pissed too if I lost something that was important to me."
+            mc "Trust me, I'd be pissed too if I lost something that was important to me."
             show natsuki 12b
             "Natsuki struggles to maintain eye contact with me for longer than a few seconds."
             mc "I know how you feel and I just wanted to let you know that my offer to help you still stands."
