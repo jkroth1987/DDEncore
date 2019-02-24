@@ -12,6 +12,7 @@ label day3_start:
     scene bg bedroom
     play sound "sfx/fall.ogg"
     "I suddenly wake up with a fright."
+    "I feel the urge to vomit but I’m able to suppress it."
     if hangout2 != "Monika":
         "I feel the urge to vomit but I'm successfully able to suppress it."
         "What was that?"
@@ -51,7 +52,7 @@ label day3_start:
     scene bg kitchen
     with wipeleft_scene
     play music t2 fadein 1.5
-    "After showering and putting on my uniform, I head downstairs to make myself some breakfast."
+    "After finishing my morning routine, I head downstairs to make myself some breakfast."
     "I'm not particularly hungry so I just make myself a fruit bowl."
     if encore_sayoriquestion_1:
         "I send Sayori another good morning text."
@@ -64,7 +65,7 @@ label day3_start:
             "Am I really going insane?"
             "Hearing my stomach rumble I decide to finally start eating."
             "If I'm going insane, I'd rather not do it on an empty stomach."
-            "Popping the last piece of watermelon into my mouth, I gather my things, and head out to meet Sayori."
+            "After popping the last piece of watermelon into my mouth, I gather my things, and head out to meet Sayori."
         else:
             "After I finished making breakfast I glance over at the kitchen clock. I'm running late!"
             "I quickly get everything that's essential for school."
@@ -76,7 +77,7 @@ label day3_start:
     "Sayori's already standing by the adjacent sidewalk to my house."
     show sayori 1q at h11 zorder 1
     s "Hey, [player]!"
-    "She beams at me, she seems really excited to see me today."
+    "She beams joyfully at me..."
     if encore_sayoriquestion_1 and hangout2 == "Sayori" or hangout1 == "Sayori":
         "Her sky blue eyes reflect in the morning sun, the wind flows through her coral pink hair, and her smile is almost enough to erase the events of earlier this morning."
         mc "Hey, Sayori."
@@ -174,10 +175,13 @@ label day3_tellsayori:
     stop music
     scene encore_demoend
 label day3_notellsayori:
-    "OH! Uhmm..."
-    "You weren't supposed to choose this options, and there is nothing here yet..."
-    "So, uhm..."
-    "..."
-    "Awkward."
+    "I decided not to tell her."
+    mc "It’s… it’s nothing… don’t worry about me."
+    mc "I’m fine."
+    show sayori  1f
+    "Sayori frowns before letting out a sigh."
+    s  1k  "Alright, I guess..."
+    "Sayori doesn’t seem convinced by my answer."
+    "But, instead of pressing further, we continue on our walk."
+
     return
-    

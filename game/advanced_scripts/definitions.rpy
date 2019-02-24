@@ -116,7 +116,8 @@ define audio.e6 = "<loop 0>mod_assets/audio/Encore.ogg" #Encore! (Okay, everyone
 define audio.e7 = "<loop 0>mod_assets/audio/Rainbow Reality V3.ogg" #Rainbow Reality (We're all fine)
 define audio.e8 = "<loop 0>mod_assets/audio/Monika Void Theme.ogg" #Only Us
 define audio.e9 = "<loop 0>mod_assets/audio/Yuri's void v2.ogg" #Unhinged
-define auido.e10 = "<loop 0>mod_assets/audio/Natsuki's void v2.ogg" #I Know You Like Me
+define audio.e10 = "<loop 0>mod_assets/audio/Natsuki's void v2.ogg" #I Know You Like Me
+define audio.e11 = "<loop 0>mod_assets/audio/Sayori's Void V2.ogg" #Sayo-Prise!
 # Backgrounds
 image black = "#000000"
 image dark = "#000000e4"
@@ -597,6 +598,7 @@ image natsuki 12f = im.Composite((960, 960), (0, 0), "natsuki/1l.png", (0, 0), "
 image natsuki 12g = im.Composite((960, 960), (0, 0), "natsuki/1l.png", (0, 0), "natsuki/1r.png", (0, 0), "natsuki/2tg.png")
 image natsuki 12h = im.Composite((960, 960), (0, 0), "natsuki/1l.png", (0, 0), "natsuki/1r.png", (0, 0), "natsuki/2th.png")
 image natsuki 12i = im.Composite((960, 960), (0, 0), "natsuki/1l.png", (0, 0), "natsuki/1r.png", (0, 0), "natsuki/2ti.png")
+image natsuki 22b = im.Composite((960, 960), (0, 0), "natsuki/1l.png", (0, 0), "natsuki/2r.png", (0, 0), "natsuki/2tb.png")
 
 image natsuki 42 = im.Composite((960, 960), (0, 0), "natsuki/2l.png", (0, 0), "natsuki/2r.png", (0, 0), "natsuki/2t.png")
 image natsuki 42a = im.Composite((960, 960), (0, 0), "natsuki/2l.png", (0, 0), "natsuki/2r.png", (0, 0), "natsuki/2ta.png")

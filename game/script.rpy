@@ -51,17 +51,22 @@ label start:
     stop music fadeout 2.0
     pause 2.0
     scene bg residential_day with dissolve_scene_full
-    "..."
-    "Welcome to Doki Doki Encore!"
-    "Before we begin, I have a few questions for you about your time before meeting us."
+    "Welcome to the Doki Doki Encore DEMO!"
+    "Before we begin, you need to answer a few quick questions."
+    "Sayori confessed to you in the base game."
     menu:
-        "Did you accept Sayori's confession?"
+        "Did you accept Sayori's confession? If you click 'yes', you will be starting off on her route in this mod. If you click 'no', you won't start on her route."
         "Yes":
             $ encore_sayoriquestion_1 = True
             $ s_modappeal = s_modappeal + 1
         "No":
             $ encore_sayoriquestion_1 = False
             $ s_modappeal = 0
+
+    "Good, now there's Yuri and Natsuki..."
+    "In the base game, you chose to spend the weekend with one of them for the festival prepreations."
+    "If you chose 'no' on the last question, you'll either start off on Yuri's or Natsuki's route in this mod depending on who you choose next."
+    "If you chose 'yes' on the last question, well, you'll see how things will go, now won't you?"
     menu:
         "Who did you help prepare for the festival?"
         "Yuri":
@@ -70,13 +75,20 @@ label start:
         "Natsuki":
             $ encore_festivalquestion_2 = "Natsuki"
             $ n_modappeal = n_modappeal + 1
+
+    "Last question, have you played any other DDLC mods before this?"
+    "This won't affect gameplay in this DEMO, but it may affect gameplay in the Full Release."
+    "Some examples include, but are not limited to..."
+    "Blue Skies, Summertime, Coldest Summer, Divided Hearts, Purist, Fallen Angel, Exit Music, The Festival, Fruits of The Literature Club, The Good Ending and many others!"
+    "r/DDLCMods has a full list of mods that's pinned on the subreddit, feel free to check it out after you're finished playing!"
     menu:
         "Have you played any other mods?"
         "Yes":
             $ encore_modquestion_3 = True
         "No":
             $ encore_modquestion_3 = False
-    "..."
+    "Shall we begin, [player]?"
+    "Every good story needs an encore!"
     jump encorestart
 
 label programmer_meme:

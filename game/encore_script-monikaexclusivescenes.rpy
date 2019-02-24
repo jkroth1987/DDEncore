@@ -1,59 +1,93 @@
+#Day 1
 label mencore_1:
     $ hangout1 = "Monika"
     "I decided to check up on Monika."
     scene bg club_day
     with wipeleft_scene
-    play music tmonika fadein 1.0
+    play music tmonika
     "I quietly approach her but she quickly notices me."
     show monika 1b at t11 zorder 1
 
     if encore_festivalquestion_2 == "Natsuki":
-        m "Oh, [player]! I thought you'd want to hang out with Natsuki again?"
-    elif encore_festivalquestion_2 == "Yuri":
-        m "Oh, [player]! I thought you'd want to hang out with Yuri again?"
-
-    m 5a "Afterall, you guys are like two peas in a pod over there."
-    "Monika says in a teasing tone."
+            if encore_sayoriquestion_1 == False:
+                m "Oh, [player]! I thought you'd want to hang out with Natsuki again?"
 
     if encore_festivalquestion_2 == "Natsuki":
-        "What? Does Monika think that we're really like that? I know me and Natsuki are friends but..."
-    elif encore_festivalquestion_2 == "Yuri":
-        "What? Does Monika think that we're really like that? I know me and Yuri are friends but..."
+            if encore_sayoriquestion_1 == True:
+                m "Oh, [player]! I thought you'd want to hang out with Sayori again?"
 
-    mc "I just thought I should check up on you first, thats all."
-    m 1d "Huh..."
+    if encore_festivalquestion_2 == "Yuri":
+            if encore_sayoriquestion_1 == False:
+                m "Oh, [player]! I thought you'd want to hang out with Yuri again?"
+
+    if encore_festivalquestion_2 == "Yuri":
+            if encore_sayoriquestion_1 == True:
+                m "Oh, [player]! I thought you'd want to hang out with Sayori again?"
+
+    m 5a "Afterall, you guys are like two peas in a pod over there."
+    "Monika says teasingly."
+
+    if encore_festivalquestion_2 == "Natsuki":
+            if encore_sayoriquestion_1 == False:
+                "Wait...{w=0.28} does Monika really think that Natsuki and I are {i}that close{\i}?"
+                "I mean we’re just friends, but…"
+
+    if encore_festivalquestion_2 == "Natsuki":
+            if encore_sayoriquestion_1 == True:
+                "I mean Sayori and I may be dating, but that doesn't mean I can't spend my time around the other girls...{w=0.38} right?"
+
+    if encore_festivalquestion_2 == "Yuri":
+            if encore_sayoriquestion_1 == False:
+                "Wait...{w=0.28} does Monika really think that Yuri and I are {i}that close{\i}?"
+                "I mean we’re just friends, but…"
+
+    if encore_festivalquestion_2 == "Yuri":
+            if encore_sayoriquestion_1 == True:
+                "I mean Sayori and I may be dating, but that doesn't mean I can't spend my time around the other girls...{w=0.38} right?"
+
+
+    mc "I just thought I should check up on you first, that's all."
+    m 1d "Eh?"
     show monika u114311
-    "Monika's expression changes as she looks at me with an intense gaze"
-    m u114312 "So you're choosing to spend time with me and not any of the others?"
+    "Monika’s expression quickly changes as she now looks at me with a curious gaze."
+    m u114312 "So you're {i}choosing{/i} to spend time with me and not any of the others?"
     mc "Umm...{w=0.28}yeah...I guess?"
     show monika 1k at h11
-    "Monika's eyes suddenly light up with what can only be described as pure ecstacy."
+    "Monika’s eyes suddenly light up with what I can only describe as pure ecstacy..."
     show monika 1b at t11
     m "OH! Well? What do you want to do?!?"
-    "I'm taken back by Monika's sudden burst of energy as she starts spouting out activities for me and her like Sayori on a sugar high from eating all of Natsuki's cupcakes."
-    m 4k "Well, I was thinking if you wanted we could read a book together, or maybe even write poems!"
+    "I’m surprised by Monika’s sudden burst of energy as she starts spouting out ideas for activities that we can do together."
+    "It almost reminds me of Sayori’s sugar high from when she ate all of Natsuki's cupcakes at the festival."
+    m 4k "I’ve been actually meaning to read this big novel with someone for a while now!"
+    m 5a "I heard this novel is really fun to read with when you have someone with you~"
     "I'm not sure whether to be amused or concerned at Monika's sudden excitement."
-    mc "I thought maybe we could talk about how you're doing."
+    mc "I thought maybe we could just talk about how you're doing."
+    mc "You seemed to have had a hard time earlier..."
     show monika u114311
     "Monika suddenly realises how excitable she's become and recomposes herself."
-    m 2n "Oh... yeah... sorry, I got kind of carried where there, didn't I?"
-    m 2l "Sorry [player]! You just happened to catch me in a very giddy mood."
-    mc "Hey, it's all good, I'm just glad that you seem to be doing better so soon."
+    m 2n "Oh...{w=0.38} yeah...{w=0.38} sorry, I got kind of carried where there, didn't I?"
+    m 2l "Sorry, [player]! Just seeing you seems to have put me in better spirits~"
+    mc "Well, hey! Glad I could help!"
     show monika 1j
     "Monika nods happily at me."
-    mc "Sooo...are you sure you're okay with the club staying the same? I know you were looking forward to having new members."
+    "I decide to break the ice."
+    mc "Sooo...{w=0.28}are you sure you're really okay with the club staying the same?"
+    mc "I know how much expanding the club meant to you and everything..."
     show monika 1d
     "I see the joy in her face subside."
     show monika 2r
     "She then lets out a pained sigh."
-    m 2q "I can't act like I'm not a little disappointed that nobody wanted to join our club..."
-    show monika 2p
+    m 2q "It's just hard for me to wrap my mind around all this..."
+    m 2r "I thought I did everything I could to make sure everything went smoothly..."
+    m 2c "And you guys played your part perfectly, so I'm not blaming you or anyone else."
+    m 2p "I just feel like I messed up somewhere..."
     "Her eyes drift towards her feet."
-    m 1n "But to tell you the truth, that's not the only thing that's been on my mind lately."
+    m 1n "But to tell you the truth, I've just had a lot on my mind lately."
+    m 1l "Everything just kind of snowballed into that episode earlier..."
     mc "Do you want to talk about it?"
     show monika 1o
     "Monika pauses for a moment, almost like she's internally debating if she wants to open up to me."
-    "Finally she breaks the silence."
+    "After about a moment, she breaks the silence."
     m 1l "Well, let's just say that I had a big surprise planned for someone."
     mc "Oh? For like a birthday party or something?"
     show monika 1j
@@ -61,19 +95,20 @@ label mencore_1:
     m 1a "No, silly! It's not that kind of surprise."
     m 1b "But it's something that I've been working on for quite a while now, and very recently, something happened that I thought ruined everything."
     m 1k "But now it seems like I can still salvage the situation."
+    show monika 5a
     "Monika flashes a smile at me."
     "I'm not sure what Monika is trying to get at here."
+    "Or who this 'surprise' is supposed to be for..."
     "But, I hope things work out for her in the end."
-    mc "I hope it all works out for you, Monika."
+    mc "Well, I hope it all works out for you, Monika."
     mc "I know you can accomplish anything if you put your mind to it."
     mc "I'm sure sooner or later we'll get more members and I'm sure that your surprise will be great for whoever it's for."
     show monika u114311
     "Monika blushes at my compliments."
-    m u111331 "Yeah...you're right, [player]."
-    m 2a "So that just means..."
+    m u111331 "Yeah...{w=0.28}you're right, [player]."
     "Monika suddenly looks me in the eyes with a look of determination that's almost scary..."
-    m 5a "I'll just need to double my efforts next time!"
-    mc "Uhh...right..."
+    m 5a "I think it will work out in the end~"
+    mc "Y-{w=0.28}yeah...{w=0.28} I hope it does..."
     show monika 2k
     "Monika flashes me her signature grin, and I can't help but smile back at her."
     "We stand there for a few moments before Monika suddenly calls out."
@@ -81,15 +116,15 @@ label mencore_1:
     m "Ok everyone, poem time!"
     m 5a "I can't wait to see what you wrote for today, [player]!"
     "I must admit I'm not used to Monika showing me this much attention."
-    "Not that I mind it anyway. Getting noticed by Monika is a good thing in this school."
+    "Not that I mind it anyway. Getting noticed by someone like Monika is a good thing."
     mc "Y-you too, Monika!"
     mc "Can't wait to see what you wrote too!"
     show monika 1j
     "Monika lets out a cute giggle."
     "Natsuki shoots us a suspicious look."
     show natsuki 5e at t33 zorder 1
-    n "Are you two going to stand there and flirt all day or you going to share your poems with us?"
-    m 1l "Right, right... sorry!"
+    n "Are you two going to stand there and flirt all day, or you going to share your poems with us?"
+    m 1l "Right, right...{w=0.28} sorry!"
     show natsuki at thide
     hide natsuki
     m 1a "See you in a bit, [player]!"
@@ -98,7 +133,37 @@ label mencore_1:
     hide monika
     stop music fadeout 2
     "I go to my bag to retrieve my poem."
-    jump day1_poemsharing
+    with wipeleft_scene
+
+if encore_sayoriquestion_1 == True:
+    if encore_festivalquestion_2 == "Natsuki":
+        if hangout1 == "Monika":
+            jump poem_scene13
+
+if encore_sayoriquestion_1 == True:
+    if encore_festivalquestion_2 == "Yuri":
+        if hangout1 == "Monika":
+            jump poem_scene14
+
+if encore_sayoriquestion_1 == False:
+    if encore_festivalquestion_2 == "Natsuki":
+        if hangout1 == "Monika":
+            jump poem_scene15
+
+
+if encore_sayoriquestion_1 == False:
+    if encore_festivalquestion_2 == "Yuri":
+        if hangout1 == "Monika":
+            jump poem_scene16
+
+
+
+
+
+
+
+
+#Day 2
 
 label mencore_2:
     $ hangout = "Monika"

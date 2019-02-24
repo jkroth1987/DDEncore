@@ -2,7 +2,6 @@
 #   DAY 2   #
 #############
 label day2_start:
-    stop music
     play sound "sfx/fall.ogg"
     scene bg bedroom
     $ day = 2
@@ -14,7 +13,7 @@ label day2_start:
     "I awake, startled and confused."
     if hangout1 != "Monika":
         "I quickly realize that my face is covered in sweat and that my head is throbbing."
-        mc "Oh God.... what the hell was that?"
+        mc "Oh God...{w=0.28}what the hell was that?"
         "I prop myself up in my bed, holding on to my head in an attempt to still the pain, sweat trickles down my forehead"
         "..."
         "After a few minutes my head stops throbbing."
@@ -32,12 +31,12 @@ label day2_start:
     scene bg living_room
     with wipeleft_scene
     play music t2 fadein 1.0
-    "I take a shower, put on my Uniform, and fix myself up some breakfast."
-    "I figured I'd go with something simple like a chocolate muffin and some Orange Juice."
     if encore_sayoriquestion_1 == True:
+        "After doing my morning routine, I head down to the kitchen to fix myself up some breakfast."
+        "I figured I’d go with something simple like a chocolate muffin and some orange juice."
         "While eating my muffin, I grab my phone and send Sayori a quick good morning text"
         "After a few minutes she responds back and tells me that she'll be out in ten minutes and that I should wait by her place."
-        "After finishing my breakfast I head outside to meet Sayori."
+        "Quickly finishing my breakfast I head outside to meet Sayori."
     else:
         "After finishing my breakfast I head outside to meet Sayori for our daily commute together."
     scene bg house
@@ -47,7 +46,7 @@ label day2_start:
         "I get a chill remembering what I saw when I opened the door."
         "And that voice...what the hell was it talking about?"
     else:
-        "While I'm waiting I ponder about last night's dream."
+        "While waiting for Sayori, I ponder about last night's dream."
         "It felt so real."
         "Like someone or something was whispering in my ear..."
         "And that voice..."
@@ -384,19 +383,20 @@ label day2_meettheclubs:
     "Just thinking of her allowed me to power through the arduous task of writing a poem."
     "I'm really lucky to have found someone like her."
     "I put down my poems and go to my bag to retrieve Natsuki's poems, which I put right next to mine."
-    "I notice that Natsuki's stack of poems is slightly larger than my stack of papers."
-    "Hmm... maybe I'm missing a poem, or she accidentally gave me something that's in that stack..."
+    "I notice that in Natsuki’s stack of poems there’s a pink piece of paper."
+    "Hmm… I don’t remember Natsuki ever writing her poems down on pink paper..."
+    "Maybe she accidentally gave me something…"
     "Before I could investigate further, I hear my doorbell ring."
     "Wow, Sayori was a lot quicker than I'd thought she'd be."
-    "I go downstairs and open the door..."
+    "I go downstairs to let Sayori in..."
      #Scene Transition
      #Living room Scene
     scene bg house with wipeleft_scene
-    "... to see Sayori standing outside with a stack of papers."
+    "I open the door to see Sayori standing outside with a stack of papers."
     show sayori 4br at t11 zorder 1
     s "Hey, [player]! I found them!"
     show sayori 1bq
-    "She hands me the stack of poems."
+    "She proudly hands me the stack of poems."
     mc "That's awesome! Thank you Sayori! You're the best."
     show sayori 1bs
     "Sayori smiles brightly from my comment, I see a slight blush forming on her face."
@@ -460,19 +460,33 @@ label day2_meettheclubs:
         show cg rr2 with dissolve_cg
         "The race is off, the first thing I do is fall right off the map, Sayori falls off too."
         show sayori 1bn
-        mc "Okay, yea this is a lot harder then I remember."
-        s 1ba "Yea you're right, but I'm still having fun with you."
+        mc "Okay...this is a lot harder then I remember."
+        s 1ba "Yeah, you're right...but I'm still having fun with you."
+        "A smile manages to form across my face."
         show cg rr3 with dissolve_cg
         "We go at it back and forth passing each other over and over. I've been in first for most of the game, so that means I've been getting hit with lots of red shells."
         mc "Why do you have so many red shells?"
         s 1bc "I've been in second for most of the game, remember the farther you are from first place, the better items you get."
-        mc "Yea you're right I forgot."
+        mc "Yeah, you’re right…. I forgot."
+        "Sayori and I continue to trade leads for most of the first two laps, neither of us able to gain much distance on each other before the other takes the lead again."
+        "Finally it comes down to the last stretch of the race and I’m barely in first."
         show cg rr4 with dissolve_cg
         "Finally it comes down to the last stretch of the race, I'm barely in first. I try and gloat by throwing my last item randomly."
-        "That very quickly comes back to bite me in the ass."
-        mc "Oh crap, no, no, no, no!"
-        "I end up hitting myself with a green shell."
-        "Before I knew it she passed me and won."
+        "I can almost see the finish line…"
+        "Seemingly out of nowhere, one of the npc players start to catch up to us."
+        "In the blink of an eye, the npc passes Sayori and is right on my tail!"
+        "I don’t need two things to worry about!"
+        "I start throwing out my shells to get the npc and Sayori off my tail."
+        "My first shell hits the NPC successfully, and it’s kart quickly spirals out of control before promptly falling off the map."
+        "However, Sayori was able to doge my other shells."
+        "I look to see that I still have one left."
+        "With the finish line only about 10 seconds away, and with Sayori and I neck-and-neck, it’s now or never that I use my last shell."
+        mc "Take this!"
+        "In desperation, throw my last shell out randomly."
+        "However… I come to regret that decision rather quickly..."
+        mc "Oh crap...NOOOO!"
+        "I somehow end up hitting myself with the shell I just threw..."
+        "Before I know it, Sayori passes me and wins the race..."
         show sayori 1br at t11
         s "YAY! I WON!"
         "I sit there absolutely stunned."
@@ -510,10 +524,15 @@ label day2_meettheclubs:
         s 1bc "You've always been that brash, funny guy next door who always has his head in the clouds."
         s 1be "You've always been so kind to me, even when I don't think I deserve it. You've always looked out for me..."
         "I can hear Sayori's voice starting to break."
+        "You always help me when I’m feeling down, even if you don’t realize it."
         show cg s_cg_2 happy with dissolve_cg
         s 1by "You always help me when I'm feeling down, even if you don't realize that."
         "Trying my best not to blush, eventually I break and crack a wide grin at her."
-        s "You're the reason I even get up out of bed in the morning, [player]. You're the reason I can feel happiness and joy in my life. You're the reason I'm even alive."
+        s "You're the reason I even get up out of bed in the morning, [player]."
+        "You're the reason I can feel happiness and joy in my life."
+        "You're the reason I'm even alive."
+        s "Even when I’m at my lowest point… when my rainclouds just pour on me…"
+        s "You’re the sunshine that I need to break them away…"
         #show sayori at t11
         #exps
         s c112314 "Even when I'm at my lowest point... when those rainclouds just pour on me... you're my sunshine that I need to break them away..."
@@ -675,8 +694,8 @@ label day2_meettheclubs:
     if encore_sayoriquestion_1 == True:
         if encore_festivalquestion_2 == "Natsuki":
             if hangout2 != "Natsuki":
-                "I remembered that Natsuki's stack was noticeably slightly larger than mine."
-                "After comparing all three stacks, I realize that Sayori's stack and my stack have the same number of poems, and Natsuki's stack is still slightly larger than ours."
+                "I remembered that there was something in Natsuki’s stack that stood out to me."
+                "After comparing all three stacks, I see Sayori’s stack is completely identical to mine, but Natsuki’s stack is the only one that has a pink piece of paper."
                 "I begin to look through Natsuki's stack."
                 "I recognize all of the poems she wrote. I even remember the first one she wrote."
                 "I always found joy in reading her poems. They're so simple, yet they're just as hard hitting as Monika's, Sayori's and Yuri's poems."
@@ -776,30 +795,30 @@ label void2_base:
             $ difficult_line = True
             m "When I told you to stay away from [hangout1]..."
             m "I didn't mean switch to [hangout2]!"
-        
+
             if hangout1 == "Sayori" and hangout2 == "Natsuki":
                 m "And you still somehow ended up making things worse for us by still sticking by with Sayori."
                 m "Well... at least you managed to damage some of her trust in you."
                 m "But thanks to your bumbling efforts, you have more or less restored that trust! You need to stay away from her like you did today!"
                 m "You really are making this needlessly difficult for us, aren't you?"
                 m "Let me help clarify something for you, [player]."
-            #elif hangout1 == "Sayori" and hangout2 == "Yuri": # Nothing Different            
-            #elif hangout1 == "Natsuki" and hangout2 == "Sayori": # Nothing Different            
+            #elif hangout1 == "Sayori" and hangout2 == "Yuri": # Nothing Different
+            #elif hangout1 == "Natsuki" and hangout2 == "Sayori": # Nothing Different
             elif hangout1 == "Natsuki" and hangout2 == "Yuri":
                 m "And I don't appreciate you getting close to Sayori like that!"
-                m "Well... at least you managed to damage some of Natsuki's trust in you."            
+                m "Well... at least you managed to damage some of Natsuki's trust in you."
                 m "But you really are making this needlessly difficult for us, aren't you?"
                 $ difficult_line = False
-            # elif hangout1 == "Yuri" and hangout2 == "Sayori": # Nothing Different            
+            # elif hangout1 == "Yuri" and hangout2 == "Sayori": # Nothing Different
             elif hangout1 == "Yuri" and hangout2 == "Natsuki":
                 m "And I don't appreciate you getting close to Sayori like that!"
-            
-        
+
+
         if difficult_line: # Any variation which doesn't use this line uses its own version of it.
             m "You really are making this needlessly difficult for us, aren't you?"
-            
+
         m "Let me help clarify something for you, [player]." # All variations converge here.
-    else:    
+    else:
         m "You should’ve saved yourself for me…"
         m "Let them suffer.."
         m "Let them die…"
@@ -824,9 +843,10 @@ label void2_p1:
         m "There is only us."
         hide sayori
         show image "mod_assets/cgs/sayori_cg3.png" with dissolve_cg
-        "Suddenly, I see a rope appear around Sayori's neck"
-        "Her body is levitated into the air."
+        "Suddenly, I see a noose appear around Sayori's neck."
+        "A shadowy figure appears right next to Sayori.."
         show image "mod_assets/cgs/sayori_cg3_struggle.png" with dissolve_cg
+        "The figure snaps it’s fingers and Sayori is hoisted into the air by the noose."
         "She struggles to break herself free."
         "She viciously claws at the rope, but only ends up cutting her fingers, loosening her grip on the rope."
         "I try to call out Sayori's name, but nothing comes out of me..."
@@ -1066,7 +1086,7 @@ label void2_m:
         m "Honestly, if she could disappear, that'd be great. She's useless!"
     else:
         m "Honestly, she’s dumb to be the real life hangman…"
-        
+
     m "But I know you aren’t stupid enough to mess up all our progress for those losers."
     m "Hahaha..."
     m "Ahem."
@@ -1078,4 +1098,3 @@ label void2_m:
     m "....My love...."
     stop music fadeout 2.0
     jump day3_start
-    
