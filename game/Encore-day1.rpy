@@ -2788,7 +2788,8 @@ if hangout1 == "Yuri":
         show yuri 2y5
         y "Please tell me what you think!"
         call showpoem (poem_y23, music = False, revert_music=False, paper="images/bg/poem_y2.jpg",img="yuri eyes",where=truecenter)
-        show yuri 1y6 at t11 zorder 1
+        show yuri 1y6 at face(y=600) zorder 1
+        show yuri at t11
         y "[player]."
         #she kind of flys back on screen at this point, see what you can do, try having her hop back (she's in his face at this point)
         show yuri 1y5
