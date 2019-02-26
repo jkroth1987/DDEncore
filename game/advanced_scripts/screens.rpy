@@ -504,7 +504,7 @@ style navigation_button_text:
     color "#ffff00"
     outlines [(4, "#b36100", 0, 0), (2, "#b36100", 2, 2)]
     hover_outlines [(4, "#cca424", 0, 0), (2, "#cca424", 2, 2)]
-    insensitive_outlines [(4, "#fce", 0, 0), (2, "#fce", 2, 2)]
+    insensitive_outlines [(4, "#ccbd8e", 0, 0), (2, "#ccbd8e", 2, 2)]
 
 
 ## Main Menu screen ############################################################
