@@ -219,7 +219,7 @@ style say_label:
     size gui.name_text_size
     xalign gui.name_xalign
     yalign 0.5
-    outlines [(3, "#b59", 0, 0), (1, "#b59", 1, 1)]
+    outlines [(3, "#cca424", 0, 0), (1, "#cca424", 1, 1)]
 
 style say_dialogue:
     xpos gui.text_xpos
