@@ -1061,7 +1061,7 @@ style pref_label_text:
     font "gui/font/RifficFree-Bold.ttf"
     size 24
     color "#fff"
-    outlines [(3, "#b59", 0, 0), (1, "#b59", 1, 1)]
+    outlines [(3, "#b3622c", 0, 0), (1, "#b3622c", 1, 1)]
     yalign 1.0
 
 style pref_vbox:
