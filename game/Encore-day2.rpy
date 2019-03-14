@@ -1385,7 +1385,7 @@ if hangout2 == "Natsuki":
     show natsuki 5n
     "In the corner of my eye I see Natsuki eyeing my suspiciously."
     "Oh, no...{w=0.38}she isn't assuming..."
-    #show natsuki unused sprite
+    show natsuki xul
     mc "I-{w=0.38}I mean...{w=0.38}I always love spending time with you all, and..."
     show yuri 1e
     "Seeing Natsuki's disappointed look derails my train of thought."
