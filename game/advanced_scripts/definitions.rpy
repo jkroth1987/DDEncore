@@ -105,6 +105,13 @@ define audio.closet_close = "sfx/closet-close.ogg"
 define audio.page_turn = "sfx/pageflip.ogg"
 define audio.fall = "sfx/fall.ogg"
 define audio.knocking = "mod_assets/knock.ogg" #knock-knock
+define audio.school = "mod_assets/audio/School Bell Sound Effect.ogg" #School Bell
+define audio.fingersnap = "mod_assets/audio/Finger-Snap_1.ogg" #FingerSnapForVoid
+define audio.neck = "mod_assets/audio/Neck_Break.ogg"
+define audio.bone = "mod_assets/audio/Bone.ogg"
+define audio.knife = "mod_assets/audio/Knife.ogg"
+define audio.stab = "mod_assets/audio/Stab.ogg"
+define audio.drop = "mod_assets/audio/Metal_Drop.ogg"
 #--Encore's New Music
 define audio.e1 = "<loop 0>mod_assets/audio/void1.ogg" #The Void (First Void Scene Music)
 define audio.f1 = "<loop 0>mod_assets/audio/mainmenu.ogg" #Doki Doki Forever (Main Menu Music, Doki Doki!~)
@@ -164,6 +171,8 @@ image bg n_void_1 = "mod_assets/bgs/n_v_1.png"
 image bg closet_dark = night("bg/closet.png")
 image bg closet_empty = "mod_assets/bgs/goodnight.png"
 image bg club_nothing = "mod_assets/bgs/Club+Empty+Night.png"
+image bg residential_dusk = "mod_assets/bgs/residential_dusk.png"
+image bg void_2 = "mod_assets/bgs/void_2.png"
 
 image glitch_color:
     ytile 3
@@ -1333,6 +1342,8 @@ define n = DynamicCharacter('n_name', image='natsuki', what_prefix='"', what_suf
 define y = DynamicCharacter('y_name', image='yuri', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed")
 define ny = Character('Nat & Yuri', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed")
 define e = Character('Echo', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed")
+define k = DynamicCharacter('k_name', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed")
+default k_name = "Keith"
 
 
 define _dismiss_pause = config.developer
@@ -1451,6 +1462,7 @@ default natsuki_23 = None
 #----Encore's CGs----
 image cg s_cg_1 = "mod_assets/cgs/sayori_cg1.png"
 image cg s_cg_2 pin = "mod_assets/cgs/sayori_cg_2_pin.png"
+image cg s_cg_day2 = "mod_assets/cgs/sayori_cg_day2.png"
 image cg s_cg_2 happy = "mod_assets/cgs/sayori_cg_2_happy.png"
 image cg s_cg_2 happy tears = "mod_assets/cgs/sayori_cg_2_happy_tears.png"
 image cg s_cg_2 relieved = "mod_assets/cgs/sayori_cg_2_relieved.png"
@@ -1458,6 +1470,7 @@ image cg s_cg_2 pucker = "mod_assets/cgs/sayori_cg_2_pucker.png"
 image cg s_cg_3 = "mod_assets/cgs/sayori_cg3.png"
 image cg n_cg_1 = "mod_assets/cgs/natsuki_hug.png"
 image cg m_cg_1 = "mod_assets/cgs/monika_cg_1.png"
+image cg y_cg_1 = "mod_assets/cgs/yuri_cg_1.png"
 image cg rr1 = "mod_assets/cgs/rainbow_road1.png"
 image cg rr2 = "mod_assets/cgs/rainbow_road2.png"
 image cg rr3 = "mod_assets/cgs/rainbow_road3.png"
@@ -1468,7 +1481,11 @@ image cg door 2 = "mod_assets/cgs/The_Door_Opens.png"
 #Encore's New Sprites
 image monika s = "mod_assets/sprites/ms.png"
 image monika s2 = "mod_assets/sprites/ms2.png"
+image monika snap = "mod_assets/sprites/The_Snap1.png"
 image monika attack = shadow("mod_assets/sprites/Shadow_Attack.png")
+image monika cute = "mod_assets/sprites/monika cute.png"
+image shadow_attack = "mod_assets/sprites/Shadow_Attack.png"
+image shadow_attack_bloody = "mod_assets/sprites/Shadow_Attack_Bloody.png"
 image monika u113342 = im.Composite((960, 960), (0, 0), "mod_assets/character_images/monika/1_uniform/1_body_left/1.png", (0, 0), "mod_assets/character_images/monika/1_uniform/2_body_right/1.png", (0, 0), "mod_assets/character_images/monika/2_face/base.png", (0, 0), "mod_assets/character_images/monika/2_face/1_mouth/3.png", (0, 0), "mod_assets/character_images/monika/2_face/2_nose/3.png", (0, 0), "mod_assets/character_images/monika/2_face/3_eyes/4.png", (0, 0), "mod_assets/character_images/monika/2_face/4_eyebrows/2.png")
 image monika u114113 = im.Composite((960, 960), (0, 0), "mod_assets/character_images/monika/1_uniform/1_body_left/1.png", (0, 0), "mod_assets/character_images/monika/1_uniform/2_body_right/1.png", (0, 0), "mod_assets/character_images/monika/2_face/base.png", (0, 0), "mod_assets/character_images/monika/2_face/1_mouth/4.png", (0, 0), "mod_assets/character_images/monika/2_face/2_nose/1.png", (0, 0), "mod_assets/character_images/monika/2_face/3_eyes/1.png", (0, 0), "mod_assets/character_images/monika/2_face/4_eyebrows/3.png")
 image monika u114311 = im.Composite((960, 960), (0, 0), "mod_assets/character_images/monika/1_uniform/1_body_left/1.png", (0, 0), "mod_assets/character_images/monika/1_uniform/2_body_right/1.png", (0, 0), "mod_assets/character_images/monika/2_face/base.png", (0, 0), "mod_assets/character_images/monika/2_face/1_mouth/4.png", (0, 0), "mod_assets/character_images/monika/2_face/2_nose/3.png", (0, 0), "mod_assets/character_images/monika/2_face/3_eyes/1.png", (0, 0), "mod_assets/character_images/monika/2_face/4_eyebrows/1.png")
@@ -1504,6 +1521,9 @@ image natsuki u112212 = im.Composite((960, 960), (0, 0), "mod_assets/character_i
 image natsuki u111233 = im.Composite((960, 960), (0, 0), "mod_assets/character_images/natsuki/1_uniform/1_body_left/1.png", (0, 0), "mod_assets/character_images/natsuki/1_uniform/2_body_right/1.png", (0, 0), "mod_assets/character_images/natsuki/2_face_def/base.png", (0, 0), "mod_assets/character_images/natsuki/2_face_def/1_mouth/1.png", (0, 0), "mod_assets/character_images/natsuki/2_face_def/2_nose/2.png", (0, 0), "mod_assets/character_images/natsuki/2_face_def/3_eyes/3.png", (0, 0), "mod_assets/character_images/natsuki/2_face_def/4_eyebrows/3.png")
 image natsuki u116113 = im.Composite((960, 960), (0, 0), "mod_assets/character_images/natsuki/1_uniform/1_body_left/1.png", (0, 0), "mod_assets/character_images/natsuki/1_uniform/2_body_right/1.png", (0, 0), "mod_assets/character_images/natsuki/2_face_def/base.png", (0, 0), "mod_assets/character_images/natsuki/2_face_def/1_mouth/6.png", (0, 0), "mod_assets/character_images/natsuki/2_face_def/2_nose/1.png", (0, 0), "mod_assets/character_images/natsuki/2_face_def/3_eyes/1.png", (0, 0), "mod_assets/character_images/natsuki/2_face_def/4_eyebrows/3.png")
 
+image natsuki_silhouette = "mod_assets/sprites/natsuki_silhouette.png"
+image natsuki_pain = "mod_assets/sprites/Breaking_Neck.png"
+image natsuki_rip = "mod_assets/sprites/n_kill.png"
 image natsuki xu2131 = im.Composite((960, 960), (0, 0), "mod_assets/character_images/natsuki/1_xrossed_arms/1_body/u.png", (18, 22), "mod_assets/character_images/natsuki/2_face_def/base.png", (18, 22), "mod_assets/character_images/natsuki/2_face_def/1_mouth/2.png", (18, 22), "mod_assets/character_images/natsuki/2_face_def/2_nose/1.png", (18, 22), "mod_assets/character_images/natsuki/2_face_def/3_eyes/3.png", (18, 22), "mod_assets/character_images/natsuki/2_face_def/4_eyebrows/1.png")
 image natsuki xu2143 = im.Composite((960, 960), (0, 0), "mod_assets/character_images/natsuki/1_xrossed_arms/1_body/u.png", (18, 22), "mod_assets/character_images/natsuki/2_face_def/base.png", (18, 22), "mod_assets/character_images/natsuki/2_face_def/1_mouth/2.png", (18, 22), "mod_assets/character_images/natsuki/2_face_def/2_nose/1.png", (18, 22), "mod_assets/character_images/natsuki/2_face_def/3_eyes/4.png", (18, 22), "mod_assets/character_images/natsuki/2_face_def/4_eyebrows/3.png")
 image natsuki xu1146 = im.Composite((960, 960), (0, 0), "mod_assets/character_images/natsuki/1_xrossed_arms/1_body/u.png", (18, 22), "mod_assets/character_images/natsuki/2_face_def/base.png", (18, 22), "mod_assets/character_images/natsuki/2_face_def/1_mouth/1.png", (18, 22), "mod_assets/character_images/natsuki/2_face_def/2_nose/1.png", (18, 22), "mod_assets/character_images/natsuki/2_face_def/3_eyes/4.png", (18, 22), "mod_assets/character_images/natsuki/2_face_def/4_eyebrows/6.png")
@@ -1512,6 +1532,11 @@ image natsuki u112172 = im.Composite((960, 960), (0, 0), "mod_assets/character_i
 image natsuki u212172 = im.Composite((960, 960), (0, 0), "mod_assets/character_images/natsuki/1_uniform/1_body_left/2.png", (0, 0), "mod_assets/character_images/natsuki/1_uniform/2_body_right/1.png", (0, 0), "mod_assets/character_images/natsuki/2_face_def/base.png", (0, 0), "mod_assets/character_images/natsuki/2_face_def/1_mouth/2.png", (0, 0), "mod_assets/character_images/natsuki/2_face_def/2_nose/1.png", (0, 0), "mod_assets/character_images/natsuki/2_face_def/3_eyes/7.png", (0, 0), "mod_assets/character_images/natsuki/2_face_def/4_eyebrows/2.png")
 
 image s_kill = "mod_assets/sprites/s_kill.png"
+image crayori_1 = "mod_assets/sprites/Crayori_1.png"
+image crayori_2 = "mod_assets/sprites/Crayori_2.png"
+image sayori_end_1 = "mod_assets/sprites/end-glitch1.png"
+image sayori_end_2 = "mod_assets/sprites/end-glitch2.png"
+image sayori_silhouette = "mod_assets/sprites/sayori_silhouette.png"
 image sayori u114152 = im.Composite((960, 960), (0, 0), "mod_assets/character_images/sayori/1_uniform/1_body_left/1.png", (0, 0), "mod_assets/character_images/sayori/1_uniform/2_body_right/1.png", (0, 0), "mod_assets/character_images/sayori/2_face/base.png", (0, 0), "mod_assets/character_images/sayori/2_face/1_mouth/4.png", (0, 0), "mod_assets/character_images/sayori/2_face/2_nose/1.png", (0, 0), "mod_assets/character_images/sayori/2_face/3_eyes/5.png", (0, 0), "mod_assets/character_images/sayori/2_face/4_eyebrows/2.png")
 image sayori u115313 = im.Composite((960, 960), (0, 0), "mod_assets/character_images/sayori/1_uniform/1_body_left/1.png", (0, 0), "mod_assets/character_images/sayori/1_uniform/2_body_right/1.png", (0, 0), "mod_assets/character_images/sayori/2_face/base.png", (0, 0), "mod_assets/character_images/sayori/2_face/1_mouth/5.png", (0, 0), "mod_assets/character_images/sayori/2_face/2_nose/3.png", (0, 0), "mod_assets/character_images/sayori/2_face/3_eyes/1.png", (0, 0), "mod_assets/character_images/sayori/2_face/4_eyebrows/3.png")
 image sayori u112313 = im.Composite((960, 960), (0, 0), "mod_assets/character_images/sayori/1_uniform/1_body_left/1.png", (0, 0), "mod_assets/character_images/sayori/1_uniform/2_body_right/1.png", (0, 0), "mod_assets/character_images/sayori/2_face/base.png", (0, 0), "mod_assets/character_images/sayori/2_face/1_mouth/2.png", (0, 0), "mod_assets/character_images/sayori/2_face/2_nose/3.png", (0, 0), "mod_assets/character_images/sayori/2_face/3_eyes/1.png", (0, 0), "mod_assets/character_images/sayori/2_face/4_eyebrows/3.png")
@@ -1531,11 +1556,12 @@ image sayori c114312 = im.Composite((960, 960), (0, 0), "mod_assets/character_im
 image sayori c111352 = im.Composite((960, 960), (0, 0), "mod_assets/character_images/sayori/1_casual/1_body_left/1.png", (0, 0), "mod_assets/character_images/sayori/1_casual/2_body_right/1.png", (0, 0), "mod_assets/character_images/sayori/2_face/base.png", (0, 0), "mod_assets/character_images/sayori/2_face/1_mouth/1.png", (0, 0), "mod_assets/character_images/sayori/2_face/2_nose/3.png", (0, 0), "mod_assets/character_images/sayori/2_face/3_eyes/5.png", (0, 0), "mod_assets/character_images/sayori/2_face/4_eyebrows/2.png")
 image sayori u111222 = im.Composite((960, 960), (0, 0), "mod_assets/character_images/sayori/1_uniform/1_body_left/1.png", (0, 0), "mod_assets/character_images/sayori/1_uniform/2_body_right/1.png", (0, 0), "mod_assets/character_images/sayori/2_face/base.png", (0, 0), "mod_assets/character_images/sayori/2_face/1_mouth/1.png", (0, 0), "mod_assets/character_images/sayori/2_face/2_nose/2.png", (0, 0), "mod_assets/character_images/sayori/2_face/3_eyes/2.png", (0, 0), "mod_assets/character_images/sayori/2_face/4_eyebrows/2.png")
 image sayori u222141 = im.Composite((960, 960), (0, 0), "mod_assets/character_images/sayori/1_uniform/1_body_left/2.png", (0, 0), "mod_assets/character_images/sayori/1_uniform/2_body_right/2.png", (0, 0), "mod_assets/character_images/sayori/2_face/base.png", (0, 0), "mod_assets/character_images/sayori/2_face/1_mouth/2.png", (0, 0), "mod_assets/character_images/sayori/2_face/2_nose/1.png", (0, 0), "mod_assets/character_images/sayori/2_face/3_eyes/4.png", (0, 0), "mod_assets/character_images/sayori/2_face/4_eyebrows/1.png")
-
-
-
-
 image sayori u121341 = im.Composite((960, 960), (0, 0), "mod_assets/character_images/sayori/1_uniform/1_body_left/1.png", (0, 0), "mod_assets/character_images/sayori/1_uniform/2_body_right/2.png", (0, 0), "mod_assets/character_images/sayori/2_face/base.png", (0, 0), "mod_assets/character_images/sayori/2_face/1_mouth/1.png", (0, 0), "mod_assets/character_images/sayori/2_face/2_nose/3.png", (0, 0), "mod_assets/character_images/sayori/2_face/3_eyes/4.png", (0, 0), "mod_assets/character_images/sayori/2_face/4_eyebrows/1.png")
+
+image yuri_silhouette = "mod_assets/sprites/yuri_silhouette.png"
+image yuri_prestab = "mod_assets/sprites/yuri_prestab.png"
+image yuri_stab = "mod_assets/sprites/yuri_stab.png"
+image yuri_rip = "mod_assets/cgs/yuri_rip.png"
 image yuri u122218 = im.Composite((960, 960), (0, 0), "mod_assets/character_images/yuri/1_uniform/1_body_left/1.png", (0, 0), "mod_assets/character_images/yuri/1_uniform/2_body_right/2.png", (0, 0), "mod_assets/character_images/yuri/2_face/base.png", (0, 0), "mod_assets/character_images/yuri/2_face/1_mouth/2.png", (0, 0), "mod_assets/character_images/yuri/2_face/2_nose/2.png", (0, 0), "mod_assets/character_images/yuri/2_face/3_eyes/1.png", (0, 0), "mod_assets/character_images/yuri/2_face/4_eyebrows/8.png")
 image yuri u114221 = im.Composite((960, 960), (0, 0), "mod_assets/character_images/yuri/1_uniform/1_body_left/1.png", (0, 0), "mod_assets/character_images/yuri/1_uniform/2_body_right/1.png", (0, 0), "mod_assets/character_images/yuri/2_face/base.png", (0, 0), "mod_assets/character_images/yuri/2_face/1_mouth/4.png", (0, 0), "mod_assets/character_images/yuri/2_face/2_nose/2.png", (0, 0), "mod_assets/character_images/yuri/2_face/3_eyes/2.png", (0, 0), "mod_assets/character_images/yuri/2_face/4_eyebrows/1.png")
 image yuri u125111 = im.Composite((960, 960), (0, 0), "mod_assets/character_images/yuri/1_uniform/1_body_left/1.png", (0, 0), "mod_assets/character_images/yuri/1_uniform/2_body_right/2.png", (0, 0), "mod_assets/character_images/yuri/2_face/base.png", (0, 0), "mod_assets/character_images/yuri/2_face/1_mouth/5.png", (0, 0), "mod_assets/character_images/yuri/2_face/2_nose/1.png", (0, 0), "mod_assets/character_images/yuri/2_face/3_eyes/1.png", (0, 0), "mod_assets/character_images/yuri/2_face/4_eyebrows/1.png")

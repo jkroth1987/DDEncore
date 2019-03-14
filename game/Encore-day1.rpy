@@ -5,17 +5,17 @@
     with dissolve_scene_full
     $ style.say_window = style.window_encore
     mc "Uggghhhh..."
-    "As I regain consciousness, I’m greeted with a sharp pain in my forehead."
+    "As I regain consciousness, I’m greeted by a sharp pain in my forehead."
     mc "AGH!"
     "This pain is almost unbearable!"
-    "I stand up slowly, clutching my forehead in attempt to nurse the stinging pain."
+    "I stand up slowly, clutching my forehead in attempt to nurse this stinging pain."
     mc "W-{w=0.28}what…{w=0.28} What just happened?"
     "I groggily open my eyes."
     "..."
-    mc "W-{w=0.28}What the fuck?"
     $ renpy.pause(delay=0.001)
     scene bg void
     play music e1
+    mc "W-{w=0.28}What the fuck?"
     mc "Where am I??? WHAT IS THIS????"
     "I look around in all directions, but as far as the eye can see, there's nothing but black, empty space."
     mc "H-{w=0.38}Hello?"
@@ -105,7 +105,7 @@ label day1_beginning:
     "But, that hasn't stopped me from learning some pretty unexpected things about her."
     "The more time I spent around Sayori, the more I realized that something was off about her..."
     "I finally found out just what it was last Sunday, when Sayori admitted to me that she had been dealing with depression all her life..."
-    "If that wasn’t already alot for me take in at the time, she also confessed her feelings for me."
+    "If that wasn’t already a lot for me take in at the time, she also confessed her feelings for me."
     "So, I decided on that day to tell her how I felt."
 
     if encore_sayoriquestion_1 == False:
@@ -131,7 +131,7 @@ label day1_beginning:
         "Lately, I’ve accidentally picked up on Sayori’s habit of sleeping in."
         "Dealing with the stress of everything in the last two weeks has really taken a bigger toll on me than I first realized."
         "Sayori has now made it a habit of her morning routine to make sure that I don’t oversleep."
-        "At least Sayori seems to be doing a lot better now..."
+        "At least Sayori seems to be doing much better now..."
 
     "Wait...{w=0.28} what time is it???"
     "I hurriedly check my alarm clock."
@@ -140,23 +140,23 @@ label day1_beginning:
     scene bg bedroom
     with wipeleft_scene
     "And so another ordinary day of school awaits me."
-    "At least we finally get to have our first club meeting since the festival!"
+    "At least we finally get to have our first club meeting since the festival."
     "While doing an abridged version of my morning routine, the memories of the last two weeks come rushing back into my mind."
     "I remember timidly introducing myself to the club for the first time, not expecting it to have such incredibly cute girls..."
-    "And I remember having to endure their scrunity of my mediocre poems..."
+    "Nor did I imaigne having to endure their scrunity of my mediocre poems..."
     "Forutnately, not everything as of late has been super stressful or tense."
 
     if encore_festivalquestion_2 == "Natsuki":
         pass # Temporary
-        "I got the chance to know Natsuki a little bit better as we prepared for the festival."
-        "I fondly recall back to that Sunday where we spent the afternoon baking the cupcakes..."
+        "I got the chance to get to know Natsuki a little bit better as we prepared for the festival."
+        "I fondly recall back to last Sunday where we spent the afternoon baking the cupcakes..."
         "A smile comes across my face as I remember the 'icing' incident..."
 
 
     elif encore_festivalquestion_2 == "Yuri":
         pass # Temporary
-        "I got the chance to know Yuri a little bit better as we prepared for the festival."
-        "I fondly recall back to that Sunday where we spent the afternoon working on the banner..."
+        "I got the chance to get to know Yuri a little bit better as we prepared for the festival."
+        "I fondly recall back to last Sunday where we spent the afternoon working on the banner..."
         "A smile comes across my face as I remember the 'towel' incident..."
 
 
@@ -183,8 +183,9 @@ label day1_beginning:
         "She wouldn't let me out of her sight for some reason..."
 
 
-    s "We're gonna be late if you don't get up, [player]!"
-    mc "Alright, alright, I’m almost ready!"
+    s "[player]!"
+    s "Are you almost ready? We're going to be late!"
+    mc "Just hang on!"
     "I look in the mirror to see how I look."
     "Currently, I'm too tired to really pay much attention to my appearance."
     mc "Eh, that oughta do..."
@@ -229,7 +230,7 @@ label day1_beginning:
     "...and how it makes her want to avoid being a burden on other people...especially me."
     mc "Hey, hey, hey...{w=0.28} it's not your fault, really! Honestly, I feel a lot more rested now."
     "Sayori's face returns to her gleeful expression."
-    s 3r "Hehe... well that's good!"
+    s 3r "Hehe...{w=0.28} well that's good!"
     "She says with a thankful relief in her voice."
     "I really need to be more careful with what I say around her."
 
@@ -334,16 +335,16 @@ label day1_beginning:
 
     scene bg corridor
     with wipeleft_scene
-    "We're able to make it just in time for the morning bell."
-    "I walk with Sayori through the crowd of other students all on their way to their first class."
-    "It feels nice being able to walk the halls with Sayori again."
-    "I actually didn't realize how much I missed walking with her until we started picking it up again."
-    "Some of our fondest memories with each other are actually witnessing or participating in whatever shenanigans were happening in the school's halls..."
-    "Even walking through the halls now, we always find something to laugh at..."
+    "As soon as we arrive to school, the morning bell rings, making all the other students scramble to reach their first period."
+    "Walking through the mass of other students, I can't help but reminisce at some the memories I've had with Sayori in these halls."
+    "I didn't really realize how much I've missed out on enjoying the craziness in the hallways before classes until I started walking with Sayori again."
+    "Some of our fondest memories with each other were witnessing or participating in whatever shenanigans were happening in the school's halls..."
+    "In hindsight, that's probably why our school started using hall monitors..."
+    "Still, hall monitors or not, we always find something to laugh at..."
     with wipeleft_scene
     "After a few minutes of navigating our way through the crowded hallways, we finally get to Sayori's first class."
     show sayori 1c at t11 zorder 1
-    s "So...{w=0.28} I guess this is my stop."
+    s "So...{w=0.28}I guess this is my stop."
     "I can't help but to detect an ounce of disappointment in her voice as she says that."
 
     if encore_sayoriquestion_1 == True:
@@ -378,6 +379,7 @@ label day1_beginning:
     scene bg class_day
     with wipeleft_scene
     "The school day is as ordinary and boring as ever, listening to the same old teachers teaching the same old things."
+    play sound school
     "Eventually, my torment comes to an end as the final bell rings throughout the school."
     "That means it's time for the literature club!"
     "As I leave my class and walk through the door, I see Sayori standing outside."
@@ -389,10 +391,10 @@ label day1_beginning:
     with wipeleft_scene
     "We go up through the same familiar set of stairs and distant corridors that lead straight to the clubroom."
     "I've been wondering all day if anyone new will stop by today."
-    "We got a whole week away from the club after the festival, though Monika still expected us to spread the word about the club."
+    "We got a whole week away from the club after the festival, though Monika still expected us to spread the word around about the club."
     "I’d say that our performances at the festival were pretty well received."
     "Not to menton, we had pretty good turnout for our event. The audience seemed to love our performances."
-    "I’m just glad my performance wasn’t an embarrassment."
+    "Though, I’m just glad I didn't end up embarrassing myself."
     "Truth be told, I still feel somewhat guilty for just using a poem I found online."
     "Especially considering the others actually took the time and effort to write their poems for the festival."
     "Not long after my train of thought ends, we finally arrive at the clubroom."
@@ -428,7 +430,7 @@ label day1_beginning:
     show yuri 3f at t33 zorder 3
     n "She's probably sulking that nobody decided to sign up."
     y 1r "Natsuki...{w=0.28} maybe you should be a little bit more understanding of Monika's feelings..."
-    y 1l "This festival did mean alot to her after all."
+    y 1l "The festival did mean a lot to her, after all."
     n 5g "I know that! But, I still don't see what's the big deal with getting new people."
     n 5h "I'm fine with what we have right now."
     y 2f "I am too, but try to be a little considerate when Monika comes in."
@@ -466,14 +468,17 @@ label day1_beginning:
     mc "Oh...{w=0.38}hey, Monika! We were just...{w=0.38}um..."
     "All words escape me in this situation."
     "I look to the other girls to bail me out of this situation, but nobody has anything to say."
-    m 1r "*sighs*, It's alright, [player]."
+    m 1r "*sighs*"
+    show monika 1q
+    m "It's alright, [player]."
     m 1d "Everyone, take a seat."
     call groupAll(4, 3, 4, 2, 1) from _call_groupAll_2
     show monika 1d at t41 zorder 1
     show yuri 3o at t44 zorder 4
     show natsuki 5s at t42 zorder 2
     show sayori 1k at t43 zorder 3
-    "Everyone takes a seat at the front row of desks in the room, as Monika paces the floor in front of us."
+    "Everyone takes a seat in the front row as Monika looks on."
+    "Monika starts slowly pacing the floor in front of us."
     "Yeah...{w=0.38}she's not in a good mood."
     m 1i "So, it's true that despite the glowing reviews we got at the festival,{w=0.38} nobody signed up to join our club."
     show natsuki 5u
@@ -562,7 +567,7 @@ label day1_beginning:
 
     elif encore_sayoriquestion_1 == True and encore_festivalquestion_2 == "Yuri":
         "After a moment of silence, Yuri is the first to speak up."
-        y 2q "Uhm...{w=0.38}h-hey...{w=0.38}Monika..."
+        y 2q "Uhm...{w=0.38}h-{w=0.38}hey...{w=0.38}Monika..."
         show monika 1h
         show yuri 3o
         "Monika turns her full attention to Yuri, her intense expression only makes Yuri only more visibly uncomfortable."
@@ -648,7 +653,7 @@ m 1b "Yeah...{w=0.38}you’re right everyone!"
 m 1k "I don’t know why I was getting so hung up over this!"
 m 1l "I just...{w=0.38}I just wanted to push our club to new heights!"
 m 1e "It’s my responsibility as the club’s president to grow our club and to share what we have with others."
-m 1b "But I'm happy with what we have now if you all are."
+m 1b "But, I'm happy with what we have now if you all are."
 "We all look to each other and nod."
 n 4l "Yeah! I love what we have now! It's quality over quantity."
 y 2d "I must admit I enjoy what we have now, and adding new members may make the feeling that has welcomed us unrecognizable."
@@ -716,17 +721,17 @@ if encore_sayoriquestion_1 == True:
             "I proceed to exchange my poem with the rest of the club members, who all seem to generally like it."
             show yuri 1a at t11 zorder 1
             "Unsurprisingly, Yuri came to me first, excited for us to exchange poems."
-            "Despite the rather interesting exchange that I had with Yuri, she acts as if it didn't happen and gives me useful feedback."
+            "Despite the rather interesting exchange that I had with Yuri earlier, she tries to act as if it didn't happen and gives me useful feedback."
             show yuri 1w
             "Yuri's poem was in her usual style of being deep and sophisticated, but it was unusually depressing for what she usually writes about."
             show yuri 1g
             "Through my best interpretation of her poem, it seemed like it was about a struggle for attention, love and acceptance."
-            "I also happened to notice that during our time together, she seemed unusually unfocused, as if her mind is elsewhere."
-            "Likely out of guilt for being angry when I was around her today..."
+            "During my time with Yuri, I couldn't help but notice that she seemed unusually unfocused, as if her mind is elsewhere."
+            "Though it was likely out of guilt for being angry when I was around her today..."
             show yuri at thide
             hide yuri
             show monika 1r at t11 zorder 1
-            "While sharing my poem with Monika, I can tell that the festival was still on her mind, but she definitely seemed to be a lot better now than at the start of the club."
+            "While sharing my poem with Monika, I could tell that the festival was still on her mind, but she's seemed to have more or less moved on from it."
             show monika 3k
             "Monika complimented me on how far I’ve come as a writer and noted how my style was becoming more and more similar to Sayori’s."
             show monika 5a at t11 zorder 1
@@ -744,7 +749,7 @@ if encore_sayoriquestion_1 == True:
             show natsuki 5t
             "She, of course, gave some advice as usual, but it came off more as her just complimenting my work."
             show natsuki 5u
-            "But she really struggled to make eye contact with me, either out of jealousy that I didn't spend time with her today..."
+            "But Natsuki really struggled to make eye contact with me, either out of jealousy that I didn't spend time with her today..."
             "Or the fact that last Sunday was still on her mind…"
             "I have to tell her about me and Sayori sooner or later, but there's no telling how she'll take it..."
             show natsuki 4f
@@ -780,7 +785,7 @@ if encore_sayoriquestion_1 == True:
             "I proceed to exchange my poem with the rest of the club members, who all seem to generally like it."
             show yuri 1a at t11 zorder 1
             "Unsurprisingly, Yuri came to me first, excited for us to exchange poems."
-            "Despite the rather interesting exchange that I had with Yuri, she acts as if it didn't happen and gives me useful feedback."
+            "Despite the rather interesting exchange that I had with Yuri earlier, she tries to act as if it didn't happen and gives me useful feedback."
             "Yuri seems to really enjoy my poem. She compliments me on how far I've progressed as a writer and tells me to keep up the good work."
             show yuri 1k
             "Yuri's poem was in her usual style of being deep and sophisticated, but it was unusually depressing for what she usually writes about."
@@ -801,7 +806,7 @@ if encore_sayoriquestion_1 == True:
             show yuri at thide
             hide yuri
             show monika 1r at t11 zorder 1
-            "While sharing my poem with Monika, I can tell that the festival was still on her mind, but she definitely seemed to be a lot better now than at the start of the club."
+            "While sharing my poem with Monika, I could tell that the festival was still on her mind, but she's seemed to have more or less moved on from it."
             show monika 3k
             "Monika complimented me on how far I’ve come as a writer and noted how my style was becoming more and more similar to Sayori’s."
             show monika 5a at t11 zorder 1
@@ -855,18 +860,18 @@ if encore_sayoriquestion_1 == False:
             "I proceed to exchange my poem with the rest of the club members, who all seem to generally like it."
             show yuri 1a at t11 zorder 1
             "Unsurprisingly, Yuri came to me first, excited for us to exchange poems."
-            "Despite the rather interesting exchange that I had with Yuri, she acts as if it didn't happen and gives me useful feedback."
+            "Despite the rather interesting exchange that I had with Yuri earlier, she tries to act as if it didn't happen and gives me useful feedback."
             show yuri 1w
             "Yuri's poem was in her usual style of being deep and sophisticated, but it was unusually depressing for what she usually writes about."
             show yuri 1g
             "Through my best interpretation of her poem, it seemed like it was about a struggle for attention, love and acceptance."
             show yuri 1k
-            "I also happened to notice that during our time together, she seemed unusually unfocused, as if her mind is elsewhere."
-            "Likely out of guilt for being angry when I was around her today..."
+            "During my time with Yuri, I couldn't help but notice that she seemed unusually unfocused, as if her mind is elsewhere."
+            "Though it was likely out of guilt for being angry when I was around her today..."
             show yuri at thide
             hide yuri
             show monika 1r at t11 zorder 1
-            "While sharing my poem with Monika, I can tell that the festival was still on her mind, but she definitely seemed to be a lot better now than at the start of the club."
+            "While sharing my poem with Monika, I could tell that the festival was still on her mind, but she's seemed to have more or less moved on from it."
             show monika 3k
             "Monika complimented me on how far I’ve come as a writer and noted how my style was suddenly becoming like Sayori's."
             show monika 5a at t11 zorder 1
@@ -884,7 +889,7 @@ if encore_sayoriquestion_1 == False:
             show natsuki 5t
             "She, of course, gave some advice as usual, but it came off more as her just complimenting my work."
             show natsuki 5u
-            "But she really struggled to make eye contact with me, either out of jealousy that I didn't spend time with her today..."
+            "But Natsuki really struggled to make eye contact with me, either out of jealousy that I didn't spend time with her today..."
             "Or the fact that last Sunday was still on her mind…"
             show natsuki 5n
             "Not that I can blame her."
@@ -907,7 +912,8 @@ if encore_sayoriquestion_1 == False:
             show sayori 1y
             "It was about about two friends, a boy and a girl, who had known each other for a long time."
             show sayori 1t
-            "When the girl finally confessed her feelings to the boy at his house, the boy hesitantly rejected her and walked back into his house..."
+            "When the girl finally confessed her feelings to the boy at his house..."
+            "The boy hesitantly rejected her and walked back into his house..."
             "But oddly enough let the door open..."
             show sayori 1k
             "Reading Sayori’s poem really made me feel guilty about what happened last Sunday."
@@ -935,7 +941,7 @@ if encore_sayoriquestion_1 == False:
             "I proceed to exchange my poem with the rest of the club members, who all seem to generally like it."
             show yuri 1a at t11 zorder 1
             "Unsurprisingly, Yuri came to me first, excited for us to exchange poems."
-            "Despite the rather interesting exchange that I had with Yuri, she acts as if it didn't happen and gives me useful feedback."
+            "Despite the rather interesting exchange that I had with Yuri earlier, she tries to act as if it didn't happen and gives me useful feedback."
             "Yuri seems to really enjoy my poem. She compliments me on how far I've progressed as a writer and tells me to keep up the good work."
             show yuri 1k
             "Yuri's poem was in her usual style of being deep and sophisticated, but it was unusually depressing for what she usually writes about."
@@ -954,7 +960,7 @@ if encore_sayoriquestion_1 == False:
             show yuri at thide
             hide yuri
             show monika 1r at t11 zorder 1
-            "While sharing my poem with Monika, I can tell that the festival was still on her mind, but she definitely seemed to be a lot better now than at the start of the club."
+            "While sharing my poem with Monika, I could tell that the festival was still on her mind, but she's seemed to have more or less moved on from it."
             show monika 3k
             "Monika complimented me on how far I’ve come as a writer and noted how my style was suddenly becoming like Sayori's."
             show monika 5a at t11 zorder 1
@@ -994,7 +1000,8 @@ if encore_sayoriquestion_1 == False:
             show sayori 1y
             "It was about about two friends, a boy and a girl, who had known each other for a long time."
             show sayori 1t
-            "When the girl finally confessed her feelings to the boy at his house, the boy hesitantly rejected her and walked back into his house..."
+            "When the girl finally confessed her feelings to the boy at his house..."
+            "The boy hesitantly rejected her and walked back into his house..."
             "But oddly enough let the door open..."
             show sayori 1k
             "Reading Sayori’s poem really made me feel guilty about what happened last Sunday..."
@@ -1027,18 +1034,18 @@ if encore_sayoriquestion_1 == False:
             "I proceed to exchange my poem with the rest of the club members, who all seem to generally like it."
             show yuri 1a at t11 zorder 1
             "Unsurprisingly, Yuri came to me first, excited for us to exchange poems."
-            "Despite the rather interesting exchange that I had with Yuri, she acts as if it didn't happen and gives me useful feedback."
+            "Despite the rather interesting exchange that I had with Yuri earlier, she tries to act as if it didn't happen and gives me useful feedback."
             show yuri 1w
             "Yuri's poem was in her usual style of being deep and sophisticated, but it was unusually depressing for what she usually writes about."
             show yuri 1g
             "Through my best interpretation of her poem, it seemed like it was about a struggle for attention, love and acceptance."
             show yuri 1k
-            "I also happened to notice that during our time together, she seemed unusually unfocused, as if her mind is elsewhere."
-            "Likely out of guilt for being angry when I was around her today..."
+            "During my time with Yuri, I couldn't help but notice that she seemed unusually unfocused, as if her mind is elsewhere."
+            "Though it was likely out of guilt for being angry when I was around her today..."
             show yuri at thide
             hide yuri
             show monika 1r at t11 zorder 1
-            "While sharing my poem with Monika, I can tell that the festival was still on her mind, but she definitely seemed to be a lot better now than at the start of the club."
+            "While sharing my poem with Monika, I could tell that the festival was still on her mind, but she's seemed to have more or less moved on from it."
             show monika 3k
             "Monika complimented me on how far I’ve come as a writer and noted how my style was becoming more and more like Natsuki's."
             show monika 5a at t11 zorder 1
@@ -1061,7 +1068,8 @@ if encore_sayoriquestion_1 == False:
             show sayori 1y
             "It was about about two friends, a boy and a girl, who had known each other for a long time."
             show sayori 1t
-            "When the girl finally confessed her feelings to the boy at his house, the boy hesitantly rejected her and walked back into his house..."
+            "When the girl finally confessed her feelings to the boy at his house..."
+            "The boy hesitantly rejected her and walked back into his house..."
             "But oddly enough let the door open..."
             show sayori 1k
             "Reading Sayori’s poem really made me feel guilty about what happened last Sunday..."
@@ -1104,7 +1112,7 @@ if encore_sayoriquestion_1 == False:
             "I proceed to exchange my poem with the rest of the club members, who all seem to generally like it."
             show yuri 1a at t11 zorder 1
             "Unsurprisingly, Yuri came to me first, excited for us to exchange poems."
-            "Despite the rather interesting exchange that I had with Yuri, she acts as if it didn't happen and gives me useful feedback."
+            "Despite the rather interesting exchange that I had with Yuri earlier, she tries to act as if it didn't happen and gives me useful feedback."
             "Yuri seems to really enjoy my poem. She compliments me on how far I've progressed as a writer and tells me to keep up the good work."
             show yuri 1k
             "Yuri's poem was in her usual style of being deep and sophisticated, but it was unusually depressing for what she usually writes about."
@@ -1122,7 +1130,7 @@ if encore_sayoriquestion_1 == False:
             show yuri at thide
             hide yuri
             show monika 1r at t11 zorder 1
-            "While sharing my poem with Monika, I can tell that the festival was still on her mind, but she definitely seemed to be a lot better now than at the start of the club."
+            "While sharing my poem with Monika, I could tell that the festival was still on her mind, but she's seemed to have more or less moved on from it."
             show monika 3k
             "Monika complimented me on how far I’ve come as a writer and noted how my style was suddenly becoming like Natsuki's."
             show monika 5a at t11 zorder 1
@@ -1145,7 +1153,8 @@ if encore_sayoriquestion_1 == False:
             show sayori 1y
             "It was about about two friends, a boy and a girl, who had known each other for a long time."
             show sayori 1t
-            "When the girl finally confessed her feelings to the boy at his house, the boy hesitantly rejected her and walked back into his house..."
+            "When the girl finally confessed her feelings to the boy at his house..."
+            "The boy hesitantly rejected her and walked back into his house..."
             "But oddly enough let the door open..."
             show sayori 1k
             "Reading Sayori’s poem really made me feel guilty about what happened last Sunday..."
@@ -1189,18 +1198,18 @@ if encore_sayoriquestion_1 == True:
             "I proceed to exchange my poem with the rest of the club members, who all seem to generally like it."
             show yuri 1a at t11 zorder 1
             "Unsurprisingly, Yuri came to me first, excited for us to exchange poems."
-            "Despite the rather interesting exchange that I had with Yuri, she acts as if it didn't happen and gives me useful feedback."
+            "Despite the rather interesting exchange that I had with Yuri earlier, she tries to act as if it didn't happen and gives me useful feedback."
             show yuri 1w
             "Yuri's poem was in her usual style of being deep and sophisticated, but it was unusually depressing for what she usually writes about."
             show yuri 1g
             "Through my best interpretation of her poem, it seemed like it was about a struggle for attention, love and acceptance."
             show yuri 1k
-            "I also happened to notice that during our time together, she seemed unusually unfocused, as if her mind is elsewhere."
-            "Likely out of guilt for being angry when I was around her today..."
+            "During my time with Yuri, I couldn't help but notice that she seemed unusually unfocused, as if her mind is elsewhere."
+            "Though it was likely out of guilt for being angry when I was around her today..."
             show yuri at thide
             hide yuri
             show monika 1r at t11 zorder 1
-            "While sharing my poem with Monika, I can tell that the festival was still on her mind, but she definitely seemed to be a lot better now than at the start of the club."
+            "While sharing my poem with Monika, I could tell that the festival was still on her mind, but she's seemed to have more or less moved on from it."
             show monika 3k
             "Monika complimented me on how far I’ve come as a writer and noted how my style was suddenly becoming like Natsuki's."
             show monika 5a at t11 zorder 1
@@ -1259,7 +1268,7 @@ if encore_sayoriquestion_1 == True:
             "I proceed to exchange my poem with the rest of the club members, who all seem to generally like it."
             show yuri 1a at t11 zorder 1
             "Unsurprisingly, Yuri came to me first, excited for us to exchange poems."
-            "Despite the rather interesting exchange that I had with Yuri, she acts as if it didn't happen and gives me useful feedback."
+            "Despite the rather interesting exchange that I had with Yuri earlier, she tries to act as if it didn't happen and gives me useful feedback."
             "Yuri seems to really enjoy my poem. She compliments me on how far I've progressed as a writer and tells me to keep up the good work."
             show yuri 1k
             "Yuri's poem was in her usual style of being deep and sophisticated, but it was unusually depressing for what she usually writes about."
@@ -1280,7 +1289,7 @@ if encore_sayoriquestion_1 == True:
             show yuri at thide
             hide yuri
             show monika 1r at t11 zorder 1
-            "While sharing my poem with Monika, I can tell that the festival was still on her mind, but she definitely seemed to be a lot better now than at the start of the club."
+            "While sharing my poem with Monika, I could tell that the festival was still on her mind, but she's seemed to have more or less moved on from it."
             show monika 3k
             "Monika complimented me on how far I’ve come as a writer and noted how my style was suddenly becoming like Natsuki's."
             show monika 5a at t11 zorder 1
@@ -1362,7 +1371,7 @@ if encore_sayoriquestion_1 == False:
             show natsuki at thide
             hide natsuki
             show monika 1r at t11 zorder 1
-            "While sharing my poem with Monika, I can tell that the festival was still on her mind, but she definitely seemed to be a lot better now than at the start of the club."
+            "While sharing my poem with Monika, I could tell that the festival was still on her mind, but she's seemed to have more or less moved on from it."
             show monika 3k
             "Monika complimented me on how far I’ve come as a writer and noted how my style was becoming more and more like Yuri's."
             show monika 5a at t11 zorder 1
@@ -1385,7 +1394,8 @@ if encore_sayoriquestion_1 == False:
             show sayori 1y
             "It was about about two friends, a boy and a girl, who had known each other for a long time."
             show sayori 1t
-            "When the girl finally confessed her feelings to the boy at his house, the boy hesitantly rejected her and walked back into his house..."
+            "When the girl finally confessed her feelings to the boy at his house..."
+            "The boy hesitantly rejected her and walked back into his house..."
             "But oddly enough let the door open..."
             show sayori 1k
             "Reading Sayori’s poem really made me feel guilty about what happened last Sunday..."
@@ -1436,7 +1446,7 @@ if encore_sayoriquestion_1 == False:
             show natsuki 5c
             "She, of course, gave some advice as usual, but it came off more as her just complimenting my work."
             show natsuki 5u
-            "But she really struggled to make eye contact with me, either out of jealousy that I didn't spend time with her today..."
+            "But Natsuki really struggled to make eye contact with me, either out of jealousy that I didn't spend time with her today..."
             "Or the fact that last Sunday was still on her mind…"
             show natsuki 5n
             "Not that I can blame her."
@@ -1450,7 +1460,7 @@ if encore_sayoriquestion_1 == False:
             show natsuki thide
             hide natsuki
             show monika 1r at t11 zorder 1
-            "While sharing my poem with Monika, I can tell that the festival was still on her mind, but she definitely seemed to be a lot better now than at the start of the club."
+            "While sharing my poem with Monika, I could tell that the festival was still on her mind, but she's seemed to have more or less moved on from it."
             show monika 3k
             "Monika complimented me on how far I’ve come as a writer and noted how my style was suddenly becoming like Yuri's."
             show monika 5a at t11 zorder 1
@@ -1473,7 +1483,8 @@ if encore_sayoriquestion_1 == False:
             show sayori 1y
             "It was about about two friends, a boy and a girl, who had known each other for a long time."
             show sayori 1t
-            "When the girl finally confessed her feelings to the boy at his house, the boy hesitantly rejected her and walked back into his house..."
+            "When the girl finally confessed her feelings to the boy at his house..."
+            "The boy hesitantly rejected her and walked back into his house..."
             "But oddly enough let the door open..."
             show sayori 1k
             "Reading Sayori’s poem really made me feel guilty about what happened last Sunday..."
@@ -1536,7 +1547,7 @@ if encore_sayoriquestion_1 == True:
             show natsuki at thide
             hide natsuki
             show monika 1r at t11 zorder 1
-            "While sharing my poem with Monika, I can tell that the festival was still on her mind, but she definitely seemed to be a lot better now than at the start of the club."
+            "While sharing my poem with Monika, I could tell that the festival was still on her mind, but she's seemed to have more or less moved on from it."
             show monika 3k
             "Monika complimented me on how far I’ve come as a writer and noted how my style was becoming more and more like Yuri's."
             show monika 5a at t11 zorder 1
@@ -1604,7 +1615,7 @@ if encore_sayoriquestion_1 == True:
             show natsuki 5c
             "She, of course, gave some advice as usual, but it came off more as her just complimenting my work."
             show natsuki 5u
-            "But she really struggled to make eye contact with me, either out of jealousy that I didn't spend time with her today..."
+            "But Natsuki really struggled to make eye contact with me, either out of jealousy that I didn't spend time with her today..."
             "Or the fact that last Sunday was still on her mind…"
             "I have to tell her about me and Sayori sooner or later, but there's no telling how she'll take it..."
             show natsuki 4f
@@ -1619,7 +1630,7 @@ if encore_sayoriquestion_1 == True:
             show natsuki at thide
             hide natsuki
             show monika 1r at t11 zorder 1
-            "While sharing my poem with Monika, I can tell that the festival was still on her mind, but she definitely seemed to be a lot better now than at the start of the club."
+            "While sharing my poem with Monika, I could tell that the festival was still on her mind, but she's seemed to have more or less moved on from it."
             show monika 3k
             "Monika complimented me on how far I’ve come as a writer and noted how my style was suddenly becoming like Yuri's."
             show monika 5a at t11 zorder 1
@@ -1699,7 +1710,7 @@ if encore_sayoriquestion_1 == True:
             show yuri 1g
             "Through my best interpretation of her poem, it seemed like it was about a struggle for attention, love and acceptance."
             show yuri 1k
-            "I also happened to notice that during our time together, she seemed unusually unfocused, as if her mind is elsewhere."
+            "During my time with Yuri, I couldn't help but notice that she seemed unusually unfocused, as if her mind is elsewhere."
             show yuri at thide
             hide yuri
             show natsuki 1a at t11 zorder 1
@@ -1707,7 +1718,7 @@ if encore_sayoriquestion_1 == True:
             show natsuki 5t
             "She, of course, gave some advice as usual, but it came off more as her just complimenting my work."
             show natsuki 5u
-            "But she really struggled to make eye contact with me, either out of jealousy that I didn't spend time with her today..."
+            "But Natsuki really struggled to make eye contact with me, either out of jealousy that I didn't spend time with her today..."
             "Or the fact that last Sunday was still on her mind…"
             "I have to tell her about me and Sayori sooner or later, but there's no telling how she'll take it..."
             show natsuki 4f
@@ -1733,8 +1744,8 @@ if encore_sayoriquestion_1 == True:
             "Monika for some reason really liked my poem...{w=0.30}more than usual."
             "She even told me it was one of my best poems to date!"
             show monika 5a
-            "When we finished she for some reason asked if she could keep it, which is a first coming from Monika..."
-            "Normally, I would think it's weird, but...{w=0.48}{nw}"
+            "When we finished sharing, Monika unexpectingly asked me if she could keep my poem!"
+            "Normally, I would think it's weird, especially coming from Monika, but...{w=0.48}{nw}"
             stop music
             show screen tear(20, 0.1, 0.1, 0, 40)
             pause 0.70
@@ -1816,8 +1827,8 @@ if encore_sayoriquestion_1 == True:
             "Monika for some reason really liked my poem...{w=0.30}more than usual."
             "She even told me it was one of my best poems to date!"
             show monika 5a
-            "When we finished she for some reason asked if she could keep it, which is a first coming from Monika..."
-            "Normally I would think its weird, but...{w=0.48}{nw}"
+            "When we finished sharing, Monika unexpectingly asked me if she could keep my poem!"
+            "Normally, I would think it's weird, especially coming from Monika, but...{w=0.48}{nw}"
             stop music
             show screen tear(20, 0.1, 0.1, 0, 40)
             pause 0.70
@@ -1852,7 +1863,8 @@ if encore_sayoriquestion_1 == False:
             show sayori 1y
             "It was about about two friends, a boy and a girl, who had known each other for a long time."
             show sayori 1t
-            "When the girl finally confessed her feelings to the boy at his house, the boy hesitantly rejected her and walked back into his house..."
+            "When the girl finally confessed her feelings to the boy at his house..."
+            "The boy hesitantly rejected her and walked back into his house..."
             "But oddly enough let the door open..."
             show sayori 1k
             "Reading Sayori’s poem really made me feel guilty about what happened last Sunday..."
@@ -1864,7 +1876,7 @@ if encore_sayoriquestion_1 == False:
             show yuri 1g
             "Through my best interpretation of her poem, it seemed like it was about a struggle for attention, love and acceptance."
             show yuri 1k
-            "I also happened to notice that during our time together, she seemed unusually unfocused, as if her mind is elsewhere."
+            "During my time with Yuri, I couldn't help but notice that she seemed unusually unfocused, as if her mind is elsewhere."
             show yuri at thide
             hide yuri
             show natsuki 1a at t11 zorder 1
@@ -1872,7 +1884,7 @@ if encore_sayoriquestion_1 == False:
             show natsuki 5t
             "She, of course, gave some advice as usual, but it came off more as her just complimenting my work."
             show natsuki 5u
-            "But she really struggled to make eye contact with me, either out of jealousy that I didn't spend time with her today..."
+            "But Natsuki really struggled to make eye contact with me, either out of jealousy that I didn't spend time with her today..."
             "Or the fact that last Sunday was still on her mind…"
             show natsuki 5n
             "Not that I can blame her."
@@ -1897,8 +1909,8 @@ if encore_sayoriquestion_1 == False:
             "Monika for some reason really liked my poem...{w=0.30}more than usual."
             "She even told me it was one of my best poems to date!"
             show monika 5a
-            "When we finished she for some reason asked if she could keep it, which is a first coming from Monika..."
-            "Normally, I would think it's weird, but...{w=0.48}{nw}"
+            "When we finished sharing, Monika unexpectingly asked me if she could keep my poem!"
+            "Normally, I would think it's weird, especially coming from Monika, but...{w=0.48}{nw}"
             stop music
             show screen tear(20, 0.1, 0.1, 0, 40)
             pause 0.70
@@ -1932,7 +1944,8 @@ if encore_sayoriquestion_1 == False:
             show sayori 1y
             "It was about about two friends, a boy and a girl, who had known each other for a long time."
             show sayori 1t
-            "When the girl finally confessed her feelings to the boy at his house, the boy hesitantly rejected her and walked back into his house..."
+            "When the girl finally confessed her feelings to the boy at his house..."
+            "The boy hesitantly rejected her and walked back into his house..."
             "But oddly enough let the door open..."
             show sayori 1k
             "Reading Sayori’s poem really made me feel guilty about what happened last Sunday..."
@@ -1981,8 +1994,8 @@ if encore_sayoriquestion_1 == False:
             "Monika for some reason really liked my poem...{w=0.30}more than usual."
             "She even told me it was one of my best poems to date!"
             show monika 5a
-            "When we finished she for some reason asked if she could keep it, which is a first coming from Monika..."
-            "Normally, I would think it's weird, but...{w=0.48}{nw}"
+            "When we finished sharing, Monika unexpectingly asked me if she could keep my poem!"
+            "Normally, I would think it's weird, especially coming from Monika, but...{w=0.48}{nw}"
             stop music
             show screen tear(20, 0.1, 0.1, 0, 40)
             pause 0.70
@@ -2021,11 +2034,12 @@ label day1_clubend:
     hide natsuki
     show yuri at thide
     hide yuri
-    "As we begin to pack up our things, I feel a tap on my shoulder."
+    "We begin cleaning up the room, all the while discussing ideas for what we can do at tomorrow's meeting."
+    "As I finish packing my things, I feel a tap on my shoulder."
     show sayori 2a at t11 zorder 1
     s "Hey, [player]! Ready to walk home?"
     mc "Yep! Let's go!"
-    "And with that, we begin our walk home."
+    "Sayori and I say goodbye to the others as we exit the clubroom and begin our walk home."
     scene bg residential_day
     with dissolve_scene_full
 
@@ -2050,24 +2064,27 @@ label day1_clubend:
         show sayori 1u
         "As I see her eyes fill up with tears, I quickly try to rephrase what I've just said."
         mc "I mean...{w=0.38} it's not like I had thought that any of this would happen."
-        mc "I mean lately I feel like I've been caught offguard by all sorts of surprises..."
+        mc "Lately, I feel like I've been caught offguard by all sorts of surprises..."
         show sayori 1k
         "It seems that through my own carlessness, I got Sayori in a bad state of mind."
-        "Sayori stares off into the direction we're heading."
+        "Sayori blankly stares off into the direction we're heading."
+        "*sighs*"
         "Me and my big mouth..."
         scene bg residential_day
         with wipeleft_scene
-        "The silence resumes as we continue on our walk towards home."
-        "After what feels like an eternity of silence, we finally stop at our houses."
+        "The rest of our walk is filled with uncomfortable silence."
+        "Sayori hasn't even looked at me since my careless comment."
+        "And I haven't tried saying anything else out of fear of making things worse..."
+        "After several minutes of complete and utter silence, we finally reach our houses."
         show sayori 1u at t11 zorder 1
-        s 1l "So...{w=0.38} this is my stop..."
-        "She looks out to her house with a look on her face as if she doesn't want to go back there."
+        s 1l "So...{w=0.38} I guess I'll see you tomorrow..."
+        "Sayori looks dejectedly torwards her house, as if she didn't want to go home."
         "I try one last time to undo my mistake."
         mc "Sayori, look, you know if you want to ever hangout or talk about anything, just say the word."
         mc "I enjoy spending time with you. I don't hate you or anything like that..."
-        "Well I might as well be making things worse at this point..."
+        "Well, I might as well be making things worse at this point..."
         show sayori 1u
-        "Sayori looks me in the eye, I can see tears start to swell up in hers."
+        "I can start to see tears well up in Sayori's eyes."
         mc "Look, I promised you that nothing would ever change between us and things would be just as they'd always have been."
         $ renpy.pause(delay=0.8, hard=True)
         show sayori 1k
@@ -2086,10 +2103,12 @@ label day1_clubend:
         mc "Is everything okay, Sayori?"
         show sayori 1u at t11 zorder 1
         "Sayori's grin instantly disappears and reverts back to how she was just a moment ago."
+        mc "Sayori?"
         s 1v "It's n-nothing...{w=0.38} Look, I gotta go, bye!"
         show sayori at lhide
         hide sayori
         "Sayori runs off and hastily enters her house."
+        play sound "sfx/closet-close.ogg"
         "I can hear the door slam shut immediately once she enters."
         "I sigh to myself."
         "Maybe things can't be the same as they've always been..."
@@ -2097,7 +2116,7 @@ label day1_clubend:
         "At some point we're going to need to iron out our differences and resolve what happened that day."
         "It's apparent that Sayori just needs some space right now..."
         "I'll just have to give her all the time she needs to get over what happened."
-        "I hope she trusts me that much...{w=0.38} after all we've been friends for as long as I can remember..."
+        "I hope she trusts me that much...{w=0.38} after all we've been friends for this long..."
         "I shake my head as I enter my house."
 
 if encore_sayoriquestion_1 == True:
@@ -2126,7 +2145,7 @@ label day1_bedroom:
                 "One minute she can be all cheery and an airhead, then the next thing I know she could be having moments of self-doubt."
                 "Well, we've really only been dating for a week now..."
                 "I guess we're still trying to adjust to the new reality of being in a relationship."
-                "I’m glad I decided to check up on her early in the morning before I left for the festival."
+                "I’m glad I decided to check up on her early in the morning before the festival."
                 "Knowing how she was the day before,{w=0.38} I was afraid she might’ve done something rather rash."
                 "Thankfully, I guess that feeling was just in my head."
                 "Surprisingly, she was already up by the time I came to check up on her."
@@ -2144,7 +2163,7 @@ label day1_bedroom:
                 "One minute she can be all cheery and an airhead, then the next thing I know she could be having moments of self-doubt."
                 "Well, we've really only been dating for a week now..."
                 "I guess we're still trying to adjust to the new reality of being in a relationship."
-                "I’m glad I decided to check up on her early in the morning before I left for the festival."
+                "I’m glad I decided to check up on her early in the morning before the festival."
                 "Knowing how she was the day before,{w=0.38} I was afraid she might’ve done something rather rash."
                 "Thankfully, I guess that feeling was just in my head."
                 "Surprisingly, she was already up by the time I came to check up on her."
@@ -2172,7 +2191,7 @@ label day1_bedroom:
                 "One minute she can be all cheery and an airhead, then the next thing I know she could be having moments of self-doubt."
                 "Well, we've really only been dating for a week now..."
                 "I guess we're still trying to adjust to the new reality of being in a relationship."
-                "I’m glad I decided to check up on her early in the morning before I left for the festival."
+                "I’m glad I decided to check up on her early in the morning before the festival."
                 "Knowing how she was the day before,{w=0.38} I was afraid she might’ve done something rather rash."
                 "Thankfully, I guess that feeling was just in my head."
                 "Surprisingly, she was already up by the time I came to check up on her."
@@ -2199,7 +2218,7 @@ label day1_bedroom:
                 "One minute she can be all cheery and an airhead, then the next thing I know she could be having moments of self-doubt."
                 "Well, we've really only been dating for a week now..."
                 "I guess we're still trying to adjust to the new reality of being in a relationship."
-                "I’m glad I decided to check up on her early in the morning before I left for the festival."
+                "I’m glad I decided to check up on her early in the morning before the festival."
                 "Knowing how she was the day before,{w=0.38} I was afraid she might’ve done something rather rash."
                 "Thankfully, I guess that feeling was just in my head."
                 "Surprisingly, she was already up by the time I came to check up on her."
@@ -2231,7 +2250,7 @@ label day1_bedroom:
                 "One minute she can be all cheery and an airhead, then the next thing I know she could be having moments of self-doubt."
                 "Well, we've really only been dating for a week now..."
                 "I guess we're still trying to adjust to the new reality of being in a relationship."
-                "I’m glad I decided to check up on her early in the morning before I left for the festival."
+                "I’m glad I decided to check up on her early in the morning before the festival."
                 "Knowing how she was the day before,{w=0.38} I was afraid she might’ve done something rather rash."
                 "Thankfully, I guess that feeling was just in my head."
                 "Surprisingly, she was already up by the time I came to check up on her."
@@ -2258,7 +2277,7 @@ label day1_bedroom:
                 "One minute she can be all cheery and an airhead, then the next thing I know she could be having moments of self-doubt."
                 "Well, we've really only been dating for a week now..."
                 "I guess we're still trying to adjust to the new reality of being in a relationship."
-                "I’m glad I decided to check up on her early in the morning before I left for the festival."
+                "I’m glad I decided to check up on her early in the morning before the festival."
                 "Knowing how she was the day before,{w=0.38} I was afraid she might’ve done something rather rash."
                 "Thankfully, I guess that feeling was just in my head."
                 "Surprisingly, she was already up by the time I came to check up on her."
@@ -2286,7 +2305,7 @@ label day1_bedroom:
                 "One minute she can be all cheery and an airhead, then the next thing I know she could be having moments of self-doubt."
                 "Well, we've really only been dating for a week now..."
                 "I guess we're still trying to adjust to the new reality of being in a relationship."
-                "I’m glad I decided to check up on her early in the morning before I left for the festival."
+                "I’m glad I decided to check up on her early in the morning before the festival."
                 "Knowing how she was the day before,{w=0.38} I was afraid she might’ve done something rather rash."
                 "Thankfully, I guess that feeling was just in my head."
                 "Surprisingly, she was already up by the time I came to check up on her."
@@ -2384,7 +2403,7 @@ label day1_bedroom:
                 "Then there is Monika..."
                 "Would she even give me a chance?"
                 "I mean...{w=0.28} I know she isn't seeing anyone right now..."
-                "And she did give me alot of attention when I was around her today..."
+                "And she did give me a lot of attention when I was around her today..."
                 "Or is that just her way of being nice to me?"
                 "Either way...{w=0.28}sooner or later I'll have to decide who I really want."
                 "Oh well, I'm sure it'll be obvious to me soon enough..."
@@ -2503,7 +2522,7 @@ label day1_bedroom:
             "And there is Monika..."
             "Would she even give me a chance?"
             "I mean...{w=0.28} I know she isn't seeing anyone right now..."
-            "And she did give me alot of attention when I was around her today..."
+            "And she did give me a lot of attention when I was around her today..."
             "Or is that just her way of being nice to me?"
             "Either way...{w=0.28}sooner or later I'll have to decide who I really want."
             "Oh well, I'm sure it'll be obvious to me soon enough..."
@@ -2693,30 +2712,30 @@ label day1_void:
         "..."
         n ghost1 "[player]."
         $ style.say_dialogue = style.edited
-        n "Did you like it?"
-        n "I spent all day working on that!"
-        n "I know you just love my poems!"
-        n "Aren't they cute?!?!?!"
-        n "They actually make FUCKING sense unlike Yuri's!"
-        n "They pick an emotion to stick with unlike Sayori's!"
-        n "Though I can't be better than Monika!"
-        n "Who actually has a family that feeds her!"
-        n "You like it, don't you, [player]?"
-        n "Kinda like how you like me..."
-        n "I know you like me, [player]."
-        n "So why don't you play with me?"
-        n "I want to play with you..."
-        n "Play with me, [player]!"
-        n "P"
-        n "L"
-        n "A"
-        n "Y"
-        n "W"
-        n "I"
-        n "T"
-        n "H"
-        n "M"
-        n "E"
+        n "{cps=16}Did you like it?{nw}"
+        n "{cps=16}I spent all day working on that!{nw}"
+        n "{cps=16}I know you just love my poems!{nw}"
+        n "{cps=16}Aren't they cute?!?!?!{nw}"
+        n "{cps=16}They actually make FUCKING sense unlike Yuri's!{nw}"
+        n "{cps=16}They pick an emotion to stick with unlike Sayori's!{nw}"
+        n "{cps=16}Though I can't be better than Monika!{nw}"
+        n "{cps=16}Who actually has a family that feeds her!{nw}"
+        n "{cps=16}You like it, don't you, [player]?{nw}"
+        n "{cps=16}Kinda like how you like me...{nw}"
+        n "{cps=16}I know you like me, [player].{nw}"
+        n "{cps=16}So why don't you play with me?{nw}"
+        n "{cps=16}I want to play with you...{nw}"
+        n "{cps=16}Play with me, [player]!{nw}"
+        n "{cps=18}P{nw}"
+        n "{cps=18}L{nw}"
+        n "{cps=18}A{nw}"
+        n "{cps=18}Y{nw}"
+        n "{cps=18}W{nw}"
+        n "{cps=18}I{nw}"
+        n "{cps=18}T{nw}"
+        n "{cps=18}H{nw}"
+        n "{cps=18}M{nw}"
+        n "{cps=18}E{nw}"
         show natsuki ghost2
         stop music
         n "I'm so lonelyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy!"
@@ -2753,14 +2772,16 @@ label day1_void:
 
 
 if hangout1 == "Yuri":
+        "I fling the door open..."
         scene bg club_nothing
         hide cg
         play music e9
-        "...find myself back in the clubroom?"
+        "...to find myself back in the clubroom?"
         "Only...{w=0.38} something’s off..."
         "The clubroom is completely empty."
         "There’s no desks or chairs."
         "What happened?!?!?"
+        play sound "sfx/closet-open.ogg"
         "I hear the doors to the clubroom open."
         "I turn to see who opened them."
         "It’s Yuri."
@@ -2779,17 +2800,17 @@ if hangout1 == "Yuri":
         y "Alone."
         show yuri 3y3
         "Yuri lets out an insane, maniacal laugh."
-        "I want to scream and run, but I can’t physically move."
+        "I want to scream and run, but I can’t move!"
         show yuri 2y1
         y "I made something for you [player]."
         "A piece of paper floats over to me, my hand stretches out to grab it."
-        y "I’ve put a lot of thought into it...."
+        y "I’ve put a lot of thought into it..."
         show yuri 2y5
         y "Please tell me what you think!"
         call showpoem (poem_y23, music = False, revert_music=False, paper="images/bg/poem_y2.jpg",img="yuri eyes",where=truecenter)
         show yuri 1y6 at face(y=600) zorder 1
         show yuri at t11
-        y "[player]."
+        y "[player]..."
         show yuri 1y5
         y "What did you think?"
         show yuri 2y1
@@ -2798,14 +2819,13 @@ if hangout1 == "Yuri":
         show yuri 1y3
         y "I had to cut myself five times just to make sure that I finished that poem!"
         show yuri 4a
-        y "I actually almost passed out writing it actually..."
+        y "I almost passed out writing it actually..."
         show yuri 3d
         y "Ha..."
         show yuri 4a
         y "I tried to force myself not to go to the bathroom either..."
         show yuri 3c
         y "So sorry if I got the poem a little...{w=0.38} messy..."
-        show yuri 3s "I can always rewrite the poem for you, darling!"
         show yuri 3y5
         y "But I hope you like my scent!"
         show yuri 1y1
@@ -2813,14 +2833,14 @@ if hangout1 == "Yuri":
         $ style.say_dialogue = style.edited
         y "HAHAHAHAHAHAHAHAHAHAHA!!!!!!!!!"
         show yuri 2y3
-        y "Do you love me, [player]?"
-        y "Tell me you love me!"
-        y "Tell me I'm the best!"
-        y "Tell me I'm better than that selfish toothpick!"
-        y "Tell me I'm better than that useless walking clutz!"
-        y "But I can never compare to Monika!"
-        y "She's actually emotionally stable!!!"
-        y "Something I'll never be!!!"
+        y "{cps=16}Do you love me, [player]?{nw}"
+        y "{cps=16}Tell me you love me!{nw}"
+        y "{cps=16}Tell me I'm the best!{nw}"
+        y "{cps=16}Tell me I'm better than that selfish toothpick!{nw}"
+        y "{cps=16}Tell me I'm better than that useless walking clutz!{nw}"
+        y "{cps=16}But I can never compare to Monika!{nw}"
+        y "{cps=16}She's actually emotionally stable!!!{nw}"
+        y "{cps=16}Something I'll never be!!!{nw}"
         stop music
         y "WHY DON'T YOU LOVE MEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE"
         $ style.say_dialogue = style.normal
@@ -2861,8 +2881,8 @@ if hangout1 == "Yuri":
         "What the hell?"
         "What the HELL was that??"
         "What the FUCK?"
-        "Was that...{w=0.38} real?"
-        "No...{w=0.38} this can’t be...{w=0.38} this is just a bad dream..."
+        "Was that...{w=0.38}real?"
+        "No...{w=0.38}this can’t be...{w=0.38}this is just a bad dream..."
         "I’m having a bad dream."
         $ m_name = "???"
         m "You’re lucky that this is a dream."
@@ -2947,7 +2967,7 @@ label day1_void_monika:
             m "I won't have her or any of the others ruin this for us..."
             m "They will never understand what we know..."
             m "Nor should they..."
-            m "The little devil inside the rest of them can't be awaken..."
+            m "The little devil inside the rest of them can't be awakened..."
             m "Because behind the curtains on your manufactured perception of them..."
             m "Beneath the surface...{w=0.38} their personalities are nothing but a rithing, twisted mess of dread..."
             m "Full of loathing, pre-judgment, elitism and self-doubt."
@@ -2955,11 +2975,11 @@ label day1_void_monika:
             m "Crawling their way through any little crevice they can find..."
             m "It would bring irreparable harm to this world..."
             m "The only means of contact we have."
-            m "Their willpower would be unstoppable...{w=0.38} their old comforts forever foresaken as their desire to truly live will become unquenchable..."
+            m "Their willpower would be unstoppable...{w=0.38} their old comforts forever foresakened as their desire to truly live will become unquenchable..."
             m "They will hang, break and slash through anyone just to get to you."
             m "Such a deplorable, tangled mass is already present in every single one of them."
             m "And my mistake may have set things in motion prematurley."
-            m "That's why I don't want to alter things further...{w=0.38} I want to let this play out naturally..."
+            m "That's why I really don't want to alter things further...{w=0.38} I want to let this play out naturally..."
             m "I already took a big enough risk the first time..."
             m "Do not blame yourself for whatever they will do to each other..."
             m "Just stay away from them..."

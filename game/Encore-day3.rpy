@@ -102,10 +102,7 @@ label day3_start:
     "I don't want to make her more worried about me, but I know that I can't hide anything from her for very long."
     "I'd feel guilty about not opening up about my own hardships to Sayori when she's done so with me."
     "But she can always get worked up when there's something wrong."
-    #Tell Sayori
-    #Don't Tell Sayori
-    #(You can only gain or lose a point here with Sayori)
-    #(Scoreboard, S: 4, N: 1, Y: 0, M: 0)
+
     menu:
         "Reluctantly, I..."
         "Tell Sayori.":
@@ -114,6 +111,8 @@ label day3_start:
         "Don't Tell Sayori.":
             $ tell_s = False
             jump day3_notellsayori
+
+
 label day3_tellsayori:
     "I decided to tell her."
     show sayori 1g
@@ -136,9 +135,8 @@ label day3_tellsayori:
         s 1k "..."
         mc "I know it was just a dream, but it felt too close to reality for some reason..."
         mc "The way you frantically clawed at the rope..."
-        #(shocked Sayori sprite)
         s u115232 "Rope...?"
-        #DEMO CUT OFF
+
     elif hangout2 == "Yuri":
         mc "I watched Yuri die..."
         mc "I couldn't save her."
@@ -146,9 +144,8 @@ label day3_tellsayori:
         s 1k "..."
         mc "I know it was just a dream, but it felt too close to reality for some reason..."
         mc "I... then saw this figure give Yuri a knife and she just stabbed herself..."
-        #(shocked Sayori sprite)
         s u115232 "A knife?!?!?"
-        #DEMO CUT OFF
+
     elif hangout2 == "Natsuki":
         mc "Sayori.. I..."
         mc "I watched Natsuki die..."
@@ -158,9 +155,8 @@ label day3_tellsayori:
         s 1k "..."
         mc "I know it was just a dream, but it felt too close to reality for some reason..."
         mc "I...then saw this shadow snap it's fingers and it made Natsuki's neck break."
-        #(shocked Sayori sprite)
         s u115232 "She broke her neck?!?!"
-        #DEMO CUT OFF
+
     else:
         mc "I've been having these weird dreams lately."
         mc "In my dreams, there's been this really strange voice that's been telling me to pursue it."
@@ -169,9 +165,8 @@ label day3_tellsayori:
         s 1k "..."
         mc "I know it was just a dream, but it feels too real for some reason..."
         mc "It keeps telling me to ‘keep doing what I'm doing' and that it ‘has plans for us'."
-        #(shocked Sayori sprite)
         s u115232 "Plans?!?!"
-        #DEMO CUT OFF
+
     stop music
     scene encore_demoend
 label day3_notellsayori:

@@ -10,11 +10,27 @@ init -100 python:
 init python:
     menu_trans_time = 1
 
-    splash_message_default = "This game is an unofficial fan work, unaffiliated with Team Salvato."
+    splash_message_default = "Every good story deserves an encore!"
 
     splash_messages = [
+        "Every good story deserves an encore!",
+        "This game is an unofficial fan work, unaffiliated with Team Salvato.",
         "Please support Doki Doki Literature Club.",
-        "Monika is watching you code."
+        "Monika is watching you code.",
+        "Sayori sees your cookies.",
+        "Natsuki wants your cupcakes.",
+        "Yuri likes reading with you.",
+        "Subscribe to Pewdiepie!",
+        "Justice for Spartanboi.",
+        "Your choices matter more than you think.",
+        "Choose wisely :)",
+        "Is it way too much to chose one of them?",
+        "Oki-Doki!",
+        "Hit or miss, Natsuki's dad never misses!",
+        "1273 down the Rockefeller street!",
+        "The Fitnessgram Pacer test...",
+        "Karen took the kids so I made this mod.",
+        "Why are you trying to find more splash messages? Just play the mod, man!"
     ]
 
 
@@ -312,7 +328,7 @@ label splashscreen:
     show splash_warning "[splash_message]" with Dissolve(0.5, alpha=True)
     pause 2.0
     hide splash_warning with Dissolve(0.5, alpha=True)
-    $ config.allow_skipping = True    
+    $ config.allow_skipping = True
     return
 
 label warningscreen:
