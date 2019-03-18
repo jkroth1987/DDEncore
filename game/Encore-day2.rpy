@@ -1460,47 +1460,47 @@ if encore_sayoriquestion1 == True: # We accepted Sayori's confession
         $ poem_giver = encore_festivalquestion_2
         $ is_love_poem = True        
     
-    elif encore_festivalquestion_2 == hangout1 and same_hangout:
+    elif encore_festivalquestion_2 == hangout1 and same_hangout == True:
         # Outside the confession, we have been 100% faithful to either Yuri or Natsuki
         $ poem_giver = encore_festivalquestion_2
         $ is_love_poem = True
     
-    elif encore_festivalquestion2 != hangout1 and same_hangout and (hangout1 == "Natsuki" or hangout1 == "Yuri"):
+    elif encore_festivalquestion2 != hangout1 and same_hangout == True and (hangout1 == "Natsuki" or hangout1 == "Yuri"):
         # We spent the weekend with one girl, but spent the two days with the other -- the hangout girl gives the like poem
         $ poem_giver = hangout1
         $ is_love_poem = False
     
     elif encore_festival_question2 == "Natsuki":
-        if neutral_split_n:
+        if neutral_split_n == True:
             # We favored Natsuki over Yuri
             $ poem_giver = "Natsuki"
             $ is_love_poem = True
-        elif neutral_split_y:
+        elif neutral_split_y == True:
             # We haven't spent time with Natsuki since the weekend, and Yuri is taking interest
             $ poem_giver = "Yuri"
             $ is_love_poem = False
-        elif conflicting_hangout:
+        elif conflicting_hangout == True:
             # We spent time with both of them, but Natsuki wins for having the weekend
             $ poem_giver = "Natsuki"
             $ is_love_poem = True
     
     elif encore_festival_question2 == "Yuri":
-        if neutral_split_y:
+        if neutral_split_y == True:
             # We favored Yuri over Natsuki
             $ poem_giver = "Yuri"
             $ is_love_poem = True
-        elif neutral_split_n:
+        elif neutral_split_n == True:
             # We haven't spent time with Yuri since the weekend, and Natsuki is taking interest
             $ poem_giver = "Natsuki"
             $ is_love_poem = False
-        elif conflicting_hangout:
+        elif conflicting_hangout == True:
             # We spent time with both of them, but Yuri wins for having the weekend
             $ poem_giver = "Yuri"
             $ is_love_poem = True
     
     # End of Accepted Confession block
 else: # We didn't accept Sayori's confession
-    if encore_festivalquestion_2 == hangout1 and same_hangout:
+    if encore_festivalquestion_2 == hangout1 and same_hangout == True:
         # We spent the weekend and two hangouts with Yuri or Natsuki... but wait!
         # The other girl will give a "like you" poem
         if encore_festivalquestion_2 == "Natsuki":
@@ -1509,7 +1509,7 @@ else: # We didn't accept Sayori's confession
             $ poem_giver = "Natsuki"
         $ is_love_poem = False
     
-    elif neutral_split_n or neutral_split_y:
+    elif neutral_split_n == True or neutral_split_y == True:
         # If we spent one day with either Yuri or Natsuki, the weekend girl gives the "like you" poem
         if encore_festivalquestion_2 == "Natsuki":
             $ poem_giver = "Natsuki"
