@@ -214,20 +214,31 @@ play music t2 fadein 1.5
 "Surprisingly, she responds back rather quickly and tells me that she's already waiting outside for me."
 "I reply back that I'll meet her as soon as I'm done with my breakfast."
 "As I'm eating, I come to the realization that I'll probably be getting everyone else's poems today..."
-"I'm still uncertain if it's even a good idea for me to talk to Natsuki/Yuri about what she gave me..."
+
+if poem_giver == "Natsuki" or poem_giver == "Yuri":
+    "I'm still uncertain if it's even a good idea for me to talk to [poem_giver] about what she gave me..."
+
+
 "What am I even supposed to say to her?"
 
 if encore_sayoriquestion_1 == True:
-    "And I still don't even know how to put it to Sayori..."
-    "There's no telling how she'll react..."
-    "And if I tell anyone else, I feel like that'll just make the situation more complicated..."
+    if poem_giver == "Natsuki" or poem_giver == "Yuri":
+        "And I still don't even know how to put it to Sayori..."
+        "There's no telling how she'll react..."
+        "And if I tell anyone else, I feel like that'll just make the situation more complicated..."
 
 if encore_sayoriquestion_1 == False:
     "I don't even know who to talk to about this!"
     "I would ask Sayori, but that'll probably just make more problems than solve anything..."
-    "And Yuri/Natsuki probably won't be of much help either..."
-    "Maybe I can ask Monika, maybe she knows how to handle this..."
 
+if poem_giver == "Natsuki":
+    "And Yuri probably won't be of much help either..."
+
+if poem_giver == "Yuri":
+    "And Natsuki probably won't be of much help either..."
+
+
+"Maybe I can ask Monika, maybe she knows how to handle this..."
 "I sigh to myself as I pop the last piece of Watermelon into my mouth, grab my backpack, and head outside to meet Sayori."
 
 

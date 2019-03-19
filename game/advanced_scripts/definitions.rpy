@@ -173,6 +173,7 @@ image bg closet_empty = "mod_assets/bgs/goodnight.png"
 image bg club_nothing = "mod_assets/bgs/Club+Empty+Night.png"
 image bg residential_dusk = "mod_assets/bgs/residential_dusk.png"
 image bg void_2 = "mod_assets/bgs/void_2.png"
+image bg thank_you = "bandicam 2019-03-18-09-10-05-743.png"
 
 image glitch_color:
     ytile 3

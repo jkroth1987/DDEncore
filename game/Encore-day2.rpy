@@ -1207,7 +1207,7 @@ show natsuki 5x at t21 zorder 1
 "Natsuki audibly groans."
 n 5e "Is this going to be like the festival again?"
 show monika 2d
-"Monika seems a little taken aback by this, but she shrugs it off."
+"Monika seems a little taken aback by this, but she tries to shrugs it off."
 m 2c "No, not really. We won't have to be performing for anyone this time, and I certainly don't think we'll need to put in the same level of preparation for this compared to the festival."
 show natsuki 5g
 m 2i "But I would {i}appreciate{/i} it if we could at least come up with something nice that'll show off the club."
@@ -1221,27 +1221,61 @@ call groupAll(4, 2, 4, 1, 3) from _call_groupAll_3
 
 if encore_sayoriquestion_1 == False or encore_sayoriquestion_1 == True:
     if encore_festivalquestion_2 == "Natsuki":
-        if hangout2 == "Monika" or hangout2 == "Yuri" or hangout2 == "Sayori":
-            "After a moment of silence, Yuri is the first to speak up."
-            show monika 1c
-            show sayori 1b
-            show natsuki 1k
-            y 1f "You know...{w=0.38}I did happen to keep the welcome banner we made for the festival..."
-            y 1j "I'd just need to find it. It's somewhere in my house."
-            n 1d "I wouldn't mind baking cupcakes again...{w=0.38}especially since I had fun doing it last time with [player]."
-            show natsuki 1a
-            "She says that directly looking at me."
-            show yuri 1e
-            show natsuki 2a
-            "Natsuki certainly isn't letting what just happened between me and [hangout2] go."
+        jump day2_t1
+
+
+label day2_t1:
+"After a moment of silence, Yuri is the first to speak up."
+show monika 1c
+show sayori 1b
+show natsuki 1k
+y 1f "You know...{w=0.38}I did happen to keep the welcome banner we made for the festival..."
+y 1j "I'd just need to find it. It's somewhere in my house."
+
+if encore_festivalquestion_2 == "Natsuki":
+    if hangout2 == "Natsuki":
+        jump day2_t2
+
+if encore_festivalquestion_2 == "Natsuki":
+    if hangout2 == "Monika" or hangout2 == "Yuri" or hangout2 == "Sayori":
+        jump day2_t3
+
+if encore_festivalquestion_2 == "Yuri":
+    if hangout2 == "Natsuki":
+        jump day2_t4
+
+label day2_t2:
+n 1d "I wouldn't mind baking cupcakes again...{w=0.38}especially since I had fun doing it last time with [player]."
+show natsuki 1a
+"She says that directly looking at me."
+show yuri 1e
+show natsuki 2a
+"Natsuki certainly isn't letting what just happened between us go."
+jump day2_awk
+
+
+label day2_t3:
+n 1d "I wouldn't mind baking cupcakes again...{w=0.38}especially since I had fun doing it last time with [player]."
+show natsuki 1a
+"She says that directly looking at me."
+show yuri 1e
+show natsuki 2a
+"Natsuki certainly isn't letting what just happened between me and [hangout2] go."
+jump day2_awk
+
+
+label day2_t4:
+n 1d "I wouldn't mind baking cupcakes again...{w=0.38}maybe I can try it this time with [player]!"
+show natsuki 1a
+"She says that directly looking at me."
+show yuri 1e
+show natsuki 2a
+"Natsuki certainly isn't letting what just happened between us go."
+jump day2_awk
 
 
 
-
-        if hangout2 == "Natsuki":
-            "Natsuki certainly isn't letting what just happened between us go."
-
-
+label day2_awk:
 "I try to move past the sudden awkwardness."
 mc "Y-{w=0.38}yeah! Me too, Nat!"
 show natsuki 1i
@@ -1263,6 +1297,11 @@ show natsuki 4s
 "After about a moment she turns back to face me, no longer able to contain her grin."
 n u112212 "I'll let that slide...{w=0.38}just this once!"
 
+if encore_sayoriquestion_1 == True:
+    jump day2_smad1
+
+if encore_sayoriquestion_1 == False:
+    pass
 
 if hangout2 == "Monika":
     show monika 2h
@@ -1275,6 +1314,7 @@ if hangout2 == "Monika":
     $ style.say_dialogue = style.normal
     show monika 2n
     "Monika clears her throat."
+    jump day2_tend
 
 
 if hangout2 == "Yuri":
@@ -1290,6 +1330,7 @@ if hangout2 == "Yuri":
     show sayori 1k
     "I look like an idiot as I try to find what to say next."
     "Thankfully Monika comes in to seemingly save the situation."
+    jump day2_tend
 
 if hangout2 == "Natsuki":
     show sayori 1t
@@ -1303,6 +1344,7 @@ if hangout2 == "Natsuki":
     show sayori 1k
     "I look like an idiot as I try to find what to say next."
     "Thankfully Monika comes in to seemingly save the situation."
+    jump day2_tend
 
 
 if hangout2 == "Sayori":
@@ -1318,15 +1360,17 @@ if hangout2 == "Sayori":
     show sayori 1k
     "I look like an idiot as I try to find what to say next."
     "Thankfully Monika comes in to seemingly save the situation."
+    jump day2_tend
 
 
-if encore_sayoriquestion_1 == True:
-    show sayori 1g
-    "Sayori once again shoots me the same quizzical glance she gave me yesterday when Natsuki brought up the time we spent together last Sunday."
-    "Sooner or later, I'm going to have to resolve all this and tell Natsuki that I'm with Sayori..."
-    "As well as tell Sayori everything that happened between me and Natsuki on Sunday."
-    "Hopefully that will put her mind to rest..."
-    "Thankfully Monika comes in to seemingly save the situation."
+label day2_smad1:
+show sayori 1g
+"Sayori once again shoots me the same quizzical glance she gave me yesterday when Natsuki brought up the time we spent together last Sunday."
+"Sooner or later, I'm going to have to resolve all this and tell Natsuki that I'm with Sayori..."
+"As well as tell Sayori everything that happened between me and Natsuki on Sunday."
+"Hopefully that will put her mind to rest..."
+"Thankfully Monika comes in to seemingly save the situation."
+jump day2_tend
 
 #######################################################################
 
@@ -1334,26 +1378,82 @@ if encore_sayoriquestion_1 == True:
 
 if encore_sayoriquestion_1 == False or encore_sayoriquestion_1 == True:
     if encore_festivalquestion_2 == "Yuri":
-        "After a moment of silence, Natsuki is the first to speak up."
-        show monika 1c
-        show sayori 1b
-        show yuri 1e
-        n 1k "I wouldn't mind baking cupcakes again, I still have plenty of ingredients left over."
-        y 1b "I did happen to keep the welcome banner that [player] and I made for the festival. I'd just need to find it. It's somewhere at my house, and I wouldn't mind for some help looking for it."
-        "She says that directly looking at me."
-        mc "Y-{w=0.38}yeah! You too Yuri!"
-        show yuri 2t
-        mc "I'd love to come over to your place anytime!"
-        show yuri 2u
-        mc "Preparing for the festival with you was really fun!"
-        "Yuri looks off blushing like crazy."
-        y 2q "Y-{w=0.38}yeah...{w=0.38}it was really nice..."
-        show yuri 2p
-        "She says that softly to herself, but quickly realizes that everyone overheard."
-        y 1o "Oh! I mean...{w=0.38}yeah, I would love your help!"
-        show yuri 4c
-        "I chuckle to myself, Yuri's mannerisms have always been adorable."
-        show natsuki 1s
+        jump day2_t5
+
+label day2_t5:
+"After a moment of silence, Natsuki is the first to speak up."
+show monika 1c
+show sayori 1b
+show yuri 1e
+n 1k "I wouldn't mind baking cupcakes again, I still have plenty of ingredients left over."
+
+if encore_festivalquestion_2 == "Yuri":
+    if hangout2 == "Yuri":
+        jump day2_t6
+
+if encore_festivalquestion_2 == "Natsuki":
+    if hangout2 == "Yuri":
+        jump day2_t7
+
+if encore_festivalquestion_2 == "Yuri":
+    if hangout2 == "Monika" or hangout2 == "Natsuki" or hangout2 == "Sayori":
+        jump day2_t8
+
+label day2_t6:
+y 1b "I did happen to keep the welcome banner that [player] and I made for the festival. I'd just need to find it."
+y 3j "It's somewhere at my house, and I wouldn't mind for some help looking for it."
+"She says that directly looking at me."
+"She isn't asking..."
+"Especially after..."
+mc "Y-{w=0.38}yeah! I wouldn't mind helping you again!"
+show yuri 2t
+mc "I'd love to come over to your place anytime!"
+show yuri 2u
+mc "Preparing for the festival with you was really fun!"
+jump day2_awk_2
+
+label day2_t7:
+y 1b "I did happen to keep the welcome banner that I made for the festival. I'd just need to find it."
+y 3q "I wouldn't mind some help in finding it..."
+"She says that directly looking at me."
+"She isn't asking..."
+"Especially after..."
+mc "Y-{w=0.38}yeah! I wouldn't mind helping you!"
+show yuri 2t
+mc "I'd love to come over to your place anytime!"
+show yuri 2u
+mc "I'm sure it'd be fun!"
+jump day2_awk_2
+
+label day2_t8:
+y 1b "I did happen to keep the welcome banner that [player] and I made for the festival. I'd just need to find it."
+y 3j "It's somewhere at my house, and I wouldn't mind for some help looking for it."
+"She says that directly looking at me."
+"Yuri doesn't seem like she wants to let what happened between me and [hangout2] go..."
+mc "Y-{w=0.38}yeah! I wouldn't mind helping you again!"
+show yuri 2t
+mc "I'd love to come over to your place anytime!"
+show yuri 2u
+mc "Preparing for the festival with you was really fun!"
+jump day2_awk_2
+
+
+label day2_awk_2:
+"Yuri looks off, attempting to compose herself."
+y 2q "Y-{w=0.38}yeah...{w=0.38}it was really nice..."
+show yuri 2p
+"She says that softly to herself, but quickly realizes that everyone overheard."
+y 1o "Oh! I mean...{w=0.38}yeah, I would love your help!"
+show yuri 4c
+"I chuckle to myself, Yuri's mannerisms have always been adorable."
+show natsuki 1s
+
+if encore_sayoriquestion_1 == True:
+    jump day2_smad2
+
+if encore_sayoriquestion_1 == False:
+    pass
+
 
 if hangout2 == "Monika":
     show monika 2h
@@ -1366,6 +1466,7 @@ if hangout2 == "Monika":
     $ style.say_dialogue = style.normal
     show monika 2n
     "Monika clears her throat."
+    jump day2_tend
 
 if hangout2 == "Yuri":
     show sayori 1t
@@ -1379,6 +1480,7 @@ if hangout2 == "Yuri":
     show sayori 1k
     "I look like an idiot as I try to find what to say next."
     "Thankfully Monika comes in to seemingly save the situation."
+    jump day2_tend
 
 if hangout2 == "Natsuki":
     show natsuki 5n
@@ -1393,6 +1495,7 @@ if hangout2 == "Natsuki":
     show sayori 1k
     "I look like an idiot as I try to find what to say next."
     "Thankfully Monika comes in to seemingly save the situation."
+    jump day2_tend
 
 if hangout2 == "Sayori":
     show sayori 1k
@@ -1407,20 +1510,22 @@ if hangout2 == "Sayori":
     show sayori 1k
     "I look like an idiot as I try to find what to say next."
     "Thankfully Monika comes in to seemingly save the situation."
+    jump day2_tend
 
 
-if encore_sayoriquestion_1 == True:
-    show sayori 1g
-    "Sayori once again shoots me the same quizzical glance she gave me yesterday when Natsuki brought up the time we spent together last Sunday."
-    "Sooner or later, I'm going to have to resolve all this and tell Natsuki that I'm with Sayori..."
-    "As well as tell Sayori everything that happened between me and Natsuki on Sunday."
-    "Hopefully that will put her mind to rest..."
-    "Thankfully Monika comes in to seemingly save the situation."
+label day2_smad2:
+show sayori 1g
+"Sayori once again shoots me the same quizzical glance she gave me yesterday when Natsuki brought up the time we spent together last Sunday."
+"Sooner or later, I'm going to have to resolve all this and tell Natsuki that I'm with Sayori..."
+"As well as tell Sayori everything that happened between me and Natsuki on Sunday."
+"Hopefully that will put her mind to rest..."
+"Thankfully Monika comes in to seemingly save the situation."
+jump day2_tend
 
 
 
 
-
+label day2_tend:
 show yuri 1a
 show natsuki 1k
 show sayori 1b
@@ -1453,49 +1558,90 @@ $ conflicting_hangout = (hangout1 == "Natsuki" and hangout2 == "Yuri") or (hango
 $ neutral_split_n = (hangout1 == "Natsuki" and (hangout2 == "Sayori" or hangout2 == "Monika")) or (hangout2 == "Natsuki" and (hangout1 == "Sayori" or hangout1 == "Monika"))
 $ neutral_split_y = (hangout1 == "Yuri" and (hangout2 == "Sayori" or hangout2 == "Monika")) or (hangout2 == "Yuri" and (hangout1 == "Sayori" or hangout1 == "Monika"))
 
-if encore_sayoriquestion1 == True: # We accepted Sayori's confession
+if encore_sayoriquestion_1 == True: # We accepted Sayori's confession
     if (hangout1 == "Sayori" or hangout1 == "Monika") and (hangout2 == "Sayori" or hangout2 == "Monika"):
         # Spent both days with Sayori, Monika, or split between them--show the love poem from the weekend hangout girl
         $ poem_giver = encore_festivalquestion_2
         $ is_love_poem = True
+
+        if encore_festivalquestion_2 == "Yuri":
+            jump y_poem1
+
+        if encore_festivalquestion_2 == "Natsuki":
+            jump n_poem1
+
 
     elif encore_festivalquestion_2 == hangout1 and same_hangout == True:
         # Outside the confession, we have been 100% faithful to either Yuri or Natsuki
         $ poem_giver = encore_festivalquestion_2
         $ is_love_poem = True
 
-    elif encore_festivalquestion2 != hangout1 and same_hangout == True and (hangout1 == "Natsuki" or hangout1 == "Yuri"):
+        if hangout1 == "Natsuki":
+            jump y_poem1
+
+        if hangout1 == "Yuri":
+            jump n_poem1
+
+###############
+#Things not working
+
+
+    elif encore_festivalquestion_2 != hangout1 and same_hangout == True and (hangout1 == "Natsuki" or hangout1 == "Yuri"):
         # We spent the weekend with one girl, but spent the two days with the other -- the hangout girl gives the like poem
         $ poem_giver = hangout1
         $ is_love_poem = False
 
-    elif encore_festival_question2 == "Natsuki":
+    elif encore_festival_question_2 == "Natsuki":
         if neutral_split_n == True:
             # We favored Natsuki over Yuri
             $ poem_giver = "Natsuki"
             $ is_love_poem = True
+            jump n_poem1
+
+
+
+
         elif neutral_split_y == True:
             # We haven't spent time with Natsuki since the weekend, and Yuri is taking interest
             $ poem_giver = "Yuri"
             $ is_love_poem = False
+
+            if encore_festivalquestion_2 == "Natsuki":
+                if hangout1 == "Yuri":
+                    if hangout2 == "Yuri":
+                        jump y_poem1
+
+
+
         elif conflicting_hangout == True:
             # We spent time with both of them, but Natsuki wins for having the weekend
             $ poem_giver = "Natsuki"
             $ is_love_poem = True
+            jump n_poem1
 
-    elif encore_festival_question2 == "Yuri":
+
+
+    elif encore_festival_question_2 == "Yuri":
         if neutral_split_y == True:
             # We favored Yuri over Natsuki
             $ poem_giver = "Yuri"
             $ is_love_poem = True
+            jump y_poem1
+
+
         elif neutral_split_n == True:
             # We haven't spent time with Yuri since the weekend, and Natsuki is taking interest
             $ poem_giver = "Natsuki"
             $ is_love_poem = False
+            jump n_poem1
+
+
         elif conflicting_hangout == True:
             # We spent time with both of them, but Yuri wins for having the weekend
             $ poem_giver = "Yuri"
             $ is_love_poem = True
+            jump y_poem1
+
 
     # End of Accepted Confession block
 else: # We didn't accept Sayori's confession
@@ -1520,6 +1666,7 @@ else: # We didn't accept Sayori's confession
 
 # We have figured our logic and know which poem to show, based on poem_giver ("Natsuki" or "Yuri") and is_love_poem (True or False)
 
+label n_poem1:
 if poem_giver == "Natsuki":
     #NatsukiGivesYouThePoem
     y 1b "Same here, I'll give you them at tomorrow's meeting, [player]."
@@ -1540,8 +1687,10 @@ if poem_giver == "Natsuki":
     show monika 3b at t43 zorder 4
     show yuri 1a at t44 zorder 3
     show sayori 1a at t42 zorder 2
+    jump day2_clubend
 
-elif poem_giver == "Yuri":
+label y_poem1:
+if poem_giver == "Yuri":
     #YuriGivesYouThePoem
     n 1b "Yeah, [player], I'll give you mine tomorrow."
     y 3b "I believe I have my poems with me, let me check quickly."
@@ -1561,6 +1710,7 @@ elif poem_giver == "Yuri":
     show monika 3b at t43 zorder 4
     show yuri 1a at t44 zorder 3
     show sayori 1a at t42 zorder 2
+    jump day2_clubend
 
 ## Move this to the later point where we need to check back on this and uncomment it there.
 #if poem_giver == "Natsuki":
@@ -1575,113 +1725,141 @@ elif poem_giver == "Yuri":
 #    else:
 #        # Show Yuri's like poem
 
+label day2_clubend:
+m 1a "Okay everyone, you all know what to do! That concludes today's meeting! Be sure to find your poems and give them to [player]!"
+show natsuki at thide
+hide natsuki
+show monika at thide
+hide monika
+show yuri at thide
+hide yuri
+show sayori at thide
+hide sayori
+"Everyone begins packing their things, mostly talking about their levels of excitmenet for the upcoming event."
+"As I think to myself, this would probably be the first time I've ever been interviewed by our school's newspaper for anything!"
+"I know Monika's been interviewed before..."
+"And somehow Sayori has been interviewed before as well..."
+"But I guess for Natsuki, Yuri and I, this will be out first time."
+"I feel my anxiety start to rise as I think about it."
+"My train of thought ends as I feel a tap on my shoulder."
+show sayori 3a at t11 zorder 1
+s "Ready to walk home, [player]?"
+mc "Yep! Let's go!"
+"After I finish packing my things, Sayori and I wave goodbye to the others as we head out to start our walk home."
+show sayori at thide
+hide sayori
+stop music fadeout 1.0
+scene bg residential_day
+with dissolve_scene_full
 
 
+if encore_sayoriquestion_1 == True:
+    if hangout2 == "Sayori":
+        jump day2_walkhome1
 
+if encore_sayoriquestion_1 == False:
+    if hangout2 == "Sayori" or hangout2 == "Natsuki" or hangout2 == "Yuri" or hangout2 == "Monika":
+        jump day2_walkhome2
 
-
-
-
+if encore_sayoriquestion_1 == True:
+    if hangout2 == "Monika" or hangout2 == "Natsuki" or hangout2 == "Yuri":
+        jump day2_walkhome3
 
 
 #Walking Home
 
 label day2_walkhome1:
-if encore_sayoriquestion_1 == True:
-    if hangout2 == "Sayori":
-        scene bg residential_day
-        with open_eyes
-        play music e4
-        show sayori 1y at t11 zorder 1
-        "During the walk home, I feel Sayori gently take my hand."
-        "When I turned to her, she kept looking straight ahead, madly blushing."
-        "I smile to myself as we keep walking."
-        "It seems that we've gotten more comfortable with showing off our affection for each other in public, even if it's something simple as holding hands."
-        "Sayori seems to be in a really good mood today."
-        "Well, she did say me being around her helps her feel better..."
-        "Well, I have no problem spending my time around Sayori!"
-        "What if this was the cure to her problems all along? Just us spending time around each other?"
-        "Well at this rate, she should be rid of those 'rainclouds' in no time!"
-        "The thought of that keeps me smiling through the duration of our walk."
-        show sayori at thide
-        hide sayori
-        scene bg house
-        with wipeleft_scene
-        "Eventually, we reach our houses."
-        show sayori 3b at t11 zorder 1
-        s "Hey, [player]?"
-        mc "Yeah, Sayori?"
-        s "I think I know where my poems are..."
-        show sayori 1y
-        s "I can stop by your house in a bit and drop them off if that's okay..."
-        "Sayori's voice trails off."
-        "I see where she's going with this..."
-        mc "Yeah, I'd love to have you over! I'll see you in a bit, Sayori."
-        show sayori 4q
-        s "Okay~"
-        "Sayori and I briefly embrace each other both we head back to our respective houses."
-        "I hope Sayori can stay a little longer this time..."
-        stop music fadeout 2.0
-        show sayori at thide
-        hide sayori
-        jump day2_poems
+with open_eyes
+play music e4
+show sayori 1y at t11 zorder 1
+"During the walk home, I feel Sayori gently take my hand."
+"When I turned to her, she kept looking straight ahead, madly blushing."
+"I smile to myself as we keep walking."
+"It seems that we've gotten more comfortable with showing off our affection for each other in public, even if it's something simple as holding hands."
+"Sayori seems to be in a really good mood today."
+"Well, she did say me being around her helps her feel better..."
+"Well, I have no problem spending my time around Sayori!"
+"What if this was the cure to her problems all along? Just us spending time around each other?"
+"Well at this rate, she should be rid of those 'rainclouds' in no time!"
+"The thought of that keeps me smiling through the duration of our walk."
+show sayori at thide
+hide sayori
+scene bg house
+with wipeleft_scene
+"Eventually, we reach our houses."
+show sayori 3b at t11 zorder 1
+s "Hey, [player]?"
+mc "Yeah, Sayori?"
+s "I think I know where my poems are..."
+show sayori 1y
+s "I can stop by your house in a bit and drop them off if that's okay..."
+"Sayori's voice trails off."
+"I see where she's going with this..."
+mc "Yeah, I'd love to have you over! I'll see you in a bit, Sayori."
+show sayori 4q
+s "Okay~"
+"Sayori and I briefly embrace each other both we head back to our respective houses."
+"I hope Sayori can stay a little longer this time..."
+stop music fadeout 2.0
+show sayori at thide
+hide sayori
+jump day2_poems
 
 
 label day2_walkhome2:
-    if encore_sayoriquestion_1 == False:
-        if hangout2 == "Sayori" or hangout2 == "Natsuki" or hangout2 == "Yuri" or hangout2 == "Monika":
-            scene bg residential_day
-            with open_eyes
-            play music t8
-            show sayori 1k at t11 zorder 1
-            "The walk home with Sayori is once again filled with awkward silence..."
+with open_eyes
+play music t8
+show sayori 1k at t11 zorder 1
+"The walk home with Sayori is once again filled with awkward silence..."
 
-    if hangout2 == "Sayori":
-            "Especially considering that moment we had in the clubroom earlier..."
+if hangout2 == "Sayori":
+    "Especially considering that moment we had in the clubroom earlier..."
 
-    if hangout2 == "Natsuki":
-            "Especially considering how Sayori saw me getting too comofortable with Natsuki..."
+if hangout2 == "Natsuki":
+    "Especially considering how Sayori saw me getting too comofortable with Natsuki..."
 
-    if hangout2 == "Yuri":
-            "Especially considering how Sayori saw me getting too comofortable with Yuri..."
+if hangout2 == "Yuri":
+    "Especially considering how Sayori saw me getting too comofortable with Yuri..."
 
-    if hangout2 == "Monika":
-            "Especially considering how Sayori saw me getting too comofortable with Monika..."
+if hangout2 == "Monika":
+    "Especially considering how Sayori saw me getting too comofortable with Monika..."
 
 
-    show sayori 1b
-    "Though we're able to make at least some small talk, with mostly just talking about how our days went."
-    show sayori 1l
-    "But even then, Sayori's cagy on some of her answers and struggles to directly answer me at times."
-    "Well, if I want to fix my friendship with Sayori, I better start now..."
-    scene bg residential_day
-    with wipeleft_scene
-    show sayori 3b at t11 zorder 1
-    s "Hey, [player]?"
-    mc "Yeah, Sayori?"
-    s "I think I know where my poems are..."
-    show sayori 1y
-    s "I can stop by your house in a bit and drop them off if that's okay..."
-    "Sayori's voice trails off."
-    "I see where she's going with this..."
-    mc "Yeah, I'd love to have you over!"
+show sayori 1b
+"Though we're able to make at least some small talk, with mostly just talking about how our days went."
+show sayori 1l
+"But even then, Sayori's cagy on some of her answers and struggles to directly answer me at times."
+"Well, if I want to fix my friendship with Sayori, I better start now..."
+scene bg residential_day
+with wipeleft_scene
+show sayori 3b at t11 zorder 1
+s "Hey, [player]?"
+mc "Yeah, Sayori?"
+s "I think I know where my poems are..."
+show sayori 1y
+s "I can stop by your house in a bit and drop them off if that's okay..."
+"Sayori's voice trails off."
+"I see where she's going with this..."
+mc "Yeah, I'd love to have you over!"
 
 if hangout2 == "Monika" or hangout2 == "Natsuki" or hangout2 == "Yuri":
-    s 1c "Are you sure that's okay? I wouldn't want to ruin your plans for tonight..."
+    s 2l "Are you sure that's okay? I wouldn't want to ruin your plans for tonight..."
 
     if hangout2 == "Monika":
         "I take it Sayori probably thinks I'm going to have an extended cuddling session with Monika tonight based off what she saw earlier in the club."
         "While that's not a bad idea...."
         mc "Yeah, I got nothing going on for tonight. I'll see you in a bit okay?"
         show sayori 1l
-        s "Okay..."
-        s u222141 "Alright! I'll see you in a bit [player]!"
+        s "O-{w=0.38}okay!"
+        mc "Come on, you'd know I'd love to have you over! It's been too long anyways..."
+        s u222141 "Alright! I'll see you in a bit, [player]!"
         show sayori 1q
         mc "See you-"
         show sayori at lhide
         hide sayori
         "Sayori happily skips to her porch and enters her house before I can say anything else."
         "Well that seemed to put her in a good mood."
+        "Hopefully, I can start making things right between us..."
         jump day2_poems
 
     if hangout2 == "Natsuki":
@@ -1689,14 +1867,16 @@ if hangout2 == "Monika" or hangout2 == "Natsuki" or hangout2 == "Yuri":
         "While that's not a bad idea...."
         mc "Yeah, I got nothing going on for tonight. I'll see you in a bit okay?"
         show sayori 1l
-        s "Okay..."
-        s u222141 "Alright! I'll see you in a bit [player]!"
+        s "O-{w=0.38}okay!"
+        mc "Come on, you'd know I'd love to have you over! It's been too long anyways..."
+        s u222141 "Alright! I'll see you in a bit, [player]!"
         show sayori 1q
         mc "See you-"
         show sayori at lhide
         hide sayori
         "Sayori happily skips to her porch and enters her house before I can say anything else."
         "Well that seemed to put her in a good mood."
+        "Hopefully, I can start making things right between us..."
         jump day2_poems
 
     if hangout2 == "Yuri":
@@ -1704,14 +1884,16 @@ if hangout2 == "Monika" or hangout2 == "Natsuki" or hangout2 == "Yuri":
         "While that's not a bad idea...."
         mc "Yeah, I got nothing going on for tonight. I'll see you in a bit okay?"
         show sayori 1l
-        s "Okay..."
-        s u222141 "Alright! I'll see you in a bit [player]!"
+        s "O-{w=0.38}okay!"
+        mc "Come on, you'd know I'd love to have you over! It's been too long anyways..."
+        s u222141 "Alright! I'll see you in a bit, [player]!"
         show sayori 1q
         mc "See you-"
         show sayori at lhide
         hide sayori
         "Sayori happily skips to her porch and enters her house before I can say anything else."
         "Well that seemed to put her in a good mood."
+        "Hopefully, I can start making things right between us..."
         jump day2_poems
 
 
@@ -1731,120 +1913,118 @@ if hangout2 == "Sayori":
     show sayori 2l
     s "O-{w=0.38}okay!"
     show sayori 4r
-    s "I'll see you in a bit [player]!"
+    s "I'll see you in a bit, [player]!"
     show sayori 1q
     mc "See you-"
     show sayori at lhide
     hide sayori
     "Sayori happily skips to her porch and enters her house before I can say anything else."
     "Well that seemed to put her in a good mood."
+    "Hopefully, I can start making things right between us..."
     jump day2_poems
 
 
 
 label day2_walkhome3:
-if encore_sayoriquestion_1 == True:
-    if hangout2 == "Monika" or hangout2 == "Natsuki" or hangout2 == "Yuri":
-            scene bg residential_day
-            with open_eyes
-            show sayori 1k at t11 zorder 1
-            "On the way back home, Sayori barley says anything."
-            "Let alone even look at me."
-            show sayori 1g
-            "But when she does, she usually shoots me an irritated or disappointed look."
-            "I completely screwed up..."
-            "I shouldn't have gotten so close to [hangout2] like that..."
+with open_eyes
+show sayori 1k at t11 zorder 1
+"On the way back home, Sayori barley says anything."
+"Let alone even look at me."
+show sayori 1g
+"But when she does, she usually shoots me an irritated or disappointed look."
+"I completely screwed up..."
+"I shouldn't have gotten so close to [hangout2] like that..."
 
-            if apologize_sn == True:
-                show sayori 1g
-                "Even though I apologized to Sayori for getting so close Natsuki, I still feel incredibly guility..."
-                show sayori 1f
-                "It's not like I intended for any of that to happen..."
-                show sayori 1k
-                "And I still feel like Sayori didn't really accept my apology either..."
-                "I really need to fix this before things between us get worse..."
+if apologize_sn == True:
+    show sayori 1g
+    "Even though I apologized to Sayori for getting so close Natsuki, I still feel incredibly guility..."
+    show sayori 1f
+    "It's not like I intended for any of that to happen..."
+    show sayori 1k
+    "And I still feel like Sayori didn't really accept my apology either..."
+    "I really need to fix this before things between us get worse..."
 
-            if apologize_sn == False:
-                show sayori 1k
-                "And I feel even worse for lying to her about it..."
-                show sayori 1g
-                "I'm not even sure if she really believed me..."
-                show sayori 1u
-                "For all I know, Sayori might even be thinking right now that I'm about to ditch her for Natsuki..."
-                "Knowing how she is right now, I just probably made things worse for her...."
-                show sayori 1k
-                "Maybe I can still fix this..."
+if apologize_sn == False:
+    show sayori 1k
+    "And I feel even worse for lying to her about it..."
+    show sayori 1g
+    "I'm not even sure if she really believed me..."
+    show sayori 1u
+    "For all I know, Sayori might even be thinking right now that I'm about to ditch her for Natsuki..."
+    "Knowing how she is right now, I just probably made things worse for her...."
+    show sayori 1k
+    "Maybe I can still fix this..."
 
 
-            if apologize_sy == True:
-                show sayori 1g
-                "Even though I apologized to Sayori for getting so close Yuri, I still feel incredibly guility..."
-                show sayori 1f
-                "It's not like I intended for any of that to happen..."
-                show sayori 1k
-                "And I still feel like Sayori didn't really accept my apology either..."
-                "I really need to fix this before things between us get worse..."
+if apologize_sy == True:
+    show sayori 1g
+    "Even though I apologized to Sayori for getting so close Yuri, I still feel incredibly guility..."
+    show sayori 1f
+    "It's not like I intended for any of that to happen..."
+    show sayori 1k
+    "And I still feel like Sayori didn't really accept my apology either..."
+    "I really need to fix this before things between us get worse..."
 
-            if apologize_sy == False:
-                show sayori 1k
-                "And I feel even worse for lying to her about it..."
-                show sayori 1g
-                "I'm not even sure if she really believed me..."
-                show sayori 1u
-                "For all I know, Sayori might even be thinking right now that I'm about to ditch her for Yuri..."
-                "Knowing how she is right now, I just probably made things worse for her...."
-                show sayori 1k
-                "Maybe I can still fix this..."
+if apologize_sy == False:
+    show sayori 1k
+    "And I feel even worse for lying to her about it..."
+    show sayori 1g
+    "I'm not even sure if she really believed me..."
+    show sayori 1u
+    "For all I know, Sayori might even be thinking right now that I'm about to ditch her for Yuri..."
+    "Knowing how she is right now, I just probably made things worse for her...."
+    show sayori 1k
+    "Maybe I can still fix this..."
 
 
 
-            if apologize_sm == True:
-                show sayori 1g
-                "Even though I apologized to Sayori for getting so close to Monika, I still feel incredibly guility..."
-                show sayori 1f
-                "It's not like I intended for any of that to happen..."
-                show sayori 1k
-                "And I still feel like Sayori didn't really accept my apology either..."
-                "I really need to fix this before things between us get worse..."
+if apologize_sm == True:
+    show sayori 1g
+    "Even though I apologized to Sayori for getting so close to Monika, I still feel incredibly guility..."
+    show sayori 1f
+    "It's not like I intended for any of that to happen..."
+    show sayori 1k
+    "And I still feel like Sayori didn't really accept my apology either..."
+    "I really need to fix this before things between us get worse..."
 
-            if apologize_sm == False:
-                show sayori 1k
-                "And I feel even worse for lying to her about it..."
-                show sayori 1g
-                "I'm not even sure if she really believed me..."
-                show sayori 1u
-                "For all I know, Sayori might even be thinking right now that I'm about to ditch her for Monika..."
-                "Knowing how she is right now, I just probably made things worse for her...."
-                show sayori 1k
-                "Maybe I can still fix this..."
+if apologize_sm == False:
+    show sayori 1k
+    "And I feel even worse for lying to her about it..."
+    show sayori 1g
+    "I'm not even sure if she really believed me..."
+    show sayori 1u
+    "For all I know, Sayori might even be thinking right now that I'm about to ditch her for Monika..."
+    "Knowing how she is right now, I just probably made things worse for her...."
+    show sayori 1k
+    "Maybe I can still fix this..."
 
 
-            scene bg residential_day
-            with wipeleft_scene
-            play music t8 fadein 2.0
-            show sayori 3l at t11 zorder 1
-            s "Hey, [player]..."
-            mc "Y-{w=0.38}yeah?"
-            "I'm half expecting her to bring up what happened."
-            show sayori 3c
-            s "I think I know where my poems are, so if you want I can stop by later."
-            "In my constant state of worriedness since the club, I almost forgot about the poems."
-            mc "Oh, yeah...{w=0.38}that'll be fine!"
-            mc "I'll see you later then, right?"
-            show sayori 1k
-            $ renpy.pause(delay=0.8, hard=True)
-            show sayori 1l
-            s "Y-{w=0.38}yeah, sure..."
-            mc "Alright..."
-            show sayori 1x
-            s "I'll see you in a bit."
-            show sayori at thide
-            hide sayori
-            "Sayori walks to her house and shuts the door behind her."
-            "She didn't give me her usual hug..."
-            "Well, hopefully I can fix things with Sayori when she comes over..."
-            stop music fadeout 2.0
-            jump day2_poems
+scene bg residential_day
+with wipeleft_scene
+play music t8 fadein 2.0
+show sayori 3l at t11 zorder 1
+s "Hey, [player]..."
+mc "Y-{w=0.38}yeah?"
+"I'm half expecting her to bring up what happened."
+show sayori 3c
+s "I think I know where my poems are, so if you want I can stop by later."
+"In my constant state of worriedness since the club, I almost forgot about the poems."
+mc "Oh, yeah...{w=0.38}that'll be fine!"
+mc "I'll see you later then, right?"
+show sayori 1k
+$ renpy.pause(delay=0.8, hard=True)
+show sayori 1l
+s "Y-{w=0.38}yeah, sure..."
+mc "Alright..."
+show sayori 1x
+s "I'll see you in a bit."
+show sayori at thide
+hide sayori
+"Sayori walks to her house and shuts the door behind her."
+"She didn't give me her usual hug..."
+"Well, hopefully I can fix things with Sayori when she comes over..."
+stop music fadeout 2.0
+jump day2_poems
 
 
 
