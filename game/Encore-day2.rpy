@@ -1469,7 +1469,7 @@ if encore_sayoriquestion1 == True: # We accepted Sayori's confession
         $ poem_giver = hangout1
         $ is_love_poem = False
 
-    elif encore_festival_question2 == "Natsuki":
+    elif encore_festivalquestion2 == "Natsuki":
         if neutral_split_n == True:
             # We favored Natsuki over Yuri
             $ poem_giver = "Natsuki"
@@ -1483,7 +1483,7 @@ if encore_sayoriquestion1 == True: # We accepted Sayori's confession
             $ poem_giver = "Natsuki"
             $ is_love_poem = True
 
-    elif encore_festival_question2 == "Yuri":
+    elif encore_festivalquestion2 == "Yuri":
         if neutral_split_y == True:
             # We favored Yuri over Natsuki
             $ poem_giver = "Yuri"
