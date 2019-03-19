@@ -1219,22 +1219,361 @@ show sayori u115191 at t42 zorder 2
 call groupAll(4, 2, 4, 1, 3) from _call_groupAll_3
 
 
+if encore_sayoriquestion_1 == False or encore_sayoriquestion_1 == True:
+    if encore_festivalquestion_2 == "Natsuki":
+        if hangout2 == "Monika" or hangout2 == "Yuri" or hangout2 == "Sayori":
+            "After a moment of silence, Yuri is the first to speak up."
+            show monika 1c
+            show sayori 1b
+            show natsuki 1k
+            y 1f "You know...{w=0.38}I did happen to keep the welcome banner we made for the festival..."
+            y 1j "I'd just need to find it. It's somewhere in my house."
+            n 1d "I wouldn't mind baking cupcakes again...{w=0.38}especially since I had fun doing it last time with [player]."
+            show natsuki 1a
+            "She says that directly looking at me."
+            show yuri 1e
+            show natsuki 2a
+            "Natsuki certainly isn't letting what just happened between me and [hangout2] go."
+
+
+
+
+        if hangout2 == "Natsuki":
+            "Natsuki certainly isn't letting what just happened between us go."
+
+
+"I try to move past the sudden awkwardness."
+mc "Y-{w=0.38}yeah! Me too, Nat!"
+show natsuki 1i
+"Natsuki looks at me with a puzzled look."
+n 2h "‘Nat'?"
+n 2i "Where did that come from?"
+mc "I don't know, I thought it'd be a cute if I gave a little nickname for you."
+show natsuki 1v at h41 zorder t41
+"Normally, Natsuki would shoot me an irritated look before proclaiming to everyone that she isn't cute..."
+show natsuki 5u
+"But this time it doesn't even look like she knows how to get properly get mad at me."
+show natsuki 5n
+"She tries to pout but I can tell she's forcibly trying to hold back a grin."
+n 4w "Are you implying that I'm cute?"
+mc "And if I was?"
+n 4r "Uuuu!"
+"Natsuki suddenly looks off in another direction, only becoming more flustered."
+show natsuki 4s
+"After about a moment she turns back to face me, no longer able to contain her grin."
+n u112212 "I'll let that slide...{w=0.38}just this once!"
+
+
+if hangout2 == "Monika":
+    show monika 2h
+    "I chuckle to myself, but in the corner of my eye I see Monika shooting me a stern look."
+    show natsuki 1m
+    "I should probably take the hint and stop..."
+    $ style.say_dialogue = style.edited
+    show monika 2q
+    "{cps=50}Forget about her!{nw}"
+    $ style.say_dialogue = style.normal
+    show monika 2n
+    "Monika clears her throat."
+
+
+if hangout2 == "Yuri":
+    show yuri 4b
+    "I chuckle to myself, but in the corner of my eye I see Yuri dejectedly looking off."
+    "Oh, no...{w=0.38}she isn't assuming..."
+    show yuri 4a
+    mc "I-{w=0.38}I mean...{w=0.38}I always love spending time with you all, and..."
+    show natsuki 1m
+    "Seeing Yuri's pained look derails my train of thought."
+    "I forgot that Yuri didn't want to feel like she was getting in the way between me and Natsuki..."
+    mc "Um...{w=0.38}yeah...{w=0.38}so..."
+    show sayori 1k
+    "I look like an idiot as I try to find what to say next."
+    "Thankfully Monika comes in to seemingly save the situation."
+
+if hangout2 == "Natsuki":
+    show sayori 1t
+    "I chuckle to myself, but in the corner of my eye I see Sayori looking tearfully at me."
+    show natsuki 1j
+    mc "I-{w=0.38}I mean...{w=0.38}I always love spending time with you all, and..."
+    "Seeing Sayori just trying to hold back her tears completely derails my train of thought."
+    "I never did take into account that she might not yet be comfortable with me being this flirty around Natsuki yet."
+    mc "Um...{w=0.38}yeah...{w=0.38}so..."
+    show natsuki 1m
+    show sayori 1k
+    "I look like an idiot as I try to find what to say next."
+    "Thankfully Monika comes in to seemingly save the situation."
+
+
+if hangout2 == "Sayori":
+    show sayori 1k
+    "I chuckle to myself, but in the corner of my eye I see Sayori awkwardly staring at the wall."
+    show natsuki 1j
+    mc "I-{w=0.38}I mean...{w=0.38}I always love spending time with you all, and..."
+    show sayori 1g
+    "Seeing the look on Sayori's face completely derails my train of thought."
+    "Even though Sayori just told me how she feels when I spend time around Natsuki, I didn't completely realize it until now."
+    mc "Um...{w=0.38}yeah...{w=0.38}so..."
+    show natsuki 1m
+    show sayori 1k
+    "I look like an idiot as I try to find what to say next."
+    "Thankfully Monika comes in to seemingly save the situation."
+
 
 if encore_sayoriquestion_1 == True:
-    if hangout2 == "Sayori":
-        stop music
-        jump day2_walkhome1
+    show sayori 1g
+    "Sayori once again shoots me the same quizzical glance she gave me yesterday when Natsuki brought up the time we spent together last Sunday."
+    "Sooner or later, I'm going to have to resolve all this and tell Natsuki that I'm with Sayori..."
+    "As well as tell Sayori everything that happened between me and Natsuki on Sunday."
+    "Hopefully that will put her mind to rest..."
+    "Thankfully Monika comes in to seemingly save the situation."
+
+#######################################################################
+
+#Yuri Moment
+
+if encore_sayoriquestion_1 == False or encore_sayoriquestion_1 == True:
+    if encore_festivalquestion_2 == "Yuri":
+        "After a moment of silence, Natsuki is the first to speak up."
+        show monika 1c
+        show sayori 1b
+        show yuri 1e
+        n 1k "I wouldn't mind baking cupcakes again, I still have plenty of ingredients left over."
+        y 1b "I did happen to keep the welcome banner that [player] and I made for the festival. I'd just need to find it. It's somewhere at my house, and I wouldn't mind for some help looking for it."
+        "She says that directly looking at me."
+        mc "Y-{w=0.38}yeah! You too Yuri!"
+        show yuri 2t
+        mc "I'd love to come over to your place anytime!"
+        show yuri 2u
+        mc "Preparing for the festival with you was really fun!"
+        "Yuri looks off blushing like crazy."
+        y 2q "Y-{w=0.38}yeah...{w=0.38}it was really nice..."
+        show yuri 2p
+        "She says that softly to herself, but quickly realizes that everyone overheard."
+        y 1o "Oh! I mean...{w=0.38}yeah, I would love your help!"
+        show yuri 4c
+        "I chuckle to myself, Yuri's mannerisms have always been adorable."
+        show natsuki 1s
+
+if hangout2 == "Monika":
+    show monika 2h
+    "In the corner of my eye I see Monika shooting me a stern look."
+    show yuri 1e
+    "I should probably take the hint and stop..."
+    $ style.say_dialogue = style.edited
+    show monika 2q
+    "{cps=50}Forget about her!{nw}"
+    $ style.say_dialogue = style.normal
+    show monika 2n
+    "Monika clears her throat."
+
+if hangout2 == "Yuri":
+    show sayori 1t
+    "In the corner of my eye I see Sayori looking tearfully at me."
+    show yuri 1e
+    mc "I-{w=0.38}I mean...{w=0.38}I always love spending time with you all, and..."
+    "Seeing Sayori just trying to hold back her tears completely derails my train of thought."
+    "I never did take into account that she might not yet be comfortable with me being this flirty around Natsuki yet."
+    mc "Um...{w=0.38}yeah...{w=0.38}so..."
+    show yuri 1f
+    show sayori 1k
+    "I look like an idiot as I try to find what to say next."
+    "Thankfully Monika comes in to seemingly save the situation."
+
+if hangout2 == "Natsuki":
+    show natsuki 5n
+    "In the corner of my eye I see Natsuki eyeing my suspiciously."
+    "Oh, no...{w=0.38}she isn't assuming..."
+    show natsuki xul
+    mc "I-{w=0.38}I mean...{w=0.38}I always love spending time with you all, and..."
+    show yuri 1e
+    "Seeing Natsuki's disappointed look derails my train of thought."
+    "I forgot that Natsuki was suspicious of me being with Yuri and not wanting anything to do with us..."
+    mc "Um...{w=0.38}yeah...{w=0.38}so..."
+    show sayori 1k
+    "I look like an idiot as I try to find what to say next."
+    "Thankfully Monika comes in to seemingly save the situation."
+
+if hangout2 == "Sayori":
+    show sayori 1k
+    "In the corner of my eye I see Sayori awkwardly staring at the wall."
+    show yuri 1e
+    mc "I-{w=0.38}I mean...{w=0.38}I always love spending time with you all, and..."
+    show sayori 1g
+    "Seeing the look on Sayori's face completely derails my train of thought."
+    "Even though Sayori just told me how she feels when I spend time around Natsuki, I didn't completely realize it until now."
+    mc "Um...{w=0.38}yeah...{w=0.38}so..."
+    show yuri 1f
+    show sayori 1k
+    "I look like an idiot as I try to find what to say next."
+    "Thankfully Monika comes in to seemingly save the situation."
+
 
 if encore_sayoriquestion_1 == True:
-    if hangout2 == "Monika" or hangout2 == "Natsuki" or hangout2 == "Yuri":
-        stop music
-        jump day2_walkhome3
+    show sayori 1g
+    "Sayori once again shoots me the same quizzical glance she gave me yesterday when Natsuki brought up the time we spent together last Sunday."
+    "Sooner or later, I'm going to have to resolve all this and tell Natsuki that I'm with Sayori..."
+    "As well as tell Sayori everything that happened between me and Natsuki on Sunday."
+    "Hopefully that will put her mind to rest..."
+    "Thankfully Monika comes in to seemingly save the situation."
 
-if encore_sayoriquestion_1 == False:
-    if hangout2 == "Sayori" or hangout2 == "Natsuki" or hangout2 == "Yuri" or hangout2 == "Monika":
-        stop music
-        jump day2_walkhome2
 
+
+
+
+show yuri 1a
+show natsuki 1k
+show sayori 1b
+m 3b "I can type up a summary of what we do on a day-to-day basis and write some things down for what we can tell the Newspaper."
+s 4n "Ooh, ooh, I know what I can do!"
+"Everyone turns to Sayori."
+s 1x "I can go to the library and get some books for us to read! I'd think it'd look good for when they take pictures of us!"
+m 1b "Great call, Sayori!"
+m 1a "As for you, [player], do you have any ideas?"
+mc "Hmmmm..."
+"I take a few moments to think to myself."
+"Suddenly I got an idea."
+mc "Well, I can bring in some famous poems that we could also use for the photo ops, I'd think it'd be great to show that there's more to literature than just books."
+mc "Heck, maybe we can even use some of our own poems as well, I can organize them together like Monika did, but I'll need everyone else's poems."
+show yuri 1g
+show monika 1c
+show sayori u114111
+show natsuki u116113
+"Everyone pauses to reflect on what I just said."
+m 2b "That's a good idea, [player]! I'll hand you all my stuff tomorrow if that's ok with you."
+mc "That's perfectly fine!"
+s 2x "I have all my poems back at my place, I can give them to you later."
+
+
+# BEGIN "LIKE YOU/LOVE YOU" POEM LOGIC
+$ poem_giver = "" # Will be either Yuri or Natsuki
+$ is_love_poem = False
+$ same_hangout = hangout1 == hangout2
+$ conflicting_hangout = (hangout1 == "Natsuki" and hangout2 == "Yuri") or (hangout1 == "Yuri" and hangout2 == "Natsuki")
+$ neutral_split_n = (hangout1 == "Natsuki" and (hangout2 == "Sayori" or hangout2 == "Monika")) or (hangout2 == "Natsuki" and (hangout1 == "Sayori" or hangout1 == "Monika"))
+$ neutral_split_y = (hangout1 == "Yuri" and (hangout2 == "Sayori" or hangout2 == "Monika")) or (hangout2 == "Yuri" and (hangout1 == "Sayori" or hangout1 == "Monika"))
+
+if encore_sayoriquestion1 == True: # We accepted Sayori's confession
+    if (hangout1 == "Sayori" or hangout1 == "Monika") and (hangout2 == "Sayori" or hangout2 == "Monika"):
+        # Spent both days with Sayori, Monika, or split between them--show the love poem from the weekend hangout girl
+        $ poem_giver = encore_festivalquestion_2
+        $ is_love_poem = True
+
+    elif encore_festivalquestion_2 == hangout1 and same_hangout == True:
+        # Outside the confession, we have been 100% faithful to either Yuri or Natsuki
+        $ poem_giver = encore_festivalquestion_2
+        $ is_love_poem = True
+
+    elif encore_festivalquestion2 != hangout1 and same_hangout == True and (hangout1 == "Natsuki" or hangout1 == "Yuri"):
+        # We spent the weekend with one girl, but spent the two days with the other -- the hangout girl gives the like poem
+        $ poem_giver = hangout1
+        $ is_love_poem = False
+
+    elif encore_festival_question2 == "Natsuki":
+        if neutral_split_n == True:
+            # We favored Natsuki over Yuri
+            $ poem_giver = "Natsuki"
+            $ is_love_poem = True
+        elif neutral_split_y == True:
+            # We haven't spent time with Natsuki since the weekend, and Yuri is taking interest
+            $ poem_giver = "Yuri"
+            $ is_love_poem = False
+        elif conflicting_hangout == True:
+            # We spent time with both of them, but Natsuki wins for having the weekend
+            $ poem_giver = "Natsuki"
+            $ is_love_poem = True
+
+    elif encore_festival_question2 == "Yuri":
+        if neutral_split_y == True:
+            # We favored Yuri over Natsuki
+            $ poem_giver = "Yuri"
+            $ is_love_poem = True
+        elif neutral_split_n == True:
+            # We haven't spent time with Yuri since the weekend, and Natsuki is taking interest
+            $ poem_giver = "Natsuki"
+            $ is_love_poem = False
+        elif conflicting_hangout == True:
+            # We spent time with both of them, but Yuri wins for having the weekend
+            $ poem_giver = "Yuri"
+            $ is_love_poem = True
+
+    # End of Accepted Confession block
+else: # We didn't accept Sayori's confession
+    if encore_festivalquestion_2 == hangout1 and same_hangout == True:
+        # We spent the weekend and two hangouts with Yuri or Natsuki... but wait!
+        # The other girl will give a "like you" poem
+        if encore_festivalquestion_2 == "Natsuki":
+            $ poem_giver = "Yuri"
+        else:
+            $ poem_giver = "Natsuki"
+        $ is_love_poem = False
+
+    elif neutral_split_n == True or neutral_split_y == True:
+        # If we spent one day with either Yuri or Natsuki, the weekend girl gives the "like you" poem
+        if encore_festivalquestion_2 == "Natsuki":
+            $ poem_giver = "Natsuki"
+        else:
+            $ poem_giver = "Yuri"
+        $ is_love_poem = False
+
+    # End of Rejected Confession block
+
+# We have figured our logic and know which poem to show, based on poem_giver ("Natsuki" or "Yuri") and is_love_poem (True or False)
+
+if poem_giver == "Natsuki":
+    #NatsukiGivesYouThePoem
+    y 1b "Same here, I'll give you them at tomorrow's meeting, [player]."
+    n 3c "I think I have mine with me, let me check."
+    show monika at thide
+    show sayori at thide
+    show yuri at thide
+    hide monika
+    hide sayori
+    hide yuri
+    show natsuki 1a at t11
+    "Natsuki searches through her bag and retrieves a small stack of papers."
+    show natsuki 1d at t11
+    n "Here you go, that should be everything."
+    "Natsuki hands me her poems."
+    mc "Thanks, Natsuki."
+    show natsuki 1a at t41
+    show monika 3b at t43 zorder 4
+    show yuri 1a at t44 zorder 3
+    show sayori 1a at t42 zorder 2
+
+elif poem_giver == "Yuri":
+    #YuriGivesYouThePoem
+    n 1b "Yeah, [player], I'll give you mine tomorrow."
+    y 3b "I believe I have my poems with me, let me check quickly."
+    show monika at thide
+    show sayori at thide
+    show natsuki at thide
+    hide monika
+    hide sayori
+    hide natsuki
+    show yuri 3a at t11
+    "Yuri searches through her bag and retrieves a small stack of papers."
+    show yuri 2b at t11
+    y "Here you go, [player]! That should be everything!"
+    "Yuri hands me her poems."
+    mc "Thanks, Yuri."
+    show natsuki 1a at t41
+    show monika 3b at t43 zorder 4
+    show yuri 1a at t44 zorder 3
+    show sayori 1a at t42 zorder 2
+
+## Move this to the later point where we need to check back on this and uncomment it there.
+#if poem_giver == "Natsuki":
+#    if is_love_poem == True:
+#        # Show Natsuki's love poem
+#    else:
+#        # Show Natsuki's like poem
+
+#if poem_giver == "Yuri":
+#    if is_love_poem == True:
+#        # Show Yuri's love poem
+#    else:
+#        # Show Yuri's like poem
 
 
 
