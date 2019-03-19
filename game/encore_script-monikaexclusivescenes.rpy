@@ -206,7 +206,7 @@ label mencore_2:
     "And her exceptional puns!"
 
     if encore_sayoriquestion_1 == True:
-        "Wait...{w=0.28},why am I thinking like this?"
+        "Wait...{w=0.28}why am I thinking like this?"
         "What about Sayori?"
 
 
@@ -386,7 +386,7 @@ show yuri u125111
 show natsuki 5g
 show sayori 1i
 show yuri u123114
-"All 3 girls are looking at us, with a bit of an irritated{w=0.38}...almost jealous{w=0.38}...expression on their faces."
+"All three girls are looking at us, with a bit of an irritated{w=0.38}...almost jealous{w=0.38}...expression on their faces."
 "Great..."
 "Well, it's up to me to attempt to salvage this situation."
 show natsuki at thide
