@@ -1666,88 +1666,74 @@ else: # We didn't accept Sayori's confession
         # The other girl will give a "like you" poem
         if encore_festivalquestion_2 == "Natsuki":
             $ poem_giver = "Yuri"
-
-            if encore_festivalquestion_2 == "Natsuki":
-                if hangout1 == "Natsuki":
-                    if hangout2 == "Natsuki":
-                        jump y_poem1
         else:
             $ poem_giver = "Natsuki"
         $ is_love_poem = False
-
-        if encore_festivalquestion_2 == "Yuri":
-            if hangout1 == "Yuri":
-                if hangout2 == "Yuri":
-                    jump n_poem1
-
-
-
-
+        
     elif neutral_split_n == True or neutral_split_y == True:
         # If we spent one day with either Yuri or Natsuki, the weekend girl gives the "like you" poem
         if encore_festivalquestion_2 == "Natsuki":
             $ poem_giver = "Natsuki"
-
-            if (hangout1 == "Natsuki" and (hangout2 == "Sayori" or hangout2 == "Monika")) or (hangout2 == "Natsuki" and (hangout1 == "Sayori" or hangout1 == "Monika")) or (hangout1 == "Yuri" and (hangout2 == "Sayori" or hangout2 == "Monika")) or (hangout2 == "Yuri" and (hangout1 == "Sayori" or hangout1 == "Monika")):
-                jump n_poem1
-
         else:
             $ poem_giver = "Yuri"
         $ is_love_poem = False
-
-        if encore_festivalquestion_2 == "Yuri":
-            if (hangout1 == "Natsuki" and (hangout2 == "Sayori" or hangout2 == "Monika")) or (hangout2 == "Natsuki" and (hangout1 == "Sayori" or hangout1 == "Monika")) or (hangout1 == "Yuri" and (hangout2 == "Sayori" or hangout2 == "Monika")) or (hangout2 == "Yuri" and (hangout1 == "Sayori" or hangout1 == "Monika")):
-                jump y_poem1
 
     # End of Rejected Confession block
 
 # We have figured our logic and know which poem to show, based on poem_giver ("Natsuki" or "Yuri") and is_love_poem (True or False)
 
-label n_poem1:
 if poem_giver == "Natsuki":
-    #NatsukiGivesYouThePoem
-    y 1b "Same here, I'll give you them at tomorrow's meeting, [player]."
-    n 3c "I think I have mine with me, let me check."
-    show monika at thide
-    show sayori at thide
-    show yuri at thide
-    hide monika
-    hide sayori
-    hide yuri
-    show natsuki 1a at t11
-    "Natsuki searches through her bag and retrieves a small stack of papers."
-    show natsuki 1d at t11
-    n "Here you go, that should be everything."
-    "Natsuki hands me her poems."
-    mc "Thanks, Natsuki."
-    show natsuki 1a at t41
-    show monika 3b at t43 zorder 4
-    show yuri 1a at t44 zorder 3
-    show sayori 1a at t42 zorder 2
+    jump n_poem1
+elif poem_giver == "Yuri":
+    jump y_poem1
+else:
     jump day2_clubend
 
+label n_poem1:
+    if poem_giver == "Natsuki":
+        #NatsukiGivesYouThePoem
+        y 1b "Same here, I'll give you them at tomorrow's meeting, [player]."
+        n 3c "I think I have mine with me, let me check."
+        show monika at thide
+        show sayori at thide
+        show yuri at thide
+        hide monika
+        hide sayori
+        hide yuri
+        show natsuki 1a at t11
+        "Natsuki searches through her bag and retrieves a small stack of papers."
+        show natsuki 1d at t11
+        n "Here you go, that should be everything."
+        "Natsuki hands me her poems."
+        mc "Thanks, Natsuki."
+        show natsuki 1a at t41
+        show monika 3b at t43 zorder 4
+        show yuri 1a at t44 zorder 3
+        show sayori 1a at t42 zorder 2
+        jump day2_clubend
+
 label y_poem1:
-if poem_giver == "Yuri":
-    #YuriGivesYouThePoem
-    n 1b "Yeah, [player], I'll give you mine tomorrow."
-    y 3b "I believe I have my poems with me, let me check quickly."
-    show monika at thide
-    show sayori at thide
-    show natsuki at thide
-    hide monika
-    hide sayori
-    hide natsuki
-    show yuri 3a at t11
-    "Yuri searches through her bag and retrieves a small stack of papers."
-    show yuri 2b at t11
-    y "Here you go, [player]! That should be everything!"
-    "Yuri hands me her poems."
-    mc "Thanks, Yuri."
-    show natsuki 1a at t41
-    show monika 3b at t43 zorder 4
-    show yuri 1a at t44 zorder 3
-    show sayori 1a at t42 zorder 2
-    jump day2_clubend
+    if poem_giver == "Yuri":
+        #YuriGivesYouThePoem
+        n 1b "Yeah, [player], I'll give you mine tomorrow."
+        y 3b "I believe I have my poems with me, let me check quickly."
+        show monika at thide
+        show sayori at thide
+        show natsuki at thide
+        hide monika
+        hide sayori
+        hide natsuki
+        show yuri 3a at t11
+        "Yuri searches through her bag and retrieves a small stack of papers."
+        show yuri 2b at t11
+        y "Here you go, [player]! That should be everything!"
+        "Yuri hands me her poems."
+        mc "Thanks, Yuri."
+        show natsuki 1a at t41
+        show monika 3b at t43 zorder 4
+        show yuri 1a at t44 zorder 3
+        show sayori 1a at t42 zorder 2
+        jump day2_clubend
 
 ## Move this to the later point where we need to check back on this and uncomment it there.
 #if poem_giver == "Natsuki":
