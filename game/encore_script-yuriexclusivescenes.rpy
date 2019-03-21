@@ -1722,7 +1722,6 @@ if encore_sayoriquestion_1 == False:
 
 
 
-show yuri 1s at face
 "Suddenly, I hear Monika stand up and walk to the front of the room."
 scene bg club_day with open_eyes
 play music t5 fadein 1.0

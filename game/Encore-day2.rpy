@@ -1223,6 +1223,11 @@ if encore_sayoriquestion_1 == False or encore_sayoriquestion_1 == True:
     if encore_festivalquestion_2 == "Natsuki":
         jump day2_t1
 
+if encore_sayoriquestion_1 == False or encore_sayoriquestion_1 == True:
+    if encore_festivalquestion_2 == "Yuri":
+        jump day2_t5
+
+
 
 label day2_t1:
 "After a moment of silence, Yuri is the first to speak up."
@@ -1372,13 +1377,6 @@ show sayori 1g
 "Thankfully Monika comes in to seemingly save the situation."
 jump day2_tend
 
-#######################################################################
-
-#Yuri Moment
-
-if encore_sayoriquestion_1 == False or encore_sayoriquestion_1 == True:
-    if encore_festivalquestion_2 == "Yuri":
-        jump day2_t5
 
 label day2_t5:
 "After a moment of silence, Natsuki is the first to speak up."
@@ -1402,7 +1400,8 @@ if encore_festivalquestion_2 == "Yuri":
 label day2_t6:
 y 1b "I did happen to keep the welcome banner that [player] and I made for the festival. I'd just need to find it."
 y 3j "It's somewhere at my house, and I wouldn't mind for some help looking for it."
-"She says that directly looking at me."
+show yuri 3s
+"Yuri looks whimsically at me."
 "She isn't asking..."
 "Especially after..."
 mc "Y-{w=0.38}yeah! I wouldn't mind helping you again!"
@@ -1415,7 +1414,8 @@ jump day2_awk_2
 label day2_t7:
 y 1b "I did happen to keep the welcome banner that I made for the festival. I'd just need to find it."
 y 3q "I wouldn't mind some help in finding it..."
-"She says that directly looking at me."
+show yuri 3s
+"Yuri looks whimsically at me."
 "She isn't asking..."
 "Especially after..."
 mc "Y-{w=0.38}yeah! I wouldn't mind helping you!"
@@ -1428,8 +1428,9 @@ jump day2_awk_2
 label day2_t8:
 y 1b "I did happen to keep the welcome banner that [player] and I made for the festival. I'd just need to find it."
 y 3j "It's somewhere at my house, and I wouldn't mind for some help looking for it."
-"She says that directly looking at me."
-"Yuri doesn't seem like she wants to let what happened between me and [hangout2] go..."
+show yuri 3s
+"Yuri looks whimsically at me."
+"It doesn't seem like she wants to let what happened between me and [hangout2] go..."
 mc "Y-{w=0.38}yeah! I wouldn't mind helping you again!"
 show yuri 2t
 mc "I'd love to come over to your place anytime!"
@@ -1474,7 +1475,7 @@ if hangout2 == "Yuri":
     show yuri 1e
     mc "I-{w=0.38}I mean...{w=0.38}I always love spending time with you all, and..."
     "Seeing Sayori just trying to hold back her tears completely derails my train of thought."
-    "I never did take into account that she might not yet be comfortable with me being this flirty around Natsuki yet."
+    "I never did take into account that she might not yet be comfortable with me being this flirty around Yuri yet."
     mc "Um...{w=0.38}yeah...{w=0.38}so..."
     show yuri 1f
     show sayori 1k
@@ -1550,6 +1551,8 @@ mc "That's perfectly fine!"
 s 2x "I have all my poems back at my place, I can give them to you later."
 
 
+
+
 # BEGIN "LIKE YOU/LOVE YOU" POEM LOGIC
 $ poem_giver = "" # Will be either Yuri or Natsuki
 $ is_love_poem = False
@@ -1576,14 +1579,16 @@ if encore_sayoriquestion_1 == True: # We accepted Sayori's confession
         $ poem_giver = encore_festivalquestion_2
         $ is_love_poem = True
 
-        if hangout1 == "Natsuki":
-            jump y_poem1
+if encore_sayoriquestion_1 == True:
+    if hangout1 == "Natsuki":
+        if hangout2 == "Natsuki":
+                jump n_poem1
 
-        if hangout1 == "Yuri":
+
+if encore_sayoriquestion_1 == True:
+    if hangout1 == "Yuri":
+        if hangout2 == "Yuri":
             jump n_poem1
-
-###############
-#Things not working
 
 
     elif encore_festivalquestion_2 != hangout1 and same_hangout == True and (hangout1 == "Natsuki" or hangout1 == "Yuri"):
@@ -1591,14 +1596,14 @@ if encore_sayoriquestion_1 == True: # We accepted Sayori's confession
         $ poem_giver = hangout1
         $ is_love_poem = False
 
-    elif encore_festival_question_2 == "Natsuki":
+    elif encore_festivalquestion_2 == "Natsuki":
         if neutral_split_n == True:
             # We favored Natsuki over Yuri
             $ poem_giver = "Natsuki"
             $ is_love_poem = True
-            jump n_poem1
 
-
+            if (hangout1 == "Natsuki" and (hangout2 == "Sayori" or hangout2 == "Monika")) or (hangout2 == "Natsuki" and (hangout1 == "Sayori" or hangout1 == "Monika")):
+                jump n_poem1
 
 
         elif neutral_split_y == True:
@@ -1617,30 +1622,45 @@ if encore_sayoriquestion_1 == True: # We accepted Sayori's confession
             # We spent time with both of them, but Natsuki wins for having the weekend
             $ poem_giver = "Natsuki"
             $ is_love_poem = True
-            jump n_poem1
+
+            if encore_festivalquestion_2 == "Natsuki":
+                if hangout1 == "Yuri":
+                    if hangout2 == "Natsuki":
+                        jump n_poem1
 
 
-
-    elif encore_festival_question_2 == "Yuri":
+    elif encore_festivalquestion_2 == "Yuri":
         if neutral_split_y == True:
             # We favored Yuri over Natsuki
             $ poem_giver = "Yuri"
             $ is_love_poem = True
-            jump y_poem1
+
+            if (hangout1 == "Yuri" and (hangout2 == "Sayori" or hangout2 == "Monika")) or (hangout2 == "Yuri" and (hangout1 == "Sayori" or hangout1 == "Monika")):
+                jump y_poem1
 
 
         elif neutral_split_n == True:
             # We haven't spent time with Yuri since the weekend, and Natsuki is taking interest
             $ poem_giver = "Natsuki"
             $ is_love_poem = False
-            jump n_poem1
+
+            if encore_festivalquestion_2 == "Yuri":
+                if hangout1 == "Natsuki":
+                    if hangout2 == "Natsuki":
+                        jump y_poem1
+
 
 
         elif conflicting_hangout == True:
             # We spent time with both of them, but Yuri wins for having the weekend
             $ poem_giver = "Yuri"
             $ is_love_poem = True
-            jump y_poem1
+
+            if encore_festivalquestion_2 == "Yuri":
+                if (hangout1 == "Natsuki" and hangout2 == "Yuri") or (hangout1 == "Yuri" and hangout2 == "Natsuki"):
+                    jump y_poem1
+
+
 
 
     # End of Accepted Confession block
@@ -1650,17 +1670,38 @@ else: # We didn't accept Sayori's confession
         # The other girl will give a "like you" poem
         if encore_festivalquestion_2 == "Natsuki":
             $ poem_giver = "Yuri"
+
+            if encore_festivalquestion_2 == "Natsuki":
+                if hangout1 == "Natsuki":
+                    if hangout2 == "Natsuki":
+                        jump y_poem1
         else:
             $ poem_giver = "Natsuki"
         $ is_love_poem = False
+
+        if encore_festivalquestion_2 == "Yuri":
+            if hangout1 == "Yuri":
+                if hangout2 == "Yuri":
+                    jump n_poem1
+
+
+
 
     elif neutral_split_n == True or neutral_split_y == True:
         # If we spent one day with either Yuri or Natsuki, the weekend girl gives the "like you" poem
         if encore_festivalquestion_2 == "Natsuki":
             $ poem_giver = "Natsuki"
+
+            if (hangout1 == "Natsuki" and (hangout2 == "Sayori" or hangout2 == "Monika")) or (hangout2 == "Natsuki" and (hangout1 == "Sayori" or hangout1 == "Monika")) or (hangout1 == "Yuri" and (hangout2 == "Sayori" or hangout2 == "Monika")) or (hangout2 == "Yuri" and (hangout1 == "Sayori" or hangout1 == "Monika")):
+                jump n_poem1
+
         else:
             $ poem_giver = "Yuri"
         $ is_love_poem = False
+
+        if encore_festivalquestion_2 == "Yuri":
+            if (hangout1 == "Natsuki" and (hangout2 == "Sayori" or hangout2 == "Monika")) or (hangout2 == "Natsuki" and (hangout1 == "Sayori" or hangout1 == "Monika")) or (hangout1 == "Yuri" and (hangout2 == "Sayori" or hangout2 == "Monika")) or (hangout2 == "Yuri" and (hangout1 == "Sayori" or hangout1 == "Monika")):
+                jump y_poem1
 
     # End of Rejected Confession block
 
