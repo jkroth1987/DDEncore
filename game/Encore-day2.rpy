@@ -1579,15 +1579,11 @@ if encore_sayoriquestion_1 == True: # We accepted Sayori's confession
         $ poem_giver = encore_festivalquestion_2
         $ is_love_poem = True
 
-if encore_sayoriquestion_1 == True:
-    if hangout1 == "Natsuki":
-        if hangout2 == "Natsuki":
-                jump n_poem1
+        if hangout1 == "Natsuki": # We already know we spent time with the same person twice, so only one check is needed here              
+            jump n_poem1
 
 
-if encore_sayoriquestion_1 == True:
-    if hangout1 == "Yuri":
-        if hangout2 == "Yuri":
+        if hangout1 == "Yuri":
             jump n_poem1
 
 
