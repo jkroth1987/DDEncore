@@ -1620,7 +1620,7 @@ else: # We didn't accept Sayori's confession
         else:
             $ poem_giver = "Natsuki"
         $ is_love_poem = False
-        
+
     elif neutral_split_n == True or neutral_split_y == True:
         # If we spent one day with either Yuri or Natsuki, the weekend girl gives the "like you" poem
         if encore_festivalquestion_2 == "Natsuki":

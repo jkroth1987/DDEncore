@@ -1362,8 +1362,9 @@ if hangout1 == "Sayori":
 
 if hangout1 == "Sayori":
     if hangout2 == "Natsuki":
-        "I also noticed that the subject matter of my poems have become more cutsey over time for some reason..."
+        "Reading through my old poems again, I noticed the subject matter become more cutsey over time for some reason..."
         "I guess that must be Natsuki's advice at work..."
+        "Though I can't forget that Sayori was my inspiration for a lot of these..."
 
 if hangout1 == "Sayori":
     if hangout2 == "Yuri":
@@ -1401,7 +1402,7 @@ if hangout1 == "Natsuki":
         "I guess Natsuki's advice actually got through to me..."
         "Though I can't forget that Sayori was my inspiration for a lot of these..."
         "Even if Natsuki may have influenced me a bit..."
-        "Funny enough, as I continue looking over my later poems, I see them becoming more dark, something that Yuri would like..."
+        "Funny enough, as I continue looking over my later poems, I see them becoming more dark and detailed, something which Yuri would like..."
         "Guess I've gotten more inspirtation from more people than I realized..."
 
 
@@ -1423,7 +1424,7 @@ if hangout1 == "Yuri":
         "Looks like Yuri's advice finally paid off!"
         "Though I can't forget that Sayori was my inspiration for a lot of these..."
         "Even if Yuri may have influenced me a bit..."
-        "Looking over my later poems, I see them becoming more dark, something that Yuri would like..."
+        "Looking over my later poems, I see them becoming more dark and detailed, something which Yuri would like..."
         "Guess I've gotten more inspirtation than I first realized..."
 
 
@@ -1449,7 +1450,7 @@ if hangout1 == "Yuri":
         "I am getting better!"
         "I guess all her motivation finally rubbed off on me."
         "Though I can't forget that Sayori was my inspiration for a lot of these..."
-        "And looking over my later poems, I see them becoming more dark, something that Yuri would like..."
+        "And looking over my later poems, I see them becoming more dark and detailed, something which Yuri would like..."
         "Guess I've gotten more inspirtation than I first realized..."
 
 
@@ -1481,7 +1482,7 @@ if hangout1 == "Monika":
         "Monika..."
         "I guess all her motivation finally rubbed off on me."
         "Though I can't forget that Sayori was my inspiration for a lot of these..."
-        "And looking over my later poems, I see them becoming more dark, something that Yuri would like..."
+        "And looking over my later poems, I see them becoming more dark and detailed, something which Yuri would like..."
         "Guess I've gotten more inspirtation than I first realized..."
 
 
@@ -1494,32 +1495,261 @@ if hangout1 == "Monika":
         "Maybe I was trying to impress her the whole time..."
 
 
-label day2_v2:
-"Later"
 
-
-
-
-
-if encore_festivalquestion_2 == "Yuri":
-    "I put down my poems and go to my bag to retrieve Yuri's poems, which I put right next to mine."
-    "I notice that in Yuri's stack of poems there’s a purple piece of paper."
-    "Hmm…{w=0.38}I don’t remember Yuri ever writing her poems down on purple paper..."
-    "Maybe she accidentally gave me something…"
-    jump day2_sarrive
-
-if encore_festivalquestion_2 == "Natsuki":
+if poem_giver == "Natsuki":
     "I put down my poems and go to my bag to retrieve Natsuki's poems, which I put right next to mine."
     "I notice that in Natsuki’s stack of poems there’s a pink piece of paper."
     "Hmm…{w=0.38}I don’t remember Natsuki ever writing her poems down on pink paper..."
     "Maybe she accidentally gave me something…"
     jump day2_sarrive
 
+if poem_giver == "Yuri":
+    "I put down my poems and go to my bag to retrieve Yuri's poems, which I put right next to mine."
+    "I notice that in Yuri's stack of poems there’s a purple piece of paper."
+    "Hmm…{w=0.38}I don’t remember Yuri ever writing her poems down on purple paper..."
+    "Maybe she accidentally gave me something…"
+    jump day2_sarrive
+
+
+
+label day2_v2:
+
+if hangout1 == "Sayori":
+    if hangout2 == "Sayori":
+      "As I look through my poems, I come to realize just how much [encore_festivalquestion_2] has influenced my writing."
+      "I guess by spending all that time around her, I picked up on her writing habits..."
+      "Though funny enough, my last poem deviates a little from the trend, and after reading over it, I see why Sayori liked it..."
+      "I guess that was the part of me that wanted to accept her confession..."
+
+if hangout1 == "Sayori":
+    if hangout2 == "Natsuki":
+         "As I look through my poems, I come to realize just how much [encore_festivalquestion_2] has influenced my writing."
+         "I guess by spending all that time around her, I picked up on her writing habits..."
+         "Though funny enough, my last poem deviates a little from the trend, and after reading over it, I see why Sayori liked it..."
+
+         if encore_festivalquestion_2 == "Natsuki":
+             "I guess I can see why this wasn't up to Natsuki's standards..."
+             "Still, she didn't really seem to mind..."
+
+         if encore_festivalquestion_2 == "Yuri":
+            "I guess I can finally see Yuri's point of needing to eventually pick a style and sticking with it..."
+            "Though, a little experimentation never hurt anyone..."
+
+
+if hangout1 == "Sayori":
+    if hangout2 == "Yuri":
+         "As I look through my poems, I come to realize just how much [encore_festivalquestion_2] has influenced my writing."
+         "I guess by spending all that time around her, I picked up on her writing habits..."
+         "Though funny enough, my last poem deviates a little from the trend, and after reading over it, I see why Sayori liked it..."
+
+         if encore_festivalquestion_2 == "Natsuki":
+             "I guess I can see why this isn't cute enough for Natsuki..."
+
+         if encore_festivalquestion_2 == "Yuri":
+             "I guess I can finally see Yuri's point of needing to eventually pick a style and sticking with it..."
+             "Now that I think about it, I never really realized just how dark some of her poems were..."
+
+
+if hangout1 == "Sayori":
+    if hangout2 == "Monika":
+        "Guess Monika was right..."
+        "I am getting better!"
+        "I guess all her motivation finally rubbed off on me."
+        "Though I can't forget that [encore_festivalquestion_2] was my inspiration for a lot of these..."
+        "Though funny enough, my last poem deviates a little from the trend, and after reading over it, I see why Sayori liked it..."
+        "I guess that was the part of me that wanted to accept her confession..."
+
+
+
+if hangout1 == "Natsuki":
+    if hangout2 == "Sayori":
+        "As I look through my poems, I come to realize just how much [encore_festivalquestion_2] has influenced my writing."
+        "I guess by spending all that time around her, I picked up on her writing habits..."
+        "Though funny enough, my last poem deviates a little from the trend, and after reading over it, I see why Sayori liked it..."
+
+        if encore_festivalquestion_2 == "Natsuki":
+             "I guess I can see why this isn't cute enough for Natsuki..."
+
+        if encore_festivalquestion_2 == "Yuri":
+             "I guess I can finally see Yuri's point of needing to eventually pick a style and sticking with it..."
+             "Now that I think about it, I never really realized just how dark some of her poems were..."
+
+if hangout1 == "Natsuki":
+    if hangout2 == "Natsuki":
+        "As I look through my poems, I come to realize just how much [encore_festivalquestion_2] has influenced my writing."
+        "I guess by spending all that time around her, I picked up on her writing habits..."
+
+        if encore_festivalquestion_2 == "Natsuki":
+             "Despite her insecurities about her writing, I always thought her poems were fun to read!"
+             "Even if her writing style is rather simple, she uses it pretty effectivly to get her message across."
+             "Looking back at my poems, I realize why Natsuki likes them so much..."
+             "She finally found someone that she can relate to..."
+             "Even though I thought she hated me at first, it's quite remarkable how much closer we've gotten over these last two weeks..."
+             "I hope she was joking when she said that trip to that convention wouldn't be a date..."
+
+        if encore_festivalquestion_2 == "Yuri":
+            "I guess I can finally see Yuri's point of needing to eventually pick a style and sticking with it..."
+            "Now that I think about it, I never really realized just how dark some of her poems were..."
+            "Granted, I never minded if they were, it's a pretty stunning contrast between the way Natsuki and Yuri write their poems."
+            "Still, I respect and appreciate Yuri as a writer just as much as Natsuki."
+            "Now that I think about it, it's been a while since Yuri and I got to spend some time together..."
+
+
+if hangout1 == "Natsuki":
+    if hangout2 == "Yuri":
+        "As I look through my poems, I come to realize just how much [encore_festivalquestion_2] has influenced my writing."
+        "I guess by spending all that time around her, I picked up on her writing habits..."
+
+        if encore_festivalquestion_2 == "Natsuki":
+             "Despite her insecurities about her writing, I always thought her poems were fun to read!"
+             "Even if her writing style is rather simple, she uses it pretty effectivly to get her message across."
+             "Looking back at my poems, I realize why Natsuki likes them so much..."
+             "She finally found someone that she can relate to..."
+             "Even though I thought she hated me at first, it's quite remarkable how much closer we've gotten over these last two weeks..."
+             "I hope she was joking when she said that trip to that convention wouldn't be a date..."
+
+
+        if encore_festivalquestion_2 == "Yuri":
+            "Though funny enough, my last poem deviates a little from the trend, and after reading over it, I see why Yuri liked it..."
+            "I guess I finally see Yuri's point of needing to eventually pick a style and sticking with it..."
+            "Now that I think about it, I never really realized just how dark some of her poems were..."
+            "Granted, I never minded if they were, it's a pretty stunning contrast between the way Natsuki and Yuri write their poems."
+            "Still, I respect and appreciate Yuri as a writer just as much as Natsuki."
+            "Now that I think about it, it's been a while since Yuri and I got to spend some time together..."
+
+
+
+if hangout1 == "Natsuki":
+    if hangout2 == "Monika":
+        "Guess Monika was right..."
+        "I am getting better!"
+        "I think back to the last poem I wrote..."
+        "Monika..."
+        "I guess all her motivation finally rubbed off on me."
+        "Though I can't forget that [encore_festivalquestion_2] was my inspiration for a lot of these..."
+
+
+        if encore_festivalquestion_2 == "Natsuki":
+            "And looking over my later poems, I see them becoming more cutsey, something that Natsuki would like..."
+            "Guess I've gotten more inspirtation than I first realized..."
+
+        if encore_festivalquestion_2 == "Yuri":
+            "Looking over my later poems, I see why Yuri liked some of my earlier ones so much..."
+            "They were fairly descriptive and the subject matter was rather dark compared to some of my more recent ones."
+            "Guess I've gotten more inspirtation than I first realized..."
+
+
+if hangout1 == "Yuri":
+    if hangout2 == "Sayori":
+        "As I look through my poems, I come to realize just how much [encore_festivalquestion_2] has influenced my writing."
+        "I guess by spending all that time around her, I picked up on her writing habits..."
+
+        if encore_festivalquestion_2 == "Natsuki":
+
+        if encore_festivalquestion_2 == "Yuri":
+
+
+if hangout1 == "Yuri":
+    if hangout2 == "Natsuki":
+        "As I look through my poems, I come to realize just how much [encore_festivalquestion_2] has influenced my writing."
+        "I guess by spending all that time around her, I picked up on her writing habits..."
+
+        if encore_festivalquestion_2 == "Natsuki":
+
+        if encore_festivalquestion_2 == "Yuri":
+
+
+if hangout1 == "Yuri":
+    if hangout2 == "Yuri":
+        "As I look through my poems, I come to realize just how much [encore_festivalquestion_2] has influenced my writing."
+        "I guess by spending all that time around her, I picked up on her writing habits..."
+
+        if encore_festivalquestion_2 == "Natsuki":
+
+        if encore_festivalquestion_2 == "Yuri":
+
+
+if hangout1 == "Yuri":
+    if hangout2 == "Monika":
+        "Guess Monika was right..."
+        "I am getting better!"
+        "I guess all her motivation finally rubbed off on me."
+        "Though I can't forget that [encore_festivalquestion_2] was my inspiration for a lot of these..."
+        "And looking over my later poems, I see them becoming more dark and detailed, something which Yuri would like..."
+        "Guess I've gotten more inspirtation than I first realized..."
+
+
+if hangout1 == "Monika":
+    if hangout2 == "Sayori":
+        "Guess Monika was right..."
+        "I am getting better!"
+        "I think back to the last poem I wrote..."
+        "Monika..."
+        "I guess all her motivation finally rubbed off on me."
+        "Though I had some help from Sayori..."
+
+        if encore_festivalquestion_2 == "Natsuki":
+            "And looking over my later poems, I see them becoming more cutsey, something that Natsuki would like..."
+            "Guess I've gotten more inspirtation than I first realized..."
+
+        if encore_festivalquestion_2 == "Yuri":
+            "Looking over my later poems, I see why Yuri liked some of my earlier ones so much..."
+            "They were fairly descriptive and the subject matter was rather dark compared to some of my more recent ones."
+            "Guess I've gotten more inspirtation than I first realized..."
+
+
+if hangout1 == "Monika":
+    if hangout2 == "Natsuki":
+        "Guess Monika was right..."
+        "I am getting better!"
+        "I think back to the last poem I wrote..."
+        "Monika..."
+        "I guess all her motivation finally rubbed off on me."
+        "Though I can't forget that [encore_festivalquestion_2] was my inspiration for a lot of these..."
+        "And looking over my later poems, I see them becoming more cutsey, something that Natsuki would like..."
+        "Guess I've gotten more inspirtation than I first realized..."
+
+if hangout1 == "Monika":
+    if hangout2 == "Yuri":
+        "Guess Monika was right..."
+        "I am getting better!"
+        "I think back to the last poem I wrote..."
+        "Monika..."
+        "I guess all her motivation finally rubbed off on me."
+        "Though I can't forget that [encore_festivalquestion_2] was my inspiration for a lot of these..."
+        "And looking over my later poems, I see them becoming more dark and detailed, something which Yuri would like..."
+        "Guess I've gotten more inspirtation than I first realized..."
+
+
+if hangout1 == "Monika":
+    if hangout2 == "Monika":
+        "Guess Monika was right...{w=0.38}I am getting better!"
+        "I can't help but think back to the last poem I wrote..."
+        "Monika..."
+        "I guess all her motivation finally rubbed off on me."
+        "Maybe I was trying to impress her the whole time..."
 
 
 
 
 
+
+
+
+
+if poem_giver == "Natsuki":
+    "I put down my poems and go to my bag to retrieve Natsuki's poems, which I put right next to mine."
+    "I notice that in Natsuki’s stack of poems there’s a pink piece of paper."
+    "Hmm…{w=0.38}I don’t remember Natsuki ever writing her poems down on pink paper..."
+    "Maybe she accidentally gave me something…"
+    jump day2_sarrive
+
+if poem_giver == "Yuri":
+    "I put down my poems and go to my bag to retrieve Yuri's poems, which I put right next to mine."
+    "I notice that in Yuri's stack of poems there’s a purple piece of paper."
+    "Hmm…{w=0.38}I don’t remember Yuri ever writing her poems down on purple paper..."
+    "Maybe she accidentally gave me something…"
+    jump day2_sarrive
 
 
 label day2_sarrive:
@@ -1709,18 +1939,40 @@ if apologize_sn == False or apologize_sy == False or apologize_sm == False:
             s 4bv "These past few days I feel like you've been completetly ignoring me!"
             mc "I haven't! Why would you think that?"
 
+    if hangout1 == "Sayori":
+        if hangout2 == "Natsuki" or hangout1 == "Yuri" or hangout1 == "Monika":
+            s 1bj "I mean, it's pretty obvious what happened..."
+            s 1bi "Everyone saw it..."
+            s 1by "I just want to know what happened..."
+            s 1bl "Because..."
+            "Sayori's voice starts to break as tears start to well in her eyes."
+            show sayori 3bv
+            s "I'm glad I got to spend some time with you yesterday..."
+            s 4bt "It really did help..."
+            s "And I don't expect you to spend all your time around me..."
+            s 3bu "But what I saw earlier..."
+            s "What you were doing with [hangout2]..."
+            s "It hurt, [player]..."
+
+
 
     if hangout1 == "Natsuki" or hangout1 == "Yuri":
         show sayori 3bv
         s "Yesterday you spent your time with [hangout1] until you saw me dealing with my rainclouds..."
+        s "And today you were...{w=0.38}like that with [hangout2]!"
+        s "Even as I was dealing with my rainclouds again!"
 
     if hangout1 == "Monika":
         show sayori 3bv
         s "Yesterday you spent all your time with Monika..."
+        s "And today you were...{w=0.38}like that with [hangout2]!"
+        s "Even as I was dealing with my rainclouds again!"
 
-    s "And today you were...{w=0.38}like that with [hangout2]!"
-    s "Even as I was dealing with my rainclouds again!"
+
+
+
     s 1bu "W-{w=0.38}what's going on here, [player]?"
+    s "D-{w=0.38}did I do something wrong?"
     s "Do you not want me around anymore?"
     mc "Sayori!"
     mc "Don't be like that!"
