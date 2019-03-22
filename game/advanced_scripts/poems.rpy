@@ -769,7 +769,7 @@ With all of my love,
     )
     
     poem_y_like = Poem(
-    author = "Yuri",
+    author = "yuri",
     title = "Purple Lily",
     text = """\
 At the center of a grassy field where a gentle wind blows,
@@ -797,6 +797,8 @@ She called out to him with the only voice she knew how to comfortably use."""
 
 #These are the images used to show a poem
 image paper =  "images/bg/poem.jpg"
+image purple_paper = "mod_assets/bgs/purple_poem.jpg"
+image pink_paper = "mod_assets/bgs/pink_poem.jpg"
 
 #This is the glitchy paper
 image paper_glitch = LiveComposite((1280, 720), (0, 0), "paper_glitch1", (0, 0), "paper_glitch2")
