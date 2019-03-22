@@ -675,6 +675,125 @@ that I feel such fulfillment because of it
 
 I never want to be apart."""
     )
+    
+    poem_n_love = Poem(
+    author = "natsuki",
+    title = "My Day With You",
+    text = """\
+My day with you, 
+Was perfect, it's true.
+You and I, 
+Preparing sweets.
+Who could've known,
+I'd be swept off my feet?
+
+Baking with you, 
+Broke down my walls,
+I just hope, 
+I wasn't the only one to fall.
+
+Ever since that day,
+I've felt a connection.
+I can't hide anymore,
+This is my confession.
+I love you, 
+More than words can say.
+All thanks to our special day.
+
+Love
+~Natsuki"""
+    )
+    
+    poem_n_like = Poem(
+    author = "natsuki",
+    title = "The Mouse Wants To Play",
+    text = """\
+In the back of the room in a hole in the wall,
+A mouse lived by her friends, and she stood quite tall.
+(At least as tall as a mouse can stand!)
+
+She liked being alone, but wanted to fit in
+With the girls who she knew, and also with him.
+
+But she liked something weird, so she acted tough.
+To avoid being treated like a wimpy creampuff.
+(She liked spiders. Isn't that gross?)
+
+She was bossy and rude, and she spoke up real loud
+To avoid being walked on, and because she was proud.
+
+And it worked.
+It worked too well.
+
+She watched her friends play from her hole of a home.
+She still wanted to play with them, but she was alone.
+
+She should say that she's sorry and make things okay.
+If she does, will you take time to play with her one day?
+
+Will you play with me?"""
+    )
+    
+    poem_y_love = Poem(
+    author = "yuri",
+    title = "Caligraphy",
+    text = """\
+A blank banner, spread out and ready to become a work of art.
+The calligrapher prepares her pen, inspiration rushing to create.
+Every mark she makes, every stroke of her hand,
+Precise, calculated, and yet still expressive.
+
+From deep within, she finds her innermost feelings
+Making them known across the banner before her.
+All the while, she thinks only of him,
+With whom she filled another banner.
+
+The story she lays will last only as long as the material which bears it.
+The canvas, as her life, is frail and temporal.
+The ink, as her feelings, may fade under poor treatment.
+Yet she continues undeterred, carried by her wish to make her feelings known,
+Laying them bare to the world the only way she knows how.
+
+Finally, the banner is complete. The story told. Her love expressed.
+As fear and courage fight for her state of mind, she delivers her work
+To him, with whom she filled another banner.
+
+With every ounce of courage, she hands it to him.
+A confession of everything she cannot say.
+She breathlessly awaits his reply,
+But finds contentment knowing there are more stories ahead
+For the two of them to create together.
+
+With all of my love,
+~Yuri"""
+    )
+    
+    poem_y_like = Poem(
+    author = "Yuri",
+    title = "Purple Lily",
+    text = """\
+At the center of a grassy field where a gentle wind blows,
+A lone purple lily stands, waiting for a kiss from the sun.
+
+A green carnation stands nearby, elegant and confident in her beauty.
+The sun visits her, and she laughs with joy.
+
+A blue hibiscus rests, waiting, unmotivated.
+Along comes the sun, bringing new life to her petals.
+
+A pink rose bears her thorns, warning all to stay away.
+Even in her, the sun finds beauty, ready to share happiness and delight.
+
+And yet as the sun goes on his way, the lily is left behind,
+Alone in a shadow, still waiting for her own dose of glee.
+
+Had she done something wrong? What made her so undesirable?
+As she waited for her next chance at the sun, she worried how she might be at fault for her sad situation. She wondered why so many days had followed this same course.
+
+But perhaps she had done nothing wrong. Perhaps instead, the problem was that the sun had not seen her. Summoning all of her courage, she vowed that she would call out to the sun, requesting a share of the attention he had showered on her friends.
+
+She called out to him with the only voice she knew how to comfortably use."""
+    )
 
 #These are the images used to show a poem
 image paper =  "images/bg/poem.jpg"
@@ -836,4 +955,33 @@ label showpoem(poem=None, music=True, track=None, revert_music=True, img=None, w
         $ audio.t5c = "<from " + str(currentpos) + " loop 4.444>bgm/5.ogg"
         stop music_poem fadeout 2.0
         $ renpy.music.play(audio.t5c, fadein=2.0)
+    return
+
+label adjust_mouse_poem:
+    python:
+        poem_n_like.text = """\
+In the back of the room in a hole in the wall,
+A mouse lived by her friends, and she stood quite tall.
+(At least as tall as a mouse can stand!)
+
+She liked being alone, but wanted to fit in
+With the girls who she knew, and also with him.
+
+But she liked something weird, so she acted tough,
+To avoid being treated like a wimpy creampuff.
+(She liked spiders. Isn't that gross?)
+
+She was bossy and rude, and she spoke up real loud
+To avoid being walked on, and because she was proud.
+
+And it worked.
+It worked too well.
+
+She watched her friends play from her hole of a home.
+She still wanted to play with them, but she was alone.
+
+She should say that she's sorry and make things okay.
+If she does, will you take time to play with her one day?
+
+Will you play with me, """ + player + """?"""
     return
