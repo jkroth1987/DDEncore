@@ -2012,6 +2012,23 @@ scene bg bedroom_night
 with wipeleft_scene
 "After grabbing Sayori's poems from the dining table, I put her stack right next to mine and Natsuki's."
 
+# ADJUST THIS AS NEEDED such as adding text where it goes, but the logical flow will show the correct poem based on what we figured out earlier.
+if poem_giver == "Natsuki":
+    # Text for Natsuki can go here, and we can use "if is_love_poem == True:" to check which poem we'll see
+    
+    if is_love_poem == True:
+        call showpoem(poem=poem_n_love, music=False, revert_music=False, paper="pink_paper")
+    else:
+        call adjust_mouse_poem # This adds the player's name to the poem, which we couldn't do before the game began.
+        call showpoem(poem=poem_n_like, music=False, revert_music=False, paper="pink_paper")
+elif poem_giver == "Yuri":
+    # Text for Yuri can go here, the same "if is_love_poem == True:" check will work
+    
+    if is_love_poem == True:
+        call showpoem(poem=poem_y_love, music=False, revert_music=False, paper="purple_paper")
+    else:
+        call showpoem(poem=poem_y_like, music=False, revert_music=False, paper="purple_paper")
+
 #Sayori
 if encore_sayoriquestion_1 == True:
     if encore_festivalquestion_2 == "Sayori":
