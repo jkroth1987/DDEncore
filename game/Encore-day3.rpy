@@ -20,7 +20,7 @@ if hangout1 == "Sayori" or hangout1 == "Natsuki" or hangout1 == "Yuri":
         "I feel entire body covered in a coat of sweat as I move to clutch my forehead."
         "What the hell is going on with me?"
         "Am I sick?"
-        "This is the second time this's happened..."
+        "This is the second time this has happened..."
         "After a few minutes my head stops throbbing and I feel realtively normal again."
         "My eyes wander to my alarm clock."
         "Great...{w=0.38}I don't have to be up for another hour."
@@ -380,6 +380,10 @@ label day3_tellsayori:
         mc "I know it was just a dream, but it felt too close to reality for some reason..."
         mc "The way you frantically clawed at the rope..."
         s u115232 "Rope...?"
+        scene black
+        play music e1
+        stop music fadeout 3.0
+        scene encore_demoend
 
     if hangout2 == "Yuri":
         mc "I watched Yuri die..."
@@ -389,9 +393,12 @@ label day3_tellsayori:
         mc "I know it was just a dream, but it felt too close to reality for some reason..."
         mc "I...{w=0.38}then saw this figure give Yuri a knife and she just stabbed herself..."
         s u115232 "A knife?!?!?"
+        scene black
+        play music e1
+        stop music fadeout 3.0
+        scene encore_demoend
 
     if hangout2 == "Natsuki":
-        mc "Sayori..{w=0.38}I..."
         mc "I watched Natsuki die..."
         mc "I couldn't save her."
         mc "I saw this shadow torturing her right in front of me."
@@ -400,6 +407,10 @@ label day3_tellsayori:
         mc "I know it was just a dream, but it felt too close to reality for some reason..."
         mc "I...{w=0.38}then saw this shadow snap it's fingers and it made Natsuki's neck break."
         s u115232 "She broke her neck?!?!"
+        scene black
+        play music e1
+        stop music fadeout 3.0
+        scene encore_demoend
 
     if hangout2 == "Monika":
         mc "I've been having these weird dreams lately."
@@ -410,11 +421,12 @@ label day3_tellsayori:
         mc "I know it was just a dream, but it feels too real for some reason..."
         mc "It keeps telling me to ‘keep doing what I'm doing' and that it ‘has plans for us'..."
         s u115232 "Plans?!?!"
+        scene black
+        play music e1
+        stop music fadeout 3.0
+        scene encore_demoend
 
-    scene black
-    play music e1
-    stop music fadeout 3.0
-    scene encore_demoend
+
 
 
 label day3_notellsayori:

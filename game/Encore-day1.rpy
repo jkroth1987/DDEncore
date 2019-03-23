@@ -46,7 +46,7 @@
     mc "I..."
     "I try to remember what happened, but I no longer can."
     "Everything is now a blur to me."
-    mc "No...{w=0.28} not really."
+    mc "No...{w=0.28}not really."
     m 1d "Well, then...{w=0.28} I guess bringing you here must have caused you to forget everything."
     m 2m "I guess my coding skills aren't quite up to scratch."
     mc "Monika, what the hell are you talking about?"
@@ -133,7 +133,7 @@ label day1_beginning:
         "Sayori has now made it a habit of her morning routine to make sure that I don’t oversleep."
         "At least Sayori seems to be doing much better now..."
 
-    "Wait...{w=0.28} what time is it???"
+    "Wait...{w=0.28}what time is it???"
     "I hurriedly check my alarm clock."
     "What?!? Oh God, I'm gonna be late!"
     "I quickly jump out of bed and prepare for the day."
@@ -228,7 +228,7 @@ label day1_beginning:
     "Did I really come across as that rude?"
     "I know that despite her warm and peppy attitude, Sayori is still going through her depressive episodes..."
     "...and how it makes her want to avoid being a burden on other people...especially me."
-    mc "Hey, hey, hey...{w=0.28} it's not your fault, really! Honestly, I feel a lot more rested now."
+    mc "Hey, hey, hey...{w=0.28}it's not your fault, really! Honestly, I feel a lot more rested now."
     "Sayori's face returns to her gleeful expression."
     s 3r "Hehe...{w=0.28} well that's good!"
     "She says with a thankful relief in her voice."
@@ -240,7 +240,7 @@ label day1_beginning:
         "I think to myself just how lucky I am to have ended up with someone like her after all these years."
         "It didn't occur to me two weeks ago, hell, even last week, that I would've ever been dating my childhood best friend."
         "It's something I kind of always thought to myself as a \'what if...\' scenario, but I never really gave it serious thought until we started walking to school together again."
-        "I guess that after spending all that time together in the Literature Club, we were able to rediscover that tight bond we once shared."
+        "I guess that after spending all that time together in the literature club, we were able to rediscover that tight bond we once shared."
         "Though, it really wasn’t until Sayori had told me about her depression and love for me when I realized just how much we really meant to each other."
         "As the memories continue to swirl in my head, I slowly start spacing out into Sayori’s eyes."
         "I could almost stare into those sky blue eyes all day..."
@@ -354,7 +354,7 @@ label day1_beginning:
         "Honestly, I can't blame her. She's still trying to figure out how to go about our friendship, and she's always happy when she's with me."
 
     "It sucks that we're not sharing any classes this semester. We only occasionally see each other walking through the hallways between periods."
-    mc "Yeah...{w=0.28} guess so..."
+    mc "Yeah...{w=0.28}guess so..."
     show sayori 1k at t11 zorder 1
     "We stand there awkwardly for a moment."
     mc "Hey! I'll see you at the literature club, ok?"
@@ -508,7 +508,7 @@ label day1_beginning:
         n 3l "I kinda had fun preparing for the festival."
         show natsuki 4d
         "Natsuki shoots me a quick side glance."
-        "I know {i}exactly{\i} what she's referring to."
+        "I know {i}exactly{/i} what she's referring to."
         show sayori 1i
         show natsuki 4m
         "Unfortunately for me, Sayori caught that and she shoots me a quizzical look."
@@ -516,11 +516,11 @@ label day1_beginning:
         "The only one who knows that we’re dating is Monika, and I still have no clue how she found out."
         "I assume Sayori must have told her, but I haven’t bothered checking with her about it."
         "Saving me from further embarrassment, Yuri is the next to speak up."
-        y 1j "Yes...{w=0.28} I guess I did have fun making the banner..."
+        y 1j "Yes...{w=0.28}I guess I did have fun making the banner..."
         y 1c "It was also the first time I got to share my aromatherapy with anyone too!"
         show natsuki 3a
         "Sayori turns her attention back to Monika."
-        s 3h "Monika...{w=0.28} Natsuki and Yuri are right, there is nothing we could have changed!"
+        s 3h "Monika...{w=0.28}Natsuki and Yuri are right, there is nothing we could have changed!"
         s 1b "We made the event as fun as we could, and even though no one joined, that’s not so bad!"
         s 4q "We still get to hang out and have fun, just like we've always have!"
         "Finally it's my turn to speak up."
@@ -540,7 +540,7 @@ label day1_beginning:
         n 3l "I kinda had fun preparing for the festival."
         show natsuki u211214
         "Natsuki shoots me a quick side glance."
-        "I know {i}exactly{\i}what she's referring to."
+        "I know {i}exactly{/i} what she's referring to."
         show natsuki 3j
         show sayori 1k
         mc "Yeah! Natsuki and I had a really good time together! We baked together and we even..."
@@ -557,7 +557,7 @@ label day1_beginning:
         y 1c "It was also the first time I got to share my aromatherapy with anyone too!"
         show natsuki 3a
         "Sayori turns her attention back to Monika."
-        s 3h "Monika...{w=0.28} Natsuki and Yuri are right, there is nothing we could have changed!"
+        s 3h "Monika...{w=0.28}Natsuki and Yuri are right, there is nothing we could have changed!"
         s 1b "We made the event as fun as we could, and even though no one joined, that’s not so bad!"
         s 4q "We still get to hang out and have fun, just like we've always have!"
         "Finally it's my turn to speak up."
@@ -2752,7 +2752,6 @@ label day1_void:
         "Doing a quick self-check, I appear to be ok."
         "What the hell?"
         "What the HELL was that??"
-        "What the FUCK?"
         "Was that...{w=0.38} real?"
         "No...{w=0.28} this can't be...{w=0.28} this is just a bad dream..."
         "I'm having a bad dream."
@@ -2880,7 +2879,6 @@ if hangout1 == "Yuri":
         "Doing a quick self-check, I appear to be ok."
         "What the hell?"
         "What the HELL was that??"
-        "What the FUCK?"
         "Was that...{w=0.38}real?"
         "No...{w=0.38}this can’t be...{w=0.38}this is just a bad dream..."
         "I’m having a bad dream."
@@ -2913,7 +2911,7 @@ label day1_void_monika:
             m "It really is,{w=0.28} isn't it?"
             play music e8
             "A dark, mysterious, eerie, voice echoes in my head."
-            "What is this?...{w=0.28} Who is this?"
+            "What is this?...{w=0.28}Who is this?"
             m "I think it's just funny how anyone can do something and have it completely blow up in their face..."
             m "It becomes a real inconvenience, doesn't it?"
             m "You would think that little 'inconvenience' would just make you stronger as a person..."

@@ -1450,7 +1450,12 @@ show yuri 4c
 show natsuki 1s
 
 if encore_sayoriquestion_1 == True:
-    jump day2_smad2
+    if encore_festivalquestion_2 == "Yuri":
+        jump day2_smad3
+
+if encore_sayoriquestion_1 == True:
+    if encore_festivalquestion_2 == "Natsuki":
+        jump day2_smad2
 
 if encore_sayoriquestion_1 == False:
     pass
@@ -1518,11 +1523,19 @@ label day2_smad2:
 show sayori 1g
 "Sayori once again shoots me the same quizzical glance she gave me yesterday when Natsuki brought up the time we spent together last Sunday."
 "Sooner or later, I'm going to have to resolve all this and tell Natsuki that I'm with Sayori..."
-"As well as tell Sayori everything that happened between me and Natsuki on Sunday."
+"As well as tell Sayori everything that happened between us on Sunday."
 "Hopefully that will put her mind to rest..."
 "Thankfully Monika comes in to seemingly save the situation."
 jump day2_tend
 
+
+label day2_smad3:
+"Sayori once again shoots me the same quizzical glance she gave me yesterday when Yuri brought up the time we spent together last Sunday."
+"Sooner or later, I'm going to have to resolve all this and tell Yuri that I'm with Sayori..."
+"As well as tell Sayori everything that happened between us on Sunday."
+"Hopefully that will put her mind to rest..."
+"Thankfully Monika comes in to seemingly save the situation."
+jump day2_tend
 
 
 
@@ -1629,6 +1642,13 @@ else: # We didn't accept Sayori's confession
             $ poem_giver = "Yuri"
         $ is_love_poem = False
 
+    if (hangout1 == "Sayori" or hangout1 == "Monika") and (hangout2 == "Sayori" or hangout2 == "Monika"):
+        # Spent both days with Sayori, Monika, or split between them--show the love poem from the weekend hangout girl
+        $ poem_giver = encore_festivalquestion_2
+        $ is_love_poem = True
+
+
+
     # End of Rejected Confession block
 
 # We have figured our logic and know which poem to show, based on poem_giver ("Natsuki" or "Yuri") and is_love_poem (True or False)
@@ -1641,50 +1661,48 @@ else:
     jump day2_clubend
 
 label n_poem1:
-    if poem_giver == "Natsuki":
-        #NatsukiGivesYouThePoem
-        y 1b "Same here, I'll give you them at tomorrow's meeting, [player]."
-        n 3c "I think I have mine with me, let me check."
-        show monika at thide
-        show sayori at thide
-        show yuri at thide
-        hide monika
-        hide sayori
-        hide yuri
-        show natsuki 1a at t11
-        "Natsuki searches through her bag and retrieves a small stack of papers."
-        show natsuki 1d at t11
-        n "Here you go, that should be everything."
-        "Natsuki hands me her poems."
-        mc "Thanks, Natsuki."
-        show natsuki 1a at t41
-        show monika 3b at t43 zorder 4
-        show yuri 1a at t44 zorder 3
-        show sayori 1a at t42 zorder 2
-        jump day2_clubend
+#NatsukiGivesYouThePoem
+y 1b "Same here, I'll give you them at tomorrow's meeting, [player]."
+n 3c "I think I have mine with me, let me check."
+show monika at thide
+show sayori at thide
+show yuri at thide
+hide monika
+hide sayori
+hide yuri
+show natsuki 1a at t11
+"Natsuki searches through her bag and retrieves a small stack of papers."
+show natsuki 1d at t11
+n "Here you go, that should be everything."
+"Natsuki hands me her poems."
+mc "Thanks, Natsuki."
+show natsuki 1a at t41
+show monika 3b at t43 zorder 4
+show yuri 1a at t44 zorder 3
+show sayori 1a at t42 zorder 2
+jump day2_clubend
 
 label y_poem1:
-    if poem_giver == "Yuri":
-        #YuriGivesYouThePoem
-        n 1b "Yeah, [player], I'll give you mine tomorrow."
-        y 3b "I believe I have my poems with me, let me check quickly."
-        show monika at thide
-        show sayori at thide
-        show natsuki at thide
-        hide monika
-        hide sayori
-        hide natsuki
-        show yuri 3a at t11
-        "Yuri searches through her bag and retrieves a small stack of papers."
-        show yuri 2b at t11
-        y "Here you go, [player]! That should be everything!"
-        "Yuri hands me her poems."
-        mc "Thanks, Yuri."
-        show natsuki 1a at t41
-        show monika 3b at t43 zorder 4
-        show yuri 1a at t44 zorder 3
-        show sayori 1a at t42 zorder 2
-        jump day2_clubend
+#YuriGivesYouThePoem
+n 1b "Yeah, [player], I'll give you mine tomorrow."
+y 3b "I believe I have my poems with me, let me check quickly."
+show monika at thide
+show sayori at thide
+show natsuki at thide
+hide monika
+hide sayori
+hide natsuki
+show yuri 3a at t11
+"Yuri searches through her bag and retrieves a small stack of papers."
+show yuri 2b at t11
+y "Here you go, [player]! That should be everything!"
+"Yuri hands me her poems."
+mc "Thanks, Yuri."
+show natsuki 1a at t41
+show monika 3b at t43 zorder 4
+show yuri 1a at t44 zorder 3
+show sayori 1a at t42 zorder 2
+jump day2_clubend
 
 ## Move this to the later point where we need to check back on this and uncomment it there.
 #if poem_giver == "Natsuki":
@@ -1752,9 +1770,9 @@ show sayori 1y at t11 zorder 1
 "It seems that we've gotten more comfortable with showing off our affection for each other in public, even if it's something simple as holding hands."
 "Sayori seems to be in a really good mood today."
 "Well, she did say me being around her helps her feel better..."
-"Well, I have no problem spending my time around Sayori!"
+"Granted, I have no problem spending my time around Sayori!"
 "What if this was the cure to her problems all along? Just us spending time around each other?"
-"Well at this rate, she should be rid of those 'rainclouds' in no time!"
+"At this rate, she should be rid of those 'rainclouds' in no time!"
 "The thought of that keeps me smiling through the duration of our walk."
 show sayori at thide
 hide sayori
@@ -1790,13 +1808,13 @@ if hangout2 == "Sayori":
     "Especially considering that moment we had in the clubroom earlier..."
 
 if hangout2 == "Natsuki":
-    "Especially considering how Sayori saw me getting too comofortable with Natsuki..."
+    "Especially considering how Sayori saw me getting too comfortable with Natsuki..."
 
 if hangout2 == "Yuri":
-    "Especially considering how Sayori saw me getting too comofortable with Yuri..."
+    "Especially considering how Sayori saw me getting too comfortable with Yuri..."
 
 if hangout2 == "Monika":
-    "Especially considering how Sayori saw me getting too comofortable with Monika..."
+    "Especially considering how Sayori saw me getting too comfortable with Monika..."
 
 
 show sayori 1b
@@ -2014,149 +2032,64 @@ with wipeleft_scene
 
 # ADJUST THIS AS NEEDED such as adding text where it goes, but the logical flow will show the correct poem based on what we figured out earlier.
 if poem_giver == "Natsuki":
+    "I remembered that there was something in Natsuki’s stack that stood out to me."
+    "After comparing all three stacks, I see Sayori’s stack is completely identical to mine."
+    "Natsuki’s stack is the only one that has a pink piece of paper."
+    "I begin to look through Natsuki's stack."
+    "I recognize all of the poems she wrote. I even remember the first one she wrote."
+    "I always found joy in reading her poems. They're so simple, yet they're just as hard hitting as Monika's, Sayori's and Yuri's."
+    "Not to mention I always found her word choice to be cute and adorable. It really does suit her, even if she won't admit it."
+    "Through my train of thought, one of the pieces of paper escapes my grip."
+    "I put the poems on my desk and bend down to grab the stray paper."
+    "I look at the title...{w=0.38}I don't remember reading this one..."
     # Text for Natsuki can go here, and we can use "if is_love_poem == True:" to check which poem we'll see
-    
+
     if is_love_poem == True:
         call showpoem(poem=poem_n_love, music=False, revert_music=False, paper="pink_paper")
     else:
         call adjust_mouse_poem # This adds the player's name to the poem, which we couldn't do before the game began.
         call showpoem(poem=poem_n_like, music=False, revert_music=False, paper="pink_paper")
 elif poem_giver == "Yuri":
+    "I remembered that there was something in Yuri’s stack that stood out to me."
+    "After comparing all three stacks, I see Sayori’s stack is completely identical to mine."
+    "Yuri’s stack is the only one that has a purple piece of paper."
+    "I begin to look through Yuri's stack."
+    "I recognize all of the poems she wrote. I even remember the first one she wrote."
+    "At first, it was a bit hard to understand the meaning of her poems, but the more I read, the more I understood them."
+    "Yuri was always probably one of the club's deepest writers."
+    "Her poems may look convoluted and confusing on the surface, but once you got past that, you got to realize that Yuri's poems were always meaningful and articulate."
+    "I always found joy in reading her poems. They can always be as fun to read as Natsuki's, and just as deep as Sayori's and Monika's."
+    "She truly is a talented writer. Heck, she might even be one of the best writers I've ever met!"
+    "I have learned a lot from her, her advice really has helped me improve."
+    "Through my train of thought, one of the pieces of paper escapes my grip."
+    "I put the poems on my desk and bend down to grab the stray paper."
+    "I look at the title...{w=0.38}I don't remember reading this one..."
     # Text for Yuri can go here, the same "if is_love_poem == True:" check will work
-    
+
     if is_love_poem == True:
         call showpoem(poem=poem_y_love, music=False, revert_music=False, paper="purple_paper")
     else:
         call showpoem(poem=poem_y_like, music=False, revert_music=False, paper="purple_paper")
 
-#Sayori
-if encore_sayoriquestion_1 == True:
-    if encore_festivalquestion_2 == "Sayori":
-        if hangout2 != "Sayori":
-                    "I remembered that there was something in Natsuki’s stack that stood out to me."
-                    "After comparing all three stacks, I see Sayori’s stack is completely identical to mine, but Natsuki’s stack is the only one that has a pink piece of paper."
-                    "I begin to look through Natsuki's stack."
-                    "I recognize all of the poems she wrote. I even remember the first one she wrote."
-                    "I always found joy in reading her poems. They're so simple, yet they're just as hard hitting as Monika's, Sayori's and Yuri's poems."
-                    "Not to mention I always found her word choice to be cute and adorable. It really does suit her, even if she won't admit it."
-                    "Through my train of thought, one of the pieces of paper escapes my grip."
-                    "I put the stack back on my desk and bend down to grab the paper."
-                    "I look at the title...{w=0.38}I don't remember reading this one..."
-                    $ lpoem = "Natsuki"
-                    call showpoem(poem_en1, music=False, track=None, revert_music=False) from _call_showpoem_3
-
-
-#Natsuki
-
-if encore_sayoriquestion_1 == False:
-    if encore_festivalquestion_2 == "Natsuki":
-        if hangout2 == "Natsuki":
-                "After comparing all three stacks, I realize that Natsuki's stack and my stack have the same number of poems, and Yuri's stack is still slightly larger than ours."
-                "I begin to look through Yuri's stack."
-                "I recognize all of the poems she wrote. I even remember the first one she wrote."
-                "At first, it was a bit hard to understand the meaning of her poems, but the more I read, the more I understood them."
-                "Yuri was always probably one of the club's deepest writers."
-                "Her poems may look convoluted and confusing on the surface, but once you got past that, you got to realize that Yuri's poems were always meaningful and articulate."
-                "I always found joy in reading her poems. They can always be as fun to read as Natsuki's, and just as deep as Sayori's and Monika's."
-                "She truly is a talented writer. Heck, she might even be one of the best writers I've ever met! I have learned a lot from her, her advice really has helped me improve."
-                "Through my train of thought, one of the pieces of paper escapes my grip."
-                "I put the stack back on my desk and bend down to grab the paper."
-                "I look at the title...{w=0.38}I don't remember reading this one..."
-                $ lpoem = "Yuri"
-                    #yuri likes you poem
-
-#Yuri
-
-if encore_sayoriquestion_1 == False:
-    if encore_festivalquestion_2 == "Yuri":
-        if hangout2 == "Yuri":
-                    "After comparing all three stacks, I realize that Sayori's stack and my stack have the same number of poems, and Natsuki's stack is still slightly larger than ours."
-                    "I begin to look through Natsuki's stack."
-                    "I recognize all of the poems she wrote. I even remember the first one she wrote."
-                    "I always found joy in reading her poems. They're so simple, yet they're just as hard hitting as Monika's, Sayori's and Yuri's poems."
-                    "Not to mention I always found her word choice to be cute and adorable. It really does suit her, even if she won't admit it."
-                    "Through my train of thought, one of the pieces of paper escapes my grip."
-                    "I put the stack back on my desk and bend down to grab the paper."
-                    "I look at the title...{w=0.38}I don't remember reading this one..."
-                    $ lpoem = "Natsuki"
-                    call showpoem(poem_en1, music=False, track=None, revert_music=False) from _call_showpoem_2
-
-#Monika
-
-if encore_sayoriquestion_1 == False:
-    if encore_festivalquestion_2 == "Natsuki":
-        if hangout2 == "Monika":
-                    "I remembered that there was something in Natsuki’s stack that stood out to me."
-                    "After comparing all three stacks, I see Sayori’s stack is completely identical to mine, but Natsuki’s stack is the only one that has a pink piece of paper."
-                    "I begin to look through Natsuki's stack."
-                    "I recognize all of the poems she wrote. I even remember the first one she wrote."
-                    "I always found joy in reading her poems. They're so simple, yet they're just as hard hitting as Monika's, Sayori's and Yuri's poems."
-                    "Not to mention I always found her word choice to be cute and adorable. It really does suit her, even if she won't admit it."
-                    "Through my train of thought, one of the pieces of paper escapes my grip."
-                    "I put the stack back on my desk and bend down to grab the paper."
-                    "I look at the title...{w=0.38}I don't remember reading this one..."
-                    $ lpoem = "Natsuki"
-                    call showpoem(poem_en1, music=False, track=None, revert_music=False) from _call_showpoem_1
 
 
 
-
-        "..."
-        "Oh...{w=0.38}shit!"
-        "This is going to be much harder than I thought..."
-        "Not to mention, she's probably going to find out sooner or later that I have it..."
-
-
-
-
-        if encore_sayoriquestion_1 == True:
-            "And when she does...{w=0.38}it's not going to end well for one of us..."
-
-        if encore_sayoriquestion_1 == False:
-            if encore_festivalquestion_2 == "Yuri":
-                if hangout1 == "Natsuki":
-                    if hangout2 == "Natsuki":
-                        "I feel like I'm at a crossroads here. I like Natsuki but I wouldn't want to let Yuri down..."
-                        "And with how I'm feeling about Sayori now..."
-                        "One way or another...{w=0.38}somebody is going to get hurt because of me."
+"..."
+"Oh...{w=0.38}shit!"
+"She...{w=0.38}likes me?"
+"I get assaulted with a barrage of emotions as I try to come to terms with the situation I've just found myself in."
+"I have no idea how I should handle this..."
+"Not to mention, [poem_giver] probably knows I've read by this point..."
+"Did she...{w=0.38}give this to me on purpose?"
+"There's no way she would've accidentally given this to me..."
+"What do I do?!?!"
 
 
-        if encore_sayoriquestion_1 == False:
-            if encore_festivalquestion_2 == "Natsuki":
-                if hangout1 == "Yuri":
-                    if hangout2 == "Yuri":
-                        "I feel like I'm at a crossroads here. I like Yuri but I wouldn't want to let Natsuki down..."
-                        "And with how I'm feeling about Sayori now..."
-                        "One way or another...{w=0.38}somebody is going to get hurt because of me."
+if poem_giver == "Natsuki":
+    "I put the poem back in Natsuki's stack, put on my pajamas and lay on my bed."
 
-
-        if encore_sayoriquestion_1 == False:
-            if encore_festivalquestion_2 == "Natsuki":
-                if hangout1 == "Monika":
-                    if hangout2 == "Monika":
-                        "I feel like I'm at a crossroads here. I like Monika but I wouldn't want to let Natsuki down..."
-                        "And with how I'm feeling about Sayori now..."
-                        "One way or another...{w=0.38}somebody is going to get hurt because of me."
-
-
-        if encore_sayoriquestion_1 == False:
-            if encore_festivalquestion_2 == "Yuri":
-                if hangout1 == "Monika":
-                    if hangout2 == "Monika":
-                        "I feel like I'm at a crossroads here. I like Monika but I wouldn't want to let Yuri down..."
-                        "And with how I'm feeling about Sayori now..."
-                        "One way or another...{w=0.38}somebody is going to get hurt because of me."
-
-
-
-
-        "Did she...{w=0.38}give this to me on purpose?"
-
-        if lpoem == "Natsuki":
-            "I put the poem back in Natsuki's stack, put on my pajamas and lay on my bed."
-
-        if lpoem == "Yuri":
-            "I put the poem back in Yuri's stack, put on my pajamas and lay on my bed."
+if poem_giver == "Yuri":
+    "I put the poem back in Yuri's stack, put on my pajamas and lay on my bed."
 
 
 
@@ -2455,7 +2388,7 @@ if hangout2 == "Sayori":
 
 
 if hangout2 == "Yuri":
-    m "Spending time around Natsuki and Sayori won't help us..."
+    m "And neither will spending time around Sayori..."
     m "But hanging around Yuri today didn't help either!"
     m "And neither did your attempt to mend fences with Sayori!"
     m "Spending time with her, like you did earlier, just made things needlessly more complicated..."
@@ -2471,7 +2404,7 @@ m "Spending time around her won't help us..."
 
 
 if hangout2 == "Natsuki":
-    m "Spending time around Yuri and Sayori won't help us..."
+    m "And neither will spending time around Sayori..."
     m "But hanging around Natsuki today didn't help either!"
     m "And neither did your attempt to mend fences with Sayori!"
     m "Spending time with her, like you did earlier, just made things needlessly more complicated..."
@@ -2538,8 +2471,9 @@ show sayori 1u at t11 zorder 2
 m "Sayori can never love you back in the same way you do."
 m "You both know that."
 m "Why waste everyday building her up..."
+stop music
 $ style.say_dialogue = style.edited
-m "{w=0.38}WHEN {w=0.38}SHE'LL {w=0.38}JUST {w=0.38}TEAR {w=0.38}HERSELF {w=0.38}DOWN {w=0.38}AGAIN{w=0.38}!{w=0.38}!{w=0.38}!"
+m "{w=0.38}WHEN {w=0.38}SHE'LL {w=0.38}JUST {w=0.38}TEAR {w=0.38}HERSELF {w=0.38}DOWN {w=0.38}AGAIN!!!"
 $ style.say_dialogue = style.normal
 $ renpy.pause(delay=0.10)
 window show(None)
@@ -2621,8 +2555,9 @@ m "Natsuki doesn't love you."
 m "You know that."
 m "She can't even decide how she feels about you..."
 m "So why spend all your time around her..."
+stop music
 $ style.say_dialogue = style.edited
-m "{w=0.38}WHEN {w=0.38}SHE {w=0.38}TREATS {w=0.38}YOU {w=0.38}LIKE {w=0.38}DIRT{w=0.38}!{w=0.38}!{w=0.38}!"
+m "{w=0.38}WHEN {w=0.38}SHE {w=0.38}TREATS {w=0.38}YOU {w=0.38}LIKE {w=0.38}DIRT!!!"
 $ style.say_dialogue = style.normal
 $ renpy.pause(delay=0.10)
 window show(None)
@@ -2631,8 +2566,8 @@ show screen tear(20, 0.1, 0.1, 0, 40)
 play sound "sfx/s_kill_glitch1.ogg"
 pause 0.15
 stop sound
-hide screen tear
 play sound bone
+hide screen tear
 show natsuki_pain at t11
 "Natsuki shreeks in pain."
 "Her cries are so loud I feel my ear drums pounding."
@@ -2663,9 +2598,9 @@ m "Quick and painless..."
 m "But you're keeping her alive, and you don't even know it!"
 m "You being around her is just enough to give her a reason to see hope in her worthless life."
 m "She's not meant for this world."
-m "Her seemingly innoncent mind is filled with nothing but presumptions and predjudices."
+m "Her seemingly innoncent mind is filled with nothing but presumptions and predjudice."
 m "She speaks like a Queen but is treated like a peasant."
-m "And pesants are condemned to die..."
+m "And peasants are condemned to die..."
 m "She's going to die and you need to let it happen when the time comes!"
 m "Spending more time with her is only going to make it harder on everyone."
 m "You need to let her go..."
@@ -2695,8 +2630,9 @@ m "She's suppressed herself for so long, she can't even figure out how to tell y
 m "And once she lets herself loosen up just a little bit..."
 m "She becomes unhinged..."
 m "Which is why repressed feelings...."
+stop music
 $ style.say_dialogue = style.edited
-m "{w=0.38}SHOULD {w=0.38}STAY {w=0.38}REPRESSED{w=0.38}!{w=0.38}!{w=0.38}!"
+m "{w=0.38}SHOULD {w=0.38}STAY {w=0.38}REPRESSED!!!"
 $ style.say_dialogue = style.normal
 $ renpy.pause(delay=0.10)
 window show(None)

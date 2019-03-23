@@ -74,7 +74,7 @@ if encore_festivalquestion_2 == "Yuri":
         "Yuri turns to look at Sayori."
         show yuri 1e
         $ renpy.pause(delay=0.8, hard=True)
-        y 1g "I'm not sure....{w=0.38} I haven't really seen her like that before."
+        y 1g "I'm not sure...{w=0.38} I haven't really seen her like that before."
         y 1t "I can't imagine what could possibly be troubling her..."
         mc "Yeah...{w=0.38} I'll be right back, okay?"
         show yuri 1a
@@ -186,7 +186,7 @@ if encore_festivalquestion_2 == "Natsuki":
         "Yuri turns to look at Sayori."
         show yuri 1e
         $ renpy.pause(delay=0.8, hard=True)
-        y 1g "I'm not sure....{w=0.38} I haven't really seen her like that before."
+        y 1g "I'm not sure...{w=0.38} I haven't really seen her like that before."
         y 1t "I can't imagine what could possibly be troubling her..."
         mc "Yeah...{w=0.38} I'll be right back, okay?"
         show yuri 1a
@@ -874,7 +874,7 @@ if encore_festivalquestion_2 == "Yuri":
     hide yuri
     with wipeleft_scene
     play music e5
-    show yuri 1h
+    show yuri 1h at t11
     "After reading for a few minutes, I see Yuri shifting unconfortably in her seat."
     mc "Everything good, Yuri?"
     show yuri 1q zorder 1 at t11
@@ -1012,7 +1012,7 @@ hide cg y_cg_1 with wipeleft_scene
 "In the chapter, the main character, this girl named Libitina, is given a second chance to repair her broken relationship with her Uncle, who she's currently living with."
 "Most of the chapter is told through a monologue as Libitina internally debates if it's worth repairing her relationship with her uncle..."
 "As she's on the run from a league of escapees who want her back in order to complete some 'ritual'."
-"It's quite interesting actually, and through her logic, she knows mending fence with her Uncle is the right thing to do..."
+"It's quite interesting actually, and through her logic, she knows mending fences with her Uncle is the right thing to do..."
 "She knows that she might not get another chance to make him happy...{w=0.38}but she doesn't know if it's even worth it in the long run..."
 "After a while we reach the end of the chapter, with Libitina deciding to talk to her friend about what she should do."
 show yuri 1h zorder 1 at t11
@@ -1042,7 +1042,7 @@ play music t9 fadein 3.0
 y 1t "I'm glad that you've given me a chance..."
 "I hear Yuri's voice break as she says that, but she continues to press on, sounding like she's trying to fight back tears."
 y 1v "Truth is, I haven't had real friend in years..."
-y 2q "And not since Middle School has anyone treated me like an actual person..."
+y 2q "Not since Middle School has anyone treated me like an actual person..."
 y 2w "I've honestly almost forgotten what it was like to enjoy being with someone who cares about you..."
 "I feel my heart sink into my chest as she says that."
 
@@ -1523,7 +1523,7 @@ hide cg y_cg_1 with wipeleft_scene
 "In the chapter, the main character, this girl named Libitina, is given a second chance to repair her broken relationship with her Uncle, who she's currently living with."
 "Most of the chapter is told through a monologue as Libitina internally debates if it's worth repairing her relationship with her uncle..."
 "As she's on the run from a league of escapees who want her back in order to complete some 'ritual'."
-"It's quite interesting actually, and through her logic, she knows mending fence with her Uncle is the right thing to do..."
+"It's quite interesting actually, and through her logic, she knows mending fences with her Uncle is the right thing to do..."
 "She knows that she might not get another chance to make him happy...{w=0.38}but she doesn't know if it's even worth it in the long run..."
 "After a while we reach the end of the chapter, with Libitina deciding to talk to her friend about what she should do."
 

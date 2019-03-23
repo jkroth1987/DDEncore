@@ -302,6 +302,7 @@ if encore_sayoriquestion_1 == False or encore_sayoriquestion_1 == True:
         "I guess she must be feeling left out that she hasn't talked to me for some reason."
         "I guess it’s up to me to try save her from embarrassment..."
         mc "Yeah, sure! I'd love to do some reading with you!"
+        stop music
         y 3y1 "Right now?!"
         "Her voice rings with excitement."
         "Woah, where did this excitement come from, Yuri?"
@@ -351,6 +352,7 @@ if encore_sayoriquestion_1 == True:
         "I guess she must be feeling left out that she hasn't talked to me for some reason."
         "I guess it’s up to me to try save her from embarrassment..."
         mc "Yeah, sure! I'd love to do some reading with you!"
+        stop music
         y 3y1 "Right now?!"
         "Her voice rings with excitement."
         "Woah, where did this excitement come from, Yuri?"
@@ -398,6 +400,7 @@ if encore_sayoriquestion_1 == False:
         "I didn't realize how much reading with Yuri meant to her..."
         "Well, I should promise to read with her again at some point..."
         mc "Yeah, sure! I'd love to do some reading with you!"
+        stop music
         y 3y1 "Right now?!?"
         "Her voice rings with excitement."
         "Woah, where did this excitement come from, Yuri?"
