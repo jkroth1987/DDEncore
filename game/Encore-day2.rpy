@@ -13,7 +13,7 @@ label day2_start:
     "I violently gasp as I quickly open my eyes to find the world around me in nothing but haze."
     "I feel sweat running all over my body, as if I'd just come out of a sauna."
     "My room isn't even that warm..."
-    "I let out a few coughs as I prop myself up to take a few deep breathes."
+    "I let out a few coughs as I prop myself up to take a few deep breaths."
     "I rub my eyes in an attempt to clear my vision."
     "After a few blinks I'm able to see normally again."
     mc "W-{w=0.38}what the hell was that?"
@@ -135,7 +135,7 @@ with wipeleft_scene
 "Granted, everyone's had wind blown in their faces before, this time it feels...{w=0.28}welcoming"
 "Heh, well that'd be the first time that mother nature's ever welcomed me..."
 "Though it's slightly cooler than yesterday because of the breeze, it's nothing I can't manage."
-"I just hope I can get my mind of the lingring effects of that dream as soon as possible..."
+"I just hope I can get my mind off of the lingring effects of that dream as soon as possible..."
 "As if the world was listening to my prayers, out of the corner of my eye I see Sayori coming torwards me."
 mc "Hey S-"
 
@@ -315,7 +315,7 @@ if encore_sayoriquestion_1 == False:
     s "You're actually hugging me back?"
     s "This early on a Tuesday?"
     show sayori 1m
-    s "When I'm giving my word famous 'hug attack'?"
+    s "When I'm giving my world famous 'hug attack'?"
     mc "Well I didn't know they were 'world famous', but..."
     s 4p "IMPOSTER!"
     show sayori 4p at h11 zorder 11
@@ -331,7 +331,7 @@ if encore_sayoriquestion_1 == False:
     show sayori 5a
     s "What was my favorite thing about the festival this year?"
     mc "The food."
-    "I answer jokingley."
+    "I answer jokingly."
     show sayori 5d
     s "Meanie..."
     show sayori 5c
@@ -361,7 +361,7 @@ if encore_sayoriquestion_1 == False:
     scene black
     with close_eyes
     "I comply with Sayori's strange request."
-    s "No peaking!"
+    s "No peeking!"
     mc "Why would I-"
     stop music
     "chu~"
@@ -637,7 +637,7 @@ show sayori 3r
 s "Hey, [player]!"
 mc "You definitely seem to be in a good mood."
 show sayori 3x
-s "That's because it's time for the literature club, silly!"
+s "That's because it's time for the Literature Club, silly!"
 
 if encore_sayoriquestion_1 == True:
         show sayori 1y
@@ -669,7 +669,7 @@ play music t5 fadein 1.0
 "Yuri is in her usual spot, intently reading her book, while Natsuki is rummaging around in the closet doing who knows what."
 "I see Monika at the teacher's desk at the front of the room, apparently working on something."
 show monika 1a at t11 zorder 2
-"However, Monika quickly notices us and flashes us a smile"
+"However, Monika quickly notices us and flashes us a smile."
 show monika 1b
 m "Hey guys!"
 mc "Hey, Monika!"
@@ -1287,11 +1287,11 @@ show natsuki 1i
 "Natsuki looks at me with a puzzled look."
 n 2h "‘Nat'?"
 n 2i "Where did that come from?"
-mc "I don't know, I thought it'd be a cute if I gave a little nickname for you."
+mc "I don't know, I thought it'd be cute if I gave you a little nickname."
 show natsuki 1v at h41 zorder t41
 "Normally, Natsuki would shoot me an irritated look before proclaiming to everyone that she isn't cute..."
 show natsuki 5u
-"But this time it doesn't even look like she knows how to get properly get mad at me."
+"But this time it doesn't even look like she knows how to get properly mad at me."
 show natsuki 5n
 "She tries to pout but I can tell she's forcibly trying to hold back a grin."
 n 4w "Are you implying that I'm cute?"
@@ -1790,7 +1790,7 @@ s "I can stop by your house in a bit and drop them off if that's okay..."
 mc "Yeah, I'd love to have you over! I'll see you in a bit, Sayori."
 show sayori 4q
 s "Okay~"
-"Sayori and I briefly embrace each other both we head back to our respective houses."
+"Sayori and I briefly embrace each other as we head back to our respective houses."
 "I hope Sayori can stay a little longer this time..."
 stop music fadeout 2.0
 show sayori at thide
@@ -2079,7 +2079,7 @@ elif poem_giver == "Yuri":
 "She...{w=0.38}likes me?"
 "I get assaulted with a barrage of emotions as I try to come to terms with the situation I've just found myself in."
 "I have no idea how I should handle this..."
-"Not to mention, [poem_giver] probably knows I've read by this point..."
+"Not to mention, [poem_giver] probably knows I've read it by this point..."
 "Did she...{w=0.38}give this to me on purpose?"
 "There's no way she would've accidentally given this to me..."
 "What do I do?!?!"
@@ -2510,7 +2510,7 @@ m "She knows she's worthless to you, [player]."
 m "In the end, she'll provide you with nothing!"
 m "It's time for you to see that."
 "My eyes glance over to see Sayori continuing to struggle."
-"Tears are streaking down her face as she tries desprately to frees herself..."
+"Tears are streaking down her face as she tries desprately to free herself..."
 "She keeps gasping for air as her sobs become little more than cries for help."
 "I try to call out to Sayori, but nothing comes out of me..."
 "I try to run to help her, but I can't move my legs..."
@@ -2526,7 +2526,7 @@ play sound fingersnap
 play sound neck
 hide image "mod_assets/cgs/sayori_cg3_struggle.png"
 show image "mod_assets/cgs/sayori_cg3_gone.png" at t11
-"I hear a painful crack as I watch Sayori's body slowly goes limp."
+"I hear a painful crack as Sayori's body slowly goes limp."
 "She's no longer making any noise..."
 "Her gazeless eyes look upon me as a final tear runs down her face."
 m "You can't stop this from happening, [player]."
@@ -2569,7 +2569,7 @@ stop sound
 play sound bone
 hide screen tear
 show natsuki_pain at t11
-"Natsuki shreeks in pain."
+"Natsuki shrieks in pain."
 "Her cries are so loud I feel my ear drums pounding."
 show monika s at t33 zorder 2
 "I see another silhouetted figure emerge from the fog right next to Natsuki..."
@@ -2589,7 +2589,7 @@ play sound fingersnap
 play sound neck
 hide natsuki_pain
 show natsuki_rip at t11
-"I hear a painful crack as I watch Natsuki's body slowly goes limp."
+"I hear a painful crack as I watch Natsuki's body slowly go limp."
 m "And that's how it should've been..."
 m "Quick and painless..."
 "Natsuki's no longer moving or making any noise."
@@ -2599,7 +2599,7 @@ m "But you're keeping her alive, and you don't even know it!"
 m "You being around her is just enough to give her a reason to see hope in her worthless life."
 m "She's not meant for this world."
 m "Her seemingly innoncent mind is filled with nothing but presumptions and predjudice."
-m "She speaks like a Queen but is treated like a peasant."
+m "She speaks like a queen but is treated like a peasant."
 m "And peasants are condemned to die..."
 m "She's going to die and you need to let it happen when the time comes!"
 m "Spending more time with her is only going to make it harder on everyone."

@@ -865,7 +865,7 @@ show natsuki 3w
 n "Well I'm going to have to fix that!"
 mc "You're going to take to me one?"
 show natsuki 5y
-n "Well, obvously!"
+n "Well, obviously!"
 n 5l "They're really fun, [player]! You can get all sorts of rare collectables there!"
 mc "Huh, never thought of it like that..."
 n 3j "There's actually a convention happening in town next week that we could go to!"
@@ -929,7 +929,7 @@ show n_cg1_exp5 with dissolve
 "It also gets to a point where she goes quiet, and she looks at me more than she looks at the manga..."
 "At first I try to ignore it, but it becomes distracting enough to the point where I can't read anymore."
 "I turn to my right and I see that Natsuki's not even looking at the book anymore."
-"She's just...{w=0.38}starting at me..."
+"She's just...{w=0.38}staring at me..."
 "With an intimate look in her eyes..."
 mc "Umm...{w=0.38}whatcha doing?"
 stop music fadeout 1.0
@@ -1231,7 +1231,7 @@ if encore_festivalquestion_2 == "Yuri":
     "Great...{w=0.38}an off-brand version of Sailor Moon."
     "And...{w=0.38}it seems exceedingly...{w=0.38}'moe'."
     "Still, I should try to respectful of Natsuki's interests."
-    "It is a literature club afterall..."
+    "It is a Literature Club afterall..."
     mc "Hmmm...{w=0.38}I don’t think I’ve ever read this before."
     mc "Is it good?"
     show natsuki 4o

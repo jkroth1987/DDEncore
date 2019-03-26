@@ -839,7 +839,7 @@ y 2b "Hey, [player]!"
 mc "Hey, Yuri! What's up?"
 
 if encore_festivalquestion_2 == "Yuri":
-    y 1a "Oh, just reading Chapter seven. How about you?"
+    y 1a "Oh, just reading chapter seven. How about you?"
     "Aside from that horrific nightmare I had last night..."
     "And the hallucination I experienced this morning..."
     "Which there's no chance I'm sharing any of that with Yuri..."
@@ -933,7 +933,7 @@ if encore_festivalquestion_2 == "Natsuki":
     "It was a little awkward at first but Yuri and I end up setting up a good system."
     "Whenever I got done with a page, I'd use my thumb to flip the page and Yuri would catch it with her fingers and put it to the side."
     show yuri 2o
-    "After reading for a few minutes, I see Yuri shifting unconfortably in her seat."
+    "After reading for a few minutes, I see Yuri shifting uncomfortably in her seat."
     mc "Everything good, Yuri?"
     show yuri 1q zorder 1 at t11
     y "Yeah, it's just that my posture isn't too good right now."
@@ -1010,7 +1010,7 @@ play music t8 fadein 1.0
 hide cg y_cg_1 with wipeleft_scene
 "The chapter actually turns out to be the best one yet!"
 "In the chapter, the main character, this girl named Libitina, is given a second chance to repair her broken relationship with her Uncle, who she's currently living with."
-"Most of the chapter is told through a monologue as Libitina internally debates if it's worth repairing her relationship with her uncle..."
+"Most of the chapter is told through a monologue as Libitina internally debates if it's worth repairing her relationship with her Uncle..."
 "As she's on the run from a league of escapees who want her back in order to complete some 'ritual'."
 "It's quite interesting actually, and through her logic, she knows mending fences with her Uncle is the right thing to do..."
 "She knows that she might not get another chance to make him happy...{w=0.38}but she doesn't know if it's even worth it in the long run..."
@@ -1041,8 +1041,8 @@ mc "And what?"
 play music t9 fadein 3.0
 y 1t "I'm glad that you've given me a chance..."
 "I hear Yuri's voice break as she says that, but she continues to press on, sounding like she's trying to fight back tears."
-y 1v "Truth is, I haven't had real friend in years..."
-y 2q "Not since Middle School has anyone treated me like an actual person..."
+y 1v "Truth is, I haven't had a real friend in years..."
+y 2q "Not since middle school has anyone treated me like an actual person..."
 y 2w "I've honestly almost forgotten what it was like to enjoy being with someone who cares about you..."
 "I feel my heart sink into my chest as she says that."
 
@@ -1571,9 +1571,9 @@ mc "And what?"
 play music t9 fadein 3.0
 y 1t "I'm glad you've given me a chance..."
 "I hear Yuri's voice break as she says that, but she continues to press on, sounding like she's trying to fight back tears."
-y 1v "Truth is, I haven't had real friend in years..."
+y 1v "Truth is, I haven't had a real friend in years..."
 y "I've usally just spent all my time by myself reading..."
-y 2q "And not since Middle School has anyone treated me positively..."
+y 2q "And not since middle school has anyone treated me positively..."
 y 2w "I've honestly almost forgotten what it was like to enjoy being with someone with similar interests..."
 "I feel my heart sink into my chest as she says that."
 

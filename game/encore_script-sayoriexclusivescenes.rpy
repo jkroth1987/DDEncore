@@ -559,7 +559,7 @@ if encore_sayoriquestion_1 == True:
             "Sayori smiles as I take a seat next to her."
             show sayori 1c
             s "So, what we're you asking Monika about?"
-            mc "Oh, I just wanted to see if I could get a little peak at what her announcement is going to be."
+            mc "Oh, I just wanted to see if I could get a little peek at what her announcement is going to be."
             show sayori 1g
             s "[player]..."
             s 1h "She's going to tell all of us, you know!"
@@ -966,7 +966,7 @@ if encore_sayoriquestion_1 == False:
                 s "So...{w=0.38}what we're you talking to Monika about?"
 
 
-            mc "Oh, I just wanted to see if I could get a little peak at what her announcement is going to be."
+            mc "Oh, I just wanted to see if I could get a little peek at what her announcement is going to be."
             show sayori 1g
             s "[player]..."
             s 1h "She's going to tell all of us, you know!"
@@ -1864,7 +1864,7 @@ if hangout1 == "Natsuki" or hangout1 == "Yuri" or hangout1 == "Monika" or hangou
 
 mc "I...{w=0.38}I've definitely got more than a few ideas in mind..."
 s 1bn "O-{w=0.38}Oh? And what would they be?"
-"She looks at me quizzically, an obviously sense of intrigue in her eyes."
+"She looks at me quizzically, an obvious sense of intrigue in her eyes."
 mc "Well...{w=0.38}let me show you..."
 
 if encore_sayoriquestion_1 == True:
@@ -2211,7 +2211,7 @@ s 1bq "It could still be fun~"
 s 4br "Unless you're too chicken!"
 mc "Alright, you're on!"
 stop music fadeout 3.0
-"As we sit there choosing our racers, I decide to go with old main...{w=0.38}Luigi."
+"As we sit there choosing our racers, I decide to go with my old main...{w=0.38}Luigi."
 "As I expected, Sayori chooses Daisy, her all time favorite."
 show cg rr1 zorder 10 with dissolve_cg
 play music e7
@@ -2277,7 +2277,7 @@ show cg s_cg_2 happy with dissolve_cg
 "Under most circumstances, they really wouldn't work on me, but for some reason, today, they're super effective."
 mc "I know...{w=0.38}I know...{w=0.38}I'm gonna buy you whatever you want, I'm just messing with you, Sayori."
 show cg s_cg_2 relieved with dissolve_cg
-"Sayori shoots me a look of relief"
+"Sayori shoots me a look of relief."
 s 1bo "So when do I get my ice cream?"
 mc "As soon as you can get up."
 show cg s_cg_2 pin with dissolve_cg
