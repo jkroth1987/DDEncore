@@ -32,8 +32,11 @@ init python:
         "Karen took the kids so I made this mod.",
         "Why are you trying to find more splash messages? Just play the mod, man!"
     ]
+    
+    splash_message_total = len(splash_messages)
 
 
+default persistent.splash_counter = 0
 image splash_warning = ParameterizedText(style="splash_text", xalign=0.5, yalign=0.5)
 
 
@@ -322,9 +325,15 @@ label splashscreen:
     $ renpy.music.play(config.main_menu_music)
     pause 2.5
     hide intro with Dissolve(0.5, alpha=True)
+    
+    if splash_message_total <= persistent.splash_counter:
+        $ persistent.splash_counter = 0
+    
+    $ splash_message = splash_messages[persistent.splash_counter]
+    $ persistent.splash_counter = persistent.splash_counter + 1
 
-    if persistent.playthrough == 2 and renpy.random.randint(0, 3) == 0:
-        $ splash_message = renpy.random.choice(splash_messages)
+#    if persistent.playthrough == 2 and renpy.random.randint(0, 3) == 0:
+#        $ splash_message = renpy.random.choice(splash_messages)
     show splash_warning "[splash_message]" with Dissolve(0.5, alpha=True)
     pause 2.0
     hide splash_warning with Dissolve(0.5, alpha=True)
