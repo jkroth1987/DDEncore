@@ -4,13 +4,13 @@
 #Import the datetime library for using time
 init python:
     import datetime
-    
+
     # To find the amount of time it should take for a block to go by,
     # divide the number of pixels it needs to move by 75.
     # Add 50 pixels per line after the first.
-    # 
+    #
     # Ex: 1620 / 75 = 21.6 seconds, rounded to 21.5
-    
+
     # 1
     # 6 lines, +250 pixels
     c_text_1 = """Created and Directed By: Andrew J. Striedl
@@ -19,7 +19,7 @@ Rose, Ploxmaster708, Rudy, Andrew J. Striedl
 Writing Contributors: Olivia Norton, Jacob Smallman
 Artists: 3Monika4 (Monika), Elaina Sasso,
 Kent Stone, SkynnarahSerenity49"""
-    
+
     # 2
     # 6 lines, +250 pixels
     c_text_2 = """Coders: Agent Gold, Bug, Nico, Andrew J. Striedl\n
@@ -29,7 +29,7 @@ Image Editing: POBAW, TheD0ctor,
 Agent Gold, Andrew J. Striedl
 
 Music: Daniel Kruyer (Angelic Beast)"""
-    
+
     # 3
     # 5 lines, +200 pixels
     c_text_3 = """Sayori as Sayori
@@ -37,16 +37,18 @@ Natsuki as Natsuki
 Yuri as Yuri
 Monika as Monika
 The MC as [player]""" # This will be re-defined lower down--if adjustments are needed, adjust that one!
-    
+
     # 4
     # 6 lines, +250 pixels
     c_text_4 = """Special Thanks: Afrozer0 & Monika, Agent Gold, American Eagle, Astranova,
 Blaze Bringer, BronzeBrawn, Bug, huser Entertainment,
-Jacob Smallman, Kuudere Ghost, POBAW, Orber,
+Jacob Smallman, Kuudere Ghost, POBAW, Noa_AT, Orber,
 Ploxmaster708, SaturnGamer72, Ronald McOnePuch, SlightlySimple,
 Spaghetto, Sir Swampert, Olivia Norton
+
+
 Life Saver: Agent Gold"""
-    
+
     # 5
     # 6 lines, +250 pixels
     c_text_5 = """Inspired By: Dan Salvato
@@ -55,14 +57,14 @@ Inspired By:
 Doki Doki: The Festival
 Doki Doki: Exit Music
 Doki Doki: Literature Club"""
-    
+
     # 6
     # 4 lines, +150 pixels
     c_text_6 = """Assets Used
 
 Ren'py Scripts: \"Script to make the dokies lean
 forward then they talk\" by TSS~Danny#2610 (Discord)"""
-    
+
     # 7
     # 29 lines, +1400 pixels
     c_text_7 = """Backgrounds Used
@@ -94,12 +96,12 @@ Daisy for CGs: https://www.pinterest.com/pin/453878468671138996/
 bg void: www.videoblocks.com
 bg void_2 b Kent Stone
 Void Door: https://icouldcrybutidonthavetime.files.wordpress.com/2014/10/doors.jpg"""
-    
+
     # 8
     # 41 lines, +2000 pixels
     c_text_8 = """Audio Used
 
-Main Menu Theme \"Doki Doki Forever\" 
+Main Menu Theme \"Doki Doki Forever\"
 sung by OR3O ft. rachie, Chi-chi, Kathy-chan★
 -'OR3O' (Monika) : https://bit.ly/2mZJhiS
 -'rachie' (Sayori) : https://www.youtube.com/user/splendiferousfantasy/
@@ -138,7 +140,7 @@ audio.stab: By SoundEffectsFactory on YouTube
 
 audio.drop: Public Domain
 (converted to .ogg by Agent Gold)"""
-    
+
     # 9
     # 5 lines, +200 pixels
     c_text_9 = """Sprites Used
@@ -146,17 +148,17 @@ audio.drop: Public Domain
 \"Monika_Cute\" by radioactive64
 Yandere Sayori by Agent Gold
 Other Unique Sprites by Agent Gold"""
-    
+
     # 10
     # 1 line, no extra pixels!
     c_text_10 = "Thanks For Playing!"
-    
+
 #This defines the CGs that disappear after a few seconds
 #These are the colored CGs used for scene cgs
 image e_credits_cg1:
     "mod_assets/cgs/credits/1.png"
     size(640, 360)
-    
+
 image e_credits_cg2:
     "mod_assets/cgs/credits/2.png"
     size(640, 360)
@@ -305,82 +307,82 @@ The MC as """ + player
     show encore_credits_logo
     pause 9.12
     #Each CG is shown.
-    
+
     show e_credits_cg1 at e_credits_scroll_middle as credits_image_1
-    
+
     pause 2.0
 
     #Actual names for the credits
     show credits_text c_text_1 at e_credits_text_scroll_middle(y = 1170, t = 21.5, end = -450) as credits_text_1
-    
+
     pause 12.5
-    
+
     show e_credits_cg2 at e_credits_scroll_middle as credits_image_2
-    
+
     pause 2.0
-    
+
     show credits_text c_text_2 at e_credits_text_scroll_middle(y = 1170, t = 21.5, end = -450) as credits_text_2
-    
+
     pause 12.5
-    
+
     show e_credits_cg3 at e_credits_scroll_middle as credits_image_1
-    
+
     pause 2.0
-    
+
     show credits_text c_text_3 at e_credits_text_scroll_middle(y = 1120, t = 20.5, end = -400) as credits_text_1
-    
+
     pause 11.5
-    
+
     show e_credits_cg4 at e_credits_scroll_middle as credits_image_2
-    
+
     pause 2.0
-    
+
     show credits_text c_text_4 at e_credits_text_scroll_middle(y = 1170, t = 21.5, end = -450) as credits_text_2
-    
+
     pause 12.5
-    
+
     show e_credits_cg5 at e_credits_scroll_middle as credits_image_1
-    
+
     pause 2.0
-    
+
     show credits_text c_text_5 at e_credits_text_scroll_middle(y = 1170, t = 21.5, end = -450) as credits_text_1
-    
+
     pause 12.5
-    
+
     show e_credits_cg6 at e_credits_scroll_middle as credits_image_2
-    
+
     pause 2.0
-    
+
     show credits_text c_text_6 at e_credits_text_scroll_middle(y = 1070, t = 19.0, end = -350) as credits_text_2
-    
+
     pause 9.0
-    
+
     show credits_text c_text_7 at e_credits_text_scroll_middle(y = 1570, t = 32.0, end = -850) as credits_text_1
-    
+
     pause 17.0
     hide credits_image_1
     hide credits_image_2
-    
+
     show credits_text c_text_8 at e_credits_text_scroll_middle(y = 2180, t = 48.0, end = -1450) as credits_text_2
-    
+
     pause 30.0
-    
+
     show credits_text c_text_9 at e_credits_text_scroll_middle(y = 1120, t = 20.5, end = -400) as credits_text_1
-    
+
     pause 11.5
-    
+
     show credits_header c_text_10 at e_credits_text_scroll_middle(y = 920, t = 7.5, end = 360) as credits_text_2
-    
+
     pause 9.5
-    
+
     scene black with Dissolve(1.0)
-    
+
     play sound page_turn
     show e_end_letter with Dissolve(1)
     $ pause()
-    
+
     call screen dialog(message="Restart required.\nThe game will now exit.", ok_action=Quit(confirm=False))
 #    hide e_end_letter with Dissolve(1)
 #    pause 0.5
-    
+
     return

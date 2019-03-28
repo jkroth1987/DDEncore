@@ -382,8 +382,10 @@ label day3_tellsayori:
         s u115232 "Rope...?"
         scene black
         play music e1
+        $ renpy.pause(delay=3, hard=True)
         stop music fadeout 3.0
-        scene encore_demoend
+        $ renpy.pause(delay=3, hard=True)
+        jump encore_credits
 
     if hangout2 == "Yuri":
         mc "I watched Yuri die..."
@@ -395,8 +397,11 @@ label day3_tellsayori:
         s u115232 "A knife?!?!?"
         scene black
         play music e1
+        $ renpy.pause(delay=3, hard=True)
         stop music fadeout 3.0
-        scene encore_demoend
+        $ renpy.pause(delay=3, hard=True)
+        jump encore_credits
+
 
     if hangout2 == "Natsuki":
         mc "I watched Natsuki die..."
@@ -409,8 +414,11 @@ label day3_tellsayori:
         s u115232 "She broke her neck?!?!"
         scene black
         play music e1
+        $ renpy.pause(delay=3, hard=True)
         stop music fadeout 3.0
-        scene encore_demoend
+        $ renpy.pause(delay=3, hard=True)
+        jump encore_credits
+
 
     if hangout2 == "Monika":
         mc "I've been having these weird dreams lately."
@@ -423,8 +431,11 @@ label day3_tellsayori:
         s u115232 "Plans?!?!"
         scene black
         play music e1
+        $ renpy.pause(delay=3, hard=True)
         stop music fadeout 3.0
-        scene encore_demoend
+        $ renpy.pause(delay=3, hard=True)
+        jump encore_credits
+
 
 
 
@@ -440,4 +451,4 @@ label day3_notellsayori:
     "But, instead of pressing further, we start our walk to school."
     scene black
     with dissolve_scene_full
-    scene encore_demoend
+    jump encore_credits
