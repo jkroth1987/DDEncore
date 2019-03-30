@@ -133,7 +133,7 @@ if encore_festivalquestion_2 == "Natsuki":
         "I read the first chapter and sort of got lost with where the story was going midway through."
         "Granted it seemed pretty interesting at the time, and I wouldn't mind reading it again..."
         mc "I was able to get around to finishing the first chapter."
-        mc "I'll admit from what I've read so far, the story's a little confusing to me."
+        mc "I'll admit from what I've read, the story's a little confusing to me."
         show yuri 1c
         "Yuri chuckles to herself."
         y 1d "Well, you have to read the second chapter to understand things better!"
@@ -1280,8 +1280,8 @@ y "Have you had the chance to read it yet?"
 mc "I've read up to the first chapter."
 show yuri 1e
 y "What do you think of it so far?"
-mc "I mean, so far it's been decent, though I'm a little confused with the story so far."
-mc "It looks promising so far though, so I'm holding out that it'll get better."
+mc "I mean, it's been decent, though I'm a little confused with the story."
+mc "It looks promising though, so I'm holding out that it'll get better."
 show yuri 1c
 y "Well I can assure you, [player], the more you read, the more you'll learn and fall in love with the story."
 mc "Well, it sounds like I should read it more!"

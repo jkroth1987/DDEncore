@@ -143,8 +143,8 @@ label day1_beginning:
     "At least we finally get to have our first club meeting since the festival."
     "While doing an abridged version of my morning routine, the memories of the last two weeks come rushing back into my mind."
     "I remember timidly introducing myself to the club for the first time, not expecting it to have such incredibly cute girls..."
-    "Nor did I imaigne having to endure their scrunity of my mediocre poems..."
-    "Forutnately, not everything as of late has been super stressful or tense."
+    "Nor did I imagine having to endure their scrunity of my mediocre poems..."
+    "Fortunately, not everything as of late has been super stressful or tense."
 
     if encore_festivalquestion_2 == "Natsuki":
         pass # Temporary
@@ -240,7 +240,7 @@ label day1_beginning:
         "I think to myself just how lucky I am to have ended up with someone like her after all these years."
         "It didn't occur to me two weeks ago, hell, even last week, that I would've ever been dating my childhood best friend."
         "It's something I kind of always thought to myself as a \'what if...\' scenario, but I never really gave it serious thought until we started walking to school together again."
-        "I guess that after spending all that time together in the literature club, we were able to rediscover that tight bond we once shared."
+        "I guess that after spending all that time together in the Literature Club, we were able to rediscover that tight bond we once shared."
         "Though, it really wasn’t until Sayori had told me about her depression and love for me when I realized just how much we really meant to each other."
         "As the memories continue to swirl in my head, I slowly start spacing out into Sayori’s eyes."
         "I could almost stare into those sky blue eyes all day..."
@@ -268,7 +268,7 @@ label day1_beginning:
 
     elif encore_sayoriquestion_1 == False:
         show sayori 1k at t11 zorder 1
-        "Though I didn’t spend too much time around Sayori in the literature club, we still had our moments, and I guess that set up everything to happen last Sunday."
+        "Though I didn’t spend too much time around Sayori in the Literature Club, we still had our moments, and I guess that set up everything to happen last Sunday."
         "Sayori is my dearest friend, I’ve always looked after and cared for her in a brother-sister sort of way."
         "Though, I'd be lying to myself if I were to say that some part of me didn't entertain the thought of us being together like that..."
         "But, I've had my eyes on someone else recently..."
@@ -357,7 +357,7 @@ label day1_beginning:
     mc "Yeah...{w=0.28}guess so..."
     show sayori 1k at t11 zorder 1
     "We stand there awkwardly for a moment."
-    mc "Hey! I'll see you at the literature club, ok?"
+    mc "Hey! I'll see you at the Literature Club, ok?"
     "Sayori's disappointment is quickly erased by her usual, cheery attitude."
     s 1x "Hehe...{w=0.28} yeah, I can't wait!"
 
@@ -381,7 +381,7 @@ label day1_beginning:
     "The school day is as ordinary and boring as ever, listening to the same old teachers teaching the same old things."
     play sound school
     "Eventually, my torment comes to an end as the final bell rings throughout the school."
-    "That means it's time for the literature club!"
+    "That means it's time for the Literature Club!"
     "As I leave my class and walk through the door, I see Sayori standing outside."
     show sayori 3a at t11 zorder 1
     s "Hey, [player]! Ready to go?"
@@ -1497,7 +1497,7 @@ if encore_sayoriquestion_1 == False:
             "Through my best interpretation of her poem, it seemed like it was about someone finally being noticed by an 'interest' after feeling isolated for so long."
             show yuri 1c
             "Yuri seemed to really enjoy my poem, saying that it's the best poem she's read from me."
-            "She further complimented me by saying I've improved over my time here in the literature club."
+            "She further complimented me by saying I've improved over my time here in the Literature Club."
             "Though that didn't stop her from giving me her usual suggestions and encouraged me to expirement more with elaborate language."
             show yuri 1b
             "Our talks of poems quickly shifted to catching up with each other to see how we've been since the festival."
@@ -2150,7 +2150,7 @@ label day1_bedroom:
                 "Thankfully, I guess that feeling was just in my head."
                 "Surprisingly, she was already up by the time I came to check up on her."
                 "Still, I can't believe my dumb luck!"
-                "I finally someone who loves me back..."
+                "I finally found someone who loves me back..."
                 "As it turns out, after years of trying to find the right girl, she was right in front of me the whole time..."
                 "As I drift off into sleep, I think to myself..."
                 "Life is a funny thing sometimes..."
@@ -2168,7 +2168,7 @@ label day1_bedroom:
                 "Thankfully, I guess that feeling was just in my head."
                 "Surprisingly, she was already up by the time I came to check up on her."
                 "Still, I can't believe my dumb luck!"
-                "I finally someone who loves me back..."
+                "I finally found someone who loves me back..."
                 "As it turns out, after years of trying to find the right girl, she was right in front of me the whole time..."
                 "I just wish we could've spent more time together today..."
                 "Then there is Natsuki..."
@@ -2196,7 +2196,7 @@ label day1_bedroom:
                 "Thankfully, I guess that feeling was just in my head."
                 "Surprisingly, she was already up by the time I came to check up on her."
                 "Still, I can't believe my dumb luck!"
-                "I finally someone who loves me back..."
+                "I finally found someone who loves me back..."
                 "As it turns out, after years of trying to find the right girl, she was right in front of me the whole time..."
                 "I just wish we could've spent more time together today..."
                 "Then there is Natsuki and Yuri..."
@@ -2223,7 +2223,7 @@ label day1_bedroom:
                 "Thankfully, I guess that feeling was just in my head."
                 "Surprisingly, she was already up by the time I came to check up on her."
                 "Still, I can't believe my dumb luck!"
-                "I finally someone who loves me back..."
+                "I finally found someone who loves me back..."
                 "As it turns out, after years of trying to find the right girl, she was right in front of me the whole time..."
                 "I just wish we could've spent more time together today..."
                 "Then there is Natsuki and Monika..."
@@ -2255,7 +2255,7 @@ label day1_bedroom:
                 "Thankfully, I guess that feeling was just in my head."
                 "Surprisingly, she was already up by the time I came to check up on her."
                 "Still, I can't believe my dumb luck!"
-                "I finally someone who loves me back..."
+                "I finally found someone who loves me back..."
                 "As it turns out, after years of trying to find the right girl, she was right in front of me the whole time..."
                 "I just wish we could've spent more time together today..."
                 "Then there is Natsuki and Yuri..."
@@ -2282,7 +2282,7 @@ label day1_bedroom:
                 "Thankfully, I guess that feeling was just in my head."
                 "Surprisingly, she was already up by the time I came to check up on her."
                 "Still, I can't believe my dumb luck!"
-                "I finally someone who loves me back..."
+                "I finally found someone who loves me back..."
                 "As it turns out, after years of trying to find the right girl, she was right in front of me the whole time..."
                 "I just wish we could've spent more time together today..."
                 "Then there is Yuri..."
@@ -2310,7 +2310,7 @@ label day1_bedroom:
                 "Thankfully, I guess that feeling was just in my head."
                 "Surprisingly, she was already up by the time I came to check up on her."
                 "Still, I can't believe my dumb luck!"
-                "I finally someone who loves me back..."
+                "I finally found someone who loves me back..."
                 "As it turns out, after years of trying to find the right girl, she was right in front of me the whole time..."
                 "I just wish we could've spent more time together today..."
                 "Then there is Yuri and Monika..."
@@ -2589,7 +2589,7 @@ label day1_void:
         m "That it's just nothing more than a little 'obstacle' in your life..."
         m "Until you realize the cruel, cold truth..."
         m "You aren't even a person..."
-        m "You barley exisit at all..."
+        m "You barely exisit at all..."
         m "Just a window into our sad, little exisistence..."
         m "It really calls into question what you believe to be reality,{w=0.28} does it not?"
         m "And I’ve come to realize...{w=0.28} just how fake this world really is."
@@ -2918,7 +2918,7 @@ label day1_void_monika:
             m "That it's just nothing more than a little 'obstacle' in your life..."
             m "Until you realize the cruel, cold truth..."
             m "You aren't even a person..."
-            m "You barley exisit at all..."
+            m "You barely exisit at all..."
             m "Just a window into our sad, little exisistence..."
             m "It really calls into question what you believe to be reality,{w=0.28} does it not?"
             m "And I’ve come to realize...{w=0.28} just how fake this world really is."

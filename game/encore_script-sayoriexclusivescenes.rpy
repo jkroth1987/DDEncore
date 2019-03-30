@@ -2341,15 +2341,28 @@ hide sayori
 
 if hangout1 == "Sayori":
     if hangout2 == "Sayori":
-        "All I wish is that I could spend everyday like this with her..."
-        stop music fadeout 2.0
-        jump day2_confession
+        jump day2_ref1
 
-else:
-    "I really should spend more time around her..."
-    "She is my girlfriend afterall..."
-    stop music fadeout 2.0
-    jump day2_confession
+label day2_ref1:
+"All I wish is that I could spend everyday like this with her..."
+stop music fadeout 2.0
+jump day2_confession
+
+
+if hangout1 == "Sayori":
+    if hangout2 == "Natsuki" or hangout2 == "Yuri" or hangout2 == "Monika":
+        jump day2_ref2
+
+if hangout1 == "Natsuki" or hangout1 == "Yuri" or hangout1 "Monika":
+    if hangout2 == "Natsuki" or hangout2 == "Yuri" or hangout2 == "Monika" or hangout2 == "Sayori":
+        jump day2_ref2
+
+
+label day2_ref2:
+"I really should spend more time around her..."
+"She is my girlfriend afterall..."
+stop music fadeout 2.0
+jump day2_confession
 
 
 label day2_sinteraction2:

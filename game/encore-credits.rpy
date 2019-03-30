@@ -56,6 +56,7 @@ Life Saver: Agent Gold"""
 Inspired By:
 Doki Doki: The Festival
 Doki Doki: Exit Music
+Doki Doki: Monika After Story
 Doki Doki: Literature Club"""
 
     # 6
@@ -268,7 +269,7 @@ transform e_credits_text_scroll_left(y = 920, t = 15, end = -200):
 #This is where the credits scroll starts
 label encore_credits:
     window hide
-    
+
     python:
         # Adjust this so we have the player's name in place
         c_text_3 = """Sayori as Sayori
