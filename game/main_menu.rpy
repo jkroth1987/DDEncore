@@ -7,9 +7,9 @@ screen main_menu() tag menu:
 
     add "menu_bg"
 #    add "menu_art_y"
-    add "menu_animation_y"
+#    add "menu_animation_y"
 #    add "menu_art_n"
-    add "menu_animation_n"
+#    add "menu_animation_n"
     frame
 
 
@@ -22,6 +22,8 @@ screen main_menu() tag menu:
     add "menu_particles"
     add "menu_logo"
     #add "menu_art_s"
+    add "menu_animation_y"
+    add "menu_animation_n"
     add "menu_animation_s"
     add "menu_particles"
     #add "menu_art_m"

@@ -289,7 +289,7 @@ label splashscreen:
         with Dissolve(1.0)
         pause 1.0
 
-        "[config.name] is a Doki Doki Literature Club fan mod that is not affiliated with Team Salvato."
+        "Doki Doki Encore is a Doki Doki Literature Club fan mod that is not affiliated with Team Salvato."
         "It is designed to be played only after the official game has been completed, and contains spoilers for the official game."
         "Game files for Doki Doki Literature Club are required to play this mod and can be downloaded for free at: http://ddlc.moe"
 
