@@ -2240,40 +2240,34 @@ jump day2_yvoid
 #Rejected Sayori Varaitions
 
 label day2_s_n_y:
-m "You did good by staying away from [hangout1] as much as possible today..."
-m "You need to keep doing that..."
-m "Spending time around her won't help us..."
-m "But, when I said for you to stay away from [hangout1]..."
-m "I didn't mean go spend time with [hangout2]!"
-m "I suppose you did good by staying away from [hangout1] as much as possible today..."
-m "You need to keep doing that..."
-m "Spending time around her won't help us..."
-m "But just don't go spend time with [hangout2]!"
-m "That doesn't help us!"
-m "Especially you trying to fix things with Sayori!"
-m "Spending time with her, like you did earlier, just made things needlessly more complicated..."
-m "As for [hangout2]..."
-m "Allow me to clarify something for you, [player]..."
+if hangout2 == "Natsuki" or hangout2 == "Yuri":
+    m "You did good by staying away from [hangout1] as much as possible today..."
+    m "You need to keep doing that..."
+    m "Spending time around her won't help us..."
+    m "But, when I said for you to stay away from [hangout1]..."
+    m "I didn't mean go spend time with [hangout2]!"
+    m "That doesn't help us!"
+    m "Especially you trying to fix things with Sayori!"
+    m "Spending time with her, like you did earlier, just made things needlessly more complicated..."
+    m "As for [hangout2]..."
+    m "Allow me to clarify something for you, [player]..."
 
 if hangout2 == "Natsuki":
- jump day2_nvoid
+    jump day2_nvoid
 
 
 if hangout2 == "Yuri":
- jump day2_yvoid
+    jump day2_yvoid
 
 
 label day2_n_s_y:
-m "You did good by staying away from [hangout1] as much as possible today..."
-m "You need to keep doing that..."
-m "Spending time around her won't help us..."
-m "But, when I said for you to stay away from [hangout1]..."
-m "I didn't mean go spend time with [hangout2]!"
-m "I suppose you did good by staying away from [hangout1] as much as possible today..."
-m "You need to keep doing that..."
-m "Spending time around her won't help us..."
-m "But just don't go spend time with [hangout2]!"
-m "That doesn't help us!"
+if hangout2 == "Sayori" or hangout2 == "Yuri":
+    m "You did good by staying away from [hangout1] as much as possible today..."
+    m "You need to keep doing that..."
+    m "Spending time around her won't help us..."
+    m "But, when I said for you to stay away from [hangout1]..."
+    m "I didn't mean go spend time with [hangout2]!"
+    m "That doesn't help us!"
 
 if hangout2 == "Sayori":
     m "Especially you trying to fix things with Sayori!"
@@ -2291,16 +2285,13 @@ if hangout2 == "Yuri":
 
 
 label day2_y_s_n:
-m "You did good by staying away from [hangout1] as much as possible today..."
-m "You need to keep doing that..."
-m "Spending time around her won't help us..."
-m "But, when I said for you to stay away from [hangout1]..."
-m "I didn't mean go spend time with [hangout2]!"
-m "I suppose you did good by staying away from [hangout1] as much as possible today..."
-m "You need to keep doing that..."
-m "Spending time around her won't help us..."
-m "But just don't go spend time with [hangout2]!"
-m "That doesn't help us!"
+if hangout2 == "Sayori" or hangout2 == "Natsuki":
+    m "You did good by staying away from [hangout1] as much as possible today..."
+    m "You need to keep doing that..."
+    m "Spending time around her won't help us..."
+    m "But, when I said for you to stay away from [hangout1]..."
+    m "I didn't mean go spend time with [hangout2]!"
+    m "That doesn't help us!"
 
 if hangout2 == "Sayori":
     m "Especially you trying to fix things with Sayori!"
@@ -2329,7 +2320,7 @@ m "WHAT {w=0.38}ARE {w=0.38}YOU {w=0.38}DOING?!?!"
 "I can't tell where it's coming from, but it's loud enough to where I need to cover my ears."
 m "You were doing so well..."
 
-if hangout2 == "Natsuki" or hangout2 == "Yuri":
+if hangout2 == "Natsuki" or hangout2 == "Yuri" or hangout2 == "Sayori":
     m "And now you're putting everything at risk by hanging out with [hangout2]!"
     m "Not to mention you trying to fix your relationship with Sayori isn't helping matters!"
     m "Do you have any idea just how much harder you're making this on me?!?!?"
