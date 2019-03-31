@@ -2488,8 +2488,12 @@ if hangout1 == "Sayori":
         mc "I don't know...{w=0.38}I feel like I should start spending some more time around you..."
         mc "I feel like that I've been too distant from you lately..."
         "Sayori shoots me a quizzical look."
-        s 2be "I thought you and [encore_festivalquestion_2] liked each other though."
-        mc "I mean we do...{w=0.38}but we're friends. I guess on occasion we just happen to get a little too friendly."
+        s 2be "I thought you and [encore_festivalquestion_2] liked each other though..."
+        mc "I mean we do...{w=0.38}but we're friends."
+        s 2by "Well, I'm just glad I was able to bring you out of your shell a little, [player]."
+        mc "Yeah, if it weren't for you, I'd be on my way to becoming a full time NEET!"
+        jump day2_missyou
+
 
 if hangout1 == "Natsuki" or hangout1 == "Yuri" or hangout1 == "Monika":
     if hangout2 == "Sayori":
@@ -2497,8 +2501,13 @@ if hangout1 == "Natsuki" or hangout1 == "Yuri" or hangout1 == "Monika":
         mc "I don't know...{w=0.38}I feel like I should start spending some more time around you..."
         mc "I feel like that I've been too distant from you lately..."
         "Sayori shoots me a quizzical look."
-        s 2be "I thought you and [hangout1] liked each other though."
-        mc "I mean we do...{w=0.38}but we're friends. I guess on occasion we just happen to get a little too friendly."
+        s 2be "I thought you and [encore_festivalquestion_2] liked each other though..."
+        s "Not to mention, you and [hangout1] seemed to be having fun yesterday."
+        mc "I mean, yeah, I like [encore_festivalquestion_2]..."
+        mc "And I had fun spending time with [hangout1] yesterday, but we're just friends..."
+        s 2by "Well, I'm just glad I was able to bring you out of your shell a little, [player]."
+        mc "Yeah, if it weren't for you, I'd be on my way to becoming a full time NEET!"
+        jump day2_missyou
 
 if hangout1 == "Natsuki":
     if hangout2 == "Natsuki":
@@ -2506,17 +2515,94 @@ if hangout1 == "Natsuki":
         mc "I don't know...{w=0.38}I feel like I should start spending some more time around you..."
         mc "I feel like that I've been too distant from you lately..."
         "Sayori shoots me a quizzical look."
-        s 2be "I thought you and [hangout1] liked each other though."
-        mc "I mean we do...{w=0.38}but we're friends. I guess on occasion we just happen to get a little too friendly."
 
-if hangout1 == "Sayori" or hangout1 == "Yuri" or hangout1 == "Monika":
+        if encore_festivalquestion_2 == "Natsuki":
+            s 2be "I thought you and Natsuki liked each other though..."
+            mc "I mean we do...{w=0.38}but we're friends."
+            mc "I guess I just got a little too friendly with Natsuki there for a second..."
+            jump day2_missyou
+
+        if encore_festivalquestion_2 == "Yuri":
+            s 2be "I thought you liked Yuri though..."
+            s "You used to spend a lot of time around her...{w=0.38}did something happen?"
+            mc "No, no, nothing happened..."
+            mc "It's just that...{w=0.38}I want to get to know the others a bit more too."
+            mc "Although, I wasn't trying to get to know Natsuki {i}like that{/i} earlier, I promise!"
+            jump day2_missyou
+
+
+if hangout1 == "Sayori":
     if hangout2 == "Natsuki":
         mc "And I'm glad I got to spend more time with Natsuki today as well..."
         mc "I don't know...{w=0.38}I feel like I should start spending some more time around you..."
         mc "I feel like that I've been too distant from you lately..."
         "Sayori shoots me a quizzical look."
-        s 2be "I thought you and [hangout2] liked each other though."
-        mc "I mean we do...{w=0.38}but we're friends. I guess on occasion we just happen to get a little too friendly."
+
+
+        if encore_festivalquestion_2 == "Natsuki":
+            s 2be "I thought you and Natsuki liked each other though..."
+            mc "I mean we do...{w=0.38}but we're friends."
+            mc "I guess I just got a little too friendly with Natsuki there for a second..."
+            jump day2_missyou
+
+        if encore_festivalquestion_2 == "Yuri":
+            s 2be "I thought you liked Yuri though..."
+            s "You used to spend a lot of time around her...{w=0.38}did something happen?"
+            mc "No, no, nothing happened..."
+            mc "It's just that...{w=0.38}I want to get to know the others a bit more too."
+            mc "Although, I wasn't trying to get to know Natsuki {i}like that{/i} earlier, I promise!"
+            jump day2_missyou
+
+
+
+if hangout1 == "Yuri":
+    if hangout2 == "Natsuki":
+        mc "And I'm glad I got to spend more time with Natsuki today as well..."
+        mc "I don't know...{w=0.38}I feel like I should start spending some more time around you..."
+        mc "I feel like that I've been too distant from you lately..."
+        "Sayori shoots me a quizzical look."
+
+
+        if encore_festivalquestion_2 == "Natsuki":
+            s 2be "I thought you and Natsuki liked each other though..."
+            s "Or do you like Yuri?"
+            mc "I mean...{w=0.38}I like both of them, sure, but I don't see why I can't be friends with both of them."
+            mc "I guess I just got a little too friendly with Natsuki earlier..."
+            jump day2_missyou
+
+
+        if encore_festivalquestion_2 == "Yuri":
+            s 2be "I thought you and Yuri liked each other though..."
+            s "Or do you like Natsuki?"
+            mc "I mean...{w=0.38}I like both of them, sure, but I don't see why I can't be friends with both of them."
+            mc "I guess I just got a little too friendly with Natsuki earlier..."
+            jump day2_missyou
+
+
+
+if hangout1 == "Monika":
+    if hangout2 == "Natsuki":
+        mc "And I'm glad I got to spend more time with Natsuki today as well..."
+        mc "I don't know...{w=0.38}I feel like I should start spending some more time around you..."
+        mc "I feel like that I've been too distant from you lately..."
+        "Sayori shoots me a quizzical look."
+
+
+        if encore_festivalquestion_2 == "Natsuki":
+            s 2be "I thought you liked Natsuki though..."
+            s "Or do you like Monika?"
+            mc "I mean...{w=0.38}I like both of them, sure, but I don't see why I can't be friends with both of them."
+            mc "I guess I just got a little too friendly with Natsuki earlier..."
+            jump day2_missyou
+
+        if encore_festivalquestion_2 == "Yuri":
+            s 2be "I thought you liked Yuri though..."
+            s "You used to spend a lot of time around her...{w=0.38}did something happen?"
+            mc "No, no, nothing happened..."
+            mc "It's just that...{w=0.38}I want to get to know the others a bit more too."
+            mc "Although, I wasn't trying to get to know Natsuki {i}like that{/i} earlier, I promise!"
+            jump day2_missyou
+
 
 if hangout1 == "Yuri":
     if hangout2 == "Yuri":
@@ -2525,17 +2611,90 @@ if hangout1 == "Yuri":
         mc "I feel like that I've been too distant from you lately..."
         "Sayori shoots me a quizzical look."
         s 2be "I thought you and [hangout1] liked each other though."
-        mc "I mean we do...{w=0.38}but we're friends. I guess on occasion we just happen to get a little too friendly."
+        mc "I mean we do...{w=0.38}but we're friends."
+        mc "I guess I just got a little too friendly with Yuri there for a second..."
+        jump day2_missyou
 
 
-if hangout1 == "Sayori" or hangout1 == "Natsuki" or hangout1 == "Monika":
+if hangout1 == "Sayori":
     if hangout2 == "Yuri":
         mc "And I'm glad I got to spend more time with Yuri today as well..."
         mc "I don't know...{w=0.38}I feel like I should start spending some more time around you..."
         mc "I feel like that I've been too distant from you lately..."
         "Sayori shoots me a quizzical look."
-        s 2be "I thought you and [hangout2] liked each other though."
-        mc "I mean we do...{w=0.38}but we're friends. I guess on occasion we just happen to get a little too friendly."
+
+        if encore_festivalquestion_2 == "Natsuki":
+            s 2be "I thought you liked Natsuki though..."
+            s "You used to spend a lot of time around her...{w=0.38}did something happen?"
+            mc "No, no, nothing happened..."
+            mc "It's just that...{w=0.38}I want to get to know the others a bit more too."
+            mc "Although, I wasn't trying to get to know Yuri {i}like that{/i} earlier, I promise!"
+            jump day2_missyou
+
+
+        if encore_festivalquestion_2 == "Yuri":
+            s 2be "I thought you and Yuri liked each other though..."
+            mc "I mean we do...{w=0.38}but we're friends."
+            mc "I guess I just got a little too friendly with Yuri there for a second..."
+            jump day2_missyou
+
+
+
+if hangout1 == "Natsuki":
+    if hangout2 == "Yuri":
+        mc "And I'm glad I got to spend more time with Yuri today as well..."
+        mc "I don't know...{w=0.38}I feel like I should start spending some more time around you..."
+        mc "I feel like that I've been too distant from you lately..."
+        "Sayori shoots me a quizzical look."
+        s 2be "I thought you and [hangout1] liked each other though."
+        s "Or do you like [hangout2]?"
+        mc "I mean I like them both...{w=0.38}but we're friends."
+        mc "I guess I just got a little too friendly with [hangout2] there for a second..."
+
+        if encore_festivalquestion_2 == "Natsuki":
+            s 2be "I thought you and Natsuki liked each other though..."
+            s "Or do you like Yuri?"
+            mc "I mean...{w=0.38}I like both of them, sure, but I don't see why I can't be friends with both of them."
+            mc "I guess I just got a little too friendly with Yuri earlier..."
+            jump day2_missyou
+
+
+        if encore_festivalquestion_2 == "Yuri":
+            s 2be "I thought you and Yuri liked each other though..."
+            s "Or do you like Natsuki?"
+            mc "I mean...{w=0.38}I like both of them, sure, but I don't see why I can't be friends with both of them."
+            mc "I guess I just got a little too friendly with Yuri earlier..."
+            jump day2_missyou
+
+
+
+if hangout1 == "Monika":
+    if hangout2 == "Yuri":
+        mc "And I'm glad I got to spend more time with Yuri today as well..."
+        mc "I don't know...{w=0.38}I feel like I should start spending some more time around you..."
+        mc "I feel like that I've been too distant from you lately..."
+        "Sayori shoots me a quizzical look."
+        s 2be "I thought you liked Monika though."
+        s "Or do you like [hangout2]?"
+        mc "I mean I like them both...{w=0.38}but we're friends."
+        mc "I guess I just got a little too friendly with [hangout2] there for a second..."
+
+        if encore_festivalquestion_2 == "Natsuki":
+            s 2be "I thought you liked Natsuki though..."
+            s "You used to spend a lot of time around her...{w=0.38}did something happen?"
+            mc "No, no, nothing happened..."
+            mc "It's just that...{w=0.38}I want to get to know the others a bit more too."
+            mc "Although, I wasn't trying to get to know Yuri {i}like that{/i} earlier, I promise!"
+            jump day2_missyou
+
+
+        if encore_festivalquestion_2 == "Yuri":
+            s 2be "I thought you liked Yuri though..."
+            s "Or do you like Monika?"
+            mc "I mean...{w=0.38}I like both of them, sure, but I don't see why I can't be friends with both of them."
+            mc "I guess I just got a little too friendly with Yuri earlier..."
+            jump day2_missyou
+
 
 if hangout1 == "Monika":
     if hangout2 == "Monika":
@@ -2545,21 +2704,21 @@ if hangout1 == "Monika":
         "Sayori shoots me a quizzical look."
         s 2be "I thought you and Monika liked each other though."
         s "Or do you like [encore_festivalquestion_2]?"
-        mc "I mean like them, but, I guess that it's too early to say for sure, isn't it?"
+        mc "I mean like them both, but, I guess that it's too early to say for sure, isn't it?"
+
 
 if hangout1 == "Sayori" or hangout1 == "Natsuki" or hangout1 == "Yuri":
     if hangout2 == "Monika":
         mc "And I'm glad I got to finally hang around Monika today..."
-        mc "And I'm glad that I got to spend some time around Monika lately..."
         mc "But maybe I should start spending some more time around you again."
         mc "I feel like that I've been too distant from you lately..."
         "Sayori shoots me a quizzical look."
-        s 2be "I thought you and Monika liked each other though."
+        s 2be "I thought you liked Monika though..."
         s "Or do you like [encore_festivalquestion_2]?"
-        mc "I mean like them, but, I guess that it's too early to say for sure, isn't it?"
+        mc "I mean like them both, but, I guess that it's too early to say for sure, isn't it?"
 
 
-
+label day2_missyou:
 show sayori 1bq
 "We both chuckle to ourselves."
 mc "But look...{w=0.38}I guess what I'm trying to say is:{w=0.38} I missed you."
