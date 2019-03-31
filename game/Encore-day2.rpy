@@ -2304,7 +2304,7 @@ if hangout2 == "Natsuki":
     m "Spending time with her, like you did earlier, just made things needlessly more complicated..."
     m "As for [hangout2]..."
     m "Allow me to clarify something for you, [player]..."
-    jump day2_yvoid
+    jump day2_nvoid
 
 
 
