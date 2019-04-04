@@ -16,7 +16,7 @@ init python:
     c_text_1 = """Created and Directed By: Andrew J. Striedl
 Writers: Agent Gold, Bug, Nick (Canad1an),
 Rose, Ploxmaster708, Rudy, Andrew J. Striedl
-Writing Contributors: Olivia Norton, Jacob Smallman
+Writing Contributors: Lucy CN, Jacob Smallman
 Artists: 3Monika4 (Monika), Elaina Sasso,
 Kent Stone, SkynnarahSerenity49"""
 
@@ -42,9 +42,9 @@ The MC as [player]""" # This will be re-defined lower down--if adjustments are n
     # 6 lines, +250 pixels
     c_text_4 = """Special Thanks: Afrozer0 & Monika, Agent Gold, American Eagle, Astranova,
 Blaze Bringer, BronzeBrawn, Bug, huser Entertainment,
-Jacob Smallman, Kuudere Ghost, POBAW, Noa_AT, Orber,
+Jacob Smallman, Kuudere Ghost, Lucy CN, POBAW, Noa_AT, Orber,
 Ploxmaster708, SaturnGamer72, Ronald McOnePuch, SlightlySimple,
-Spaghetto, Sir Swampert, Olivia Norton
+Spaghetto, Sir Swampert
 
 
 Life Saver: Agent Gold"""

@@ -21,8 +21,8 @@ if hangout1 == "Natsuki":
     "In Natsuki’s miserable attempt to reach the top box, she ended up knocking down several books lined up on one of the lower shelves."
     n 4o "[player], don't sneak up to me like that!"
     mc "I’m sorry...{w=0.38}I didn’t mean to scare you like that."
-    mc "I didn’t think you where that jumpy!"
-    "I barley manage to contain my laughter."
+    mc "I didn’t think you were that jumpy!"
+    "I barely manage to contain my laughter."
     show natsuki 4f
     "Though that only makes Natsuki shoot me an irritated look."
 
@@ -37,7 +37,7 @@ if encore_sayoriquestion_1 == True:
             "Although, I may be with Sayori now..."
             "She wouldn't mind if I spent my time around someone else for the day,{w=0.38} right?"
             mc "What? Is it a crime if I spent just a little bit of time around you?"
-            mc "Besides, it's been a while since The Festival..."
+            mc "Besides, it's been a while since the festival..."
             show natsuki 5s
             "Natsuki seems stumped at my retort as she struggles to articulate a response."
             "I decide to change the subject."
@@ -73,7 +73,7 @@ if encore_sayoriquestion_1 == True:
 mc "What were you trying to do, anyway?"
 n 3r "I'm trying to get the top box that has my manga."
 n 3h "See the one with stickers on it?"
-"I look up to see the box Natsuki's refferring to."
+"I look up to see the box Natsuki's referring to."
 "Jeez...{w=0.38} how many rainbow stickers does one girl need?"
 mc "You know you just could have asked me to get it for you..."
 mc "I'm way taller than..."
@@ -101,7 +101,7 @@ if encore_sayoriquestion_1 == False:
         show natsuki 3h
         "I start to walk towards the front of the room where there's a sturdier chair that we can use."
         show natsuki 1i
-        "Right before I can step out of the closest, I feel Natsuki grab my arm."
+        "Right before I can step out of the closest, Natsuki grabs my arm."
         n 2t "You didn't seem to mind when we got close last Sunday."
         "I stop dead in my tracks."
         "I feel the blood start to rush to my face."
@@ -123,7 +123,7 @@ if encore_sayoriquestion_1 == False or encore_sayoriquestion_1 == True:
         show natsuki 3h
         "I start to walk towards the front of the room where there's a sturdier chair."
         show natsuki 1i
-        "Right before I can step out of the closest, I feel Natsuki grab my arm."
+        "Right before I can step out of the closest, Natsuki grabs my arm."
         n 2t "Since when did you care so much about me?"
         "I stop dead in my tracks."
         "I feel the blood start to rush to my face."
@@ -145,7 +145,7 @@ if encore_sayoriquestion_1 == True:
         show natsuki 3h
         "I start to walk towards the front of the room where there's a sturdier chair."
         show natsuki 1i
-        "Right before I can step out of the closest, I feel Natsuki grab my arm."
+        "Right before I can step out of the closest, Natsuki grabs my arm."
         n 2t "Since when did you care so much about me?"
         "I stop dead in my tracks."
         "I feel the blood start to rush to my face."
@@ -210,7 +210,7 @@ if encore_sayoriquestion_1 == True:
     if encore_festivalquestion_2 == "Natsuki":
             mc "What do you have there?"
             show natsuki 2l at t11 zorder 1
-            n "What I'm holding right now is the best manga in exisistence! You should totally read this!"
+            n "What I'm holding right now is the best manga in existence! You should totally read this!"
             mc "What's it called again?"
             n 2z "Parfait Girls!"
             "Never heard of it."
@@ -233,7 +233,7 @@ if encore_sayoriquestion_1 == True or encore_sayoriquestion_1 == False :
     if encore_festivalquestion_2 == "Yuri":
         mc "What do you have there?"
         show natsuki 2l at t11 zorder 1
-        n "What I'm holding right now is the best manga in exisistence! You should totally read this!"
+        n "What I'm holding right now is the best manga in existence! You should totally read this!"
         mc "What's it called again?"
         n 2z "Parfait Girls!"
         "Never heard of it."
@@ -256,7 +256,7 @@ if encore_sayoriquestion_1 == False:
     if encore_festivalquestion_2 == "Natsuki":
         show natsuki 2l at t11 zorder 1
         n "This one is the absolute best in the series! You should totally read this!"
-        mc "Well, I'm only up to voulme 3. Are you telling me I have to wait for it get really good?"
+        mc "Well, I'm only up to voulme 3. Are you telling me I have to wait for it to get really good?"
         n 2k "I mean there's lots of good moments between those two. I just happen to think that volume twelve has some of the best writing in the whole series."
         mc "Well if you want to prove me right, we better get finished with volume three as soon as we can."
         show natsuki 1k at t22 zorder 1
@@ -300,14 +300,14 @@ if encore_sayoriquestion_1 == False or encore_sayoriquestion_1 == True:
         "She dragged me away from Natsuki for this?"
         "Well, I don’t get the chance to talk with Yuri much."
         "I guess she must be feeling left out that she hasn't talked to me for some reason."
-        "I guess it’s up to me to try save her from embarrassment..."
+        "I guess it’s up to me to try save Yuri from her own embarrassment..."
         mc "Yeah, sure! I'd love to do some reading with you!"
         stop music
-        y 3y1 "Right now?!"
+        y 3y5 "Right now?!"
         "Her voice rings with excitement."
         "Woah, where did this excitement come from, Yuri?"
         mc "Um...{w=0.38} I don't know if we have the time for right now but maybe tomorrow we-"
-        y 1y4 "But you're not doing anything right now, are you?"
+        y 3y6 "But you're not doing anything right now, are you?"
         "Well, she does have a point there..."
         "But I must admit it's a surprise to see her being this forward."
         "She really didn’t need to drag me away from Natsuki."
@@ -322,12 +322,12 @@ if encore_sayoriquestion_1 == False or encore_sayoriquestion_1 == True:
         show sayori at thide
         hide sayori
         show yuri at t11
-        mc "I'm gonna go see how Sayori is, we can read another time, okay?"
+        mc "I'm gonna go see how Sayori is. We can read another time, okay?"
         show yuri 3t
         "Yuri gives me a dejected look."
-        y "It-{w=0.28}it's fine, [player]. I won't take up anymore of your time."
+        y "It-{w=0.28}it's fine, [player]. I won't take up any more of your time."
         show yuri 4c
-        "I see Yuri's face turn bright red as she swiftly and turns around and heads back to her desk."
+        "I see Yuri's face turn bright red as she swiftly turns around and heads back to her desk."
         show yuri at thide
         hide yuri
         "I sigh to myself."
@@ -350,14 +350,14 @@ if encore_sayoriquestion_1 == True:
         "She dragged me away from Natsuki for this?"
         "Well, I don’t get the chance to talk with Yuri much."
         "I guess she must be feeling left out that she hasn't talked to me for some reason."
-        "I guess it’s up to me to try save her from embarrassment..."
+        "I guess it’s up to me to try save Yuri from her own embarrassment..."
         mc "Yeah, sure! I'd love to do some reading with you!"
         stop music
-        y 3y1 "Right now?!"
+        y 3y5 "Right now?!"
         "Her voice rings with excitement."
         "Woah, where did this excitement come from, Yuri?"
         mc "Um...{w=0.38} I don't know if we have the time for right now but maybe tomorrow we-"
-        y 1y4 "But you're not doing anything right now, are you?"
+        y 3y6 "But you're not doing anything right now, are you?"
         "Well, she does have a point there..."
         "But I must admit it's a surprise to see her being this forward."
         "She really didn’t need to drag me away from Natsuki."
@@ -372,12 +372,12 @@ if encore_sayoriquestion_1 == True:
         show sayori at thide
         hide sayori
         show yuri at t11
-        mc "I'm gonna go see how Sayori is, we can read another time, okay?"
+        mc "I'm gonna go see how Sayori is. We can read another time, okay?"
         show yuri 3t
         "Yuri gives me a dejected look."
-        y "It-{w=0.28}it's fine, [player]. I won't take up anymore of your time."
+        y "It-{w=0.28}it's fine, [player]. I won't take up any more of your time."
         show yuri 4c
-        "I see Yuri's face turn bright red as she swiftly and turns around and heads back to her desk."
+        "I see Yuri's face turn bright red as she swiftly turns around and heads back to her desk."
         show yuri at thide
         hide yuri
         "I sigh to myself."
@@ -392,7 +392,7 @@ if encore_sayoriquestion_1 == True:
 if encore_sayoriquestion_1 == False:
     if encore_festivalquestion_2 == "Yuri":
         y "So, [player]! How have you been lately?"
-        mc "Oh, I've doing alright, what about you?"
+        mc "Oh, I've been doing alright, what about you?"
         y 3b "I'm doing great!"
         y 2b "I just got done finishing this chapter in Portrait of Markov and I was hoping that we could..."
         y 4c "Pick up where we left off..."
@@ -401,11 +401,11 @@ if encore_sayoriquestion_1 == False:
         "Well, I should promise to read with her again at some point..."
         mc "Yeah, sure! I'd love to do some reading with you!"
         stop music
-        y 3y1 "Right now?!?"
+        y 3y5 "Right now?!?"
         "Her voice rings with excitement."
         "Woah, where did this excitement come from, Yuri?"
         mc "Well...{w=0.38} I don't think now is the best time. Maybe tomorrow we could-"
-        y 1y4 "But you're not doing anything right now, are you?"
+        y 3y6 "But you're not doing anything right now, are you?"
         "Well, I suppose she's right there..."
         "But I must admit it's a surprise to see her being this forward."
         "She really didn’t need to drag me away from Natsuki."
@@ -420,14 +420,14 @@ if encore_sayoriquestion_1 == False:
         show sayori at thide
         hide sayori
         show yuri at t11
-        mc "I'm gonna go see how Sayori is, we can read another time, okay?"
+        mc "I'm gonna go see how Sayori is. We can read another time, okay?"
         show yuri 3t
         "Yuri gives me a dejected look."
         y "O-{w=0.28}oh, I see [player]."
         show yuri 3w
         y "Perphaps another time?"
         show yuri 4c
-        "I see Yuri's face turn bright red as she swiftly and turns around and heads back to her desk."
+        "I see Yuri's face turn bright red as she swiftly turns around and heads back to her desk."
         show yuri at thide
         hide yuri
         "I sigh to myself."
@@ -504,7 +504,7 @@ if encore_sayoriquestion_1 == False:
             mc "And I'm just trying to figure out everything just as much as you are..."
             mc "I should've come to you sooner, I'm sorry..."
             "I hear Sayori sniffle as she works to prevent herself from breaking down and sobbing..."
-            "We're like this for sometime before Monika calls the group to attention."
+            "We're like this for some time before Monika calls the group to attention."
             scene bg club_day
             show monika 4b at t22 zorder 2
             show sayori 1m at t21 zorder 1
@@ -517,7 +517,7 @@ if encore_sayoriquestion_1 == False:
             hide sayori
             show monika at thide
             hide monika
-            "I just sigh to myself and walk over to my to my bag to retrieve my poem."
+            "I just sigh to myself and walk over to my bag to retrieve my poem."
             with wipeleft_scene
             jump poem_scene5
 
@@ -553,7 +553,7 @@ if encore_sayoriquestion_1 == True:
             s "You've already done so much for me..."
             show sayori 1v
             s "What have I done for you in return?"
-            s 1k "Other then dragging you away from the others."
+            s 1k "Other than dragging you away from the others."
             s 1t "If I wasn't such a mess, you'd still be spending time with Natsuki, wouldn't you?"
             "I mean..."
             "I don't see spending some time around Natsuki as a bad thing..."
@@ -574,7 +574,7 @@ if encore_sayoriquestion_1 == True:
             mc "Just us..."
             mc "I should've come to you sooner, I'm sorry..."
             "I hear Sayori sniffle as she works to prevent herself from breaking down and sobbing..."
-            "We're like this for sometime before Monika calls the group to attention."
+            "We're like this for some time before Monika calls the group to attention."
             scene bg club_day
             show monika 4b at t22 zorder 2
             show sayori 1m at t21 zorder 1
@@ -587,7 +587,7 @@ if encore_sayoriquestion_1 == True:
             hide sayori
             show monika at thide
             hide monika
-            "I just sigh to myself and walk over to my to my bag to retrieve my poem."
+            "I just sigh to myself and walk over to my bag to retrieve my poem."
             with wipeleft_scene
             jump poem_scene7
 
@@ -622,7 +622,7 @@ if encore_sayoriquestion_1 == True:
             s "You've already done so much for me..."
             show sayori 1v
             s "What have I done for you in return?"
-            s 1k "Other then dragging you away from the others."
+            s 1k "Other than dragging you away from the others."
             s 1t "If I wasn't such a mess, you'd still be spending time with Natsuki or Yuri, wouldn't you?"
             "I mean..."
             "I don't see spending some time around Natsuki or Yuri as a bad thing..."
@@ -644,7 +644,7 @@ if encore_sayoriquestion_1 == True:
             mc "Just us..."
             mc "I should've come to you sooner, I'm sorry..."
             "I hear Sayori sniffle as she works to prevent herself from breaking down and sobbing..."
-            "We're like this for sometime before Monika calls the group to attention."
+            "We're like this for some time before Monika calls the group to attention."
             scene bg club_day
             show monika 4b at t22 zorder 2
             show sayori 1m at t21 zorder 1
@@ -657,7 +657,15 @@ if encore_sayoriquestion_1 == True:
             hide sayori
             show monika at thide
             hide monika
-            "I just sigh to myself and walk over to my to my bag to retrieve my poem."
+            show yuri 4b at t11 zorder 1
+            "As I’m getting my poem I curiously look off in Yuri’s direction, who is avoiding making eye contact with anyone."
+            "I guess it takes a lot for Yuri to talk to someone..."
+            "She really isn’t one for social interactions..."
+            "She must have really wanted to talk to me considering we really haven’t gotten the chance to recently."
+            "Oh well, I’m sure we’ll get the chance sooner or later."
+            "I just sigh to myself and walk over to my bag to retrieve my poem."
+            show yuri at thide
+            hide yuri
             with wipeleft_scene
             jump poem_scene8
 
@@ -727,7 +735,7 @@ if encore_sayoriquestion_1 == False:
             mc "And I'm just trying to figure out everything just as much as you are..."
             mc "I should've come to you sooner, I'm sorry..."
             "I hear Sayori sniffle as she works to prevent herself from breaking down and sobbing..."
-            "We're like this for sometime before Monika calls the group to attention."
+            "We're like this for some time before Monika calls the group to attention."
             scene bg club_day
             show monika 4b at t22 zorder 2
             show sayori 1m at t21 zorder 1
@@ -740,7 +748,16 @@ if encore_sayoriquestion_1 == False:
             hide sayori
             show monika at thide
             hide monika
-            "I just sigh to myself and walk over to my to my bag to retrieve my poem."
+            "I just sigh to myself and walk over to my bag to retrieve my poem."
+            show yuri 4b at t11 zorder 1
+            "As I’m getting my poem I curiously look off in Yuri’s direction, who is avoiding making eye contact with anyone."
+            "It really does take a lot for Yuri to talk to someone..."
+            "She really isn’t one for social interactions..."
+            "She must have really wanted to talk to me considering we really haven’t gotten the chance to recently."
+            "Oh well, I’m sure we’ll get the chance sooner or later."
+            "I just sigh to myself and walk over to my bag to retrieve my poem."
+            show yuri at thide
+            hide yuri
             with wipeleft_scene
             jump poem_scene6
 
@@ -792,14 +809,14 @@ show natsuki u121143
 "Natsuki's voice trails off as she smiles sweetly at me."
 "I smile back."
 "For once, I actually think she wanted me to hear that..."
-"Despite Natsuki's sourness at times...{w=0.38}she can be sweet when she wants too..."
+"Despite Natsuki's sourness at times...{w=0.38}she can be sweet when she wants to..."
 n 1k "Anyways...{w=0.38}want to read Parfait Girls?"
 n 1h "Since...{w=0.38}you know..."
 n 1i "We didn't get to start last time."
 "Natsuki's eyes dart to the floor as she references the incident we had with Yuri yesterday."
 "Well, hopefully, Natsuki and I can read in peace this time!"
 mc "You know it!"
-n 2d "Great, wait here I'll go get it."
+n 2d "Great! Wait here, I'll go get it!"
 show natsuki at thide
 hide natsuki
 $ currentpos = get_pos()
@@ -815,7 +832,7 @@ show noise at noisefade:
 "My head starts to spin..."
 "W{w=0.38}-what's happening?"
 "I feel like I'm right back in my dream..."
-"My eyes dart torwards the closet..."
+"My eyes dart towards the closet..."
 "What if...{w=0.38}'it' happens again?"
 "Wait...{w=0.38}why am I thinking like this?"
 n "Come on, dummy! I don't have all day!"
@@ -831,7 +848,7 @@ with wipeleft_scene
 "But all I see is Natsuki struggling to grab her manga."
 play music "<from " + str(currentpos) + " loop 10.893>bgm/6.ogg"
 show natsuki 1c at t11 zorder 1
-n "Jeez! It took you long enough to get in here! What we're you doing?"
+n "Jeez! It took you long enough to get in here! What were you doing?"
 mc "Sorry...{w=0.38}spaced out there for a bit."
 "There's no way I'm telling Natsuki about my dream last night..."
 "Or the hallucinations I just experienced now or this morning..."
@@ -848,7 +865,7 @@ hide natsuki
 scene bg closet
 with wipeleft_scene
 "While walking out of the closet, I take a closer look at the manga copy."
-"Jeez...{w=0.38}this looked like it was defintley expensive!"
+"Jeez...{w=0.38}this looked like it was definitely expensive!"
 "Now I see why Natsuki's always raising hell if she can't find her manga..."
 mc "Wow, where'd you get this?"
 show natsuki 3z at t11 zorder 1
@@ -857,16 +874,16 @@ n 3t "I was able to buy it at a discounted price there."
 n 5u "Otherwise getting it would've been super expensive..."
 mc "Conventions, huh?"
 show natsuki 5n
-"I mean I may read manga every now and then, but I'm clearly no where as near as enthused about it as Natsuki is..."
+"I mean I may read manga every now and then, but I'm clearly nowhere as near as enthused about it as Natsuki is..."
 show natsuki 5m
 n "What? You've never been to one?"
 mc "I can't say that I have."
 show natsuki 3w
 n "Well I'm going to have to fix that!"
-mc "You're going to take to me one?"
+mc "You're going to take me to one?"
 show natsuki 5y
 n "Well, obviously!"
-n 5l "They're really fun, [player]! You can get all sorts of rare collectables there!"
+n 5l "They're really fun, [player]! You can get all sorts of rare collectibles there!"
 mc "Huh, never thought of it like that..."
 n 3j "There's actually a convention happening in town next week that we could go to!"
 "Wait..."
@@ -898,7 +915,7 @@ show n_cg1_base
 with dissolve_cg
 n "Well, you ready?"
 mc "Yeah...{w=0.38}any particular reason you wanted to read from this and not the other copy?"
-n "Well the special edition has some exlcuisve art in it!"
+n "Well the special edition has some exclusive art in it!"
 n "Not to mention it manages to pack volumes one through six into it!"
 mc "Wow, that's awesome!"
 mc "You're pretty incredible to be able to get your hands on something like this!"
@@ -927,7 +944,7 @@ play music e3
 hide n_cg1_exp1 with dissolve
 show n_cg1_exp5 with dissolve
 "It also gets to a point where she goes quiet, and she looks at me more than she looks at the manga..."
-"At first I try to ignore it, but it becomes distracting enough to the point where I can't read anymore."
+"At first I try to ignore it, but it becomes distracting enough to the point where I can't continue reading."
 "I turn to my right and I see that Natsuki's not even looking at the book anymore."
 "She's just...{w=0.38}staring at me..."
 "With an intimate look in her eyes..."
@@ -986,7 +1003,7 @@ if encore_sayoriquestion_1 == False:
 if encore_sayoriquestion_1 == True:
     "I mean on one hand, this feels nice..."
     "But it feels...{w=0.38}wrong too..."
-    "Isn't being like this with someone orhter than your girlfriend technically cheating?"
+    "Isn't being like this with someone other than your girlfriend technically cheating?"
     "Well it's not like I can really move Natsuki now..."
     "I'm pretty screwed either way, so I just sigh and accept whatever is to come..."
     n "This feels nice, [player]."
@@ -1120,7 +1137,7 @@ show natsuki 1i at t11 zorder 2
 mc "What, I’m not allowed to spend time with you?"
 
 if encore_festivalquestion_2 == "Natsuki":
-    mc "We really haven't talked since The Festival, afterall..."
+    mc "We really haven't talked since the festival, after all..."
     show natsuki 5x at t11 zorder 2
     "Natsuki crosses her arms, thinking over what I just said."
     n 5w "It’s not like I wanted you to come spend time me or with anything!"
@@ -1226,12 +1243,12 @@ if encore_festivalquestion_2 == "Yuri":
     "That probably means I'm either not in its target audience, or it just plain sucks."
     n 2j "Take a look!"
     "Natsuki shoves the book into my hands."
-    "I examine book before going on to stare at the front cover."
+    "I examine the book."
     "It features four girls in colorful attire striking animated feminine poses."
     "Great...{w=0.38}an off-brand version of Sailor Moon."
     "And...{w=0.38}it seems exceedingly...{w=0.38}'moe'."
     "Still, I should try to respectful of Natsuki's interests."
-    "It is a Literature Club afterall..."
+    "It is a Literature Club after all..."
     mc "Hmmm...{w=0.38}I don’t think I’ve ever read this before."
     mc "Is it good?"
     show natsuki 4o
@@ -1474,6 +1491,7 @@ n "This feels nice, [player]."
 mc "It really does...{w=0.38}I like it..."
 n "We should do this more..."
 "She's usually never this forward..."
+jump day2_gg
 
 
 if encore_sayoriquestion_1 == True:
@@ -1497,6 +1515,7 @@ if encore_sayoriquestion_1 == True:
     "Still though…"
     "I don’t feel like this is right..."
     "Natsuki's usually never this up-front about her feelings..."
+    jump day2_gg
 
 
 
@@ -1505,7 +1524,7 @@ if encore_sayoriquestion_1 == True:
 
 
         if hangout1 == "Monika":
-          "I’m with Sayori afterall, how would she react to seeing us like this?"
+          "I’m with Sayori after all, how would she react to seeing us like this?"
           $ style.say_dialogue = style.edited
           "Let's find out..."
           $ style.say_dialogue = style.normal
@@ -1533,7 +1552,7 @@ if encore_sayoriquestion_1 == False:
             "I'm left feeling a little hesistant on how best to respond to Natsuki."
             "Sayori...{w=0.38}how'd she react to finding us like this?"
 
-
+label day2_gg:
 stop music
 hide cg with dissolve_cg
 "Before I can respond, Monika stands up and walks to the front of the room."
@@ -1548,7 +1567,7 @@ show sayori at t31
 show monika at t32
 "Yuri, confused as to what's going on, turns around..."
 show yuri u125111
-"Only to see what Monika and Natsuki are staring at."
+"Only to see what Monika and Sayori are staring at."
 "Natsuki and I are practically cuddling at this point."
 show monika 1h
 show sayori 1i

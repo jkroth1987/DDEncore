@@ -120,7 +120,7 @@ if encore_sayoriquestion_1 == False:
     show sayori 3u
     $ renpy.pause(delay=0.5, hard=True)
     show sayori 1v
-    s "I dont know...{w=0.38} I thought that you would love me back..."
+    s "I dont know...{w=0.38} I thought you would love me back..."
     "I feel my heart sink like a stone in the ocean as Sayori chokes those words out..."
     show sayori 1u
     "Rejecting her confession clearly didn’t help her state of mind..."
@@ -151,8 +151,8 @@ s 2t "I guess it just finally took enough of a toll on me to the point where I r
 s 1k "But my entire life...{w} I've always felt that everyone would be better off as if I didn't exist."
 s "No matter how hard I'd try to give people my happiness, my time and my energy."
 s "Just...{w=0.38} nothing ever felt like it was worth it and that they didn't need me to be happy."
-s 1u "And If I ever opened up about how I really felt on the inside, that people would spend all their time trying to make me happy."
-s "I'd just be a weight on their shoulders. They have too much to do and I don't want to add on to their stress."
+s 1u "And I came to realize that if I ever opened up about how I really felt on the inside, then people would spend all their time trying to make me happy."
+s "I'd just be a weight on their shoulders. They have too much to do and I don't want to add on to their stress!"
 s 1v "That's what I thought when we kind of drifted apart when high school started."
 s "You had too much on your plate and me being around you would be too distracting for you, so I would always have to muster up the courage to even try to talk to you."
 "I feel an overwhelming sense of guilt overtake me."
@@ -188,7 +188,7 @@ with Dissolve(1)
 "I can feel my heart beat in sync with Sayori’s."
 "I feel the warmth of her body radiate onto me."
 "As emotional as we both are right now…{w=0.38} this is nice."
-"We're like this for sometime before we hear some commotion come from the closet."
+"We're like this for some time before we hear some commotion come from the closet."
 scene bg club_day
 stop music
 show sayori 1m at t11 zorder 1
@@ -210,11 +210,11 @@ scene bg closet
 with wipeleft_scene
 if encore_festivalquestion_2 == "Natsuki":
     play music t6 fadein 3.0
-    "I hear Natsuki rummaging around in the closet "
+    "I hear Natsuki rummaging around in the closet."
     mc "Natsuki?"
     "I ask ever so cautiously and as softly as I humanly can."
     show natsuki 5f at t11 zorder 1
-    "Natsuki turns towards me, I can see the fire in her eyes"
+    "Natsuki turns towards me, I can see the fire in her eyes."
     n 5e "WHAT?!?!"
     "The frustration in her voice takes me off guard."
     "I need to calm her down before this gets out of hand."
@@ -241,14 +241,13 @@ if encore_festivalquestion_2 == "Natsuki":
     n "Baka!"
     "What? I'll never get around to understanding Natsuki's weird logic..."
     "While walking out from the closet I'm abruptly stopped by Yuri."
-    show yuri 3y5 at t11 zorder 1
-    "She seems unusually excited to talk to me, as if she’s been waiting for this chance."
-    "It’s very different from how she is normally..."
+    show yuri 3s at t11 zorder 1
+    "That's odd...{w=0.38}Yuri usually doesn't approach me first..."
     mc "Oh, hey Yuri! What's up?"
     y "Hey [player]! How are you doing this afternoon?"
     mc "Oh, I'm doing alright, what about you?"
     y 3b "I'm doing great! I just got done finishing this chapter in my book and I was wondering if you'd like to...."
-    y 4c "Maybe read it together sometime...."
+    y 4c "Maybe read it together some time...."
     "Her confidence falls apart. She's no longer meeting my eyes as her face heats up with embarrassment."
     "I guess it's up to me reassure her."
     mc "Yeah, sure! I'd love to do some reading with you!"
@@ -272,7 +271,8 @@ if encore_festivalquestion_2 == "Natsuki":
     hide monika
     show yuri 4b at t11 zorder 1
     "As I’m getting my poem I curiously look off in Yuri’s direction, who is avoiding making eye contact with anyone."
-    "I guess it takes a lot for Yuri to talk to someone, she really isn’t one for social interactions."
+    "I guess it takes a lot for Yuri to talk to someone..."
+    "She really isn’t one for social interactions."
     "She must have really wanted to talk to me considering we really haven’t gotten the chance to really talk with each other in a meaningful way."
     "Oh well, I’m sure we’ll get the chance sooner or later."
     show yuri at thide
@@ -282,11 +282,11 @@ if encore_festivalquestion_2 == "Natsuki":
 
 if encore_festivalquestion_2 == "Yuri":
     play music t6 fadein 3.0
-    "I hear Natsuki rummaging around in the closet "
+    "I hear Natsuki rummaging around in the closet."
     mc "Natsuki?"
     "I ask ever so cautiously and as softly as I humanly can."
     show natsuki 5f at t11 zorder 1
-    "Natsuki turns towards me, I can see the fire in her eyes"
+    "Natsuki turns towards me, I can see the fire in her eyes."
     n 5e "WHAT?!?!"
     "The frustration in her voice takes me off guard."
     "I need to calm her down before this gets out of hand."
@@ -312,20 +312,18 @@ if encore_festivalquestion_2 == "Yuri":
     n "Baka!"
     "What? I'll never get around to understanding Natsuki's weird logic..."
     "While walking out from the closet I'm abruptly stopped by Yuri."
-    show yuri 3y5 at t11 zorder 1
-    "She seems unusually excited to talk to me, as if she’s been waiting for this chance."
-    "It’s very different from how she is normally..."
+    show yuri 3s at t11 zorder 1
+    "That's odd...{w=0.38}Yuri usually doesn't approach me first..."
     y "Hey, [player]!"
     mc "Oh! Hey, Yuri!"
-    show yuri u114221
-    y "How have you been lately?"
-    mc "Oh, I've doing alright, what about you?"
+    y 3u "How have you been lately?"
+    mc "Oh, I've been doing alright, what about you?"
     y 3b "I'm doing great!"
     y 2b "I just got done finishing this chapter in Portrait of Markov and I was hoping that we could..."
 
 
 if encore_sayoriquestion_1 == True:
-    y 4c "Maybe read it together sometime...."
+    y 4c "Maybe read it together some time...."
     "Her confidence falls apart. She's no longer meeting my eyes as her face heats up with embarrassment."
     "I did remember her mentioning how much she loved reading that book..."
     "Well, it wouldn't hurt to read it with her..."
@@ -338,34 +336,35 @@ if encore_sayoriquestion_1 == False:
     "Well, I should promise to read with her again at some point..."
 
 
-    mc "Yeah, sure! I'd love to do some reading with you!"
-    stop music
-    y 3y1 "Right now?!?"
-    "Her voice rings with excitement."
-    "Woah, where did this excitement come from, Yuri?"
-    mc "Well...{w=0.38} I don't think now is the best time. Maybe tomorrow we could-"
-    y 1y4 "But you're not doing anything right now, are you?"
-    "Well, I suppose she's right there..."
-    "But I must admit it's a surprise to see her being this forward."
-    "And, I really feel like I should get back to Sayori..."
-    "My thoughts are quickly interrupted by Monika calling the group."
-    show yuri at t22
-    show monika u222111 at l21
-    m "Ok everyone, poem time!"
-    show monika u111131
-    show yuri 1y7
-    "Yuri quickly gives Monika an agitated look but swiftly heads back to her desk to retrieve her poem, and everyone follows."
-    show monika at thide
-    hide monika
-    show yuri 4b at t11 zorder 1
-    "As I’m getting my poem I curiously look off in Yuri’s direction, who is avoiding making eye contact with anyone."
-    "I guess it takes a lot for Yuri to talk to someone, she really isn’t one for social interactions."
-    "She must have really wanted to talk to me considering we really haven’t gotten the chance to recently."
-    "Oh well, I’m sure we’ll get the chance sooner or later."
-    show yuri at thide
-    hide yuri
-    with wipeleft_scene
-    jump poem_scene2
+mc "Yeah, sure! I'd love to do some reading with you!"
+stop music
+y 3y5 "Right now?!?"
+"Her voice rings with excitement."
+"Woah, where did this excitement come from, Yuri?"
+mc "Well...{w=0.38} I don't think now is the best time. Maybe tomorrow we could-"
+y 3y6 "But you're not doing anything right now, are you?"
+"Well, I suppose she's right there..."
+"But I must admit it's a surprise to see her being this forward."
+"And, I really feel like I should get back to Sayori..."
+"My thoughts are quickly interrupted by Monika calling the group."
+show yuri at t22
+show monika u222111 at l21
+m "Ok everyone, poem time!"
+show monika u111131
+show yuri 1y7
+"Yuri quickly gives Monika an agitated look but swiftly heads back to her desk to retrieve her poem, and everyone follows."
+show monika at thide
+hide monika
+show yuri 4b at t11 zorder 1
+"As I’m getting my poem I curiously look off in Yuri’s direction, who is avoiding making eye contact with anyone."
+"It really does take a lot for Yuri to talk to someone..."
+"She really isn’t one for social interactions."
+"She must have really wanted to talk to me considering we really haven’t gotten the chance to recently."
+"Oh well, I’m sure we’ll get the chance sooner or later."
+show yuri at thide
+hide yuri
+with wipeleft_scene
+jump poem_scene2
 
 if encore_sayoriquestion_1 == False:
     if encore_festivalquestion_2 == "Natsuki":
@@ -431,25 +430,23 @@ label sencore_1b:
     "Not long after I sit down, I hear a knock on my door."
     mc "Come in!"
     show sayori 1ba at t11 zorder 1
-    "Sayori enters my house and goes to meet me in my livingroom."
-    "Seeing her again in my house reminds me of all the times she'd come over to hangout with me after school when we were younger."
+    "Sayori enters my house and goes to meet me in my living room."
+    "Seeing her in my house again reminds me of all the times she'd come over to hangout with me after school when we were younger."
     "Though, I'm just glad to be spending more time with her!"
     s 2bx "Hey, [player]!"
     mc "Hey, Sayori!"
     "I motion for her to join me on the couch."
     show sayori 1ba at s11 zorder 1
-    "As she joins me, we grin at eachother, getting lost in each other's eyes."
-    show sayori 1bd
-    "That alone is enough to fill me with a craving to hold her in my arms."
+    "Sayori walks over and joins me, almost immediately resting her head on my shoulder."
     show sayori at thide
     hide sayori
-    "Sayori rests her head on my shoulder. Instinctively, I wrap my arm around her."
+    "Instinctively, I wrap my arm around her."
     "The smell of cinnamon emanating from her hair is very apparent. I can't help but sniff a little."
     mc "Jeez...{w=0.38} you're a little cinnamon bun, aren't you?"
     show sayori 1by at t11 zorder 1
     "Sayori giggles and blushes at my compliment."
     s 1bs "You're so good to me, [player], you know that?"
-    mc "I try. Remember what I promised?"
+    mc "I try...{w=0.38}it is what I promised after all, remember?"
     s 1be "Eh?"
     mc "I promised you that I’d be by your side, that I’d care for you no matter what you’re feeling..."
     mc "And well, I guess I'm just doing what I think is right."
@@ -459,15 +456,15 @@ label sencore_1b:
     show sayori 1bt
     s "You really do care about me, don't you, [player]?"
     mc "Of course I do! I'll do anything to make sure you're happy!"
-    "I can feel that Sayori is trembling."
+    "I can feel her trembling."
     s 1bk "Do I...{w=0.38}really deserve any of this?"
     mc "Deserve what?"
     mc "What do you mean?"
     play music t9 fadein 3.0
     s 1bu "Your affection...{w=0.38} your care for me."
     mc "Sayori, of course you do! You're the best thing that's ever happened to me!"
-    mc "Just seeing your smile everyday is the spark that keeps me going through classes."
-    mc "There's not a moment that I don't think of you and dream of when we can be together again."
+    mc "Just seeing your smile and being with you is the highlight of my day!"
+
 
 if hangout1 == "Natsuki":
     show sayori 1bu
@@ -504,10 +501,8 @@ s 1bt "[player],{w=0.38} I...{w=0.38} I...{w=0.38} lo-"
 mc "You don't need to strain yourself, Sayori...{w=0.38} I know what you mean."
 "Sayori holds me tighter."
 show sayori 1bv at t11 zorder 1
-"After some time passes, Sayori releases her grip. I just can't help but get lost in those breathtaking sky blue eyes of hers."
+"After some time passes, Sayori releases her grip on me."
 show sayori 1bt
-"Or her beautiful, precious smile..."
-"Eventually, she brings me back to reality."
 s 2bd "So...{w=0.38}got anything planned for us today?"
 mc "Not really...{w=0.38} want to see what's on TV?"
 s 1bq "Sounds good to me!"
@@ -558,7 +553,7 @@ if encore_sayoriquestion_1 == True:
             show sayori 1d at t11 zorder 1
             "Sayori smiles as I take a seat next to her."
             show sayori 1c
-            s "So, what we're you asking Monika about?"
+            s "So, what were you asking Monika about?"
             mc "Oh, I just wanted to see if I could get a little peek at what her announcement is going to be."
             show sayori 1g
             s "[player]..."
@@ -613,7 +608,7 @@ if encore_sayoriquestion_1 == True:
                 mc "But if being with you right now helps, then I hope I'm doing something right..."
 
             if hangout1 == "Natsuki":
-                s "I felt really bad yesterday for dragging you away from Natsuki yesterday!"
+                s "I felt really bad for dragging you away from Natsuki yesterday!"
                 s "I didn't mean to pull you away from her or-"
                 "Without thinking I take Sayori into my arms."
                 show sayori at thide
@@ -630,7 +625,7 @@ if encore_sayoriquestion_1 == True:
                 s "That question's been bugging me all day..."
 
             if hangout1 == "Yuri":
-                s "I felt really bad yesterday for dragging you away from Yuri yesterday!"
+                s "I felt really bad for dragging you away from Yuri yesterday!"
                 s "I didn't mean to pull you away from her or-"
                 "Without thinking I take Sayori into my arms."
                 show sayori at thide
@@ -673,7 +668,7 @@ if encore_sayoriquestion_1 == True:
 
 
 
-            "I can feel Sayori tremble as she resists the urge to breakdown and sob..."
+            "I can feel Sayori tremble as she resists the urge to break down and sob..."
             s "Just...{w=0.38}promise me that you'll always be there for me, [player]."
             s "I-{w=0.38}I just need to hear that..."
             mc "I promise you, Sayori."
@@ -706,12 +701,12 @@ if encore_sayoriquestion_1 == True:
 
             "Sayori gently takes both of my hands and holds onto them firmly."
             s "T-{w=0.38}thank you...{w=0.38}[player]."
-            mc "Anytime."
+            mc "Any time."
             s 1l "Lately my emotions have been all over the place."
             s 1k "First, I felt like I was a burden to you and everyone I knew, and now…"
             "Her voice trails off."
             mc "What is it, Sayori?"
-            "Sayori take a deep breath as she holds my hands tighter."
+            "Sayori take a deep breath as she holds my hands tightly."
             s 1u "Now…{w=0.38}I feel like I really shouldn’t be here."
             mc "What do you mean?"
             s 1v "I don’t know…{w=0.38}just the past few days I’ve had this feeling that I really shouldn’t be here, with you, that none of this should’ve happened."
@@ -916,7 +911,7 @@ if encore_sayoriquestion_1 == False:
                 show sayori at thide
                 hide sayori
                 show natsuki 1s at t11 zorder 2
-                "I glance over to Natsuki who appears to organzing her manga again."
+                "I glance over to Natsuki who appears to organizing her manga again."
                 "Ah, she’ll be fine for a few minutes…"
                 show natsuki at thide
                 hide natsuki
@@ -1113,7 +1108,7 @@ if encore_sayoriquestion_1 == False:
 
 mc "I know I can't wave away what you're feeling right now..."
 mc "But if being with you right now helps, then I hope I'm doing something right..."
-"I can feel Sayori tremble as she resists the urge to breakdown and sob..."
+"I can feel Sayori tremble as she resists the urge to break down and sob..."
 s "Promise me that you'll always be there for me, [player]."
 s "I-{w=0.38}I just need to hear that..."
 mc "I promise you, Sayori."
@@ -1148,12 +1143,12 @@ show sayori u111352
 "And...{w=0.38}I just hope I'm doing the right thing..."
 "Sayori gently takes both of my hands and holds onto them firmly."
 s "T-{w=0.38}thank you...{w=0.38}[player]."
-mc "Anytime."
+mc "Any time."
 s 1l "Lately my emotions have been all over the place."
 s 1k "First, I felt like I was a burden to you and everyone I knew, and now…"
 "Her voice trails off."
 mc "What is it, Sayori?"
-"Sayori take a deep breath as she holds my hands tighter."
+"Sayori take a deep breath as she holds my hands tightly."
 s 1u "Now…{w=0.38}I feel like I really shouldn’t be here."
 mc "What do you mean?"
 s 1v "I don’t know…{w=0.38}just the past few days I’ve had this feeling that I really shouldn’t be here, that none of this should’ve happened."
@@ -1352,7 +1347,7 @@ play music t6 fadein 1.0
 "..."
 "..."
 "A-ha! There they are!"
-"I pull my poems out of my stack and start organzing them a little."
+"I pull my poems out of my stack and start organizing them a little."
 "Reading through them, I see how far I've progressed as a writer."
 "My more recent poems certainly seem more developed and structured compared to the first poem I wrote."
 
@@ -1374,7 +1369,7 @@ if hangout1 == "Sayori":
 
 if hangout1 == "Sayori":
     if hangout2 == "Natsuki":
-        "Reading through my old poems again, I noticed the subject matter become more cutsey over time for some reason..."
+        "Reading through my old poems again, I noticed the subject matter become more cutesy over time for some reason..."
         "I guess that must be Natsuki's advice at work..."
         "Though I can't forget that Sayori was my inspiration for a lot of these..."
 
@@ -1393,29 +1388,29 @@ if hangout1 == "Sayori":
 
 if hangout1 == "Natsuki":
     if hangout2 == "Sayori":
-        "As I look over my poems, I see them becoming more cutsey, something that Natsuki would like..."
+        "As I look over my poems, I see them becoming more cutesy, something that Natsuki would like..."
         "I guess Natsuki's advice actually got through to me..."
-        "Granted I didn't see anything wrong with my poems to begin with, I guess her insistence on focusing on the more 'simple' side of things reasonated with me..."
+        "Granted I didn't see anything wrong with my poems to begin with, I guess her insistence on focusing on the more 'simple' side of things resonated with me..."
         "Though I can't forget that Sayori was my inspiration for a lot of these..."
 
 
 if hangout1 == "Natsuki":
     if hangout2 == "Natsuki":
-        "As I look over my poems, I see them becoming more cutsey, something that Natsuki would like..."
+        "As I look over my poems, I see them becoming more cutesy, something that Natsuki would like..."
         "I guess Natsuki's advice actually got through to me..."
         "Even though, Sayori was my inspiration for most of these poems..."
-        "Granted I didn't see anything wrong with my poems to begin with, I guess her insistence on focusing on the more 'simple' side of things reasonated with me..."
+        "Granted I didn't see anything wrong with my poems to begin with, I guess her insistence on focusing on the more 'simple' side of things resonated with me..."
         "If I ever told Natsuki this, she'd never let me hear the end of it..."
 
 
 if hangout1 == "Natsuki":
     if hangout2 == "Yuri":
-        "As I look over my poems, I see them becoming more cutsey, something that Natsuki would like..."
+        "As I look over my poems, I see them becoming more cutesy, something that Natsuki would like..."
         "I guess Natsuki's advice actually got through to me..."
         "Though I can't forget that Sayori was my inspiration for a lot of these..."
         "Even if Natsuki may have influenced me a bit..."
         "Funny enough, as I continue looking over my later poems, I see them becoming more dark and detailed, something which Yuri would like..."
-        "Guess I've gotten more inspirtation from more people than I realized..."
+        "Guess I've gotten more inspiration from more people than I realized..."
 
 
 
@@ -1427,8 +1422,8 @@ if hangout1 == "Natsuki":
         "Monika..."
         "I guess all her motivation finally rubbed off on me."
         "Though I can't forget that Sayori was my inspiration for a lot of these..."
-        "And looking over my later poems, I see them becoming more cutsey, something that Natsuki would like..."
-        "Guess I've gotten more inspirtation than I first realized..."
+        "And looking over my later poems, I see them becoming more cutesy, something that Natsuki would like..."
+        "Guess I've gotten more inspiration than I first realized..."
 
 
 if hangout1 == "Yuri":
@@ -1437,7 +1432,7 @@ if hangout1 == "Yuri":
         "Though I can't forget that Sayori was my inspiration for a lot of these..."
         "Even if Yuri may have influenced me a bit..."
         "Looking over my later poems, I see them becoming more dark and detailed, something which Yuri would like..."
-        "Guess I've gotten more inspirtation than I first realized..."
+        "Guess I've gotten more inspiration than I first realized..."
 
 
 if hangout1 == "Yuri":
@@ -1445,8 +1440,8 @@ if hangout1 == "Yuri":
         "Looks like Yuri's advice finally paid off!"
         "Though I can't forget that Sayori was my inspiration for a lot of these..."
         "Even if Yuri may have influenced me a bit..."
-        "Funny enough, as I continue looking over my later poems, I see them becoming more cutsey, something that Natsuki would like..."
-        "Guess I've gotten more inspirtation from more people than I realized..."
+        "Funny enough, as I continue looking over my later poems, I see them becoming more cutesy, something that Natsuki would like..."
+        "Guess I've gotten more inspiration from more people than I realized..."
 
 
 if hangout1 == "Yuri":
@@ -1463,7 +1458,7 @@ if hangout1 == "Yuri":
         "I guess all her motivation finally rubbed off on me."
         "Though I can't forget that Sayori was my inspiration for a lot of these..."
         "And looking over my later poems, I see them becoming more dark and detailed, something which Yuri would like..."
-        "Guess I've gotten more inspirtation than I first realized..."
+        "Guess I've gotten more inspiration than I first realized..."
 
 
 if hangout1 == "Monika":
@@ -1483,8 +1478,8 @@ if hangout1 == "Monika":
         "Monika..."
         "I guess all her motivation finally rubbed off on me."
         "Though I can't forget that Sayori was my inspiration for a lot of these..."
-        "And looking over my later poems, I see them becoming more cutsey, something that Natsuki would like..."
-        "Guess I've gotten more inspirtation than I first realized..."
+        "And looking over my later poems, I see them becoming more cutesy, something that Natsuki would like..."
+        "Guess I've gotten more inspiration than I first realized..."
 
 if hangout1 == "Monika":
     if hangout2 == "Yuri":
@@ -1495,7 +1490,7 @@ if hangout1 == "Monika":
         "I guess all her motivation finally rubbed off on me."
         "Though I can't forget that Sayori was my inspiration for a lot of these..."
         "And looking over my later poems, I see them becoming more dark and detailed, something which Yuri would like..."
-        "Guess I've gotten more inspirtation than I first realized..."
+        "Guess I've gotten more inspiration than I first realized..."
 
 
 if hangout1 == "Monika":
@@ -1581,11 +1576,11 @@ if hangout1 == "Natsuki":
 
         if encore_festivalquestion_2 == "Natsuki":
              "Despite her insecurities about her writing, I always thought her poems were fun to read!"
-             "Even if her writing style is rather simple, she uses it pretty effectivly to get her message across."
+             "Even if her writing style is rather simple, she uses it pretty effectively to get her message across."
              "Looking back at my poems, I realize why Natsuki likes them so much..."
              "She finally found someone that she can relate to..."
              "Even though I thought she hated me at first, it's quite remarkable how much closer we've gotten over these last two weeks..."
-             "Hopefully I can get another chance to hangout with her..."
+             "Hopefully I can get another chance to hang out with her..."
              "Though I need to be mindful about how Sayori feels..."
 
 
@@ -1596,7 +1591,7 @@ if hangout1 == "Natsuki":
              "Looking back at my poems, I realize why Yuri likes them so much..."
              "She finally found someone that she can relate to..."
              "Even though I thought she just preferred her books over people, it's quite remarkable how much closer we've gotten over these last two weeks..."
-             "Hopefully I can get another chance to hangout with her..."
+             "Hopefully I can get another chance to hang out with her..."
              "Though I need to be mindful about how Sayori feels..."
 
 if hangout1 == "Natsuki":
@@ -1606,7 +1601,7 @@ if hangout1 == "Natsuki":
 
         if encore_festivalquestion_2 == "Natsuki":
              "Despite her insecurities about her writing, I always thought her poems were fun to read!"
-             "Even if her writing style is rather simple, she uses it pretty effectivly to get her message across."
+             "Even if her writing style is rather simple, she uses it pretty effectively to get her message across."
              "Looking back at my poems, I realize why Natsuki likes them so much..."
              "She finally found someone that she can relate to..."
              "Even though I thought she hated me at first, it's quite remarkable how much closer we've gotten over these last two weeks..."
@@ -1618,7 +1613,7 @@ if hangout1 == "Natsuki":
             "Granted, I never minded if they were, it's a pretty stunning contrast between the way Natsuki and Yuri write their poems."
             "Still, I respect and appreciate Yuri as a writer just as much as Natsuki."
             "Now that I think about it, it's been a while since Yuri and I got to spend some time together..."
-            "Hopefully I can hangout with her again soon..."
+            "Hopefully I can hang out with her again soon..."
 
 
 if hangout1 == "Natsuki":
@@ -1628,11 +1623,11 @@ if hangout1 == "Natsuki":
 
         if encore_festivalquestion_2 == "Natsuki":
              "Despite her insecurities about her writing, I always thought her poems were fun to read!"
-             "Even if her writing style is rather simple, she uses it pretty effectivly to get her message across."
+             "Even if her writing style is rather simple, she uses it pretty effectively to get her message across."
              "Looking back at my poems, I realize why Natsuki likes them so much..."
              "She finally found someone that she can relate to..."
              "Even though I thought she hated me at first, it's quite remarkable how much closer we've gotten over these last two weeks..."
-             "Hopefully I can hangout with her again soon..."
+             "Hopefully I can hang out with her again soon..."
 
 
         if encore_festivalquestion_2 == "Yuri":
@@ -1658,13 +1653,13 @@ if hangout1 == "Natsuki":
 
 
         if encore_festivalquestion_2 == "Natsuki":
-            "And looking over my later poems, I see them becoming more cutsey, something that Natsuki would like..."
-            "Guess I've gotten more inspirtation than I first realized..."
+            "And looking over my later poems, I see them becoming more cutesy, something that Natsuki would like..."
+            "Guess I've gotten more inspiration than I first realized..."
 
         if encore_festivalquestion_2 == "Yuri":
             "Looking over my later poems, I see why Yuri liked some of my earlier ones so much..."
             "They were fairly descriptive and the subject matter was rather dark compared to some of my more recent ones."
-            "Guess I've gotten more inspirtation than I first realized..."
+            "Guess I've gotten more inspiration than I first realized..."
 
 
 if hangout1 == "Yuri":
@@ -1679,18 +1674,18 @@ if hangout1 == "Yuri":
             "Now that I think about it, I never really realized just how lighthearted some of her poems were..."
             "Granted, I never minded if they were, it's a pretty stunning contrast between the way Natsuki and Yuri write their poems."
             "Still, I respect and appreciate Yuri as a writer just as much as Natsuki."
-            "Now that I think about it, it's been a while since I got spend some time around Natsuki..."
-            "Hopefully I can get another chance to hangout with her..."
+            "Now that I think about it, it's been a while since I got to spend some time around Natsuki..."
+            "Hopefully I can get another chance to hang out with her..."
             "Though I need to be mindful about how Sayori feels..."
 
 
         if encore_festivalquestion_2 == "Yuri":
              "Despite her insecurities about her writing, I always thought her poems were fun to read!"
-             "Even if her writing style is rather complex, she uses it pretty effectivly to get her message across."
+             "Even if her writing style is rather complex, she uses it pretty effectively to get her message across."
              "Looking back at my poems, I realize why Yuri likes them so much..."
              "She finally found someone that she can relate to..."
              "Even though I thought she just preferred her books over people, it's quite remarkable how much closer we've gotten over these last two weeks..."
-             "Hopefully I can get another chance to hangout with her..."
+             "Hopefully I can get another chance to hang out with her..."
              "Though I need to be mindful about how Sayori feels..."
 
 
@@ -1713,7 +1708,7 @@ if hangout1 == "Yuri":
 
         if encore_festivalquestion_2 == "Yuri":
             "Despite her insecurities about her writing, I always thought her poems were fun to read!"
-            "Even if her writing style is rather complex, she uses it pretty effectivly to get her message across."
+            "Even if her writing style is rather complex, she uses it pretty effectively to get her message across."
             "Looking back at my poems, I realize why Yuri likes them so much..."
             "She finally found someone that she can relate to..."
             "Even though I thought she just preferred her books over people, it's quite remarkable how much closer we've gotten over these last two weeks..."
@@ -1732,13 +1727,13 @@ if hangout1 == "Yuri":
             "Now that I think about it, I never really realized just how lighthearted some of her poems were..."
             "Granted, I never minded if they were, it's a pretty stunning contrast between the way Natsuki and Yuri write their poems."
             "Still, I respect and appreciate Yuri as a writer just as much as Natsuki."
-            "Now that I think about, it's been a while since I've gotten the chance to spend some time wth Natsuki..."
+            "Now that I think about, it's been a while since I've gotten the chance to spend some time with Natsuki..."
             "Hopefully we can hangout again soon..."
 
 
         if encore_festivalquestion_2 == "Yuri":
              "Despite her insecurities about her writing, I always thought her poems were fun to read!"
-             "Even if her writing style is rather complex, she uses it pretty effectivly to get her message across."
+             "Even if her writing style is rather complex, she uses it pretty effectively to get her message across."
              "Looking back at my poems, I realize why Yuri likes them so much..."
              "She finally found someone that she can relate to..."
              "Even though I thought she just preferred her books over people, it's quite remarkable how much closer we've gotten over these last two weeks..."
@@ -1753,7 +1748,7 @@ if hangout1 == "Yuri":
         "I guess all her motivation finally rubbed off on me."
         "Though I can't forget that [encore_festivalquestion_2] was my inspiration for a lot of these..."
         "And looking over my later poems, I see them becoming more dark and detailed, something which Yuri would like..."
-        "Guess I've gotten more inspirtation than I first realized..."
+        "Guess I've gotten more inspiration than I first realized..."
 
 
 if hangout1 == "Monika":
@@ -1766,13 +1761,13 @@ if hangout1 == "Monika":
         "Though I had some help from Sayori..."
 
         if encore_festivalquestion_2 == "Natsuki":
-            "And looking over my later poems, I see them becoming more cutsey, something that Natsuki would like..."
-            "Guess I've gotten more inspirtation than I first realized..."
+            "And looking over my later poems, I see them becoming more cutesy, something that Natsuki would like..."
+            "Guess I've gotten more inspiration than I first realized..."
 
         if encore_festivalquestion_2 == "Yuri":
             "Looking over my later poems, I see why Yuri liked some of my earlier ones so much..."
             "They were fairly descriptive and the subject matter was rather dark compared to some of my more recent ones."
-            "Guess I've gotten more inspirtation than I first realized..."
+            "Guess I've gotten more inspiration than I first realized..."
 
 
 if hangout1 == "Monika":
@@ -1783,8 +1778,8 @@ if hangout1 == "Monika":
         "Monika..."
         "I guess all her motivation finally rubbed off on me."
         "Though I can't forget that [encore_festivalquestion_2] was my inspiration for a lot of these..."
-        "And looking over my later poems, I see them becoming more cutsey, something that Natsuki would like..."
-        "Guess I've gotten more inspirtation than I first realized..."
+        "And looking over my later poems, I see them becoming more cutesy, something that Natsuki would like..."
+        "Guess I've gotten more inspiration than I first realized..."
 
 if hangout1 == "Monika":
     if hangout2 == "Yuri":
@@ -1795,7 +1790,7 @@ if hangout1 == "Monika":
         "I guess all her motivation finally rubbed off on me."
         "Though I can't forget that [encore_festivalquestion_2] was my inspiration for a lot of these..."
         "And looking over my later poems, I see them becoming more dark and detailed, something which Yuri would like..."
-        "Guess I've gotten more inspirtation than I first realized..."
+        "Guess I've gotten more inspiration than I first realized..."
 
 
 if hangout1 == "Monika":
@@ -1874,7 +1869,6 @@ if encore_sayoriquestion_1 == True:
         "Her breaths are shallow...{w=0.38}her eyes are locked with mine."
         "My vision feels hazy...{w=0.38}her eyes...{w=0.38}have they always been that beautiful blue color?"
         "The scent of cinnamon, mixed with the feeling of her soft breaths grazing my neck..."
-        "Her gorgeous blue eyes..."
         stop music
         "Suddenly I remember what I wanted to do."
         jump day2_smash
@@ -1899,7 +1893,7 @@ if encore_sayoriquestion_1 == True:
         show sayori 1bl
         "My jaw drops."
         "Sayori's never been passive-aggressive, let alone aggressive, with me before..."
-        s "I mean when I was with you in the club yesterday, I felt really better about everything..."
+        s "I mean when I was with you in the club yesterday, I felt better about everything..."
         s 1bh "But this?"
         "I feel my heart sink into my stomach as I feel the guilt from earlier return."
 
@@ -1916,7 +1910,7 @@ if apologize_sn == True or apologize_sy == True or apologize_sm == True:
     show sayori 1bg
     mc "I could have handled that better, and I should have."
     show sayori 1bk
-    mc "I know apologized earlier but you didn't really seem to accept it..."
+    mc "I know I apologized for earlier but you didn't really seem to accept it..."
     show sayori 1bf
     mc "So, I just hope we can move past this."
     show sayori 1bk
@@ -1927,7 +1921,7 @@ if apologize_sn == True or apologize_sy == True or apologize_sm == True:
     s "But, [player], I'm very disappointed in you...."
     mc "I know..."
     show sayori 1bl
-    s "I mean was having a hard time earlier and seeing you..."
+    s "I was having a hard time earlier and seeing you..."
     s 1bu "With [hangout2] like that..."
     s 4bv "Really, really hurt, [player]..."
     "Sayori's on the verge of breaking down and crying right in front of me."
@@ -1978,7 +1972,7 @@ if apologize_sn == True or apologize_sy == True or apologize_sm == True:
         mc "I remember her just saying that she's 'glad that I took responsibility for you'."
         show sayori 1bo
         mc "'Especially given that exchange you had with her yesterday'."
-        mc "And then something like 'I'm glad you didn't leave her hannging this time'."
+        mc "And then something like 'I'm glad you didn't leave her hanging this time'."
         show sayori 1bl
         s "Did she say anything else..."
         mc "Yeah, I-"
@@ -2085,15 +2079,15 @@ if hangout1 == "Natsuki" or hangout1 == "Yuri" or hangout1 == "Monika":
     mc "Don't need to tell me twice!"
     scene black
     with close_eyes
-    "Sayori and I spend what feels like hours tightly embracing each other in my livingroom."
+    "Sayori and I spend what feels like hours tightly embracing each other in my living room."
     "I feel awful for treating Sayori the way I have been latelty."
     "I chose her...{w=0.38}out of the other three!"
-    "I can't be having second thoughts or trying to backout now!"
+    "I can't be having second thoughts or trying to back out now!"
     "I love her..."
     "We've always been there for each other..."
     "I care about her, and she cares about me..."
     "I want her to be happy like how she wants me to be happy..."
-    "So, which is why I'm going to make this up to her!"
+    "I need to make this up to her!"
     stop music fadeout 2.0
     mc "Hey, Sayori?"
     s "Yeah?"
@@ -2151,15 +2145,15 @@ if hangout1 == "Sayori":
     mc "Don't need to tell me twice!"
     scene black
     with close_eyes
-    "Sayori and I spend what feels like hours tightly embracing each other in my livingroom."
+    "Sayori and I spend what feels like hours tightly embracing each other in my living room."
     "I feel awful for treating Sayori the way I have been latelty."
     "I chose her...{w=0.38}out of the other three!"
-    "I can't be having second thoughts or trying to backout now!"
+    "I can't be having second thoughts or trying to back out now!"
     "I love her..."
     "We've always been there for each other..."
     "I care about her, and she cares about me..."
     "I want her to be happy like how she wants me to be happy..."
-    "So, which is why I'm going to make this up to her!"
+    "I need to make this up to her!"
     stop music fadeout 2.0
     mc "Hey, Sayori?"
     s "Yeah?"
@@ -2200,13 +2194,13 @@ s "Alright, [player]. I'll warn you though, I won't hold back."
 show sayori 1ba at s11
 "I power on my Wii and hand her one of the controllers. Seeing Mario Kart boot up on the screen again triggers a flood of memories from my childhood."
 "It's been years since I've played this game, and even longer since Sayori and I have played it together."
-"My skills are probably a little rusty, and I hope her's are too. "
+"My skills are probably a little rusty, but I hope her's are as well... "
 mc "What map should we play first?"
 "Sayori shoots me a sly look."
 show sayori c112171
 s "How about Rainbow Road?"
 mc "You really think we should start off on that map considering how long it's been?"
-mc "Only reason I even remember it was because of how fustrating it was..."
+mc "Only reason I even remember it was because of how frustrating it was..."
 s 1bq "It could still be fun~"
 s 4br "Unless you're too chicken!"
 mc "Alright, you're on!"
@@ -2225,7 +2219,7 @@ s 1ba "Yeah...{w=0.38}but this is still pretty fun!"
 "A smile manages to form across my face."
 "Sayori's always able to find the joy in almost anything."
 show cg rr4 with dissolve_cg
-"While early on Sayori and I trade leads for first place, after a while, I'm able to stay in first fairly comofortably."
+"While early on Sayori and I trade leads for first place, after a while, I'm able to stay in first fairly comfortably."
 "Of course, that means I've been getting bombarded with red shells."
 mc "Why do you have so many red shells?"
 s 1bc "The farther you are from first place, the better items you get."
@@ -2245,7 +2239,7 @@ show cg rr3 with dissolve_cg
 "Well, time to use the shells I've been saving for the end!"
 "I start throwing out my shells randomly in an effort to get the npc and Sayori off my tail."
 "My first shell hits the NPC successfully, its kart quickly spirals out of control before promptly falling off the map."
-"However, Sayori was able to doge the other shells I threw."
+"However, Sayori was able to dodge the other shells I threw."
 "I look to see that I still have one left."
 "With the finish line only about ten seconds away, and with Sayori and I neck-and-neck, it’s now or never that I use my last shell."
 mc "Take this!"
@@ -2334,9 +2328,12 @@ s 1bx "Yeah...{w=0.38}but I'll see you tomorrow, [player]! I had so much fun wit
 mc "I did too, Sayori! I'll see you tomorrow!"
 show sayori 1bs at f11 zorder 1
 "Sayori gives me one more hug before leaving to go back to her house."
+stop music fadeout 2.0
 show sayori at thide
 hide sayori
-"Man, am I the luckiest guy on Earth to have someone like her."
+"As she shuts the door, I collapse back onto my couch, exhausted by today's events."
+"We finally kissed..."
+"I still can't believe it!"
 
 
 if hangout1 == "Sayori":
@@ -2344,7 +2341,25 @@ if hangout1 == "Sayori":
         jump day2_ref1
 
 label day2_ref1:
-"All I wish is that I could spend everyday like this with her..."
+"I should've seen it coming, but I'm surprised with just how well my relationship with Sayori is coming along."
+"Even if I have no idea what I'm doing..."
+"Or maybe this was Sayori needed all along?"
+"She just wanted to be around me again?"
+"Am I really the answer to all her problems?"
+"Then again, I don't really know just how deep her problems run..."
+"And if she's always having 'rainclouds' when I'm not around her..."
+"Well, she should be able to talk to her problems with someone else, not just me..."
+"I'm not even entirely sure if I'm the only one knows about her problems as well..."
+"Her parents know about this, right?"
+"Then again, Sayori's dad really isn't around too much because of his work..."
+"And her mom moved back to the countryside following that divorce..."
+"Unless Monika knows, I might be the only one she's told..."
+"I can try being around her as much as I can, but I can't be there for her 24/7..."
+"Especially if my plans for the summer still end up happening..."
+"I guess I'll have to figure something out then..."
+"Still, it was nice to spend more time around her today..."
+"Hopefully she'll be fine for the rest of the night..."
+"I flip back on the TV and watch a few more shows before grabbing Sayori's poems off the dining room table and heading up to my room."
 stop music fadeout 2.0
 jump day2_confession
 
@@ -2359,8 +2374,11 @@ if hangout1 == "Natsuki" or hangout1 == "Yuri" or hangout1 "Monika":
 
 
 label day2_ref2:
-"I really should spend more time around her..."
-"She is my girlfriend afterall..."
+"Though I question if I really deserved that kiss, considering what happened at the club earlier..."
+"Well, at least we moved past it, and I promised her that it won't happen again."
+"I really should spend more time around Sayori..."
+"She is my girlfriend after all..."
+"I flip back on the TV and watch a few more shows before grabbing Sayori's poems off the dining room table and heading up to my room."
 stop music fadeout 2.0
 jump day2_confession
 
@@ -2387,8 +2405,8 @@ show sayori 1bu
 mc "What's wrong Sayori?"
 "She points at the TV. I see the episode title...{w=0.38}this was the last episode they made."
 "That's a bummer. I thought it was at least still being made."
-"Though the show already had an incredibly long lifespan already and it was starting to show that the producers were running out of ideas."
-"When high school started and when we stopped hanging out as often, I guess we both stopped watching it regularily..."
+"Though the show already had an incredibly long lifespan. It was starting to show that the producers were running out of ideas in the last few episodes we watched..."
+"I guess when we stopped hanging out, we both stopped watching it..."
 "I look at the date of the episode."
 "Huh..."
 "It only aired a few months ago!"
@@ -2418,7 +2436,7 @@ stop music
 "The realization then hits me."
 mc "No...{w=0.38}I changed{w=0.38}..."
 "Sayori perks up."
-s c115112 "Did you say something, [player]."
+s c115112 "Did you say something, [player]?"
 mc "Oh...{w=0.38}it was nothing."
 show sayori 1bk
 "Sayori sighs and turns back to the TV."
@@ -2447,7 +2465,7 @@ show sayori c114312
 mc "But I've still been a bad friend to you! I've been way too careless with what I say or do around you."
 mc "Especially how things went last Sunday..."
 show sayori 1bk
-mc "With how I so carlessly hurt you...."
+mc "With how I so carelessly hurt you..."
 mc "I'm sorry..."
 show sayori 1bt
 mc "I really, truly-"
@@ -2466,27 +2484,27 @@ mc "Look I'm glad I got to spend more time with the others in the club."
 
 
 if encore_festivalquestion_2 == "Natsuki" or encore_festivalquestion_2 == "Yuri":
-    mc "I'm glad I got to know [encore_festivalquestion_2] very well..."
+    mc "I'm glad I've gotten to know [encore_festivalquestion_2]..."
 
 
 if hangout1 == "Sayori":
-    mc "I'm glad that I got to spend time with you yesterday..."
+    mc "I'm glad that I got to spend some time with you yesterday..."
 
 if hangout1 == "Natsuki":
-    mc "I'm glad that I got to spend time with Natsuki yesterday..."
+    mc "I'm glad that I got to spend some time with Natsuki yesterday..."
 
 if hangout1 == "Yuri":
-    mc "I'm glad that I got to spend time with Yuri yesterday..."
+    mc "I'm glad that I got to spend some time with Yuri yesterday..."
 
 if hangout1 == "Monika":
-    mc "I'm glad that I got to spend time with Monika yesterday..."
+    mc "I'm glad that I got to spend some time with Monika yesterday..."
 
 
 if hangout1 == "Sayori":
     if hangout2 == "Sayori":
-        mc "And I'm glad I got to spend time with you again today..."
+        mc "And it was nice that we got to spend more time together earlier..."
         mc "I don't know...{w=0.38}I feel like I should start spending some more time around you..."
-        mc "I feel like that I've been too distant from you lately..."
+        mc "I feel like I've been too distant from you lately..."
         "Sayori shoots me a quizzical look."
         s 2be "I thought you and [encore_festivalquestion_2] liked each other though..."
         mc "I mean we do...{w=0.38}but we're friends."
@@ -2497,9 +2515,9 @@ if hangout1 == "Sayori":
 
 if hangout1 == "Natsuki" or hangout1 == "Yuri" or hangout1 == "Monika":
     if hangout2 == "Sayori":
-        mc "And I'm glad I got to spend time with you today..."
+        mc "And it was nice that we got to spend some time together in the club today..."
         mc "I don't know...{w=0.38}I feel like I should start spending some more time around you..."
-        mc "I feel like that I've been too distant from you lately..."
+        mc "I feel like I've been too distant from you lately..."
         "Sayori shoots me a quizzical look."
         s 2be "I thought you and [encore_festivalquestion_2] liked each other though..."
         s "Not to mention, you and [hangout1] seemed to be having fun yesterday."
@@ -2511,15 +2529,23 @@ if hangout1 == "Natsuki" or hangout1 == "Yuri" or hangout1 == "Monika":
 
 if hangout1 == "Natsuki":
     if hangout2 == "Natsuki":
-        mc "And I'm glad I got to spend time with her again today..."
+        mc "And today as well..."
         mc "I don't know...{w=0.38}I feel like I should start spending some more time around you..."
-        mc "I feel like that I've been too distant from you lately..."
+        mc "I feel like I've been too distant from you lately..."
         "Sayori shoots me a quizzical look."
 
         if encore_festivalquestion_2 == "Natsuki":
             s 2be "I thought you and Natsuki liked each other though..."
             mc "I mean we do...{w=0.38}but we're friends."
             mc "I guess I just got a little too friendly with Natsuki there for a second..."
+            s 1bk "Yeah, you kind of did..."
+            "There's a moment of uncomfortable silence between us."
+            mc "I really didn't mean for you to see us like that..."
+            mc "Given what happened..."
+            s 2bg "It's...{w=0.38}fine, [player]..."
+            s 2bl "I'm just glad I was able to bring you out of your shell a little..."
+            s "At least something good came out of that..."
+            mc "Yeah, if it weren't for you, I'd be on my way to becoming a full time NEET!"
             jump day2_missyou
 
         if encore_festivalquestion_2 == "Yuri":
@@ -2528,14 +2554,22 @@ if hangout1 == "Natsuki":
             mc "No, no, nothing happened..."
             mc "It's just that...{w=0.38}I want to get to know the others a bit more too."
             mc "Although, I wasn't trying to get to know Natsuki {i}like that{/i} earlier, I promise!"
+            show sayori 1bk
+            "There's a moment of uncomfortable silence between us."
+            mc "I really didn't mean for you to see us like that..."
+            mc "Given what happened..."
+            s 2bg "It's...{w=0.38}fine, [player]..."
+            s 2bl "I'm just glad I was able to bring you out of your shell a little..."
+            s "At least something good came out of that..."
+            mc "Yeah, if it weren't for you, I'd be on my way to becoming a full time NEET!"
             jump day2_missyou
 
 
 if hangout1 == "Sayori":
     if hangout2 == "Natsuki":
-        mc "And I'm glad I got to spend more time with Natsuki today as well..."
+        mc "And I'm glad I got to spend some time with Natsuki today..."
         mc "I don't know...{w=0.38}I feel like I should start spending some more time around you..."
-        mc "I feel like that I've been too distant from you lately..."
+        mc "I feel like I've been too distant from you lately..."
         "Sayori shoots me a quizzical look."
 
 
@@ -2543,7 +2577,17 @@ if hangout1 == "Sayori":
             s 2be "I thought you and Natsuki liked each other though..."
             mc "I mean we do...{w=0.38}but we're friends."
             mc "I guess I just got a little too friendly with Natsuki there for a second..."
+            s 1bk "Yeah, you kind of did..."
+            "There's a moment of uncomfortable silence between us."
+            mc "I really didn't mean for you to see us like that..."
+            mc "Given what happened..."
+            s 2bg "It's...{w=0.38}fine, [player]..."
+            s 2bl "I'm just glad I was able to bring you out of your shell a little..."
+            s "At least something good came out of that..."
+            mc "Yeah, if it weren't for you, I'd be on my way to becoming a full time NEET!"
             jump day2_missyou
+
+
 
         if encore_festivalquestion_2 == "Yuri":
             s 2be "I thought you liked Yuri though..."
@@ -2551,15 +2595,23 @@ if hangout1 == "Sayori":
             mc "No, no, nothing happened..."
             mc "It's just that...{w=0.38}I want to get to know the others a bit more too."
             mc "Although, I wasn't trying to get to know Natsuki {i}like that{/i} earlier, I promise!"
+            show sayori 1bk
+            "There's a moment of uncomfortable silence between us."
+            mc "I really didn't mean for you to see us like that..."
+            mc "Given what happened..."
+            s 2bg "It's...{w=0.38}fine, [player]..."
+            s 2bl "I'm just glad I was able to bring you out of your shell a little..."
+            s "At least something good came out of that..."
+            mc "Yeah, if it weren't for you, I'd be on my way to becoming a full time NEET!"
             jump day2_missyou
 
 
 
 if hangout1 == "Yuri":
     if hangout2 == "Natsuki":
-        mc "And I'm glad I got to spend more time with Natsuki today as well..."
+        mc "And I'm glad I got to spend some time with Natsuki today..."
         mc "I don't know...{w=0.38}I feel like I should start spending some more time around you..."
-        mc "I feel like that I've been too distant from you lately..."
+        mc "I feel like I've been too distant from you lately..."
         "Sayori shoots me a quizzical look."
 
 
@@ -2568,6 +2620,14 @@ if hangout1 == "Yuri":
             s "Or do you like Yuri?"
             mc "I mean...{w=0.38}I like both of them, sure, but I don't see why I can't be friends with both of them."
             mc "I guess I just got a little too friendly with Natsuki earlier..."
+            s 1bk "Yeah, you kind of did..."
+            "There's a moment of uncomfortable silence between us."
+            mc "I really didn't mean for you to see us like that..."
+            mc "Given what happened..."
+            s 2bg "It's...{w=0.38}fine, [player]..."
+            s 2bl "I'm just glad I was able to bring you out of your shell a little..."
+            s "At least something good came out of that..."
+            mc "Yeah, if it weren't for you, I'd be on my way to becoming a full time NEET!"
             jump day2_missyou
 
 
@@ -2576,15 +2636,23 @@ if hangout1 == "Yuri":
             s "Or do you like Natsuki?"
             mc "I mean...{w=0.38}I like both of them, sure, but I don't see why I can't be friends with both of them."
             mc "I guess I just got a little too friendly with Natsuki earlier..."
+            s 1bk "Yeah, you kind of did..."
+            "There's a moment of uncomfortable silence between us."
+            mc "I really didn't mean for you to see us like that..."
+            mc "Given what happened..."
+            s 2bg "It's...{w=0.38}fine, [player]..."
+            s 2bl "I'm just glad I was able to bring you out of your shell a little..."
+            s "At least something good came out of that..."
+            mc "Yeah, if it weren't for you, I'd be on my way to becoming a full time NEET!"
             jump day2_missyou
 
 
 
 if hangout1 == "Monika":
     if hangout2 == "Natsuki":
-        mc "And I'm glad I got to spend more time with Natsuki today as well..."
+        mc "And I'm glad I got to spend some time with Natsuki today..."
         mc "I don't know...{w=0.38}I feel like I should start spending some more time around you..."
-        mc "I feel like that I've been too distant from you lately..."
+        mc "I feel like I've been too distant from you lately..."
         "Sayori shoots me a quizzical look."
 
 
@@ -2593,6 +2661,14 @@ if hangout1 == "Monika":
             s "Or do you like Monika?"
             mc "I mean...{w=0.38}I like both of them, sure, but I don't see why I can't be friends with both of them."
             mc "I guess I just got a little too friendly with Natsuki earlier..."
+            s 1bk "Yeah, you kind of did..."
+            "There's a moment of uncomfortable silence between us."
+            mc "I really didn't mean for you to see us like that..."
+            mc "Given what happened..."
+            s 2bg "It's...{w=0.38}fine, [player]..."
+            s 2bl "I'm just glad I was able to bring you out of your shell a little..."
+            s "At least something good came out of that..."
+            mc "Yeah, if it weren't for you, I'd be on my way to becoming a full time NEET!"
             jump day2_missyou
 
         if encore_festivalquestion_2 == "Yuri":
@@ -2601,26 +2677,61 @@ if hangout1 == "Monika":
             mc "No, no, nothing happened..."
             mc "It's just that...{w=0.38}I want to get to know the others a bit more too."
             mc "Although, I wasn't trying to get to know Natsuki {i}like that{/i} earlier, I promise!"
+            show sayori 1bk
+            "There's a moment of uncomfortable silence between us."
+            mc "I really didn't mean for you to see us like that..."
+            mc "Given what happened..."
+            s 2bg "It's...{w=0.38}fine, [player]..."
+            s 2bl "I'm just glad I was able to bring you out of your shell a little..."
+            s "At least something good came out of that..."
+            mc "Yeah, if it weren't for you, I'd be on my way to becoming a full time NEET!"
             jump day2_missyou
 
 
 if hangout1 == "Yuri":
     if hangout2 == "Yuri":
-        mc "And I'm glad I got to spend time with her again today..."
+        mc "And today as well..."
         mc "I don't know...{w=0.38}I feel like I should start spending some more time around you..."
-        mc "I feel like that I've been too distant from you lately..."
+        mc "I feel like I've been too distant from you lately..."
         "Sayori shoots me a quizzical look."
-        s 2be "I thought you and [hangout1] liked each other though."
-        mc "I mean we do...{w=0.38}but we're friends."
-        mc "I guess I just got a little too friendly with Yuri there for a second..."
-        jump day2_missyou
+
+
+        if encore_festivalquestion_2 == "Natsuki":
+            s 2be "I thought you liked Natsuki though..."
+            s "You used to spend a lot of time around her...{w=0.38}did something happen?"
+            mc "No, no, nothing happened..."
+            mc "It's just that...{w=0.38}I want to get to know the others a bit more too."
+            mc "Although, I wasn't trying to get to know Yuri {i}like that{/i} earlier, I promise!"
+            show sayori 1bk
+            "There's a moment of uncomfortable silence between us."
+            mc "I really didn't mean for you to see us like that..."
+            mc "Given what happened..."
+            s 2bg "It's...{w=0.38}fine, [player]..."
+            s 2bl "I'm just glad I was able to bring you out of your shell a little..."
+            s "At least something good came out of that..."
+            mc "Yeah, if it weren't for you, I'd be on my way to becoming a full time NEET!"
+            jump day2_missyou
+
+        if encore_festivalquestion_2 == "Yuri":
+            s 2be "I thought you and [hangout1] liked each other though."
+            mc "I mean we do...{w=0.38}but we're friends."
+            mc "I guess I just got a little too friendly with Yuri there for a second..."
+            s 1bk "Yeah, you kind of did..."
+            "There's a moment of uncomfortable silence between us."
+            mc "I really didn't mean for you to see us like that..."
+            mc "Given what happened..."
+            s 2bg "It's...{w=0.38}fine, [player]..."
+            s 2bl "I'm just glad I was able to bring you out of your shell a little..."
+            s "At least something good came out of that..."
+            mc "Yeah, if it weren't for you, I'd be on my way to becoming a full time NEET!"
+            jump day2_missyou
 
 
 if hangout1 == "Sayori":
     if hangout2 == "Yuri":
-        mc "And I'm glad I got to spend more time with Yuri today as well..."
+        mc "And I'm glad I got to spend some time with Yuri today..."
         mc "I don't know...{w=0.38}I feel like I should start spending some more time around you..."
-        mc "I feel like that I've been too distant from you lately..."
+        mc "I feel like I've been too distant from you lately..."
         "Sayori shoots me a quizzical look."
 
         if encore_festivalquestion_2 == "Natsuki":
@@ -2629,6 +2740,14 @@ if hangout1 == "Sayori":
             mc "No, no, nothing happened..."
             mc "It's just that...{w=0.38}I want to get to know the others a bit more too."
             mc "Although, I wasn't trying to get to know Yuri {i}like that{/i} earlier, I promise!"
+            show sayori 1bk
+            "There's a moment of uncomfortable silence between us."
+            mc "I really didn't mean for you to see us like that..."
+            mc "Given what happened..."
+            s 2bg "It's...{w=0.38}fine, [player]..."
+            s 2bl "I'm just glad I was able to bring you out of your shell a little..."
+            s "At least something good came out of that..."
+            mc "Yeah, if it weren't for you, I'd be on my way to becoming a full time NEET!"
             jump day2_missyou
 
 
@@ -2636,27 +2755,40 @@ if hangout1 == "Sayori":
             s 2be "I thought you and Yuri liked each other though..."
             mc "I mean we do...{w=0.38}but we're friends."
             mc "I guess I just got a little too friendly with Yuri there for a second..."
+            s 1bk "Yeah, you kind of did..."
+            "There's a moment of uncomfortable silence between us."
+            mc "I really didn't mean for you to see us like that..."
+            mc "Given what happened..."
+            s 2bg "It's...{w=0.38}fine, [player]..."
+            s 2bl "I'm just glad I was able to bring you out of your shell a little..."
+            s "At least something good came out of that..."
+            mc "Yeah, if it weren't for you, I'd be on my way to becoming a full time NEET!"
             jump day2_missyou
-
 
 
 if hangout1 == "Natsuki":
     if hangout2 == "Yuri":
-        mc "And I'm glad I got to spend more time with Yuri today as well..."
+        mc "And I'm glad I got to spend some time with Yuri today..."
         mc "I don't know...{w=0.38}I feel like I should start spending some more time around you..."
-        mc "I feel like that I've been too distant from you lately..."
+        mc "I feel like I've been too distant from you lately..."
         "Sayori shoots me a quizzical look."
-        s 2be "I thought you and [hangout1] liked each other though."
-        s "Or do you like [hangout2]?"
-        mc "I mean I like them both...{w=0.38}but we're friends."
-        mc "I guess I just got a little too friendly with [hangout2] there for a second..."
+
 
         if encore_festivalquestion_2 == "Natsuki":
             s 2be "I thought you and Natsuki liked each other though..."
             s "Or do you like Yuri?"
             mc "I mean...{w=0.38}I like both of them, sure, but I don't see why I can't be friends with both of them."
             mc "I guess I just got a little too friendly with Yuri earlier..."
+            s 1bk "Yeah, you kind of did..."
+            "There's a moment of uncomfortable silence between us."
+            mc "I really didn't mean for you to see us like that..."
+            mc "Given what happened..."
+            s 2bg "It's...{w=0.38}fine, [player]..."
+            s 2bl "I'm just glad I was able to bring you out of your shell a little..."
+            s "At least something good came out of that..."
+            mc "Yeah, if it weren't for you, I'd be on my way to becoming a full time NEET!"
             jump day2_missyou
+
 
 
         if encore_festivalquestion_2 == "Yuri":
@@ -2664,15 +2796,24 @@ if hangout1 == "Natsuki":
             s "Or do you like Natsuki?"
             mc "I mean...{w=0.38}I like both of them, sure, but I don't see why I can't be friends with both of them."
             mc "I guess I just got a little too friendly with Yuri earlier..."
+            s 1bk "Yeah, you kind of did..."
+            "There's a moment of uncomfortable silence between us."
+            mc "I really didn't mean for you to see us like that..."
+            mc "Given what happened..."
+            s 2bg "It's...{w=0.38}fine, [player]..."
+            s 2bl "I'm just glad I was able to bring you out of your shell a little..."
+            s "At least something good came out of that..."
+            mc "Yeah, if it weren't for you, I'd be on my way to becoming a full time NEET!"
             jump day2_missyou
+
 
 
 
 if hangout1 == "Monika":
     if hangout2 == "Yuri":
-        mc "And I'm glad I got to spend more time with Yuri today as well..."
+        mc "And I'm glad I got to spend some time with Yuri today..."
         mc "I don't know...{w=0.38}I feel like I should start spending some more time around you..."
-        mc "I feel like that I've been too distant from you lately..."
+        mc "I feel like I've been too distant from you lately..."
         "Sayori shoots me a quizzical look."
         s 2be "I thought you liked Monika though."
         s "Or do you like [hangout2]?"
@@ -2685,6 +2826,14 @@ if hangout1 == "Monika":
             mc "No, no, nothing happened..."
             mc "It's just that...{w=0.38}I want to get to know the others a bit more too."
             mc "Although, I wasn't trying to get to know Yuri {i}like that{/i} earlier, I promise!"
+            show sayori 1bk
+            "There's a moment of uncomfortable silence between us."
+            mc "I really didn't mean for you to see us like that..."
+            mc "Given what happened..."
+            s 2bg "It's...{w=0.38}fine, [player]..."
+            s 2bl "I'm just glad I was able to bring you out of your shell a little..."
+            s "At least something good came out of that..."
+            mc "Yeah, if it weren't for you, I'd be on my way to becoming a full time NEET!"
             jump day2_missyou
 
 
@@ -2693,29 +2842,57 @@ if hangout1 == "Monika":
             s "Or do you like Monika?"
             mc "I mean...{w=0.38}I like both of them, sure, but I don't see why I can't be friends with both of them."
             mc "I guess I just got a little too friendly with Yuri earlier..."
+            s 1bk "Yeah, you kind of did..."
+            "There's a moment of uncomfortable silence between us."
+            mc "I really didn't mean for you to see us like that..."
+            mc "Given what happened..."
+            s 2bg "It's...{w=0.38}fine, [player]..."
+            s 2bl "I'm just glad I was able to bring you out of your shell a little..."
+            s "At least something good came out of that..."
+            mc "Yeah, if it weren't for you, I'd be on my way to becoming a full time NEET!"
             jump day2_missyou
 
 
 if hangout1 == "Monika":
     if hangout2 == "Monika":
-        mc "And I'm glad I got to spend time with her again today..."
+        mc "And today as well..."
         mc "But maybe I should start spending some more time around you again."
-        mc "I feel like that I've been too distant from you lately..."
+        mc "I feel like I've been too distant from you lately..."
         "Sayori shoots me a quizzical look."
         s 2be "I thought you and Monika liked each other though."
         s "Or do you like [encore_festivalquestion_2]?"
-        mc "I mean like them both, but, I guess that it's too early to say for sure, isn't it?"
+        mc "I mean like them both, but, we're just friends."
+        show sayori 1bk
+        "There's a moment of uncomfortable silence between us."
+        mc "I really didn't mean for you to see us like that..."
+        mc "Given what happened..."
+        mc "I'm still surprised it happened as well..."
+        s 2bg "It's...{w=0.38}fine, [player]..."
+        s 2bl "I'm just glad I was able to bring you out of your shell a little..."
+        s "At least something good came out of that..."
+        mc "Yeah, if it weren't for you, I'd be on my way to becoming a full time NEET!"
+        jump day2_missyou
 
 
 if hangout1 == "Sayori" or hangout1 == "Natsuki" or hangout1 == "Yuri":
     if hangout2 == "Monika":
-        mc "And I'm glad I got to finally hang around Monika today..."
+        mc "And I'm glad I got to finally spend some time around Monika today..."
         mc "But maybe I should start spending some more time around you again."
-        mc "I feel like that I've been too distant from you lately..."
+        mc "I feel like I've been too distant from you lately..."
         "Sayori shoots me a quizzical look."
         s 2be "I thought you liked Monika though..."
         s "Or do you like [encore_festivalquestion_2]?"
-        mc "I mean like them both, but, I guess that it's too early to say for sure, isn't it?"
+        mc "I mean like them both, but, we're just friends."
+        show sayori 1bk
+        "There's a moment of uncomfortable silence between us."
+        mc "I really didn't mean for you to see us like that..."
+        mc "Given what happened..."
+        mc "I'm still surprised it happened as well..."
+        s 2bg "It's...{w=0.38}fine, [player]..."
+        s 2bl "I'm just glad I was able to bring you out of your shell a little..."
+        s "At least something good came out of that..."
+        mc "Yeah, if it weren't for you, I'd be on my way to becoming a full time NEET!"
+        jump day2_missyou
 
 
 label day2_missyou:
@@ -2740,7 +2917,7 @@ image sayori e1bq = evening("mod_assets/sprites/1bq.png")
 "They truly went out with a bang!"
 show sayori e2bx at t11
 s "Well that was fun [player]!"
-mc "Yeah, it was! It was a little hard to follow with some the new characters though."
+mc "Yeah, it was! It was a little hard to follow with some of the new characters though."
 s "I guess we can watch the lead up to the finale together sometime!"
 mc "Yeah! That sounds great!"
 s "Well, I have to head back, [player]."

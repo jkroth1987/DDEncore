@@ -37,7 +37,7 @@ if encore_festivalquestion_2 == "Yuri":
         mc "Sooo...{w=0.38} how's reading Portrait of Markov been?"
         "Yuri snaps out of her gaze and back into reality."
         y 2f "Oh! Well the book has gotten to be very interesting. How about you? Did you have the chance to get any reading done?"
-        mc "Yeah, I was able to read up to chapter five. I can't believe they left us on a cliffhanger right that!"
+        mc "Yeah, I was able to read up to chapter five. I can't believe they left us on a cliffhanger like that!"
         show yuri 1c
         "Yuri chuckles to herself."
         y 1d "Well that's why there's chapter six! Come on, we can read it together!"
@@ -148,7 +148,7 @@ if encore_festivalquestion_2 == "Natsuki":
         mc "Of course! It seems like an interesting read!"
         show yuri 1c
         "I see Yuri form another smile."
-        y 2s "You are a really nice person afterall...{w=0.38}[player]."
+        y 2s "You are a really nice person after all...{w=0.38}[player]."
         "She flashes a gentle smile at me."
 
 
@@ -173,7 +173,7 @@ if encore_festivalquestion_2 == "Natsuki":
         "I try to calm her down."
         mc "Hey...{w=0.38}it's okay! Really! If you're comfortable with that then I don't really see an issue with us sharing."
         y 1q "A-alright..."
-        "I sitdown next to Yuri."
+        "I sit down next to Yuri."
         show yuri 1q at t44 zorder 1
         show sayori 2k at t41 zorder 2
         "Out of the corner of my eye, I notice Sayori staring stoically into space."
@@ -264,7 +264,7 @@ if encore_sayoriquestion_1 == False:
             mc "And I'm just trying to figure out everything just as much as you are..."
             mc "I should've come to you sooner, I'm sorry..."
             "I hear Sayori sniffle as she works to prevent herself from breaking down and sobbing..."
-            "We're like this for sometime before we hear some commotion come from the closet."
+            "We're like this for some time before we hear some commotion come from the closet."
             scene bg club_day
             show sayori 1m at t11 zorder 1
             stop music
@@ -324,7 +324,7 @@ if encore_sayoriquestion_1 == False:
             hide monika
             show natsuki 5i
             "Natsuki quickly glances back at the closest."
-            "I see the irritation from Natsuki's face is fade away as she dejectedly looks at the floor and starts slowly walking to retrieve her poem."
+            "I see the irritation from Natsuki's face fade away as she dejectedly looks at the floor and starts slowly walking to retrieve her poem."
             mc "Hey, Natsuki."
             "Natsuki turns to me, her face red and eyes glossy as if she was fighting back tears."
             n 5h "Y-{w=0.38}yeah?"
@@ -388,7 +388,7 @@ if encore_sayoriquestion_1 == True:
             s "You've already done so much for me..."
             show sayori 1v
             s "What have I done for you in return?"
-            s 1k "Other then dragging you away from the others."
+            s 1k "Other than dragging you away from the others."
             s 1t "If I wasn't such a mess, you'd still be spending time with Yuri, wouldn't you?"
             "I mean..."
             "I don't see spending some time around Yuri as a bad thing..."
@@ -410,7 +410,7 @@ if encore_sayoriquestion_1 == True:
             mc "Just us..."
             mc "I should've come to you sooner, I'm sorry..."
             "I hear Sayori sniffle as she works to prevent herself from breaking down and sobbing..."
-            "We're like this for sometime before we hear some commotion come from the closet."
+            "We're like this for some time before we hear some commotion come from the closet."
             scene bg club_day
             show sayori 1m at t11 zorder 1
             stop music
@@ -470,7 +470,7 @@ if encore_sayoriquestion_1 == True:
             hide monika
             show natsuki 5i
             "Natsuki quickly glances back at the closest."
-            "I see the irritation from Natsuki's face is fade away as she dejectedly looks at the floor and starts slowly walking to retrieve her poem."
+            "I see the irritation from Natsuki's face fade away as she dejectedly looks at the floor and starts slowly walking to retrieve her poem."
             mc "Hey, Natsuki."
             "Natsuki turns to me, her face red and eyes glossy as if she was fighting back tears."
             n 5h "Y-{w=0.38}yeah?"
@@ -569,7 +569,7 @@ if encore_sayoriquestion_1 == False:
             mc "And I'm just trying to figure out everything just as much as you are..."
             mc "I should've come to you sooner, I'm sorry..."
             "I hear Sayori sniffle as she works to prevent herself from breaking down and sobbing..."
-            "We're like this for sometime before we hear some commotion come from the closet."
+            "We're like this for some time before we hear some commotion come from the closet."
             scene bg club_day
             show sayori 1m at t11 zorder 1
             stop music
@@ -630,7 +630,7 @@ if encore_sayoriquestion_1 == False:
             hide monika
             show natsuki 5i
             "Natsuki quickly glances back at the closest."
-            "I see the irritation from Natsuki's face is fade away as she dejectedly looks at the floor and starts slowly walking to retrieve her poem."
+            "I see the irritation from Natsuki's face fade away as she dejectedly looks at the floor and starts slowly walking to retrieve her poem."
             mc "Hey, Natsuki."
             "Natsuki turns to me, her face red and eyes glossy as if she was fighting back tears."
             n 5h "Y-yeah?"
@@ -694,7 +694,7 @@ if encore_sayoriquestion_1 == True:
             s "You've already done so much for me..."
             show sayori 1v
             s "What have I done for you in return?"
-            s 1k "Other then dragging you away from the others."
+            s 1k "Other than dragging you away from the others."
             s 1t "If I wasn't such a mess, you'd still be spending time with Yuri or Natsuki, wouldn't you?"
             "I mean..."
             "I don't see spending some time around Yuri or Natsuki as a bad thing..."
@@ -716,7 +716,7 @@ if encore_sayoriquestion_1 == True:
             mc "Just us..."
             mc "I should've come to you sooner, I'm sorry..."
             "I hear Sayori sniffle as she works to prevent herself from breaking down and sobbing..."
-            "We're like this for sometime before we hear some commotion come from the closet."
+            "We're like this for some time before we hear some commotion come from the closet."
             scene bg club_day
             show sayori 1m at t11 zorder 1
             stop music
@@ -777,7 +777,7 @@ if encore_sayoriquestion_1 == True:
             hide monika
             show natsuki 5i
             "Natsuki quickly glances back at the closest."
-            "I see the irritation from Natsuki's face is fade away as she dejectedly looks at the floor and starts slowly walking to retrieve her poem."
+            "I see the irritation from Natsuki's face fade away as she dejectedly looks at the floor and starts slowly walking to retrieve her poem."
             mc "Hey, Natsuki."
             "Natsuki turns to me, her face red and eyes glossy as if she was fighting back tears."
             n 5h "Y-{w=0.38}yeah?"
@@ -897,7 +897,7 @@ if encore_festivalquestion_2 == "Natsuki":
     show yuri 2q
     y "Since we didn't quite get the chance to start last time..."
     show yuri 2c
-    mc "Yeah, I started read some of it last night actually. It was pretty interesting!"
+    mc "Yeah, I started to read some of it last night actually. It was pretty interesting!"
     "That wasn't completely true, I did read, but I read it during class..."
     "I wouldn't want to give Yuri the impression that I'm a slacker..."
     mc "I think I understand the story a little bit better now too!"
@@ -983,7 +983,7 @@ mc "Do you feel better now?"
 show yuri 2o zorder 1 at t11
 y "Yeah I do...{w=0.38}I can't really see the book though..."
 mc "Oh! My bad."
-"I try bringing the book closer to Yuri, but it makes makes my arm feel awkward."
+"I try to bring the book closer to Yuri, but it makes makes my arm feel awkward."
 stop music fadeout 1.0
 y 1f "Let me try something."
 "Yuri pushes the book back towards me."
@@ -1009,16 +1009,16 @@ mc "Noted."
 play music t8 fadein 1.0
 hide cg y_cg_1 with wipeleft_scene
 "The chapter actually turns out to be the best one yet!"
-"In the chapter, the main character, this girl named Libitina, is given a second chance to repair her broken relationship with her Uncle, who she's currently living with."
-"Most of the chapter is told through a monologue as Libitina internally debates if it's worth repairing her relationship with her Uncle..."
+"In the chapter, the main character, this girl named Libitina, is given a second chance to repair her broken relationship with her uncle, who she's currently living with."
+"Most of the chapter is told through a monologue as Libitina internally debates if it's worth repairing her relationship with her uncle..."
 "As she's on the run from a league of escapees who want her back in order to complete some 'ritual'."
-"It's quite interesting actually, and through her logic, she knows mending fences with her Uncle is the right thing to do..."
+"It's quite interesting actually, and through her logic, she knows mending fences with her uncle is the right thing to do..."
 "She knows that she might not get another chance to make him happy...{w=0.38}but she doesn't know if it's even worth it in the long run..."
 "After a while we reach the end of the chapter, with Libitina deciding to talk to her friend about what she should do."
 show yuri 1h zorder 1 at t11
 y "Do you think she'll do it, [player]?"
 mc "Hmmm?"
-y 1f "Do you think Libitina will end up making things right with her Uncle?"
+y 1f "Do you think Libitina will end up making things right with her uncle?"
 mc "I mean, I hope she does."
 show yuri 1e
 mc "Very rarely do people get a second chance to do the right thing."
@@ -1118,7 +1118,7 @@ if encore_sayoriquestion_1 == True:
         "What can I do?"
         "If I pull away now, Yuri will get self-conscious and will freak out..."
         "But if I don't pull away...{w=0.38}one thing could lead to another and that wouldn't be right..."
-        "Instead I just opt to stay still and maybe Yuri doesn't do anything..."
+        "Instead I just stay still and hope Yuri doesn't do anything..."
         "I can't really blame her...{w=0.38} she doesn't know about Sayori yet..."
         "And we were in pretty much the same situation last Sunday..."
         show yuri 1s
@@ -1131,7 +1131,7 @@ if encore_sayoriquestion_1 == True:
         "What can I do?"
         "If I pull away now, Yuri will get self-conscious and will freak out..."
         "But if I don't pull away...{w=0.38}one thing could lead to another and that wouldn't be right..."
-        "Instead I just opt to stay still and maybe Yuri doesn't do anything..."
+        "Instead I just stay still and hope Yuri doesn't do anything..."
         "I can't really blame her...{w=0.38} she doesn't know about Sayori yet..."
         "I don't think Yuri would actually kiss me..."
         show yuri 1s
@@ -1270,7 +1270,7 @@ show yuri 1l at t11
 y 1b "Oh, just reading some Portrait of Markov."
 show yuri 1c
 "Yuri proudly shows me the cover of the book."
-"There's a familar ominous-looking eye symbol on the front cover."
+"There's a familiar ominous looking eye symbol on the front cover."
 mc "Oh yeah! Isn't that the horror novel you gave me a couple of weeks ago?"
 show yuri 1f
 y "Why yes, yes it is."
@@ -1294,7 +1294,7 @@ show yuri 4c
 y "Y-{w=0.38}yeah...{w=0.38}it is a focal point in this novel..."
 y "Are you not comfortable with reading something that's about that sort of thing?"
 mc "I mean, it's not often that I do read something that revolves around a plot point like that."
-mc "Its not going to scare me off from reading it."
+mc "It's not going to scare me off from reading it."
 show yuri 1k
 "Yuri sighs with relief."
 show yuri 1s
@@ -1333,7 +1333,7 @@ if encore_sayoriquestion_1 == True or encore_sayoriquestion_1 == False:
 
     if hangout1 == "Natsuki":
         show natsuki 1s at t11 zorder 2
-        "I glance over to Natsuki who appears to organzing her manga again."
+        "I glance over to Natsuki who appears to organizing her manga again."
         "Ah, she’ll be fine for a few minutes…"
         show natsuki at thide
         hide natsuki
@@ -1356,10 +1356,10 @@ if encore_sayoriquestion_1 == True or encore_sayoriquestion_1 == False:
 
 
 show yuri 4c at t11
-mc "Afterall, you did say you wanted us to read together yesterday."
+mc "After all, you did say you wanted us to read together yesterday."
 
 if encore_festivalquestion_2 == "Yuri":
-    mc "And it's been ages since the fesitval..."
+    mc "It's been ages since the festival..."
     y 2q "Yeah...{w=0.38}I did...{w=0.38}and you're right..."
 
 if encore_festivalquestion_2 == "Natsuki":
@@ -1401,7 +1401,7 @@ y "O-{w=0.38}okay..."
 show yuri 2h
 y "It's kind of hard to see..."
 show yuri 2e
-"Yuri leans towards me, I feel her arm pressed against mine."
+"Yuri leans into me, her arm pressing against mine."
 "I guess this is what she meant..."
 "It feels like my left arm is in the way, and I have to use my right to hold the book."
 mc "Ah, I guess it'll be hard to turn the page..."
@@ -1425,7 +1425,7 @@ stop music fadeout 2.0
 y "Ready to begin, [player]?"
 mc "Yeah, let's get started!"
 show yuri 2c
-"Yuri manges a cheerful grin and we begin reading."
+"Yuri smiles cheerfully as we begin reading."
 show yuri at thide
 hide yuri
 with wipeleft_scene
@@ -1494,7 +1494,7 @@ show yuri 2e
 mc "Do you feel better now?"
 show yuri 2o zorder 1 at t11
 mc "Oh, my bad."
-"I try bringing the book closer to Yuri, but it makes makes my arm feel awkward."
+"I try to bring the book closer to Yuri, but it makes makes my arm feel awkward."
 stop music fadeout 1.0
 y 1f "Let me try something."
 "Yuri pushes the book back towards me."
@@ -1520,10 +1520,10 @@ mc "Noted."
 play music t8 fadein 1.0
 hide cg y_cg_1 with wipeleft_scene
 "The chapter actually turns out to be the best one yet!"
-"In the chapter, the main character, this girl named Libitina, is given a second chance to repair her broken relationship with her Uncle, who she's currently living with."
+"In the chapter, the main character, this girl named Libitina, is given a second chance to repair her broken relationship with her uncle, who she's currently living with."
 "Most of the chapter is told through a monologue as Libitina internally debates if it's worth repairing her relationship with her uncle..."
 "As she's on the run from a league of escapees who want her back in order to complete some 'ritual'."
-"It's quite interesting actually, and through her logic, she knows mending fences with her Uncle is the right thing to do..."
+"It's quite interesting actually, and through her logic, she knows mending fences with her uncle is the right thing to do..."
 "She knows that she might not get another chance to make him happy...{w=0.38}but she doesn't know if it's even worth it in the long run..."
 "After a while we reach the end of the chapter, with Libitina deciding to talk to her friend about what she should do."
 
@@ -1538,7 +1538,7 @@ if hangout1 == "Sayori" or  hangout1 == "Natsuki" or hangout1 == "Monika":
 show yuri 1h zorder 1 at t11
 y "Do you think she'll do it, [player]?"
 mc "Hmmm?"
-y 1f "Do you think Libitina will end up making things right with her Uncle?"
+y 1f "Do you think Libitina will end up making things right with her uncle?"
 mc "I mean, I hope she does."
 show yuri 1e
 mc "Very rarely do people get a second chance to do the right thing."
@@ -1652,7 +1652,7 @@ if encore_sayoriquestion_1 == True:
         "What can I do?"
         "If I pull away now, Yuri will get self-conscious and will freak out..."
         "But if I don't pull away...{w=0.38}one thing could lead to another and that wouldn't be right..."
-        "Instead I just opt to stay still and maybe Yuri doesn't do anything..."
+        "Instead I just stay still and hope Yuri doesn't do anything..."
         "I can't really blame her...{w=0.38} she doesn't know about Sayori yet..."
         "And we were in pretty much the same situation last Sunday..."
         show yuri 1s
@@ -1663,6 +1663,7 @@ if encore_sayoriquestion_1 == True:
             show yuri 2y3
             "{cps=35}I'M GOING TO CUT MYSELF TONIGHT AND THINK OF YOU{nw}"
             $ style.say_dialogue = style.normal
+            show yuri 1s
 
 if encore_sayoriquestion_1 == True:
     if encore_festivalquestion_2 == "Natsuki":
@@ -1671,7 +1672,7 @@ if encore_sayoriquestion_1 == True:
         "What can I do?"
         "If I pull away now, Yuri will get self-conscious and will freak out..."
         "But if I don't pull away...{w=0.38}one thing could lead to another and that wouldn't be right..."
-        "Instead I just opt to stay still and maybe Yuri doesn't do anything..."
+        "Instead I just stay still and hope Yuri doesn't do anything..."
         "I can't really blame her...{w=0.38} she doesn't know about Sayori yet..."
         "I don't think Yuri would actually kiss me..."
         show yuri 1s
@@ -1682,6 +1683,7 @@ if encore_sayoriquestion_1 == True:
             show yuri 2y4
             "{cps=35}I'M GOING TO CUT MYSELF TONIGHT AND THINK OF YOU{nw}"
             $ style.say_dialogue = style.normal
+            show yuri 1s
 
 
 if encore_sayoriquestion_1 == False:
@@ -1691,6 +1693,8 @@ if encore_sayoriquestion_1 == False:
         "Is this my chance to finally make a move on Yuri?"
         "I mean we're already so close..."
         scene black with close_eyes
+        show yuri at thide
+        hide yuri
         "I close my eyes..."
         "I feel Yuri placing her hand on my chest as she pulls me in..."
         "Here goes nothing..."
@@ -1717,7 +1721,7 @@ if encore_sayoriquestion_1 == False:
             show yuri 2y3
             "{cps=35}I'M GOING TO CUT MYSELF TONIGHT AND THINK OF YOU{nw}"
             $ style.say_dialogue = style.normal
-
+            show yuri 1s
 
 
 

@@ -17,18 +17,18 @@ if hangout1 == "Sayori" or hangout1 == "Natsuki" or hangout1 == "Yuri":
         "I suddenly wake up with the sudden urge to vomit."
         "I quickly prop myself, trying to supress it."
         "Though as soon as I do that, I feel my head quickly start to ache."
-        "I feel entire body covered in a coat of sweat as I move to clutch my forehead."
+        "I feel my entire body covered in a coat of sweat as I move to clutch my forehead."
         "What the hell is going on with me?"
         "Am I sick?"
         "This is the second time this has happened..."
-        "After a few minutes my head stops throbbing and I feel realtively normal again."
+        "After a few minutes my head stops throbbing and I feel relatively normal again."
         "My eyes wander to my alarm clock."
         "Great...{w=0.38}I don't have to be up for another hour."
         "Well...{w=0.38}I can try falling back asleep..."
         "But if I do, won't I just see the same thing again?"
         "Or worse?"
         "If this keeps happening, I'm probably going to need a psychiatrist."
-        "I don't feel like getting out of bed yet, so I just spend the rest of the time starting at the celling."
+        "I don't feel like getting out of bed yet, so I just spend the rest of the time staring at the ceiling."
         "Though the memories of my nightmares slowly creep back into my mind."
 
         if hangout1 == "Sayori":
@@ -41,14 +41,14 @@ if hangout1 == "Sayori" or hangout1 == "Natsuki" or hangout1 == "Yuri":
             if hangout2 == "Natsuki":
                 "How I walked into Sayori's room and just seeing her hanging there..."
                 "I don't know what was worse..."
-                "Seeying Sayori like that..."
+                "Seeing Sayori like that..."
                 "Or seeing how Natsuki in so much pain as her neck slowly bent..."
 
         if hangout1 == "Sayori":
             if hangout2 == "Yuri":
                 "Remebering how I walked into Sayori's room and just seeing her hanging there..."
                 "I don't know what was worse..."
-                "Seeying Sayori like that..."
+                "Seeing Sayori like that..."
                 "Or seeing Yuri getting attacked and using the knife on herself..."
 
         if hangout1 == "Natsuki":
@@ -115,7 +115,7 @@ if hangout1 == "Monika":
         "But if I do, won't that voice still be there?"
         "If this keeps happening, I'm probably going to need a psychiatrist."
         "Maybe I'm actually starting to go crazy..."
-        "I don't feel like getting out of bed yet, so I just spend the rest of the time starting at the celling."
+        "I don't feel like getting out of bed yet, so I just spend the rest of the time staring at the ceiling."
         "Though the memories of my dreams slowly creep back into my mind."
         "What does it want with me?"
         "And what the hell does it mean by \‘keep doing what you're doing\'?"
@@ -144,7 +144,7 @@ if hangout1 == "Sayori" or hangout1 == "Natsuki" or hangout1 == "Yuri":
         "But if I do, won't that voice still be there?"
         "Will I see something horrible this time?"
         "If this keeps happening, I'm probably going to need a psychiatrist."
-        "I don't feel like getting out of bed yet, so I just spend the rest of the time starting at the celling."
+        "I don't feel like getting out of bed yet, so I just spend the rest of the time staring at the ceiling."
         "Though the memories of my dreams slowly creep back into my mind."
         "What does it want with me?"
         "What's with these dreams?"
@@ -158,7 +158,7 @@ if hangout1 == "Monika":
         "I suddenly wake up with the sudden urge to vomit."
         "I quickly prop myself, trying to supress it."
         "Though as soon as I do that, I feel my head quickly start to ache."
-        "I feel entire body covered in a coat of sweat as I move to clutch my forehead."
+        "I feel my entire body covered in a coat of sweat as I move to clutch my forehead."
         "What the hell is going on with me?"
         "Am I sick?"
         "This didn't happen to me yesterday when I woke up..."
@@ -173,7 +173,7 @@ if hangout1 == "Monika":
         "But if I do, won't I just see the same thing again?"
         "Or will that voice continue to haunt me?"
         "If this keeps happening, I'm probably going to need a psychiatrist."
-        "I don't feel like getting out of bed yet, so I just spend the rest of the time starting at the celling."
+        "I don't feel like getting out of bed yet, so I just spend the rest of the time staring at the ceiling."
         "Though the memories of my nightmares slowly creep back into my mind."
 
 
@@ -239,7 +239,7 @@ if poem_giver == "Yuri":
 
 
 "Maybe I can ask Monika, maybe she knows how to handle this..."
-"I sigh to myself as I pop the last piece of Watermelon into my mouth, grab my backpack, and head outside to meet Sayori."
+"I sigh to myself as I pop the last piece of watermelon into my mouth, grab my backpack, and head outside to meet Sayori."
 
 
 
@@ -258,16 +258,16 @@ show sayori 3x
 s "Well, it's a Wednesday!"
 show sayori 4q
 s "Which means it's only two more days till Friday!"
-mc "I forgot how much you love Friday's..."
+mc "I forgot how much you love friday's..."
 
 if encore_sayoriquestion_1 == True:
     show sayori 1y
     s "Well...{w=0.38}not as much as I love you~"
-    "I feel my face turn red with embrassment."
+    "I feel my face turn red with embarrassment."
     mc "S-{w=0.38}Sayori!"
     show sayori 1r
     s "Yeah?"
-    "I'm barley able to contain my grin as I figure out the best way to respond."
+    "I'm barely able to contain my grin as I figure out the best way to respond."
     mc "Just come here."
     show sayori 1q at face
     "I take Sayori into my arms and squeeze her tightly."
@@ -282,13 +282,13 @@ if encore_sayoriquestion_1 == True:
     "The pain gets worse just as I say that."
     show sayori 1g at h11 zorder 1
     "I end up having to take a step back from Sayori as I clutch my forehead tighter."
-    mc "Just...{w=0.38}give me second."
+    mc "Just...{w=0.38}give me a second."
     show sayori 1e
     "After a few moments the pain subsides."
     s "[player], what's wrong?"
     mc "Ah, it's just a headache, don't worry about it."
     show sayori 1h
-    s "Was it just really a headache though? You looked like you were in a lot of pain..."
+    s "Was it really just a headache though? You looked like you were in a lot of pain..."
     mc "Yeah, but it's gone now. No need to raise a fuss over it, right?"
     show sayori 1k
     s "I mean, I worry about you, [player]..."
@@ -318,14 +318,14 @@ if encore_sayoriquestion_1 == False:
     s "So, how'd you sleep?"
     "And, I spoke to soon..."
     mc "Well..."
-    "I hestiate on how I should respond."
-    "I feel a familar chill crawl down my spine."
+    "I hesitate on how I should respond."
+    "I feel a familiar chill crawl down my spine."
     show sayori 2g
     s "[player], are you okay?"
     show sayori 2h
     s "You look pale..."
     mc "Y-{w=0.38}yeah...{w=0.38}I'm fine..."
-    mc "Just a had a rough night, that's all."
+    mc "Just had a rough night, that's all."
     show sayori 1g
     "Sayori continues to look worringly at me."
     s "[player]..."

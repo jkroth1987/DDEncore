@@ -24,7 +24,7 @@ label mencore_1:
             if encore_sayoriquestion_1 == True:
                 m "Oh, [player]! I thought you'd want to hang out with Sayori again?"
 
-    m 5a "Afterall, you guys are like two peas in a pod over there."
+    m 5a "After all, you guys are like two peas in a pod over there."
     "Monika says teasingly."
 
     if encore_festivalquestion_2 == "Natsuki":
@@ -178,7 +178,7 @@ label mencore_2:
     pause 0.8
     show monika 1j
     "Monika tilts her head up to see who called her, but she instantly smiles once she sees that it's me."
-    m 2k "[player]! I take it you wanted to see my poem afterall?"
+    m 2k "[player]! I take it you wanted to see my poem after all?"
     mc "You know it!"
     mc "Not to mention, I really do enjoy reading your poems!"
     mc "Even if I don't quite understand what they're trying to say sometimes..."
@@ -261,7 +261,7 @@ label mencore_2:
     m u121351 "You're just buttering me up now, aren't you?"
     show monika u111394
     "Monika's eyes take a suggestive tone."
-    "She stands up abruptly, leaning torwards me in an almost seductive manner."
+    "She stands up abruptly, leaning towards me in an almost seductive manner."
     "I was not expecting this..."
     "I feel my heart start pounding in my chest as I feel drop of sweat trickle down my back..."
     mc "Well...{w=0.38}maybe a little{w=0.28}...I did like your poem though, honest!"
@@ -273,7 +273,7 @@ label mencore_2:
     m 1j "You know [player], you really should straighten out your tie."
     m 1k "It's important to me that all my club members look as professional as possible."
     mc "Uh yeah...{w=0.38}you're t-{w=0.28}totally right."
-    mc "How carless of me!"
+    mc "How careless of me!"
     "Monika suddenly grabs a hold of my tie."
     play music t9 fadein 2.5
     show cg m_cg_1 zorder 10 with dissolve_cg
@@ -311,9 +311,6 @@ label mencore_2:
     "Words truly cannot describe what looks back at me.."
     "Everything about her is...{w=0.38}perfect."
     show monika u111311
-    "Her piercing emerald eyes leave me breathless..."
-    "Her hair flows in the nonexistent wind..."
-    "Her warmth flows off of her body and comforts me like the sun on a cloudy day..."
     "It's as if all of my natural senses are being bombarded by the figure standing in front of me..."
     "..."
     show screen tear(20, 0.1, 0.1, 0, 40)
@@ -346,11 +343,10 @@ mc "Oh! Um...."
 "My mind goes completely numb."
 "I don't even know what I'm doing anymore."
 show monika u111394
-"My hands are now rested on her hips, and Monika has \'the look \' on her face."
+"My hands are resting on her hips, and Monika has \'the look \' on her face."
 "My anxiety shoots through the roof."
 "My heart is pounding at a million miles a second."
-"My palms are sweaty..."
-"My knees are really heavy..."
+"My palms become sweaty as my I feel like my legs are about to give out at any second."
 "Is this my chance?"
 "My chance to be with {i}the Monika?{/i}"
 m "I need to tell you something important, [player]..."
@@ -382,7 +378,7 @@ show natsuki at t32
 "Yuri, confused as to what's going on, turns around..."
 show yuri u125111
 "Only to see what Natsuki and Sayori are staring at."
-"Monika and I pratically look like we were just slowdancing in the middle of the clubroom..."
+"Monika and I practically look like we were just slowdancing in the middle of the clubroom..."
 show natsuki 5g
 show sayori 1i
 show yuri u123114
@@ -406,7 +402,7 @@ show monika 1d
 mc "Well Monika{w=0.38}...um...{w=0.38}thanks for the{w=0.38}...advice!"
 mc "It was very inspiring."
 "Monika quickly catches on to what I'm saying."
-m 2b "Well [player], you can come to me anytime."
+m 2b "Well [player], you can come to me any time."
 show monika u111151
 "Monika gives me a wink."
 "I can't help but manage a smile to Monika."
