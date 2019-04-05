@@ -734,7 +734,6 @@ if encore_sayoriquestion_1 == True:
 
 
             if hangout1 == "Monika":
-                "And...{w=0.38}she's out like a light..."
                 mc "Rest-"
                 $ style.say_dialogue = style.edited
                 "{cps=10}In Peace{nw}"
@@ -748,7 +747,7 @@ if encore_sayoriquestion_1 == True:
                 "I can't help but notice how cute she looks sleeping on my shoulder."
 
 
-            "Well, I might as well take this opportunity to get some shuteye myself..."
+            "Well, I might as well take this opportunity to get some shut-eye myself..."
             scene black
             with close_eyes
             "Never in a million years did I think I would’ve ended up with someone like Sayori."
@@ -1839,7 +1838,7 @@ mc "Awesome!"
 "I let Sayori into my house."
 scene bg living_room
 with wipeleft
-"After putting Sayori's poems on the dining room table, I head back to Sayori, who has found her way into the living room."
+"I put Sayori's poems on the dining room table and join her in the living room."
 
 if encore_sayoriquestion_1 == True:
     jump day2_sinteraction

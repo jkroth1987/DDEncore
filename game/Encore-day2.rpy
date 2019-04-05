@@ -39,7 +39,8 @@ if hangout1 == "Sayori" or "Natsuki" or "Yuri":
         if hangout1 == "Monika":
             "I feel another chill creep down my spine as I try to recall what that...{w=0.28}voice...was saying."
             "I put my other hand on my chest as I feel my heartbeat slow down a little."
-            "After a few minutes, I can feel my heartrate return to normal as I wipe the rest of the sweat off my face."
+            "A few minutes pass as I feel my heartrate return to normal."
+            "I wipe the rest of the sweat off my face."
             "I don't think I've ever had a nightmare that bad before..."
             "In fact, I couldn't even remember the last time I had one..."
             "I look over to my alarm clock."
@@ -135,7 +136,7 @@ with wipeleft_scene
 "Granted, everyone's had wind blown in their faces before, but this time it feels...{w=0.28}welcoming..."
 "Heh, well that'd be the first time that mother nature's ever welcomed me..."
 "Though it's slightly cooler than yesterday because of the breeze, it's nothing I can't manage."
-"I just hope I can get my mind off of the lingring effects of that dream as soon as possible..."
+"I just hope I can get my mind off of the lingering effects of that dream as soon as possible..."
 "As if the world was listening to my prayers, out of the corner of my eye I see Sayori coming towards me."
 mc "Hey S-"
 
@@ -487,7 +488,7 @@ if encore_sayoriquestion_1 == True:
     scene bg corridor
     with open_eyes
     play music t3 fadein 2.0
-"Unsurprisingly since we ran all the way to school, we ended up arrving to school relatively early."
+"Unsurprisingly since we ran all the way to school, we ended up arriving to school relatively early."
 "To help pass the time, Sayori and I walk up and down the fairly empty hallways, though it was just mostly us trying to recover from earlier."
 show sayori 3q at t11 zorder 2
 "I'm still silently processing the fact that Sayori somehow managed to pull all this off..."
@@ -567,7 +568,7 @@ show sayori 3h
 s "What do you have against Keith?"
 mc "Nothing! We just have different tastes in music, that's all."
 "He handled the music at the festival last year when we were first years. His remixes were so bad I ended up going home early because I couldn't stand it."
-"Aside from his quirks and occassional moments of cringe, he really isn't that bad of a guy."
+"Aside from his quirks and occasional moments of cringe, he really isn't that bad of a guy."
 mc "We just have that sort of relationship, Sayori."
 mc "Kinda like how we have ours..."
 show sayori 1y
@@ -1409,7 +1410,7 @@ show yuri 3s
 "Especially after..."
 mc "Y-{w=0.38}yeah! I wouldn't mind helping you again!"
 show yuri 2t
-mc "I'd love to come over to your place Any time!"
+mc "I'd love to come over to your place any time!"
 show yuri 2u
 mc "Preparing for the festival with you was really fun!"
 jump day2_awk_2
@@ -1423,7 +1424,7 @@ show yuri 3s
 "Especially after..."
 mc "Y-{w=0.38}yeah! I wouldn't mind helping you!"
 show yuri 2t
-mc "I'd love to come over to your place Any time!"
+mc "I'd love to come over to your place any time!"
 show yuri 2u
 mc "I'm sure it'd be fun!"
 jump day2_awk_2
@@ -1436,7 +1437,7 @@ show yuri 3s
 "It doesn't seem like she wants to let what happened between me and [hangout2] go..."
 mc "Y-{w=0.38}yeah! I wouldn't mind helping you again!"
 show yuri 2t
-mc "I'd love to come over to your place Any time!"
+mc "I'd love to come over to your place any time!"
 show yuri 2u
 mc "Preparing for the festival with you was really fun!"
 jump day2_awk_2
@@ -1546,7 +1547,7 @@ label day2_tend:
 show yuri 1a
 show natsuki 1k
 show sayori 1b
-m 3b "I can type up a summary of what we do on a day-to-day basis and write some things down for what we can tell the Newspaper."
+m 3b "I can type up a summary of what we do on a day-to-day basis and write some things down for what we can tell the newspaper."
 s 4n "Ooh, ooh, I know what I can do!"
 "Everyone turns to Sayori."
 s 1x "I can go to the library and get some books for us to read! I'd think it'd look good for when they take pictures of us!"
@@ -1556,13 +1557,14 @@ mc "Hmmmm..."
 "I take a few moments to think to myself."
 "Suddenly I got an idea."
 mc "Well, I can bring in some famous poems that we could also use for the photo ops, I'd think it'd be great to show that there's more to literature than just books."
-mc "Heck, maybe we can even use some of our own poems as well, I can organize them together like Monika did, but I'll need everyone else's poems."
+mc "Heck, maybe we can even use some of our own poems as well!"
+mc "I can organize them together like Monika did, but I'll need everyone else's poems."
 show yuri 1g
 show monika 1c
 show sayori u114111
 show natsuki u116113
 "Everyone pauses to reflect on what I just said."
-m 2b "That's a good idea, [player]! I'll hand you all my stuff tomorrow if that's ok with you."
+m 2b "That's a good idea, [player]! I'll hand you all my stuff tomorrow if that's okay with you."
 mc "That's perfectly fine!"
 s 2x "I have all my poems back at my place, I can give them to you later."
 
@@ -2039,7 +2041,7 @@ if poem_giver == "Natsuki":
     "After comparing all three stacks, I see Sayori’s stack is completely identical to mine."
     "Natsuki’s stack is the only one that has a pink piece of paper."
     "I begin to look through Natsuki's stack."
-    "I recognize all of the poems she wrote. I even remember the first one she wrote."
+    "Looking through her poems, I can't help but be reminded me of the first time we shared our work..."
     "I always found joy in reading her poems. They're so simple, yet they're just as hard hitting as Monika's, Sayori's and Yuri's."
     "Not to mention I always found her word choice to be cute and adorable. It really does suit her, even if she won't admit it."
     "Through my train of thought, one of the pieces of paper escapes my grip."
@@ -2057,7 +2059,7 @@ elif poem_giver == "Yuri":
     "After comparing all three stacks, I see Sayori’s stack is completely identical to mine."
     "Yuri’s stack is the only one that has a purple piece of paper."
     "I begin to look through Yuri's stack."
-    "I recognize all of the poems she wrote. I even remember the first one she wrote."
+    "Looking through her poems, I can't help but be reminded me of the first time we shared our work..."
     "At first, it was a bit hard to understand the meaning of her poems, but the more I read, the more I understood them."
     "Yuri was always probably one of the club's deepest writers."
     "Her poems may look convoluted and confusing on the surface, but once you got past that, you got to realize that Yuri's poems were always meaningful and articulate."
@@ -2431,7 +2433,7 @@ m "You were doing so well..."
 
 if hangout2 == "Natsuki" or hangout2 == "Yuri":
     m "And now you're putting everything at risk by hanging out with [hangout2]!"
-    m "Not to mention you trying to spend more time with her isn't helping things either!"
+    m "Not to mention you trying to spend more time with Sayori isn't helping things either!"
     m "Do you have any idea just how much harder you're making this on me?!?!?"
     m "Let me remind you again..."
 
@@ -2446,7 +2448,7 @@ if hangout2 == "Yuri":
 
 if hangout2 == "Sayori":
     m "And now you're putting everything at risk by hanging out with [hangout2]!"
-    m "Not to mention you trying to fix your relationship with her isn't helping matters!"
+    m "Not to mention you trying to fix your relationship with Sayori isn't helping matters!"
     m "Do you have any idea just how much harder you're making this on me?!?!?"
     m "Let me remind you again..."
     jump day2_svoid

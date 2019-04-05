@@ -118,7 +118,7 @@ label mencore_1:
     "I must admit I'm not used to Monika showing me this much attention."
     "Not that I mind it anyway. Getting noticed by someone like Monika is a good thing."
     mc "Y-you too, Monika!"
-    mc "Can't wait to see what you wrote too!"
+    mc "Can't wait to see what you wrote as well!"
     show monika 1j
     "Monika lets out a cute giggle."
     "Natsuki shoots us a suspicious look."

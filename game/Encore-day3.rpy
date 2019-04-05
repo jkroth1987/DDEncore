@@ -258,7 +258,7 @@ show sayori 3x
 s "Well, it's a Wednesday!"
 show sayori 4q
 s "Which means it's only two more days till Friday!"
-mc "I forgot how much you love friday's..."
+mc "I forgot how much you love Friday's..."
 
 if encore_sayoriquestion_1 == True:
     show sayori 1y
@@ -316,7 +316,7 @@ if encore_sayoriquestion_1 == False:
     show sayori 1x
     stop music
     s "So, how'd you sleep?"
-    "And, I spoke to soon..."
+    "And, I spoke too soon..."
     mc "Well..."
     "I hesitate on how I should respond."
     "I feel a familiar chill crawl down my spine."

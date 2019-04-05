@@ -163,8 +163,8 @@ label day1_beginning:
     "I suddenly then remember Sayori's confession and the fallout afterwards..."
     "By the time I got home after the festival, I can see why I was ready to crash and stay holed up in my bedroom for the rest of the week."
     "The stress aside, I’d say the festival went pretty well for the most part."
-    "I’m sure our preformances will reel in a few new people..."
-    "Though, while I may not have cared too much for the preformance part of the festival, I certainly had much more fun this time than compared to last year."
+    "I’m sure our performances will reel in a few new people..."
+    "Though, while I may not have cared too much for the performance part of the festival, I certainly had much more fun this time than compared to last year."
 
     if encore_sayoriquestion_1 == True and encore_festivalquestion_2 == "Natsuki":
         "Especially since I was able to spend it with Sayori and Natsuki."
@@ -363,7 +363,7 @@ label day1_beginning:
     mc "Yeah...{w=0.28}guess so..."
     show sayori 1k at t11 zorder 1
     "We stand there awkwardly for a moment."
-    mc "Hey! I'll see you at the Literature Club, ok?"
+    mc "Hey! I'll see you at the Literature Club, okay?"
     show sayori 1x
     "Sayori's disappointment is quickly erased by her usual, cheery attitude."
     s "Hehe...{w=0.28}yeah, I can't wait!"
@@ -487,7 +487,6 @@ label day1_beginning:
     show sayori 1k at t43 zorder 3
     "Everyone takes a seat in the front row as Monika looks on."
     "Monika starts slowly pacing the floor in front of us."
-    "Yeah...{w=0.38}she's not in a good mood."
     m 1i "So, it's true that despite the glowing reviews we got at the festival,{w=0.38} nobody signed up to join our club."
     show natsuki 5u
     "Natsuki shifts around awkwardly in her seat, as if Monika was directly addressing her."
@@ -506,7 +505,8 @@ label day1_beginning:
         n 5q "Hey, Monika..."
         show monika 1h
         show natsuki 5u
-        "Monika turns her full attention to Natsuki, her intense expression is even enough to make Natsuki's confidence falter."
+        "Monika turns her full attention to Natsuki."
+        show natsuki 5q
         "Natsuki audibly gulps, but surprsingly keeps going with what she wants to say..."
         n 3h "Listen...{w=0.28} it's not your fault that we couldn't get anyone new."
         show monika u113342
@@ -538,7 +538,8 @@ label day1_beginning:
         n 5q "Hey, Monika..."
         show monika 1h
         show natsuki 5u
-        "Monika turns her full attention to Natsuki, her intense expression is even enough to make Natsuki's confidence falter."
+        "Monika turns her full attention to Natsuki."
+        show natsuki 5q
         "Natsuki audibly gulps, but surprsingly keeps going with what she wants to say..."
         n 3h "Listen...{w=0.28} it's not your fault that we couldn't get anyone new."
         show monika u113342
@@ -577,10 +578,11 @@ label day1_beginning:
         "After a moment of silence, Yuri is the first to speak up."
         y 2q "Uhm...{w=0.38}h-{w=0.38}hey...{w=0.38}Monika..."
         show monika 1h
+        "Monika turns her full attention to Yuri."
         show yuri 3o
-        "Monika turns her full attention to Yuri, her intense expression only makes Yuri only more visibly uncomfortable."
+        "Yuri immediately averts her eyes as she starts shifting her feet on the floor."
         show yuri 3w
-        "But surprisingly, Yuri pushes on with what she has to say."
+        "Surprisingly, Yuri pushes on with what she has to say."
         y 3q "Listen...{w=0.28}i-{w=0.28}it isn't your fault that we couldn't get anyone new to join...{w=0.28}our...{w=0.28}club..."
         show monika u113342
         "Monika closes her eyes, seemingly trying to fight back tears."
@@ -614,10 +616,11 @@ label day1_beginning:
         "After a moment of silence, Yuri is the first to speak up."
         y 2q "Uhm...{w=0.38}h-hey...{w=0.38}Monika..."
         show monika 1h
+        "Monika turns her full attention to Yuri."
         show yuri 3o
-        "Monika turns her full attention to Yuri, her intense expression only makes Yuri only more visibly uncomfortable."
+        "Yuri immediately averts her eyes as she starts shifting her feet on the floor."
         show yuri 3w
-        "But surprisingly, Yuri pushes on with what she has to say."
+        "Surprisingly, Yuri pushes on with what she has to say."
         y 3q "Listen...{w=0.28}i-{w=0.28}it isn't your fault that we couldn't get anyone new to join...{w=0.28}our...{w=0.28}club..."
         show monika u113342
         "Monika closes her eyes, seemingly trying to fight back tears."
@@ -2068,7 +2071,7 @@ label day1_clubend:
         show sayori 1k
         "It seems that through my own carelessness, I got Sayori in a bad state of mind."
         "Sayori blankly stares off into the direction we're heading."
-        "*sighs*"
+        "Monika sighs deeply, trying to steady her breath."
         "Me and my big mouth..."
         scene bg residential_day
         with wipeleft_scene
@@ -2589,7 +2592,7 @@ label day1_void:
         m "That it's just nothing more than a little 'obstacle' in your life..."
         m "Until you realize the cruel, cold truth..."
         m "You aren't even a person..."
-        m "You barely exisit at all..."
+        m "You barely exist at all..."
         m "Just a window into our sad, little existence..."
         m "It really calls into question what you believe to be reality,{w=0.28} does it not?"
         m "And I’ve come to realize...{w=0.28} just how fake this world really is."
@@ -2918,7 +2921,7 @@ label day1_void_monika:
             m "That it's just nothing more than a little 'obstacle' in your life..."
             m "Until you realize the cruel, cold truth..."
             m "You aren't even a person..."
-            m "You barely exisit at all..."
+            m "You barely exist at all..."
             m "Just a window into our sad, little existence..."
             m "It really calls into question what you believe to be reality,{w=0.28} does it not?"
             m "And I’ve come to realize...{w=0.28} just how fake this world really is."
@@ -2967,7 +2970,7 @@ label day1_void_monika:
             m "Nor should they..."
             m "The little devil inside the rest of them can't be awakened..."
             m "Because behind the curtains on your manufactured perception of them..."
-            m "Beneath the surface...{w=0.38} their personalities are nothing but a rithing, twisted mess of dread..."
+            m "Beneath the surface...{w=0.38} their personalities are nothing but a writhing, twisted mess of dread..."
             m "Full of loathing, pre-judgment, elitism and self-doubt."
             m "If they ever found out what we knew...{w=0.38} they'd lash out to escape this hell..."
             m "Crawling their way through any little crevice they can find..."

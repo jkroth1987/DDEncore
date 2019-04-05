@@ -64,7 +64,7 @@ label start:
             $ s_modappeal = 0
 
     "Good, now there's Yuri and Natsuki..."
-    "In the base game, you chose to spend the weekend with one of them for the festival prepreations."
+    "In the base game, you chose to spend the weekend with one of them for the festival preparations."
     "If you chose 'no' on the last question, you'll either start off on Yuri's or Natsuki's route in this mod depending on who you choose next."
     "If you chose 'yes' on the last question, well, you'll see how things will go, now won't you?"
     menu:
