@@ -5,3 +5,5 @@ Nico-san, your test has come with a passing grade. Welcome to the project!
 Ah! Thank you, Gold-senpai >.<
 
 This is pretty epic
+
+Wait, we're all updating the same file? Nooooooooo, this is going to get confusing!
