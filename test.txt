@@ -1,1 +1,3 @@
 test
+
+Nico-san, your test has come with a passing grade. Welcome to the project!
