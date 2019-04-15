@@ -65,7 +65,7 @@ label mencore_1:
     mc "You seemed to have had a rough day..."
     show monika u114311
     "Monika suddenly realises how excitable she's become and recomposes herself."
-    m 2n "Oh...{w=0.38} yeah...{w=0.38} sorry, I got kind of carried where there, didn't I?"
+    m 2n "Oh...{w=0.38} yeah...{w=0.38} sorry, I got kind of carried away there, didn't I?"
     m 2l "Sorry, [player]! Just seeing you seems to have put me in better spirits~"
     mc "Well, hey! Glad I could help!"
     show monika 1j

@@ -476,7 +476,8 @@ label day1_beginning:
     mc "Oh...{w=0.38}hey, Monika! We were just...{w=0.38}um..."
     "All words escape me in this situation."
     "I look to the other girls to bail me out of this situation, but nobody has anything to say."
-    m 1r "*sighs*"
+    show monika 1r
+    "Monika sighs deeply, trying to steady her breath."
     show monika 1q
     m "It's alright, [player]."
     m 1d "Everyone, take a seat."
@@ -2071,7 +2072,6 @@ label day1_clubend:
         show sayori 1k
         "It seems that through my own carelessness, I got Sayori in a bad state of mind."
         "Sayori blankly stares off into the direction we're heading."
-        "Monika sighs deeply, trying to steady her breath."
         "Me and my big mouth..."
         scene bg residential_day
         with wipeleft_scene

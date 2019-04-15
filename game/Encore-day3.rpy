@@ -379,13 +379,54 @@ label day3_tellsayori:
         s 1k "..."
         mc "I know it was just a dream, but it felt too close to reality for some reason..."
         mc "The way you frantically clawed at the rope..."
+        stop music
         s u115232 "Rope...?"
-        scene black
-        play music e1
-        $ renpy.pause(delay=3, hard=True)
-        stop music fadeout 3.0
-        $ renpy.pause(delay=3, hard=True)
-        jump encore_credits
+        mc "You were hung in front of me..."
+        show sayori 2g
+        mc "It was...{w=0.38}hard to watch..."
+        mc "I felt like I actually lost you..."
+        "Sayori nervously swallows."
+        show sayori 1l
+        s "W-{w=0.38}well I don't know why you'd be having dreams like that, [player]..."
+        s "I would never do something like that..."
+        show sayori 1k
+        s "I couldn't..."
+        "I don't exactly feel reassured by the way she's saying that..."
+
+            if encore_sayoriquestion_1 == True:
+                "Especially since she's said some rather concerning things to me latelty..."
+                "'You're the reason I'm alive'..."
+                " 'Do I really deserve this'..."
+                " 'I don't want this relationship to be a one-way street'..."
+                " 'Lately, I can't stop asking myself that question'..."
+                "I then think back to what that voice said."
+                "..."
+                "I know Sayori's problems are bad, but..."
+                "She wouldn't go that far...{w=0.38}right?"
+
+
+            if encore_sayoriquestion_1 == False:
+                "Though, now that I think about it, before we hungout yesterday, she was acting rather timid around me..."
+
+
+        mc "You okay, Sayori?"
+        show sayori 1n
+        $ renpy.pause(delay=0.8, hard=True)
+        show sayori 2h
+        s "Y-{w=0.38}yeah..."
+        s "I'm fine..."
+        mc "Is there something troubling you?"
+        show sayori 1k
+        s 2g "Can we just go?"
+        s 1h "Please?"
+        "I'm surprised by Sayori's sudden eagerness to go, but nevertheless, I choose to oblige."
+        mc "Yeah, let's just go."
+        mc "It was just a stupid dream anyways, right?"
+        show sayori 1k
+        s "Yeah..."
+
+
+
 
     if hangout2 == "Yuri":
         mc "I watched Yuri die..."
@@ -395,12 +436,7 @@ label day3_tellsayori:
         mc "I know it was just a dream, but it felt too close to reality for some reason..."
         mc "I...{w=0.38}then saw this figure give Yuri a knife and she just stabbed herself..."
         s u115232 "A knife?!?!?"
-        scene black
-        play music e1
-        $ renpy.pause(delay=3, hard=True)
-        stop music fadeout 3.0
-        $ renpy.pause(delay=3, hard=True)
-        jump encore_credits
+        stop music
 
 
     if hangout2 == "Natsuki":
@@ -412,12 +448,7 @@ label day3_tellsayori:
         mc "I know it was just a dream, but it felt too close to reality for some reason..."
         mc "I...{w=0.38}then saw this shadow snap it's fingers and it made Natsuki's neck break."
         s u115232 "She broke her neck?!?!"
-        scene black
-        play music e1
-        $ renpy.pause(delay=3, hard=True)
-        stop music fadeout 3.0
-        $ renpy.pause(delay=3, hard=True)
-        jump encore_credits
+        stop music
 
 
     if hangout2 == "Monika":
@@ -429,14 +460,11 @@ label day3_tellsayori:
         mc "I know it was just a dream, but it feels too real for some reason..."
         mc "It keeps telling me to ‘keep doing what I'm doing' and that it ‘has plans for us'..."
         s u115232 "Plans?!?!"
-        scene black
-        play music e1
-        $ renpy.pause(delay=3, hard=True)
-        stop music fadeout 3.0
-        $ renpy.pause(delay=3, hard=True)
-        jump encore_credits
+        stop music
 
 
+
+label day3_walktoschool_1
 
 
 
@@ -449,6 +477,3 @@ label day3_notellsayori:
     s  1k  "Alright, I guess..."
     "Sayori doesn’t seem convinced by my answer."
     "But, instead of pressing further, we start our walk to school."
-    scene black
-    with dissolve_scene_full
-    jump encore_credits

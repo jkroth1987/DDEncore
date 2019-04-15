@@ -2455,7 +2455,7 @@ show sayori 1bt
 "Sayori tearfully looks at me."
 mc "And...{w=0.38}I'm sorry, Sayori. I shouldn't have done this to you or-"
 show sayori 3bt
-"Sayori puts her finger in my lips."
+"Sayori puts her finger on my lips."
 s "It's fine, [player]."
 s 3bt "I'm just glad that we finally get to spend some time together."
 s "Like we always did."
