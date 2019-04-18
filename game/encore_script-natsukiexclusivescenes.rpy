@@ -158,7 +158,7 @@ show natsuki 1s
 n 1q "You're impossible."
 mc "That makes two of us."
 show natsuki 1i
-"Natsuki and I gaze at each other before we realize how close our faces are too each other."
+"Natsuki and I gaze at each other before we realize how close our faces have gotten."
 show natsuki 4x
 "Natsuki suddenly lets go of my arm."
 n 4y "Go get the chair...{w=0.38} you dummy!"
