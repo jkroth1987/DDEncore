@@ -79,6 +79,9 @@ by Nuxill#7870(Discord) [[Community Asset Folder]
 \"Protagonist_Bedroom_Night by Alex.png\"
 by Alex [[ORG]#9077(Discord) [[Community Asset Folder]
 
+\"school_rooftop by yagamirai10\"
+by yagamirai10 [[Community Asset Folder]
+
 \"encoretextbox.png\" by TheD0ct0r#8275(Discord)
 
 residential_dusk by SovietSpartan
@@ -93,6 +96,8 @@ rainbow_road2.png: Source Unknown
 rainbow_road3.png: https://youtu.be/3KnriAbihms
 rainbow_road4.png: https://youtu.be/3TA6rVtB28w
 Daisy for CGs: https://www.pinterest.com/pin/453878468671138996/
+Cafteria BG: Image Saved By Alania Frank on Pintrest https://i.pinimg.com/originals/ac/32/ab/ac32ab03f90d8d08ef88cfafe788bddf.jpg
+
 
 bg void: www.videoblocks.com
 bg void_2 b Kent Stone

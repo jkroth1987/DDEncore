@@ -874,7 +874,7 @@ label day3_tellsayori:
             show sayori 1k
             s "Can we just go?"
             s 1h "Please?"
-            "I'm surprised by Sayori's sudden change of heart, but nevertheless, I choose to oblige."
+            "I'm surprised by Sayori's sudden willingness to go, but nevertheless, I choose to oblige."
             mc "Yeah...{w=0.38}let's just go."
             mc "It was just a stupid dream anyways, right?"
             show sayori 1k
@@ -990,14 +990,47 @@ jump day3_sayo1
 
 label day3_convo_2:
 "Even though lately it's started to become the norm for our walks, it's still fustrating to be right back we were right after her confession."
-"Especially since we started to move past on Sunday."
+"Especially since we started to move past last Sunday."
 "Now she's thinking who knows what inside that head of hers..."
 "And what does she mean she's had weird dreams too?"
 "It's not like we've went through the same thing..."
 show sayori 1k at t11 zorder 2
 jump day3_sayo2
 
+
+label day3_convo_3:
+show sayori 2g at t11 zorder 2
+"Even though I told Sayori not to worry about me, she keeps giving me glances every now and then."
+"As much as I appreciate her concern, she does need to learn when to focus on herself."
+show sayori 1k
+"That's her biggest flaw."
+"Well, I guess that's what it means to be in a relationship..."
+"Still, maybe I should've told her about these dreams..."
+show sayori 1k
+"Though I'm not really sure what she could do, if anything, to help me through this."
+"It's not like we've gone through the same experience anyway."
+"But, its still nice to know that she's there for me."
+jump day3_sayo1
+
+label day3_convo_4:
+show sayori 2g at t11 zorder 2
+"Even though I told Sayori not to worry about me, she keeps giving me glances every now and then."
+"As much as I appreciate her concern, she does need to learn when to focus on herself."
+show sayori 1k at t11 zorder 2
+"That's her biggest flaw."
+"Still, maybe I should've told her about these dreams..."
+show sayori 1g
+"Knowing how things are between us, I don't want her to feel that I'm purposefully closing myself off from her again."
+"Especially how we were able to open up to each other yesterday..."
+"Though, there's not really much she can do to help me through this..."
+show sayori 1k
+"It's not like we've both had the same kinds of dreams anyways."
+"But, I appreciate knowing that she's still there for me."
+jump day3_sayo2
+
+
 label day3_sayo1:
+show sayori 1k at t11 zorder 2
 "I turn to Sayori, trying to smile hopefully at her, but she's just looking blankly down the road ahead of us as we walk in unison down the sidewalk."
 "I let out a small sigh."
 "I guess she's just not in a talkative mood..."
@@ -1024,9 +1057,10 @@ s "You okay? You just suddenly stopped there for a second."
 mc "I did?"
 show sayori 2g
 "Realizing that Sayori is more than a few steps ahead of me, I quickly run up to catch up to her."
-pass # Temporary
+jump day3_var1
 
 label day3_sayo2:
+show sayori 1k at t11 zorder 2
 "I turn to Sayori, trying to smile hopefully at her, but she's just looking blankly down the road ahead of us as we walk in unison down the sidewalk."
 "I let out a small sigh."
 "I guess she's just not in a talkative mood..."
@@ -1052,6 +1086,11 @@ s "You okay? You just suddenly stopped there for a second."
 mc "I did?"
 show sayori 2g
 "Realizing that Sayori is more than a few steps ahead of me, I quickly run up to catch up to her."
+jump day3_var1
+
+
+
+label day3_var1:
 
 if tell_s == True:
     s 1l "Are you really sure you're okay?"
@@ -1064,7 +1103,7 @@ if tell_s == True:
     mc "I'll be fine, besides, I really need to talk to Monika."
     s 2h "M-{w=0.38}Monika?"
     s 2g "Why?"
-    mc "It's...{w=0.38}something related for what we're doing on Monday."
+    mc "It's...{w=0.38}something related for what we're doing for Monday."
     s 1k "Okay..."
     mc "Hey, Sayori..."
     s 1g "Yeah?"
@@ -1074,75 +1113,6 @@ if tell_s == True:
     mc "You have my word, emergency contact."
     show sayori 1y
     "I see Sayori blush slightly."
-
-    if encore_sayoriquestion_1 == True:
-        s "You trust me that much, huh?"
-        mc "Why wouldn't I?"
-        mc "I mean we've been looking after each other for a while now..."
-        mc "It just feels like it'd be the natural thing to do, you know?"
-        s "Y-{w=0.38}yeah it does..."
-        show sayori 2d
-        s "I like it."
-        "I feel my own face start to heat up."
-
-    if encore_sayoriquestion_1 == False:
-        s "You trust me that much, huh?"
-        mc "I mean, I've known you the longest..."
-        mc "But don't let it get to your head!"
-        show sayori 1q
-        s "I won't~"
-
-    s 1r "Come on, patient [player], or we're really going to be late!"
-    show sayori at lhide
-    hide sayori
-    "Sayori quickens her pace to the point where she's almost jogging."
-    mc "{cps=25}Oh, come on it's only-{nw}"
-    "..."
-    "SHOOT!"
-    mc "Hey! Wait for me!"
-    "I jog after Sayori."
-    jump day3_school
-
-label day3_convo_3:
-"I'm not used to it being this quiet, especially around Sayori."
-"Lately, we've been more than happy to talk about whatever was on our minds, but today's different..."
-show sayori 1k at t11 zorder 2
-"She hasn't even looked at me once since we started walking."
-"Part of me regrets not telling her about the last two nights."
-"I didn't want her to get worked up about it, but instead I've got her now worrying about me."
-show sayori 1f
-"I really do appreciate her concern, but she can't really help me with this..."
-"I just have to power through this!"
-jump day3_sayo
-
-label day3_sayo:
-"I turn to Sayori, trying to smile hopefully at her, but she's just looking blankly down the road ahead of us as we walk in unison down the sidewalk."
-"I let out a small sigh."
-"I guess she's just not in a talkative mood..."
-"And she did sound rather disturbed by what I told her too."
-"Sayori's never been one to stomach horror very well, not that I blame her."
-"Hopefully she'll get over this soon."
-"However, I quickly realize that I have another problem brewing..."
-"[poem_giver]'s letter..."
-"I haven't really thought about how I'm really going to do handle that..."
-"As I was thinking earlier, telling Monika about the situation seems like my best course of action."
-show sayori 1g
-"Normally I'd tell Sayori, but I don't think she'd take it very well right now..."
-"I guess my only real option is to go to Monika before the club..."
-"Knowing [poem_giver] will probably want to talk to me."
-"I'm really not looking forward today..."
-"What if someone else gives me another confession letter?"
-show sayori 1h
-s "[player]?"
-"Sayori takes me out of my train of thought."
-show sayori 1g
-mc "Y-{w=0.38}yeah?"
-show sayori 1h
-s "You okay? You just suddenly stopped there for a second."
-mc "I did?"
-show sayori 2g
-"Realizing that Sayori is more than a few steps ahead of me, I quickly run up to catch up to her."
-
 
 if tell_s == False:
     s 1l "Are you really sure you're okay?"
@@ -1150,86 +1120,22 @@ if tell_s == False:
     mc "I guess I just have alot on my mind."
     s 1k "I see..."
 
+if encore_sayoriquestion_1 == True:
+    s "You trust me that much, huh?"
+    mc "Why wouldn't I?"
+    mc "I mean we've been looking after each other for years..."
+    mc "It just feels like it'd be the natural thing to do, you know?"
+    s "Y-{w=0.38}yeah it does..."
+    show sayori 2d
+    s "I like it."
+    "I feel my own face start to heat up."
 
-    if encore_sayoriquestion_1 == True:
-        show sayori 2g
-        "Even though I told Sayori not to worry about me, she keeps giving me glances every now and then."
-        "As much as I appreciate her concern, she does need to learn when to focus on herself."
-        show sayori 1k
-        "That's her biggest flaw."
-        "Well, I guess that's what it means to be in a relationship..."
-        "Still, maybe I should've told her about these dreams..."
-
-    if encore_sayoriquestion_1 == False:
-        "Even though I told Sayori not to worry about me, she keeps giving me glances every now and then."
-        "As much as I appreciate her concern, she does need to learn when to focus on herself."
-        show sayori 1k
-        "That's her biggest flaw."
-        "Still, maybe I should've told her about these dreams..."
-        show sayori 1g
-        "Knowing how things are between us, I don't want her to feel that I'm purposefully closing myself off from her again."
-        "Especially how we were able to open up to each other yesterday..."
-
-
-show sayori 1k at t11 zorder 2
-"I turn to Sayori, trying to smile hopefully at her, but she's just looking blankly down the road ahead of us as we walk in unison down the sidewalk."
-"I let out a small sigh."
-"I guess she's just not in a talkative mood..."
-"Hopefully she'll get over this soon."
-"However, I quickly realize that I have another problem brewing..."
-"[poem_giver]'s letter..."
-"I haven't even really had the time to think about how I'm going to handle that..."
-"And I don't exactly feel prepared too either..."
-show sayori 1g
-"Telling Sayori right now doesn't seem like a good option either, considering how she is."
-"I guess my only real option is to go to Monika..."
-"I'm really not looking forward to the club today..."
-"What if someone else gives me another confession letter?"
-s "[player]?"
-"Sayori takes me out of my train of thought."
-mc "Y-{w=0.38}yeah?"
-s "You okay? You just suddenly stopped there for a second."
-mc "I did?"
-"Realizing that Sayori is more than a few steps ahead of me, I quickly run up to catch up to her."
-
-if tell_s == True:
-    s 1l "Are you really sure you're okay?"
-    s 1g "You've really been acting strange..."
-    mc "I'll be fine..."
-    mc "I've gone through worse."
-    s 1h "Maybe you should stay home from school today."
-    s 1k "I wouldn't want you to feel any worse..."
-    show sayori 1f
-    mc "I would if I could, but I really need to talk to Monika about something."
-    s 2h "M-{w=0.38}Monika?"
-    s 2g "Why?"
-    mc "It's...{w=0.38}something related to the event."
-    s 1k "Okay..."
-    mc "Hey, Sayori..."
-    s 1g "Yeah?"
-    mc "Don't worry about me, if I feel worse, I'll go to the nurse's office and you can take me home, okay?"
-    s 1l "Okay..."
-    s 1i "But if you feel sick, you text me right away, okay?"
-    mc "You have my word, emergency contact."
-    show sayori 1y
-    "I see Sayori blush slightly."
-
-    if encore_sayoriquestion_1 == True:
-        s "You trust me that much, huh?"
-        mc "Why wouldn't I?"
-        mc "I mean we've been looking after each other for a while now..."
-        mc "It just feels like it'd be the natural thing to do, you know?"
-        s "Y-{w=0.38}yeah it does..."
-        show sayori 2d
-        s "I like it."
-        "I feel my own face start to heat up."
-
-    if encore_sayoriquestion_1 == False:
-        s "You trust me that much, huh?"
-        mc "I mean, I've known you the longest..."
-        mc "But don't let it get to your head!"
-        show sayori 1q
-        s "I won't~"
+if encore_sayoriquestion_1 == False:
+    s "You trust me that much, huh?"
+    mc "I mean, I've known you the longest..."
+    mc "But don't let it get to your head!"
+    show sayori 1q
+    s "I won't~"
 
 s 1r "Come on, patient [player], or we're really going to be late!"
 show sayori at lhide
@@ -1240,3 +1146,304 @@ mc "{cps=25}Oh, come on it's only-{nw}"
 "SHOOT!"
 mc "Hey! Wait for me!"
 "I jog after Sayori."
+jump day3_school
+
+
+
+
+label day3_school:
+scene bg corridor
+with wipeleft_scene
+play music t3 fadein 2.0
+play audio school
+"We were able to make it school just in time for the morning bell."
+show sayori 3b at t11 zorder 2
+"Though I wouldn't be able to walk with Sayori to her class like usual, thanks to the time."
+s 3c "So, I'll see you after your class, [player]."
+mc "Alright, sounds good to me."
+
+if tell_s == True:
+    if encore_sayoriquestion_1 == True:
+        "Sayori glances around the corridor to make sure we're alone."
+        s 3g "Just...{w=0.38}please let me know if you feel worse or anything, okay?"
+        mc "I will, Sayori. Don't worry."
+        mc "I'm more worried about you."
+        s 3h "M{w=0.38}-me? Why?"
+        mc "Earlier you looked like you just saw a ghost."
+        mc "I just hope I didn't scare you with any of the details..."
+        show sayori 3k
+        s "I-{w=0.38}it's not that player, really."
+        s 1h "I'm just more worried about you..."
+
+        if hangout1 == "Sayori" or hangout1 == "Natsuki" or hangout1 == "Yuri" or hangout1 == "Monika":
+            if hangout2 == "Natsuki" or hangout2 == "Yuri" or hangout2 == "Monika":
+                "I'm starting to think that Sayori might somehow have had the same kind of dreams I'm having now..."
+                "But that's not really possible...{w=0.38}is it?"
+                "Oh well, there's no time to think about that now."
+
+        else:
+            pass
+
+        mc "I'll be fine."
+        "I shoot Sayori a reassuring smile."
+        s 1j "Promise?"
+        mc "I promise."
+        show sayori 1h
+        mc "I'll see you later."
+        s 1g "Okay..."
+        show sayori 1d
+        mc "Come here."
+        show sayori 1q at face
+        "Sayori walks up to me to give a brief hug before walking off towards her classroom."
+        show sayori 4d at t11 zorder 2
+        s "I'll see you later, [player]."
+        mc "Laters."
+        show sayori at thide
+        hide sayori
+        "Sayori walks off towards her classroom while I head off in the opposite direction torwards mine."
+        jump day3_class
+
+
+
+if tell_s == True:
+    if encore_sayoriquestion_1 == False:
+        "Sayori glances around the corridor to make sure we're alone."
+        s 3g "Just...{w=0.38}let me know if something happens with you, okay?"
+        mc "I will, Sayori. Don't worry."
+        mc "I'm more worried about you."
+        s 3h "M{w=0.38}-me? Why?"
+        mc "Earlier you looked like you just saw a ghost."
+        mc "I just hope I didn't scare you with any of the details..."
+        show sayori 3k
+        s "I-{w=0.38}it's not that player, really."
+        s 1h "I'm just more worried about you..."
+
+
+        if hangout1 == "Sayori" or hangout1 == "Natsuki" or hangout1 == "Yuri" or hangout1 == "Monika":
+            if hangout2 == "Natsuki" or hangout2 == "Yuri" or hangout2 == "Monika":
+                "I'm starting to think that Sayori might somehow have had the same kind of dreams I'm having now..."
+                "But that's not really possible...{w=0.38}is it?"
+                "Oh well, there's no time to think about that now."
+
+        else:
+            pass
+
+        mc "I'll be fine."
+        "I shoot Sayori a reassuring smile."
+        s 1j "Promise?"
+        mc "I promise."
+        show sayori 1k
+        s "Okay..."
+        show sayori 4d
+        s "I'll see you later, [player]."
+        mc "Laters."
+        show sayori at thide
+        hide sayori
+        "Sayori walks off towards her classroom while I head off in the opposite direction torwards mine."
+        jump day3_class
+
+
+if tell_s == False:
+    if encore_sayoriquestion_1 == True:
+        show sayori 1k
+        "Sayori glances around the corridor to make sure we're alone."
+        s "Just let me know if something happens with you..."
+        s 1g "You didn't look too good this morning."
+        mc "Yeah...{w=0.38}I just had a rough night, that's all."
+        mc "Nothing to be worried about."
+        s 3h "Did you have a bad dream, [player]?"
+        mc "I guess that's one way of putting it."
+        mc "I don't really want to talk about it right now."
+        s 1k "Okay..."
+        s 1j "But you better let me know if something happens with you!"
+        s 1h "I just want you to be okay..."
+        mc "I will Sayori, don't worry."
+        show sayori 1d
+        mc "If I feel worse or anything, you'll be the first to know."
+        s 1g "Okay..."
+        show sayori 1d
+        mc "Come here."
+        show sayori 1q at face
+        "Sayori walks up to me to give a brief hug before walking off towards her classroom."
+        show sayori 4d at t11 zorder 2
+        s "I'll see you later, [player]."
+        mc "Laters."
+        show sayori at thide
+        hide sayori
+        "Sayori walks off towards her classroom while I head off in the opposite direction torwards mine."
+        jump day3_class
+
+
+
+
+if tell_s == False:
+    if encore_sayoriquestion_1 == False:
+        show sayori 1k
+        "Sayori glances around the corridor to make sure we're alone."
+        s "You sure everything is okay?"
+        s 1g "You didn't look too good this morning."
+        mc "Yeah...{w=0.38}I just had a rough night, that's all."
+        mc "Nothing to be worried about."
+        s 3h "Did you have a bad dream, [player]?"
+        mc "I guess that's one way of putting it."
+        mc "I don't really want to talk about it right now."
+        s 1k "Okay..."
+        s 1j "But you better let me know if something happens with you!"
+        s 1h "I just want you to be okay..."
+        mc "I will Sayori, don't worry."
+        show sayori 1d
+        mc "If I feel worse or anything, you'll be the first to know."
+        s 1g "Okay..."
+        show sayori 4d at t11 zorder 2
+        s "I'll see you later, [player]."
+        mc "Laters."
+        show sayori at thide
+        hide sayori
+        "Sayori walks off towards her classroom while I head off in the opposite direction torwards mine."
+        jump day3_class
+
+
+
+label day3_class:
+scene bg class_day
+with wipeleft_scene
+"I walk into class just in time before the teacher starts the lesson."
+"I take my usual spot towards the back of the room and slump down in my chair, preparing for another day of relative boredom."
+"I'd normally think about dozing off, but there's enough on my mind to keep me awake, and most importantly, looking interested in whatever the teacher's going on about."
+stop music fadeout 8.0
+"About these dreams..."
+"About what they mean..."
+"And [poem_giver]'s letter..."
+"Not to mention I now have Sayori worried sick about me."
+
+if tell_s == True:
+    "I don't even know if I did the right thing by telling her..."
+
+if hangout1 == "Sayori" or hangout1 == "Natsuki" or hangout1 == "Yuri" or hangout1 == "Monika":
+    if hangout2 == "Natsuki" or hangout2 == "Yuri" or hangout2 == "Monika":
+        "Not to mention, I'm pretty curious what kind of dreams she's been having..."
+        "Sayori never mentioned anything like that to me before."
+        "Could those be her 'rainclouds'?"
+        jump day3_lunch
+
+else:
+    pass
+
+if tell_s == False:
+    "I don't even know if I did the right thing by not telling her..."
+    jump day3_lunch
+
+
+label day3_lunch:
+"In any case, my most pressing concern is how to deal with [poem_giver]'s confession letter."
+"I think Monika and I share the same lunch period, so I could probably pull her aside then."
+"Hopefully, she'll be willing to talk to me."
+"I sigh to myself as I continue to listen to the teacher drone on."
+with dissolve_scene_full
+scene bg class_day
+with open_eyes
+play audio school
+"After what it feels like an eternity, the lunch bell finally rings."
+"Grabbing the money from my bag, I head out to the cafteria, hoping to find Monika."
+show bg cafeteria
+with wipeleft_scene
+play audio t6 fadein 2.0
+"Enterting the cafteria, I immediately begin to look around for Monika."
+"Alright, if I was Monika, where would I be?"
+"..."
+"Probably torwards the center with all the other popular kids."
+"I start walking to the center of the cafteria."
+show bg cafeteria
+with wipeleft_scene
+"Sure enough, it didn't take me long to spot Monika sitting at one tables at the center of the room."
+show monika 2k at t11 zorder 2
+"As I expected, she seems to be chatting away with some of her friends."
+"This might be harder than I thought."
+"Well, I'm not going to get another chance at talk to her until the club, so it's now or never."
+"I carefully approach Monika's table."
+show monika at thide
+hide monika
+show bg cafeteria
+with wipeleft_scene
+show monika 2l at t11 zorder 2
+m "Wow Akari! I can't believe you guys got away with that!"
+$ a_name = "Akari"
+a "I know right?!?"
+a "It was like, the craziest party ever!"
+a "Too bad you couldn't make it though..."
+m 2m "Ah, well, like I said, I was on that trip for debate club."
+$ r_name = "Ria"
+r "Oh, yeah! The debate club! That club's only gotten more toxic since you left!"
+m 1g "It's gotten that bad, huh?"
+r "Trust me, you left at the best possible time."
+r "I miss the good ol' days..."
+a "When Sora was President?"
+r "Yeah! We were actually productive and went to all those cool events!"
+r "And not always fighting with each other over petty crap..."
+a "Yeah, that's when the club was in it's prime..."
+m 1f "It's a real shame she transferred though..."
+r "I know right?!? She was so nice!"
+a "Yeah, but it sucks that we got suckered into voting for her brother to replace her..."
+a "Todd's nice to me but he's a total -"
+mc "Um...{w=0.38}hey, Monika..."
+show monika 1d at h11
+m "[player]?!?"
+show monika 2m
+m "I-{w=0.38}I didn't know you had this lunch period..."
+mc "Ah! Well, I usually just sit in the back..."
+m "I see..."
+r "Would you like to join us?"
+a "Yeah! We have plenty of room!"
+mc "I appreciate it, but I actually need to talk to Monika real quick."
+show monika 1d
+m "Oh? What for?"
+mc "It's...{w=0.38}urgent..."
+mc "I'd wait to tell you at the club but..."
+show monika 2n
+m "Say no more, [player]..."
+m 3e "I'm always happy to time for you."
+"I feel my face heat up with slight embarassment."
+mc "T-{w=0.38}thank you, Monika! I really appreciate it!"
+m 1b "We'll be right back girls!"
+r "Have fun you two!"
+show monika at thide
+hide monika
+"I lead Monika out of the cafteria and to somewhere where we might have a little more privacy."
+a "She's got him wrapped around her finger."
+r "That's Monika for you."
+show bg school_rooftop
+with wipeleft_scene
+stop music fadeout 3.0
+"I lead Monika up to the rooftop of the school, where there's hardly anyone around that can hear us."
+show monika 2d at t11 zorder 2
+m "So, what's on your mind, [player]?"
+mc "I think I'll just show you..."
+show monika 1g
+"I hand over [poem_giver]'s poem to Monika."
+show monika 3g
+"Monika looks over it with a rather concerned look on her face."
+show monika 2m
+"After about a minute, she finishes reading it."
+m "Well then..."
+m 2n "I guess it's safe to assume that she likes you..."
+mc "Yeah, no kidding!"
+show monika 1f
+mc "What am I supposed to do?"
+mc "Hasn't this ever happened to you before?"
+m 2n "N-{w=0.38}no, not really..."
+m 2m "Nobody's ever been this sweet in trying to ask me out before..."
+m 1p "Usually some boy would just walk up to me and stammer his way through before trying to ask me out."
+m 1q "A few have tried asking me out through text, but to me that's the cheap way..."
+mc "Things would probably be worse had she chosen to text me or walked up to me and confessed."
+mc "I'd have no idea how to handle that..."
+m 2p "Yeah..."
+mc "And I'm pretty sure [poem_giver] is going to try to talk to me later in the club about this."
+m 2n "Well, there's really no reason to think she'd expect you to read her poem right away, right?"
+mc "What do you mean?"
+m 2c "I'm saying that I don't think [poem_giver] was expecting you to read her poem so soon."
+m 2d "In all honesty, she probably thinks you'll read it this weekened when you're preparing the poems for the photoshoot."
+mc "Yeah...{w=0.38}I guess you're right..."
+mc "So i just tell [poem_giver] that I haven't read it yet?"
+m 1e "Pretty much."
+m 1m "At least that way you're buying yourself a little bit of time..."
+mc "Okay, but that still doesn't really solve the problem..."

@@ -173,6 +173,8 @@ image bg closet_empty = "mod_assets/bgs/goodnight.png"
 image bg club_nothing = "mod_assets/bgs/Club+Empty+Night.png"
 image bg residential_dusk = "mod_assets/bgs/residential_dusk.png"
 image bg void_2 = "mod_assets/bgs/void_2.png"
+image bg cafeteria = "mod_assets/bgs/cafeteria.png"
+image bg school_rooftop = "mod_assets/bgs/school_rooftop.png"
 image bg thank_you = "bandicam 2019-03-18-09-10-05-743.png"
 
 image glitch_color:
@@ -1344,7 +1346,11 @@ define y = DynamicCharacter('y_name', image='yuri', what_prefix='"', what_suffix
 define ny = Character('Nat & Yuri', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed")
 define e = Character('Echo', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed")
 define k = DynamicCharacter('k_name', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed")
+define a = DynamicCharacter('a_name', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed")
+define r = DynamicCharacter('r_name', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed")
 default k_name = "Keith"
+default a_name = "Akari"
+default r_name = "Ria"
 
 
 define _dismiss_pause = config.developer
