@@ -2437,7 +2437,7 @@ if hangout1 == "Natsuki":
             m 2n "I see..."
             mc "I have nothing against Yuri, I really don't..."
             mc "I think I just...{w=0.38}like Natsuki better..."
-            mc "But if I ever told her Yuri gave me this, she'd flip out."
+            mc "But if I ever told her that Yuri gave me this, she'd flip out."
             m 2m "Yeah...{w=0.38}she would..."
 
         if encore_festivalquestion_2 == "Yuri":
@@ -2472,7 +2472,34 @@ if hangout1 == "Yuri":
 
 if hangout1 == "Yuri":
     if hangout2 == "Yuri":
-        "sample"
+
+        if encore_festivalquestion_2 == "Natsuki":
+            "sample"
+
+
+        if encore_festivalquestion_2 == "Yuri":
+            show monika 2f
+            mc "I mean to tell you the truth, I didn't even really knew that Natsuki liked me..."
+            mc "In fact I think she thought I hated her at some point because I was spending so much time around Yuri..."
+            mc "So I'm surprised that she'd give me this..."
+            m 2p "Maybe this is her attempt at reaching out to you..."
+            m 2n "To confirm her feelings for you..."
+            mc "Probably..."
+            mc "But, I do feel drawn to Natsuki."
+            mc "We just...{w=0.38}click..."
+            show monika 2o
+            mc "I'm really happy whenever we get to spend time around each other."
+            mc "And I do think she feels the same way."
+            m 2n "I see..."
+            mc "I have nothing against Natsuki, I really don't..."
+            mc "I think I just...{w=0.38}like Yuri better..."
+            mc "But if I ever told her that Natsuki gave me this, she'd flip out."
+            m 2m "Yeah...{w=0.38}she would..."
+
+
+
+
+
 
 if hangout1 == "Yuri":
     if hangout2 == "Monika":
