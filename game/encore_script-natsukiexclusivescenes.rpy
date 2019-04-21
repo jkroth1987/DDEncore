@@ -176,7 +176,7 @@ show natsuki 2u at t11 zorder 1
 show natsuki 2c
 mc "You know I didn't mean that in an insulting way, right?"
 n 5e "I knew that, of course."
-n 5y "What? We're you afraid of offending poor little me?"
+n 5y "What? Were you afraid of offending poor little me?"
 mc "I..."
 "I don't know how I can honestly answer that..."
 n 3z "Hahaha~"
@@ -1679,33 +1679,12 @@ if encore_sayoriquestion_1 == True:
         jump day2_meettheclubs
 
 
-#Yuri Response
+
 
 if encore_sayoriquestion_1 == False:
     if encore_festivalquestion_2 == "Natsuki" or encore_festivalquestion_2 == "Yuri":
         if hangout1 == "Yuri" or hangout1 == "Monika" or hangout1 == "Natsuki":
             jump day2_angry_yn
-
-            label day2_angry_yn:
-            show yuri 3v at t11 zorder 1
-            "While on my way to the front of the room, Yuri abruptly stops me."
-            "She doesn't look too happy with what she just saw, but she also looks like she's unsure if she wants to confront me about what just happened..."
-            "I decide to speak first."
-            mc "Y-{w=0.38}yeah, Yuri?"
-            show yuri 4d
-            y "N-{w=0.38}nothing, [player]...{w=0.38}It was nothing important."
-            show yuri 4c
-            "She looks off to the other side of the room as she mutters softly."
-            show yuri at thide
-            hide yuri
-            "Yuri then briskly walks past me, taking a seat and joining the others."
-            "Well, that was random..."
-            "I just hope she isn’t jealous of me and Natsuki getting so close like that."
-            "She isn’t the jealous type…{w=0.38}right?"
-            jump day2_meettheclubs
-
-
-#Sayori Response 2.0
 
 
 if encore_sayoriquestion_1 == False:
@@ -1713,20 +1692,44 @@ if encore_sayoriquestion_1 == False:
         if hangout1 == "Sayori":
             jump day2_angry_sn
 
-        label day2_angry_sn:
-        show sayori 2t at t11 zorder 1
-        "While on my way to the front of the room, I see Sayori approach me."
-        "She looks rather upset..."
-        mc "Y-{w=0.38}yeah, Sayori?"
-        s "So..."
-        s "This is what false hope really feels like..."
-        mc "W-{w=0.38}what?"
-        mc "What do you mean?"
-        s "I just hope you're happy with your choices, [player]."
-        show sayori at thide
-        hide sayori
-        "Sayori turns and walks to the front of the room, doing her best to compose herself."
-        "I take it she didn't take too kindly to me getting too close to Natsuki like that."
-        "I really need to be more careful around her..."
-        "Though, Sayori was never the jealous type..."
-        jump day2_meettheclubs
+#Yuri Response
+
+label day2_angry_yn:
+show yuri 3v at t11 zorder 1
+"While on my way to the front of the room, Yuri abruptly stops me."
+"She doesn't look too happy with what she just saw, but she also looks like she's unsure if she wants to confront me about what just happened..."
+"I decide to speak first."
+mc "Y-{w=0.38}yeah, Yuri?"
+show yuri 4d
+y "N-{w=0.38}nothing, [player]...{w=0.38}It was nothing important."
+show yuri 4c
+"She looks off to the other side of the room as she mutters softly."
+show yuri at thide
+hide yuri
+"Yuri then briskly walks past me, taking a seat and joining the others."
+"Well, that was random..."
+"I just hope she isn’t jealous of me and Natsuki getting so close like that."
+"She isn’t the jealous type…{w=0.38}right?"
+jump day2_meettheclubs
+
+
+#Sayori Response 2.0
+
+
+label day2_angry_sn:
+show sayori 2t at t11 zorder 1
+"While on my way to the front of the room, I see Sayori approach me."
+"She looks rather upset..."
+mc "Y-{w=0.38}yeah, Sayori?"
+s "So..."
+s "This is what false hope really feels like..."
+mc "W-{w=0.38}what?"
+mc "What do you mean?"
+s "I just hope you're happy with your choices, [player]."
+show sayori at thide
+hide sayori
+"Sayori turns and walks to the front of the room, doing her best to compose herself."
+"I take it she didn't take too kindly to me getting too close to Natsuki like that."
+"I really need to be more careful around her..."
+"Though, Sayori was never the jealous type..."
+jump day2_meettheclubs

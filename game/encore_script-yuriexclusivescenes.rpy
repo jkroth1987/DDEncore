@@ -1791,14 +1791,22 @@ hide natsuki
 
 
 
-
-
-
-
-
-
 if encore_sayoriquestion_1 == True:
     jump day2_caught_y
+
+if encore_sayoriquestion_1 == False:
+    if encore_festivalquestion_2 == "Natsuki" or encore_festivalquestion_2 == "Yuri":
+        if hangout1 == "Sayori":
+            jump day2_angry_sy
+
+
+if encore_sayoriquestion_1 == False:
+    if encore_festivalquestion_2 == "Natsuki" or encore_festivalquestion_2 == "Yuri":
+        if hangout1 == "Natsuki" or hangout1 == "Monika" or hangout1 == "Yuri":
+            jump day2_angry_ny
+
+
+
 
     label day2_caught_y:
         show sayori 1i at t11 zorder 2
@@ -1861,52 +1869,44 @@ if encore_sayoriquestion_1 == True:
 
 #Sayori Response 2.0
 
-if encore_sayoriquestion_1 == False:
-    if encore_festivalquestion_2 == "Natsuki" or encore_festivalquestion_2 == "Yuri":
-        if hangout1 == "Sayori":
-            jump day2_angry_sy
 
-        label day2_angry_sy:
-        show sayori 2t at t11 zorder 1
-        "While on my way to the front of the room, I see Sayori approach me."
-        "She looks rather upset..."
-        mc "Y-{w=0.38}yeah, Sayori?"
-        s "So..."
-        s "This is what false hope really feels like..."
-        mc "W-{w=0.38}what?"
-        mc "What do you mean?"
-        s "I just hope you're happy with your choices, [player]."
-        show sayori at thide
-        hide sayori
-        "Sayori turns and walks to the front of the room, doing her best to compose herself."
-        "I take it she didn't take too kindly to me getting too close to Yuri like that."
-        "I really need to be more careful around her..."
-        "Though, Sayori was never the jealous type..."
-        jump day2_meettheclubs
+
+label day2_angry_sy:
+show sayori 2t at t11 zorder 1
+"While on my way to the front of the room, I see Sayori approach me."
+"She looks rather upset..."
+mc "Y-{w=0.38}yeah, Sayori?"
+s "So..."
+s "This is what false hope really feels like..."
+mc "W-{w=0.38}what?"
+mc "What do you mean?"
+s "I just hope you're happy with your choices, [player]."
+show sayori at thide
+hide sayori
+"Sayori turns and walks to the front of the room, doing her best to compose herself."
+"I take it she didn't take too kindly to me getting too close to Yuri like that."
+"I really need to be more careful around her..."
+"Though, Sayori was never the jealous type..."
+jump day2_meettheclubs
 
 
 #Natsuki Response
 
-if encore_sayoriquestion_1 == False:
-    if encore_festivalquestion_2 == "Natsuki" or encore_festivalquestion_2 == "Yuri":
-        if hangout1 == "Natsuki" or hangout1 == "Monika" or hangout1 == "Yuri":
-            jump day2_angry_ny
-
 
 
 label day2_angry_ny:
-    show natsuki 4g at t11 zorder 1
-    "While on my way to the front of the room,{w=0.4}{nw}"
-    $ _history_list.pop()
-    play sound "sfx/smack.ogg"
-    "While on the way to the front of the room,{fast} Natsuki gives me a \"friendly\" punch in the arm."
-    mc "Ouch! Hey, what was that for?"
-    n 5s "N-{w=0.38}Nothing...{w=0.38}dummy..."
-    "She mutters that softly and avoids eye contact as she briskly walks past me."
-    show natsuki at thide
-    hide natsuki
-    "Well, that was random."
-    "I just hope she isn't jealous of me and Yuri getting so close like that."
-    "Hopefully then, she won't full on put me in the hospital."
-    "Oh well..."
-    jump day2_meettheclubs
+show natsuki 4g at t11 zorder 1
+"While on my way to the front of the room,{w=0.4}{nw}"
+$ _history_list.pop()
+play sound "sfx/smack.ogg"
+"While on the way to the front of the room,{fast} Natsuki gives me a \"friendly\" punch in the arm."
+mc "Ouch! Hey, what was that for?"
+n 5s "N-{w=0.38}Nothing...{w=0.38}dummy..."
+"She mutters that softly and avoids eye contact as she briskly walks past me."
+show natsuki at thide
+hide natsuki
+"Well, that was random."
+"I just hope she isn't jealous of me and Yuri getting so close like that."
+"Hopefully then, she won't full on put me in the hospital."
+"Oh well..."
+jump day2_meettheclubs

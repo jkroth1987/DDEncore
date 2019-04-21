@@ -451,7 +451,6 @@ if encore_sayoriquestion_1 == False:
 
 
 label day2_caught_m:
-
 show sayori 1i at t11 zorder 2
 "While on my way to the front of the room, Sayori stops me."
 "Oh no..."
@@ -471,105 +470,105 @@ menu:
                 jump sayori_not_sorry_m
 
 label sayori_sorry_m:
-    "I sigh to myself."
-    "I might as well man up and apologize."
-    mc "Sayori..."
-    show sayori 1e
-    mc "I’m sorry."
-    mc "It was wrong of me to act in such a way and I promise you…"
-    mc "I love you and only you."
-    show sayori 1g
-    mc "That was just a..."
-    mc "...mistake..."
-    mc "I promise it won't happen again."
-    show sayori 1k
-    "Sayori lets out a pained sigh before putting on a smile."
-    show sayori 1l
-    s "It’s alright, [player]."
-    show sayori 1x
-    s "I forgive you."
-    $ style.say_dialogue = style.edited
-    show sayori 1q
-    s "You should stick to seeing Monika, you cheating jerk!"
-    $ style.say_dialogue = style.normal
-    show sayori 1r
-    s "Come on, let’s not keep the others waiting!"
-    jump day2_meettheclubs
+"I sigh to myself."
+"I might as well man up and apologize."
+mc "Sayori..."
+show sayori 1e
+mc "I’m sorry."
+mc "It was wrong of me to act in such a way and I promise you…"
+mc "I love you and only you."
+show sayori 1g
+mc "That was just a..."
+mc "...mistake..."
+mc "I promise it won't happen again."
+show sayori 1k
+"Sayori lets out a pained sigh before putting on a smile."
+show sayori 1l
+s "It’s alright, [player]."
+show sayori 1x
+s "I forgive you."
+$ style.say_dialogue = style.edited
+show sayori 1q
+s "You should stick to seeing Monika, you cheating jerk!"
+$ style.say_dialogue = style.normal
+show sayori 1r
+s "Come on, let’s not keep the others waiting!"
+jump day2_meettheclubs
 
 label sayori_not_sorry_m:
-    "I don’t want Sayori to get the wrong idea about Monika and I."
-    "I try to come up with an excuse off the fly."
-    mc "Monika was trying to help me…"
-    show sayori 1e
-    mc "She saw that my tie was messed up…and she was trying to fix it up for me..."
-    mc "It was that and only that…{w=0.38}I promise…"
-    show sayori 1k
-    "Sayori lets out a heavy pained sigh before putting on a smile."
-    show sayori 1l
-    s "It’s alright, [player]."
-    show sayori 1x
-    s "I’m just glad she’s being a good friend to you!"
-    $ style.say_dialogue = style.edited
-    show sayori 1q
-    s "I’m totally not jealous or anything like that!"
-    $ style.say_dialogue = style.normal
-    show sayori 1r
-    s "Come on, let’s not keep the others waiting!"
-    jump day2_meettheclubs
+"I don’t want Sayori to get the wrong idea about Monika and I."
+"I try to come up with an excuse off the fly."
+mc "Monika was trying to help me…"
+show sayori 1e
+mc "She saw that my tie was messed up…and she was trying to fix it up for me..."
+mc "It was that and only that…{w=0.38}I promise…"
+show sayori 1k
+"Sayori lets out a heavy pained sigh before putting on a smile."
+show sayori 1l
+s "It’s alright, [player]."
+show sayori 1x
+s "I’m just glad she’s being a good friend to you!"
+$ style.say_dialogue = style.edited
+show sayori 1q
+s "I’m totally not jealous or anything like that!"
+$ style.say_dialogue = style.normal
+show sayori 1r
+s "Come on, let’s not keep the others waiting!"
+jump day2_meettheclubs
 
 
 
 label day2_angry_nm:
-            show natsuki 4g at t11 zorder 1
-            "While on my way to the front of the room,{w=0.4}{nw}"
-            $ _history_list.pop()
-            play sound "sfx/smack.ogg"
-            "While on the way to the front of the room,{fast} Natsuki gives me a \"friendly\" punch in the arm."
-            mc "Ouch! Hey, what was that for?"
-            n 5s "N-{w=0.38}Nothing...{w=0.38}dummy..."
-            "She mutters that softly and avoids eye contact as she briskly walks past me."
-            show natsuki at thide
-            hide natsuki
-            "Well, that was random."
-            "I just hope she isn't jealous of me and Monika getting so close like that."
-            "Hopefully then, she won't full on put me in the hospital."
-            "Oh well..."
-            jump day2_meettheclubs
+show natsuki 4g at t11 zorder 1
+"While on my way to the front of the room,{w=0.4}{nw}"
+$ _history_list.pop()
+play sound "sfx/smack.ogg"
+"While on the way to the front of the room,{fast} Natsuki gives me a \"friendly\" punch in the arm."
+mc "Ouch! Hey, what was that for?"
+n 5s "N-{w=0.38}Nothing...{w=0.38}dummy..."
+"She mutters that softly and avoids eye contact as she briskly walks past me."
+show natsuki at thide
+hide natsuki
+"Well, that was random."
+"I just hope she isn't jealous of me and Monika getting so close like that."
+"Hopefully then, she won't full on put me in the hospital."
+"Oh well..."
+jump day2_meettheclubs
 
 
 label day2_angry_ym:
-            show yuri 3v at t11 zorder 1
-            "While on my way to the front of the room, Yuri abruptly stops me."
-            "She doesn't look too happy with what she just saw, but she also looks like she's unsure if she wants to confront me about what just happened..."
-            "I decide to speak first."
-            mc "Y-{w=0.38}yeah, Yuri?"
-            show yuri 4d
-            y "N-{w=0.38}nothing, [player]...{w=0.38}It was nothing important."
-            show yuri 4c
-            "She looks off to the other side of the room as she mutters softly."
-            show yuri at thide
-            hide yuri
-            "Yuri then briskly walks past me, taking a seat and joining the others."
-            "Well, that was random..."
-            "I just hope she isn’t jealous of me and Monika getting so close like that."
-            "She isn’t the jealous type…{w=0.38}right?"
-            jump day2_meettheclubs
+show yuri 3v at t11 zorder 1
+"While on my way to the front of the room, Yuri abruptly stops me."
+"She doesn't look too happy with what she just saw, but she also looks like she's unsure if she wants to confront me about what just happened..."
+"I decide to speak first."
+mc "Y-{w=0.38}yeah, Yuri?"
+show yuri 4d
+y "N-{w=0.38}nothing, [player]...{w=0.38}It was nothing important."
+show yuri 4c
+"She looks off to the other side of the room as she mutters softly."
+show yuri at thide
+hide yuri
+"Yuri then briskly walks past me, taking a seat and joining the others."
+"Well, that was random..."
+"I just hope she isn’t jealous of me and Monika getting so close like that."
+"She isn’t the jealous type…{w=0.38}right?"
+jump day2_meettheclubs
 
 
 label day2_angry_sm:
-            show sayori 2t at t11 zorder 1
-            "While on my way to the front of the room, I see Sayori approach me."
-            "She looks rather upset..."
-            mc "Y-{w=0.38}yeah, Sayori?"
-            s "So..."
-            s "This is what false hope really feels like..."
-            mc "W-{w=0.38}what?"
-            mc "What do you mean?"
-            s "I just hope you're happy with your choices, [player]."
-            show sayori at thide
-            hide sayori
-            "Sayori turns and walks to the front of the room, doing her best to compose herself."
-            "I take it she didn't take too kindly to me getting too close to Monika like that."
-            "I really need to be more careful around her..."
-            "Though, Sayori was never the jealous type..."
-            jump day2_meettheclubs
+show sayori 2t at t11 zorder 1
+"While on my way to the front of the room, I see Sayori approach me."
+"She looks rather upset..."
+mc "Y-{w=0.38}yeah, Sayori?"
+s "So..."
+s "This is what false hope really feels like..."
+mc "W-{w=0.38}what?"
+mc "What do you mean?"
+s "I just hope you're happy with your choices, [player]."
+show sayori at thide
+hide sayori
+"Sayori turns and walks to the front of the room, doing her best to compose herself."
+"I take it she didn't take too kindly to me getting too close to Monika like that."
+"I really need to be more careful around her..."
+"Though, Sayori was never the jealous type..."
+jump day2_meettheclubs
