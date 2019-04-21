@@ -114,7 +114,7 @@ if encore_festivalquestion_2 == "Natsuki":
         show yuri 4b
         "Yuri starts playing with her hair, as if she's trying to compose herself."
         mc "I mean, yeah...{w=0.38}it's been a while since the festival..."
-        mc "And you knocked it out of the park with your preformance last week!"
+        mc "And you knocked it out of the park with your performance last week!"
         show yuri 4e
         "Yuri continues to blush even harder."
         y "Oh...{w=0.38}well I'm glad you think I did well..."

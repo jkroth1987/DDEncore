@@ -401,7 +401,7 @@ label day3_tellsayori:
             mc "It's all really strange..."
 
         if hangout1 == "Yuri":
-            mc "I opened this door, and I was back at the club, but it was after hours and the room was completetly empty..."
+            mc "I opened this door, and I was back at the club, but it was after hours and the room was completely empty..."
             mc "Then Yuri came in, said a bunch of weird things, then just stabbed herself..."
             s 2h "Gee, [player]..."
             s "That sounds really scary!"
@@ -414,7 +414,7 @@ label day3_tellsayori:
             mc "Though it wasn't exactly happy with me last night, it was mad that I spent time with you for some reason..."
             show sayori 1k
             mc "Whatever that voice is, it doesn't seem that it wants me around you or any of the others..."
-            mc "And it didn't say alot of nice things about you guys either..."
+            mc "And it didn't say a lot of nice things about you guys either..."
             mc "Stuff like 'you're going to die' or something crazy like that..."
             mc "Listening to all that was just as bad as seeing you hanging..."
             mc "It's all really strange..."
@@ -534,7 +534,7 @@ label day3_tellsayori:
             mc "It's all really strange..."
 
         if hangout1 == "Yuri":
-            mc "I opened this door, and I was back at the club, but it was after hours and the room was completetly empty..."
+            mc "I opened this door, and I was back at the club, but it was after hours and the room was completely empty..."
             mc "Then Yuri came in, said a bunch of weird things, then just stabbed herself..."
             s 2h "Gee, [player]..."
             s "That sounds really scary!"
@@ -547,7 +547,7 @@ label day3_tellsayori:
             mc "Though it wasn't exactly happy with me last night, it was mad that I spent time with you for some reason..."
             show sayori 1k
             mc "Whatever that voice is, it doesn't seem that it wants me around you or any of the others..."
-            mc "And it didn't say alot of nice things about you guys either..."
+            mc "And it didn't say a lot of nice things about you guys either..."
             mc "Stuff like 'you're going to die' or something crazy like that..."
             mc "Listening to all that was just as bad as seeing Yuri stab herself..."
             mc "It's all really strange..."
@@ -674,7 +674,7 @@ label day3_tellsayori:
             mc "It's all really strange..."
 
         if hangout1 == "Yuri":
-            mc "I opened this door, and I was back at the club, but it was after hours and the room was completetly empty..."
+            mc "I opened this door, and I was back at the club, but it was after hours and the room was completely empty..."
             mc "Then Yuri came in, said a bunch of weird things, then just stabbed herself..."
             s 2h "Gee, [player]..."
             s "That sounds really scary!"
@@ -687,7 +687,7 @@ label day3_tellsayori:
             mc "Though it wasn't exactly happy with me last night, it was mad that I spent time with you for some reason..."
             show sayori 1k
             mc "Whatever that voice is, it doesn't seem that it wants me around you or any of the others..."
-            mc "And it didn't say alot of nice things about you guys either..."
+            mc "And it didn't say a lot of nice things about you guys either..."
             mc "Stuff like 'you're going to die' or something crazy like that..."
             mc "Listening to all that was just as bad as seeing Natsuki breaking her neck..."
             mc "It's all really strange..."
@@ -811,7 +811,7 @@ label day3_tellsayori:
             mc "It's all really strange..."
 
         if hangout1 == "Yuri":
-            mc "I opened this door, and I was back at the club, but it was after hours and the room was completetly empty..."
+            mc "I opened this door, and I was back at the club, but it was after hours and the room was completely empty..."
             mc "Then Yuri came in, said a bunch of weird things, then just stabbed herself..."
             s 2h "Gee, [player]..."
             s "That sounds really scary!"
@@ -824,7 +824,7 @@ label day3_tellsayori:
             mc "Though it wasn't exactly happy with me last night, it was mad that I spent time with you for some reason..."
             show sayori 1k
             mc "Whatever that voice is, it doesn't seem that it wants me around you or any of the others..."
-            mc "And it didn't say alot of nice things about you guys either..."
+            mc "And it didn't say a lot of nice things about you guys either..."
             mc "Stuff like 'you're going to die' or something crazy like that..."
             mc "'Keep spending time with me.'..."
             mc "It's all really strange..."
@@ -1117,7 +1117,7 @@ if tell_s == True:
 if tell_s == False:
     s 1l "Are you really sure you're okay?"
     s 1g "You've really been acting strange..."
-    mc "I guess I just have alot on my mind."
+    mc "I guess I just have a lot on my mind."
     s 1k "I see..."
 
 if encore_sayoriquestion_1 == True:
@@ -1200,7 +1200,7 @@ if tell_s == True:
         mc "Laters."
         show sayori at thide
         hide sayori
-        "Sayori walks off towards her classroom while I head off in the opposite direction torwards mine."
+        "Sayori walks off towards her classroom while I head off in the opposite direction towards mine."
         jump day3_class
 
 
@@ -1239,7 +1239,7 @@ if tell_s == True:
         mc "Laters."
         show sayori at thide
         hide sayori
-        "Sayori walks off towards her classroom while I head off in the opposite direction torwards mine."
+        "Sayori walks off towards her classroom while I head off in the opposite direction towards mine."
         jump day3_class
 
 
@@ -1270,7 +1270,7 @@ if tell_s == False:
         mc "Laters."
         show sayori at thide
         hide sayori
-        "Sayori walks off towards her classroom while I head off in the opposite direction torwards mine."
+        "Sayori walks off towards her classroom while I head off in the opposite direction towards mine."
         jump day3_class
 
 
@@ -1299,7 +1299,7 @@ if tell_s == False:
         mc "Laters."
         show sayori at thide
         hide sayori
-        "Sayori walks off towards her classroom while I head off in the opposite direction torwards mine."
+        "Sayori walks off towards her classroom while I head off in the opposite direction towards mine."
         jump day3_class
 
 
@@ -1310,7 +1310,7 @@ with wipeleft_scene
 "I walk into class just in time before the teacher starts the lesson."
 "I take my usual spot towards the back of the room and slump down in my chair, preparing for another day of relative boredom."
 "I'd normally think about dozing off, but there's enough on my mind to keep me awake, and most importantly, looking interested in whatever the teacher's going on about."
-stop music fadeout 8.0
+stop music fadeout 4.0
 "About these dreams..."
 "About what they mean..."
 "And [poem_giver]'s letter..."
@@ -1345,13 +1345,13 @@ with open_eyes
 play audio school
 "After what it feels like an eternity, the lunch bell finally rings."
 "Grabbing the money from my bag, I head out to the cafteria, hoping to find Monika."
+play music t6 fadein 2.0
 show bg cafeteria
 with wipeleft_scene
-play audio t6 fadein 2.0
 "Enterting the cafteria, I immediately begin to look around for Monika."
 "Alright, if I was Monika, where would I be?"
 "..."
-"Probably torwards the center with all the other popular kids."
+"Probably towards the center with all the other popular kids."
 "I start walking to the center of the cafteria."
 show bg cafeteria
 with wipeleft_scene
@@ -1373,7 +1373,7 @@ a "It was like, the craziest party ever!"
 a "Too bad you couldn't make it though..."
 m 2m "Ah, well, like I said, I was on that trip for debate club."
 $ r_name = "Ria"
-r "Oh, yeah! The debate club! That club's only gotten more toxic since you left!"
+r "Oh, yeah! The debate club! That place has only gotten more toxic since you left!"
 m 1g "It's gotten that bad, huh?"
 r "Trust me, you left at the best possible time."
 r "I miss the good ol' days..."
@@ -1447,3 +1447,1082 @@ mc "So i just tell [poem_giver] that I haven't read it yet?"
 m 1e "Pretty much."
 m 1m "At least that way you're buying yourself a little bit of time..."
 mc "Okay, but that still doesn't really solve the problem..."
+show monika 1d
+mc "Sooner or later, she's going to ask me about this..."
+show monika 2n
+mc "And I have no idea what I'm going to say..."
+show monika 2m
+m "Well, [player], it all depends on how you feel about her..."
+m 2g "Do you...{w=0.38}like [poem_giver] back in the same way she likes you?"
+mc "I mean..."
+
+if encore_sayoriquestion_1 == True:
+    show monika 2f
+    mc "I'm dating Sayori...{w=0.38}and she needs me now more than ever..."
+    m 2g "Do you love Sayori, [player]?"
+    m 2p "Do you...{w=0.38}enjoy her company?"
+
+if hangout1 == "Sayori":
+    if hangout2 == "Sayori":
+        mc "I do."
+        mc "I'm very happy with her and I wouldn't want to ruin it..."
+        show monika 1q
+        mc "And if I ever did leave her...{w=0.38}we both know she'd be devestated..."
+        mc "We do mean a lot to each other..."
+        show monika 1p
+        m "Yeah..."
+
+
+if hangout1 == "Sayori":
+    if hangout2 == "Natsuki":
+        mc "I do."
+        mc "I'm very happy with her and I wouldn't want to ruin it..."
+        mc "I didn't intend to get like that with Natsuki yesterday either..."
+        mc "She caught me completely by surprise..."
+        m 2e "It's fine, [player], don't worry too much about it."
+        mc "Well, Sayori wasn't too happy with what she saw..."
+        m 2m "I imagine..."
+        m 4n "She took it a lot better than I would've though..."
+
+        if apologize_sn == True:
+            mc "Yeah, I was straight with her about what happened..."
+            m 2e "Well...{w=0.38}that's good..."
+            m 1m "I'm sure she appreciated you being honest with her, [player]..."
+            mc "Yeah..."
+
+        if apologize_sn == False:
+            mc "Well I was an idiot and lied about what happened to her..."
+            show monika 2d
+            "Monika's eyes light up with curiosity."
+            m "Oh? What do you mean?"
+            mc "I made up some excuse about what happened, but I ended up apologizing to her about lying and about what happened..."
+            show monika 2m
+            m "[player]...{w=0.38}I'm surprised at you..."
+            mc "Yeah...{w=0.38}I'm not really proud of it."
+            m 2e "I understand, [player]..."
+            mc "You do?"
+            m "You did something you're not proud of and you tried to justify it..."
+            m 3e "We do it all the time..."
+            m 2m "So I wouldn't get too hung up over it..."
+            mc "Yeah...{w=0.38}you're right."
+
+
+
+if hangout1 == "Sayori":
+    if hangout2 == "Yuri":
+        mc "I do."
+        mc "I'm very happy with her and I wouldn't want to ruin it..."
+        mc "I didn't intend to get like that with Yuri yesterday either..."
+        mc "She caught me completely by surprise..."
+        m 2e "It's fine, [player], don't worry too much about it."
+        mc "Well, Sayori wasn't too happy with what she saw..."
+        m 2m "I imagine..."
+        m 4n "She took it a lot better than I would've though..."
+
+        if apologize_sy == True:
+            mc "Yeah, I was straight with her about what happened..."
+            m 2e "Well...{w=0.38}that's good..."
+            m 1m "I'm sure she appreciated you being honest with her, [player]..."
+            mc "Yeah..."
+
+        if apologize_sy == False:
+            mc "Well I was an idiot and lied about what happened to her..."
+            show monika 2d
+            "Monika's eyes light up with curiosity."
+            m "Oh? What do you mean?"
+            mc "I made up some excuse about what happened, but I ended up apologizing to her about lying and about what happened..."
+            show monika 2m
+            m "[player]...{w=0.38}I'm surprised at you..."
+            mc "Yeah...{w=0.38}I'm not really proud of it."
+            m 2e "I understand, [player]..."
+            mc "You do?"
+            m "You did something you're not proud of and you tried to justify it..."
+            m 3e "We do it all the time..."
+            m 2m "So I wouldn't get too hung up over it..."
+            mc "Yeah...{w=0.38}you're right."
+
+if hangout1 == "Sayori":
+    if hangout2 == "Monika":
+        mc "I do."
+        mc "I'm very happy with her and I wouldn't want to ruin it..."
+        show monika 2m
+        mc "Though, to be honest, I wasn't expecting us to be like that yesterday..."
+        mc "You did catch me by surprise..."
+        m 2l "Yeah...{w=0.38}me neither..."
+        m 2m "It just kind of happened..."
+        m 2e "It felt...{w=0.38}nice being with you like that..."
+        show monika 2n
+        mc "I mean...{w=0.38}I liked it too..."
+        show monika 2f
+        mc "But it might be better if we don't do that again..."
+        mc "I like being your friend, but for now that's really all I can commit to."
+        m 1o "It's fine, [player]..."
+        m 5a "On the bright side...{w=0.38}your tie seems to be looking presentable today~"
+        mc "Yeah...{w=0.38}I guess it does..."
+        show monika 1k
+        "We manage to share a small laugh before the reality of the situation returns."
+        show monika 1n
+        m "So...{w=0.38}what was Sayori's reaction to seeing us like that?"
+        m 1g "She didn't really bring anything up with me when I had class with her earlier..."
+        mc "Well we both know Sayori isn't the confrontational type, but yeah, she wasn't too happy with what she saw..."
+        m 2m "What'd you tell her?"
+
+
+        if apologize_sm == True:
+            mc "I was straight with her about what happened..."
+            m 2e "Well...{w=0.38}that's good..."
+            m 1m "I'm sure she appreciated you being honest with her, [player]..."
+            mc "Yeah..."
+
+        if apologize_sm == False:
+            mc "Well I was an idiot and lied about what happened to her..."
+            show monika 2d
+            "Monika's eyes light up with curiosity."
+            m "Oh? What do you mean?"
+            mc "I made up some excuse about what happened, but I ended up apologizing to her about lying and about what happened..."
+            show monika 2m
+            m "[player]...{w=0.38}I'm surprised at you..."
+            mc "Yeah...{w=0.38}I'm not really proud of it."
+            m 2e "I understand, [player]..."
+            mc "You do?"
+            m "You did something you're not proud of and you tried to justify it..."
+            m 3e "We do it all the time..."
+            m 2m "And it's more my fault than your's anyways..."
+            m 2e "So, don't beat yourself up over it too much."
+            mc "Alright..."
+
+
+if hangout1 == "Natsuki":
+    if hangout2 == "Sayori":
+        mc "I do."
+        mc "I'm very happy with her and I wouldn't want to ruin it..."
+        show monika 1q
+        mc "And if I ever did leave her...{w=0.38}we both know she'd be devestated..."
+        mc "We do mean a lot to each other..."
+        show monika 2f
+        mc "That much has become more clear to me lately."
+        mc "She needs me around until she gets better."
+        show monika 1p
+        m "I see..."
+
+
+
+if hangout1 == "Natsuki":
+    if hangout2 == "Natsuki":
+        mc "I do."
+        mc "I'm very happy with her and I wouldn't want to ruin it..."
+        show monika 2m
+        m "But you have been spending a lot of time around Natsuki lately."
+
+
+        if encore_festivalquestion_2 == "Natsuki":
+            m 2n "You two did spend last Sunday together..."
+            m 4n "And you seem to have gotten to know her quite well recently..."
+            mc "Yeah...{w=0.38}we really have..."
+            m 4m "I've seen the way she looks at you when you're reading manga together, [player]..."
+            m 2n "In hindsight, you should've seen this coming..."
+            mc "I'm just trying to be friends with her..."
+            m 2e "I'm glad that you two are now good friends..."
+            m 2g "But do you like Natsuki more?"
+
+
+        if encore_festivalquestion_2 == "Yuri":
+            m 2n "Even though you guys have only started really talking recently, I think she really appreciates you for spending time wtih her..."
+            m 4n "You seem to have gotten to know her quite well recently..."
+            mc "Yeah...{w=0.38}we really have..."
+            m 4m "I've seen the way she looks at you when you're reading manga together, [player]..."
+            m 2n "And the way she's always acted around you..."
+            m 2m "I suspect she liked you from the very begining..."
+            mc "I'm just trying to be friends with her..."
+            m 2e "I'm glad that you two are now good friends..."
+            m 2g "But do you like Natsuki more?"
+
+        mc "I mean, I want to stay committed to Sayori."
+        show monika 2o
+        mc "I really do."
+        mc "I chose to be with her."
+        mc "But, something about Natsuki just draws me to her..."
+        mc "I can't explain it..."
+        m 2p "Do you think you're catching feelings for her?"
+        mc "I...{w=0.38}don't know."
+        show monika 1g
+        m "Well player, you know how Sayori would be if you left her..."
+        mc "I know...{w=0.38}and that's what scares me..."
+        mc "But I'm not unhappy with her or anything, I love spending time with her!"
+        show monika 2m
+        mc "I guess...{w=0.38}I don't know..."
+        mc "Natsuki just lights up my world in a way Sayori hasn't yet..."
+        m 1g "If you're thinking like that, [player], your relationship with her might be doomed to fail..."
+        m 1f "How does Sayori feel about all this?"
+
+
+        if apologize_sn == True:
+            mc "I was straight with her about what happened yesterday..."
+            m 2e "Well...{w=0.38}that's good..."
+            m 1m "I'm sure she appreciated you being honest with her, [player]..."
+            mc "Yeah..."
+
+        if apologize_sn== False:
+            mc "Well I was an idiot and lied about what happened to her yesterday..."
+            show monika 2d
+            "Monika's eyes light up with curiosity."
+            m "Oh? What do you mean?"
+            mc "I made up some excuse about what happened, but I ended up apologizing to her about lying and about what happened..."
+            show monika 2m
+            mc "But...{w=0.38}we did make up..."
+            mc "But I know I hurt her...{w=0.38}and I don't want to do that to her...."
+            m 2p "Well, we can handle Sayori another time..."
+            m 2m "Speaking of which..."
+
+
+
+
+if hangout1 == "Natsuki":
+    if hangout2 == "Yuri":
+            mc "I do."
+            mc "I'm very happy with her and I wouldn't want to ruin it..."
+            show monika 2m
+            m "But you haven't been spending a lot of time around Sayori in the club lately."
+            m 2g "You've been around Natsuki and Yuri a lot latetly..."
+
+            if encore_festivalquestion_2 == "Natsuki":
+                m 2n "You did seem to enjoy spending last Sunday with Natsuki.."
+                m 4n "And you guys looked like you were having fun on Monday..."
+                m "Though she didn't seem to have liked seeing you getting so close to Yuri yesterday..."
+                mc "Yeah...{w=0.38}I didn't think that was going to happen to be honest..."
+                mc "It just...{w=0.38}kind of happened..."
+                mc "But, it's been great getting to know Natsuki..."
+                m 4m "I've seen the way she looks at you when you're reading manga together, [player]..."
+                m 2n "In hindsight, you should've seen this coming..."
+                mc "I'm just trying to be friends with her..."
+                m 2e "I'm glad that you two are now good friends..."
+                m 2g "But do you like Natsuki more over Sayori and Yuri?"
+                mc "I mean, I want to stay committed to Sayori."
+                show monika 2o
+                mc "I really do."
+                mc "I chose to be with her."
+                mc "But, something about Natsuki just draws me to her..."
+                mc "I can't explain it..."
+                m 2p "Do you think you're catching feelings for her?"
+                mc "I...{w=0.38}don't know."
+                show monika 1g
+                m "Well player, you know how Sayori would be if you left her..."
+                mc "I know...{w=0.38}and that's what scares me..."
+                mc "But I'm not unhappy with her or anything, I love spending time with her!"
+                show monika 2m
+                mc "I guess...{w=0.38}I don't know..."
+                mc "Natsuki just lights up my world in a way Sayori hasn't yet..."
+                m 1g "If you're thinking like that, [player], your relationship with her might be doomed to fail..."
+                m 1f "How does Sayori feel about all this?"
+
+
+                if apologize_sn == True:
+                    mc "I was straight with her about what happened yesterday..."
+                    m 2e "Well...{w=0.38}that's good..."
+                    m 1m "I'm sure she appreciated you being honest with her, [player]..."
+                    mc "Yeah..."
+
+                if apologize_sn== False:
+                    mc "Well I was an idiot and lied about what happened to her yesterday..."
+                    show monika 2d
+                    "Monika's eyes light up with curiosity."
+                    m "Oh? What do you mean?"
+                    mc "I made up some excuse about what happened, but I ended up apologizing to her about lying and about what happened..."
+                    show monika 2m
+                    mc "But...{w=0.38}we did make up..."
+                    mc "But I know I hurt her...{w=0.38}and I don't want to do that to her...."
+                    m 2p "Well, we can handle Sayori another time..."
+                    m 2m "Speaking of which..."
+
+
+
+            if encore_festivalquestion_2 == "Yuri":
+                m 2n "You did seem to enjoy spending last Sunday with Yuri..."
+                m 2m "Though she looked disappointed that you didn't spend much time around her on Monday..."
+                mc "Yeah, I didn't realize how much she valued us reading together..."
+                m 4n "You seem to have gotten to know her quite well recently..."
+                mc "Yeah...{w=0.38}we really have..."
+                m 4m "I've seen the way she looks at you when you're reading with her, [player]..."
+                m 2n "And the way she's always acted around you..."
+                m 2m "I suspect she liked you from the very begining..."
+                mc "I'm just trying to be friends with her..."
+                m 2e "I'm glad that you two are now good friends..."
+                m 2g "But do you like Yuri more over Sayori and Natsuki?"
+                mc "I mean, I want to stay committed to Sayori."
+                show monika 2o
+                mc "I really do."
+                mc "I chose to be with her."
+                mc "But, something about Natsuki just draws me to her..."
+                mc "I can't explain it..."
+                m 2p "Do you think you're catching feelings for her?"
+                mc "I...{w=0.38}don't know."
+                show monika 1g
+                m "Well player, you know how Sayori would be if you left her..."
+                mc "I know...{w=0.38}and that's what scares me..."
+                mc "But I'm not unhappy with her or anything, I love spending time with her!"
+                show monika 2m
+                mc "I guess...{w=0.38}I don't know..."
+                mc "Yuri just lights up my world in a way Sayori hasn't yet..."
+                m 1g "If you're thinking like that, [player], your relationship with her might be doomed to fail..."
+                m 1f "How does Sayori feel about all this?"
+
+
+                if apologize_sy == True:
+                    mc "I was straight with her about what happened yesterday..."
+                    m 2e "Well...{w=0.38}that's good..."
+                    m 1m "I'm sure she appreciated you being honest with her, [player]..."
+                    mc "Yeah..."
+
+                if apologize_sy== False:
+                    mc "Well I was an idiot and lied about what happened to her yesterday..."
+                    show monika 2d
+                    "Monika's eyes light up with curiosity."
+                    m "Oh? What do you mean?"
+                    mc "I made up some excuse about what happened, but I ended up apologizing to her about lying and about what happened..."
+                    show monika 2m
+                    mc "But...{w=0.38}we did make up..."
+                    mc "But I know I hurt her...{w=0.38}and I don't want to do that to her...."
+                    m 2p "Well, we can handle Sayori another time..."
+                    m 2m "Speaking of which..."
+
+
+
+
+
+if hangout1 == "Natsuki":
+    if hangout2 == "Monika":
+        mc "I do."
+        mc "I'm very happy with her and I wouldn't want to ruin it..."
+        show monika 2m
+        m "But you haven't been spending a lot of time around Sayori in the club lately."
+        mc "I haven't been trying to avoid her or anything..."
+        mc "I've just wanted to get to know the others a little bit better."
+        mc "I had fun spend some time around Natsuki on Monday..."
+
+        if encore_festivalquestion_2 == "Natsuki":
+            mc "It was nice catching up with her since the festival."
+
+        if encore_festivalquestion_2 == "Yuri":
+            mc "I didn't really get much of a chance to spend time around her before..."
+
+        show monika 2e
+        mc "And I'm glad we've finally got to spend some time around each other too..."
+        m 2m "Y-{w=0.38}yeah...{w=0.38}it was nice..."
+        mc "Though, to be honest, I wasn't expecting us to be like that yesterday..."
+        mc "You did catch me by surprise..."
+        m 2l "Yeah...{w=0.38}me neither..."
+        m 2m "It just kind of happened..."
+        m 2e "It felt...{w=0.38}nice being with you like that..."
+        show monika 2n
+        mc "I mean...{w=0.38}I liked it too..."
+        show monika 2f
+        mc "But it might be better if we don't do that again..."
+        mc "I like being your friend, but for now that's really all I can commit to."
+        m 1o "It's fine, [player]..."
+        m 5a "On the bright side...{w=0.38}your tie seems to be looking presentable today~"
+        mc "Yeah...{w=0.38}I guess it does..."
+        show monika 1k
+        "We manage to share a small laugh before the reality of the situation returns."
+        show monika 1n
+        m "So...{w=0.38}what was Sayori's reaction to seeing us like that?"
+        m 1g "She didn't really bring anything up with me when I had class with her earlier..."
+        mc "Well we both know Sayori isn't the confrontational type, but yeah, she wasn't too happy with what she saw..."
+        m 2m "What'd you tell her?"
+
+        if apologize_sm == True:
+            mc "I was straight with her about what happened..."
+            m 2e "Well...{w=0.38}that's good..."
+            m 1m "I'm sure she appreciated you being honest with her, [player]..."
+            mc "Yeah..."
+
+        if apologize_sm == False:
+            mc "Well I was an idiot and lied about what happened to her..."
+            show monika 2d
+            "Monika's eyes light up with curiosity."
+            m "Oh? What do you mean?"
+            mc "I made up some excuse about what happened, but I ended up apologizing to her about lying and about what happened..."
+            show monika 2m
+            m "[player]...{w=0.38}I'm surprised at you..."
+            mc "Yeah...{w=0.38}I'm not really proud of it."
+            m 2e "I understand, [player]..."
+            mc "You do?"
+            m "You did something you're not proud of and you tried to justify it..."
+            m 3e "We do it all the time..."
+            m 2m "And it's more my fault than your's anyways..."
+            m 2e "So, don't beat yourself up over it too much."
+            mc "Alright..."
+
+
+
+if hangout1 == "Yuri":
+    if hangout2 == "Sayori":
+        mc "I do."
+        mc "I'm very happy with her and I wouldn't want to ruin it..."
+        show monika 1q
+        mc "And if I ever did leave her...{w=0.38}we both know she'd be devestated..."
+        mc "We do mean a lot to each other..."
+        show monika 2f
+        mc "That much has become more clear to me lately."
+        mc "She needs me around until she gets better."
+        show monika 1p
+        m "I see..."
+
+
+
+if hangout1 == "Yuri":
+    if hangout2 == "Natsuki":
+        mc "I do."
+        mc "I'm very happy with her and I wouldn't want to ruin it..."
+        show monika 2m
+        m "But you haven't been spending a lot of time around Sayori in the club lately."
+        m 2g "You've been around Yuri and Natsuki a lot latetly..."
+
+        if encore_festivalquestion_2 == "Natsuki":
+            m 2n "You did seem to enjoy spending last Sunday with Natsuki.."
+            m 2m "Though she looked disappointed that you didn't spend much time around her on Monday..."
+            mc "Yeah, I didn't realize how much she liked reading together..."
+            m 4n "You seem to have gotten to know her quite well recently..."
+            mc "Yeah...{w=0.38}we really have..."
+            m 4m "I've seen the way she looks at you when you're reading manga together, [player]..."
+            m 2n "In hindsight, you should've seen this coming..."
+            mc "I'm just trying to be friends with her..."
+            m 2e "I'm glad that you two are now good friends..."
+            m 2g "But do you like Natsuki more over Sayori and Yuri?"
+            mc "I mean, I want to stay committed to Sayori."
+            show monika 2o
+            mc "I really do."
+            mc "I chose to be with her."
+            mc "But, something about Natsuki just draws me to her..."
+            mc "I can't explain it..."
+            m 2p "Do you think you're catching feelings for her?"
+            mc "I...{w=0.38}don't know."
+            show monika 1g
+            m "Well player, you know how Sayori would be if you left her..."
+            mc "I know...{w=0.38}and that's what scares me..."
+            mc "But I'm not unhappy with her or anything, I love spending time with her!"
+            show monika 2m
+            mc "I guess...{w=0.38}I don't know..."
+            mc "Natsuki just lights up my world in a way Sayori hasn't yet..."
+            m 1g "If you're thinking like that, [player], your relationship with her might be doomed to fail..."
+            m 1f "How does Sayori feel about all this?"
+
+
+            if apologize_sn == True:
+                mc "I was straight with her about what happened yesterday..."
+                m 2e "Well...{w=0.38}that's good..."
+                m 1m "I'm sure she appreciated you being honest with her, [player]..."
+                mc "Yeah..."
+
+            if apologize_sn== False:
+                mc "Well I was an idiot and lied about what happened to her yesterday..."
+                show monika 2d
+                "Monika's eyes light up with curiosity."
+                m "Oh? What do you mean?"
+                mc "I made up some excuse about what happened, but I ended up apologizing to her about lying and about what happened..."
+                show monika 2m
+                mc "But...{w=0.38}we did make up..."
+                mc "But I know I hurt her...{w=0.38}and I don't want to do that to her...."
+                m 2p "Well, we can handle Sayori another time..."
+                m 2m "Speaking of which..."
+
+
+
+        if encore_festivalquestion_2 == "Yuri":
+            m 2n "You did seem to enjoy spending last Sunday with Natsuki.."
+            m 4n "And you guys looked like you were having fun on Monday..."
+            m "Though she didn't seem to have liked seeing you getting so close to Yuri yesterday..."
+            mc "Yeah...{w=0.38}I didn't think that was going to happen to be honest..."
+            mc "It just...{w=0.38}kind of happened..."
+            mc "But, it's been great getting to know Yuri..."
+            m 4m "I've seen the way she looks at you when you're reading with her, [player]..."
+            m 2n "And the way she's always acted around you..."
+            m 2m "I suspect she liked you from the very begining..."
+            mc "I'm just trying to be friends with her..."
+            m 2e "I'm glad that you two are now good friends..."
+            m 2g "But do you like Yuri more over Sayori and Natsuki?"
+            mc "I mean, I want to stay committed to Sayori."
+            show monika 2o
+            mc "I really do."
+            mc "I chose to be with her."
+            mc "But, something about Yuri just draws me to her..."
+            mc "I can't explain it..."
+            m 2p "Do you think you're catching feelings for her?"
+            mc "I...{w=0.38}don't know."
+            show monika 1g
+            m "Well player, you know how Sayori would be if you left her..."
+            mc "I know...{w=0.38}and that's what scares me..."
+            mc "But I'm not unhappy with her or anything, I love spending time with her!"
+            show monika 2m
+            mc "I guess...{w=0.38}I don't know..."
+            mc "Yuri just lights up my world in a way Sayori hasn't yet..."
+            m 1g "If you're thinking like that, [player], your relationship with her might be doomed to fail..."
+            m 1f "How does Sayori feel about all this?"
+
+
+            if apologize_sy == True:
+                mc "I was straight with her about what happened yesterday..."
+                m 2e "Well...{w=0.38}that's good..."
+                m 1m "I'm sure she appreciated you being honest with her, [player]..."
+                mc "Yeah..."
+
+            if apologize_sy== False:
+                mc "Well I was an idiot and lied about what happened to her yesterday..."
+                show monika 2d
+                "Monika's eyes light up with curiosity."
+                m "Oh? What do you mean?"
+                mc "I made up some excuse about what happened, but I ended up apologizing to her about lying and about what happened..."
+                show monika 2m
+                mc "But...{w=0.38}we did make up..."
+                mc "But I know I hurt her...{w=0.38}and I don't want to do that to her...."
+                m 2p "Well, we can handle Sayori another time..."
+                m 2m "Speaking of which..."
+
+
+if hangout1 == "Yuri":
+    if hangout2 == "Yuri":
+            mc "I do."
+            mc "I'm very happy with her and I wouldn't want to ruin it..."
+            show monika 2m
+            m "But you have been spending a lot of time around Yuri lately."
+
+
+            if encore_festivalquestion_2 == "Natsuki":
+                m 2n "Even though you guys have only started really talking recently, I think she really appreciates you for spending time wtih her..."
+                m 4n "You seem to have gotten to know her quite well recently..."
+                mc "Yeah...{w=0.38}we really have..."
+                m 4m "I've seen the way she looks at you when you're reading manga together, [player]..."
+                m 2n "And the way she's always acted around you..."
+                m 2m "I suspect she liked you from the very begining..."
+                mc "I'm just trying to be friends with her..."
+                m 2e "I'm glad that you two are now good friends..."
+                m 2g "But do you like Yuri more?"
+
+
+
+            if encore_festivalquestion_2 == "Yuri":
+                    m 2n "You two did spend last Sunday together..."
+                    m 4n "And you seem to have gotten to know her quite well recently..."
+                    mc "Yeah...{w=0.38}we really have..."
+                    m 4m "I've seen the way she looks at you when you're reading together, [player]..."
+                    m 2n "In hindsight, you should've seen this coming..."
+                    mc "I'm just trying to be friends with her..."
+                    m 2e "I'm glad that you two are now good friends..."
+                    m 2g "But do you like Yuri more?"
+
+
+
+            mc "I mean, I want to stay committed to Sayori."
+            show monika 2o
+            mc "I really do."
+            mc "I chose to be with her."
+            mc "But, something about Yuri just draws me to her..."
+            mc "I can't explain it..."
+            m 2p "Do you think you're catching feelings for her?"
+            mc "I...{w=0.38}don't know."
+            show monika 1g
+            m "Well player, you know how Sayori would be if you left her..."
+            mc "I know...{w=0.38}and that's what scares me..."
+            mc "But I'm not unhappy with her or anything, I love spending time with her!"
+            show monika 2m
+            mc "I guess...{w=0.38}I don't know..."
+            mc "Yuri just lights up my world in a way Sayori hasn't yet..."
+            m 1g "If you're thinking like that, [player], your relationship with her might be doomed to fail..."
+            m 1f "How does Sayori feel about all this?"
+
+
+            if apologize_sn == True:
+                mc "I was straight with her about what happened yesterday..."
+                m 2e "Well...{w=0.38}that's good..."
+                m 1m "I'm sure she appreciated you being honest with her, [player]..."
+                mc "Yeah..."
+
+            if apologize_sn== False:
+                mc "Well I was an idiot and lied about what happened to her yesterday..."
+                show monika 2d
+                "Monika's eyes light up with curiosity."
+                m "Oh? What do you mean?"
+                mc "I made up some excuse about what happened, but I ended up apologizing to her about lying and about what happened..."
+                show monika 2m
+                mc "But...{w=0.38}we did make up..."
+                mc "But I know I hurt her...{w=0.38}and I don't want to do that to her...."
+                m 2p "Well, we can handle Sayori another time..."
+                m 2m "Speaking of which..."
+
+
+
+
+if hangout1 == "Yuri":
+    if hangout2 == "Monika":
+        mc "I do."
+        mc "I'm very happy with her and I wouldn't want to ruin it..."
+        show monika 2m
+        m "But you haven't been spending a lot of time around Sayori in the club lately."
+        mc "I haven't been trying to avoid her or anything..."
+        mc "I've just wanted to get to know the others a little bit better."
+        mc "I had fun spend some time around Natsuki on Monday..."
+
+        if encore_festivalquestion_2 == "Natsuki":
+            mc "I didn't really get much of a chance to spend time around her before..."
+
+
+        if encore_festivalquestion_2 == "Yuri":
+            mc "It was nice catching up with her since the festival."
+
+        show monika 2e
+        mc "And I'm glad we've finally got to spend some time around each other too..."
+        m 2m "Y-{w=0.38}yeah...{w=0.38}it was nice..."
+        mc "Though, to be honest, I wasn't expecting us to be like that yesterday..."
+        mc "You did catch me by surprise..."
+        m 2l "Yeah...{w=0.38}me neither..."
+        m 2m "It just kind of happened..."
+        m 2e "It felt...{w=0.38}nice being with you like that..."
+        show monika 2n
+        mc "I mean...{w=0.38}I liked it too..."
+        show monika 2f
+        mc "But it might be better if we don't do that again..."
+        mc "I like being your friend, but for now that's really all I can commit to."
+        m 1o "It's fine, [player]..."
+        m 5a "On the bright side...{w=0.38}your tie seems to be looking presentable today~"
+        mc "Yeah...{w=0.38}I guess it does..."
+        show monika 1k
+        "We manage to share a small laugh before the reality of the situation returns."
+        show monika 1n
+        m "So...{w=0.38}what was Sayori's reaction to seeing us like that?"
+        m 1g "She didn't really bring anything up with me when I had class with her earlier..."
+        mc "Well we both know Sayori isn't the confrontational type, but yeah, she wasn't too happy with what she saw..."
+        m 2m "What'd you tell her?"
+
+        if apologize_sm == True:
+            mc "I was straight with her about what happened..."
+            m 2e "Well...{w=0.38}that's good..."
+            m 1m "I'm sure she appreciated you being honest with her, [player]..."
+            mc "Yeah..."
+
+        if apologize_sm == False:
+            mc "Well I was an idiot and lied about what happened to her..."
+            show monika 2d
+            "Monika's eyes light up with curiosity."
+            m "Oh? What do you mean?"
+            mc "I made up some excuse about what happened, but I ended up apologizing to her about lying and about what happened..."
+            show monika 2m
+            m "[player]...{w=0.38}I'm surprised at you..."
+            mc "Yeah...{w=0.38}I'm not really proud of it."
+            m 2e "I understand, [player]..."
+            mc "You do?"
+            m "You did something you're not proud of and you tried to justify it..."
+            m 3e "We do it all the time..."
+            m 2m "And it's more my fault than your's anyways..."
+            m 2e "So, don't beat yourself up over it too much."
+            mc "Alright..."
+
+
+
+
+if hangout1 == "Monika":
+    if hangout2 == "Sayori":
+        mc "I do."
+        mc "I'm very happy with her and I wouldn't want to ruin it..."
+        show monika 1q
+        mc "And if I ever did leave her...{w=0.38}we both know she'd be devestated..."
+        mc "We do mean a lot to each other..."
+        show monika 2f
+        mc "That much has become more clear to me lately."
+        mc "She needs me around until she gets better."
+        show monika 1p
+        m "I see..."
+        "I see Monika's eyes glance downward towards the ground."
+        mc "Hey, Monika..."
+        m 1g "Yeah?"
+        mc "It was nice that we got to finally spend some time together on Monday."
+        m 1m "Yeah...{w=0.38}it was..."
+        m 1n "Anyways..."
+
+
+if hangout1 == "Monika":
+    if hangout2 == "Natsuki":
+        mc "I do."
+        mc "I'm very happy with her and I wouldn't want to ruin it..."
+        show monika 2m
+        m "But you haven't been spending a lot of time around Sayori in the club lately."
+        mc "I haven't been trying to avoid her or anything..."
+        mc "I've just wanted to get to know the others a little bit better."
+        mc "I don't see the harm in that..."
+        m 2g "Yeah, there's really no harm in getting to know the others..."
+        m 5a "I didn't think Sayori would keep you all to herself..."
+        mc "Ah! It's not like that at all! Really!"
+        m 2l "I'm just kidding, [player]! Don't worry!"
+        m 2m "Still though..."
+
+
+
+        if encore_festivalquestion_2 == "Natsuki":
+            m 2n "You did seem to enjoy spending last Sunday with Natsuki.."
+            m 2m "Though she looked disappointed that you didn't spend much time around her on Monday..."
+            mc "Yeah, I didn't realize how much she liked reading together..."
+            m 4n "You seem to have gotten to know her quite well recently..."
+            mc "Yeah...{w=0.38}we really have..."
+            m 4m "I've seen the way she looks at you when you're reading manga together, [player]..."
+            m 2n "In hindsight, you should've seen this coming..."
+            mc "I'm just trying to be friends with her..."
+            m 2e "I'm glad that you two are now good friends..."
+            m 2g "But do you like Natsuki more over Sayori and Yuri?"
+            mc "I mean, I want to stay committed to Sayori."
+            show monika 2o
+            mc "I really do."
+            mc "I chose to be with her."
+            mc "But, something about Natsuki just draws me to her..."
+            mc "I can't explain it..."
+            m 2p "Do you think you're catching feelings for her?"
+            mc "I...{w=0.38}don't know."
+            show monika 1g
+            m "Well player, you know how Sayori would be if you left her..."
+            mc "I know...{w=0.38}and that's what scares me..."
+            mc "But I'm not unhappy with her or anything, I love spending time with her!"
+            show monika 2m
+            mc "I guess...{w=0.38}I don't know..."
+            mc "Natsuki just lights up my world in a way Sayori hasn't yet..."
+            m 1g "If you're thinking like that, [player], your relationship with her might be doomed to fail..."
+            m 1f "How does Sayori feel about all this?"
+
+
+            if apologize_sn == True:
+                mc "I was straight with her about what happened yesterday..."
+                m 2e "Well...{w=0.38}that's good..."
+                m 1m "I'm sure she appreciated you being honest with her, [player]..."
+                mc "Yeah..."
+
+            if apologize_sn== False:
+                mc "Well I was an idiot and lied about what happened to her yesterday..."
+                show monika 2d
+                "Monika's eyes light up with curiosity."
+                m "Oh? What do you mean?"
+                mc "I made up some excuse about what happened, but I ended up apologizing to her about lying and about what happened..."
+                show monika 2m
+                mc "But...{w=0.38}we did make up..."
+                mc "But I know I hurt her...{w=0.38}and I don't want to do that to her...."
+                m 2p "Well, we can handle Sayori another time..."
+                m 2m "Speaking of which..."
+
+
+
+        if encore_festivalquestion_2 == "Yuri":
+            m 2g "I've noticed that you haven't been talking to Yuri recently."
+            m "Is everything okay?"
+            mc "Ah, I just haven't had the time too."
+            show monika 2c
+            mc "Between Sayori's 'rainclouds', to the photoshoot, to this, it's been pretty crazy lately..."
+            m 1m "Yeah, it has been."
+            m 1n "Let's just hope she doesn't give you a confession letter too!"
+            mc "That'd be the end of me..."
+            m 1m "Speaking of confession letters..."
+
+
+
+if hangout1 == "Monika":
+    if hangout2 == "Yuri":
+        mc "I do."
+        mc "I'm very happy with her and I wouldn't want to ruin it..."
+        show monika 2m
+        m "But you haven't been spending a lot of time around Sayori in the club lately."
+        mc "I haven't been trying to avoid her or anything..."
+        mc "I've just wanted to get to know the others a little bit better."
+        mc "I don't see the harm in that..."
+        m 2g "Yeah, there's really no harm in getting to know the others..."
+        m 5a "I didn't think Sayori would keep you all to herself..."
+        mc "Ah! It's not like that at all! Really!"
+        m 2l "I'm just kidding, [player]! Don't worry!"
+        m 2m "Still though..."
+
+
+
+        if encore_festivalquestion_2 == "Natsuki":
+                m 2g "I've noticed that you haven't been talking to Natsuki recently."
+                m "Is everything okay?"
+                mc "Ah, I just haven't had the time too."
+                show monika 2c
+                mc "Between Sayori's 'rainclouds', to the photoshoot, to this, it's been pretty crazy lately..."
+                m 1m "Yeah, it has been."
+                m 1n "Let's just hope she doesn't give you a confession letter too!"
+                mc "That'd be the end of me..."
+                m 1m "Speaking of confession letters..."
+
+
+
+
+        if encore_festivalquestion_2 == "Yuri":
+                m 2n "You did seem to enjoy spending last Sunday with Yuri..."
+                m 2m "Though she looked disappointed that you didn't spend much time around her on Monday..."
+                mc "Yeah, I didn't realize how much she liked reading together..."
+                m 4n "You seem to have gotten to know her quite well recently..."
+                mc "Yeah...{w=0.38}we really have..."
+                m 4m "I've seen the way she looks at you when you're reading together, [player]..."
+                m 2n "In hindsight, you should've seen this coming..."
+                mc "I'm just trying to be friends with her..."
+                m 2e "I'm glad that you two are now good friends..."
+                m 2g "But do you like Natsuki more over Sayori and Yuri?"
+                mc "I mean, I want to stay committed to Sayori."
+                show monika 2o
+                mc "I really do."
+                mc "I chose to be with her."
+                mc "But, something about Natsuki just draws me to her..."
+                mc "I can't explain it..."
+                m 2p "Do you think you're catching feelings for her?"
+                mc "I...{w=0.38}don't know."
+                show monika 1g
+                m "Well player, you know how Sayori would be if you left her..."
+                mc "I know...{w=0.38}and that's what scares me..."
+                mc "But I'm not unhappy with her or anything, I love spending time with her!"
+                show monika 2m
+                mc "I guess...{w=0.38}I don't know..."
+                mc "Natsuki just lights up my world in a way Sayori hasn't yet..."
+                m 1g "If you're thinking like that, [player], your relationship with her might be doomed to fail..."
+                m 1f "How does Sayori feel about all this?"
+
+                if apologize_sy == True:
+                    mc "I was straight with her about what happened yesterday..."
+                    m 2e "Well...{w=0.38}that's good..."
+                    m 1m "I'm sure she appreciated you being honest with her, [player]..."
+                    mc "Yeah..."
+
+                if apologize_sy== False:
+                    mc "Well I was an idiot and lied about what happened to her yesterday..."
+                    show monika 2d
+                    "Monika's eyes light up with curiosity."
+                    m "Oh? What do you mean?"
+                    mc "I made up some excuse about what happened, but I ended up apologizing to her about lying and about what happened..."
+                    show monika 2m
+                    mc "But...{w=0.38}we did make up..."
+                    mc "But I know I hurt her...{w=0.38}and I don't want to do that to her...."
+                    m 2p "Well, we can handle Sayori another time..."
+                    m 2m "Speaking of which..."
+
+
+m 1d "Does Sayori know that [poem_giver] gave you this?"
+mc "No...{w=0.38}that's another problem..."
+mc "She wasn't really in the mood to talk today, so I figured that'd be a bad time to bring that up..."
+mc "Not to mention I have no idea how she'll take it..."
+m 2n "I don't think Sayori would overreact that way, [player]..."
+m 2p "Though she wouldn't take too kindly to this for sure..."
+mc "So...{w=0.38}when should I tell her about the letter?"
+m 3m "You're probably better off waiting to tell her for now."
+m 1e "It's better you figure out what you want to say to [poem_giver] first."
+mc "Alright..."
+jump day3_plan
+
+
+if hangout1 == "Monika":
+    if hangout2 == "Monika":
+        mc "I do."
+        mc "I'm very happy with her and I wouldn't want to ruin it..."
+        show monika 2m
+        m "But you haven't been spending a lot of time around Sayori in the club lately."
+        mc "I haven't been trying to avoid her or anything..."
+        mc "I've just wanted to get to know the others a little bit better."
+        mc "I don't see the harm in that..."
+        m 2g "Yeah, there's really no harm in getting to know the others..."
+        m 5a "I didn't think Sayori would keep you all to herself..."
+        mc "Ah! It's not like that at all! Really!"
+        m 2l "I'm just kidding, [player]! Don't worry!"
+        m 2m "Still though..."
+        m 2e "I'm really glad that we've gotten to spend some time together lately..."
+        mc "Yeah...{w=0.38}me too..."
+        mc "Though, to be honest, I wasn't expecting us to be like that yesterday..."
+        mc "You did catch me by surprise..."
+        m 2l "Yeah...{w=0.38}me neither..."
+        m 2m "It just kind of happened..."
+        m 2e "It felt...{w=0.38}nice being with you like that..."
+        show monika 2n
+        mc "I mean...{w=0.38}I liked it too..."
+        show monika 2f
+        mc "But it might be better if we don't do that again..."
+        mc "I like being your friend, but for now that's really all I can commit to."
+        m 1o "It's fine, [player]..."
+        m 5a "On the bright side...{w=0.38}your tie seems to be looking presentable today~"
+        mc "Yeah...{w=0.38}I guess it does..."
+        show monika 1k
+        "We manage to share a small laugh before the reality of the situation returns."
+        show monika 1n
+        m "So...{w=0.38}what was Sayori's reaction to seeing us like that?"
+        m 1g "She didn't really bring anything up with me when I had class with her earlier..."
+        mc "Well we both know Sayori isn't the confrontational type, but yeah, she wasn't too happy with what she saw..."
+        m 2m "What'd you tell her?"
+
+
+        if apologize_sm == True:
+            mc "I was straight with her about what happened..."
+            m 2e "Well...{w=0.38}that's good..."
+            m 1m "I'm sure she appreciated you being honest with her, [player]..."
+            mc "Yeah..."
+
+        if apologize_sm == False:
+            mc "Well I was an idiot and lied about what happened to her..."
+            show monika 2d
+            "Monika's eyes light up with curiosity."
+            m "Oh? What do you mean?"
+            mc "I made up some excuse about what happened, but I ended up apologizing to her about lying and about what happened..."
+            show monika 2m
+            m "[player]...{w=0.38}I'm surprised at you..."
+            mc "Yeah...{w=0.38}I'm not really proud of it."
+            m 2e "I understand, [player]..."
+            mc "You do?"
+            m "You did something you're not proud of and you tried to justify it..."
+            m 3e "We do it all the time..."
+            m 2m "And it's more my fault than your's anyways..."
+            m 2e "So, don't beat yourself up over it too much."
+            mc "Alright..."
+
+
+if encore_sayoriquestion_1 == False:
+    show monika 2f
+    mc "Well..."
+
+if hangout1 == "Sayori":
+    if hangout2 == "Sayori":
+        show monika 2f
+        mc "I really don't know..."
+        mc "I've enjoyed spending time around [poem_giver] she's been fun to be around..."
+        mc "And last Sunday, I did feel like maybe there was something there..."
+        mc "But Sayori's been on my mind a lot lately..."
+        m 2g "You're not having second thoughs about your answer to her confession, are you?"
+        show monika 2f
+        mc "I don't know..."
+        mc "I'm worried about her..."
+        mc "I've know her practically my whole life..."
+        show monika 2o
+        mc "Ever since last Sunday, she's been acting different around me..."
+        mc "She really didn't handle my response well..."
+        mc "And since then, I've tried making things right with her..."
+        show monika 1q
+        mc "We've made some progress, but I don't really know how I feel about her..."
+        m 2r "[player], it's not smart of you to play around with her feelings if you don't know how you feel about her..."
+        m 2e "I'm happy to hear that you guys are working to make things right..."
+        m 2m "But you're probably better off just being friends with her..."
+        m 2e "I don't think she can handle anything more right now..."
+        mc "Yeah...{w=0.38}you're right..."
+
+
+if hangout1 == "Sayori":
+    if hangout2 == "Natsuki":
+        "sample"
+
+if hangout1 == "Sayori":
+    if hangout2 == "Yuri":
+        "sample"
+
+if hangout1 == "Sayori":
+    if hangout2 == "Monika":
+        "sample"
+
+if hangout1 == "Natsuki":
+    if hangout2 == "Sayori":
+        "sample"
+
+
+if hangout1 == "Natsuki":
+    if hangout2 == "Natsuki":
+
+        if encore_festivalquestion_2 == "Natsuki":
+            show monika 2f
+            mc "I mean to tell you the truth, I didn't even really knew that Yuri liked me..."
+            mc "In fact I think she thought I hated her at some point because I was spending so much time around Natsuki..."
+            mc "So I'm surprised that she'd give me this..."
+            m 2p "Maybe this is her attempt at reaching out to you..."
+            m 2n "To confirm her feelings for you..."
+            mc "Probably..."
+            mc "But, I do feel drawn to Natsuki."
+            mc "We just...{w=0.38}click..."
+            show monika 2o
+            mc "I'm really happy whenever we get to spend time around each other."
+            mc "And I do think she feels the same way."
+            m 2n "I see..."
+            mc "I have nothing against Yuri, I really don't..."
+            mc "I think I just...{w=0.38}like Natsuki better..."
+            mc "But if I ever told her Yuri gave me this, she'd flip out."
+            m 2m "Yeah...{w=0.38}she would..."
+
+        if encore_festivalquestion_2 == "Yuri":
+            "sample"
+
+
+
+
+if hangout1 == "Natsuki":
+    if hangout2 == "Yuri":
+        "sample"
+
+if hangout1 == "Natsuki":
+    if hangout2 == "Monika":
+        "sample"
+
+if hangout1 == "Natsuki":
+    if hangout2 == "Yuri":
+        "sample"
+
+if hangout1 == "Natsuki":
+    if hangout2 == "Monika":
+        "sample"
+
+if hangout1 == "Yuri":
+    if hangout2 == "Sayori":
+        "sample"
+
+if hangout1 == "Yuri":
+    if hangout2 == "Natsuki":
+        "sample"
+
+if hangout1 == "Yuri":
+    if hangout2 == "Yuri":
+        "sample"
+
+if hangout1 == "Yuri":
+    if hangout2 == "Monika":
+        "sample"
+
+if hangout1 == "Monika":
+    if hangout2 == "Sayori":
+        "sample"
+
+if hangout1 == "Monika":
+    if hangout2 == "Natsuki":
+        "sample"
+
+if hangout1 == "Monika":
+    if hangout2 == "Yuri":
+        "sample"
+
+if hangout1 == "Monika":
+    if hangout2 == "Monika":
+        mc "I really don't know..."
+        mc "I've enjoyed spending time around her, she's been fun to be around..."
+        mc "And I had a blast with her last Sunday!"
+        show monika u114311
+        "But...{w=0.38}it's been nice getting to know you too, Monika."
+        show monika 2m
+        mc "Especially since we really haven't talked that much since recently..."
+        m 2e "It's been...{w=0.38}nice getting to know you too, [player]..."
+        m 2n "It must have taken a lot for you to muster up the courage to finally talk to me..."
+        mc "Well..."
+        m 1e "Come on, [player]..."
+        m 5a "I've seen the way you've looked at me..."
+        m "How you're always stumbling over your sentences when I compliment you..."
+        m "How I take your breath away whenever I get close to you..."
+        m "It's really sweet~"
+        mc "Monika, I..."
+        "I'm completely left speechless."
+        mc "I really have always wanted to get to know you..."
+        show monika 2m
+        mc "And I'm glad we've gotten that opportunity, and well, who knows what'll happen next..."
+        m 2n "Yeah..."
+        m 2e "But, let's figure this out first, okay?"
+        mc "Yeah..."
+
+
+
+
+m 1d "Does Sayori know that [poem_giver] gave you this?"
+mc "No, I didn't tell her."
+mc "And I really don't want to drag her into this."
+m 1d "Yeah, it's probably for the best."
+m 1e "You're better off figuring out what you want to say to [poem_giver]."
+mc "Alright..."
+jump day3_plan
