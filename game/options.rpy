@@ -69,7 +69,7 @@ default preferences.sfx_volume = 0.75
 define config.save_directory = "DDLC_Encore"
 
 # icon displayed on taskbar / dock
-define config.window_icon = "gui/window_icon.png"
+define config.window_icon = "mod_assets/encore.png"
 
 # True means we allow skipping, False means not
 define config.allow_skipping = True
