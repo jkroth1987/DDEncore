@@ -1,4 +1,4 @@
-test
+﻿test
 
 Nico-san, your test has come with a passing grade. Welcome to the project!
 
@@ -19,3 +19,5 @@ How To Invaid The USA... Oh wait this isnt google
 This is why we can’t have nice things
 
 Oh my
+
+OWO whats this, NOTICES YOUR F-22 PHANTOM.
