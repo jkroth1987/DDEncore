@@ -1359,7 +1359,7 @@ with wipeleft_scene
 show monika 2k at t11 zorder 2
 "As I expected, she seems to be chatting away with some of her friends."
 "This might be harder than I thought."
-"Well, I'm not going to get another chance at talk to her until the club, so it's now or never."
+"Well, I'm not going to get another chance to talk to her until the club, so it's now or never."
 "I carefully approach Monika's table."
 show monika at thide
 hide monika
