@@ -1469,6 +1469,20 @@ default sayori_confess = True
 # We read Natsuki's confession poem in chapter 23.
 default natsuki_23 = None
 
+image scratch:
+    "#00000000"
+    "mod_assets/sprites/scratch.png" with ImageDissolve("images/menu/wipeleft.png", 0.25, ramplen=4, alpha=True)
+    0.25
+    "#00000000" with ImageDissolve("images/menu/wipeleft.png", 0.25, ramplen=4, alpha=True)
+    
+image ouch:
+    "#000000ff"
+    "mod_assets/sprites/ouch.png" with Dissolve(0.25)
+    0.25
+    "#000000ff" with Dissolve(0.25)
+    0.25
+    "#00000000"
+
 #----Encore's CGs----
 image cg s_cg_1 = "mod_assets/cgs/sayori_cg1.png"
 image cg s_cg_2 pin = "mod_assets/cgs/sayori_cg_2_pin.png"

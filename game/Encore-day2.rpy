@@ -2649,24 +2649,26 @@ pause 0.15
 stop sound
 hide screen tear
 show yuri at t41 zorder 1
-show shadow_attack at t44 zorder 4
+show shadow_attack as monika at t44 zorder 4
 "Another silhouetted figure emerges from the fog right next to Yuri, pointing a knife threateningly in her direction."
 m "Let's get to the point, shall we?"
-show shadow_attack at t43 zorder 4
+show shadow_attack as monika at t43 zorder 4
 pause 0.2
-show shadow_attack at t42 zorder 4
+show shadow_attack as monika at t42 zorder 4
 #insert animeslash here
 play sound knife
+show ouch zorder 10 at truecenter
+show scratch zorder 11 at truecenter
 pause 0.7
-hide shadow_attack
-hide yuri
-show yb1 at s41 zorder 1
+hide ouch
+hide scratch
+show yb1 as yuri at s41 zorder 1
 play sound fall
-show shadow_attack_bloody at t42 zorder 4
+show shadow_attack_bloody as monika at t42 zorder 4
 pause 0.2
-show shadow_attack_bloody at t43 zorder 4
+show shadow_attack_bloody as monika at t43 zorder 4
 pause 0.2
-show shadow_attack_bloody at t44 zorder 4
+show shadow_attack_bloody as monika at t44 zorder 4
 pause 0.2
 "Yuri drops to the ground, screaming in pain."
 "The figure examines the knife as Yuri clutches her shoulder."
@@ -2683,55 +2685,45 @@ m "In fact..."
 m "Let me prove it..."
 stop music
 play sound drop
-hide shadow_attack_bloody
 show monika s at t44 zorder 4
 "The figure drops the knife and kicks it along to Yuri."
 "Come on Yuri..."
 "Use it on that thing!"
-hide yb1
-show yb2 at t41
+show yb2 as yuri at t41
 "Yuri clusmily scoops up the knife with one hand and slowly stands up."
 "Her breathing is erratic as she clutches the knives with both hands."
 m "Think of that \'racoon'\, Yuri."
 m "The one that's always followed you around..."
-hide yb2
-show yb3 at t41
+show yb3 as yuri at t41
 m "Show [player] the racoon..."
 $ renpy.pause(delay=0.8, hard=True)
-hide yb3
-show yb2 at t41
+show yb2 as yuri at t41
 $ renpy.pause(delay=0.8, hard=True)
-hide yb2
-show yb4 at t41
+show yb4 as yuri at t41
 $ renpy.pause(delay=0.8, hard=True)
-hide yb4
-show yb5 at t41
+show yb5 as yuri at t41
 $ renpy.pause(delay=1.5, hard=True)
-hide yb5
-show yb6 at t41
+show yb6 as yuri at t41
 play sound "sfx/giggle.ogg"
-hide yb6
-show yb7 at t41
+show yb7 yuri as yuri at t41
 "Yuri's giggling quickly gives way to an insane, maniacal laugh..."
 "The same kind of laugh I heard in my dream last night..."
 "I notice the world around me become darker as I can no longer clearly make out Yuri..."
 "Just her silhouette..."
-hide yb7
-show yuri_prestab at t41 zorder 4
+show yuri_prestab as yuri at t41 zorder 4
 "No..."
 show monika snap at t33
 play sound fingersnap
 pause 0.15
 hide monika snap
-show yuri_prestab at t11 zorder 4
+show yuri_prestab as yuri at t11 zorder 4
 pause 0.20
-hide yuri_prestab
 play sound stab
-show yuri_stab at t11 zorder 4
+show yuri_stab as yuri at t11 zorder 4
 mc "YURI!!!!!!"
 pause 0.30
 play sound fall
-show yuri_stab s11 zorder 4
+show yuri_stab as yuri at s11 zorder 4
 play sound stab
 scene black with close_eyes
 "I jam my eyes shut as I feel tears strolling down my face at the sound of Yuri stabbing herself again..."
