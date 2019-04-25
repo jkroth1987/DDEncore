@@ -1638,6 +1638,10 @@ else: # We didn't accept Sayori's confession
         else:
             $ poem_giver = "Natsuki"
         $ is_love_poem = False
+    
+    elif encore_festivalquestion_2 != hangout1 and same_hangout == True and (hangout1 == "Natsuki" or hangout1 == "Yuri"):
+        $ poem_giver = hangout1
+        $ is_love_poem = False
 
     elif neutral_split_n == True or neutral_split_y == True:
         # If we spent one day with either Yuri or Natsuki, the weekend girl gives the "like you" poem
@@ -1646,8 +1650,15 @@ else: # We didn't accept Sayori's confession
         else:
             $ poem_giver = "Yuri"
         $ is_love_poem = False
+    
+    elif conflicting_hangout == True:
+        if encore_festivalquestion_2 == "Natsuki":
+            $ poem_giver = "Natsuki"
+        else:
+            $ poem_giver = "Yuri"
+        $ is_love_poem = True
 
-    if (hangout1 == "Sayori" or hangout1 == "Monika") and (hangout2 == "Sayori" or hangout2 == "Monika"):
+    elif (hangout1 == "Sayori" or hangout1 == "Monika") and (hangout2 == "Sayori" or hangout2 == "Monika"):
         # Spent both days with Sayori, Monika, or split between them--show the love poem from the weekend hangout girl
         $ poem_giver = encore_festivalquestion_2
         $ is_love_poem = True
