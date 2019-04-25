@@ -2705,7 +2705,7 @@ show yb5 as yuri at t41
 $ renpy.pause(delay=1.5, hard=True)
 show yb6 as yuri at t41
 play sound "sfx/giggle.ogg"
-show yb7 yuri as yuri at t41
+show yb7 as yuri at t41
 "Yuri's giggling quickly gives way to an insane, maniacal laugh..."
 "The same kind of laugh I heard in my dream last night..."
 "I notice the world around me become darker as I can no longer clearly make out Yuri..."
