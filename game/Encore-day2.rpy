@@ -1638,7 +1638,7 @@ else: # We didn't accept Sayori's confession
         else:
             $ poem_giver = "Natsuki"
         $ is_love_poem = False
-    
+
     elif encore_festivalquestion_2 != hangout1 and same_hangout == True and (hangout1 == "Natsuki" or hangout1 == "Yuri"):
         $ poem_giver = hangout1
         $ is_love_poem = False
@@ -1650,7 +1650,7 @@ else: # We didn't accept Sayori's confession
         else:
             $ poem_giver = "Yuri"
         $ is_love_poem = False
-    
+
     elif conflicting_hangout == True:
         if encore_festivalquestion_2 == "Natsuki":
             $ poem_giver = "Natsuki"
@@ -2655,10 +2655,12 @@ m "Let's get to the point, shall we?"
 show shadow_attack at t43 zorder 4
 pause 0.2
 show shadow_attack at t42 zorder 4
+#insert animeslash here
 play sound knife
 pause 0.7
 hide shadow_attack
-show yuri 1y2 at s41 zorder 1
+hide yuri
+show yb1 at s41 zorder 1
 play sound fall
 show shadow_attack_bloody at t42 zorder 4
 pause 0.2
@@ -2686,28 +2688,35 @@ show monika s at t44 zorder 4
 "The figure drops the knife and kicks it along to Yuri."
 "Come on Yuri..."
 "Use it on that thing!"
-show yuri 3o at t41 zorder 4
+hide yb1
+show yb2 at t41
 "Yuri clusmily scoops up the knife with one hand and slowly stands up."
 "Her breathing is erratic as she clutches the knives with both hands."
 m "Think of that \'racoon'\, Yuri."
 m "The one that's always followed you around..."
-show yuri 3p
+hide yb2
+show yb3 at t41
 m "Show [player] the racoon..."
 $ renpy.pause(delay=0.8, hard=True)
-show yuri 3o
+hide yb3
+show yb2 at t41
 $ renpy.pause(delay=0.8, hard=True)
-show yuri 3k
+hide yb2
+show yb4 at t41
 $ renpy.pause(delay=0.8, hard=True)
-show yuri 3m
+hide yb4
+show yb5 at t41
 $ renpy.pause(delay=1.5, hard=True)
-show yuri 3y3
+hide yb5
+show yb6 at t41
 play sound "sfx/giggle.ogg"
-show yuri 3y1
+hide yb6
+show yb7 at t41
 "Yuri's giggling quickly gives way to an insane, maniacal laugh..."
 "The same kind of laugh I heard in my dream last night..."
 "I notice the world around me become darker as I can no longer clearly make out Yuri..."
 "Just her silhouette..."
-hide yuri
+hide yb7
 show yuri_prestab at t41 zorder 4
 "No..."
 show monika snap at t33
