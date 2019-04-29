@@ -1449,18 +1449,21 @@ m 1m "At least that way you're buying yourself a little bit of time..."
 mc "Okay, but that still doesn't really solve the problem..."
 show monika 1d
 mc "Sooner or later, she's going to ask me about this..."
-show monika 2n
-mc "And I have no idea what I'm going to say..."
 show monika 2m
+mc "And I have no idea what I'm going to say..."
+show monika 2n
 m "Well, [player], it all depends on how you feel about her..."
 m 2g "Do you...{w=0.38}like [poem_giver] back in the same way she likes you?"
 mc "I mean..."
+
+
 
 if encore_sayoriquestion_1 == True:
     show monika 2f
     mc "I'm dating Sayori...{w=0.38}and she needs me now more than ever..."
     m 2g "Do you love Sayori, [player]?"
     m 2p "Do you...{w=0.38}enjoy her company?"
+
 
 if hangout1 == "Sayori":
     if hangout2 == "Sayori":
@@ -1519,6 +1522,7 @@ if hangout1 == "Sayori":
         m 2m "I imagine..."
         m 4n "She took it a lot better than I would've though..."
 
+        #Issue: Ren'Py is skipping over these choices for some reason, works fine in the Sayori-Natsuki route
         if apologize_sy == True:
             mc "Yeah, I was straight with her about what happened..."
             m 2e "Well...{w=0.38}that's good..."
@@ -1551,7 +1555,7 @@ if hangout1 == "Sayori":
         m 2l "Yeah...{w=0.38}me neither..."
         m 2m "It just kind of happened..."
         m 2e "It felt...{w=0.38}nice being with you like that..."
-        show monika 2n
+        show monika 2m
         mc "I mean...{w=0.38}I liked it too..."
         show monika 2f
         mc "But it might be better if we don't do that again..."
@@ -1813,7 +1817,7 @@ if hangout1 == "Natsuki":
         m 2l "Yeah...{w=0.38}me neither..."
         m 2m "It just kind of happened..."
         m 2e "It felt...{w=0.38}nice being with you like that..."
-        show monika 2n
+        show monika 2m
         mc "I mean...{w=0.38}I liked it too..."
         show monika 2f
         mc "But it might be better if we don't do that again..."
@@ -2076,7 +2080,7 @@ if hangout1 == "Yuri":
         m 2l "Yeah...{w=0.38}me neither..."
         m 2m "It just kind of happened..."
         m 2e "It felt...{w=0.38}nice being with you like that..."
-        show monika 2n
+        show monika 2m
         mc "I mean...{w=0.38}I liked it too..."
         show monika 2f
         mc "But it might be better if we don't do that again..."
@@ -2331,7 +2335,7 @@ if hangout1 == "Monika":
         m 2l "Yeah...{w=0.38}me neither..."
         m 2m "It just kind of happened..."
         m 2e "It felt...{w=0.38}nice being with you like that..."
-        show monika 2n
+        show monika 2m
         mc "I mean...{w=0.38}I liked it too..."
         show monika 2f
         mc "But it might be better if we don't do that again..."
@@ -2380,7 +2384,7 @@ if hangout1 == "Sayori":
     if hangout2 == "Sayori":
         show monika 2f
         mc "I really don't know..."
-        mc "I've enjoyed spending time around [poem_giver] she's been fun to be around..."
+        mc "I've enjoyed spending time around [poem_giver], she's fun to be with..."
         mc "And last Sunday, I did feel like maybe there was something there..."
         mc "But Sayori's been on my mind a lot lately..."
         m 2g "You're not having second thoughs about your answer to her confession, are you?"
@@ -2394,7 +2398,7 @@ if hangout1 == "Sayori":
         mc "And since then, I've tried making things right with her..."
         show monika 1q
         mc "We've made some progress, but I don't really know how I feel about her..."
-        m 2r "[player], it's not smart of you to play around with her feelings if you don't know how you feel about her..."
+        m 2r "[player], it's not smart for you to play around with her feelings if you don't know how you feel about her..."
         m 2e "I'm happy to hear that you guys are working to make things right..."
         m 2m "But you're probably better off just being friends with her..."
         m 2e "I don't think she can handle anything more right now..."
@@ -2403,19 +2407,209 @@ if hangout1 == "Sayori":
 
 if hangout1 == "Sayori":
     if hangout2 == "Natsuki":
-        "sample"
+        show monika 2f
+        mc "I don't know..."
+
+        if encore_festivalquestion_2 == "Natsuki":
+            mc "I've enjoyed spending time around [poem_giver], she's fun to be with..."
+            mc "And last Sunday, I did feel like maybe there was something there..."
+            mc "But Sayori's been on my mind lately..."
+            m 2g "You're not having second thoughs about your answer to her confession, are you?"
+            show monika 2f
+            mc "I don't know..."
+            mc "I'm worried about her..."
+            mc "I've know her practically my whole life..."
+            show monika 2o
+            mc "Ever since last Sunday, she's been acting different around me..."
+            mc "She really didn't handle my response well..."
+            mc "And since then, I've tried making things right with her..."
+            show monika 1q
+            mc "We've made some progress, but I don't really know how I feel about her..."
+            m 2r "[player], it's not smart for you to play around with her feelings if you don't know how you feel about her..."
+            m 2e "I'm happy to hear that you guys are working to make things right..."
+            m 2m "But you're probably better off just being friends with her..."
+            m 2e "I don't think she can handle anything more right now..."
+            mc "Yeah...{w=0.38}you're right..."
+
+        if encore_festivalquestion_2 == "Yuri":
+            mc "I've enjoyed spending time around [poem_giver], she's fun to be with..."
+            mc "And last Sunday, I did feel like maybe there was something there..."
+            mc "But Sayori's been on my mind lately..."
+            show monika 2m
+            mc "And part of me is interested in Natsuki..."
+            mc "Though, I'll admit, I didn't expect to be like that with her yesterday..."
+            mc "She caught be by surprise..."
+            show monika 2e
+            m "It's...{w=0.38}fine, [player]..."
+            m 2n "Don't worry too much about it..."
+            mc "Alright."
+            m 2g "But you are putting yourself in a very difficult situation."
+            m 2m "You can't have all of them..."
+            mc "I know..."
+            m 2e "I do think for now you're better off just being friends with them until you can make up your mind..."
+            mc "Yeah...{w=0.38}you're right..."
+
+
+
 
 if hangout1 == "Sayori":
     if hangout2 == "Yuri":
-        "sample"
+        show monika 2f
+        mc "I don't know..."
+
+        if encore_festivalquestion_2 == "Natsuki":
+            mc "I've enjoyed spending time around [poem_giver], she's fun to be with..."
+            mc "And last Sunday, I did feel like maybe there was something there..."
+            mc "But Sayori's been on my mind lately..."
+            show monika 2m
+            mc "And part of me is interested in Yuri..."
+            mc "Though, I'll admit, I didn't expect to be like that with her yesterday..."
+            mc "She caught be by surprise..."
+            show monika 2e
+            m "It's...{w=0.38}fine, [player]..."
+            m 2n "Don't worry too much about it..."
+            mc "Alright."
+            m 2g "But you are putting yourself in a very difficult situation."
+            m 2m "You can't have all of them..."
+            mc "I know..."
+            m 2e "I do think for now you're better off just being friends with them until you can make up your mind..."
+            mc "Yeah...{w=0.38}you're right..."
+
+        if encore_festivalquestion_2 == "Yuri":
+            mc "I've enjoyed spending time around [poem_giver], she's fun to be with..."
+            mc "And last Sunday, I did feel like maybe there was something there..."
+            mc "But Sayori's been on my mind lately..."
+            m 2g "You're not having second thoughs about your answer to her confession, are you?"
+            show monika 2f
+            mc "I don't know..."
+            mc "I'm worried about her..."
+            mc "I've know her practically my whole life..."
+            show monika 2o
+            mc "Ever since last Sunday, she's been acting different around me..."
+            mc "She really didn't handle my response well..."
+            mc "And since then, I've tried making things right with her..."
+            show monika 1q
+            mc "We've made some progress, but I don't really know how I feel about her..."
+            m 2r "[player], it's not smart for you to play around with her feelings if you don't know how you feel about her..."
+            m 2e "I'm happy to hear that you guys are working to make things right..."
+            m 2m "But you're probably better off just being friends with her..."
+            m 2e "I don't think she can handle anything more right now..."
+            mc "Yeah...{w=0.38}you're right..."
+
+
+
 
 if hangout1 == "Sayori":
     if hangout2 == "Monika":
-        "sample"
+        show monika 2f
+        mc "I don't know..."
+        mc "I've enjoyed spending time around [poem_giver], she's fun to be with..."
+        mc "And last Sunday, I did feel like maybe there was something there..."
+        mc "But Sayori's been on my mind lately..."
+        show monika 2m
+        mc "But Sayori's been on my mind lately..."
+        m 2g "You're not having second thoughs about your answer to her confession, are you?"
+        show monika 2f
+        mc "I don't know..."
+        mc "I'm worried about her..."
+        mc "I've know her practically my whole life..."
+        show monika 2o
+        mc "Ever since last Sunday, she's been acting different around me..."
+        mc "She really didn't handle my response well..."
+        mc "And since then, I've tried making things right with her..."
+        show monike 2e
+        m "I think she'll be fine, [player]..."
+        m "She just needs time."
+        mc "But I feel like I should do more though..."
+        show monika 2m
+        mc "I'm the one that got her into this state of mind in the first place!"
+        mc "And now I got [poem_giver] head over heels for me!"
+        m 2e "It's all going to be okay, [player]..."
+        m "I can help you through this..."
+        mc "I really should've started talking to you sooner..."
+        show monika u114311
+        m "Eh? What do you mean?"
+        mc "You always know what to do..."
+        mc "It's like you're the answer to my problems!"
+        mc "I mean as crazy it sounds, I just feel like if I spent time with you earlier..."
+        mc "I don't know...{w=0.38}maybe things would be less crazy..."
+        mc "I guess what I'm trying to say is:{w=0.38}it's been nice getting to know you..."
+        m 2e "It's been...{w=0.38}nice getting to know you too, [player]..."
+        m 2n "It must have taken a lot for you to muster up the courage to finally talk to me..."
+        mc "Well..."
+        m 1e "Come on, [player]..."
+        m 5a "I've seen the way you've looked at me..."
+        m "How you're always stumbling over your sentences when I compliment you..."
+        m "How I take your breath away whenever I get close to you..."
+        m "It's really sweet~"
+        mc "Monika, I..."
+        "I'm completely left speechless."
+        mc "I really have always wanted to get to know you..."
+        show monika 2m
+        mc "And I'm glad we've gotten that opportunity, and well, who knows what'll happen next..."
+        m 2n "Yeah..."
+        m 2e "But, let's figure this out first, okay?"
+        mc "Yeah..."
+
+
 
 if hangout1 == "Natsuki":
     if hangout2 == "Sayori":
-        "sample"
+        show monika 2f
+        mc "I don't know..."
+
+        if encore_festivalquestion_2 == "Natsuki":
+            mc "I've enjoyed spending time around [poem_giver], she's fun to be with..."
+            mc "And last Sunday, I did feel like maybe there was something there..."
+            mc "But Sayori's been on my mind lately..."
+            m 2g "You're not having second thoughs about your answer to her confession, are you?"
+            show monika 2f
+            mc "I don't know..."
+            mc "I'm worried about her..."
+            mc "I've know her practically my whole life..."
+            show monika 2o
+            mc "Ever since last Sunday, she's been acting different around me..."
+            mc "She really didn't handle my response well..."
+            mc "And since then, I've tried making things right with her..."
+            mc "She was pretty emotional yesterday..."
+            show monika 1q
+            mc "We've made some progress, but I don't really know how I feel about her..."
+            m 2r "[player], it's not smart for you to play around with her feelings if you don't know how you feel about her..."
+            m 2e "I'm happy to hear that you guys are working to make things right..."
+            m 2m "But you're probably better off just being friends with her..."
+            m 2e "I don't think she can handle anything more right now..."
+            mc "Yeah...{w=0.38}you're right..."
+
+        if encore_festivalquestion_2 == "Yuri":
+            mc "I've enjoyed spending time around [poem_giver], she's fun to be with..."
+            mc "And last Sunday, I did feel like maybe there was something there..."
+            mc "But Sayori's been on my mind lately..."
+            m 2g "You're not having second thoughs about your answer to her confession, are you?"
+            show monika 2f
+            mc "I don't know..."
+            mc "I'm worried about her..."
+            mc "I've know her practically my whole life..."
+            show monika 2o
+            mc "Ever since last Sunday, she's been acting different around me..."
+            mc "She really didn't handle my response well..."
+            mc "And since then, I've tried making things right with her..."
+            mc "She was pretty emotional yesterday..."
+            show monika 2e
+            m "She just needs time, [player]..."
+            m "She'll get through this."
+            mc "I mean I'm the one who made things worse..."
+            mc "But I guess things have been getting a little better with her."
+            m "Well that's good."
+            show monika 2m
+            mc "Yeah, having to worry about Sayori, and trying to decide if I like Yuri or Natsuki more has been stressful.."
+            m 2h "You can't have all of them, [player]."
+            m 4h "Playing with their feelings like that is wrong and could have unforseen consquences."
+            mc "I know..."
+            mc "It's just that I feel like I'm being pulled all over the place."
+            mc "I don't know what I want..."
+            m 2e "I do think for now you're better off just being friends with them until you can make up your mind..."
+            mc "Yeah...{w=0.38}you're right..."
+
 
 
 if hangout1 == "Natsuki":
@@ -2441,40 +2635,195 @@ if hangout1 == "Natsuki":
             m 2m "Yeah...{w=0.38}she would..."
 
         if encore_festivalquestion_2 == "Yuri":
-            "sample"
+            show monika 2f
+            mc "I mean, I guess part of me is interested in Yuri..."
+            mc "I had a hunch she's been crushing on me, given what happened last Sunday and the festival..."
+            mc "But I'm still a little surprised that she gave me this..."
+            m 2g "You really haven't been spending too much time around her lately..."
+            m 2p "Maybe this is her attempt at reaching out to you..."
+            m 2n "To confirm her feelings for you..."
+            mc "Probably..."
+            mc "But, I've started to feel drawn to Natsuki."
+            mc "There's just...{w=0.38}something about her that interests me."
+            mc "I can't really explain it..."
+            m 2n "I see..."
 
 
 
 
 if hangout1 == "Natsuki":
     if hangout2 == "Yuri":
-        "sample"
+
+        if encore_festivalquestion_2 == "Natsuki":
+            show monika 2f
+            mc "I mean to tell you the truth, lately I've felt like I've been drawn to both to both her and Yuri..."
+            m 2g "What do you mean?"
+            mc "I think I like both of them..."
+            m 2g "Well, that's a very difficult situation."
+            m 2m "You know you can't have both of them..."
+            mc "I know..."
+            m 2p "Choosing between either of them would likely offset the other..."
+            m 2r "It really wouldn't be good for the club..."
+            m 2e "I do think for now you're better off just being friends with them until you can make up your mind..."
+            mc "Yeah...{w=0.38}you're right..."
+
+        if encore_festivalquestion_2 == "Yuri":
+            show monika 2f
+            mc "I mean to tell you the truth, lately I've felt like I've been drawn to both to both her and Natsuki..."
+            m 2g "What do you mean?"
+            mc "I think I like both of them..."
+            m 2g "Well, that's a very difficult situation."
+            m 2m "You know you can't have both of them..."
+            mc "I know..."
+            m 2p "Choosing between either of them would likely offset the other..."
+            m 2r "It really wouldn't be good for the club..."
+            m 2e "I do think for now you're better off just being friends with them until you can make up your mind..."
+            mc "Yeah...{w=0.38}you're right..."
+
+
 
 if hangout1 == "Natsuki":
     if hangout2 == "Monika":
-        "sample"
+        show monika 2f
+        mc "I've enjoyed spending time around [poem_giver], she's fun to be with..."
+        mc "And last Sunday, I did feel like maybe there was something there..."
+        mc "I don't know...{w=0.38}I guess I've been interested in getting to know the others a little bit lately..."
+        show monika u114311
+        "And...{w=0.38}it's been nice getting to know you too, Monika."
+        show monika 2m
+        mc "Especially since we really haven't talked that much since recently..."
+        m 2e "It's been...{w=0.38}nice getting to know you too, [player]..."
+        m 2n "It must have taken a lot for you to muster up the courage to finally talk to me..."
+        mc "Well..."
+        m 1e "Come on, [player]..."
+        m 5a "I've seen the way you've looked at me..."
+        m "How you're always stumbling over your sentences when I compliment you..."
+        m "How I take your breath away whenever I get close to you..."
+        m "It's really sweet~"
+        mc "Monika, I..."
+        "I'm completely left speechless."
+        mc "I really have always wanted to get to know you..."
+        show monika 2m
+        mc "And I'm glad we've gotten that opportunity, and well, who knows what'll happen next..."
+        m 2n "Yeah..."
+        m 2e "But, let's figure this out first, okay?"
+        mc "Yeah..."
 
-if hangout1 == "Natsuki":
-    if hangout2 == "Yuri":
-        "sample"
 
-if hangout1 == "Natsuki":
-    if hangout2 == "Monika":
-        "sample"
+
+
+
 
 if hangout1 == "Yuri":
     if hangout2 == "Sayori":
-        "sample"
+
+        if encore_festivalquestion_2 == "Natsuki":
+            mc "I've enjoyed spending time around [poem_giver], she's fun to be with..."
+            mc "And last Sunday, I did feel like maybe there was something there..."
+            mc "But Sayori's been on my mind lately..."
+            m 2g "You're not having second thoughs about your answer to her confession, are you?"
+            show monika 2f
+            mc "I don't know..."
+            mc "I'm worried about her..."
+            mc "I've know her practically my whole life..."
+            show monika 2o
+            mc "Ever since last Sunday, she's been acting different around me..."
+            mc "She really didn't handle my response well..."
+            mc "And since then, I've tried making things right with her..."
+            mc "She was pretty emotional yesterday..."
+            show monika 2e
+            m "She just needs time, [player]..."
+            m "She'll get through this."
+            mc "I mean I'm the one who made things worse..."
+            mc "But I guess things have been getting a little better with her."
+            m "Well that's good."
+            show monika 2m
+            mc "Yeah, having to worry about Sayori, and trying to decide if I like Yuri or Natsuki more has been stressful.."
+            m 2h "You can't have all of them, [player]."
+            m 4h "Playing with their feelings like that is wrong and could have unforseen consquences."
+            mc "I know..."
+            mc "It's just that I feel like I'm being pulled all over the place."
+            mc "I don't know what I want..."
+            m 2e "I do think for now you're better off just being friends with them until you can make up your mind..."
+            mc "Yeah...{w=0.38}you're right..."
+
+
+
+        if encore_festivalquestion_2 == "Yuri":
+            mc "I've enjoyed spending time around [poem_giver], she's fun to be with..."
+            mc "And last Sunday, I did feel like maybe there was something there..."
+            mc "But Sayori's been on my mind lately..."
+            m 2g "You're not having second thoughs about your answer to her confession, are you?"
+            show monika 2f
+            mc "I don't know..."
+            mc "I'm worried about her..."
+            mc "I've know her practically my whole life..."
+            show monika 2o
+            mc "Ever since last Sunday, she's been acting different around me..."
+            mc "She really didn't handle my response well..."
+            mc "And since then, I've tried making things right with her..."
+            mc "She was pretty emotional yesterday..."
+            show monika 1q
+            mc "We've made some progress, but I don't really know how I feel about her..."
+            m 2r "[player], it's not smart for you to play around with her feelings if you don't know how you feel about her..."
+            m 2e "I'm happy to hear that you guys are working to make things right..."
+            m 2m "But you're probably better off just being friends with her..."
+            m 2e "I don't think she can handle anything more right now..."
+            mc "Yeah...{w=0.38}you're right..."
+
+
+
+
 
 if hangout1 == "Yuri":
     if hangout2 == "Natsuki":
-        "sample"
+
+        if encore_festivalquestion_2 == "Natsuki":
+            show monika 2f
+            mc "I mean to tell you the truth, lately I've felt like I've been drawn to both to both her and Yuri..."
+            m 2g "What do you mean?"
+            mc "I think I like both of them..."
+            m 2g "Well, that's a very difficult situation."
+            m 2m "You know you can't have both of them..."
+            mc "I know..."
+            m 2p "Choosing between either of them would likely offset the other..."
+            m 2r "It really wouldn't be good for the club..."
+            m 2e "I do think for now you're better off just being friends with them until you can make up your mind..."
+            mc "Yeah...{w=0.38}you're right..."
+
+        if encore_festivalquestion_2 == "Yuri":
+            show monika 2f
+            mc "I mean to tell you the truth, lately I've felt like I've been drawn to both to both her and Natsuki..."
+            m 2g "What do you mean?"
+            mc "I think I like both of them..."
+            m 2g "Well, that's a very difficult situation."
+            m 2m "You know you can't have both of them..."
+            mc "I know..."
+            m 2p "Choosing between either of them would likely offset the other..."
+            m 2r "It really wouldn't be good for the club..."
+            m 2e "I do think for now you're better off just being friends with them until you can make up your mind..."
+            mc "Yeah...{w=0.38}you're right..."
+
+
+
 
 if hangout1 == "Yuri":
     if hangout2 == "Yuri":
 
         if encore_festivalquestion_2 == "Natsuki":
-            "sample"
+            show monika 2f
+            mc "I mean, I guess part of me is interested in Natsuki..."
+            mc "I had a hunch she's been crushing on me, given what happened last Sunday and the festival..."
+            mc "But I'm still a little surprised that she gave me this..."
+            m 2g "You really haven't been spending too much time around her lately..."
+            m 2p "Maybe this is her attempt at reaching out to you..."
+            m 2n "To confirm her feelings for you..."
+            mc "Probably..."
+            mc "But, I've started to feel drawn to Yuri."
+            mc "There's just...{w=0.38}something about her that interests me."
+            mc "I can't really explain it..."
+            m 2n "I see..."
+
 
 
         if encore_festivalquestion_2 == "Yuri":
@@ -2503,19 +2852,262 @@ if hangout1 == "Yuri":
 
 if hangout1 == "Yuri":
     if hangout2 == "Monika":
-        "sample"
+        show monika 2f
+        mc "I've enjoyed spending time around [poem_giver], she's fun to be with..."
+        mc "And last Sunday, I did feel like maybe there was something there..."
+        mc "I don't know...{w=0.38}I guess I've been interested in getting to know the others a little bit lately..."
+        show monika u114311
+        "And...{w=0.38}it's been nice getting to know you too, Monika."
+        show monika 2m
+        mc "Especially since we really haven't talked that much since recently..."
+        m 2e "It's been...{w=0.38}nice getting to know you too, [player]..."
+        m 2n "It must have taken a lot for you to muster up the courage to finally talk to me..."
+        mc "Well..."
+        m 1e "Come on, [player]..."
+        m 5a "I've seen the way you've looked at me..."
+        m "How you're always stumbling over your sentences when I compliment you..."
+        m "How I take your breath away whenever I get close to you..."
+        m "It's really sweet~"
+        mc "Monika, I..."
+        "I'm completely left speechless."
+        mc "I really have always wanted to get to know you..."
+        show monika 2m
+        mc "And I'm glad we've gotten that opportunity, and well, who knows what'll happen next..."
+        m 2n "Yeah..."
+        m 2e "But, let's figure this out first, okay?"
+        mc "Yeah..."
+
+
+
+
 
 if hangout1 == "Monika":
     if hangout2 == "Sayori":
-        "sample"
+            show monika 2f
+            mc "I don't know..."
+            mc "I've enjoyed spending time around [poem_giver], she's fun to be with..."
+            mc "And last Sunday, I did feel like maybe there was something there..."
+            mc "But Sayori's been on my mind lately..."
+            show monika 2m
+            mc "But Sayori's been on my mind lately..."
+            m 2g "You're not having second thoughs about your answer to her confession, are you?"
+            show monika 2f
+            mc "I don't know..."
+            mc "I'm worried about her..."
+            mc "I've know her practically my whole life..."
+            show monika 2o
+            mc "Ever since last Sunday, she's been acting different around me..."
+            mc "She really didn't handle my response well..."
+            mc "And since then, I've tried making things right with her..."
+            show monike 2e
+            m "I think she'll be fine, [player]..."
+            m "She just needs time."
+            mc "But I feel like I should do more though..."
+            mc "She was really emotional yesterday..."
+            show monika 1q
+            mc "We've made some progress, but I don't really know how I feel about her..."
+            m 2r "[player], it's not smart for you to play around with her feelings if you don't know how you feel about her..."
+            m 2e "I'm happy to hear that you guys are working to make things right..."
+            m 2m "But you're probably better off just being friends with her..."
+            m 2e "I don't think she can handle anything more right now..."
+            mc "Yeah...{w=0.38}you're right..."
+            show monika 2m
+            mc "It's just been hard for me to think clearly lately..."
+            mc "Especially now that I know [poem_giver]'s into me.."
+            m 2e "It's all going to be okay, [player]..."
+            m "I can help you through this..."
+            mc "I really should've started talking to you sooner..."
+            show monika u114311
+            m "Eh? What do you mean?"
+            mc "You always know what to do..."
+            mc "It's like you're the answer to my problems!"
+            mc "I mean as crazy it sounds, I just feel like if I spent time with you earlier..."
+            mc "I don't know...{w=0.38}maybe things would be less crazy..."
+            mc "I guess what I'm trying to say is:{w=0.38}it's been nice getting to know you..."
+            m 2e "It's been...{w=0.38}nice getting to know you too, [player]..."
+            m 2n "It must have taken a lot for you to muster up the courage to finally talk to me..."
+            mc "Well..."
+            m 1e "Come on, [player]..."
+            m 5a "I've seen the way you've looked at me..."
+            m "How you're always stumbling over your sentences when I compliment you..."
+            m "How I take your breath away whenever I get close to you..."
+            m "It's really sweet~"
+            mc "Monika, I..."
+            "I'm completely left speechless."
+            mc "I really have always wanted to get to know you..."
+            show monika 2m
+            mc "And I'm glad we've gotten that opportunity, and well, who knows what'll happen next..."
+            m 2n "Yeah..."
+            m 2e "But, let's figure this out first, okay?"
+            mc "Yeah..."
+
+
 
 if hangout1 == "Monika":
     if hangout2 == "Natsuki":
-        "sample"
+            show monika 2f
+            mc "I don't know..."
+
+            if encore_festivalquestion_2 == "Natsuki":
+                mc "I've enjoyed spending time around [poem_giver], she's fun to be with..."
+                mc "And last Sunday, I did feel like maybe there was something there..."
+                mc "I really didn't expect to be like that with her yesterday..."
+                show monika 2m
+                mc "She really caught me by surprise..."
+                show monika 2n
+                m "It's fine, [player]..."
+                m 2e "Don't worry about it..."
+                mc "Okay..."
+                mc "Still, I'll admit that I'm surprised that she'd give me this..."
+                m 2p "Maybe this is her attempt at reaching out to you..."
+                m 2n "To confirm her feelings for you..."
+                mc "Probably..."
+                mc "And look, I like her to some extent..."
+                mc "It's been great getting to know her..."
+                show monika u114311
+                "But...{w=0.38}it's been nice getting to know you too, Monika."
+                show monika 2m
+                mc "Especially since we really haven't talked that much since recently..."
+                m 2e "It's been...{w=0.38}nice getting to know you too, [player]..."
+                m 2n "It must have taken a lot for you to muster up the courage to finally talk to me..."
+                mc "Well..."
+                m 1e "Come on, [player]..."
+                m 5a "I've seen the way you've looked at me..."
+                m "How you're always stumbling over your sentences when I compliment you..."
+                m "How I take your breath away whenever I get close to you..."
+                m "It's really sweet~"
+                mc "Monika, I..."
+                "I'm completely left speechless."
+                mc "I really have always wanted to get to know you..."
+                show monika 2m
+                mc "And I'm glad we've gotten that opportunity, and well, who knows what'll happen next..."
+                m 2n "Yeah..."
+                m 2e "But, let's figure this out first, okay?"
+                mc "Yeah..."
+
+
+            if encore_festivalquestion_2 == "Yuri":
+                mc "I've enjoyed spending time around [poem_giver], she's fun to be with..."
+                mc "And last Sunday, I did feel like maybe there was something there..."
+                mc "I don't know...{w=0.38}I guess I've been interested in getting to know the others a little bit lately..."
+                mc "Though, I really didn't expect to be like that with Natsuki yesterday, honest!"
+                show monika 2m
+                m "It's fine, [player]..."
+                m 2e "Don't worry about it..."
+                mc "Okay..."
+                mc "Still, I'll admit that I'm surprised that Yuri would give me this..."
+                m 2p "Well you haven't spent too much time around her lately."
+                m 2p "Maybe this is her attempt at reaching out to you..."
+                m 2n "To confirm her feelings for you..."
+                mc "Probably..."
+                mc "And look, I like her to some extent..."
+                mc "It's been great getting to know her..."
+                show monika u114311
+                "But...{w=0.38}it's been nice getting to know you too, Monika."
+                show monika 2m
+                mc "Especially since we really haven't talked that much since recently..."
+                m 2e "It's been...{w=0.38}nice getting to know you too, [player]..."
+                m 2n "It must have taken a lot for you to muster up the courage to finally talk to me..."
+                mc "Well..."
+                m 1e "Come on, [player]..."
+                m 5a "I've seen the way you've looked at me..."
+                m "How you're always stumbling over your sentences when I compliment you..."
+                m "How I take your breath away whenever I get close to you..."
+                m "It's really sweet~"
+                mc "Monika, I..."
+                "I'm completely left speechless."
+                mc "I really have always wanted to get to know you..."
+                show monika 2m
+                mc "And I'm glad we've gotten that opportunity, and well, who knows what'll happen next..."
+                m 2n "Yeah..."
+                m 2e "But, let's figure this out first, okay?"
+                mc "Yeah..."
+
+
+
 
 if hangout1 == "Monika":
     if hangout2 == "Yuri":
-        "sample"
+        show monika 2f
+        mc "I don't know..."
+
+        if encore_festivalquestion_2 == "Natsuki":
+            mc "I've enjoyed spending time around [poem_giver], she's fun to be with..."
+            mc "And last Sunday, I did feel like maybe there was something there..."
+            mc "I don't know...{w=0.38}I guess I've been interested in getting to know the others a little bit lately..."
+            mc "Though, I really didn't expect to be like that with Yuri yesterday, honest!"
+            show monika 2m
+            m "It's fine, [player]..."
+            m 2e "Don't worry about it..."
+            mc "Okay..."
+            mc "Still, I'll admit that I'm surprised that Natsuki would give me this..."
+            m 2p "Well you haven't spent too much time around her lately."
+            m 2p "Maybe this is her attempt at reaching out to you..."
+            m 2n "To confirm her feelings for you..."
+            mc "Probably..."
+            mc "And look, I like her to some extent..."
+            mc "It's been great getting to know her..."
+            show monika u114311
+            "But...{w=0.38}it's been nice getting to know you too, Monika."
+            show monika 2m
+            mc "Especially since we really haven't talked that much since recently..."
+            m 2e "It's been...{w=0.38}nice getting to know you too, [player]..."
+            m 2n "It must have taken a lot for you to muster up the courage to finally talk to me..."
+            mc "Well..."
+            m 1e "Come on, [player]..."
+            m 5a "I've seen the way you've looked at me..."
+            m "How you're always stumbling over your sentences when I compliment you..."
+            m "How I take your breath away whenever I get close to you..."
+            m "It's really sweet~"
+            mc "Monika, I..."
+            "I'm completely left speechless."
+            mc "I really have always wanted to get to know you..."
+            show monika 2m
+            mc "And I'm glad we've gotten that opportunity, and well, who knows what'll happen next..."
+            m 2n "Yeah..."
+            m 2e "But, let's figure this out first, okay?"
+            mc "Yeah..."
+
+
+
+        if encore_festivalquestion_2 == "Yuri":
+            mc "I've enjoyed spending time around [poem_giver], she's fun to be with..."
+            mc "And last Sunday, I did feel like maybe there was something there..."
+            mc "I really didn't expect to be like that with her yesterday..."
+            show monika 2m
+            mc "She really caught me by surprise..."
+            show monika 2n
+            m "It's fine, [player]..."
+            m 2e "Don't worry about it..."
+            mc "Okay..."
+            mc "Still, I'll admit that I'm surprised that she'd give me this..."
+            m 2p "Maybe this is her attempt at reaching out to you..."
+            m 2n "To confirm her feelings for you..."
+            mc "Probably..."
+            mc "And look, I like her to some extent..."
+            mc "It's been great getting to know her..."
+            show monika u114311
+            "But...{w=0.38}it's been nice getting to know you too, Monika."
+            show monika 2m
+            mc "Especially since we really haven't talked that much since recently..."
+            m 2e "It's been...{w=0.38}nice getting to know you too, [player]..."
+            m 2n "It must have taken a lot for you to muster up the courage to finally talk to me..."
+            mc "Well..."
+            m 1e "Come on, [player]..."
+            m 5a "I've seen the way you've looked at me..."
+            m "How you're always stumbling over your sentences when I compliment you..."
+            m "How I take your breath away whenever I get close to you..."
+            m "It's really sweet~"
+            mc "Monika, I..."
+            "I'm completely left speechless."
+            mc "I really have always wanted to get to know you..."
+            show monika 2m
+            mc "And I'm glad we've gotten that opportunity, and well, who knows what'll happen next..."
+            m 2n "Yeah..."
+            m 2e "But, let's figure this out first, okay?"
+            mc "Yeah..."
+
+
 
 if hangout1 == "Monika":
     if hangout2 == "Monika":
@@ -2542,8 +3134,6 @@ if hangout1 == "Monika":
         m 2n "Yeah..."
         m 2e "But, let's figure this out first, okay?"
         mc "Yeah..."
-
-
 
 
 m 1d "Does Sayori know that [poem_giver] gave you this?"
