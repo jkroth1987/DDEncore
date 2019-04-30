@@ -1821,10 +1821,10 @@ if encore_sayoriquestion_1 == False:
         menu:
             "Should I..."
             "Apologize.":
-                $ apologize_sn = True
+                $ apologize_sy = True
                 jump sayori_sorry_y
             "Lie.":
-                $ apologize_sn = False
+                $ apologize_sy = False
                 jump sayori_not_sorry_y
 
         label sayori_sorry_y:
