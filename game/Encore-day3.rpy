@@ -1522,7 +1522,7 @@ if hangout1 == "Sayori":
         m 2m "I imagine..."
         m 4n "She took it a lot better than I would've though..."
 
-        #Issue: Ren'Py is skipping over these choices for some reason, works fine in the Sayori-Natsuki route
+
         if apologize_sy == True:
             mc "Yeah, I was straight with her about what happened..."
             m 2e "Well...{w=0.38}that's good..."
@@ -1608,6 +1608,28 @@ if hangout1 == "Natsuki":
         mc "She needs me around until she gets better."
         show monika 1p
         m "I see..."
+
+        if encore_festivalquestion_2 == "Natsuki":
+            m 2n "Well, you and Natsuki did spend last Sunday together..."
+            m 4n "And you seem to have gotten to know her better..."
+            mc "Yeah..."
+            mc "Still, I'm surprised that she'd give me this..."
+            m 2p "Maybe this is her attempt at reaching out to you..."
+            m 2n "To confirm her feelings for you..."
+            mc "Probably..."
+
+
+
+        if encore_festivalquestion_2 == "Yuri":
+            m 2n "Well, you two and Yuri did spend last Sunday together..."
+            m 4n "And you haven't spent that much time around her lately..."
+            mc "Yeah..."
+            mc "Still, I'm surprised that she'd give me this..."
+            m 2p "Maybe this is her attempt at reaching out to you..."
+            m 2n "To confirm her feelings for you..."
+            mc "Probably..."
+
+
 
 
 
@@ -1756,7 +1778,7 @@ if hangout1 == "Natsuki":
                 show monika 2o
                 mc "I really do."
                 mc "I chose to be with her."
-                mc "But, something about Natsuki just draws me to her..."
+                mc "But, something about Yuri just draws me to her..."
                 mc "I can't explain it..."
                 m 2p "Do you think you're catching feelings for her?"
                 mc "I...{w=0.38}don't know."
@@ -1801,12 +1823,13 @@ if hangout1 == "Natsuki":
         m "But you haven't been spending a lot of time around Sayori in the club lately."
         mc "I haven't been trying to avoid her or anything..."
         mc "I've just wanted to get to know the others a little bit better."
-        mc "I had fun spend some time around Natsuki on Monday..."
 
         if encore_festivalquestion_2 == "Natsuki":
+            mc "I had fun spend some time around Natsuki on Monday..."
             mc "It was nice catching up with her since the festival."
 
         if encore_festivalquestion_2 == "Yuri":
+            mc "It was nice had finally spend some time around Natsuki..."
             mc "I didn't really get much of a chance to spend time around her before..."
 
         show monika 2e
@@ -1870,6 +1893,15 @@ if hangout1 == "Yuri":
         mc "She needs me around until she gets better."
         show monika 1p
         m "I see..."
+
+        if encore_festivalquestion_2 == "Natsuki":
+            mc "It was nice had finally spend some time around Yuri..."
+            mc "I didn't really get much of a chance to spend time around her before..."
+
+
+        if encore_festivalquestion_2 == "Yuri":
+            mc "I had fun spend some time around Yuri on Monday..."
+            mc "It was nice catching up with her since the festival."
 
 
 
@@ -2134,7 +2166,7 @@ if hangout1 == "Monika":
         mc "She needs me around until she gets better."
         show monika 1p
         m "I see..."
-        "I see Monika's eyes glance downward towards the ground."
+        "Monika's eyes glance downward towards the ground."
         mc "Hey, Monika..."
         m 1g "Yeah?"
         mc "It was nice that we got to finally spend some time together on Monday."
@@ -2163,8 +2195,6 @@ if hangout1 == "Monika":
             m 2n "You did seem to enjoy spending last Sunday with Natsuki.."
             m 2m "Though she looked disappointed that you didn't spend much time around her on Monday..."
             mc "Yeah, I didn't realize how much she liked reading together..."
-            m 4n "You seem to have gotten to know her quite well recently..."
-            mc "Yeah...{w=0.38}we really have..."
             m 4m "I've seen the way she looks at you when you're reading manga together, [player]..."
             m 2n "In hindsight, you should've seen this coming..."
             mc "I'm just trying to be friends with her..."
@@ -2301,18 +2331,6 @@ if hangout1 == "Monika":
                     m 2m "Speaking of which..."
 
 
-m 1d "Does Sayori know that [poem_giver] gave you this?"
-mc "No...{w=0.38}that's another problem..."
-mc "She wasn't really in the mood to talk today, so I figured that'd be a bad time to bring that up..."
-mc "Not to mention I have no idea how she'll take it..."
-m 2n "I don't think Sayori would overreact that way, [player]..."
-m 2p "Though she wouldn't take too kindly to this for sure..."
-mc "So...{w=0.38}when should I tell her about the letter?"
-m 3m "You're probably better off waiting to tell her for now."
-m 1e "It's better you figure out what you want to say to [poem_giver] first."
-mc "Alright..."
-jump day3_plan
-
 
 if hangout1 == "Monika":
     if hangout2 == "Monika":
@@ -2375,6 +2393,17 @@ if hangout1 == "Monika":
             m 2e "So, don't beat yourself up over it too much."
             mc "Alright..."
 
+m 1d "Does Sayori know that [poem_giver] gave you this?"
+mc "No...{w=0.38}that's another problem..."
+mc "She wasn't really in the mood to talk today, so I figured that'd be a bad time to bring that up..."
+mc "Not to mention I have no idea how she'll take it..."
+m 2n "I don't think Sayori would overreact that way, [player]..."
+m 2p "Though she wouldn't take too kindly to this for sure..."
+mc "So...{w=0.38}when should I tell her about the letter?"
+m 3m "You're probably better off waiting to tell her for now."
+m 1e "It's better you figure out what you want to say to [poem_giver] first."
+mc "Alright..."
+jump day3_plan
 
 if encore_sayoriquestion_1 == False:
     show monika 2f
