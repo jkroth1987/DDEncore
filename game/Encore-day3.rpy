@@ -1424,6 +1424,7 @@ show monika 3g
 "Monika looks over it with a rather concerned look on her face."
 show monika 2m
 "After about a minute, she finishes reading it."
+play music e12
 m "Well then..."
 m 2n "I guess it's safe to assume that she likes you..."
 mc "Yeah, no kidding!"

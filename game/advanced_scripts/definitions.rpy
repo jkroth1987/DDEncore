@@ -125,6 +125,7 @@ define audio.e8 = "<loop 0>mod_assets/audio/Monika Void Theme.ogg" #Only Us
 define audio.e9 = "<loop 0>mod_assets/audio/Yuri's void v2.ogg" #Unhinged
 define audio.e10 = "<loop 0>mod_assets/audio/Natsuki's void v2.ogg" #I Know You Like Me
 define audio.e11 = "<loop 0>mod_assets/audio/Sayori's Void V2.ogg" #Sayo-Prise!
+define audio.e12 = "<loop 0>mod_assets/audio/Rooftop Reminiscence.ogg" #Temp song
 # Backgrounds
 image black = "#000000"
 image dark = "#000000e4"
@@ -1474,7 +1475,7 @@ image scratch:
     "mod_assets/sprites/scratch.png" with ImageDissolve("images/menu/wipeleft.png", 0.25, ramplen=4, alpha=True)
     0.25
     "#00000000" with ImageDissolve("images/menu/wipeleft.png", 0.25, ramplen=4, alpha=True)
-    
+
 image ouch:
     "#000000ff"
     "mod_assets/sprites/ouch.png" with Dissolve(0.25)
