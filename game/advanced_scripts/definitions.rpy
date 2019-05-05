@@ -1418,7 +1418,7 @@ default day = 0 #keeping track of days in case
 default menu_wait_time = 7.253 #The openiing animations timer
 default lpoem = "Yuri" #Who's love poem did you see on Day 2?
 default tell_s = True #Do you trouble Sayori with your dreams?
-
+default m_walk = True #Do you let Monika walk you back to class on Day 3?
 
 # Instantiating variables for poem appeal. This is how much each character likes the poem for each day.
 # -1 = Dislike, 0 = Neutral, 1 = Like

@@ -208,12 +208,15 @@ if hangout1 == "Monika":
 scene bg kitchen
 with wipeleft_scene
 play music t2 fadein 1.5
-"After finishing my morning routine, I head downstairs to my kitchen."
-"I'm not particularly hungry so I decide to just make myself a fruit bowl for breakfast."
-"While making it, I send Sayori a text to let her know that I'm up and she doesn't need to come wake me up again."
+"After finishing my morning routine, I head downstairs to my kitchen with [pome_giver]'s poem in hand."
+"I must've read it over a hundred times by now, hoping that this was some kind of sick joke."
+"I sigh and let the paper flutter onto my dining room table."
+"I'm not particularly hungry so I opt to just make a fruit bowl."
+"While grabbing the bowl, I send Sayori a text to let her know that I'm up and she doesn't need to come wake me up again."
 "Surprisingly, she responds back rather quickly and tells me that she's already waiting outside for me."
 "I reply back that I'll meet her as soon as I'm done with my breakfast."
-"As I'm eating, I come to the realization that I'll probably be getting everyone else's poems today..."
+"I hastily assemble my furit bowl and quickly begin eating it."
+"Though, I come to the realization that I'll probably be getting everyone else's poems today..."
 
 if poem_giver == "Natsuki" or poem_giver == "Yuri":
     "I'm still uncertain if it's even a good idea for me to talk to [poem_giver] about what she gave me..."
@@ -238,8 +241,8 @@ if poem_giver == "Yuri":
     "And Natsuki probably won't be of much help either..."
 
 
-"Maybe I can ask Monika, maybe she knows how to handle this..."
-"I sigh to myself as I pop the last piece of watermelon into my mouth, grab my backpack, and head outside to meet Sayori."
+"Maybe I can ask Monika, maybe she'll know to handle this..."
+"I sigh to myself as I pop the last piece of watermelon into my mouth, put [poem_giver]'s poem in my backpack, and head outside to meet Sayori."
 
 
 
@@ -1344,7 +1347,7 @@ scene bg class_day
 with open_eyes
 play audio school
 "After what it feels like an eternity, the lunch bell finally rings."
-"Grabbing the money from my bag, I head out to the cafteria, hoping to find Monika."
+"Grabbing the poem from my bag and stuffing it into my jacket with my lunch money, I head out to the cafteria, hoping to find Monika."
 play music t6 fadein 2.0
 show bg cafeteria
 with wipeleft_scene
@@ -1424,7 +1427,7 @@ show monika 3g
 "Monika looks over it with a rather concerned look on her face."
 show monika 2m
 "After about a minute, she finishes reading it."
-play music e12
+play music e12 fadein 3.0
 m "Well then..."
 m 2n "I guess it's safe to assume that she likes you..."
 mc "Yeah, no kidding!"
@@ -1460,11 +1463,12 @@ mc "I mean..."
 
 
 if encore_sayoriquestion_1 == True:
-    show monika 2f
-    mc "I'm dating Sayori...{w=0.38}and she needs me now more than ever..."
-    m 2g "Do you love Sayori, [player]?"
-    m 2p "Do you...{w=0.38}enjoy her company?"
+    jump day3_firsthalf
 
+if encore_sayoriquestion_1 == False:
+    jump day3_secondhalf
+
+label day3_firsthalf:
 
 if hangout1 == "Sayori":
     if hangout2 == "Sayori":
@@ -2406,9 +2410,7 @@ m 1e "It's better you figure out what you want to say to [poem_giver] first."
 mc "Alright..."
 jump day3_plan
 
-if encore_sayoriquestion_1 == False:
-    show monika 2f
-    mc "Well..."
+label day3_secondhalf:
 
 if hangout1 == "Sayori":
     if hangout2 == "Sayori":
@@ -2421,7 +2423,7 @@ if hangout1 == "Sayori":
         show monika 2f
         mc "I don't know..."
         mc "I'm worried about her..."
-        mc "I've know her practically my whole life..."
+        mc "I've known her practically my whole life..."
         show monika 2o
         mc "Ever since last Sunday, she's been acting different around me..."
         mc "She really didn't handle my response well..."
@@ -2448,7 +2450,7 @@ if hangout1 == "Sayori":
             show monika 2f
             mc "I don't know..."
             mc "I'm worried about her..."
-            mc "I've know her practically my whole life..."
+            mc "I've known her practically my whole life..."
             show monika 2o
             mc "Ever since last Sunday, she's been acting different around me..."
             mc "She really didn't handle my response well..."
@@ -2513,7 +2515,7 @@ if hangout1 == "Sayori":
             show monika 2f
             mc "I don't know..."
             mc "I'm worried about her..."
-            mc "I've know her practically my whole life..."
+            mc "I've known her practically my whole life..."
             show monika 2o
             mc "Ever since last Sunday, she's been acting different around me..."
             mc "She really didn't handle my response well..."
@@ -2535,20 +2537,18 @@ if hangout1 == "Sayori":
         mc "I don't know..."
         mc "I've enjoyed spending time around [poem_giver], she's fun to be with..."
         mc "And last Sunday, I did feel like maybe there was something there..."
-        mc "But Sayori's been on my mind lately..."
         show monika 2m
         mc "But Sayori's been on my mind lately..."
         m 2g "You're not having second thoughs about your answer to her confession, are you?"
         show monika 2f
         mc "I don't know..."
         mc "I'm worried about her..."
-        mc "I've know her practically my whole life..."
+        mc "I've known her practically my whole life..."
         show monika 2o
         mc "Ever since last Sunday, she's been acting different around me..."
         mc "She really didn't handle my response well..."
         mc "And since then, I've tried making things right with her..."
-        show monike 2e
-        m "I think she'll be fine, [player]..."
+        m 2e "I think she'll be fine, [player]..."
         m "She just needs time."
         mc "But I feel like I should do more though..."
         show monika 2m
@@ -2596,7 +2596,7 @@ if hangout1 == "Natsuki":
             show monika 2f
             mc "I don't know..."
             mc "I'm worried about her..."
-            mc "I've know her practically my whole life..."
+            mc "I've known her practically my whole life..."
             show monika 2o
             mc "Ever since last Sunday, she's been acting different around me..."
             mc "She really didn't handle my response well..."
@@ -2618,7 +2618,7 @@ if hangout1 == "Natsuki":
             show monika 2f
             mc "I don't know..."
             mc "I'm worried about her..."
-            mc "I've know her practically my whole life..."
+            mc "I've known her practically my whole life..."
             show monika 2o
             mc "Ever since last Sunday, she's been acting different around me..."
             mc "She really didn't handle my response well..."
@@ -2719,7 +2719,7 @@ if hangout1 == "Natsuki":
         mc "And last Sunday, I did feel like maybe there was something there..."
         mc "I don't know...{w=0.38}I guess I've been interested in getting to know the others a little bit lately..."
         show monika u114311
-        "And...{w=0.38}it's been nice getting to know you too, Monika."
+        mc "And...{w=0.38}it's been nice getting to know you too, Monika."
         show monika 2m
         mc "Especially since we really haven't talked that much since recently..."
         m 2e "It's been...{w=0.38}nice getting to know you too, [player]..."
@@ -2755,7 +2755,7 @@ if hangout1 == "Yuri":
             show monika 2f
             mc "I don't know..."
             mc "I'm worried about her..."
-            mc "I've know her practically my whole life..."
+            mc "I've known her practically my whole life..."
             show monika 2o
             mc "Ever since last Sunday, she's been acting different around me..."
             mc "She really didn't handle my response well..."
@@ -2787,7 +2787,7 @@ if hangout1 == "Yuri":
             show monika 2f
             mc "I don't know..."
             mc "I'm worried about her..."
-            mc "I've know her practically my whole life..."
+            mc "I've known her practically my whole life..."
             show monika 2o
             mc "Ever since last Sunday, she's been acting different around me..."
             mc "She really didn't handle my response well..."
@@ -2887,7 +2887,7 @@ if hangout1 == "Yuri":
         mc "And last Sunday, I did feel like maybe there was something there..."
         mc "I don't know...{w=0.38}I guess I've been interested in getting to know the others a little bit lately..."
         show monika u114311
-        "And...{w=0.38}it's been nice getting to know you too, Monika."
+        mc "And...{w=0.38}it's been nice getting to know you too, Monika."
         show monika 2m
         mc "Especially since we really haven't talked that much since recently..."
         m 2e "It's been...{w=0.38}nice getting to know you too, [player]..."
@@ -2924,13 +2924,12 @@ if hangout1 == "Monika":
             show monika 2f
             mc "I don't know..."
             mc "I'm worried about her..."
-            mc "I've know her practically my whole life..."
+            mc "I've known her practically my whole life..."
             show monika 2o
             mc "Ever since last Sunday, she's been acting different around me..."
             mc "She really didn't handle my response well..."
             mc "And since then, I've tried making things right with her..."
-            show monike 2e
-            m "I think she'll be fine, [player]..."
+            m 2e "I think she'll be fine, [player]..."
             m "She just needs time."
             mc "But I feel like I should do more though..."
             mc "She was really emotional yesterday..."
@@ -2992,10 +2991,11 @@ if hangout1 == "Monika":
                 m 2p "Maybe this is her attempt at reaching out to you..."
                 m 2n "To confirm her feelings for you..."
                 mc "Probably..."
+                show monika 2m
                 mc "And look, I like her to some extent..."
                 mc "It's been great getting to know her..."
                 show monika u114311
-                "But...{w=0.38}it's been nice getting to know you too, Monika."
+                mc "But...{w=0.38}it's been nice getting to know you too, Monika."
                 show monika 2m
                 mc "Especially since we really haven't talked that much since recently..."
                 m 2e "It's been...{w=0.38}nice getting to know you too, [player]..."
@@ -3029,11 +3029,12 @@ if hangout1 == "Monika":
                 m 2p "Well you haven't spent too much time around her lately."
                 m 2p "Maybe this is her attempt at reaching out to you..."
                 m 2n "To confirm her feelings for you..."
+                show monika 2m
                 mc "Probably..."
                 mc "And look, I like her to some extent..."
                 mc "It's been great getting to know her..."
                 show monika u114311
-                "But...{w=0.38}it's been nice getting to know you too, Monika."
+                mc "But...{w=0.38}it's been nice getting to know you too, Monika."
                 show monika 2m
                 mc "Especially since we really haven't talked that much since recently..."
                 m 2e "It's been...{w=0.38}nice getting to know you too, [player]..."
@@ -3074,11 +3075,12 @@ if hangout1 == "Monika":
             m 2p "Well you haven't spent too much time around her lately."
             m 2p "Maybe this is her attempt at reaching out to you..."
             m 2n "To confirm her feelings for you..."
+            show monika 2m
             mc "Probably..."
             mc "And look, I like her to some extent..."
             mc "It's been great getting to know her..."
             show monika u114311
-            "But...{w=0.38}it's been nice getting to know you too, Monika."
+            mc "But...{w=0.38}it's been nice getting to know you too, Monika."
             show monika 2m
             mc "Especially since we really haven't talked that much since recently..."
             m 2e "It's been...{w=0.38}nice getting to know you too, [player]..."
@@ -3113,11 +3115,12 @@ if hangout1 == "Monika":
             mc "Still, I'll admit that I'm surprised that she'd give me this..."
             m 2p "Maybe this is her attempt at reaching out to you..."
             m 2n "To confirm her feelings for you..."
+            show monika 2m
             mc "Probably..."
             mc "And look, I like her to some extent..."
             mc "It's been great getting to know her..."
             show monika u114311
-            "But...{w=0.38}it's been nice getting to know you too, Monika."
+            mc "But...{w=0.38}it's been nice getting to know you too, Monika."
             show monika 2m
             mc "Especially since we really haven't talked that much since recently..."
             m 2e "It's been...{w=0.38}nice getting to know you too, [player]..."
@@ -3145,7 +3148,7 @@ if hangout1 == "Monika":
         mc "I've enjoyed spending time around her, she's been fun to be around..."
         mc "And I had a blast with her last Sunday!"
         show monika u114311
-        "But...{w=0.38}it's been nice getting to know you too, Monika."
+        mc "But...{w=0.38}it's been nice getting to know you too, Monika."
         show monika 2m
         mc "Especially since we really haven't talked that much since recently..."
         m 2e "It's been...{w=0.38}nice getting to know you too, [player]..."
@@ -3173,3 +3176,261 @@ m 1d "Yeah, it's probably for the best."
 m 1e "You're better off figuring out what you want to say to [poem_giver]."
 mc "Alright..."
 jump day3_plan
+
+label day3_plan:
+mc "So what should I say to her then?"
+m 2e "Just tell her how you feel, [player]..."
+m 2n "[poem_giver] wants to know what's in your heart..."
+m 2d "You need to figure out who suits you best..."
+m 2e "And when you're figuring it all out, you should ask yourself some questions."
+mc "Like what?"
+m 2e "Like who can you always count on?"
+m 2m "Who you can you always trust?"
+m "Who have you been the most happy with?"
+m 2m "Who will always help you?"
+m "Who wants to see you succeed and is capable of helping you?"
+m 2e "Who are you proud to stand next to no matter what?"
+m "Who will always put a smile on your face and build you up?"
+m "Who isn't afraid to stand against the world with you?"
+m 2m "And I think you know one girl who checks all those boxes, don't you?"
+mc "I..."
+m 2e "I know you'll make the best decision for the club, [player]."
+m 5a "I have faith in you."
+show monika 2a
+"Monika's questions begin to echo in my head."
+"Who would I be the most happy with?"
+"Who can I always trust?"
+"Who would I be proud to say: 'Yeah, that's my girlfriend!' to my friends and family?"
+"I guess it'd have to be..."
+$ style.say_dialogue = style.edited
+show monika 2q
+"{cps=50}Monika.{nw}"
+$ style.say_dialogue = style.normal
+show monika 2e
+"..."
+"I'll definitely have a lot to think about later..."
+mc "Thanks Monika, I really appreciate the advice!"
+m 1k "No problem, [player]!"
+m 1e "I hope I calmed your nerves a bit."
+mc "Yeah...{w=0.38}you helped."
+mc "Though, I don't know if I'm ready for the club today..."
+show monika 2o
+mc "I don't know if I'm ready to deal with all this..."
+m 2e "I'm sure she won't ask you about it today, [player]."
+m 2d "But it wouldn't hurt to decide on what you want soon."
+mc "Yeah...{w=0.38}the sooner the better I guess."
+m 2e "Yeah."
+"Monika takes a look at her watch."
+m 1b "We still have some time before lunch period ends..."
+m 1e "Would you care to join me?"
+mc "Sure! Stressing all over this has worked up quite the appetite..."
+m 1l "I'm sure it has, [player]."
+m 1a "Come on, let's head back."
+stop music fadeout 3.0
+"Without another word, Monika and I head down the steps back to the cafeteria."
+show monika at thide
+hide monika
+show bg cafeteria
+with wipeleft_scene
+"I really wasn't social with Monika and her friends when we came back to join them."
+"Other then some occassional chatting, I mostly kept my mouth shut and zoned out."
+"My mind was racing the entire time attempting to answer the questions Monika gave me."
+"And I'm still a little paranoid that [poem_giver] is going to try to talk to me in the club later..."
+"I don't feel prepared for this..."
+"But, I guess I did sort of ask for this to happen..."
+"Now, I just got to figure out what I want to do next..."
+show monika 1e at t11 zorder 2
+"I really need to thank Monika when this all over."
+show monika cute
+"Her advice has been pretty helpful so far, and I feel like I'll ultimately figure things out thanks to her..."
+"She certainly has been dependable..."
+show monika 1m
+play audio school
+"Before I can finish my thought, the school bell rings, singfying the end of lunch period for me."
+mc "Well, I guess it's back to boring old math for me..."
+a "Good luck, [player]!"
+r "Yeah! It was nice catching up with you!"
+mc "Likewise."
+m 2b "I'll see you girls later!"
+a "Later Monika!"
+show monika 1a
+"Akari and Ria pack their things and walk out of the cafeteria, leaving me alone with just Monika."
+mc "Well, I guess I'll see you at the club later then?"
+show monika 2e
+m "Yeah, I'll see you then."
+m 2m "Hopefully you're able to give those questions some more thought."
+mc "I will, it's certainly a lot to think about."
+m 1e "It'll all be worth it in the end, [player], believe me."
+mc "Well, I do trust you so..."
+m 5a "Looks like you've already been giving those questions some thought, huh?"
+"My face turns flush with embarassment."
+mc "W-{w=0.38}well yeah..."
+mc "You're the best person I know who could trust to help me through this!"
+m "How interesting..."
+mc "What do you mean?"
+m 2n "Ah, don't worry about it..."
+m 2e "You have enough on your plate as is right now..."
+mc "Yeah, you're right..."
+show monika 2e
+"Monika shoots me a reassuring smile, and I can't help but return one myself."
+
+if hangout1 == "Monika":
+    if hangout2 == "Monika":
+        m 2d "I can walk you back to your class if you'd like, [player]."
+        show monika 2e
+        "The world around me goes into a freeze frame."
+        "She's actually willing to walk me back?"
+        "Come on, [player], don't blow this!"
+        mc "Oh! Well, uh...{w=0.38}sure..."
+        m 2n "You seem surprised..."
+        show monika 2m
+        mc "Well...{w=0.38}I wasn't expecting you to ask me..."
+        mc "And I'd hate to make you late to your own class..."
+        m 2e "I'll be fine, [player], don't worry."
+        mc "Well...{w=0.38}okay..."
+        m 1j "Great! Come on! Let's go!"
+        "I timidly follow Monika out of the cafeteria."
+
+if hangout1 == "Monika":
+    if hangout2 == "Sayori" or hangout2 == "Natsuki" or hangout2 == "Yuri":
+        m 2e "Do you want me to walk you back to class?"
+        "My heart races a million miles a second as soon as Monika finished her question."
+        "She...{w=0.38}actually wants to spend more time with me?"
+        "I don't know...{w=0.38}there's a lot to think about and I think I'd rather be alone right now..."
+        show monika 5a
+        "But then again:{w=0.38}this is Monika, and I guess a little company wouldn't hurt..."
+        "She was nice enough to hear me out after all..."
+        show monika 1a
+        "But what if [poem_giver] sees us and gets the wrong idea?"
+
+        if encore_sayoriquestion_1 == True:
+            "And what if Sayori sees us..."
+            jump day3_rigged
+
+
+        if encore_sayoriquestion_1 == False:
+            pass
+            jump day3_rigged
+
+if hangout1 == "Sayori" or hangout2 == "Natsuki" or hangout2 == "Yuri":
+    if hangout2 == "Monika":
+        m 2e "Do you want me to walk you back to class?"
+        "My heart races a million miles a second as soon as Monika finished her question."
+        "She...{w=0.38}actually wants to spend more time with me?"
+        "I don't know...{w=0.38}there's a lot to think about and I think I'd rather be alone right now..."
+        show monika 5a
+        "But then again:{w=0.38}this is Monika, and I guess a little company wouldn't hurt..."
+        "She was nice enough to hear me out after all..."
+        show monika 1a
+        "But what if [poem_giver] sees us and gets the wrong idea?"
+
+        if encore_sayoriquestion_1 == True:
+            "And what if Sayori sees us..."
+            "She isn't exactly happy with me being around Monika right now..."
+            jump day3_rigged
+
+
+        if encore_sayoriquestion_1 == False:
+            pass
+            jump day3_rigged
+
+else:
+    m 2e "If you want, [player], I can walk you back to your class."
+    mc "Oh! Uhhh..."
+    "My mind completely goes blank."
+    "I don't really get the chance to spend too much time around Monika..."
+    "But with everything going on, I'm hardly in a social mood."
+    show monika 5a
+    "Then again:{w=0.38}this is Monika, and I guess a little company wouldn't hurt..."
+    "She was nice enough to hear me out after all..."
+    show monika 1a
+    "But what if [poem_giver] sees us and gets the wrong idea?"
+
+    if encore_sayoriquestion_1 == True:
+        "And what if Sayori sees us and gets the wrong idea?"
+
+        if hangout2 == "Natsuki" or hangout2 == "Yuri":
+            "She's already angry at me for yesterday, I don't want to get into more trouble with her..."
+            jump day3_notrigged
+
+        if hangout2 == "Sayori":
+           pass
+           jump day3_notrigged
+
+
+    if encore_sayoriquestion_1 == False:
+        pass
+        jump day3_notrigged
+
+
+
+label day3_rigged:
+
+    show monika 1q at t11 zorder 1
+
+    python:
+        "Should I let Monika walk me back?"
+        madechoice = renpy.display_menu([("Yes.", "true"), ("No.", "false")], screen="rigged_choice")
+
+    #If you pick No
+    if madechoice != "true":
+        window hide(None)
+        show bg cafeteria
+        show monika 1f
+        mc "Sorry, Monika...{w=0.38}I think I should be alone for now..."
+        mc "I do have a lot to think over..."
+        m 2n "It's fine, [player]..."
+        m 2e "I'll see you in the club."
+        mc "Yeah...{w=0.38}see you then!"
+        show monika at thide
+        hide monika
+
+    #If you pick Yes
+    if madechoice != "false":
+        window hide(None)
+        show bg cafeteria
+        show monika 1a
+        mc "Sure! We can walk back!"
+        show monika 1k
+        m "Awesome!"
+        m 2b "Lead the way, [player]!"
+        "I'm not entirely sure why Monika wanted to walk with me so badly."
+        "But hey, I'll oblige her, it wouldn't hurt to."
+        "I smile to myself as we make our way out of the cafeteria."
+        show monika thide
+        hide monika
+
+
+
+label day3_notrigged:
+    menu:
+        "Should I let Monika walk me back?"
+        "Yes.":
+            $ m_walk = True
+            jump m_walk_yes
+        "No.":
+            $ m_walk = False
+            jump m_walk_no
+
+
+label m_walk_yes:
+mc "Sure! We can walk back!"
+show monika 1k
+m "Awesome!"
+m 2b "Lead the way, [player]!"
+"I'm not entirely sure why Monika wanted to walk with me so badly."
+"But hey, I'll oblige her, it wouldn't hurt to."
+"I smile to myself as we make our way out of the cafeteria."
+show monika thide
+hide monika
+
+
+label m_walk_no:
+show monika 1f
+mc "Sorry, Monika...{w=0.38}I think I should be alone for now..."
+mc "I do have a lot to think over..."
+m 2n "It's fine, [player]..."
+m 2e "I'll see you in the club."
+mc "Yeah...{w=0.38}see you then!"
+show monika at thide
+hide monika

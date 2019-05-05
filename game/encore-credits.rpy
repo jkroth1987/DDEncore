@@ -18,11 +18,12 @@ Writers: Agent Gold, Bug, Nick (Canad1an),
 Rose, Ploxmaster708, Rudy, Andrew J. Striedl
 Writing Contributors: Lucy CN, Jacob Smallman
 Artists: 3Monika4 (Monika), Elaina Sasso,
-Kent Stone, SkynnarahSerenity49"""
+ @reenaki_m (Instagram)"""
 
     # 2
     # 6 lines, +250 pixels
     c_text_2 = """Coders: Agent Gold, Bug, Nico, Andrew J. Striedl\n
+Art Contributors: Kent Stone, SkynnarahSerenity49
 Coding Contributor: POBAW
 General Contributions: Nep, Rezzy
 Image Editing: POBAW, TheD0ctor,
