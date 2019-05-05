@@ -111,32 +111,32 @@ label day1_beginning:
     if encore_sayoriquestion_1 == False:
         "I told her that I wanted to help her through this to get things back to the way they were."
         "At the time, I thought I did the right thing, but maybe I could have handled that a little bit better..."
-        "Since last Sunday, Sayori's been unusually quiet around me."
-        "She didn’t even really want to be around me during the festival…"
+        "Since last Sunday, Sayori's been uncharacteristically quiet around me."
+        "She didn’t even want to be around me during the festival…"
         "I must have really hurt her feelings when I turned her down..."
-        "But, it’s probably for the best that we try to preserve our friendship, given her current state of mind."
+        "But, I want to try and preserve our friendship, given her current state of mind."
         "At least for now."
         "Why is she here anyway?"
         "Oh right, I guess it’d make sense for Sayori to be here."
-        "Lately, I’ve accidentally picked up on Sayori’s habit of sleeping in."
+        "Lately, I’ve accidentally picked up on her habit of sleeping in."
         "Dealing with the stress of everything in the last two weeks has really taken a bigger toll on me than I first realized."
         "Sayori has now made it a habit of her morning routine to make sure that I don’t oversleep."
-        "At least Sayori seems to be doing a bit better today…"
+        "At least she seems to be doing a bit better today…"
 
 
     elif encore_sayoriquestion_1 == True:
         "I told her that I loved her back and well, we’ve been dating ever since."
         "Why is she here anyway?"
         "Oh right, I guess it'd make sense for Sayori to be here."
-        "Lately, I’ve accidentally picked up on Sayori’s habit of sleeping in."
+        "Lately, I’ve accidentally picked up on her habit of sleeping in."
         "Dealing with the stress of everything in the last two weeks has really taken a bigger toll on me than I first realized."
         "Sayori has now made it a habit of her morning routine to make sure that I don’t oversleep."
-        "At least Sayori seems to be doing much better now..."
+        "At least she seems to be doing much better now..."
 
     "Wait...{w=0.28}what time is it???"
-    "I hurriedly check my alarm clock."
-    "What?!? Oh God, I'm gonna be late!"
-    "I quickly jump out of bed and prepare for the day."
+    "I roll over to get a better look at my clock."
+    "Oh crap! I'm gonna be late!"
+    "I launch myself out of bed with the grace of T-rex playing piano and prepare for the trails of the day."
     scene bg bedroom
     with wipeleft_scene
     "And so another ordinary day of school awaits me."
