@@ -136,7 +136,7 @@ label day1_beginning:
     "Wait...{w=0.28}what time is it???"
     "I roll over to get a better look at my clock."
     "Oh crap! I'm gonna be late!"
-    "I launch myself out of bed with the grace of T-rex playing piano and prepare for the trails of the day."
+    "I launch myself out of bed and get ready for the day."
     scene bg bedroom
     with wipeleft_scene
     "And so another ordinary day of school awaits me."
