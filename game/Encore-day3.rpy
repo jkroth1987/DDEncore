@@ -3367,10 +3367,11 @@ else:
 label day3_rigged:
 
     show monika 1q at t11 zorder 1
-
+    
     python:
-        "Should I let Monika walk me back?"
-        madechoice = renpy.display_menu([("Yes.", "true"), ("No.", "false")], screen="rigged_choice")
+        #"Should I let Monika walk me back?"
+        renpy.say(narrator, "Should I let Monika walk me back?", interact=False)
+        madechoice = renpy.display_menu([("Yes.", "true"), ("No.", "false")], screen="encore_rigged_choice")
 
     #If you pick No
     if madechoice != "true":
