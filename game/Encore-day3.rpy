@@ -208,7 +208,7 @@ if hangout1 == "Monika":
 scene bg kitchen
 with wipeleft_scene
 play music t2 fadein 1.5
-"After finishing my morning routine, I head downstairs to my kitchen with [pome_giver]'s poem in hand."
+"After finishing my morning routine, I head downstairs to my kitchen with [poem_giver]'s poem in hand."
 "I must've read it over a hundred times by now, hoping that this was some kind of sick joke."
 "I sigh and let the paper flutter onto my dining room table."
 "I'm not particularly hungry so I opt to just make a fruit bowl."
@@ -1347,15 +1347,15 @@ scene bg class_day
 with open_eyes
 play audio school
 "After what it feels like an eternity, the lunch bell finally rings."
-"Grabbing the poem from my bag and stuffing it into my jacket with my lunch money, I head out to the cafteria, hoping to find Monika."
+"Grabbing the poem from my bag and stuffing it into my jacket with my lunch money, I head out to the cafeteria, hoping to find Monika."
 play music t6 fadein 2.0
 show bg cafeteria
 with wipeleft_scene
-"Enterting the cafteria, I immediately begin to look around for Monika."
+"Enterting the cafeteria, I immediately begin to look around for Monika."
 "Alright, if I was Monika, where would I be?"
 "..."
 "Probably towards the center with all the other popular kids."
-"I start walking to the center of the cafteria."
+"I start walking to the center of the cafeteria."
 show bg cafeteria
 with wipeleft_scene
 "Sure enough, it didn't take me long to spot Monika sitting at one tables at the center of the room."
@@ -1404,14 +1404,14 @@ mc "It's...{w=0.38}urgent..."
 mc "I'd wait to tell you at the club but..."
 show monika 2n
 m "Say no more, [player]..."
-m 3e "I'm always happy to time for you."
+m 3e "I always have time for you."
 "I feel my face heat up with slight embarassment."
 mc "T-{w=0.38}thank you, Monika! I really appreciate it!"
 m 1b "We'll be right back girls!"
 r "Have fun you two!"
 show monika at thide
 hide monika
-"I lead Monika out of the cafteria and to somewhere where we might have a little more privacy."
+"I lead Monika out of the cafeteria and to somewhere where we might have a little more privacy."
 a "She's got him wrapped around her finger."
 r "That's Monika for you."
 show bg school_rooftop
@@ -2721,7 +2721,7 @@ if hangout1 == "Natsuki":
         show monika u114311
         mc "And...{w=0.38}it's been nice getting to know you too, Monika."
         show monika 2m
-        mc "Especially since we really haven't talked that much since recently..."
+        mc "Especially since we really haven't talked that much recently..."
         m 2e "It's been...{w=0.38}nice getting to know you too, [player]..."
         m 2n "It must have taken a lot for you to muster up the courage to finally talk to me..."
         mc "Well..."
@@ -2889,7 +2889,7 @@ if hangout1 == "Yuri":
         show monika u114311
         mc "And...{w=0.38}it's been nice getting to know you too, Monika."
         show monika 2m
-        mc "Especially since we really haven't talked that much since recently..."
+        mc "Especially since we really haven't talked that much recently..."
         m 2e "It's been...{w=0.38}nice getting to know you too, [player]..."
         m 2n "It must have taken a lot for you to muster up the courage to finally talk to me..."
         mc "Well..."
@@ -2997,7 +2997,7 @@ if hangout1 == "Monika":
                 show monika u114311
                 mc "But...{w=0.38}it's been nice getting to know you too, Monika."
                 show monika 2m
-                mc "Especially since we really haven't talked that much since recently..."
+                mc "Especially since we really haven't talked that much recently..."
                 m 2e "It's been...{w=0.38}nice getting to know you too, [player]..."
                 m 2n "It must have taken a lot for you to muster up the courage to finally talk to me..."
                 mc "Well..."
@@ -3036,7 +3036,7 @@ if hangout1 == "Monika":
                 show monika u114311
                 mc "But...{w=0.38}it's been nice getting to know you too, Monika."
                 show monika 2m
-                mc "Especially since we really haven't talked that much since recently..."
+                mc "Especially since we really haven't talked that much recently..."
                 m 2e "It's been...{w=0.38}nice getting to know you too, [player]..."
                 m 2n "It must have taken a lot for you to muster up the courage to finally talk to me..."
                 mc "Well..."
@@ -3082,7 +3082,7 @@ if hangout1 == "Monika":
             show monika u114311
             mc "But...{w=0.38}it's been nice getting to know you too, Monika."
             show monika 2m
-            mc "Especially since we really haven't talked that much since recently..."
+            mc "Especially since we really haven't talked that much recently..."
             m 2e "It's been...{w=0.38}nice getting to know you too, [player]..."
             m 2n "It must have taken a lot for you to muster up the courage to finally talk to me..."
             mc "Well..."
@@ -3122,7 +3122,7 @@ if hangout1 == "Monika":
             show monika u114311
             mc "But...{w=0.38}it's been nice getting to know you too, Monika."
             show monika 2m
-            mc "Especially since we really haven't talked that much since recently..."
+            mc "Especially since we really haven't talked that much recently..."
             m 2e "It's been...{w=0.38}nice getting to know you too, [player]..."
             m 2n "It must have taken a lot for you to muster up the courage to finally talk to me..."
             mc "Well..."
@@ -3150,7 +3150,7 @@ if hangout1 == "Monika":
         show monika u114311
         mc "But...{w=0.38}it's been nice getting to know you too, Monika."
         show monika 2m
-        mc "Especially since we really haven't talked that much since recently..."
+        mc "Especially since we really haven't talked that much..."
         m 2e "It's been...{w=0.38}nice getting to know you too, [player]..."
         m 2n "It must have taken a lot for you to muster up the courage to finally talk to me..."
         mc "Well..."
@@ -3298,7 +3298,7 @@ if hangout1 == "Monika":
         "She...{w=0.38}actually wants to spend more time with me?"
         "I don't know...{w=0.38}there's a lot to think about and I think I'd rather be alone right now..."
         show monika 5a
-        "But then again:{w=0.38}this is Monika, and I guess a little company wouldn't hurt..."
+        "But then again:{w=0.38} this is Monika, and I guess a little company wouldn't hurt..."
         "She was nice enough to hear me out after all..."
         show monika 1a
         "But what if [poem_giver] sees us and gets the wrong idea?"
@@ -3319,7 +3319,7 @@ if hangout1 == "Sayori" or hangout2 == "Natsuki" or hangout2 == "Yuri":
         "She...{w=0.38}actually wants to spend more time with me?"
         "I don't know...{w=0.38}there's a lot to think about and I think I'd rather be alone right now..."
         show monika 5a
-        "But then again:{w=0.38}this is Monika, and I guess a little company wouldn't hurt..."
+        "But then again:{w=0.38} this is Monika, and I guess a little company wouldn't hurt..."
         "She was nice enough to hear me out after all..."
         show monika 1a
         "But what if [poem_giver] sees us and gets the wrong idea?"
@@ -3341,7 +3341,7 @@ else:
     "I don't really get the chance to spend too much time around Monika..."
     "But with everything going on, I'm hardly in a social mood."
     show monika 5a
-    "Then again:{w=0.38}this is Monika, and I guess a little company wouldn't hurt..."
+    "Then again:{w=0.38} this is Monika, and I guess a little company wouldn't hurt..."
     "She was nice enough to hear me out after all..."
     show monika 1a
     "But what if [poem_giver] sees us and gets the wrong idea?"
@@ -3384,6 +3384,8 @@ label day3_rigged:
         mc "Yeah...{w=0.38}see you then!"
         show monika at thide
         hide monika
+        jump day3_hallway2
+
 
     #If you pick Yes
     if madechoice != "false":
@@ -3399,6 +3401,8 @@ label day3_rigged:
         "I smile to myself as we make our way out of the cafeteria."
         show monika thide
         hide monika
+        jump day3_hallway1
+
 
 
 
@@ -3423,6 +3427,7 @@ m 2b "Lead the way, [player]!"
 "I smile to myself as we make our way out of the cafeteria."
 show monika thide
 hide monika
+jump day3_hallway1
 
 
 label m_walk_no:
@@ -3434,3 +3439,30 @@ m 2e "I'll see you in the club."
 mc "Yeah...{w=0.38}see you then!"
 show monika at thide
 hide monika
+jump day3_hallway2
+
+
+ label day3_hallway1:
+ scene bg corridor
+ with wipeleft_scene
+ play music t3 fadein 2.0
+ "Monika and I make our way through the crowded hallways up towards the second floor."
+ show monika 1a at t11 zorder 1
+ "I turn to her, our eyes meeting."
+ mc "You know you didn't really have to walk me back..."
+
+
+
+
+
+ label day3_hallway2:
+ scene bg corridor
+ with wipeleft_scene
+ play music t3 fadein 2.0
+ "I make my up through the crowded hallways up towards the second floor."
+ "My eyes can't help but wander back and forth to the other various people walking with me."
+ "I can't help but focus on all the couples walking around me."
+ "What did it take for them to get together?"
+ "How big of a decision was it for them?"
+ "Did they have to to struggle like I did?"
+ "Did they ever feel like they were being pulled in two different directions?"
