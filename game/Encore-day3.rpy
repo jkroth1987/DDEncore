@@ -3442,27 +3442,27 @@ hide monika
 jump day3_hallway2
 
 
- label day3_hallway1:
- scene bg corridor
- with wipeleft_scene
- play music t3 fadein 2.0
- "Monika and I make our way through the crowded hallways up towards the second floor."
- show monika 1a at t11 zorder 1
- "I turn to her, our eyes meeting."
- mc "You know you didn't really have to walk me back..."
+label day3_hallway1:
+scene bg corridor
+with wipeleft_scene
+play music t3 fadein 2.0
+"Monika and I make our way through the crowded hallways up towards the second floor."
+show monika 1a at t11 zorder 1
+"I turn to her, our eyes meeting."
+mc "You know you didn't really have to walk me back..."
 
 
 
 
 
- label day3_hallway2:
- scene bg corridor
- with wipeleft_scene
- play music t3 fadein 2.0
- "I make my up through the crowded hallways up towards the second floor."
- "My eyes can't help but wander back and forth to the other various people walking with me."
- "I can't help but focus on all the couples walking around me."
- "What did it take for them to get together?"
- "How big of a decision was it for them?"
- "Did they have to to struggle like I did?"
- "Did they ever feel like they were being pulled in two different directions?"
+label day3_hallway2:
+scene bg corridor
+with wipeleft_scene
+play music t3 fadein 2.0
+"I make my up through the crowded hallways up towards the second floor."
+"My eyes can't help but wander back and forth to the other various people walking with me."
+"I can't help but focus on all the couples walking around me."
+"What did it take for them to get together?"
+"How big of a decision was it for them?"
+"Did they have to to struggle like I did?"
+"Did they ever feel like they were being pulled in two different directions?"
