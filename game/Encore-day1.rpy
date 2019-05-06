@@ -209,13 +209,13 @@ label day1_beginning:
     scene cg s_cg_1
     with dissolve_cg
     "Sayori goes up to me and attempts to fix my hair."
-    "This situation immediately turns awkward for me. I blush as Sayori's fingers swirl through my hair."
+    "I blush as Sayori's fingers swirl through my hair."
     mc "H-{w=0.28}hey come on…{w=0.28} is this really necessary?"
     s "You look like you just got out of bed."
-    mc "Well, that’s because I just did."
+    mc "Well maybe that’s because I kinda just did."
     "Sayori and I fall silent for a second."
-    "As she continues to try to fix my hair, I can’t help but be reminded of all the times my mother would do this to me right as I was about to go to school."
-    "I’d always get embarrassed when she would try to fix my hair, especially in front of the other kids."
+    "As she continues, I can’t help but be reminded of all the times my mother would do this to me right as I was about to go to school."
+    "I’d always get embarrassed when she did, especially in front of the other kids."
     s "How much sleep did you get?"
     mc "Considering everything that's happened the last two weeks, {i}a lot.{/i}"
     mc "And I still think I need more sleep..."
@@ -226,32 +226,26 @@ label day1_beginning:
     show sayori 1l at t11 zorder 1
     s "Sorry...{w=0.28} I-{w=0.28}I didn't mean to wake you up so soon..."
     "Did I really come across as that rude?"
-    "I know that despite her warm and peppy attitude, Sayori is still going through her depressive episodes..."
+    "I know that Sayori is still going through her depressive episodes..."
     "...and how it makes her want to avoid being a burden on other people...especially me."
     mc "Hey, hey, hey...{w=0.28}it's not your fault, really! Honestly, I feel a lot more rested now."
     "Sayori's face returns to her gleeful expression."
     s 3r "Hehe...{w=0.28} well that's good!"
-    "She says with a thankful relief in her voice."
     "I really need to be more careful with what I say around her."
 
     if encore_sayoriquestion_1 == True:
         show sayori 1a at t11 zorder 1
         "We stand there smiling at each other, looking into each other's eyes."
-        "I think to myself just how lucky I am to have ended up with someone like her after all these years."
-        "It didn't occur to me two weeks ago, hell, even last week, that I would've ever been dating my childhood best friend."
-        "It's something I kind of always thought to myself as a \'what if...\' scenario, but I never really gave it serious thought until we started walking to school together again."
-        "I guess that after spending all that time together in the Literature Club, we were able to rediscover that tight bond we once shared."
-        "Though, it really wasn’t until Sayori had told me about her depression and love for me when I realized just how much we really meant to each other."
-        "As the memories continue to swirl in my head, I slowly start spacing out into Sayori’s eyes."
-        "I could almost stare into those sky blue eyes all day..."
-        "Suddenly remembering that we still had school, I snap out of my gaze."
+        "It didn't occur to me two weeks ago, hell, ever in my life, that I would've ever dated my childhood best friend."
+        "It's something I kind of always thought to myself as a \'what if...\' scenario, but I never really gave it serious thought until we started reconnecting"
+        "I guess that after spending all that time together, we were able to rediscover that tight bond we once shared."
+        "As the memories continue to swirl in my head, I suddenly remember that we still had school, I snap out of my gaze."
         mc  "We...{w=0.28} should probably get going. We don’t want to be late."
         s 1y "Y-{w=0.28}Yeah...{w=0.28} you're right."
-        "She says that slightly flustered."
-        "I can tell that she would rather stay like this with me, but we reluctantly make our way downstairs and start making our way to school."
+        "She says slightly flustered."
+        "I can tell that she would rather stay, but we reluctantly make our way downstairs and start making our way to school."
         scene bg residential_day
         with wipeleft_scene
-        "While we really didn't get much talking done on the way there, it's clear that the earlier moment we shared is still on our minds."
         show sayori 1b at t11 zorder 1
         "As we walk, we can't help but catch glances in each other's direction..."
         show sayori 1y at t11 zorder 1
@@ -260,10 +254,10 @@ label day1_beginning:
         mc "Gosh, we're really together now, aren't we?"
         s 1c "Huh? Did you say something, [player]?"
         mc "Oh, nothing important."
-        "It's on days like this that it still takes me a minute to realize that I've ended up with my best friend after all these years..."
-        "Though when I stop to think about it, it makes sense that we did."
-        "The warmth of her hugs, the scent of cinnamon that radiates from her hair..."
-        "And that infectious smile that never fails to brighten my day."
+        "The warmth of her hugs..."
+        "The scent of cinnamon that radiates from her hair..."
+        "That infectious smile that never fails to brighten my day..."
+        "It's no wonder I fell for her."
         "As we continue our walk, I just keep thinking to myself about the next chance we'll be able to spend some time together..."
 
     elif encore_sayoriquestion_1 == False:
