@@ -3370,8 +3370,9 @@ label day3_rigged:
     
     python:
         #"Should I let Monika walk me back?"
-        renpy.say(narrator, "Should I let Monika walk me back?", interact=False)
-        madechoice = renpy.display_menu([("Yes.", "true"), ("No.", "false")], screen="encore_rigged_choice")
+#        renpy.say(narrator, "Should I let Monika walk me back?", interact=False)
+#        madechoice = renpy.display_menu([("Yes.", "true"), ("No.", "false")], screen="encore_rigged_choice")
+        madechoice = show_rigged_choice(narrator, "Should I let Monika walk me back?", [("Yes.", "true"), ("No.", "false")])
 
     #If you pick No
     if madechoice != "true":
