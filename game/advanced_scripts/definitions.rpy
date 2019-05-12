@@ -125,7 +125,12 @@ define audio.e8 = "<loop 0>mod_assets/audio/Monika Void Theme.ogg" #Only Us
 define audio.e9 = "<loop 0>mod_assets/audio/Yuri's void v2.ogg" #Unhinged
 define audio.e10 = "<loop 0>mod_assets/audio/Natsuki's void v2.ogg" #I Know You Like Me
 define audio.e11 = "<loop 0>mod_assets/audio/Sayori's Void V2.ogg" #Sayo-Prise!
-define audio.e12 = "<loop 0>mod_assets/audio/Rooftop Reminiscence.ogg" #Temp song
+define audio.e12 = "<loop 0>mod_assets/audio/How You Feel.ogg" #Rooftop Song
+define audio.e13 = "<loop 0>mod_assets/audio/Ohayou_Monika.ogg" #Alternate Monika Theme MBS
+define audio.e14 = "<loop 0>mod_assets/audio/Ohayou_Natsuki.ogg" #Alternate Natsuki Theme MBS
+define audio.e15 = "<loop 0>mod_assets/audio/Ohayou_Sayori.ogg" #Alternate Sayori Theme MBS
+define audio.e16 = "<loop 0>mod_assets/audio/Ohayou_Yuri.ogg" #Alternate Yuri Theme MBS
+
 # Backgrounds
 image black = "#000000"
 image dark = "#000000e4"
@@ -1418,7 +1423,7 @@ default day = 0 #keeping track of days in case
 default menu_wait_time = 7.253 #The openiing animations timer
 default lpoem = "Yuri" #Who's love poem did you see on Day 2?
 default tell_s = True #Do you trouble Sayori with your dreams?
-default m_walk = True #Do you let Monika walk you back to class on Day 3?
+
 
 # Instantiating variables for poem appeal. This is how much each character likes the poem for each day.
 # -1 = Dislike, 0 = Neutral, 1 = Like
@@ -1509,6 +1514,10 @@ image monika s2 = "mod_assets/sprites/ms2.png"
 image monika snap = "mod_assets/sprites/The_Snap1.png"
 image monika attack = shadow("mod_assets/sprites/Shadow_Attack.png")
 image monika cute = "mod_assets/sprites/monika cute.png"
+image monika shock =  "mod_assets/sprites/monika shock.png"
+image monika smirk =  "mod_assets/sprites/monika smirk.png"
+image monika surprised =  "mod_assets/sprites/monika surprised.png"
+image monika tease =  "mod_assets/sprites/monika tease.png"
 image shadow_attack = "mod_assets/sprites/Shadow_Attack.png"
 image shadow_attack_bloody = "mod_assets/sprites/Shadow_Attack_Bloody.png"
 #image monika u113342 = im.Composite((960, 960), (0, 0), "mod_assets/character_images/monika/1_uniform/1_body_left/1.png", (0, 0), "mod_assets/character_images/monika/1_uniform/2_body_right/1.png", (0, 0), "mod_assets/character_images/monika/2_face/base.png", (0, 0), "mod_assets/character_images/monika/2_face/1_mouth/3.png", (0, 0), "mod_assets/character_images/monika/2_face/2_nose/3.png", (0, 0), "mod_assets/character_images/monika/2_face/3_eyes/4.png", (0, 0), "mod_assets/character_images/monika/2_face/4_eyebrows/2.png")
