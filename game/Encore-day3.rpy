@@ -3387,6 +3387,7 @@ label day3_rigged:
         madechoice = show_rigged_choice(narrator, "Should I let Monika walk me back?", [("Yes.", "true"), ("No.", "false")])
 
     #If you pick No
+    $ m_walk = False
     if madechoice != "true":
         window hide(None)
         show bg cafeteria
@@ -3402,6 +3403,7 @@ label day3_rigged:
 
 
     #If you pick Yes
+    $ m_walk = True
     if madechoice != "false":
         window hide(None)
         show bg cafeteria
@@ -5061,7 +5063,7 @@ m "How're you two?"
 s 1x "I'm doing pretty well! Looking forward to another great day with you guys!"
 m 2m "Awww, Sayori..."
 mc "She's always a charmer."
-s 2q "Tehe~"
+s 2q "Teehee~"
 m 3a "I take it you already have her poems, [player]?"
 show sayori 1a
 
@@ -5101,53 +5103,62 @@ hide monika
 "So I guess that only leaves three options left..."
 
 
+
+#Normal choice, No Natsuki
+
 if poem_giver == "Natsuki":
-    if hangout1 == "Sayori" or hangout1 == "Yuri":
-        if hangout2 == "Sayori" or hangout2 == "Yuri":
+    if hangout1 == "Sayori" or hangout1 == "Yuri" or hangout1 == "Natsuki":
+        if hangout2 == "Sayori" or hangout2 == "Yuri" or hangout2 == "Natsuki":
             jump day3_choice1
+
+
+#Normal choice, No Yuri
+
+
+if poem_giver == "Yuri":
+    if hangout1 == "Sayori" or hangout1 == "Natsuki" or hangout1 == "Yuri":
+        if hangout2 == "Sayori" or hangout2 == "Natsuki" or hangout2 == "Yuri":
+            jump day3_choice2
+
+
+#Monika interfers, No Natsuki
 
 if poem_giver == "Natsuki":
     if hangout1 == "Monika":
-        if hangout2 == "Sayori" or hangout2 == "Yuri":
-            jump day3_choice2
+        if hangout2 == "Sayori" or hangout2 == "Yuri" or hangout2 == "Natsuki":
+            jump day3_choice3
 
 if poem_giver == "Natsuki":
-    if hangout1 == "Sayori" or hangout1 == "Yuri":
+    if hangout1 == "Sayori" or hangout1 == "Yuri" or hangout1 == "Natsuki":
         if hangout2 == "Monika":
-            jump day3_choice2
+            jump day3_choice3
 
+#Monika interfers, No Yuri
+
+if poem_giver == "Yuri":
+    if hangout1 == "Monika":
+        if hangout2 == "Sayori" or hangout2 == "Natsuki" or hangout2 == "Yuri":
+            jump day3_choice4
+
+if poem_giver == "Yuri":
+    if hangout1 == "Sayori" or hangout1 == "Natsuki" or hangout1 == "Yuri":
+        if hangout2 == "Monika":
+            jump day3_choice4
+
+#Just Monika, No Natsuki
 
 if poem_giver == "Natsuki":
     if hangout1 == "Monika":
         if hangout2 == "Monika:
-            jump day3_choice3
+            jump day3_choice5
 
 
-
-
+#Just Monika, No Yuri
 
 if poem_giver == "Yuri":
-        if hangout1 == "Sayori" or hangout1 == "Natsuki":
-            if hangout2 == "Sayori" or hangout2 == "Natsuki":
-                jump day3_choice4
-
-    if poem_giver == "Natsuki":
-        if hangout1 == "Monika":
-            if hangout2 == "Sayori" or hangout2 == "Natsuki":
-                jump day3_choice5
-
-    if poem_giver == "Natsuki":
-        if hangout1 == "Sayori" or hangout1 == "Natsuki":
-            if hangout2 == "Monika":
-                jump day3_choice5
-
-
-    if poem_giver == "Natsuki":
-        if hangout1 == "Monika":
-            if hangout2 == "Monika:
-                jump day3_choice6
-
-
+    if hangout1 == "Monika":
+        if hangout2 == "Monika:
+            jump day3_choice6
 
 
 
@@ -5169,6 +5180,24 @@ label day3_choice1:
 
 
 label day3_choice2:
+        stop music fadeout 2.0
+        menu:
+            "Who should I hang out with?"
+            "Monika":
+                $ m_modappeal +=1
+                jump mencore_3
+            "Natsuki":
+                $ n_modappeal +=1
+                jump nencore_3
+            "Sayori":
+                $ s_modappeal +=1
+                jump sencore_3
+
+
+
+
+#Rigged Choice, No Natsuki
+label day3_choice3:
 
 python:
     #"Who should I hang out with?"
@@ -5177,17 +5206,226 @@ python:
     madechoice = show_rigged_choice(narrator, "Who should I hang out with?", [("Monika.", "true"), ("Sayori.", "false"),("Yuri.", "false")])
 
 
+#Rigged Choice, No Yuri
+label day3_choice4:
 
-label day3_choice3:
+python:
+    #"Who should I hang out with?"
+#        renpy.say(narrator, ""Who should I hang out with?", interact=False)
+#        madechoice = renpy.display_menu[("Monika.", "true"), ("Natsuki.", "false"),("Yuri.", "false")]), screen="encore_rigged_choice")
+    madechoice = show_rigged_choice(narrator, "Who should I hang out with?", [("Monika.", "true"), ("Natsuki.", "false"),("Sayori.", "false")])
+
+
+label day3_choice5:
         stop music fadeout 2.0
         menu:
             "Who should I hang out with?"
-            "Sayori":
-                $ s_modappeal +=1
-                jump sencore_3
-            "Natsuki":
-                $ y_modappeal +=1
-                jump yencore_3
             "Monika":
                 $ m_modappeal +=1
                 jump mencore_3
+            "Sayori":
+                $ s_modappeal +=1
+                jump sencore_v1
+            "Yuri":
+                $ y_modappeal +=1
+                jump yencore_v1
+
+
+label yencore_v2:
+
+window show(None)
+show screen tear(20, 0.1, 0.1, 0, 40)
+play sound "sfx/s_kill_glitch1.ogg"
+pause 0.15
+stop sound
+hide screen tear
+
+menu:
+    "Who should I hang out with?"
+    "Monika":
+        $ m_modappeal +=1
+        jump mencore_3
+    "Monika":
+        $ m_modappeal +=1
+        jump mencore_3
+    "Monika":
+        $ m_modappeal +=1
+        jump mencore_3
+
+
+
+label day3_choice6:
+        stop music fadeout 2.0
+menu:
+    "Who should I hang out with?"
+    "Monika":
+        $ m_modappeal +=1
+        jump mencore_3
+    "Natsuki":
+        $ n_modappeal +=1
+        jump nencore_v1
+    "Sayori":
+        $ s_modappeal +=1
+        jump sencore_v3
+
+
+
+
+
+#Monika Interferences (Non Rigged)
+#Yuri's (Natsuki Poem Giver)
+
+label sencore_v1:
+
+window show(None)
+show screen tear(20, 0.1, 0.1, 0, 40)
+play sound "sfx/s_kill_glitch1.ogg"
+pause 0.15
+stop sound
+hide screen tear
+
+menu:
+    "Who should I hang out with?"
+    "Monika":
+        $ m_modappeal +=1
+        jump mencore_3
+    "Monika":
+        $ m_modappeal +=1
+        jump mencore_3
+    "Yuri":
+        $ m_modappeal +=1
+        jump yencore_v2
+
+label sencore_v2:
+
+window show(None)
+show screen tear(20, 0.1, 0.1, 0, 40)
+play sound "sfx/s_kill_glitch1.ogg"
+pause 0.15
+stop sound
+hide screen tear
+
+menu:
+    "Who should I hang out with?"
+    "Monika":
+        $ m_modappeal +=1
+        jump mencore_3
+    "Monika":
+        $ m_modappeal +=1
+        jump mencore_3
+    "Monika":
+        $ m_modappeal +=1
+        jump mencore_3
+
+
+
+label yencore_v1:
+
+window show(None)
+show screen tear(20, 0.1, 0.1, 0, 40)
+play sound "sfx/s_kill_glitch1.ogg"
+pause 0.15
+stop sound
+hide screen tear
+
+menu:
+    "Who should I hang out with?"
+    "Monika":
+        $ m_modappeal +=1
+        jump mencore_3
+    "Sayori":
+        $ m_modappeal +=1
+        jump sencore_v2
+    "Monika":
+        $ m_modappeal +=1
+        jump mencore_3
+
+
+#Monika Interferences (Non Rigged)
+#Natsuki's (Yuri Poem Giver)
+
+label sencore_v3:
+
+window show(None)
+show screen tear(20, 0.1, 0.1, 0, 40)
+play sound "sfx/s_kill_glitch1.ogg"
+pause 0.15
+stop sound
+hide screen tear
+
+menu:
+    "Who should I hang out with?"
+    "Monika":
+        $ m_modappeal +=1
+        jump mencore_3
+    "Natsuki":
+        $ n_modappeal +=1
+        jump nencore_v2
+    "Monika":
+        $ s_modappeal +=1
+        jump mencore_3
+
+label sencore_v4:
+
+window show(None)
+show screen tear(20, 0.1, 0.1, 0, 40)
+play sound "sfx/s_kill_glitch1.ogg"
+pause 0.15
+stop sound
+hide screen tear
+
+menu:
+    "Who should I hang out with?"
+    "Monika":
+        $ m_modappeal +=1
+        jump mencore_3
+    "Monika":
+        $ m_modappeal +=1
+        jump mencore_3
+    "Monika":
+        $ m_modappeal +=1
+        jump mencore_3
+
+
+
+label nencore_v1:
+
+window show(None)
+show screen tear(20, 0.1, 0.1, 0, 40)
+play sound "sfx/s_kill_glitch1.ogg"
+pause 0.15
+stop sound
+hide screen tear
+
+menu:
+    "Who should I hang out with?"
+    "Monika":
+        $ m_modappeal +=1
+        jump mencore_3
+    "Monika":
+        $ m_modappeal +=1
+        jump mencore_3
+    "Sayori":
+        $ m_modappeal +=1
+        jump sencore_v4
+
+label nencore_v2:
+
+window show(None)
+show screen tear(20, 0.1, 0.1, 0, 40)
+play sound "sfx/s_kill_glitch1.ogg"
+pause 0.15
+stop sound
+hide screen tear
+
+menu:
+    "Who should I hang out with?"
+    "Monika":
+        $ m_modappeal +=1
+        jump mencore_3
+    "Monika":
+        $ m_modappeal +=1
+        jump mencore_3
+    "Monika":
+        $ m_modappeal +=1
+        jump mencore_3
