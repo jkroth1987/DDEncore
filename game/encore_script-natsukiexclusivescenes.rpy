@@ -1733,3 +1733,201 @@ hide sayori
 "I really need to be more careful around her..."
 "Though, Sayori was never the jealous type..."
 jump day2_meettheclubs
+
+#Day 3
+label nencore_3:
+    $ hangout3 = "Natsuki"
+    "I'll see what Natsuki is up to."
+    scene bg club_day
+    with wipeleft_scene
+
+
+"As I wask up to the closet, I can hear Natsuki talking to herself."
+
+N: “Aggh, where the hell is it?”
+
+"Careful not to startle her like I did yesterday, I poke my head in and ask her what's wrong."
+
+Mc: “Hey Nat, everything ok in there?”
+
+"I see Natsuki put some boxes and books back on the shelf, then she turns towards me." (Show frown)
+
+N: “No, I'm not able to find my special edition Parfait Girls Manga that we were reading yesterday.”
+
+Mc: “Have you checked the top shelves?”
+
+N: “No... I'm not, you know..."
+#show Natsuki look around, looking uncomfortable
+"Do you think you could look up there?”
+
+Mc: “Of course.”
+
+N: “Thanks.”
+
+"I check the top shelves first, then the rest for good measure."
+"However, I don't find the manga."
+
+
+N: “You find it?”
+
+Mc: “No I didn’t."
+MC "I looked everywhere in there, sorry Nat.”
+
+N: “Hmm."
+N "I dont know where I could have left it, I only ready it in here.”
+
+Mc: “Did you maybe take it to another class?”
+
+N: “I can’t remember..”
+
+Mc: “Maybe we should retrace your steps?”
+
+N: “Hmm, that's actually a good idea."
+N "Eheh I'm surprised you thought of it”
+
+Mc: “H-Hey!"
+Mc: "You saying im dumb?”
+
+"Natsuki Giggles."
+
+N: “Noo, I’d never do that.”
+
+Mc: Hmph.”
+
+# Show A frown comes across Natsuki’s face as she pouts
+
+N: “Oh come on, I'm only teasing you..”
+
+Mc: "I know.”
+
+"I laugh to show her I'm only kidding."
+
+N: “Hey, I actually felt bad for saying that..”
+
+Mc: “Aww it's okay."
+Mc: "Come on, lets go find your book.”
+
+N: “Fine, lets go check my last class.”
+
+Mc: “Okay, lead the way."
+"
+Natsuki and I leave the clubroom to go find her manga."
+
+(Hallway scene)
+
+"As we walk down the hallway, I look over to see that Natsuki is looking at her feet, I stop and put my hand on her shoulder." #show arms crossed
+
+N: “...Huh?”
+
+Mc: “You okay?”
+
+N: “Not really... I'm worried we might not find the book..”
+
+Mc: “It's ok Nat, I know we’ll find it."
+Mc: "We just gotta trace back what you did before the club today and it'll pop up.”
+
+N: “Really..?"
+N: "What if we don’t… that book cost alot and it was a special edition."
+N: "...And I was really hoping to finish the book with you.”
+
+Mc: “I know we’ll find it, just stay positive okay?”
+
+N: "Okay.”
+
+
+
+"We walk for about another 5 minutes in silence until we get to classroom."
+"We open the door and start looking."
+"After about 20 minutes of looking, we covered almost the entire room and haven't found anything yet."
+
+N: “This is pointless."
+N: "It's not in here, I'm gonna check the closet one more time and see if I might have skipped over it.”
+
+Mc: “I'll keep looking out here then.”
+"
+"Nat goes into the closet as I continue to look around the room."
+"A few minutes pass as I notice a box by one of the desks."
+"I walk over to it and look inside to see the book sitting in the box."
+"With a grin on my face, I pick it up and walk over to the closet where Nat is still looking and call out to her."
+
+Mc: “Hey Nat, come out here”
+
+"Natsuki emerges from the closet."
+" As soon as she sees the book, she smiles, walks up to me and wraps her arms around me."
+"I'm taken aback by her hug, but..."
+
+#choose to hug back
+#choose to not hug back
+
+(chooses to hug back)
+
+."..nonetheless, I gently wraps my arms around her."
+"After a brief moment, she pulls back and her face turns beet red."
+
+N: “T-thanks for finding it..where was it?”
+
+Mc: “No problem, and it was in that box right there.”
+
+"I point to the box."
+
+N: “Oh yeah, that's right!"
+N: "I put it in there at the beginning of class cause I didn't want to lose it."
+#May need to rewrite it a bit to be cleaner
+N: "I guess that's ironic, isn't it?”
+
+"We both laugh at the remark."
+
+Mc: “Well, I’m glad we found it.”
+
+N: “Yeah, me too...”
+
+#show this, don't tell: A frown appears on her face and she looks down at the floor
+
+Mc: “Are you okay Nat?”
+
+N: “Y-yeah, I just feel bad about breaking the hug... I liked it."
+N: "I'm just not used to feeling cared about...”
+
+Mc: “What?"
+Mc: "Don’t you get any from your family?”
+
+N: “No, my dad doesn’t really do any of that kind of stuff.”
+
+Mc: “Oh my.. doesn't he give you any kind of attention?”
+
+#show, don't tell: she looks up at me and tears well up in her eyes
+
+N: “I-I don’t want to talk about this anymore.”
+
+Mc: “Ok, just know that I’m always here for you if you ever want to talk.”
+
+N: “T-Thank you.”
+"Without warning, she hugs me again."
+"When I wrap my arms around her this time, she doesn’t break free."
+"we stay like this for a couple minutes before we let go of each other."
+
+Mc: “You wanna go back to the club and read?”
+
+#show, don't tell: She wipes the tears from her eyes
+
+N: “Y-yeah”
+
+We leave the classroom and walk back to the club room."
+"On the walk back, I can’t help but wonder what her home life's like."
+
+#(option to not hug back is chosen *your mean if you choose this* )
+
+"I choose not to hug back."
+"When she notices I’m not hugging back, she backs up."
+
+N: “Well.. uh, thanks for finding it [player].”
+
+Mc: “No problem Nat.”
+
+N: “Let’s go back to the clubroom, the others might wonder where we are.”
+
+Mc: “Yeah you're right, lets go.”
+
+"We leave the classroom and Nat seems to be hurrying to back to the clubroom."
+"Is it because I didn’t hug her back?"
+"I didn’t mean to upset her... Maybe I should have hugged her."

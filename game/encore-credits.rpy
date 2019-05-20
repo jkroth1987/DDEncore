@@ -152,7 +152,17 @@ audio.drop: Public Domain
     # 5 lines, +200 pixels
     c_text_9 = """Sprites Used
 
+Ohayou_Monika by Monika Before Story
+Ohayou_Natsuki by Monika Before Story
+Ohayou_Sayori by Monika Before Story
+Ohayou_Yuri by Monika Before Story
+
+
 \"Monika_Cute\" by radioactive64
+\"Monika_Smirk\" by r/user/LanceAkira in "It's A Doki Doki Life!"
+\"Monika_Shock\" by r/user/Lunatic_Rabbit
+\"Monika_Surprised\" by r/user/LanceAkira in "It's A Doki Doki Life!"
+\"Monika_Tease\" by by r/user/Lunatic_Rabbit
 Yandere Sayori by Agent Gold
 Other Unique Sprites by Agent Gold"""
 
