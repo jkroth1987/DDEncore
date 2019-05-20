@@ -264,33 +264,32 @@ label day1_beginning:
         show sayori 1k at t11 zorder 1
         "Though I didn’t spend too much time around Sayori in the Literature Club, we still had our moments, and I guess that set up everything to happen last Sunday."
         "Sayori is my dearest friend, I’ve always looked after and cared for her in a brother-sister sort of way."
-        "Though, I'd be lying to myself if I were to say that some part of me didn't entertain the thought of us being together like that..."
         "But, I've had my eyes on someone else recently..."
-        "Though, that hasn't been stopping me from wracking my brain since her confession."
+        "That hasn't been stopping me from wracking my brain since her confession."
         "I still ask myself how I could've handled that situation better, or if I even made the right choice."
-        "Sayori didn't take my response to her confession very well, but figuring that she said she's had these feelings for a long time now, I can't blame her for acting all hurt."
-        "I just hope we can still work through this new chapter in our lives together."
+        "I just hope we can still work through this new chapter of our lives together."
         "Suddenly remembering that we still had school, I snap out of my train of thought."
         mc "We...{w=0.28}should probably get going. We don't want to be late."
         s 3l "Y-{w=0.28}Yeah...{w=0.28} you're right."
         "She says that slightly flustered."
         show sayori 1k
         "Sayori then suddenly looks off into a random direction, trying to avoid making direct eye contact with me."
-        "I can tell that Sayori is still trying to process the new reality of our friendship."
+        "I can tell that She's still trying to process the new reality of our friendship."
         "I've been meaning to discuss what happened with her, but neither of us have really worked up the courage to bring it up yet."
         "So we've been getting by on painfully trying to pretend that last Sunday's events didn't happen."
         mc "Well, let's get going!"
-        "I try to put as much enthusiasm into my voice as I can, but it just sounds more like I'm faking it."
+        "I try to put as much enthusiasm into my voice as I can, but it just ends up sounding forced."
         show sayori 1l
         "Sayori forces an awkward smile."
         s "Y-{w=0.28}yeah...{w=0.28} let's go."
-        "We silently make our way downstairs and start making our way to school."
+        "We awkwardly walk out of my house and make our way to school."
         scene bg residential_day
         with wipeleft_scene
         show sayori 1a at t11 zorder 1
         "I remember how my walks with Sayori used to be filled with laughter, inside jokes, and other ramblings."
         show sayori 1f
-        "But for now, those days seem to have come and gone, as our walks are now usually filled with uncomfortable silence."
+        "But for now, those days seem to have come and gone"
+        "Now, our walks are now usually filled with long, uncomfortable silence."
         show sayori 1b
         "Though it's not like we haven't tried breaking the ice with each other..."
         scene bg residential_day
@@ -324,15 +323,13 @@ label day1_beginning:
         s "Let's just keep going..."
         scene bg residential_day
         with wipeleft_scene
-        "Usually, one of us would say something stupid and it would just kill the mood, making us walk the rest of the way in silence."
-        "Though at least we're over it by the time we get to school."
 
     scene bg corridor
     with wipeleft_scene
-    "As soon as we arrive at school, the morning bell rings, making all the other students scramble to reach their first period."
+    "As soon as we arrive at school, the morning bell rings, making all the other students scramble to reach their first period classes."
     "Walking through the mass of other students, I can't help but reminisce at some the memories I've had with Sayori in these halls."
     "I didn't really realize how much I've missed out on enjoying the craziness in the hallways before classes until I started walking with Sayori again."
-    "Some of our fondest memories with each other were witnessing or participating in whatever shenanigans were happening in the school's halls..."
+    "Some of our fondest memories with each other were watching all the shenanigans in the school's halls..."
     "In hindsight, that's probably why our school started using hall monitors..."
     "Still, hall monitors or not, we always find something to laugh at..."
     with wipeleft_scene
@@ -343,7 +340,7 @@ label day1_beginning:
 
     if encore_sayoriquestion_1 == True:
         "I can't help but detect an ounce of disappointment in her voice as she says that."
-        "Honestly, I can't blame her, considering how we were earlier..."
+        "Honestly, I can't blame her, especially after my little comment from earlier...""
         "It really sucks that we're not sharing any classes this semester. We only occasionally see each other walking through the hallways between periods."
 
     if encore_sayoriquestion_1 == False:
@@ -357,7 +354,7 @@ label day1_beginning:
     mc "Yeah...{w=0.28}guess so..."
     show sayori 1k at t11 zorder 1
     "We stand there awkwardly for a moment."
-    mc "Hey! I'll see you at the Literature Club, okay?"
+    mc "Well...I guess I'll see you at the Literature Club, right?"
     show sayori 1x
     "Sayori's disappointment is quickly erased by her usual, cheery attitude."
     s "Hehe...{w=0.28}yeah, I can't wait!"
@@ -366,7 +363,7 @@ label day1_beginning:
         show sayori at thide
         hide sayori
         "Sayori and I briefly embrace each other."
-        "I must admit, Sayori's always been a great hugger!"
+        "I must admit, She's always been a great hugger!"
         "Her hugs are always so warm, tender and tight...{w=0.38}the kind of hugs that you can be in forever."
         show sayori 1q at t11 zorder 1
 
@@ -466,7 +463,7 @@ label day1_beginning:
     show monika 1q at t11 zorder 4
     $ m_name = "Monika"
     "Yuri, sensing the incoming tension, quickly attempts to hide behind her book, while Sayori, Natsuki and I stand there dumbfounded."
-    "They both look just as surprised as I am at Monika's sudden entrance."
+    "They all look just as surprised as I am at Monika's sudden entrance."
     mc "Oh...{w=0.38}hey, Monika! We were just...{w=0.38}um..."
     "All words escape me in this situation."
     "I look to the other girls to bail me out of this situation, but nobody has anything to say."
