@@ -572,3 +572,171 @@ hide sayori
 "I really need to be more careful around her..."
 "Though, Sayori was never the jealous type..."
 jump day2_meettheclubs
+
+
+#Day 3
+
+label mencore_3:
+    $ hangout3 = "Monika"
+    "I guess talking to Monika some more wouldn't hurt."
+    scene bg club_day
+    with wipeleft_scene
+    show monika 2q at t11 zorder 1
+
+
+
+Mc: uh... Earth to monika? Anybody home?
+
+*monika jumps, appears surprised*
+
+Monika: oh! Hey MC! Sorry i was just thinking some things over
+
+Mc: oh? What kind of things?
+
+Monika: well its not ready yet but...For you i could play some of it
+
+Mc: play as in playing a game?
+
+Monika's looking right through me
+
+Is... She judging me?
+
+Monika: haha no silly, i meant the piano
+
+Mc: oh, right. You've been working on your own song then?
+
+Monika: well i dont know if it'll amount to anything, chord progressions are more complicated than you would expect
+
+I honestly have no clue what she means by this, but its monika, how could i possibly not try to be interested
+
+Mc: it sounds hard, but im sure you'll do great! You're monika after all
+
+(corrupt text) mc:you're the best most talented and likable girl in this room
+
+Monika: aww, thats sweet of you to say MC. If youd like i suppose i could play what little i have prepared
+
+Monika reaches into her pocket, and brings out an mp3 player
+
+As i expected, its in perfect condition despite the technology being outdated
+
+*mp3 play sound plays, followed by a your reality insturmental until the end if the first verse*
+
+Monika: i realise it's a little rough but i-
+
+Mc: that was great! You clearly put a lot of effort into it. Im sure that now youre even better than the recording
+
+*monika nervous sprite*
+
+Monika: ahaha you think so? Well, i wouldn't mind playing it for you if you wouldnt mind coming to the music department for a little while
+
+Monika: just dont forget, youre in the literature club so we'll be coming back to finish up for the day
+
+*hallway scene*
+
+As we leave the class i anxiously check to make sure nobody saw us leave
+
+The size of the school makes the walk feel unbearable
+
+...
+
+This silence isnt helping either
+
+Id rather listen to Kevins "music" than this
+
+That's a lie
+
+We finally reach the door to the performance room
+
+I gently open the door...
+
+*music room scene play the sound thta plays whne you find sayori if possible*
+
+I hear a loud screech as someone finishes playing a sting instrument
+
+Monika: could we please have this room for a short while?
+
+Student: yeah! Sorry about that monika!
+
+The kid gets up and leaves, almost tripping over himself to get out
+
+I almost forgot how people get around monika
+
+Not like im any different
+
+Moniks walks over to the piano, i also sit down in the front row of chairs organised for a performance
+
+Monika: now, shall i begin?
+
+Even from here i can hear monika taking a breathe to steady herself.
+
+As monika begins to play, i notice how elegantly her fingers grace the keys. The melody is calm, but purposeful. Every action with intent, and care. Its almost hypnotic
+
+Suddenly monika starts to sing
+
+Monika: every day, i imagine a future where i can be with you
+
+Monika: in my hand, is a pen that will write a poem for me and you
+
+I find myself jaw dropped at her performance. Her voice is almost angelic as her emerald green eyes light up with a fiery passion ive not seen before
+
+Monika: the ink flows down, into a dark puddle. Just move your hand
+
+Monika: write your way into his heart
+
+Did she just wink at me?
+
+And whys this room hot as hell right now?
+
+Monika: but in this world of infinite choices, what would it take just to find that special day?
+
+As monika finishes i find myself errupting into applause.
+
+Im pretty sure even the newspaper club could hear me
+
+Mc: Encore! Encore!
+
+*monika gets flustered*
+
+Monika: aha, im really glad you enjoyed it MC. It makes all the work ive been putting in all worth it
+
+Monika: well, we should probably head back. Dont worry, I'll tell the others you had a headache and needed someone to take you to get a glass of water
+
+Monika: this'll be our little secret
+
+She really thinks of everything, doesn't she?
+
+*transition to hallway*
+
+Im still in awe at monikas performance, it was better than anything ive ever heard
+
+*show monika sprite, flustered*
+
+I think she can tell im still in awe
+
+Monika: you know, thats the first time ive performed for anyone outside the club. Im really happy you enjoyed it
+
+Mc: it felt more like you'd done this sort if thing thousands of times. You're a natural!
+
+Monika: aha well, i do try my best.
+
+We reach the club room again. The journey felt shorter that time
+
+Maybe because im still processing what just happened
+
+And who could those lyrics have been for?
+
+Ah theres no time for those thoughts, i just hope nobody saw us leave.
+
+I take a deep breathe and open the door
+
+*classroom scene*
+
+Surveying the class everyone's doing their usual activities. Natsukis in the cupboard sorting her manga, yuri is deeply invested in her horror book, and sayoris heads in the clouds as usual
+
+I feel a sharp pain in the back of my throat as that thought comes to mind, but it quickly leave me as the thought does
+
+I only have to think about monika
+
+Just monika
+
+Monika: okay everyone!

@@ -4078,13 +4078,13 @@ mc "Jeez...{w=0.38}are those advanced level course textbooks?"
 y 3d "Yep! I'm taking three this semester!"
 "Poor girl..."
 mc "Well, I'm impressed you can carry all that!"
-y 3i "It's a side beneift when you're taking those advanced courses."
+y 3i "It's a side beneift when you're taking these advanced classes!"
 y 3d "It really builds up your arm strength!"
 m 2l "Yeah, I know what you mean! Lifting those textbooks isn't for the feint of heart!"
-y 3b "Matter of fact, I'm actually on my last advanced course for the day!"
+y 3b "Matter of fact, I'm actually heading to my last advanced class for the day!"
 m 2e "That's nice, Yuri! Hope you have fun!"
 y 3a "I'll try."
-y 3b "What about you two, where you heading to next?"
+y 3b "So, where you guys heading from?"
 mc "Ah, we're just heading back from lunch, turns out we have the same period!"
 show yuri 3e
 show monika 2e
@@ -5100,7 +5100,7 @@ hide monika
 "Monika goes back to the teacher's desk, leaving me standing in the middle of the room once again."
 "Looking around the room, I try to figure out who I can talk to without completely melting down or making some sort of scene..."
 "So, of course that leaves [poem_giver] out of question..."
-"So I guess that only leaves three options left..."
+"I guess that only leaves three people I could try talking too..."
 
 
 
@@ -5203,7 +5203,7 @@ python:
     #"Who should I hang out with?"
 #        renpy.say(narrator, ""Who should I hang out with?", interact=False)
 #        madechoice = renpy.display_menu[("Monika.", "true"), ("Sayori.", "false"),("Yuri.", "false")]), screen="encore_rigged_choice")
-    madechoice = show_rigged_choice(narrator, "Who should I hang out with?", [("Monika.", "true"), ("Sayori.", "false"),("Yuri.", "false")])
+    madechoice = show_rigged_choice(narrator, "Who should I hang out with?", [("Monika.", "true"), ("Sayori.", "false"),("Yuri.", "false")],197)
 
 
 #Rigged Choice, No Yuri
@@ -5213,7 +5213,7 @@ python:
     #"Who should I hang out with?"
 #        renpy.say(narrator, ""Who should I hang out with?", interact=False)
 #        madechoice = renpy.display_menu[("Monika.", "true"), ("Natsuki.", "false"),("Yuri.", "false")]), screen="encore_rigged_choice")
-    madechoice = show_rigged_choice(narrator, "Who should I hang out with?", [("Monika.", "true"), ("Natsuki.", "false"),("Sayori.", "false")])
+    madechoice = show_rigged_choice(narrator, "Who should I hang out with?", [("Monika.", "true"), ("Natsuki.", "false"),("Sayori.", "false")],197)
 
 
 label day3_choice5:
