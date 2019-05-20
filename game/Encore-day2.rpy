@@ -1807,7 +1807,7 @@ mc "Yeah, I'd love to have you over! I'll see you in a bit, Sayori."
 show sayori 4q
 s "Okay~"
 "Sayori and I briefly embrace each other as we head back to our respective houses."
-"I hope Sayori can stay a little longer this time..."
+"I hope she can stay a little longer this time..."
 stop music fadeout 2.0
 show sayori at thide
 hide sayori
@@ -1959,7 +1959,7 @@ if apologize_sn == False:
     "I'm not even sure if she really believed me..."
     show sayori 1u
     "For all I know, Sayori might even be thinking right now that I'm about to ditch her for Natsuki..."
-    "Knowing how she is right now, I just probably made things worse for her...."
+    "Knowing how she feels right now, I just probably made things worse for her...."
     show sayori 1k
     "Maybe I can still fix this..."
 
@@ -2093,7 +2093,7 @@ elif poem_giver == "Yuri":
 "..."
 "Oh...{w=0.38}shit!"
 "She...{w=0.38}likes me?"
-"I get assaulted with a barrage of emotions as I try to come to terms with the situation I've just found myself in."
+"I'm assaulted with a barrage of emotions as I try to come to terms with the situation I've just found myself in."
 "I have no idea how I should handle this..."
 "Not to mention, [poem_giver] probably knows I've read it by this point..."
 "Did she...{w=0.38}give this to me on purpose?"
