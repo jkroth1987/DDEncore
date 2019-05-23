@@ -1625,6 +1625,10 @@ image yb7 = "mod_assets/sprites/yb7.png"
 #image yuri u123114 = im.Composite((960, 960), (0, 0), "mod_assets/character_images/yuri/1_uniform/1_body_left/1.png", (0, 0), "mod_assets/character_images/yuri/1_uniform/2_body_right/2.png", (0, 0), "mod_assets/character_images/yuri/2_face/base.png", (0, 0), "mod_assets/character_images/yuri/2_face/1_mouth/3.png", (0, 0), "mod_assets/character_images/yuri/2_face/2_nose/1.png", (0, 0), "mod_assets/character_images/yuri/2_face/3_eyes/1.png", (0, 0), "mod_assets/character_images/yuri/2_face/4_eyebrows/4.png")
 #image yuri u111261 = im.Composite((960, 960), (0, 0), "mod_assets/character_images/yuri/1_uniform/1_body_left/1.png", (0, 0), "mod_assets/character_images/yuri/1_uniform/2_body_right/1.png", (0, 0), "mod_assets/character_images/yuri/2_face/base.png", (0, 0), "mod_assets/character_images/yuri/2_face/1_mouth/1.png", (0, 0), "mod_assets/character_images/yuri/2_face/2_nose/2.png", (0, 0), "mod_assets/character_images/yuri/2_face/3_eyes/6.png", (0, 0), "mod_assets/character_images/yuri/2_face/4_eyebrows/1.png")
 
+image airpod left = "mod_assets/sprites/apl.png"
+image airpod right = "mod_assets/sprites/apr.png"
+image airpod both = im.Composite((960, 960), (0, 0), "mod_assets/sprites/apl.png", (0, 0), "mod_assets/sprites/apr.png")
+
 # Silhouettes
 image sayori 1shadow = shadow("mod_assets/sprites/char_bases/s_base")
 image sayori 1bshadow = shadow("mod_assets/sprites/char_bases/sb_base")
