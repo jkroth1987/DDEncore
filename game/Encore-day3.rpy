@@ -5017,7 +5017,7 @@ if encore_sayoriquestion_1 == True:
     s "Well in that case we better get going..."
     mc "Yep..."
     s 2x "Well let's go, [player]! What are we waiting for?!?"
-    "With slight hesistance, I begin the walk with Sayoru to the literature club."
+    "With slight hesistance, I begin the walk with Sayori to the literature club."
     show sayori at thide
     hide sayori
 
@@ -5082,16 +5082,16 @@ hide sayori
 show monika 1a at t11 zorder 1
 "Monika leans in to whisper something to me as Sayori goes to sit down."
 m 1e "So how're you holding up?"
-mc "Still thinking over alot of stuff..."
+mc "Still thinking over a lot of stuff..."
 mc "Though in case [poem_giver] asks about her confession letter, I have an idea of what I want to say."
 m 2e "Well that's good."
-m 2d "Still, this is a pretty sensitive topic for you two, so just be careful with what you want to say."
+m 2d "Still, this is a pretty sensitive topic for you two, so just be careful with what you say."
 mc "I'll try my best."
 m 2j "Great!"
 m 2b "Well, I'll be here if you want to talk more, [player]!"
-mc "RIght now, I think I could use something to calm me down a bit..."
+mc "Right now, I think I could use something to calm me down a bit..."
 mc "It's been a fairly stressful day for me thinking about all this..."
-m 2m "Whenever, I'm feeling stressed out, I find that music usually helps calm the nerves..."
+m 2m "Whenever I'm feeling stressed out, I find that music usually helps calm the nerves..."
 m 2e "I've been working on something if you want to give it a listen..."
 mc "I'll think about it, thank you Monika!"
 m 2k "Anytime!"
@@ -5149,7 +5149,7 @@ if poem_giver == "Yuri":
 
 if poem_giver == "Natsuki":
     if hangout1 == "Monika":
-        if hangout2 == "Monika:
+        if hangout2 == "Monika":
             jump day3_choice5
 
 
@@ -5157,7 +5157,7 @@ if poem_giver == "Natsuki":
 
 if poem_giver == "Yuri":
     if hangout1 == "Monika":
-        if hangout2 == "Monika:
+        if hangout2 == "Monika":
             jump day3_choice6
 
 
@@ -5429,3 +5429,17 @@ menu:
     "Monika":
         $ m_modappeal +=1
         jump mencore_3
+
+
+
+label day3_mreturn:
+"TBD"
+
+label day3_nreturn:
+"TBD"
+
+label day3_sreturn:
+"TBD"
+
+label day3_yreturn:
+"TBD"

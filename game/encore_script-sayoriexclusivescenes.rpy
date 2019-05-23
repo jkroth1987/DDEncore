@@ -167,7 +167,7 @@ mc "I promise you, Sayori, I'm going to make this up to you starting right now."
 "I see Sayori’s tears return as they drip onto her cheek."
 s "Don't feel guilty for the way I feel, [player]."
 mc "How can I not? I can't let you get worse!"
-mc "I never really realized how my actions might have affected you…"
+mc "I never really realized how my actions might have affected you..."
 mc "So going forward, I'll try to be different..."
 mc "For your sake."
 s "[player]...{w=0.38}that’s the reason I didn’t want to tell you about this!"
@@ -187,7 +187,7 @@ with Dissolve(1)
 "I put my arms around her and close my eyes."
 "I can feel my heart beat in sync with Sayori’s."
 "I feel the warmth of her body radiate onto me."
-"As emotional as we both are right now…{w=0.38} this is nice."
+"As emotional as we both are right now...{w=0.38} this is nice."
 "We're like this for some time before we hear some commotion come from the closet."
 scene bg club_day
 stop music
@@ -703,17 +703,17 @@ if encore_sayoriquestion_1 == True:
             s "T-{w=0.38}thank you...{w=0.38}[player]."
             mc "Any time."
             s 1l "Lately my emotions have been all over the place."
-            s 1k "First, I felt like I was a burden to you and everyone I knew, and now…"
+            s 1k "First, I felt like I was a burden to you and everyone I knew, and now..."
             "Her voice trails off."
             mc "What is it, Sayori?"
             "Sayori take a deep breath as she holds my hands tightly."
-            s 1u "Now…{w=0.38}I feel like I really shouldn’t be here."
+            s 1u "Now...{w=0.38}I feel like I really shouldn’t be here."
             mc "What do you mean?"
-            s 1v "I don’t know…{w=0.38}just the past few days I’ve had this feeling that I really shouldn’t be here, with you, that none of this should’ve happened."
+            s 1v "I don’t know...{w=0.38}just the past few days I’ve had this feeling that I really shouldn’t be here, with you, that none of this should’ve happened."
             "I feel my heart sink into my stomach."
-            "She doesn’t mean…"
-            s 1l "I’m not doubting our relationship or anything…"
-            s 1k "It’s just…{w=0.38}I guess you could say I feel out of place or something."
+            "She doesn’t mean..."
+            s 1l "I’m not doubting our relationship or anything..."
+            s 1k "It’s just...{w=0.38}I guess you could say I feel out of place or something."
             show sayori 1e
             mc "Well, I’ll say this Sayori..."
             show sayori 1t
@@ -752,7 +752,7 @@ if encore_sayoriquestion_1 == True:
             with close_eyes
             "Never in a million years did I think I would’ve ended up with someone like Sayori."
             "A guy like me and a girl like her?"
-            "What are the odds…"
+            "What are the odds..."
             "Speaking of finding..."
             "There's no way the others haven't noticed us."
             "I quickly crack open my eyes."
@@ -911,7 +911,7 @@ if encore_sayoriquestion_1 == False:
                 hide sayori
                 show natsuki 1s at t11 zorder 2
                 "I glance over to Natsuki who appears to organizing her manga again."
-                "Ah, she’ll be fine for a few minutes…"
+                "Ah, she’ll be fine for a few minutes..."
                 show natsuki at thide
                 hide natsuki
 
@@ -1144,17 +1144,17 @@ show sayori u111352
 s "T-{w=0.38}thank you...{w=0.38}[player]."
 mc "Any time."
 s 1l "Lately my emotions have been all over the place."
-s 1k "First, I felt like I was a burden to you and everyone I knew, and now…"
+s 1k "First, I felt like I was a burden to you and everyone I knew, and now..."
 "Her voice trails off."
 mc "What is it, Sayori?"
 "Sayori take a deep breath as she holds my hands tightly."
-s 1u "Now…{w=0.38}I feel like I really shouldn’t be here."
+s 1u "Now...{w=0.38}I feel like I really shouldn’t be here."
 mc "What do you mean?"
-s 1v "I don’t know…{w=0.38}just the past few days I’ve had this feeling that I really shouldn’t be here, that none of this should’ve happened."
+s 1v "I don’t know...{w=0.38}just the past few days I’ve had this feeling that I really shouldn’t be here, that none of this should’ve happened."
 "I feel my heart sink into my stomach."
-"She isn't considering…"
-s 1l "I’m not doubting my life or anything…"
-s 1k "It’s just…{w=0.38}I guess you could say I feel out of place or something."
+"She isn't considering..."
+s 1l "I’m not doubting my life or anything..."
+s 1k "It’s just...{w=0.38}I guess you could say I feel out of place or something."
 show sayori 1e
 mc "Well, I’ll say this Sayori..."
 show sayori 1t
@@ -1321,7 +1321,7 @@ label day2_angry_ys:
     "Yuri then briskly walks past me, taking a seat and joining the others."
     "Well, that was random..."
     "I just hope she isn’t jealous of me and Sayori getting so close like that."
-    "She isn’t the jealous type…{w=0.38}right?"
+    "She isn’t the jealous type...{w=0.38}right?"
     jump day2_meettheclubs
 
 
@@ -1505,15 +1505,15 @@ if hangout1 == "Monika":
 if poem_giver == "Natsuki":
     "I put down my poems and go to my bag to retrieve Natsuki's poems, which I put right next to mine."
     "I notice that in Natsuki’s stack of poems there’s a pink piece of paper."
-    "Hmm…{w=0.38}I don’t remember Natsuki ever writing her poems down on pink paper..."
-    "Maybe she accidentally gave me something…"
+    "Hmm...{w=0.38}I don’t remember Natsuki ever writing her poems down on pink paper..."
+    "Maybe she accidentally gave me something..."
     jump day2_sarrive
 
 if poem_giver == "Yuri":
     "I put down my poems and go to my bag to retrieve Yuri's poems, which I put right next to mine."
     "I notice that in Yuri's stack of poems there’s a purple piece of paper."
-    "Hmm…{w=0.38}I don’t remember Yuri ever writing her poems down on purple paper..."
-    "Maybe she accidentally gave me something…"
+    "Hmm...{w=0.38}I don’t remember Yuri ever writing her poems down on purple paper..."
+    "Maybe she accidentally gave me something..."
     jump day2_sarrive
 
 
@@ -1806,15 +1806,15 @@ if hangout1 == "Monika":
 if poem_giver == "Natsuki":
     "I put down my poems and go to my bag to retrieve Natsuki's poems, which I put right next to mine."
     "I notice that in Natsuki’s stack of poems there’s a pink piece of paper."
-    "Hmm…{w=0.38}I don’t remember Natsuki ever writing her poems down on pink paper..."
-    "Maybe she accidentally gave me something…"
+    "Hmm...{w=0.38}I don’t remember Natsuki ever writing her poems down on pink paper..."
+    "Maybe she accidentally gave me something..."
     jump day2_sarrive
 
 if poem_giver == "Yuri":
     "I put down my poems and go to my bag to retrieve Yuri's poems, which I put right next to mine."
     "I notice that in Yuri's stack of poems there’s a purple piece of paper."
-    "Hmm…{w=0.38}I don’t remember Yuri ever writing her poems down on purple paper..."
-    "Maybe she accidentally gave me something…"
+    "Hmm...{w=0.38}I don’t remember Yuri ever writing her poems down on purple paper..."
+    "Maybe she accidentally gave me something..."
     jump day2_sarrive
 
 
@@ -2230,7 +2230,7 @@ mc "Nice try!"
 s "Thank you~"
 "Sayori and I continue to trade leads for most of the first two laps, neither of us able to gain much distance on each other before the other takes the lead again."
 "Finally it comes down to the last stretch of the race, I'm barely in first."
-"I can almost see the finish line…"
+"I can almost see the finish line..."
 show cg rr3 with dissolve_cg
 "Seemingly out of nowhere, one of the npc players start to catch up to us."
 "In the blink of an eye, the npc passes Sayori and is right on my tail!"
@@ -2243,7 +2243,7 @@ show cg rr3 with dissolve_cg
 "With the finish line only about ten seconds away, and with Sayori and I neck-and-neck, it’s now or never that I use my last shell."
 mc "Take this!"
 "In desperation, I throw my last shell out randomly."
-"However…{w=0.38}I come to regret that decision rather quickly..."
+"However...{w=0.38}I come to regret that decision rather quickly..."
 mc "Oh crap...{w=0.38}NOOOO!"
 "I somehow end up hitting myself with the shell I just threw..."
 "Before I know it, Sayori passes me and wins the race..."
@@ -2289,8 +2289,8 @@ s 1by "You always help me when I'm feeling down, even if you don't realize that.
 s "You're the reason I even get up out of bed in the morning, [player]."
 s "You're the reason I can feel happiness and joy in my life."
 s "You're the reason I'm even alive."
-s "Even when I’m at my lowest point…{w=0.38}when my rainclouds just pour on me…"
-s "You’re the sunshine that I need to break them away…"
+s "Even when I’m at my lowest point...{w=0.38}when my rainclouds just pour on me..."
+s "You’re the sunshine that I need to break them away..."
 s 4br "I see now that I'm the luckiest girl in the world to have you as my boyfriend..."
 show cg s_cg_2 happy tears with dissolve_cg
 "I see tears start to swell up in Sayori's eyes."
@@ -2939,289 +2939,443 @@ label sencore_3:
     "I should see how Sayori is doing."
     scene bg club_day
     with wipeleft_scene
-
-
-“Sayori then looks at me and I know exactly what she’s going to say…”
-s “Hey… [player]...”
-mc “Yes, Sayori?”
-s “I’m hungry… can you come with me to get a snack?”
-mc “You mean: buy you a snack?”
-s “Hehe...I don’t know what you mean…”
-mc “How much money do you have with you?”
-s “Um…..”
-“Sayori struggles to come up with a response.”
-“I decided that I’ll spare her the embarrassment this time.”
-mc “Come on, let’s go.”
-s “Yay!”
-“Sayori beams at me.”
-
-“We both walk out of the clubroom and to the nearest vending machines.”
-
-#Scene Transition
-#Outside Classroom Scene
-
-“Sayori and I both browse through the vending machines to gaze at the various cookies, candies, drinks and other snacks in there.”
-“Ultimately we both decide to settle on Ice Cream.”
-“As i expected, I ended up paying for both of our snacks.”
-“She gets her favorite, chocolate, while I settle on plain vanilla.”
-“We sit down on a nearby bench and begin eating our ice cream.”
-mc “So…. does this count for the Ice Cream i already owe you?”
-s “Oh, come on, [player], don’t be so mean!”
-“She playfully sticks out her ice cream stained tongue at me.”
-s “Besides, this isn’t a sundae.”
-mc “I suppose so.”
-“Sayori and I continue eating our ice cream.”
-“As usual, Sayori finishes hers in under a minute while I take my time with mine.”
-“Sayori begins eyeing my ice cream.”
-s “Hey… [player].”
-mc “Don’t.”
-mc “Even.”
-Mc “Think about it.”
-“Usually my stern voice would be enough to deter Sayori from mooching off my food, but for whatever reason, today, she seems insistent.”
-s “Come on….”
-mc “No, Sayori.”
-“Sayori slowly begins to scootch herself closer to me while giving me her usual puppy eyes.”
-“I try hard not to look and I hold my ice cream as far away as possible from her.”
-“She tries to grab my ice cream it but her reach isn’t far enough.”
-
-s “Come on [player], please?”
-mc “No! You already had yours, let me have mine!”
-“We sound like children.”
-“This reminds me of the times we would share as kids when Sayori would always beg to have what I was having when she finished her food.”
-“Usually I wouldn’t give in.”
-“But, for some reason, ever since she and I started dating, she’s been able to break my resolve more and more easily.”
-“I guess they call that love…”
-s “Pweeeeeeeease?”
-“She keeps trying to grab my ice cream, but she keeps failing to reach it.”
-s “Ugh….. you really don’t want to share with me, do you [player]?”
-“Sayori gets up, and then unexpectedly sits on my lap, facing me.”
-“I can feel her chocolate scented breaths curtail my nostrils, and those sky blue eyes dominate my vision.”
-“I struggle to avert my eyes but i ultimately resort to closing them.”
-“In an attempt to keep my ice cream out of Sayori's reach, I lean back reaching as far back as possible.”
-“She leans forward, having both hands trying to grasp for my ice cream.”
-“But in doing so….. her chest nearly engulfed my face…..”
-“If anyone saw this, they would immediately get the wrong idea…..”
-“In her attempts to reach my treat, she keeps bouncing on me…”
-“I pray to God that my blood flow doesn’t go in a certain direction….”
-“Sayori… as always….. puts us in the most awkward situations…”
-s “Pleeeeeaseeeee [player].”
-“She whispers that in my ear.”
-“I feel my blood flow starting to betray me.”
-“Out of fear of someone walking in on us and seeing the situation we’re in…”
-“...As well as the fact that if this goes on any longer, fending off Sayori’s attempts to get my ice cream is going to be the least of my concerns…”
-
-mc “Alright… alright… you win!”
-mc “But one bite only!”
-s “Yay!”
-“She gets off my lap and plops down next to me.”
-“I sheepishly put my ice cream below Sayori’s face.”
-“Sayori then proceeds to gulp down all of my ice cream in one bite.”
-“Sayori has vanilla ice cream all over her face….”
-mc “Hey!”
-“Sayori grins at me and trots back to the clubroom, expecting me to hunt her down.”
-“Wait a second.”
-“She didn’t even have time to wipe off her face…..”
-“Oh fuck….”
-“I grab some napkins and sprint back to the clubroom.”
-
-#Scene Transition
-#Clubroom Scene
-
-mc “Wait! Sayori! You forgot to clean yourself up!”
-“I see Monika, Yuri and Natsuki stop what they’re doing and look to see at the commotion.”
-“They turn to Sayori, seeing the vanilla ice cream all over her face.”
-“They then all turn to me, putting on a mix of anger, bewildered and shocked expressions on their faces.”
-“This is exactly what I wanted to avoid.”
-“I can see rage build up in Natsuki's eyes, while Yuri's face is flushed a bright red."
-
-m “Um… [player.]...
-
-m “What took you two so long?”
-
-mc “We just went to grab some Ice Cream, sorry we took so long.”
-
-“Monika sighs.”
-
-m “It’s alright, we were just a little worried since you guys were gone for so long and we wanted to give you our poems for the event on Monday.”
-
-mc “Oh, yeah… thanks”
-
-“Monika walks up to me and hands me her stack of poems.”
-
-“I walk over to where Yuri is sitting.”
-
-mc “Hey, Yuri.”
-
-“Yuri doesn’t say a word, or really even acknowledge me.”
-
-mc “Um… do you have your poems?”
-
-“Yuri briefly puts her book down and reaches for her bag where she retrieves a stack of paper and puts it on the corner of her desk.”
-
-“I didn’t get a good look at her face, but I could tell her face was bright red.”
-
-“Monika appears to tense up at Sayori's Gesture, but her face keeps the same collected look as always.”
-
-“I turned to Natsuki but she turned her cheek, clearly not wanting to talk to me either.”
-
-“I sigh and put the poems in my bag.”
-
-“I then take my usual spot next to Sayori and hand her the napkins.”
-
-mc“You forgot these, dummy.”
-
-“I flash her a teasing smile.”
-
-s “Hey! Don’t be a meanie about it!”
-
-“She takes the napkins and wipes the ice cream off her face.”
-
-mc “Heh, some things never change, don’t they?”
-
-s “Nope! And it’s just the way I like it!”
-
-s “Just like… the way I like you…”
-
-“My heart skips a beat and I can feel the blood rush to my face.”
-
-mc “S-Sayori….”
-
-“Just then we hear the sound of giggling.”
-
-“I turn around and see Monika standing right behind me.”
-
-mc “Ah! Monika! D-Didn’t see you there!”
-
-m “Haha.. sorry [player]! Didn’t mean to startle you!”
-
-m “Just wanted to check up on how you two lovebirds were doing.”
-
-“Monika flashes us a teasing smile.”
-
-s “L-lovebirds?”
-
-“Sayori flashes her a confused look.”
-
-m “Oh come on, Sayori! I already know that you two are dating!”
-
-s “How do you know?”
-
-“Sayori flashes me a curious look.”
-
-mc “I thought you told her Sayori.”
-
-“Sayori turns back to Monika.”
-m “I’m the club president, Sayori. I know just about everything there is to know about all of you.”
-
-“Hearing Monika say that sends a chill down my spine.”
-
-“She isn’t stalking us or anything like that, right?”
-
-“Right?”
-
-m “I’m happy for you two, I really am…”
-
-“Her voice trails off and her eyes drift downward towards the floor.”
-
-“Something tells me she really isn’t being genuine here.”
-
-m “It’s just that… I wish i could find someone that loves me the same way you two love each other.”
-
-m “Not some boy who only wants me for one thing.”
-
-“Sayori frowns at Monika.”
-
-s “Awww Monika.”
-
-“Sayori stands up and walks over to Monika and pulls her into a hug.”
-
-“Monika appears to tense up at Sayori's Gesture, but her face keeps the same collected look as always.”
-
-“At first she clenched her fists hard but she eventually wraps her arms around Sayori.”
-
-s “You’ll find someone one day. I know it.”
-
-m “Oh, I think I already have.”
-
-s “Awww who is it?”
-
-s “What’s his name?”
-
-m “I’d rather not say…”
-
-m “All I know is that I don’t know if he’s looking for the right girl right now.”
-
-“Monika eerily winks at me.”
-
-“Sayori and Monika release each other from their embrace.”
-
-s “Oh, I’m sure he’ll come around!”
-
-s “How can anybody miss you Monika? You’re so smart and beautiful and you’re great to be around!”
-
-m “Well it’s been hard to get a good read on him really.”
-
-m “One day it seems like he’s interested in me, and the next day he’s off talking to someone else.”
-
-m “I thought I had the perfect opening to get to him recently, but something changed and now I’ve barely been able to talk to him.”
-
-“Sayori puts her hand on Monika’s shoulder.”
-
-s “I hope it all works out for you in the end Monika. I believe in you!”
-
-m “Thank you Sayori! I’m confident that this time, things will work out between us!
-
-s “Can’t wait to hear about it Monika!”
-
-“Monika smiles to the both of us and begins walking to the front of the room.”
-
-“However she slowly walks by me, smiling at me.”
-
-“Huh, I never noticed how beautiful Monika’s eyes were…”
-
-“Her glossy, emerald eyes are the kind you can look into forever..”
-
-“As she walks by me, I get a whiff of her perfume.”
-
-“It smells like forget-me-nots.”
-
-“My eyes also track Monika’s movements as she walks to the front of the room.”
-
-“My eyes scan downward seem to focus on Monika’s thighs…”
-
-“Her thick thighs seem to put me into a trance.”
-
-“She obviously notices this and blushes at me.”
-
-“At the back of my mind, I try to figure out who Monika could possibly be talking about…”
-
-“I can’t shake the feeling that Monika was somehow talking about me…”
-
-“I’m brought back to reality by Sayori, who keeps poking my cheek.”
-
-s “Hey… [player]... you there?”
-
-“I snap out of my daze.”
-
-mc “Oh! Sorry Sayori! I must’ve spaced out.”
-
-s “It’s alright, [player].”
-
-s “Gee, sometimes you’re just like me!”
-
-s “Though I only space out when I think about you…”
-
-mc “Huh? What’d you say?”
-
-s “Oh, nothing! Come on let’s sit down!”
-
-“Through the tone of her voice, I can tell Sayori seems a little agitated.”
-
-“She probably caught on that I was gazing at Monika longer than I should’ve been.”
-
-“We sit down and we talk about how our day has gone.”
-
-“Eventually the feeling seems to subside and she’s back to normal.”
-
-“We keep talking like this through the rest of the club time.”
- 
+    "I walk over to Sayori and take my usual spot next to her."
+    mc "Hey, Sayori!"
+    show sayori 1q at t11 zorder 1
+    s "Hey, [player]!"
+    mc "You seem to be doing a lot better today!"
+    show sayori 2q
+    s "Well, that’s because I get to spend so much time around you, silly!"
+    mc "Ah, well..."
+    "My face heats up with embarrassment as I nervously scratch the back of my head."
+    mc "It’s nothing, Sayori, really..."
+    mc "I mean, someone’s gotta keep an eye on you..."
+    show sayori 1h
+    s "Eh? What do you mean?"
+    show sayori 1y
+    s "I’m not trying to make you watch over me all the time..."
+    show sayori 2y
+    s "Why, it’d be a real chore to have to take care of someone like me..."
+    mc "If it was a chore would I do this?"
+    show sayori 1n
+    "I proceed to boop Sayori on the nose."
+    show sayori 1r
+    s "H-{w=0.38}hey, stop it!"
+    show sayori 3s
+    "I boop Sayori on the nose a couple more times before she playfully slaps my hand way."
+    show sayori 1q
+    s "You’re so silly, [player]!"
+    mc "I learned from the best."
+    show sayori 1y
+    s "Awww..."
+    show sayori 1o
+    #Stomach Grumble Sound
+    "I suddenly hear Sayori’s stomach emit a loud, audible growl that I’m pretty sure everybody in the room heard."
+    show sayori 5b
+    "I turn to face Sayori, who looks away in embarrassment."
+    "I know exactly what’s going to happen next..."
+    mc "Sayori..."
+    show sayori 4g
+    "Sayori then looks at me with her puppy eyes."
+    s "Hey...{w=0.38}[player]..."
+    mc "Yes?"
+    s 4h "I’m hungry...{w=0.38}can you come with me to get a snack?"
+    mc "You mean: buy you a snack?"
+    s 5a "Hehe...{w=0.38}I don’t know what you mean..."
+    mc "How much money do you have with you?"
+    s 5b "Um..."
+    "Sayori struggles to come up with a response."
+    "I decided that I’ll spare her the embarrassment this time."
+    mc "Come on, let’s go."
+    show sayori 4r at h11 zorder 1
+    s "Yay!"
+    show sayori 1q at t11 zorder 1
+    "Sayori beams at me."
+    "We both walk out of the clubroom and to the nearest vending machine."
+    show sayori at thide
+    hide sayori
+    scene bg corridor
+    with wipeleft_scene
+    "After a short walk around the corner, we arrive at the vending machines."
+    "Sayori and I gaze at the various cookies, candies, drinks and other snacks currently in stock."
+    mc "What’re you thinking about getting?"
+    "As I look to my left I see Sayori in what I can only describe as a food trance as she stares in awe."
+    s "Iceeeecreeeeeam..."
+    mc "Guess that answers that question..."
+    "Sayori moves aside as I enter in the number for the Ice Cream bars."
+    "After inserting the coins in the coin slot, two ice cream bars tumble down into the tray."
+    "I hand Sayori the chocolate, while I opt for the plain vanilla."
+    "We sit down on a nearby bench and begin eating our ice cream."
+    mc "So.... does this count for the Ice Cream i already owe you?"
+    s "Oh, come on, [player], don’t be so mean!"
+    "She playfully sticks out her ice cream stained tongue at me."
+    s "Besides, this isn’t a sundae."
+    mc "I suppose so."
+    "Sayori and I continue eating our ice cream."
+    "As usual, Sayori finishes hers in under a minute while I nurse mine."
+    "Sayori eyes dart over to my ice cream."
+    s "Hey... [player]."
+    mc "Don’t."
+    mc "Even."
+    mc "Think about it."
+    "Usually my stern voice would be enough to deter Sayori from mooching off my food, but for whatever reason, today, she seems insistent."
+    s "Come on...."
+    mc "No, Sayori."
+    "Sayori slowly begins to scootch herself closer to me while giving me her usual puppy eyes."
+    "I try hard not to look at her as I hold my ice cream as far away as possible."
+    "She tries to grab my ice cream it but her reach isn’t far enough."
+    s "Come on [player], please?"
+    mc "No! You already had yours, let me have mine!"
+    "We sound like children."
+    "This reminds me of the times when we would share food as kids."
+    "Sayori would always beg to have what I was having when she finished her food."
+    "For some reason, ever since she and I started dating, she’s been able to break my resolve more easily."
+    "I guess they call that love..."
+    s "Pweeeeeeeease?"
+    "She keeps trying to grab my ice cream, but she keeps failing to reach it."
+    s "Ugh... you really don’t want to share with me, do you [player]?"
+    mc "But you already had yours!"
+    s "Yeah, but...."
+    mc "But what?"
+    s "Your’s is vanilla..."
+    mc "Then you should’ve gotten vanilla!"
+    "Sayori crosses her arms and pouts."
+    "Ugh...this girl..."
+    "I have to stand up for myself at some point with Sayori’s never ending hunger."
+    "But then again... would one bite really hurt?"
+
+    #Share Your Ice Cream
+    #Don’t Share Your Ice Cream
+
+    #(Share Your Ice Cream)
+
+    mc "Alright... alright... you win!"
+    mc "But one bite only!"
+    s "Yay!"
+    "Sayori scooches over to me as I sheepishly put my ice cream below Sayori’s face."
+    mc "Now remember, just one-"
+    "Sayori proceeds to gulp down all of my ice cream in one bite before I could even finish my sentence."
+    "Now she has vanilla ice cream all over her face...."
+    mc "Hey!"
+    "Sayori grins at me and trots back to the clubroom, expecting me to hunt her down."
+    "Wait a second."
+    "She didn’t even have time to wipe off her face....."
+    "..."
+    "Crap..."
+    "I hastily run into the bathroom to grab a paper towel and sprint back to the clubroom."
+    scene bg club_day
+    with wipeleft_scene
+    "I barge into the clubroom."
+    mc "Wait, Sayori! You forgot to clean yourself up!"
+    "I see Monika, Yuri and Natsuki stop what they’re doing and train their eyes on me."
+    "Everyone then turns to Sayori, seeing the vanilla ice cream all over her face."
+    "They then turn back to me, putting on a mix of anger, bewildered and shocked expressions on their faces."
+    "This is exactly what I wanted to avoid."
+    "I can see rage build up in Natsuki's eyes, while Yuri's face is a flushed bright red."
+    m "Um... [player]..."
+    m "What took you two so long?"
+    mc "We just went to grab some ice cream, sorry we took so long."
+    "Monika sighs."
+    m "It’s alright, we were just a little worried since you guys were gone for so long."
+    m "We need to give you our poems for the event on Monday."
+    mc "Oh, yeah... thanks"
+    "Monika walks up to me and hands me her stack of poems."
+    "I walk over to where Yuri is sitting."
+    mc "Hey, Yuri."
+    "Yuri doesn’t say a word, or really even acknowledge me."
+    mc "Um... do you have your poems?"
+    "Yuri briefly puts her book down and reaches for her bag where she retrieves a stack of paper and puts it on the corner of her desk."
+    "I didn’t get a good look at her face, but I could tell she was bright red."
+    "I turned to Natsuki but she turned her cheek, clearly not wanting to talk to me either."
+    "Letting out a sigh, I put the poems in my bag."
+    "After carefully putting the poems away, I walk over to Sayori with the paper towel."
+    mc "You forgot this, dummy..."
+    "I flash her a teasing smile."
+    s "Hey! Don’t be a meanie about it!"
+    "She takes the paper towel and wipes her face clean."
+    mc "Heh, some things never change with you..."
+    s "Nope! And it’s just the way I like it!"
+    s "Just like... the way I like you..."
+    "My heart skips a beat and I can feel the blood rush to my face."
+    mc "S-Sayori...."
+    "Just then we hear the sound of giggling."
+    "I turn around and see Monika standing right behind me."
+    mc "Ah! Monika! D-Didn’t see you there!"
+    m "Haha.. sorry [player]! Didn’t mean to startle you!"
+    m "Just wanted to check up on how you two lovebirds were doing."
+    "Monika flashes us a teasing smile."
+    s "L-lovebirds?"
+    "Sayori flashes her a confused look."
+    m "Oh come on, Sayori! I already know that you two are together!"
+    s "How do you know?"
+    "Sayori flashes me a curious look."
+    "I never did get the chance to ask Sayori about how Monika knew we were dating..."
+    mc "I thought you told her, Sayori..."
+    "Sayori turns back to Monika."
+    m "I’m the club president, I know just about everything there is to know about all of you."
+    "Hearing Monika saying that sends a chill down my spine."
+    "She isn’t stalking us or anything like that...right?"
+    m "I’m happy for you two, I really am..."
+    "Her voice trails off and her eyes drift downward towards the floor."
+    "Something tells me she really isn’t being genuine here."
+    m "It’s just that... I wish I could find a relationship like you guys have..."
+    m "Most boys only wants me for one thing..."
+    "Sayori frowns at Monika."
+    s "Awww...Monika."
+    "Sayori stands up and walks over to Monika and pulls her into a hug."
+    "Monika appears to tense up at Sayori's gesture, but her face keeps the same collected look as always."
+    "At first she clenched her fists hard but she eventually reciprocates the hug."
+    s "You’ll find someone one day, I just know it!"
+    m "Oh, I think I already have..."
+    s "Awww who is it?"
+    s "What’s his name?"
+    m "I’d rather not say..."
+    m "All I know is that I don’t know if he’s looking for the right girl right now."
+    "Monika eerily winks at me."
+    "Sayori and Monika release each other from their embrace."
+    s "Oh, I’m sure he’ll come around!"
+    s "How can anybody miss you Monika? You’re so smart and beautiful!"
+    m "Well it’s been hard to get a good read on him really..."
+    m "One day it seems like he’s interested in me, and the next day he’s off talking to someone else."
+    m "I thought I had the perfect opening to get to know him recently, but something changed and now I’ve barely been able to talk to him."
+    "Sayori puts her hand on Monika’s shoulder."
+    s "I hope it all works out for you in the end Monika. I believe in you!"
+    m "Thank you Sayori! I’m confident that this time, things will work out between us!"
+    s "Can’t wait to hear about it Monika!"
+    m "I’ll be sure to tell you all about it~"
+    "Monika smiles to the both of us and begins slowly walking to the front of the room."
+    "As she walks by me, I see Monika flash a quick smile at me as I get a whiff of her forget-me-nots perfume."
+    "I’m briefly left dazed by the strong scent."
+    "I’m not used to Monika’s perfume being this strong..."
+    "Nor did I really ever notice how beautiful her hair looks..."
+    "Through this sudden warm and fuzzy feeling, I start to get a feeling that Monika was somehow talking about me the entire time..."
+    "No, that can’t be it....she knows I’m with Sayori..."
+    "There’s no way she’d try to get between us..."
+    "I’m brought back to reality by Sayori, who keeps poking my cheek."
+    s "Hey... [player]... you there?"
+    "I snap out of my daze."
+
+    mc "Oh! Sorry Sayori! I was spacing out again, wasn’t I?"
+    s "Yep!"
+    mc "Ha, well, I guess I’ve just been thinking about a lot lately..."
+    s "Anything in particular?"
+    mc "Ah, not really..."
+    "I hope Sayori isn’t mad that I might’ve been staring at Monika for too long."
+    "Though thankfully she either didn’t notice or is choosing to overlook it."
+    s "It was a little weird that Monika knew we were dating though..."
+    s "I don’t think I told her..."
+    mc "Maybe she figured it out on her own I guess..."
+    s "Yeah..."
+    mc "Besides, everyone’s going to figure it out eventually anyways..."
+    mc "I mean it’s not like we’re keeping this top secret or anything..."
+    s "Yeah, I know..."
+    s "I mean I don’t exactly want to scream out to the world that we’re together."
+    mc "Aww, you don’t want to show me off?"
+    s "N-no it’s not that..."
+    s "It’s just that all my friends who’re in a relationship are going to overwhelm with me advice and congratulations..."
+    s "And I don’t know if I’m prepared to deal with all that right now..."
+    mc "We’d definitely be the talk of the school for a good week at least..."
+    s "Yeah..."
+    s "It’d be kinda nice though!"
+    mc "That it would!"
+    "Sayori and I share a small laugh as we wait for Monika to start the activity for the day."
+
+
+
+
+
+
+
+
+
+
+
+    #(Don’t Share Your Ice Cream)
+
+    mc "No means no, Sayori..."
+    "Sayori lets out a sigh."
+    "Though this isn’t like her usual disappointed ones..."
+    "After about a minute she turns to face me as I finish the rest of my ice cream."
+    s "Alright..."
+    s "I’m sorry..."
+    "I raise my eyebrow at Sayori."
+    mc "For what?"
+    s "For being so selfish..."
+    mc "I don’t necessarily think that constitutes as being selfish..."
+    s "It does!"
+    s "I shouldn’t be pestering you for things constantly..."
+    s "You’ve already done so much for me..."
+    s "Why am I so ungrateful?"
+    mc "S-Sayori, it’s fine, really..."
+    mc "You don’t need to make a big deal over it, it’s just ice cream!"
+    mc "After all, I still owe you that sundae..."
+    "Sayori smiles a little at that reminder."
+    s "Well, I’m going to hold you to that!"
+    mc "As you should."
+    "We share a small laugh before silence falls over us once again."
+    mc "But look, you’re not ungrateful."
+    mc "You’re just being you."
+    mc "And I like you just the way you are."
+    mc "Even if you get your hands on my food sometimes..."
+    s "You never found that to be annoying?"
+    mc "I mean...I’m used to it."
+    s "Oh..."
+    mc "But it’s not really a bad thing!"
+    mc "I actually find it cute sometimes..."
+    "Sayori looks off as she tries to process my compliment."
+    s "If you say so, [player]."
+    "Sayori forces a smile."
+    mc "Come on...let’s head back."
+    "I gently take Sayori by the hand as we slowly walk back to the clubroom together."
+    scene bg club_day
+    with wipeleft_scene
+    "As soon as we open the doors, we’re immediately greeted by Monika."
+    m "Ah! There you two are!"
+    m "Where were you guys?"
+    mc "We were just getting some snacks."
+    m "Aw, that’s nice!"
+    m "Hope you’re refreshed for today’s club!"
+    mc "Ha...well I guess you could say that..."
+    "I glance over to Sayori, who still seems to be in a bit of a mood since I didn’t want to share with her."
+    m "Anyways, would you mind getting everybody else’s poems? I have mine right here."
+    "Monika hands me her poems."
+    mc "Yeah, I’ll do that right now."
+    s "I’ll be where we usually are, [player]."
+    mc "Alright."
+    "Sayori sits back down as I put Monika’s poems in my bags."
+    "I then walk over to Yuri, who seems to be deep into her book as always."
+    mc "Hey, Yuri..."
+    y "Hmmm?"
+    "Yuri puts down her book."
+    y "Oh, hello, [player]! How’re you doing today?"
+    mc "Ah, I’m doing fine..."
+    "I briefly glance over to Sayori who seems to mindlessly dancing her fingers on the table."
+    mc "What about you?"
+    y "I’m doing excellent! I just got to the good part in Portrait of Markov!"
+    mc "Oh, really? What’s about to happen?"
+    y "Well they’re about to-"
+    y "Actually I shouldn’t spoil it for you..."
+    mc "Yeah, that’s fair, I really have been meaning to read it more..."
+    mc "It’s just that I’ve gotten caught up in some stuff I need to deal with."
+    y "There’s no need to rush yourself, [player]. Literature is best enjoyed at one’s individual pace."
+    y "If you have the time now, we can maybe read a little bit together..."
+    mc "Ah! I’d really love to Yuri, but I need to get everyone’s poems."
+    y "Oh..."
+    y "Well it’s good you mentioned that."
+    "Yuri reaches into her bag and grabs her poems."
+    y "That should be everything."
+    mc "Great! Thank you so much!"
+    "I briefly look through Yuri’s Poems just to make sure there are no unexpected surprises..."
+    y "Is something the matter, [player]?"
+    mc "What? Oh no, no, I just...wanted to admire your handwriting again!"
+    "Yuri chuckles to herself."
+    y "Well that’s certainly thoughtful of you, [player]..."
+    y "Though I don’t believe I gave you anything by mistake..."
+    mc "That’s...good to know..."
+    y "I mean it’s not like Natsuki accidentally gave you something, right?"
+    mc "Well..."
+    "I forgot that Yuri was a pretty quick thinker."
+    mc "I guess you could say that..."
+    "Yuri briefly looks toward the closet where Natsuki is organizing her manga."
+    y "I see..."
+    mc "Yuri?"
+    y "Ah, it’s nothing..."
+    y "I think I should really get back to my book now..."
+    mc "Alright..."
+    "I walk back over to my backpack and gently put Yuri’s poems next to Monika’s."
+    "After carefully putting the poems away, I walk over to rejoin Sayori."
+    scene bg club_day
+    with wipeleft_scene
+    mc "I’m back!"
+    "Sayori jumps a little in her seat."
+    s "Eh?"
+    "She turns around to see me."
+    s "Oh, there you are, [player]!"
+    "I slide into the seat next to Sayori."
+    mc "Miss me?"
+    "Sayori lets out a small laugh."
+    s "Aww come on, you were only gone for like a minute..."
+    mc "But isn’t that a minute too long?"
+    "I then proceed to make finger guns at her."
+    "Sayori rolls her eyes while slightly chuckling."
+    s "Would you like some extra cheese with your cheese, sir?"
+    "Just then we hear the sound of more giggling."
+    "I turn around and see Monika standing right behind me."
+    mc "Ah! Monika! D-Didn’t see you there!"
+    m "Haha.. sorry [player]! Didn’t mean to startle you!"
+    m "Just wanted to check up on how you two lovebirds were doing."
+    "Monika flashes us a teasing smile."
+    s "L-lovebirds?"
+    "Sayori flashes her a confused look."
+    m "Oh come on, Sayori! I already know that you two are together!"
+    s "How do you know?"
+    "Sayori flashes me a curious look."
+    "I never did get the chance to ask Sayori about how Monika knew we were dating..."
+    mc "I thought you told her, Sayori..."
+    "Sayori turns back to Monika."
+    m "I’m the club president, I know just about everything there is to know about all of you."
+    "Hearing Monika saying that sends a chill down my spine."
+    "She isn’t stalking us or anything like that...right?"
+    m "I’m happy for you two, I really am..."
+    "Her voice trails off and her eyes drift downward towards the floor."
+    "Something tells me she really isn’t being genuine here."
+    m "It’s just that... I wish I could find a relationship like you guys have..."
+    m "Most boys only wants me for one thing..."
+    "Sayori frowns at Monika."
+    s "Awww...Monika."
+    "Sayori stands up and walks over to Monika and pulls her into a hug."
+    "Monika appears to tense up at Sayori's gesture, but her face keeps the same collected look as always."
+    "At first she clenched her fists hard but she eventually reciprocates the hug."
+    s "You’ll find someone one day, I just know it!"
+    m "Oh, I think I already have..."
+    s "Awww who is it?"
+    s "What’s his name?"
+    m "I’d rather not say..."
+    m "All I know is that I don’t know if he’s looking for the right girl right now."
+    "Monika eerily winks at me."
+    "Sayori and Monika release each other from their embrace."
+    s "Oh, I’m sure he’ll come around!"
+    s "How can anybody miss you Monika? You’re so smart and beautiful!"
+    m "Well it’s been hard to get a good read on him really..."
+    m "One day it seems like he’s interested in me, and the next day he’s off talking to someone else."
+    m "I thought I had the perfect opening to get to know him recently, but something changed and now I’ve barely been able to talk to him."
+    "Sayori puts her hand on Monika’s shoulder."
+    s "I hope it all works out for you in the end Monika. I believe in you!"
+    m "Thank you Sayori! I’m confident that this time, things will work out between us!"
+    s "Can’t wait to hear about it Monika!"
+    m "I’ll be sure to tell you all about it~"
+    "Monika smiles to the both of us and begins slowly walking to the front of the room."
+    "As she walks by me, I see Monika flash a quick smile at me as I get a whiff of her forget-me-nots perfume."
+    "I’m briefly left dazed by the strong scent."
+    "I’m not used to Monika’s perfume being this strong..."
+    "Nor did I really ever notice how beautiful her hair looks..."
+    "Through this sudden warm and fuzzy feeling, I start to get a feeling that Monika was somehow talking about me the entire time..."
+    "No, that can’t be it....she knows I’m with Sayori..."
+    "There’s no way she’d try to get between us..."
+    "I’m brought back to reality by Sayori, who keeps poking my cheek."
+    s "Hey... [player]... you there?"
+    "I snap out of my daze."
+    mc "Oh! Sorry Sayori! I was spacing out again, wasn’t I?"
+    s "Yep!"
+    mc "Ha, well, I guess I’ve just been thinking about a lot lately..."
+    s "Anything in particular?"
+    mc "Ah, not really..."
+    "I hope Sayori isn’t mad that I might’ve been staring at Monika for too long."
+    "Though thankfully she either didn’t notice or is choosing to overlook it."
+    s "It was a little weird that Monika knew we were dating though..."
+    s "I don’t think I told her..."
+    mc "Maybe she figured it out on her own I guess..."
+    s "Yeah..."
+    mc "Besides, everyone’s going to figure it out eventually anyways..."
+    mc "I mean it’s not like we’re keeping this top secret or anything..."
+    s "Yeah, I know..."
+    s "I mean I don’t exactly want to scream out to the world that we’re together."
+    mc "Aww, you don’t want to show me off?"
+    s "N-no it’s not that..."
+    s "It’s just that all my friends who’re in a relationship are going to overwhelm with me advice and congratulations..."
+    s "And I don’t know if I’m prepared to deal with all that right now..."
+    mc "We’d definitely be the talk of the school for a good week at least..."
+    s "Yeah..."
+    s "It’d be kinda nice though!"
+    mc "That it would!"
+    "Sayori and I share a small laugh as we wait for Monika to start the activity for the day."

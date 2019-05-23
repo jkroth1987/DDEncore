@@ -311,7 +311,7 @@ if encore_sayoriquestion_1 == False or encore_sayoriquestion_1 == True:
         "Well, she does have a point there..."
         "But I must admit it's a surprise to see her being this forward."
         "She really didn’t need to drag me away from Natsuki."
-        "And, I really feel like I should check on Sayori…"
+        "And, I really feel like I should check on Sayori..."
         window hide(None)
         show yuri at t44
         show sayori 1k at t41 zorder 1
@@ -361,7 +361,7 @@ if encore_sayoriquestion_1 == True:
         "Well, she does have a point there..."
         "But I must admit it's a surprise to see her being this forward."
         "She really didn’t need to drag me away from Natsuki."
-        "And, I really feel like I should check on Sayori…"
+        "And, I really feel like I should check on Sayori..."
         window hide(None)
         show yuri at t44
         show sayori 1k at t41 zorder 1
@@ -409,7 +409,7 @@ if encore_sayoriquestion_1 == False:
         "Well, I suppose she's right there..."
         "But I must admit it's a surprise to see her being this forward."
         "She really didn’t need to drag me away from Natsuki."
-        "And, I really feel like I should check on Sayori…"
+        "And, I really feel like I should check on Sayori..."
         window hide(None)
         show yuri at t44
         show sayori 1k at t41 zorder 1
@@ -1099,7 +1099,7 @@ show natsuki 2e at t11 zorder 2
 n "[player]! W-{w=0.38}what are you doing here?"
 n 2g "Shouldn't you be with [hangout1] right now?"
 n "Why are you over here?"
-mc "I mean…"
+mc "I mean..."
 "I feel a deep pit of guilt lurch inside my stomach."
 "Maybe she’s got a point..."
 show natsuki at thide
@@ -1108,7 +1108,7 @@ hide natsuki
 if hangout1 == "Sayori":
     show sayori 1k at t11 zorder 2
     "I glance over to Sayori who appears to be spacing out."
-    "Ah, she’ll be fine for a few minutes…"
+    "Ah, she’ll be fine for a few minutes..."
     show sayori at thide
     hide sayori
 
@@ -1142,7 +1142,7 @@ if encore_festivalquestion_2 == "Natsuki":
     "Natsuki crosses her arms, thinking over what I just said."
     n 5w "It’s not like I wanted you to come spend time me or with anything!"
     n "Lately you've been spending your time around the others!"
-    n 5q "But, I guess while you’re here…"
+    n 5q "But, I guess while you’re here..."
     n 5h "You want to read Parfait Girls with me?"
     mc "Yeah, sure! I'd love to!"
     mc "It's been a while since we've gotten to read together."
@@ -1153,7 +1153,7 @@ if encore_festivalquestion_2 == "Natsuki":
     show natsuki 3z
     n "Well, let's get going!"
     "Natsuki takes me by the arm and drags me to our spot near the windowsill."
-    mc "Alright, alright! Sheesh…"
+    mc "Alright, alright! Sheesh..."
     show natsuki at thide
     hide natsuki
     scene bg closet
@@ -1207,20 +1207,20 @@ if encore_festivalquestion_2 == "Natsuki":
     "My eyes turn to the slide that Natsuki’s pointing to."
     "The girls are shown admiring this massive marvel cake they were baking for this competition they're in."
     "I’ll admit, the artwork here makes the cake look very realistic."
-    "I’m kind of getting hungry just by looking at it…"
-    "Now that I think about it, there has been a lot of baking in this manga…"
+    "I’m kind of getting hungry just by looking at it..."
+    "Now that I think about it, there has been a lot of baking in this manga..."
     n "That has to be the best scene in this chapter!"
     n "It’s nice when you put all that hard work into something and it turns out great!"
     mc "Yeah, Iike those cupcakes we made last Sunday?"
     hide n_cg1_exp1 with dissolve
     show n_cg1_exp2 with dissolve
     "Natsuki nervously smiles."
-    n "Y-{w=0.38}yeah… {w=0.38}like those cupcakes…."
+    n "Y-{w=0.38}yeah... {w=0.38}like those cupcakes...."
     "Natsuki looks off, clearly flustered."
     mc "I had a lot of fun last Sunday though."
     mc "If you ever want to hangout again, just let me know."
     "Natsuki’s face only becomes more flush with crimson as she tries to fight back a smile."
-    n "Uh…"
+    n "Uh..."
     mc "But I mean, if you’re busy, I understand."
     hide n_cg1_exp2 with dissolve
     show n_cg1_base with dissolve
@@ -1235,7 +1235,7 @@ if encore_festivalquestion_2 == "Yuri":
     "Natsuki crosses her arms thinking over what I just said."
     n 5w "It’s not like I wanted you to come spend time me or with anything!"
     n "You always just seem so busy hanging around the others!"
-    n 5q "But, I guess while you’re here…"
+    n 5q "But, I guess while you’re here..."
     n 5h "You want to read this with me?"
     "Natsuki shows me the cover of the book she’s reading."
     mc "Parfait Girls...?"
@@ -1256,7 +1256,7 @@ if encore_festivalquestion_2 == "Yuri":
     show natsuki 3z
     n "It’s the best thing ever! And I’m going to show you!"
     "Natsuki takes me by the arm and pretty much drags me to a spot near the windowsill."
-    mc "Alright, alright! Sheesh…"
+    mc "Alright, alright! Sheesh..."
     show natsuki at thide
     hide natsuki
     scene bg closet
@@ -1318,38 +1318,38 @@ if encore_festivalquestion_2 == "Yuri":
     "My eyes turn to the slide that Natsuki’s pointing to."
     "The girls are shown admiring this massive marvel cake they were baking for this competition they're in."
     "I’ll admit, the artwork here makes the cake look very realistic."
-    "I’m kind of getting hungry just by looking at it…"
-    "Now that I think about it, there has been a lot of baking in this manga…"
+    "I’m kind of getting hungry just by looking at it..."
+    "Now that I think about it, there has been a lot of baking in this manga..."
     n "That has to be the best scene in this chapter!"
     n "It’s nice when you put all that hard work into something and it turns out great!"
     mc "Yeah, Iike those cupcakes you make?"
     hide n_cg1_exp1 with dissolve
     show n_cg1_exp2 with dissolve
     "Natsuki nervously smiles."
-    n "Y-{w=0.38}yeah...{w=0.38}like those cupcakes…"
+    n "Y-{w=0.38}yeah...{w=0.38}like those cupcakes..."
     "Natsuki looks off, clearly flustered."
     mc "Yeah, they’re amazing!"
     mc "You should totally teach me how to make them! I’m a decent cook myself after all..."
     "Natsuki’s face only becomes more flush with crimson as she tries to fight back a smile."
-    n "Uh…"
+    n "Uh..."
     mc "But I mean, if you’re busy, I understand."
     hide n_cg1_exp2 with dissolve
     show n_cg1_base with dissolve
     n "N-{w=0.38}no!"
     show n_cg1_exp2 with dissolve
-    n "I mean…"
+    n "I mean..."
     "Natsuki struggles to get anything comprehensible out her mouth."
     "Finally she takes a deep breath."
     hide n_cg1_exp2 with dissolve
     show n_cg1_base with dissolve
-    n "I guess it would be nice…"
+    n "I guess it would be nice..."
 
 
 if encore_sayoriquestion_1 == False:
     if hangout1 == "Yuri" or hangout1 == "Monika" or hangout1 == "Sayori" or hangout1 == "Natsuki":
-        n "I just didn’t want to ask because I didn’t know if you had plans with [hangout1] or something…"
-        "Right…"
-        "Speaking of [hangout1]…"
+        n "I just didn’t want to ask because I didn’t know if you had plans with [hangout1] or something..."
+        "Right..."
+        "Speaking of [hangout1]..."
         scene bg club_day
         with dissolve_cg
 
@@ -1392,7 +1392,7 @@ if encore_sayoriquestion_1 == False:
         if hangout1 == "Sayori":
             show sayori 1k at t11
             "I look up to see Sayori still looking off into space."
-            "Maybe I should go check up on her…"
+            "Maybe I should go check up on her..."
             show sayori at thide
             hide sayori
             "I feel Natsuki place her hand on my shoulder."
@@ -1404,24 +1404,24 @@ if encore_sayoriquestion_1 == False:
 
 
         if encore_festivalquestion_2 == "Natsuki":
-            n "I wish we got to spend more time on Sunday though…"
-            mc "Yeah…{w=0.38}me too…"
+            n "I wish we got to spend more time on Sunday though..."
+            mc "Yeah...{w=0.38}me too..."
 
         if encore_festivalquestion_2 == "Yuri":
             n "I just wish we got to spend more time together..."
-            mc "Yeah…{w=0.38}me too…"
+            mc "Yeah...{w=0.38}me too..."
 
 
 
 if encore_sayoriquestion_1 == True:
-        n "I just didn’t want to ask because I didn’t know if you had plans with Sayori or something…"
-        "Right…"
-        "Speaking of Sayori…"
+        n "I just didn’t want to ask because I didn’t know if you had plans with Sayori or something..."
+        "Right..."
+        "Speaking of Sayori..."
         scene bg club_day
         with dissolve_cg
         show sayori 1k at t11
         "I look up to see Sayori still looking off into space."
-        "Maybe I should go check up on her…"
+        "Maybe I should go check up on her..."
         show sayori at thide
         hide sayori
         "I feel Natsuki place her hand on my shoulder."
@@ -1431,8 +1431,8 @@ if encore_sayoriquestion_1 == True:
             show n_cg1_base
             show n_cg1_exp2 with dissolve
             stop music fadeout 2.0
-            n "I wish we got to spend more time on Sunday though…"
-            mc "Yeah…{w=0.38}me too…"
+            n "I wish we got to spend more time on Sunday though..."
+            mc "Yeah...{w=0.38}me too..."
 
         if encore_festivalquestion_2 == "Yuri":
             scene n_cg1_bg
@@ -1440,17 +1440,17 @@ if encore_sayoriquestion_1 == True:
             show n_cg1_exp2 with dissolve
             stop music fadeout 2.0
             n "I just wish we got to spend more time together..."
-            mc "Yeah…{w=0.38}me too…"
+            mc "Yeah...{w=0.38}me too..."
 
 hide n_cg1_exp2 with dissolve
 show n_cg1_exp5 with dissolve
 "I stare into Natsuki’s eyes, her gaze meeting mine."
 "Natsuki scootches closer to me, our arms practically touching."
 "What is she doing?"
-"Normally, she’d call me gross for getting near her…"
-"I wouldn't ever expect her to get close to me like this…"
+"Normally, she’d call me gross for getting near her..."
+"I wouldn't ever expect her to get close to me like this..."
 "And, while I don’t mind being this close to Natsuki..."
-"I’m afraid that someone’s gonna catch us and immediately get the wrong idea…"
+"I’m afraid that someone’s gonna catch us and immediately get the wrong idea..."
 scene bg club_day
 with dissolve_cg
 show yuri 1g at t11 zorder 2
@@ -1508,11 +1508,11 @@ if encore_sayoriquestion_1 == True:
         $ style.say_dialogue = style.normal
 
     n "This feels nice, [player]."
-    mc "It really does. I like it…"
+    mc "It really does. I like it..."
     n "Can we do this more?"
     n "Can we spend more time together?"
     "Natsuki’s questions catches me completely off guard. I wasn’t expecting her to be this forward."
-    "Still though…"
+    "Still though..."
     "I don’t feel like this is right..."
     "Natsuki's usually never this up-front about her feelings..."
     jump day2_gg
@@ -1627,7 +1627,7 @@ if encore_sayoriquestion_1 == True:
         mc "H-{w=0.38}hey Sayo-"
         s 1j "What was that about, [player]?"
         "Sayori sternly looks at me, a mix of pain and anger building up in her eyes."
-        mc "Uh…"
+        mc "Uh..."
         "How do I explain this to her?"
 
         menu:
@@ -1645,7 +1645,7 @@ if encore_sayoriquestion_1 == True:
         mc "Sayori..."
         show sayori 1e
         mc "I’m sorry."
-        mc "It was wrong of me to act in such a way and I promise you…"
+        mc "It was wrong of me to act in such a way and I promise you..."
         mc "I love you and only you."
         show sayori 1g
         mc "That was just a..."
@@ -1664,10 +1664,10 @@ if encore_sayoriquestion_1 == True:
         label sayori_not_sorry_n:
         "I don’t want Sayori to get the wrong idea about Natsuki and I."
         "I try to come up with an excuse off the fly."
-        mc "Natsuki looked kind of down…"
+        mc "Natsuki looked kind of down..."
         show sayori 1e
-        mc "I was trying to cheer her up…"
-        mc "It was that and only that…{w=0.38}I promise…"
+        mc "I was trying to cheer her up..."
+        mc "It was that and only that...{w=0.38}I promise..."
         show sayori 1k
         "Sayori lets out a heavy pained sigh before putting on a smile."
         show sayori 1l
@@ -1709,7 +1709,7 @@ hide yuri
 "Yuri then briskly walks past me, taking a seat and joining the others."
 "Well, that was random..."
 "I just hope she isn’t jealous of me and Natsuki getting so close like that."
-"She isn’t the jealous type…{w=0.38}right?"
+"She isn’t the jealous type...{w=0.38}right?"
 jump day2_meettheclubs
 
 
@@ -1738,196 +1738,318 @@ jump day2_meettheclubs
 label nencore_3:
     $ hangout3 = "Natsuki"
     "I'll see what Natsuki is up to."
-    scene bg club_day
+    scene bg closet
     with wipeleft_scene
-
-
-"As I wask up to the closet, I can hear Natsuki talking to herself."
-
-N: “Aggh, where the hell is it?”
-
-"Careful not to startle her like I did yesterday, I poke my head in and ask her what's wrong."
-
-Mc: “Hey Nat, everything ok in there?”
-
-"I see Natsuki put some boxes and books back on the shelf, then she turns towards me." (Show frown)
-
-N: “No, I'm not able to find my special edition Parfait Girls Manga that we were reading yesterday.”
-
-Mc: “Have you checked the top shelves?”
-
-N: “No... I'm not, you know..."
-#show Natsuki look around, looking uncomfortable
-"Do you think you could look up there?”
-
-Mc: “Of course.”
-
-N: “Thanks.”
-
-"I check the top shelves first, then the rest for good measure."
-"However, I don't find the manga."
-
-
-N: “You find it?”
-
-Mc: “No I didn’t."
-MC "I looked everywhere in there, sorry Nat.”
-
-N: “Hmm."
-N "I dont know where I could have left it, I only ready it in here.”
-
-Mc: “Did you maybe take it to another class?”
-
-N: “I can’t remember..”
-
-Mc: “Maybe we should retrace your steps?”
-
-N: “Hmm, that's actually a good idea."
-N "Eheh I'm surprised you thought of it”
-
-Mc: “H-Hey!"
-Mc: "You saying im dumb?”
-
-"Natsuki Giggles."
-
-N: “Noo, I’d never do that.”
-
-Mc: Hmph.”
-
-# Show A frown comes across Natsuki’s face as she pouts
-
-N: “Oh come on, I'm only teasing you..”
-
-Mc: "I know.”
-
-"I laugh to show her I'm only kidding."
-
-N: “Hey, I actually felt bad for saying that..”
-
-Mc: “Aww it's okay."
-Mc: "Come on, lets go find your book.”
-
-N: “Fine, lets go check my last class.”
-
-Mc: “Okay, lead the way."
-"
-Natsuki and I leave the clubroom to go find her manga."
-
-(Hallway scene)
-
-"As we walk down the hallway, I look over to see that Natsuki is looking at her feet, I stop and put my hand on her shoulder." #show arms crossed
-
-N: “...Huh?”
-
-Mc: “You okay?”
-
-N: “Not really... I'm worried we might not find the book..”
-
-Mc: “It's ok Nat, I know we’ll find it."
-Mc: "We just gotta trace back what you did before the club today and it'll pop up.”
-
-N: “Really..?"
-N: "What if we don’t… that book cost alot and it was a special edition."
-N: "...And I was really hoping to finish the book with you.”
-
-Mc: “I know we’ll find it, just stay positive okay?”
-
-N: "Okay.”
-
-
-
-"We walk for about another 5 minutes in silence until we get to classroom."
-"We open the door and start looking."
-"After about 20 minutes of looking, we covered almost the entire room and haven't found anything yet."
-
-N: “This is pointless."
-N: "It's not in here, I'm gonna check the closet one more time and see if I might have skipped over it.”
-
-Mc: “I'll keep looking out here then.”
-"
-"Nat goes into the closet as I continue to look around the room."
-"A few minutes pass as I notice a box by one of the desks."
-"I walk over to it and look inside to see the book sitting in the box."
-"With a grin on my face, I pick it up and walk over to the closet where Nat is still looking and call out to her."
-
-Mc: “Hey Nat, come out here”
-
-"Natsuki emerges from the closet."
-" As soon as she sees the book, she smiles, walks up to me and wraps her arms around me."
-"I'm taken aback by her hug, but..."
-
-#choose to hug back
-#choose to not hug back
-
-(chooses to hug back)
-
-."..nonetheless, I gently wraps my arms around her."
-"After a brief moment, she pulls back and her face turns beet red."
-
-N: “T-thanks for finding it..where was it?”
-
-Mc: “No problem, and it was in that box right there.”
-
-"I point to the box."
-
-N: “Oh yeah, that's right!"
-N: "I put it in there at the beginning of class cause I didn't want to lose it."
-#May need to rewrite it a bit to be cleaner
-N: "I guess that's ironic, isn't it?”
-
-"We both laugh at the remark."
-
-Mc: “Well, I’m glad we found it.”
-
-N: “Yeah, me too...”
-
-#show this, don't tell: A frown appears on her face and she looks down at the floor
-
-Mc: “Are you okay Nat?”
-
-N: “Y-yeah, I just feel bad about breaking the hug... I liked it."
-N: "I'm just not used to feeling cared about...”
-
-Mc: “What?"
-Mc: "Don’t you get any from your family?”
-
-N: “No, my dad doesn’t really do any of that kind of stuff.”
-
-Mc: “Oh my.. doesn't he give you any kind of attention?”
-
-#show, don't tell: she looks up at me and tears well up in her eyes
-
-N: “I-I don’t want to talk about this anymore.”
-
-Mc: “Ok, just know that I’m always here for you if you ever want to talk.”
-
-N: “T-Thank you.”
-"Without warning, she hugs me again."
-"When I wrap my arms around her this time, she doesn’t break free."
-"we stay like this for a couple minutes before we let go of each other."
-
-Mc: “You wanna go back to the club and read?”
-
-#show, don't tell: She wipes the tears from her eyes
-
-N: “Y-yeah”
-
-We leave the classroom and walk back to the club room."
-"On the walk back, I can’t help but wonder what her home life's like."
-
-#(option to not hug back is chosen *your mean if you choose this* )
-
-"I choose not to hug back."
-"When she notices I’m not hugging back, she backs up."
-
-N: “Well.. uh, thanks for finding it [player].”
-
-Mc: “No problem Nat.”
-
-N: “Let’s go back to the clubroom, the others might wonder where we are.”
-
-Mc: “Yeah you're right, lets go.”
-
-"We leave the classroom and Nat seems to be hurrying to back to the clubroom."
-"Is it because I didn’t hug her back?"
-"I didn’t mean to upset her... Maybe I should have hugged her."
+    play music e14 fadein 1.0
+    "As I walk up to the closet, I can hear Natsuki talking to herself."
+    n "Ugh...{w=0.38}where the hell is it?!?"
+    "Careful not to startle her like I did yesterday, I gently knock on the closet door."
+    "Natsuki finishes putting some boxes back on the shelf as she comes out of the closet."
+    show natsuki 5u at t11 zorder 1
+    mc "Hey, everything ok in there?"
+    show natsuki 5m
+    n "No..."
+    show natsuki 42b
+    "Natsuki turns away, attempting to compose herself."
+    mc "Well, what’s wrong?"
+    n 42c "I think I lost that special edition of Parfait Girls that we were reading yesterday..."
+    "Well, I can see why she’d be upset about that..."
+    mc "Did you have it with you earlier today?"
+    n 4m "Yeah, I had it with me it all day..."
+    n 3q "I could’ve sworn I had it with me when I came here..."
+    show natsuki 42b
+    "Natsuki clenches her fists in frustration."
+    n 42c "I swear to God if I can’t find it..."
+    show natsuki 42d
+    "Natsuki's voice breaks."
+    "I glance around the room to see if anyone else is seeing this."
+    "It seems like at any moment Natsuki will break down and start crying."
+    "Well, I’m about to do something risky to try to calm her down..."
+    mc "Natsuki..."
+    "I put my hand on her shoulder."
+    show natsuki 4m
+    n "Eh...?"
+    mc "We’ll find it..."
+    show natsuki 5n
+    mc "Ok?"
+    show natsuki_sweet as natsuki at t11
+    "Natsuki’s face turns another shade of crimson as she shrugs my hand off."
+    n 5y "Alright lover-boy, calm down! Let’s keep this PG."
+    show natsuki 5z
+    mc "L-{w=0.38}lover boy???"
+    mc "What’re you getting at here?"
+    n 5e "You know exactly what I’m getting at."
+    n 5g "Don’t act dumb!"
+    mc "Ah, whatever..."
+    "I try to change the subject fearing further embarrassment by Natsuki."
+    mc "Well, if we’re going to find that manga, we should probably retrace your steps."
+    mc "Where was the last time you remember reading it?"
+    show natsuki 5s
+    "Natsuki takes a long pause."
+    n 2m "Well, I was reading it in Mrs. Suzuki’s class..."
+    mc "Aren’t you the diligent student?"
+    n 2o "Hey! You know her class is boring!"
+    mc "At least you don’t have Ms. Saitō..."
+    n 5w "It’s not like you pay attention in her class either!"
+    show natsuki 5x
+    mc "Fair point..."
+    mc "Anyways, Suzuki’s probably left her room by now, so we can probably go check."
+    n 1c "Alright, let’s go!"
+    n 1b "The faster we find that manga, the more sane I'll be by the end of this!"
+    "I let out a slight chuckle as we head out of the clubroom and into the hallway."
+    scene bg corridor
+    with wipeleft_scene
+    "Fortunately it didn’t take too long for us to get to Ms. Suzuki’s classroom, considering it was just around the corner from the literature club."
+    show natsuki 5u at t11 zorder 1
+    "Though I could see Natsuki growing more apprehensive as we got closer to the room."
+    "I could even hear her worryingly muttering to herself during the walk."
+    n 5q "It’s gotta be there...{w=0.38}it has to be!"
+    mc "Natsuki?"
+    n 5n "Hmm?"
+    "Natsuki suddenly looks up at me, breaking her train of thought."
+    mc "If it’s not in Ms. Suzuki’s room, do you know where else it might be?"
+    n 5q "That’s what worries me..."
+    stop music fadeout 3.0
+    n 1m "If it’s not in there, maybe it’s in the lost and found..."
+    n 12c "Or someone stole it..."
+    show natsuki 12b
+    mc "Aww come on, who’d want to steal something like that?"
+    n 12a "[player]..."
+    n 1h "It was 9,000 Yen..."
+    mc "Oh..."
+    show natsuki 1u
+    "I didn’t realize Parfait Girls was worth that much..."
+    n 1m "It’s very easy to take something like that and re-sell it online..."
+    n 1n "It happened to a girl I knew back in Middle School..."
+    n 1m "And if it happens to me, there’s no way I’d be able to get it back..."
+    n 12c "My Dad wouldn’t care enough to help me..."
+    show natsuki 12b
+    mc "I see..."
+    n 1t "At least I have you helping me..."
+    mc "Ah well, it’s nothing..."
+    mc "That’s what friends are for, right?"
+    n 5t "Y-{w=0.38}yeah..."
+    n 5l "And you aren’t half-bad, [player]!"
+    mc "Well, it’s the least I could for you..."
+    n 1m "Hey..."
+    n 1n "I really do appreciate it..."
+    n 1q "I know I come across as rude and unapproachable sometimes..."
+    n 1m "But knowing that you’ll be there for me, really does help..."
+    show natsuki 5s
+    "Natsuki nervously glances down at the floor."
+    "I see that we’re at the room."
+    mc "Hey, we’ll find it..."
+    mc "I’m willing to walk around the entire school with you until we find it."
+    show natsuki_sweet as natsuki at t11 zorder 1
+    "Natsuki weakly smiles at me as she opens the door."
+    show natsuki_sweet as natsuki at thide
+    hide natsuki
+    scene bg class_day
+    with wipeleft_scene
+    "Sure enough, the room is free of the presence of anyone else, so we’ll be able to search freely."
+    show natsuki 1u at t11 zorder 1
+    "Natsuki walks over to desk and begins looking around for any sign of her manga."
+    n 3m "This is where I last remember having it."
+    show natsuki 3n
+    mc "Well maybe it’s in her little bin..."
+    "Usually, the teachers have their own little lost and found bins that they keep in their rooms before they go turn in it into the lost and found at the office."
+    "I go to the front of the room where Suzuki keeps her bin and begin digging through it."
+    n 1m "I’ll check in the closet, maybe someone put it in there..."
+    mc "Good idea."
+    show natsuki at thide
+    hide natsuki
+    "Natsuki walks to the back of the room and begins throwing stuff out of the closet."
+    mc "Hey! You know we’re gonna have to put all that back, right?"
+    n "We’ll worry about that later!"
+    n "Finding that manga is priority number one right now!"
+    "I just sigh as I continue neatly taking things out of the bin and searching for the manga."
+    "I just hope she doesn’t tear this room apart in order to find it..."
+    "Because either way, someone’s going to make me clean everything up..."
+    scene bg class_day
+    with wipeleft_scene
+    "After searching the entire bin, I wasn’t able to find Natsuki’s manga."
+    "I call out to Natsuki."
+    mc "Any luck in the closet?"
+    show natsuki 42b at t11 zorder 1
+    "Natsuki emerges from the closet with a dejected look."
+    n 42c "No..."
+    n 42a "How about you?"
+    "I shake my head."
+    mc "It’s not in the bin."
+    n 42b "Great..."
+    play music t9 fadein 1.0
+    show natsuki 12b at s11 zorder 1
+    "Natsuki shuts her eyes as she slumps down next to the closet door."
+    mc "N-{w=0.38}Natsuki?"
+    n 12c "It took me months to save up for it..."
+    n 12b "I had to skip out on lunch so many times..."
+    n 12d "I had to beg my Dad to let me do his chores..."
+    n 12e "It was pain enough to convince him to even give me an allowance..."
+    n 12d "And now all my work was for nothing..."
+    show natsuki at thide
+    hide natsuki
+    "Natsuki buries her face in her hands."
+    "I stand there absolutely stunned with what I just heard."
+    "I knew Natsuki never had the greatest relationship with her Father, but still..."
+    "I can’t believe she put herself through all that just for some manga..."
+    "And there probably isn’t much I can do right now to make her feel better..."
+    "I sigh as I begin putting everything back in the bin."
+    stop music fadeout 2.0
+    "Suddenly, I notice a pink book stacked among several textbooks on Mrs. Suzuki’s desk."
+    "That’s odd..."
+    "I put bin back on the shelf and pull the pink book out."
+    "..."
+    "Well, I don’t believe it..."
+    mc "Hey, Natsuki!"
+    show natsuki 12g at s11 zorder 1
+    "Natsuki looks up at me with glossy, tear-filled eyes."
+    n "W-{w=0.38}what?!?"
+    n 12e "If you’re going to try to say something encouraging, save it..."
+    n 12d "I give up..."
+    mc "Well, you really shouldn’t..."
+    n 12c "We’re not going to find it!"
+    mc "Are you sure about that?"
+    n 1m "Eh?"
+    "I hold up Natsuki’s manga."
+    n 1l "Are you serious?!?!"
+    show natsuki 1l at t11 zorder 1
+    "Natsuki wipes the tears from her eyes and abruptly stands up."
+    n 1d "W-{w=0.38}where was it?!?"
+    show natsuki 1a
+    mc "Hiding between some textbooks."
+    mc "I guess you accidentally handed it in..."
+    n 1l "Who cares?!?!"
+    "Natsuki practically runs up to me and takes the manga from me like Sayori takes her cupcakes..."
+    show natsuki 1s
+    "She carefully examines the manga to check for any creases or other damage before flipping through the book."
+    n 1a "Yep...{w=0.38}just how I remember it!"
+    "I can’t help but smile at Natsuki’s little celebration."
+    mc "Well...{w=0.38}that’s one crisis averted for today, eh?"
+    n 1y "That's a serious understatement!"
+    mc "Ah, well..."
+    "I nervously scratch the back of my head."
+    mc "It was no trouble...{w=0.38}I’m just glad I could-"
+    play sound "sfx/fall.ogg"
+    show natsuki at face
+    "Without warning suddenly Natsuki embraces me."
+    "Much like yesterday, my mind goes blank."
+    "I don’t know what’s gotten into Natsuki lately...{w=0.38}but I have to admit, I kind of like this side of her..."
+    "Still, I don’t know if she really wants me to hug back..."
+    "What if she's just letting her stress out?"
+    "Maybe I should just let her hug me until she feels better..."
+
+menu:
+    "Hug Natsuki Back":
+        jump n_hug
+    "Stay Still":
+        jump n_nohug
+
+
+label n_hug:
+
+    "I mean...{w=0.38}she wouldn’t hug me if she didn’t want a hug back...{w=0.38}right?"
+    "I wrap my arms around her."
+    "She really does go out of her way to make herself cute as possible..."
+    show natsuki_sweet as natsuki at t11 zorder 1
+    "Suddenly, I feel Natsuki pull away from me."
+    mc "What is it?"
+    n 1h "N-{w=0.38}nothing!"
+    n 1q "Nothing at all..."
+    show natsuki 1i
+    "Natsuki’s barely able to hide her grin as she’s barely able to look at me."
+    n 1t "T-{w=0.38}thanks for finding it...{w=0.38}[player]..."
+    mc "No problem..."
+    show natsuki_sweet as natsuki at t11 zorder 1
+    "We stand there awkwardly for a moment, neither of sure of what to do next."
+    "I would offer to continue the hug, but it seems the magic of the moment has fleeted."
+    n 1m "H-{w=0.38}hey, [player]?"
+    show natsuki 1n
+    mc "Yeah?"
+    n 1m "Can you...{w=0.38}promise not to tell any of the others what I was saying earlier?"
+    show natsuki 1n
+    mc "About how you saved up so much money to get that?"
+    show natsuki 12b
+    "Natsuki merely nods."
+    mc "I mean, I’m not gonna tell anyone, but..."
+    mc "You didn’t need to go that far to get this, Natsuki."
+    n 12c "No offense, [player], but you really don’t understand what my life is like..."
+    mc "You never really did give the full picture..."
+    n 42a "I’ll give you a summary..."
+    n 5q "If I ever want anything for myself, it costs an arm and a leg..."
+    n 5r "My Dad’s so friggin’ self-ish..."
+    n 4x "It’s not like we’re tight on money or anything, in fact, we’re decently well-off..."
+    n 4w "He spends it all on himself!"
+    n 42a "He barely sees me as his own child..."
+    n 42b "Just as some nuisance he has to deal with for at least two more years..."
+    n 5m "Sometimes he’s so ridiculously strict, and other times, he just doesn’t care about what I do..."
+    n 42b "We fight a lot to say the least..."
+    mc "I’m...{w=0.38}really sorry, Natsuki..."
+    mc "I wish there was something I could do..."
+    n 42a "You can’t."
+    n 1q "I just have to put up with his crap until I move away to college."
+    n 2h "He’s more than happy to send me as far away as possible if it means he doesn’t have to see me anymore..."
+    n 2r "He even hated the idea of having to give me an allowance! He just spends most of his time at home drinking beer in front of our tv!"
+    n 2x "He’s just so...!"
+    show natsuki 42c
+    "Natsuki lets out a deep sigh."
+    n 42a "I just hope you get along with your parents, [player]."
+    n 42b "It’s something I never got the chance to experience..."
+    mc "I’d say they’re fair for the most part..."
+    show natsuki 1t
+    "Natsuki lets out a slight chuckle."
+    n 1l "Well, looks like they didn’t do too bad with you..."
+    mc "I’ll be sure to tell them that the next time I see them."
+    n 1k "They’re not around?"
+    mc "They’re out in the countryside helping my Grandparents out..."
+    n 1u "Oh..."
+    n 3h "I never met mine..."
+    n 5m "Heck, I’ve only ever really known my Dad for a good chunk of my life..."
+    mc "What happened to your Mom?"
+    show natsuki 12d
+    "Natsuki shuts her eyes as if she’s trying to suppress her tears."
+    mc "I-{w=0.38}it’s fine..."
+    mc "I’m sure that she’s a great person and would be proud of who you are..."
+    $ renpy.pause(delay=0.8, hard=True)
+    show natsuki 12a
+    $ renpy.pause(delay=0.8, hard=True)
+    show natsuki 5u
+    $ renpy.pause(delay=0.8, hard=True)
+    show natsuki 5t
+    n "Heh...{w=0.38}I’d like think that too..."
+    n 1a "Anyways, I guess that’s enough reminiscing about my messed up childhood..."
+    n 1d "We should probably get back before Monika throws a major fit or something!"
+    mc "I’d be more worried about Sayori calling me a hundred times..."
+    n 1y "Ha! I know what you mean!"
+    n 1z "Let’s go, [player]!"
+    "With her manga in hand, Natsuki and I exit the classroom and head back to the literature club."
+    show natsuki at thide
+    hide natsuki
+    jump day3_nreturn
+
+
+label n_nohug:
+
+    "I stand there as Natsuki continues to squeeze me tighter."
+    "Just let it out Natsuki..."
+    show natsuki 1u at t11 zorder 1
+    "After a few moments, she loosens her grip and steps back."
+    n 5q "Well...{w=0.38}uh...{w=0.38}T-{w=0.38}thanks for finding it, [player]."
+    show natsuki 5s
+    mc "No problem, Natsuki..."
+    mc "It’s what friends are for, right?"
+    n 5q "Y-{w=0.38}yeah...{w=0.38}friends..."
+    show natsuki 5u
+    "Natsuki looks off to the side as a mix of emotions swirl on her face."
+    mc "You okay, Natsuki?"
+    n 5m "Hmm? Yeah, I’m fine I guess..."
+    mc "I thought you’d be happy that we got the manga back?"
+    n 12c "I am, it’s just..."
+    n 12b "Ugh! Nevermind!"
+    n 1s "Let’s just go back to the clubroom..."
+    mc "Alright..."
+    "Natsuki averts eye-contact with me as she clutches her manga tightly and walks out of the clubroom."
+    show natsuki at thide
+    hide natsuki
+    "I just don’t get her sometimes..."
+    "I sigh as I start fast walking to catch up to her."
+    jump day3_nreturn

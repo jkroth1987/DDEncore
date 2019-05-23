@@ -340,7 +340,7 @@ label day1_beginning:
 
     if encore_sayoriquestion_1 == True:
         "I can't help but detect an ounce of disappointment in her voice as she says that."
-        "Honestly, I can't blame her, especially after my little comment from earlier...""
+        "Honestly, I can't blame her, especially after my little comment from earlier..."
         "It really sucks that we're not sharing any classes this semester. We only occasionally see each other walking through the hallways between periods."
 
     if encore_sayoriquestion_1 == False:

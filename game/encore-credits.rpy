@@ -91,13 +91,9 @@ club_nothing by The Monika Before Story Team
 closet_dark by Agent Gold
 n_void_1 by Agent Gold
 
-TV BG: https://images.freecreatives.com/wp-content/uploads/2016/06/Television-Display-Mock-up.jpg
-rainbow_road1.png: https://wii.fandom.com/wiki/Rainbow_Road
-rainbow_road2.png: Source Unknown
-rainbow_road3.png: https://youtu.be/3KnriAbihms
-rainbow_road4.png: https://youtu.be/3TA6rVtB28w
-Daisy for CGs: https://www.pinterest.com/pin/453878468671138996/
+
 Cafeteria BG: Image Saved By Alania Frank on Pintrest https://i.pinimg.com/originals/ac/32/ab/ac32ab03f90d8d08ef88cfafe788bddf.jpg
+Music Room BG: http://papers.co/wallpaper/papers.co-aw48-arseniy-chebynkin-music-room-piano-illustration-art-25-wallpaper.jpg
 
 
 bg void: www.videoblocks.com
@@ -163,6 +159,10 @@ Ohayou_Yuri by Monika Before Story
 \"Monika_Shock\" by r/user/Lunatic_Rabbit
 \"Monika_Surprised\" by r/user/LanceAkira in "It's A Doki Doki Life!"
 \"Monika_Tease\" by by r/user/Lunatic_Rabbit
+\"Breaking_Neck\" by TheD0ctor
+\"n_kill\" by TheD0ctor with assets from Doki Doki: Exit Music
+\"n_sweet\" by r/user/TacticalCupcakes
+Silhouetted Sprites by POBAW
 Yandere Sayori by Agent Gold
 Other Unique Sprites by Agent Gold"""
 

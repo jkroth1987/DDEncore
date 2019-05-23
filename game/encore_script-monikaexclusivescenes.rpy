@@ -30,7 +30,7 @@ label mencore_1:
     if encore_festivalquestion_2 == "Natsuki":
             if encore_sayoriquestion_1 == False:
                 "Wait...{w=0.28} does Monika really think that Natsuki and I are {i}that close{\i}?"
-                "I mean we’re just friends, but…"
+                "I mean we’re just friends, but..."
 
     if encore_festivalquestion_2 == "Natsuki":
             if encore_sayoriquestion_1 == True:
@@ -39,7 +39,7 @@ label mencore_1:
     if encore_festivalquestion_2 == "Yuri":
             if encore_sayoriquestion_1 == False:
                 "Wait...{w=0.28} does Monika really think that Yuri and I are {i}that close{\i}?"
-                "I mean we’re just friends, but…"
+                "I mean we’re just friends, but..."
 
     if encore_festivalquestion_2 == "Yuri":
             if encore_sayoriquestion_1 == True:
@@ -457,7 +457,7 @@ show sayori 1i at t11 zorder 2
 mc "H-{w=0.38}hey Sayo-"
 s 1j "What was that about, [player]?"
 "Sayori sternly looks at me, a mix of pain and anger building up in her eyes."
-mc "Uh…"
+mc "Uh..."
 "How do I explain this to her?"
 
 menu:
@@ -475,7 +475,7 @@ label sayori_sorry_m:
 mc "Sayori..."
 show sayori 1e
 mc "I’m sorry."
-mc "It was wrong of me to act in such a way and I promise you…"
+mc "It was wrong of me to act in such a way and I promise you..."
 mc "I love you and only you."
 show sayori 1g
 mc "That was just a..."
@@ -498,10 +498,10 @@ jump day2_meettheclubs
 label sayori_not_sorry_m:
 "I don’t want Sayori to get the wrong idea about Monika and I."
 "I try to come up with an excuse off the fly."
-mc "Monika was trying to help me…"
+mc "Monika was trying to help me..."
 show sayori 1e
-mc "She saw that my tie was messed up…and she was trying to fix it up for me..."
-mc "It was that and only that…{w=0.38}I promise…"
+mc "She saw that my tie was messed up...and she was trying to fix it up for me..."
+mc "It was that and only that...{w=0.38}I promise..."
 show sayori 1k
 "Sayori lets out a heavy pained sigh before putting on a smile."
 show sayori 1l
@@ -551,7 +551,7 @@ hide yuri
 "Yuri then briskly walks past me, taking a seat and joining the others."
 "Well, that was random..."
 "I just hope she isn’t jealous of me and Monika getting so close like that."
-"She isn’t the jealous type…{w=0.38}right?"
+"She isn’t the jealous type...{w=0.38}right?"
 jump day2_meettheclubs
 
 
@@ -581,162 +581,247 @@ label mencore_3:
     "I guess talking to Monika some more wouldn't hurt."
     scene bg club_day
     with wipeleft_scene
-    show monika 2q at t11 zorder 1
-
-
-
-Mc: uh... Earth to monika? Anybody home?
-
-*monika jumps, appears surprised*
-
-Monika: oh! Hey MC! Sorry i was just thinking some things over
-
-Mc: oh? What kind of things?
-
-Monika: well its not ready yet but...For you i could play some of it
-
-Mc: play as in playing a game?
-
-Monika's looking right through me
-
-Is... She judging me?
-
-Monika: haha no silly, i meant the piano
-
-Mc: oh, right. You've been working on your own song then?
-
-Monika: well i dont know if it'll amount to anything, chord progressions are more complicated than you would expect
-
-I honestly have no clue what she means by this, but its monika, how could i possibly not try to be interested
-
-Mc: it sounds hard, but im sure you'll do great! You're monika after all
-
-(corrupt text) mc:you're the best most talented and likable girl in this room
-
-Monika: aww, thats sweet of you to say MC. If youd like i suppose i could play what little i have prepared
-
-Monika reaches into her pocket, and brings out an mp3 player
-
-As i expected, its in perfect condition despite the technology being outdated
-
-*mp3 play sound plays, followed by a your reality insturmental until the end if the first verse*
-
-Monika: i realise it's a little rough but i-
-
-Mc: that was great! You clearly put a lot of effort into it. Im sure that now youre even better than the recording
-
-*monika nervous sprite*
-
-Monika: ahaha you think so? Well, i wouldn't mind playing it for you if you wouldnt mind coming to the music department for a little while
-
-Monika: just dont forget, youre in the literature club so we'll be coming back to finish up for the day
-
-*hallway scene*
-
-As we leave the class i anxiously check to make sure nobody saw us leave
-
-The size of the school makes the walk feel unbearable
-
-...
-
-This silence isnt helping either
-
-Id rather listen to Kevins "music" than this
-
-That's a lie
-
-We finally reach the door to the performance room
-
-I gently open the door...
-
-*music room scene play the sound thta plays whne you find sayori if possible*
-
-I hear a loud screech as someone finishes playing a sting instrument
-
-Monika: could we please have this room for a short while?
-
-Student: yeah! Sorry about that monika!
-
-The kid gets up and leaves, almost tripping over himself to get out
-
-I almost forgot how people get around monika
-
-Not like im any different
-
-Moniks walks over to the piano, i also sit down in the front row of chairs organised for a performance
-
-Monika: now, shall i begin?
-
-Even from here i can hear monika taking a breathe to steady herself.
-
-As monika begins to play, i notice how elegantly her fingers grace the keys. The melody is calm, but purposeful. Every action with intent, and care. Its almost hypnotic
-
-Suddenly monika starts to sing
-
-Monika: every day, i imagine a future where i can be with you
-
-Monika: in my hand, is a pen that will write a poem for me and you
-
-I find myself jaw dropped at her performance. Her voice is almost angelic as her emerald green eyes light up with a fiery passion ive not seen before
-
-Monika: the ink flows down, into a dark puddle. Just move your hand
-
-Monika: write your way into his heart
-
-Did she just wink at me?
-
-And whys this room hot as hell right now?
-
-Monika: but in this world of infinite choices, what would it take just to find that special day?
-
-As monika finishes i find myself errupting into applause.
-
-Im pretty sure even the newspaper club could hear me
-
-Mc: Encore! Encore!
-
-*monika gets flustered*
-
-Monika: aha, im really glad you enjoyed it MC. It makes all the work ive been putting in all worth it
-
-Monika: well, we should probably head back. Dont worry, I'll tell the others you had a headache and needed someone to take you to get a glass of water
-
-Monika: this'll be our little secret
-
-She really thinks of everything, doesn't she?
-
-*transition to hallway*
-
-Im still in awe at monikas performance, it was better than anything ive ever heard
-
-*show monika sprite, flustered*
-
-I think she can tell im still in awe
-
-Monika: you know, thats the first time ive performed for anyone outside the club. Im really happy you enjoyed it
-
-Mc: it felt more like you'd done this sort if thing thousands of times. You're a natural!
-
-Monika: aha well, i do try my best.
-
-We reach the club room again. The journey felt shorter that time
-
-Maybe because im still processing what just happened
-
-And who could those lyrics have been for?
-
-Ah theres no time for those thoughts, i just hope nobody saw us leave.
-
-I take a deep breathe and open the door
-
-*classroom scene*
-
-Surveying the class everyone's doing their usual activities. Natsukis in the cupboard sorting her manga, yuri is deeply invested in her horror book, and sayoris heads in the clouds as usual
-
-I feel a sharp pain in the back of my throat as that thought comes to mind, but it quickly leave me as the thought does
-
-I only have to think about monika
-
-Just monika
-
-Monika: okay everyone!
+    play music e13 fadein 2.0
+    "Monika is at the teacher’s desk, but she isn’t on the computer like she normally is."
+    show monika 1j at t11 zorder 1
+    "Instead, she’s looking down at her ipod and humming a tune to herself."
+    "Intrigued, I carefully approach her, not wanting to startle her."
+    mc "Hey, Monika."
+    show monika 1d at h11 zorder 1
+    "She quickly looks up at me, popping out one of her AirPods."
+    m 1b "Oh, hey [player]!"
+    m "I take it you wanted to see what I was working on?"
+    show monika u111151
+    "Monika flashes her usual wink."
+    mc "I mean, hey, if you think it’d help..."
+    mc "Besides, I’m sure your music is awesome!"
+    show monika 1m at t11 zorder 1
+    "Monika smiles bashfully."
+    m 1n "Well, it’s not finished yet..."
+    m 1m "I’ve been listening to these samples all day trying to figure out how to make the next verse..."
+    m 1n "Chord progressions are more complicated then you would expect."
+    mc "So you’re working on your own song then?"
+    m 1k "Yep!"
+    m 1b "It’s the reason I started playing the piano, I’ve always wanted to make my own song since I was really young."
+    m 1m "Though lately, I haven’t had much time to work on it..."
+    m 1n "Things just kept coming up recently..."
+    mc "I take it was that ‘surprise’ you had for someone..."
+    show monika 1j
+    "Monika nods."
+    mc "And how’s that going?"
+    m 1b "Pretty well, actually! I think I’ll be able to show them my surprise on Friday!"
+    m 1m "Funny enough, what I’m working on is tied into my surprise..."
+    mc "That’s awesome, Monika!"
+    mc "You really are a jack of all trades, aren’t you?"
+    m u121331 "Awww, [player]..."
+    show monika 5a
+    "Monika grins at me."
+    show monika smirk
+    m "I just strive to be the best I can be."
+    mc "Well you’re definitely succeeding..."
+    m 1m "Well if that’s the case, maybe I can show you what I’ve been working on."
+    mc "How much of the song is done?"
+    m 1a "I’d say that the first verse is pretty much done at this point."
+    m 1b "I was thinking that the second verse could go something like this..."
+    "Monika hands me one of her AirPods."
+    mc "Well, I’m not sure if I’m the best go-to-person for music advice, but I guess I could give it a listen."
+    m 1j "That’d be awesome, [player]!"
+    "I pull up a chair and sit right next to her."
+    mc "So I take it this is a piano track?"
+    stop music fadeout 4.0
+    m 1a "Yep! Right now it's just going to be a piano solo."
+    mc "Alright..."
+    "Monika hits the play button on her ipod."
+    #Possible Sample Music
+    mc "Huh, that was actually pretty good!"
+    mc "You think you could actually play that?"
+    m 1m "Well with some more practice, I think I can pull it off."
+    mc "Do you want to take a crack at it now?"
+    show monika u114311
+    "Monika’s eyes widen at my suggestion."
+    mc "I mean...{w=0.38}it’s fine if you don’t want to..."
+    m 1n "No, it’s not that..."
+    m 1d "It’s just that I’ve never played it in front of anyone before."
+    m 1c "I’ve only played by myself."
+    mc "Well, it’d probably help for you to play it in front of someone first, wouldn’t it?"
+    show monika 1m
+    "Monika pauses to think."
+    mc "And if you think you can pull off that sample with just a little practice, then I’m sure I’ll love your song!"
+    m 1n "O-{w=0.38}okay..."
+    m 1e "Let's do it!"
+    "I hand Monika back her AirPod as she pops the other one out."
+    m 1b "We can use the piano in the band room."
+    m 1a "The band doesn’t meet on Wednesday’s so nobody should be in there right now..."
+    mc "Alright, lead the way!"
+    show monika 1j
+    "Monika smiles as she leads me out the door and into the hallway."
+    scene bg corridor
+    with wipeleft_scene
+    show monika 1m at t11 zorder 1
+    "As we’re walking towards the music wing, I can’t help but tell that Monika seems a little apprehensive."
+    "Well, she did say that she’s never played in front of anyone before..."
+    "If I was in her shoes, I’d probably be a nervous wreck."
+    show monika 1e
+    "But Monika has done a lot of incredible things before..."
+    "She’s won so many gymnastic and debate trophies for the school these last two years..."
+    show monika 1j
+    "Not to mention all the writing competitions she’s won..."
+    "It wouldn’t surprise me if she’s drowning in college offers..."
+    "I can only imagine just how hard she’s worked to get herself there."
+    "Anybody would want to be like her..."
+    "And it's a no-brainer for why every guy wants to be with her..."
+    m 1b "Well, here we are!"
+    show monika 1a
+    "Monka stops in front of the band room."
+    mc "Huh, so this is the band room?"
+    m 1d "You’ve never been inside before?"
+    mc "Can’t say I have."
+    m 1k "Well this definitely going to be a special day for you, [player]~"
+    "Monika opens the door and flicks on the lights as we enter the band room."
+    show monika at thide
+    hide monika
+    scene bg club_day
+    with wipeleft_scene
+    "Woah..."
+    "I don’t think I’ve seen so many different instruments before..."
+    "I almost want to pick one up and try playing something but, I’d rather not make a fool of myself in front of Monika."
+    show monika 2a at t11 zorder 1
+    m "Isn’t it amazing?"
+    mc "Yeah...{w=0.38}it really is..."
+    mc "I definitely need to visit this place again sometime..."
+    "In the corner of the room by the window, I see a Grand Piano lined against the wall."
+    mc "So that’s where you’ve been practicing..."
+    m 1a "Yep, I get a pretty nice view of the courtyard from here as well."
+    m 1j "I find that the view is pretty inspiring."
+    mc "I see..."
+    show monika 1m
+    "We both turn to face the piano."
+    m 1n "Well...{w=0.38}here I go."
+    show monika 1m
+    "She quietly makes her way towards the piano and sits down."
+    "I pull up a chair and sit right across from Monika."
+    "She takes a deep breath as her fingers hover over the keys as she looks on at me."
+    mc "You got this, Monika!"
+    "Monika lets out a small laugh."
+    m 1l "Thanks, [player]!"
+    show monika 1r
+    "Monika cracks her knuckles, letting out one more breath before positioning her fingers above the keys."
+    "A split second later, she begins playing."
+    "I can’t help but notice how elegantly her fingers grace the keys."
+    "The melody is calm, but purposeful. Every action with intent, and care...{w=0.38}it's almost hypnotizing!"
+    "Unexpectedly, Monika starts to sing."
+    m "Every day, I imagine a future where I can be with you..."
+    m "In my hand, is a pen that will write a poem for me and you..."
+    "Not even ten seconds in and I’m already blown away..."
+    "Her voice is almost angelic as her emerald green eyes light up with a fiery passion I've never seen before..."
+    m "The ink flows down into a dark puddle...{w=0.38}just move your hand..."
+    m "Write the way into his heart!"
+    "Monika takes a brief look over at me, smiling before she goes back to focusing on the piano."
+    m "But in this world of infinite choices...what would it take just to find that special day?"
+    m "What will it take...{w=0.38}just to find...{w=0.38}that special day!"
+    "Monika suddenly stops playing and turns to face me."
+    show monika 2m
+    m "Well...{w=0.38}that’s about all I have right now..."
+    "I can barely contain my enjoyment as I stand up and applaud as loudly as humanly possible."
+    mc "Encore! Encore!"
+    show monika 1k at s11 zorder 1
+    "Monika lets out a giggle as she takes a small bow."
+    show monika 1e at t11 zorder 1
+    m 2e "I take it you liked it then?"
+    mc "Can you please perform at the festival next year?"
+    show monika u114311
+    "Monika blushes brightly."
+    m 2m "I can't say that I would be opposed to it."
+    m 5a "Though, I did enjoy performing for just one person~"
+    mc "Oh! Well, uh..."
+    "If she wants to perform for just me, I certainly wouldn’t mind that...{w=0.38}amongst other things..."
+    show monika 1k
+    "Monika lets out another giggle."
+    m 1a "Well, maybe when it’s finished, I can show you again..."
+    mc "That’d be awesome, Monika!"
+    mc "And I think the others would love to hear this too!"
+    m 1m "I’m sure they would..."
+    m 3l "After all, music is considered a form of poetry!"
+    mc "Yeah, it is!"
+    mc "Have you come up with a name for the song yet?"
+    m 2n "I’m still thinking it over..."
+    m 2r "This song does have a lot of meaning behind it..."
+    mc "In what way?"
+    mc "I figure that from what I’ve heard, it has something to do with love..."
+    m 2m "Yeah...{w=0.38}you could say that..."
+    "I feel my heart deflate a little in my chest."
+    "Is Monika...{w=0.38}in love with someone?"
+    "Well if she is, then there’s probably no way I could compete..."
+    show monika 2e
+    "But the look in Monika’s eyes...{w=0.38}tells me that I shouldn’t be worried about it..."
+    m "I really appreciate you encouraging me to play for you, [player]."
+    m 2b "I’ll definitely feel more comfortable with sharing it when it’s all good and ready..."
+    show monika 2a
+    mc "Yeah...{w=0.38}I’m sure whoever this for is really going to enjoy it..."
+    m 2k "I already know he will~"
+    "She says softly as she slides up to me."
+    show monika tease
+    m "Maybe we can even do a little duet..."
+    show monika u111394
+    mc "Well...{w=0.38}I-{w=0.38}I’ve never really picked up an instrument before..."
+    show monika tease
+    m "Maybe I can teach you..."
+    show monika u111394
+    "My heart nearly pounds out of my chest."
+    mc "I-{w=0.38}I mean..."
+    show monika tease
+    m "I think there’s a lot of things we can learn about each other, [player]..."
+    show monika u111394
+    mc "Ah, well, there’s really nothing too much to learn about me..."
+    mc "I’m not like some super talented guy or anything..."
+    show monika tease
+    m "There’s always something to learn about everyone..."
+    m "And, I’m a very curious person..."
+    show monika u111394
+    mc "I can be too..."
+    "For a moment, time seems to stop as our eyes suddenly meet."
+    "Monika looks up at me with a look of intimacy..."
+    "A smirk is now painted in her expression, along with rosy cheeks, a raised brow and slightly parted lips."
+    show monika tease
+    m "How about you teach me something right now?"
+    show monika u111394
+    "Monika is now biting her bottom lip in anticipation."
+    mc "I think I can do that..."
+    show monika u114311 at h11 zorder 1
+    "Suddenly, I hear my phone ring within my pocket."
+    "Monika steps back and shoots me a started look."
+    "I hastily answer my phone."
+    mc "H-{w=0.38}hello?"
+    show monika 2m
+    s "Hey, [player]..."
+    mc "Oh, hey, Sayori! What’s up?"
+    "I try to sound as calm as I can but my voice is still shaky over the moment I just had with Monika."
+    s "Where are you guys? You've been gone for ten minutes!"
+    mc "Wait really?"
+    "I take a quick look at the clock on the wall."
+    "Oh..."
+    mc "We’re coming back now, Sayori."
+    s "Alright, we’ll see you in a bit."
+    "Sayori hangs up."
+    show monika 1h
+    "I look to Monika who has a mix of irritation and frustration in her eyes."
+    mc "I guess we need to head back, huh?"
+    m 1o "Yeah..."
+    mc "Well...{w=0.38}maybe we can pick up where we left off another time?"
+    m 2e "If the circumstances are right..."
+    "We both sit there, motionlessly. Neither of us wanting to break the silence that has fallen over the room."
+    "Well, I guess I can try breaking it..."
+    mc "So..."
+    mc "Is it like, hot in here or is it just me?"
+    m 1j "Ha..."
+    m 1l "Hahaha..."
+    m 2k "Hahahahaha!"
+    "I’ve never seen Monka laughing so genuinely before."
+    "Looks like this day wasn't so bad after all..."
+    m 2b "Oh [player], I really needed that."
+    mc "Glad I could help!"
+    show monika 1a
+    "Without another word between us, Monika and I exit the music room and begin our walk back to the literature club."
+    show monika at thide
+    hide monika
+    jump day3_mreturn
