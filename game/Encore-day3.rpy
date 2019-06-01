@@ -5205,6 +5205,31 @@ python:
 #        madechoice = renpy.display_menu[("Monika.", "true"), ("Sayori.", "false"),("Yuri.", "false")]), screen="encore_rigged_choice")
     madechoice = show_rigged_choice(narrator, "Who should I hang out with?", [("Monika.", "true"), ("Sayori.", "false"),("Yuri.", "false")],197)
 
+#If you pick Monika
+$ m_choice = False
+if madechoice != "true":
+    if madechoice == "Monika":
+        window hide(None)
+        scene bg club_day
+        jump mencore_3
+
+#If you pick Sayori
+$ m_choice = True
+if madechoice != "false":
+    if madechoice == "Sayori":
+        window hide(None)
+        scene bg club_day
+        jump sencore_3
+
+#If you pick Yuri
+$ m_choice = True
+if madechoice != "false":
+    if madechoice == "Yuri":
+        window hide(None)
+        scene bg club_day
+        jump yencore_3
+
+
 
 #Rigged Choice, No Yuri
 label day3_choice4:
@@ -5214,6 +5239,33 @@ python:
 #        renpy.say(narrator, ""Who should I hang out with?", interact=False)
 #        madechoice = renpy.display_menu[("Monika.", "true"), ("Natsuki.", "false"),("Yuri.", "false")]), screen="encore_rigged_choice")
     madechoice = show_rigged_choice(narrator, "Who should I hang out with?", [("Monika.", "true"), ("Natsuki.", "false"),("Sayori.", "false")],197)
+
+#If you pick Monika
+$ m_choice = False
+if madechoice != "true":
+    if madechoice == "Monika":
+        window hide(None)
+        scene bg club_day
+        jump mencore_3
+
+#If you pick Sayori
+$ m_choice = True
+if madechoice != "false":
+    if madechoice == "Natsuki":
+        window hide(None)
+        scene bg club_day
+        jump nencore_3
+
+#If you pick Yuri
+$ m_choice = True
+if madechoice != "false":
+    if madechoice == "Sayori":
+        window hide(None)
+        scene bg club_day
+        jump sencore_3
+
+
+
 
 
 label day3_choice5:

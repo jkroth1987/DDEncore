@@ -112,6 +112,8 @@ define audio.bone = "mod_assets/audio/Bone.ogg"
 define audio.knife = "mod_assets/audio/Knife.ogg"
 define audio.stab = "mod_assets/audio/Stab.ogg"
 define audio.drop = "mod_assets/audio/Metal_Drop.ogg"
+define audio.belly = "mod_assets/audio/Stomach-Growl.ogg"
+define audio.sample = "mod_assets/audio/Your_Reality_Sample.ogg" #Sample Music
 #--Encore's New Music
 define audio.e1 = "<loop 0>mod_assets/audio/void1.ogg" #The Void (First Void Scene Music)
 define audio.f1 = "<loop 0>mod_assets/audio/mainmenu.ogg" #Doki Doki Forever (Main Menu Music, Doki Doki!~)
@@ -130,6 +132,9 @@ define audio.e13 = "<loop 0>mod_assets/audio/Ohayou_Monika.ogg" #Alternate Monik
 define audio.e14 = "<loop 0>mod_assets/audio/Ohayou_Natsuki.ogg" #Alternate Natsuki Theme MBS
 define audio.e15 = "<loop 0>mod_assets/audio/Ohayou_Sayori.ogg" #Alternate Sayori Theme MBS
 define audio.e16 = "<loop 0>mod_assets/audio/Ohayou_Yuri.ogg" #Alternate Yuri Theme MBS
+define audio.e17 = "<loop 0>mod_assets/audio/iPhone_Ring.ogg" #iPhone
+
+
 
 # Backgrounds
 image black = "#000000"
@@ -1425,6 +1430,7 @@ default menu_wait_time = 7.253 #The openiing animations timer
 default lpoem = "Yuri" #Who's love poem did you see on Day 2?
 default tell_s = True #Do you trouble Sayori with your dreams?
 default m_walk = True #Do you let Monika walk you back to class on Day 3?
+default m_choice = True #Do you pick Monika's choice on Day 3?
 
 # Instantiating variables for poem appeal. This is how much each character likes the poem for each day.
 # -1 = Dislike, 0 = Neutral, 1 = Like
@@ -1533,13 +1539,13 @@ image shadow_attack_bloody = "mod_assets/sprites/Shadow_Attack_Bloody.png"
 #image monika u111331 = im.Composite((960, 960), (0, 0), "mod_assets/character_images/monika/1_uniform/1_body_left/1.png", (0, 0), "mod_assets/character_images/monika/1_uniform/2_body_right/1.png", (0, 0), "mod_assets/character_images/monika/2_face/base.png", (0, 0), "mod_assets/character_images/monika/2_face/1_mouth/1.png", (0, 0), "mod_assets/character_images/monika/2_face/2_nose/3.png", (0, 0), "mod_assets/character_images/monika/2_face/3_eyes/3.png", (0, 0), "mod_assets/character_images/monika/2_face/4_eyebrows/1.png")
 #---uniform, hands down, open mouth smile, blush, eyes closed, eyebrows curved upwards
 #image monika u112332 = im.Composite((960, 960), (0, 0), "mod_assets/character_images/monika/1_uniform/1_body_left/1.png", (0, 0), "mod_assets/character_images/monika/1_uniform/2_body_right/1.png", (0, 0), "mod_assets/character_images/monika/2_face/base.png", (0, 0), "mod_assets/character_images/monika/2_face/1_mouth/2.png", (0, 0), "mod_assets/character_images/monika/2_face/2_nose/3.png", (0, 0), "mod_assets/character_images/monika/2_face/3_eyes/3.png", (0, 0), "mod_assets/character_images/monika/2_face/4_eyebrows/2.png")
-<<<<<<< HEAD
+#<<<<<<< HEAD
 #image monika u121351 = im.Composite((960, 960), (0, 0), "mod_assets/character_images/monika/1_uniform/1_body_left/1.png", (0, 0), "mod_assets/character_images/monika/1_uniform/2_body_right/2.png", (0, 0), "mod_assets/character_images/monika/2_face/base.png", (0, 0), "mod_assets/character_images/monika/2_face/1_mouth/1.png", (0, 0), "mod_assets/character_images/monika/2_face/2_nose/3.png", (0, 0), "mod_assets/character_images/monika/2_face/3_eyes/5.png", (0, 0), "mod_assets/character_images/monika/2_face/4_eyebrows/1.png") #Monika blush wink
-=======
+#=======
 #---uniform, right hand on hip, neutral closed smile, blush, winking, eyebrows at neutral position
 #image monika u121351 = im.Composite((960, 960), (0, 0), "mod_assets/character_images/monika/1_uniform/1_body_left/1.png", (0, 0), "mod_assets/character_images/monika/1_uniform/2_body_right/2.png", (0, 0), "mod_assets/character_images/monika/2_face/base.png", (0, 0), "mod_assets/character_images/monika/2_face/1_mouth/1.png", (0, 0), "mod_assets/character_images/monika/2_face/2_nose/3.png", (0, 0), "mod_assets/character_images/monika/2_face/3_eyes/5.png", (0, 0), "mod_assets/character_images/monika/2_face/4_eyebrows/1.png")
 #---unifrom, right hand on hip, neutral closed smile, blush, closed eyes, eyebrows at neutral position
->>>>>>> 407fd47f18f957a39caa579bf275cce4089ed3e1
+#>>>>>>> 407fd47f18f957a39caa579bf275cce4089ed3e1
 #image monika u121331 = im.Composite((960, 960), (0, 0), "mod_assets/character_images/monika/1_uniform/1_body_left/1.png", (0, 0), "mod_assets/character_images/monika/1_uniform/2_body_right/2.png", (0, 0), "mod_assets/character_images/monika/2_face/base.png", (0, 0), "mod_assets/character_images/monika/2_face/1_mouth/1.png", (0, 0), "mod_assets/character_images/monika/2_face/2_nose/3.png", (0, 0), "mod_assets/character_images/monika/2_face/3_eyes/3.png", (0, 0), "mod_assets/character_images/monika/2_face/4_eyebrows/1.png")
 #---unifrom, right hand on hip, open mouth smile, sweat drop on cheek, closed eyes, eyebrows at neutral position
 #image monika u122331 = im.Composite((960, 960), (0, 0), "mod_assets/character_images/monika/1_uniform/1_body_left/1.png", (0, 0), "mod_assets/character_images/monika/1_uniform/2_body_right/2.png", (0, 0), "mod_assets/character_images/monika/2_face/base.png", (0, 0), "mod_assets/character_images/monika/2_face/1_mouth/2.png", (0, 0), "mod_assets/character_images/monika/2_face/2_nose/3.png", (0, 0), "mod_assets/character_images/monika/2_face/3_eyes/3.png", (0, 0), "mod_assets/character_images/monika/2_face/4_eyebrows/1.png")
@@ -1580,6 +1586,7 @@ image natsuki_silhouette = "mod_assets/sprites/natsuki_silhouette.png"
 image natsuki_pain = "mod_assets/sprites/Breaking_Neck.png"
 image natsuki_rip = "mod_assets/sprites/n_kill.png"
 image natsuki_sweet = "mod_assets/sprites/n_sweet.png"
+image natsuki_bliss = "mod_assets/sprites/n_bliss.png"
 #image natsuki xu2131 = im.Composite((960, 960), (0, 0), "mod_assets/character_images/natsuki/1_xrossed_arms/1_body/u.png", (18, 22), "mod_assets/character_images/natsuki/2_face_def/base.png", (18, 22), "mod_assets/character_images/natsuki/2_face_def/1_mouth/2.png", (18, 22), "mod_assets/character_images/natsuki/2_face_def/2_nose/1.png", (18, 22), "mod_assets/character_images/natsuki/2_face_def/3_eyes/3.png", (18, 22), "mod_assets/character_images/natsuki/2_face_def/4_eyebrows/1.png")
 #image natsuki xu2143 = im.Composite((960, 960), (0, 0), "mod_assets/character_images/natsuki/1_xrossed_arms/1_body/u.png", (18, 22), "mod_assets/character_images/natsuki/2_face_def/base.png", (18, 22), "mod_assets/character_images/natsuki/2_face_def/1_mouth/2.png", (18, 22), "mod_assets/character_images/natsuki/2_face_def/2_nose/1.png", (18, 22), "mod_assets/character_images/natsuki/2_face_def/3_eyes/4.png", (18, 22), "mod_assets/character_images/natsuki/2_face_def/4_eyebrows/3.png")
 #image natsuki xu1146 = im.Composite((960, 960), (0, 0), "mod_assets/character_images/natsuki/1_xrossed_arms/1_body/u.png", (18, 22), "mod_assets/character_images/natsuki/2_face_def/base.png", (18, 22), "mod_assets/character_images/natsuki/2_face_def/1_mouth/1.png", (18, 22), "mod_assets/character_images/natsuki/2_face_def/2_nose/1.png", (18, 22), "mod_assets/character_images/natsuki/2_face_def/3_eyes/4.png", (18, 22), "mod_assets/character_images/natsuki/2_face_def/4_eyebrows/6.png")
@@ -1625,6 +1632,7 @@ image yb4 = "mod_assets/sprites/yb4.png"
 image yb5 = "mod_assets/sprites/yb5.png"
 image yb6 = "mod_assets/sprites/yb6.png"
 image yb7 = "mod_assets/sprites/yb7.png"
+image y_mad = "mod_assets/sprites/GrrYuri.png"
 #image yuri u122218 = im.Composite((960, 960), (0, 0), "mod_assets/character_images/yuri/1_uniform/1_body_left/1.png", (0, 0), "mod_assets/character_images/yuri/1_uniform/2_body_right/2.png", (0, 0), "mod_assets/character_images/yuri/2_face/base.png", (0, 0), "mod_assets/character_images/yuri/2_face/1_mouth/2.png", (0, 0), "mod_assets/character_images/yuri/2_face/2_nose/2.png", (0, 0), "mod_assets/character_images/yuri/2_face/3_eyes/1.png", (0, 0), "mod_assets/character_images/yuri/2_face/4_eyebrows/8.png")
 #image yuri u114221 = im.Composite((960, 960), (0, 0), "mod_assets/character_images/yuri/1_uniform/1_body_left/1.png", (0, 0), "mod_assets/character_images/yuri/1_uniform/2_body_right/1.png", (0, 0), "mod_assets/character_images/yuri/2_face/base.png", (0, 0), "mod_assets/character_images/yuri/2_face/1_mouth/4.png", (0, 0), "mod_assets/character_images/yuri/2_face/2_nose/2.png", (0, 0), "mod_assets/character_images/yuri/2_face/3_eyes/2.png", (0, 0), "mod_assets/character_images/yuri/2_face/4_eyebrows/1.png")
 #image yuri u125111 = im.Composite((960, 960), (0, 0), "mod_assets/character_images/yuri/1_uniform/1_body_left/1.png", (0, 0), "mod_assets/character_images/yuri/1_uniform/2_body_right/2.png", (0, 0), "mod_assets/character_images/yuri/2_face/base.png", (0, 0), "mod_assets/character_images/yuri/2_face/1_mouth/5.png", (0, 0), "mod_assets/character_images/yuri/2_face/2_nose/1.png", (0, 0), "mod_assets/character_images/yuri/2_face/3_eyes/1.png", (0, 0), "mod_assets/character_images/yuri/2_face/4_eyebrows/1.png")
@@ -1634,6 +1642,7 @@ image yb7 = "mod_assets/sprites/yb7.png"
 image airpod left = "mod_assets/sprites/apl.png"
 image airpod right = "mod_assets/sprites/apr.png"
 image airpod both = im.Composite((960, 960), (0, 0), "mod_assets/sprites/apl.png", (0, 0), "mod_assets/sprites/apr.png")
+image icecream = "mod_assets/sprites/ice_cream.png"
 
 # Silhouettes
 image sayori 1shadow = shadow("mod_assets/sprites/char_bases/s_base")

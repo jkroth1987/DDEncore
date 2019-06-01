@@ -84,6 +84,7 @@ label day1_beginning:
     scene bg bedroom
     with dissolve_cg
     show sayori 1q at t11 zorder 1
+    play sound "sfx/closet-open.ogg"
     if encore_sayoriquestion_1 == False:
         "I see my door swing open as my annoying, yet sweet, friend, Sayori, enters my room."
     elif encore_sayoriquestion_1 == True:
@@ -191,6 +192,7 @@ label day1_beginning:
     mc "Eh, that oughta do..."
     s "You ready yet?"
     mc "Yeah, come on in."
+    play sound "sfx/closet-open.ogg"
     "Sayori enters my room again."
     show sayori 1q at t11 zorder 1
     s 3r "Hey, [player]!"
@@ -405,6 +407,7 @@ label day1_beginning:
     with wipeleft_scene
     stop music fadeout 2.0
     "I gently open the door..."
+    play sound "sfx/closet-open.ogg"
     scene bg club_day
     with wipeleft_scene
     "....to find that the usual scene we've become accustomed to over the last two weeks is still the same as ever."

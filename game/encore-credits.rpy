@@ -18,7 +18,7 @@ Writers: Agent Gold, Bug, Nick (Canad1an),
 Rose, Ploxmaster708, Rudy, Andrew J. Striedl
 Writing Contributors: Lucy CN, Jacob Smallman
 Artists: 3Monika4 (Monika), Elaina Sasso,
- @reenaki_m (Instagram)"""
+ @reenaki_m (Instagram), vayar2000"""
 
     # 2
     # 6 lines, +250 pixels
@@ -28,6 +28,7 @@ Coding Contributor: POBAW
 General Contributions: Nep, Rezzy
 Image Editing: POBAW, TheD0ctor,
 Agent Gold, Andrew J. Striedl
+Image Editing Contributor: AjTheYandere
 
 Music: Daniel Kruyer (Angelic Beast)"""
 
@@ -85,11 +86,12 @@ by yagamirai10 [[Community Asset Folder]
 
 \"encoretextbox.png\" by TheD0ct0r#8275(Discord)
 
-residential_dusk by SovietSpartan
 closet_dark by POBAW
 club_nothing by The Monika Before Story Team
 closet_dark by Agent Gold
+music_room by vayar2000
 n_void_1 by Agent Gold
+residential_dusk by SovietSpartan
 
 
 Cafeteria BG: Image Saved By Alania Frank on Pintrest https://i.pinimg.com/originals/ac/32/ab/ac32ab03f90d8d08ef88cfafe788bddf.jpg
@@ -123,7 +125,7 @@ AMAZON: https://www.amazon.com/gp/product/B078MFKXTQ
 http://soundbible.com/1196-Knocking-On-Door.html
 (converted to .ogg by Bug)
 
-daudio.school: By Hajgare PaKufi on YouTube
+audio.school: By Hajgare PaKufi on YouTube
 (converted to .ogg by Andrew)
 
 audio.fingersnap: By GamingSoundEffects on YouTube
@@ -142,7 +144,15 @@ audio.stab: By SoundEffectsFactory on YouTube
 (converted to .ogg by Andrew)
 
 audio.drop: Public Domain
-(converted to .ogg by Agent Gold)"""
+(converted to .ogg by Agent Gold)
+
+audio.belly: By SoundEffectsFactory on YouTube
+(converted to .ogg by Andrew)
+
+IPhone Ringing Sound Effect (e.17): By HyperView on YouTube
+(converted to .ogg by Andrew)"""
+
+
 
     # 9
     # 5 lines, +200 pixels
@@ -153,17 +163,19 @@ Ohayou_Natsuki by Monika Before Story
 Ohayou_Sayori by Monika Before Story
 Ohayou_Yuri by Monika Before Story
 
-
+Air Pods by Reenaki
+\"Breaking_Neck\" by TheD0ctor
 \"Monika_Cute\" by radioactive64
 \"Monika_Smirk\" by r/user/LanceAkira in "It's A Doki Doki Life!"
 \"Monika_Shock\" by r/user/Lunatic_Rabbit
 \"Monika_Surprised\" by r/user/LanceAkira in "It's A Doki Doki Life!"
 \"Monika_Tease\" by by r/user/Lunatic_Rabbit
-\"Breaking_Neck\" by TheD0ctor
+\"n_bliss\" by r/user/LanceAkira in "It's A Doki Doki Life!"
 \"n_kill\" by TheD0ctor with assets from Doki Doki: Exit Music
 \"n_sweet\" by r/user/TacticalCupcakes
 Silhouetted Sprites by POBAW
 Yandere Sayori by Agent Gold
+\"y_mad\" by AjTheYandere
 Other Unique Sprites by Agent Gold"""
 
     # 10

@@ -584,11 +584,14 @@ label mencore_3:
     play music e13 fadein 2.0
     "Monika is at the teacher’s desk, but she isn’t on the computer like she normally is."
     show monika 1j at t11 zorder 1
+    show airpod both at t11 zorder 1
     "Instead, she’s looking down at her ipod and humming a tune to herself."
     "Intrigued, I carefully approach her, not wanting to startle her."
     mc "Hey, Monika."
     show monika 1d at h11 zorder 1
+    show airpod both at h11 zorder 1
     "She quickly looks up at me, popping out one of her AirPods."
+    show airpod left at t11 zorder 1
     m 1b "Oh, hey [player]!"
     m "I take it you wanted to see what I was working on?"
     show monika u111151
@@ -614,12 +617,14 @@ label mencore_3:
     mc "That’s awesome, Monika!"
     mc "You really are a jack of all trades, aren’t you?"
     m u121331 "Awww, [player]..."
+    hide airpod left
     show monika 5a
     "Monika grins at me."
     show monika smirk
     m "I just strive to be the best I can be."
     mc "Well you’re definitely succeeding..."
-    m 1m "Well if that’s the case, maybe I can show you what I’ve been working on."
+    show airpod left at t11 zorder 1
+    m 1m "Well if that’s the case, maybe I can show you what I’ve been basing my song off of."
     mc "How much of the song is done?"
     m 1a "I’d say that the first verse is pretty much done at this point."
     m 1b "I was thinking that the second verse could go something like this..."
@@ -632,8 +637,13 @@ label mencore_3:
     m 1a "Yep! Right now it's just going to be a piano solo."
     mc "Alright..."
     "Monika hits the play button on her ipod."
-    #Possible Sample Music
+    play audio sample
+    $ renpy.pause(delay=10.00, hard=True)
+    show monika 1j
+    $ renpy.pause(delay=17.00, hard=True)
+    show monika 1a
     mc "Huh, that was actually pretty good!"
+    play music e2 fadein 1.0
     mc "You think you could actually play that?"
     m 1m "Well with some more practice, I think I can pull it off."
     mc "Do you want to take a crack at it now?"
@@ -649,6 +659,7 @@ label mencore_3:
     mc "And if you think you can pull off that sample with just a little practice, then I’m sure I’ll love your song!"
     m 1n "O-{w=0.38}okay..."
     m 1e "Let's do it!"
+    hide airpod left
     "I hand Monika back her AirPod as she pops the other one out."
     m 1b "We can use the piano in the band room."
     m 1a "The band doesn’t meet on Wednesday’s so nobody should be in there right now..."
@@ -670,6 +681,7 @@ label mencore_3:
     "I can only imagine just how hard she’s worked to get herself there."
     "Anybody would want to be like her..."
     "And it's a no-brainer for why every guy wants to be with her..."
+    stop music fadeout 3.0
     m 1b "Well, here we are!"
     show monika 1a
     "Monka stops in front of the band room."
@@ -678,9 +690,10 @@ label mencore_3:
     mc "Can’t say I have."
     m 1k "Well this definitely going to be a special day for you, [player]~"
     "Monika opens the door and flicks on the lights as we enter the band room."
+    play sound "sfx/closet-open.ogg"
     show monika at thide
     hide monika
-    scene bg club_day
+    scene bg music_room
     with wipeleft_scene
     "Woah..."
     "I don’t think I’ve seen so many different instruments before..."
@@ -706,6 +719,7 @@ label mencore_3:
     m 1l "Thanks, [player]!"
     show monika 1r
     "Monika cracks her knuckles, letting out one more breath before positioning her fingers above the keys."
+    play music "<to 50.88>bgm/credits.ogg" noloop
     "A split second later, she begins playing."
     "I can’t help but notice how elegantly her fingers grace the keys."
     "The melody is calm, but purposeful. Every action with intent, and care...{w=0.38}it's almost hypnotizing!"
@@ -749,47 +763,136 @@ label mencore_3:
     mc "In what way?"
     mc "I figure that from what I’ve heard, it has something to do with love..."
     m 2m "Yeah...{w=0.38}you could say that..."
-    "I feel my heart deflate a little in my chest."
-    "Is Monika...{w=0.38}in love with someone?"
-    "Well if she is, then there’s probably no way I could compete..."
-    show monika 2e
-    "But the look in Monika’s eyes...{w=0.38}tells me that I shouldn’t be worried about it..."
-    m "I really appreciate you encouraging me to play for you, [player]."
-    m 2b "I’ll definitely feel more comfortable with sharing it when it’s all good and ready..."
-    show monika 2a
-    mc "Yeah...{w=0.38}I’m sure whoever this for is really going to enjoy it..."
-    m 2k "I already know he will~"
-    "She says softly as she slides up to me."
-    show monika tease
-    m "Maybe we can even do a little duet..."
-    show monika u111394
-    mc "Well...{w=0.38}I-{w=0.38}I’ve never really picked up an instrument before..."
-    show monika tease
-    m "Maybe I can teach you..."
-    show monika u111394
-    "My heart nearly pounds out of my chest."
-    mc "I-{w=0.38}I mean..."
-    show monika tease
-    m "I think there’s a lot of things we can learn about each other, [player]..."
-    show monika u111394
-    mc "Ah, well, there’s really nothing too much to learn about me..."
-    mc "I’m not like some super talented guy or anything..."
-    show monika tease
-    m "There’s always something to learn about everyone..."
-    m "And, I’m a very curious person..."
-    show monika u111394
-    mc "I can be too..."
-    "For a moment, time seems to stop as our eyes suddenly meet."
-    "Monika looks up at me with a look of intimacy..."
-    "A smirk is now painted in her expression, along with rosy cheeks, a raised brow and slightly parted lips."
-    show monika tease
-    m "How about you teach me something right now?"
-    show monika u111394
-    "Monika is now biting her bottom lip in anticipation."
-    mc "I think I can do that..."
+
+    if encore_sayoriquestion_1 == True:
+        "A smile comes across my face."
+        "It's good to see that Monika's interested in someone."
+        "Especially since she spends a good portion of her time fending off advances from other guys..."
+        show monika 2e
+        "Still...{w=0.38}I wonder who Monika's interested in..."
+        m "I really appreciate you encouraging me to play for you, [player]."
+        m 2b "I’ll definitely feel more comfortable with sharing it when it’s all good and ready..."
+        show monika 2a
+        mc "Yeah...{w=0.38}I’m sure whoever this for is really going to enjoy it..."
+        m 2k "I already know he will~"
+        "She says softly as she slides up to me."
+        show monika tease
+        m "Maybe we can even do a little duet..."
+        show monika u111394
+        mc "Well...{w=0.38}I-{w=0.38}I’ve never really picked up an instrument before..."
+        show monika tease
+        m "Maybe I can teach you..."
+        show monika u111394
+        "My heart nearly pounds out of my chest."
+        mc "I-{w=0.38}I mean..."
+        show monika tease
+        m "I think there’s a lot of things we can learn about each other, [player]..."
+        show monika u111394
+        mc "Ah, well, there’s really nothing too much to learn about me..."
+        mc "I’m not like some super talented guy or anything..."
+        show monika tease
+        m "There’s always something to learn about everyone..."
+        m "And, I’m a very curious person..."
+        show monika u111394
+        "I feel sweat start to trickle down the back of my neck as Monika intimatly gazes at me."
+
+        if hangout2 == "Monika":
+            "This is just like yesterday..."
+            "What's Monika doing?"
+
+        if hangout2 == "Sayori" or hangout2 == "Natsuki" or hangout2 == "Yuri":
+            pass
+
+        show monika tease
+        m "I hope you've been doing some thinking, [player]..."
+        mc "Well...{w=0.38}you've given me a lot to think about..."
+        show monika tease
+        m "That's the idea, [player]..."
+        m "Isn't it nice to have someone who knows what she wants?"
+        m "Someone you don't need to worry about?"
+        m "Someone who doesn't feel guilt or shame when she's with you?"
+        show monika u111394
+        "Monika's voice echos in my head as I process her questions."
+        "How do I respond to this?"
+        "I don't know how I feel about Monika's advances..."
+        "On one hand...{w=0.38}this feels nice..."
+        "But...{w=0.38}it's wrong..."
+        "I don't know whether to feel pleasure or guilt by all this..."
+        "What is she trying to get at?"
+        mc "I..."
+
+
+
+    if encore_sayoriquestion_1 == False:
+
+        if hangout1 == "Monika":
+            if hangout2 == "Monika":
+                "I feel my heart deflate a little in my chest."
+                "Is Monika...{w=0.38}in love with someone?"
+                "Well if she is, then there’s probably no way I could compete..."
+
+
+        if hangout1 == "Monika":
+            if hangout2 == "Sayori" or hangout2 == "Natsuki" or hangout2 == "Yuri":
+                "I feel my heart deflate a little in my chest."
+                "Is Monika...{w=0.38}in love with someone?"
+                "On one hand, I feel happy for her."
+                "But at the same time, I feel a little sorry for myself."
+                "I thought that maybe for a time, I had a chance with her..."
+
+
+        if hangout1 == "Sayori" or hangout1 == "Natsuki" or hangout1 == "Yuri":
+            if hangout1 == "Monika":
+                "I feel my heart deflate a little in my chest."
+                "Is Monika...{w=0.38}in love with someone?"
+                "On one hand, I feel happy for her."
+                "But at the same time, I feel a little sorry for myself."
+                "I thought that maybe for a time, I had a chance with her..."
+                "Especially how close we were yesterday..."
+
+
+
+        show monika 2e
+        "But the look in Monika’s eyes...{w=0.38}tells me that I shouldn’t be worried about it..."
+        m "I really appreciate you encouraging me to play for you, [player]."
+        m 2b "I’ll definitely feel more comfortable with sharing it when it’s all good and ready..."
+        show monika 2a
+        mc "Yeah...{w=0.38}I’m sure whoever this for is really going to enjoy it..."
+        m 2k "I already know he will~"
+        "She says softly as she slides up to me."
+        show monika tease
+        m "Maybe we can even do a little duet..."
+        show monika u111394
+        mc "Well...{w=0.38}I-{w=0.38}I’ve never really picked up an instrument before..."
+        show monika tease
+        m "Maybe I can teach you..."
+        show monika u111394
+        "My heart nearly pounds out of my chest."
+        mc "I-{w=0.38}I mean..."
+        show monika tease
+        m "I think there’s a lot of things we can learn about each other, [player]..."
+        show monika u111394
+        mc "Ah, well, there’s really nothing too much to learn about me..."
+        mc "I’m not like some super talented guy or anything..."
+        show monika tease
+        m "There’s always something to learn about everyone..."
+        m "And, I’m a very curious person..."
+        show monika u111394
+        mc "I can be too..."
+        "For a moment, time seems to stop as our eyes suddenly meet."
+        "Monika looks up at me with a look of intimacy..."
+        "A smirk is now painted in her expression, along with rosy cheeks, a raised brow and slightly parted lips."
+        show monika tease
+        m "How about you teach me something right now?"
+        show monika u111394
+        "Monika is now biting her bottom lip in anticipation."
+        mc "I think I can do that..."
+
+    play music e17
     show monika u114311 at h11 zorder 1
     "Suddenly, I hear my phone ring within my pocket."
     "Monika steps back and shoots me a started look."
+    stop music
     "I hastily answer my phone."
     mc "H-{w=0.38}hello?"
     show monika 2m
@@ -807,8 +910,16 @@ label mencore_3:
     "I look to Monika who has a mix of irritation and frustration in her eyes."
     mc "I guess we need to head back, huh?"
     m 1o "Yeah..."
-    mc "Well...{w=0.38}maybe we can pick up where we left off another time?"
-    m 2e "If the circumstances are right..."
+
+    if encore_sayoriquestion_1 == True:
+        mc "Well...{w=0.38}that was...{w=0.38}fun..."
+        m 2e "Yeah...{w=0.38}it was..."
+
+    if encore_sayoriquestion_1 == False:
+        mc "Well...{w=0.38}maybe we can pick up where we left off another time?"
+        m 2e "If the circumstances are right..."
+
+
     "We both sit there, motionlessly. Neither of us wanting to break the silence that has fallen over the room."
     "Well, I guess I can try breaking it..."
     mc "So..."
@@ -818,7 +929,7 @@ label mencore_3:
     m 2k "Hahahahaha!"
     "I’ve never seen Monka laughing so genuinely before."
     "Looks like this day wasn't so bad after all..."
-    m 2b "Oh [player], I really needed that."
+    m 2b "Oh [player], I really needed that!"
     mc "Glad I could help!"
     show monika 1a
     "Without another word between us, Monika and I exit the music room and begin our walk back to the literature club."

@@ -1570,7 +1570,7 @@ s 2x "I have all my poems back at my place, I can give them to you later."
 
 
 
-
+label poem_answer:
 # BEGIN "LIKE YOU/LOVE YOU" POEM LOGIC
 $ poem_giver = "" # Will be either Yuri or Natsuki
 $ is_love_poem = False

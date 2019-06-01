@@ -1743,7 +1743,23 @@ label nencore_3:
     play music e14 fadein 1.0
     "As I walk up to the closet, I can hear Natsuki talking to herself."
     n "Ugh...{w=0.38}where the hell is it?!?"
-    "Careful not to startle her like I did yesterday, I gently knock on the closet door."
+
+    if hangout1 == "Natsuki":
+        if hangout2 == "Natsuki":
+            "Careful not to startle her like I have been recently, I gently knock on the closet door."
+
+    if hangout1 == "Sayori" or hangout1 == "Monika" or hangout1 == "Yuri":
+        if hangout2 == "Natsuki":
+            "Careful not to startle her like I did yesterday, I gently knock on the closet door."
+
+    if hangout1 == "Natsuki":
+        if hangout2 == "Sayori" or hangout2 == "Monika" or hangout2 == "Yuri":
+            "Careful not to startle her like I did on Monday, I gently knock on the closet door."
+
+    else:
+        "Careful not to startle her, I gently knock on the closet door."
+        mc "N-{w=0.38}Natsuki?"
+
     "Natsuki finishes putting some boxes back on the shelf as she comes out of the closet."
     show natsuki 5u at t11 zorder 1
     mc "Hey, everything ok in there?"
@@ -1752,8 +1768,94 @@ label nencore_3:
     show natsuki 42b
     "Natsuki turns away, attempting to compose herself."
     mc "Well, what’s wrong?"
-    n 42c "I think I lost that special edition of Parfait Girls that we were reading yesterday..."
-    "Well, I can see why she’d be upset about that..."
+
+    if hangout1 == "Natsuki" or hangout1 == "Sayori" or hangout1 == "Monika" or hangout1 == "Yuri":
+        if hangout2 == "Natsuki":
+            n 42c "I think I lost that special edition of Parfait Girls that we were reading yesterday..."
+            "Well, I can see why she’d be upset about that..."
+
+    if hangout1 == "Natsuki":
+        if hangout2 == "Sayori" or hangout2 == "Monika" or hangout2 == "Yuri":
+            n 42c "I think I lost one of my copies of Parfait Girls..."
+            mc "Oh, no! Which one?"
+            n 42e "It was special edition copy..."
+            "Well, I can see why she’d be upset about that..."
+
+    else:
+        n 42a "Why do you care?"
+        n "Aren't you supposed to be with [hangout2] right now?"
+        n 42c "Because I'm not hugging you too."
+        mc "Well, I didn't come over here for that..."
+        show natsuki 5n
+        "Natsuki raises an eyebrow at me."
+        n 5i "Then why are you over here then?"
+        n 5w "If you're hear to apologize for yesterday, don't."
+        n 5x "I don't really care who you're with..."
+        mc "Natsuki, I didn't come for any of that."
+        mc "I just wanted to see how you were doing..."
+        n 5w "I think you already know the answer to that!"
+        show natsuki 5i
+        "Natsuki looks over her shoulder into the closet."
+        "I briefly look past her to see books and other items littered all over the closet floor."
+        "So this is how she 'organizes'..."
+        mc "I take it you're looking for something..."
+        n 5w "Well, duh!"
+        n 4x "I'm looking for my special edition of Parfait Girls..."
+        mc "'Parfait Girls'?"
+        n 4w "Yes, genius! It's the manga I like to read!"
+        mc "I see..."
+        "I've never heard of any manga called that before."
+        "Which either means it's really bad, or I'm out of its target auidence."
+        mc "Well, I'd be happy to help you look for it."
+        mc "That is, if you need a helping hand..."
+        show natsuki 5u
+        "Natsuki takes a moment to think my offer over."
+        n 5i "Alright."
+        n 5h "You can make yourself useful and start looking through up there."
+        "Natsuki points to the upper shleves."
+        mc "Alright."
+        "Natsuki grabs one of her manga cases and moves out of the way as I step into the closet."
+        mc "So, what does it look like?"
+        n 1w "It's pink and it'll say 'Special Edition' on it."
+        n 1k "You'll know when it you see it."
+        mc "Alright..."
+        show natsuki at thide
+        hide natsuki
+        "I begin to look through the upper shelves for anything that resembles what Natsuki just described."
+        scene bg closet
+        with wipeleft_scene
+        "After searching through the upper shelves, I still wasn't able to find anything that resembled what Natsuki described."
+        show natsuki 1m at t11 zorder 1
+        n "Anything?"
+        "I somberly shake my head."
+        mc "Nothing."
+        mc "I will say though, you do have a pretty nice manga collection."
+        show natsuki 4w
+        n "Well, that's why you should've come to me sooner!"
+        n 4y "I have the best manga collection in the entire school!"
+        mc "Well, it certainly beats mine..."
+        n 1k "What kinds of manga do you read?"
+        mc "Ah, anything to do with action and adventure..."
+        n 2w "Ugh! That's so typical!"
+        n 2e "When this is over, I've got to show you some different kinds of manga!"
+        mc "Well, I guess I could give it a try..."
+        n 4l "There you go! That's the spirit!"
+        n 4z "Get ready to dive head first into my world of manga, [player]!"
+        "I don't know if that's a good thing or bad thing that she just said that..."
+        "Either I'm going to be blown away with how shockingly good her favorite manga are..."
+        "Or I'm going to be testing the limits of how much boredom someone can take..."
+        "Still, it'd be nice to getting to know Natsuki a little bit better..."
+        n 3u "But, I really would like to show you that Special Edition."
+        n 3m "It'll give you a proper introduction into other types of manga."
+        mc "You could just get me started with the regular edition..."
+        mc "I mean, how badly do we need to find it?"
+        n 42c "There's not many like it, [player]..."
+        n 42a "It's not something I can just easily replace..."
+        mc "In that case..."
+
+
+
+
     mc "Did you have it with you earlier today?"
     n 4m "Yeah, I had it with me it all day..."
     n 3q "I could’ve sworn I had it with me when I came here..."
@@ -1790,7 +1892,26 @@ label nencore_3:
     mc "Aren’t you the diligent student?"
     n 2o "Hey! You know her class is boring!"
     mc "At least you don’t have Ms. Saitō..."
-    n 5w "It’s not like you pay attention in her class either!"
+
+    if hangout1 == "Natsuki":
+        if hangout2 == "Natsuki":
+            n 5w "It’s not like you pay attention in her class either!"
+
+
+    if hangout1 == "Sayori" or hangout1 == "Monika" or hangout1 == "Yuri":
+        if hangout2 == "Natsuki":
+            n 5w "You probably don't pay attention in her class either!"
+
+
+    if hangout1 == "Natsuki":
+        if hangout2 == "Sayori" or hangout2 == "Monika" or hangout2 == "Yuri":
+            n 5w "You probably don't pay attention in her class either!"
+
+
+    else:
+        n 5w "So why are you criticizing me for trying to pass the time in her class when you probably do the same thing!"
+
+
     show natsuki 5x
     mc "Fair point..."
     mc "Anyways, Suzuki’s probably left her room by now, so we can probably go check."
@@ -1817,24 +1938,213 @@ label nencore_3:
     n 12a "[player]..."
     n 1h "It was 9,000 Yen..."
     mc "Oh..."
-    show natsuki 1u
-    "I didn’t realize Parfait Girls was worth that much..."
-    n 1m "It’s very easy to take something like that and re-sell it online..."
-    n 1n "It happened to a girl I knew back in Middle School..."
-    n 1m "And if it happens to me, there’s no way I’d be able to get it back..."
-    n 12c "My Dad wouldn’t care enough to help me..."
-    show natsuki 12b
-    mc "I see..."
-    n 1t "At least I have you helping me..."
-    mc "Ah well, it’s nothing..."
-    mc "That’s what friends are for, right?"
-    n 5t "Y-{w=0.38}yeah..."
-    n 5l "And you aren’t half-bad, [player]!"
-    mc "Well, it’s the least I could for you..."
-    n 1m "Hey..."
-    n 1n "I really do appreciate it..."
-    n 1q "I know I come across as rude and unapproachable sometimes..."
-    n 1m "But knowing that you’ll be there for me, really does help..."
+
+    if hangout1 == "Natsuki":
+        if hangout2 == "Natsuki":
+            show natsuki 1u
+            "I didn’t realize Parfait Girls was worth that much..."
+            n 1m "It’s very easy to take something like that and re-sell it online..."
+            n 1n "It happened to a girl I knew back in Middle School..."
+            n 1m "And if it happens to me, there’s no way I’d be able to get it back..."
+            n 12c "My Dad wouldn’t care enough to help me..."
+            show natsuki 12b
+            mc "I see..."
+            n 1t "At least I have you helping me..."
+            mc "Ah well, it’s nothing..."
+            mc "That’s what friends are for, right?"
+            n 5t "Y-{w=0.38}yeah..."
+            n 5l "And you aren’t half-bad, [player]!"
+            mc "Well, it’s the least I could for you..."
+            n 1m "Hey..."
+            n 1n "I really do appreciate it..."
+            n 1q "I know I come across as rude and unapproachable sometimes..."
+
+        if encore_sayoriquestion_1 == True:
+
+            if encore_festivalquestion_2 == "Natsuki":
+                n 1m "But you helping me out, showing that you actually care, really does help..."
+                n 1s "I just wish we started talking sooner..."
+                jump day3_arrival
+
+            if encore_festivalquestion_2 == "Yuri":
+                n 1n "Maybe that's why we haven't talked much..."
+                n 1m "I didn't chase you away did I?"
+                mc "No, it's not that..."
+                mc "Look, you're a cool person, and we still have plenty of time to get to know each other."
+                mc "We have an entire school year in front of us."
+                jump day3_arrival
+
+        if encore_sayoriquestion_1 == False:
+
+            if encore_festivalquestion_2 == "Natsuki":
+                n 1m "But knowing that you’ll be there for me, really does help..."
+                n 1s "I'm surprised you still stick around..."
+                jump day3_arrival
+
+            if encore_festivalquestion_2 == "Yuri":
+                n 1n "Maybe that's why we haven't talked much..."
+                mc "Ah, well, let's not worry about that..."
+                mc "We still have the entire school year in front of us."
+                mc "It's plenty of time for us to get to know each other."
+                jump day3_arrival
+
+
+
+    if hangout1 == "Sayori" or hangout1 == "Monika" or hangout1 == "Yuri":
+        if hangout2 == "Natsuki":
+            show natsuki 1u
+            "I didn’t realize Parfait Girls was worth that much..."
+            n 1m "It’s very easy to take something like that and re-sell it online..."
+            n 1n "It happened to a girl I knew back in Middle School..."
+            n 1m "And if it happens to me, there’s no way I’d be able to get it back..."
+            n 12c "My Dad wouldn’t care enough to help me..."
+            show natsuki 12b
+            mc "I see..."
+            n 1t "At least you're helping out..."
+            mc "Ah well, it’s nothing..."
+            mc "That’s what friends are for, right?"
+            n 5t "Y-{w=0.38}yeah..."
+            n 5l "And you aren’t half-bad, [player]!"
+            mc "Well, it’s the least I could for you..."
+            n 1m "Hey..."
+            n 1n "This really means a lot to me..."
+            n 1q "I know I come across as rude and unapproachable sometimes..."
+
+            if encore_sayoriquestion_1 == True:
+
+                if encore_festivalquestion_2 == "Natsuki":
+                    n 1m "But you helping me out, showing that you actually care, really does help..."
+                    n 1s "I just wish we started talking sooner..."
+                    jump day3_arrival
+
+                if encore_festivalquestion_2 == "Yuri":
+                    n 1n "Maybe that's why we haven't talked much..."
+                    n 1m "I didn't chase you away did I?"
+                    mc "No, it's not that..."
+                    mc "Look, you're a cool person, and we still have plenty of time to get to know each other."
+                    mc "We have an entire school year in front of us."
+                    jump day3_arrival
+
+            if encore_sayoriquestion_1 == False:
+
+                if encore_festivalquestion_2 == "Natsuki":
+                    n 1m "But you helping me out, showing that you actually care, really does help..."
+                    n 1s "I'm just glad someone kind of cares about me for once..."
+                    jump day3_arrival
+
+                if encore_festivalquestion_2 == "Yuri":
+                    n 1n "Maybe that's why we haven't talked much..."
+                    mc "Ah, well, let's not worry about that..."
+                    mc "We still have the entire school year in front of us."
+                    mc "It's plenty of time for us to get to know each other."
+                    jump day3_arrival
+
+
+
+    if hangout1 == "Natsuki":
+        if hangout2 == "Sayori" or hangout2 == "Monika" or hangout2 == "Yuri":
+            show natsuki 1u
+            "I didn’t think something like Parfait Girls could go for that much..."
+            n 1m "It’s very easy to take something like that and re-sell it online..."
+            n 1n "It happened to a girl I knew back in Middle School..."
+            n 1m "And if it happens to me, there’s no way I’d be able to get it back..."
+            n 12c "My Dad wouldn’t care enough to help me..."
+            show natsuki 12b
+            mc "I see..."
+            n 1t "At least I have you helping me..."
+            mc "Ah well, it’s nothing..."
+            mc "That’s what friends are for, right?"
+            n 5t "Y-{w=0.38}yeah..."
+            n 5l "And you aren’t half-bad, [player]!"
+            mc "Well, it’s the least I could for you..."
+            n 1m "Hey..."
+            n 1n "I really do appreciate it..."
+            n 1q "I know I come across as rude and unapproachable sometimes..."
+
+            if encore_sayoriquestion_1 == True:
+
+                if encore_festivalquestion_2 == "Natsuki":
+                    n 1m "But you helping me out, showing that you actually care, really does help..."
+                    n 1s "I just wish we started talking sooner..."
+                    jump day3_arrival
+
+                if encore_festivalquestion_2 == "Yuri":
+                    n 1n "Maybe that's why we haven't talked much..."
+                    n 1m "I didn't chase you away did I?"
+                    mc "No, it's not that..."
+                    mc "Look, you're a cool person, and we still have plenty of time to get to know each other."
+                    mc "We have an entire school year in front of us."
+                    jump day3_arrival
+
+            if encore_sayoriquestion_1 == False:
+
+                if encore_festivalquestion_2 == "Natsuki":
+                    n 1m "But you helping me out, showing that you actually care, really does help..."
+                    n 1s "I'm just glad someone kind of cares about me for once..."
+                    jump day3_arrival
+
+                if encore_festivalquestion_2 == "Yuri":
+                    n 1n "Maybe that's why we haven't talked much..."
+                    mc "Ah, well, let's not worry about that..."
+                    mc "We still have the entire school year in front of us."
+                    mc "It's plenty of time for us to get to know each other."
+                    jump day3_arrival
+
+
+
+    else:
+        show natsuki 1u
+        "I almost forgot how much manga can go for these days..."
+        n 1m "It’s very easy to take something like that and re-sell it online..."
+        n 1n "It happened to a girl I knew back in Middle School..."
+        n 1m "And if it happens to me, there’s no way I’d be able to get it back..."
+        n 12c "My Dad wouldn’t care enough to help me..."
+        show natsuki 12b
+        mc "I see..."
+        n 1t "At least I have you helping me..."
+        mc "Ah well, it’s nothing..."
+        mc "That’s what friends are for, right?"
+        n 5t "Y-{w=0.38}yeah..."
+        n 5l "And you aren’t half-bad, [player]!"
+        mc "Well, it’s the least I could for you..."
+        n 1m "Hey..."
+        n 1n "I really do appreciate it..."
+        n 1q "I know I come across as rude and unapproachable sometimes..."
+
+        if encore_sayoriquestion_1 == True:
+
+            if encore_festivalquestion_2 == "Natsuki":
+                n 1m "Maybe that's why we haven't been around each other lately..."
+                n 1m "I didn't do something bad, did I?"
+                mc "No, you didn't..."
+                mc "Look, you're a cool person, and I had fun last Sunday, I really did!"
+                mc "We have the rest of the school year to make memories together, so let's not dwell on any time that we could've had together, okay?"
+                jump day3_arrival
+
+            if encore_festivalquestion_2 == "Yuri":
+                n 1n "Maybe that's why we haven't talked much..."
+                n 1m "I didn't chase you away did I?"
+                mc "No, it's not that..."
+                mc "Look, you're a cool person, and we still have plenty of time to get to know each other."
+                mc "We have an entire school year in front of us."
+                jump day3_arrival
+
+        if encore_sayoriquestion_1 == False:
+
+            if encore_festivalquestion_2 == "Natsuki":
+                n 1m "But you helping me out, showing that you actually care, really does help..."
+                n 1s "I'm just wish we got more time together..."
+                jump day3_arrival
+
+            if encore_festivalquestion_2 == "Yuri":
+                n 1n "Maybe that's why we haven't talked much..."
+                mc "Ah, well, let's not worry about that..."
+                mc "We still have the entire school year in front of us."
+                mc "It's plenty of time for us to get to know each other."
+                jump day3_arrival
+
+
+label day3_arrival:
     show natsuki 5s
     "Natsuki nervously glances down at the floor."
     "I see that we’re at the room."
@@ -1842,6 +2152,7 @@ label nencore_3:
     mc "I’m willing to walk around the entire school with you until we find it."
     show natsuki_sweet as natsuki at t11 zorder 1
     "Natsuki weakly smiles at me as she opens the door."
+    play sound "sfx/closet-open.ogg"
     show natsuki_sweet as natsuki at thide
     hide natsuki
     scene bg class_day
@@ -1912,6 +2223,7 @@ label nencore_3:
     n 1m "Eh?"
     "I hold up Natsuki’s manga."
     n 1l "Are you serious?!?!"
+    play music e3 fadein 1.0
     show natsuki 1l at t11 zorder 1
     "Natsuki wipes the tears from her eyes and abruptly stands up."
     n 1d "W-{w=0.38}where was it?!?"
@@ -1929,26 +2241,136 @@ label nencore_3:
     mc "Ah, well..."
     "I nervously scratch the back of my head."
     mc "It was no trouble...{w=0.38}I’m just glad I could-"
+    stop music
     play sound "sfx/fall.ogg"
-    show natsuki at face
+    show natsuki_bliss as natsuki at face
     "Without warning suddenly Natsuki embraces me."
-    "Much like yesterday, my mind goes blank."
-    "I don’t know what’s gotten into Natsuki lately...{w=0.38}but I have to admit, I kind of like this side of her..."
-    "Still, I don’t know if she really wants me to hug back..."
-    "What if she's just letting her stress out?"
-    "Maybe I should just let her hug me until she feels better..."
+
+if hangout1 == "Natsuki":
+    if hangout2 == "Natsuki":
+        "Much like yesterday, my mind goes blank."
+        "I don’t know what’s gotten into Natsuki lately...{w=0.38}but I have to admit, I kind of like this side of her..."
+        "Well, she did let me hug her back yesterday...."
+        "I wrap my arms around her."
+        "After a few minutes, Natsuki still isn't letting go."
+        "That's...{w=0.38}unusual..."
+        "Natsuki's not one for prolonged physical contact."
+        "And my hugs with Sayori never really lasted this long..."
+        "But, I'm not sure if I really should really break the hug, considering Natsuki seems to be in total bliss..."
+        "And this is...{w=0.38}really nice..."
+        "But, maybe she wants me to make the first move here..."
+        "We can't stay like this forever..."
+
+        if encore_sayoriquestion_1 == True:
+            "And it isn't it kind of bad to be letting someone who isn't your signifcant other hold you for this long?"
+
+        if encore_sayoriquestion_1 == False:
+            pass
+
+        menu:
+            "Keep Hugging.":
+                jump n_khug
+            "Break The Hug.":
+                jump n_bhug
+
+
+if hangout1 == "Sayori" or hangout1 == "Monika" or hangout1 == "Yuri":
+    if hangout2 == "Natsuki":
+        "Much like yesterday, my mind goes blank."
+        "I don’t know what’s gotten into Natsuki lately...{w=0.38}but I have to admit, I kind of like this side of her..."
+        "But, she could just be using this moment to let out her stress..."
+        "If I risk hugging her back, she'll probably have another meltdown..."
+        "But she did let me hug her back yesterday..."
+
+        if encore_sayoriquestion_1 == True:
+            "But, I'm already enough in trouble because of it..."
+
+        if encore_sayoriquestion_1 == False:
+            pass
+
+
+
+if hangout1 == "Natsuki":
+    if hangout2 == "Sayori" or hangout2 == "Monika" or hangout2 == "Yuri":
+        "This is...{w=0.38}unexpected..."
+        "Natsuki's not exactly one to go out of her way to hug people..."
+
+        if encore_festivalquestion_2 == "Natsuki":
+            "In fact, I've barley gotten close to her at all, except that one time lat Sunday..."
+
+        if encore_festivalquestion_2 == "Yuri":
+            "In fact, I've barley gotten close to her at all, knowing how she'll freak out and call me gross..."
+
+        "Not to mention, she didn't like seeing me getting close to [hangout2] yesterday..."
+        "So I'd be risking her calling me out on that..."
+        "But considering she isn't showing any signs of letting go, it really wouldn't hurt to return the hug, would it?"
+
+        if encore_sayoriquestion_1 == True:
+            if hangout2 == "Monika" or hangout2 == "Yuri":
+                "Though, Sayori was pretty angry at me yesterday for getting too close to [hangout2]..."
+
+
+        if encore_sayoriquestion_1 == False:
+            pass
+
+
+else:
+    "This is...{w=0.38}unexpected..."
+    "In fact, Natsuki specfically said she didn't even want to hug me..."
+
+    if encore_festivalquestion_2 == "Natsuki":
+        "In fact, I've barley gotten close to her at all, except that one time last Sunday..."
+
+    if encore_festivalquestion_2 == "Yuri":
+        "In fact, I've barley gotten close to her at all, knowing how she'll freak out and call me gross..."
+
+    "Not to mention, she didn't like seeing me getting close to [hangout2] yesterday..."
+    "So I'd be risking her calling me out on that..."
+    "But considering she isn't showing any signs of letting go, it really wouldn't hurt to return the hug, would it?"
+
+    if encore_sayoriquestion_1 == True:
+        if hangout2 == "Monika" or hangout2 == "Yuri":
+            "Though, Sayori was pretty angry at me yesterday for getting too close to [hangout2]..."
+
+
+    if encore_sayoriquestion_1 == False:
+        "Though, if I do hug her, would she think I like her as more than a friend?"
+
+
 
 menu:
-    "Hug Natsuki Back":
+    "Hug Natsuki Back.":
         jump n_hug
-    "Stay Still":
+    "Stay Still.":
         jump n_nohug
 
 
 label n_hug:
 
-    "I mean...{w=0.38}she wouldn’t hug me if she didn’t want a hug back...{w=0.38}right?"
-    "I wrap my arms around her."
+    if encore_sayoriquestion_1 == True:
+        "I mean, it's just a hug..."
+        "I wrap my arms around her."
+        jump day3_npos
+
+    if encore_sayoriquestion_1 == False:
+        "I wrap my arms around her."
+        jump day3_npos
+
+label n_khug:
+
+    if encore_sayoriquestion_1 == True:
+        "I mean, it's just a hug..."
+        "And she can pull away when she wants to..."
+        "I keep Natsuki in my embrace."
+        jump day3_npos
+
+    if encore_sayoriquestion_1 == False:
+        "Ah, I'm sure she'll pull away when she wants to..."
+        "I keep Natsuki in my embrace."
+        jump day3_npos
+
+label day3_npos:
+
     "She really does go out of her way to make herself cute as possible..."
     show natsuki_sweet as natsuki at t11 zorder 1
     "Suddenly, I feel Natsuki pull away from me."
@@ -1965,6 +2387,7 @@ label n_hug:
     n 1m "H-{w=0.38}hey, [player]?"
     show natsuki 1n
     mc "Yeah?"
+    play music t9 fadein 1.0
     n 1m "Can you...{w=0.38}promise not to tell any of the others what I was saying earlier?"
     show natsuki 1n
     mc "About how you saved up so much money to get that?"
@@ -1973,8 +2396,34 @@ label n_hug:
     mc "I mean, I’m not gonna tell anyone, but..."
     mc "You didn’t need to go that far to get this, Natsuki."
     n 12c "No offense, [player], but you really don’t understand what my life is like..."
-    mc "You never really did give the full picture..."
-    n 42a "I’ll give you a summary..."
+
+    if hangout1 == "Natsuki":
+        if hangout2 == "Natsuki":
+            mc "You never really did give the full picture..."
+            n 42a "I’ll give you a summary..."
+
+
+    if hangout1 == "Sayori" or hangout1 == "Monika" or hangout1 == "Yuri":
+        if hangout2 == "Natsuki":
+            mc "I really don't..."
+            n 42a "Well, let me tell you something..."
+
+    if hangout1 == "Natsuki":
+        if hangout2 == "Sayori" or hangout2 == "Monika" or hangout2 == "Yuri":
+            mc "I really don't..."
+            n 42a "Well, let me tell you something..."
+
+
+    else:
+        mc "I mean, I don't..."
+        mc "We really don't know that much about each other..."
+        n 42a "Well, let me tell you about my home life..."
+        n 42b "Short version: it sucks."
+        mc "Can I get a longer version?"
+        show natsuki 42c
+        "Natsuki let's out a pained sigh."
+
+
     n 5q "If I ever want anything for myself, it costs an arm and a leg..."
     n 5r "My Dad’s so friggin’ self-ish..."
     n 4x "It’s not like we’re tight on money or anything, in fact, we’re decently well-off..."
@@ -2022,6 +2471,7 @@ label n_hug:
     n 1y "Ha! I know what you mean!"
     n 1z "Let’s go, [player]!"
     "With her manga in hand, Natsuki and I exit the classroom and head back to the literature club."
+    stop music fadeout 1.0
     show natsuki at thide
     hide natsuki
     jump day3_nreturn
@@ -2033,6 +2483,18 @@ label n_nohug:
     "Just let it out Natsuki..."
     show natsuki 1u at t11 zorder 1
     "After a few moments, she loosens her grip and steps back."
+    jump day3_nminus
+
+label n_bhug:
+
+    show natsuki 1u at t11 zorder 1
+    "I gently release myself from Natsuki and take a step back."
+    show natsuki 1n
+    "Natsuki gives me a hurt look, as if she wanted our hug to continue."
+    jump day3_nminus
+
+label day3_nminus:
+
     n 5q "Well...{w=0.38}uh...{w=0.38}T-{w=0.38}thanks for finding it, [player]."
     show natsuki 5s
     mc "No problem, Natsuki..."
