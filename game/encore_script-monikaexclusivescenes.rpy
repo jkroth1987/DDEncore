@@ -830,6 +830,8 @@ label mencore_3:
                 "I feel my heart deflate a little in my chest."
                 "Is Monika...{w=0.38}in love with someone?"
                 "Well if she is, then there’s probably no way I could compete..."
+                show monika 2e
+                "But the look in Monika’s eyes...{w=0.38}tells me that I shouldn’t be worried about it..."
 
 
         if hangout1 == "Monika":
@@ -839,6 +841,8 @@ label mencore_3:
                 "On one hand, I feel happy for her."
                 "But at the same time, I feel a little sorry for myself."
                 "I thought that maybe for a time, I had a chance with her..."
+                show monika 2e
+                "But the look in Monika’s eyes...{w=0.38}tells me that I shouldn’t be worried about it..."
 
 
         if hangout1 == "Sayori" or hangout1 == "Natsuki" or hangout1 == "Yuri":
@@ -849,11 +853,22 @@ label mencore_3:
                 "But at the same time, I feel a little sorry for myself."
                 "I thought that maybe for a time, I had a chance with her..."
                 "Especially how close we were yesterday..."
+                show monika 2e
+                "But the look in Monika’s eyes...{w=0.38}tells me that I shouldn’t be worried about it..."
+
+
+        if hangout1 == "Sayori" or hangout1 == "Natsuki" or hangout1 == "Yuri":
+            if hangout2 == "Sayori" or hangout2 == "Natsuki" or hangout2 == "Yuri":
+                "I feel mixed bag of emotions swirl within me."
+                "On one hand, I feel pretty happy for Monika."
+                "But at the same time, I feel kind of bummed out that it's probably not me..."
+                "Even though I probably shouldn't be thinking like that right now, given my current situation..."
+                show monika 2e
+                "Monika seems to pick up on my reaction and smiles at me in an almost reassuring kind of way..."
 
 
 
-        show monika 2e
-        "But the look in Monika’s eyes...{w=0.38}tells me that I shouldn’t be worried about it..."
+
         m "I really appreciate you encouraging me to play for you, [player]."
         m 2b "I’ll definitely feel more comfortable with sharing it when it’s all good and ready..."
         show monika 2a

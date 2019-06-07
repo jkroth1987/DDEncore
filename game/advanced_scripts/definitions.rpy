@@ -114,6 +114,7 @@ define audio.stab = "mod_assets/audio/Stab.ogg"
 define audio.drop = "mod_assets/audio/Metal_Drop.ogg"
 define audio.belly = "mod_assets/audio/Stomach-Growl.ogg"
 define audio.sample = "mod_assets/audio/Your_Reality_Sample.ogg" #Sample Music
+define audio.doorbell = "mod_assets/audio/Doorbell.ogg"
 #--Encore's New Music
 define audio.e1 = "<loop 0>mod_assets/audio/void1.ogg" #The Void (First Void Scene Music)
 define audio.f1 = "<loop 0>mod_assets/audio/mainmenu.ogg" #Doki Doki Forever (Main Menu Music, Doki Doki!~)
@@ -1431,6 +1432,10 @@ default lpoem = "Yuri" #Who's love poem did you see on Day 2?
 default tell_s = True #Do you trouble Sayori with your dreams?
 default m_walk = True #Do you let Monika walk you back to class on Day 3?
 default m_choice = True #Do you pick Monika's choice on Day 3?
+default natsuki_hug = False #Do you return the Natsuki hug you on Day 3?
+default natsuki_continued_hug = False #Do you let Natsuki keep hugging you on Day 3?
+default sayori_ice = True #Do you share your ice cream with Sayori on Day 3?
+default tell_monika = True #Do you tell Monika about Yuri on Day 3?
 
 # Instantiating variables for poem appeal. This is how much each character likes the poem for each day.
 # -1 = Dislike, 0 = Neutral, 1 = Like
@@ -1600,6 +1605,7 @@ image crayori_2 = "mod_assets/sprites/Crayori_2.png"
 image sayori_end_1 = "mod_assets/sprites/end-glitch1.png"
 image sayori_end_2 = "mod_assets/sprites/end-glitch2.png"
 image sayori_silhouette = "mod_assets/sprites/sayori_silhouette.png"
+image sayori_ice = "mod_assets/sprites/s_ice.png"
 #image sayori u114152 = im.Composite((960, 960), (0, 0), "mod_assets/character_images/sayori/1_uniform/1_body_left/1.png", (0, 0), "mod_assets/character_images/sayori/1_uniform/2_body_right/1.png", (0, 0), "mod_assets/character_images/sayori/2_face/base.png", (0, 0), "mod_assets/character_images/sayori/2_face/1_mouth/4.png", (0, 0), "mod_assets/character_images/sayori/2_face/2_nose/1.png", (0, 0), "mod_assets/character_images/sayori/2_face/3_eyes/5.png", (0, 0), "mod_assets/character_images/sayori/2_face/4_eyebrows/2.png")
 #image sayori u115313 = im.Composite((960, 960), (0, 0), "mod_assets/character_images/sayori/1_uniform/1_body_left/1.png", (0, 0), "mod_assets/character_images/sayori/1_uniform/2_body_right/1.png", (0, 0), "mod_assets/character_images/sayori/2_face/base.png", (0, 0), "mod_assets/character_images/sayori/2_face/1_mouth/5.png", (0, 0), "mod_assets/character_images/sayori/2_face/2_nose/3.png", (0, 0), "mod_assets/character_images/sayori/2_face/3_eyes/1.png", (0, 0), "mod_assets/character_images/sayori/2_face/4_eyebrows/3.png")
 #image sayori u112313 = im.Composite((960, 960), (0, 0), "mod_assets/character_images/sayori/1_uniform/1_body_left/1.png", (0, 0), "mod_assets/character_images/sayori/1_uniform/2_body_right/1.png", (0, 0), "mod_assets/character_images/sayori/2_face/base.png", (0, 0), "mod_assets/character_images/sayori/2_face/1_mouth/2.png", (0, 0), "mod_assets/character_images/sayori/2_face/2_nose/3.png", (0, 0), "mod_assets/character_images/sayori/2_face/3_eyes/1.png", (0, 0), "mod_assets/character_images/sayori/2_face/4_eyebrows/3.png")
@@ -1642,7 +1648,7 @@ image y_mad = "mod_assets/sprites/GrrYuri.png"
 image airpod left = "mod_assets/sprites/apl.png"
 image airpod right = "mod_assets/sprites/apr.png"
 image airpod both = im.Composite((960, 960), (0, 0), "mod_assets/sprites/apl.png", (0, 0), "mod_assets/sprites/apr.png")
-image icecream = "mod_assets/sprites/ice_cream.png"
+image icecream = "mod_assets/sprites/icecream.png"
 
 # Silhouettes
 image sayori 1shadow = shadow("mod_assets/sprites/char_bases/s_base")

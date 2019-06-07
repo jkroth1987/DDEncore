@@ -704,7 +704,7 @@ show monika 2e at t11 zorder 1
 "Sayori happily walks to her usual spot and sets her things down."
 "I'm a little intrugied at what Monika's 'announcement' is, so I decide to indulge on my curiosity."
 "I turn to Monika."
-mc "So...{w=0.38} what's the announcement?"
+mc "So...{w=0.38}what's the announcement?"
 show monika 2l
 m "Oh come on, [player]! It's a surprise!"
 show monika 5a
@@ -1008,7 +1008,7 @@ if encore_sayoriquestion_1 == False:
         if hangout1 == "Natsuki":
             show monika 2a
             m "So, how're things with you and Yuri?"
-            m 5a "Or should I say: things with you and Natsuki?"
+            m 5a "Or should I say:{w=0.38} things with you and Natsuki?"
             "My mind goes completely blank."
             "How in the world am I supposed to answer that?"
             "I mean...{w=0.28}I like Yuri..."
@@ -1071,7 +1071,7 @@ if encore_sayoriquestion_1 == False:
         if hangout1 == "Yuri":
             show monika 2a
             m "So, how're things with you and Natsuki?"
-            m 5a "Or should I say: things with you and Yuri?"
+            m 5a "Or should I say:{w=0.38} things with you and Yuri?"
             "My mind goes completely blank."
             "How in the world am I supposed to answer that?"
             "I mean...{w=0.28}I like Natsuki..."
@@ -2044,7 +2044,7 @@ jump day2_poems
 label day2_confession:
 scene bg bedroom_night
 with wipeleft_scene
-"After grabbing Sayori's poems from the dining table, I put her stack right next to mine and Natsuki's."
+"After grabbing Sayori's poems from the dining table, I put her stack right next to mine and [poem_giver]'s."
 
 # ADJUST THIS AS NEEDED such as adding text where it goes, but the logical flow will show the correct poem based on what we figured out earlier.
 if poem_giver == "Natsuki":
@@ -2819,7 +2819,7 @@ if encore_sayoriquestion_1 == False:
     pass
 
 m "We don't need her! She's useless!"
-m "She’s dumb enough to believe that people actually want her around…"
+m "She’s dumb enough to believe that people actually want her around..."
 m "Hahaha...."
 m "But I know you won't mess up our progress for those losers..."
 m "And I almost thought my backup plan wasn't going to work..."

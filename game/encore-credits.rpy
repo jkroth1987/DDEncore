@@ -149,7 +149,10 @@ audio.drop: Public Domain
 audio.belly: By SoundEffectsFactory on YouTube
 (converted to .ogg by Andrew)
 
-IPhone Ringing Sound Effect (e.17): By HyperView on YouTube
+IPhone Ringing Sound Effect: By HyperView on YouTube
+(converted to .ogg by Andrew)
+
+audio.doorbell: By Acid Rival on YouTube
 (converted to .ogg by Andrew)"""
 
 

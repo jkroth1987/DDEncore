@@ -290,7 +290,7 @@ label day1_beginning:
         show sayori 1a at t11 zorder 1
         "I remember how my walks with Sayori used to be filled with laughter, inside jokes, and other ramblings."
         show sayori 1f
-        "But for now, those days seem to have come and gone"
+        "But for now, those days seem to have come and gone."
         "Now, our walks are now usually filled with long, uncomfortable silence."
         show sayori 1b
         "Though it's not like we haven't tried breaking the ice with each other..."
@@ -323,8 +323,7 @@ label day1_beginning:
         s "It's fine..."
         show sayori 1k
         s "Let's just keep going..."
-        scene bg residential_day
-        with wipeleft_scene
+    
 
     scene bg corridor
     with wipeleft_scene

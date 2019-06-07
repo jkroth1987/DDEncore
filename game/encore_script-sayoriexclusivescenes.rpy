@@ -1819,6 +1819,7 @@ if poem_giver == "Yuri":
 
 
 label day2_sarrive:
+play sound doorbell
 "Before I could investigate further, I hear my doorbell ring."
 "Wow, Sayori was a lot quicker than I'd thought she'd be."
 "I go downstairs to let Sayori in..."
@@ -2900,7 +2901,7 @@ show sayori 1bq
 mc "But look...{w=0.38}I guess what I'm trying to say is:{w=0.38} I missed you."
 show sayori 1bk
 "Sayori pauses and takes a moment to reflect on what I just said."
-s 1bt "[player]...{w=0.38}I..{w=0.38}missed you too..."
+s 1bt "[player]...{w=0.38}I...{w=0.38}missed you too..."
 show sayori 1by
 "Sayori has a mix of emotions on her face as she becomes as bright red as her bow."
 s 1by "I...{w=0.38}I wouldn't mind spending more time around you, [player]."
@@ -3082,8 +3083,10 @@ label sencore_3:
 
 menu:
     "Share Your Ice Cream.":
+        $ sayori_ice = True
         jump s_share
     "Stand Up For Yourself.":
+        $ sayori_ice = False
         jump s_noshare
 
 
@@ -3097,8 +3100,7 @@ label s_share:
     "Sayori scooches over to me as I sheepishly put my ice cream below Sayori’s face."
     mc "Now remember, just one-"
     stop music
-    show sayori 4n
-    show icecream face
+    show sayori_ice as sayori at face
     "NOM~"
     "Sayori proceeds to gulp down all of my ice cream in one bite before I could even finish my sentence."
     "Now she has vanilla ice cream all over her face...."
@@ -3210,8 +3212,8 @@ label s_share:
 
 
     "After carefully putting the poems away, I walk over to Sayori with the paper towel."
-    show icecream at t11 zorder 1
     show sayori 1q at t11 zorder 1
+    show icecream at t11 zorder 1
     play music e4 fadein 1.0
     mc "You forgot this, dummy..."
     show sayori 1e

@@ -473,12 +473,12 @@ if encore_sayoriquestion_1 == False:
             show sayori 1k
             s "Hehe~"
             s "It's kind of funny, [player]."
-            mc "I...{w=0.38} don't take your meaning."
+            mc "I...{w=0.38}don't take your meaning."
             s "I selfishly thought that if I tried putting all my time, energy and effort into making you happy..."
             show sayori 3u
             $ renpy.pause(delay=0.5, hard=True)
             show sayori 1v
-            s "I dont know...{w=0.38} I thought that you would love me back..."
+            s "I dont know...{w=0.38}I thought that you would love me back..."
             "I feel my heart sink like a stone in the ocean as Sayori chokes those words out..."
             show sayori 1u
             s 1k "But, I never was the one you wanted, was I?"
@@ -2269,8 +2269,10 @@ if hangout1 == "Natsuki":
 
         menu:
             "Keep Hugging.":
+                $ natsuki_continued_hug = True
                 jump n_khug
             "Break The Hug.":
+                $ natsuki_continued_hug = False
                 jump n_bhug
 
 
@@ -2340,8 +2342,10 @@ else:
 
 menu:
     "Hug Natsuki Back.":
+        $ natsuki_hug = True
         jump n_hug
     "Stay Still.":
+        $ natsuki_hug = False
         jump n_nohug
 
 
@@ -2474,7 +2478,7 @@ label day3_npos:
     stop music fadeout 1.0
     show natsuki at thide
     hide natsuki
-    jump day3_nreturn
+    jump day3_nreturn1
 
 
 label n_nohug:
@@ -2514,4 +2518,4 @@ label day3_nminus:
     hide natsuki
     "I just don’t get her sometimes..."
     "I sigh as I start fast walking to catch up to her."
-    jump day3_nreturn
+    jump day3_nreturn2
