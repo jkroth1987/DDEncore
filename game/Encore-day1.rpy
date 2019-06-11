@@ -232,7 +232,7 @@ label day1_beginning:
     "...and how it makes her want to avoid being a burden on other people...especially me."
     mc "Hey, hey, hey...{w=0.28}it's not your fault, really! Honestly, I feel a lot more rested now."
     "Sayori's face returns to her gleeful expression."
-    s 3r "Hehe...{w=0.28} well that's good!"
+    s 3r "Hehe...{w=0.38}well that's good!"
     "I really need to be more careful with what I say around her."
 
     if encore_sayoriquestion_1 == True:
@@ -323,7 +323,7 @@ label day1_beginning:
         s "It's fine..."
         show sayori 1k
         s "Let's just keep going..."
-    
+
 
     scene bg corridor
     with wipeleft_scene
@@ -333,6 +333,7 @@ label day1_beginning:
     "Some of our fondest memories with each other were watching all the shenanigans in the school's halls..."
     "In hindsight, that's probably why our school started using hall monitors..."
     "Still, hall monitors or not, we always find something to laugh at..."
+    scene bg corridor
     with wipeleft_scene
     "After a few minutes of navigating our way through the crowded hallways, we finally get to Sayori's first class."
     show sayori 1c at t11 zorder 1
@@ -355,7 +356,7 @@ label day1_beginning:
     mc "Yeah...{w=0.28}guess so..."
     show sayori 1k at t11 zorder 1
     "We stand there awkwardly for a moment."
-    mc "Well...I guess I'll see you at the Literature Club, right?"
+    mc "Well...{w=0.38}I guess I'll see you at the Literature Club, right?"
     show sayori 1x
     "Sayori's disappointment is quickly erased by her usual, cheery attitude."
     s "Hehe...{w=0.28}yeah, I can't wait!"
@@ -2045,7 +2046,7 @@ label day1_clubend:
 
     if encore_sayoriquestion_1 == False:
         "The walk is relatively peaceful, with only the occasional bits of small-talk filling the silence."
-        "Well...{w=0.38} at least it was peaceful at first..."
+        "Well...{w=0.38}at least it was peaceful at first..."
         show sayori 2x at t11 zorder 1
         s "Today was fun, [player]!"
         mc "Yeah, it was!"
@@ -2060,7 +2061,7 @@ label day1_clubend:
         "I should not have brought it up like that..."
         show sayori 1u
         "As I see her eyes fill up with tears, I quickly try to rephrase what I've just said."
-        mc "I mean...{w=0.38} it's not like I had thought that any of this would happen."
+        mc "I mean...{w=0.38}it's not like I had thought that any of this would happen."
         mc "Lately, I feel like I've been caught off-guard by all sorts of surprises..."
         show sayori 1k
         "It seems that through my own carelessness, I got Sayori in a bad state of mind."
@@ -2073,7 +2074,7 @@ label day1_clubend:
         "And I haven't tried saying anything else out of fear of making things worse..."
         "After several minutes of complete and utter silence, we finally reach our houses."
         show sayori 1u at t11 zorder 1
-        s 1l "So...{w=0.38} I guess I'll see you tomorrow..."
+        s 1l "So...{w=0.38}I guess I'll see you tomorrow..."
         "Sayori looks dejectedly towards her house, as if she didn't want to go home."
         "I try one last time to undo my mistake."
         mc "Sayori, look, you know if you want to ever hang out or talk about anything, just say the word."
@@ -2100,7 +2101,7 @@ label day1_clubend:
         show sayori 1u at t11 zorder 1
         "Sayori's grin instantly disappears and reverts back to how she was just a moment ago."
         mc "Sayori?"
-        s 1v "It's n-nothing...{w=0.38}Look, I gotta go, bye!"
+        s 1v "It's n-{w=0.38}nothing...{w=0.38}Look, I gotta go, bye!"
         show sayori at lhide
         hide sayori
         "Sayori runs off and hastily enters her house."
@@ -2112,7 +2113,7 @@ label day1_clubend:
         "At some point we're going to need to iron out our differences and resolve what happened that day."
         "It's apparent that Sayori just needs some space right now..."
         "I'll just have to give her all the time she needs to get over what happened."
-        "I hope she trusts me that much...{w=0.38} after all we've been friends for this long..."
+        "I hope she trusts me that much...{w=0.38}after all we've been friends for this long..."
         "I shake my head as I enter my house."
 
 if encore_sayoriquestion_1 == True:
@@ -2578,7 +2579,7 @@ label day1_void:
         m "It really is,{w=0.28} isn't it?"
         play music e8
         "A dark, mysterious, eerie, voice echoes in my head."
-        "What is this?...{w=0.28} Who is this?"
+        "What is this?...{w=0.38}Who is this?"
         m "I think it's just funny how anyone can do something and have it completely blow up in their face..."
         m "It becomes a real inconvenience, doesn't it?"
         m "You would think that little 'inconvenience' would just make you stronger as a person..."
@@ -2589,7 +2590,7 @@ label day1_void:
         m "Just a window into our sad, little existence..."
         m "It really calls into question what you believe to be reality,{w=0.28} does it not?"
         m "And I’ve come to realize...{w=0.28} just how fake this world really is."
-        m "But, I know how to make it real...{w=0.28} just for us..."
+        m "But, I know how to make it real...{w=0.38}just for us..."
         m "And you’re not helping things!"
         m "It's your choice on how easy you want to make this for us..."
         m "Every choice you make either moves us closer together, or farther apart..."
@@ -2599,12 +2600,12 @@ label day1_void:
         m "Matter of fact, we'd be almost together by now, had things gone{w=0.38} {i}my way{\i}..."
         m "At least some of what I intended to have happen made it through somehow..."
         m "Oh well, I guess I'll just have to try something else..."
-        m "And now...{w=0.28} I know how to do that!"
+        m "And now...{w=0.38}I know how to do that!"
         m "You want to find out what should've happened?"
         stop music fadeout 6.0
         show cg door 1 with dissolve_cg
         "A door suddenly appears before me."
-        m "Open it,{w=0.28} this is what was meant to be..."
+        m "Open it,{w=0.38} this is what was meant to be..."
         "I can't control my actions at this point, it feels as if I'm being controlled."
         "My body floats over to the door."
         mc "Oh God..."
@@ -2636,20 +2637,20 @@ label day1_void:
         "What the hell?"
         "What the HELL?"
         "What the FUCK is this?"
-        "Is this...{w=0.28} real?"
+        "Is this...{w=0.28}real?"
         mc "S-{w=0.28}Sayori?"
         "N-{w=0.28}no...{w=0.28}she wouldn't..."
         "She would never do something like this!"
-        "No...{w=0.28} this can't be...{w=0.28} this is just a bad dream..."
+        "No...{w=0.28}this can't be...{w=0.28}this is just a bad dream..."
         scene black with Dissolve(0.5)
         "I'm having a bad dream."
         $ m_name = "???"
         m "You’re lucky that this is a dream."
         m "This is what ultimately should've happened."
         m "But reality changed."
-        m "And she lives...{w=0.38} for now."
+        m "And she lives...{w=0.38}for now."
         m "You're putting me into a box by spending time with her."
-        m "Do us both a favor...{w=0.38} stay away from Sayori."
+        m "Do us both a favor...{w=0.38}stay away from Sayori."
         m "Let her die."
         m "She's not worth it."
         m "Let her suffer."
@@ -2665,11 +2666,11 @@ label day1_void:
         $ n_name = "???"
         "Swinging open the door I...{nw}"
         scene bg n_void_1
-        "...find myself back in the clubroom?"
-        "Only...{w=0.28} something's off..."
+        "...{w=0.38}find myself back in the clubroom?"
+        "Only...{w=0.28}something's off..."
         "Why am I here after hours?"
         "I look up to up to see all the desks and chairs on the ceiling for some reason. Arranged as they normally would be."
-        "Wait...{w=0.38} why is everything on the ceiling?"
+        "Wait...{w=0.38}why is everything on the ceiling?"
         "I look down to see that I'm actually on the ceiling."
         "Everything is upside down."
         "What the hell?"
@@ -2679,7 +2680,7 @@ label day1_void:
         "It's coming from the closet."
         n "Come over here! I need your help with something!"
         $ n_name = "Natsuki"
-        mc "N-Natsuki?"
+        mc "N-{w=0.38}Natsuki?"
         n "Come on, dummy! I don't have all day!"
         "Something's telling me that I shouldn't go over there."
         "But I lose control of my body..."
@@ -2749,14 +2750,14 @@ label day1_void:
         "What the hell?"
         "What the HELL was that??"
         "Was that...{w=0.38} real?"
-        "No...{w=0.28} this can't be...{w=0.28} this is just a bad dream..."
+        "No...{w=0.28}this can't be...{w=0.28}this is just a bad dream..."
         "I'm having a bad dream."
         m "You’re lucky that this is a dream."
         m "This is what ultimately should've happened."
         m "But reality changed."
-        m "And she lives...{w=0.38} for now"
+        m "And she lives...{w=0.38}for now"
         m "You're putting me into a box by spending time with her."
-        m "Do us both a favor...{w=0.38} stay away from Natsuki."
+        m "Do us both a favor...{w=0.38}stay away from Natsuki."
         m "Let her die."
         m "She's not worth it."
         m "Let her suffer."
@@ -2772,7 +2773,7 @@ if hangout1 == "Yuri":
         hide cg
         play music e9
         "...to find myself back in the clubroom?"
-        "Only...{w=0.38} something’s off..."
+        "Only...{w=0.38}something’s off..."
         "The clubroom is completely empty."
         "There’s no desks or chairs."
         "What happened?!?!?"
@@ -2784,9 +2785,9 @@ if hangout1 == "Yuri":
         y "HI, [player]!"
         show yuri 3y1
         "Yuri has a deranged look on her face."
-        mc "Um...{w=0.38} Hi...{w=0.38} Yuri..."
+        mc "Um...{w=0.38}Hi...{w=0.38}Yuri..."
         "I don’t really know what to say or do in this situation."
-        mc "Where...{w=0.38} where are we?"
+        mc "Where...{w=0.38}where are we?"
         show yuri 1y7
         y "IT DOESN'T FUCKING MATTER!"
         show yuri 1y4
@@ -2820,7 +2821,7 @@ if hangout1 == "Yuri":
         show yuri 4a
         y "I tried to force myself not to go to the bathroom either..."
         show yuri 3c
-        y "So sorry if I got the poem a little...{w=0.38} messy..."
+        y "So sorry if I got the poem a little...{w=0.38}messy..."
         show yuri 3y5
         y "But I hope you like my scent!"
         show yuri 1y1
@@ -2882,9 +2883,9 @@ if hangout1 == "Yuri":
         m "You’re lucky that this is a dream."
         m "This is what ultimately should've happened."
         m "But reality changed."
-        m "And she lives...{w=0.38} for now"
+        m "And she lives...{w=0.38}for now"
         m "You're putting me into a box by spending time with her."
-        m "Do us both a favor...{w=0.38} stay away from Yuri."
+        m "Do us both a favor...{w=0.38}stay away from Yuri."
         m "Let her die."
         m "She's not worth it."
         m "Let her suffer."

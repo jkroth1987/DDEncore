@@ -2212,17 +2212,22 @@ label day3_arrival:
     "..."
     "Well, I don’t believe it..."
     mc "Hey, Natsuki!"
-    show natsuki 12g at s11 zorder 1
+    show cg n_day3cg_1 zorder 10 with dissolve_cg
     "Natsuki looks up at me with glossy, tear-filled eyes."
+    show cg n_day3cg_2
     n "W-{w=0.38}what?!?"
-    n 12e "If you’re going to try to say something encouraging, save it..."
-    n 12d "I give up..."
+    n "If you’re going to try to say something encouraging, save it..."
+    show cg n_day3cg_1
+    n "I give up..."
     mc "Well, you really shouldn’t..."
-    n 12c "We’re not going to find it!"
+    n "We’re not going to find it!"
     mc "Are you sure about that?"
-    n 1m "Eh?"
+    show cg n_day3cg_2
+    n "Eh?"
     "I hold up Natsuki’s manga."
-    n 1l "Are you serious?!?!"
+    show cg n_day3cg_3
+    n  "Are you serious?!?!"
+    hide cg with dissolve_cg
     play music e3 fadein 1.0
     show natsuki 1l at t11 zorder 1
     "Natsuki wipes the tears from her eyes and abruptly stands up."

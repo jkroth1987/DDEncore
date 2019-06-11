@@ -1436,6 +1436,8 @@ default natsuki_hug = False #Do you return the Natsuki hug you on Day 3?
 default natsuki_continued_hug = False #Do you let Natsuki keep hugging you on Day 3?
 default sayori_ice = True #Do you share your ice cream with Sayori on Day 3?
 default tell_monika = True #Do you tell Monika about Yuri on Day 3?
+default sayori_hangout = True #Do you get food with Sayori on Day 3?
+default natsuki_hangout = True #Do yoy hangout with Natsuki outside of school on Day 3?
 
 # Instantiating variables for poem appeal. This is how much each character likes the poem for each day.
 # -1 = Dislike, 0 = Neutral, 1 = Like
@@ -1519,6 +1521,10 @@ image cg rr3 = "mod_assets/cgs/rainbow_road3.png"
 image cg rr4 = "mod_assets/cgs/rainbow_road4.png"
 image cg door 1 = "mod_assets/cgs/The_Door.png"
 image cg door 2 = "mod_assets/cgs/The_Door_Opens.png"
+image cg n_day3cg_1 = "mod_assets/cgs/n_day3cg_1.png"
+image cg n_day3cg_2 = "mod_assets/cgs/n_day3cg_2.png"
+image cg n_day3cg_3 = "mod_assets/cgs/n_day3cg_3.png"
+image cg city_overlook = "mod_assets/cgs/city_overlook.png"
 
 #Encore's New Sprites
 image monika s = "mod_assets/sprites/ms.png"
@@ -1532,6 +1538,12 @@ image monika surprised =  "mod_assets/sprites/monika surprised.png"
 image monika tease =  "mod_assets/sprites/monika tease.png"
 image shadow_attack = "mod_assets/sprites/Shadow_Attack.png"
 image shadow_attack_bloody = "mod_assets/sprites/Shadow_Attack_Bloody.png"
+image monika_c_b1 = "mod_assets/sprites/monika_casual_b1.png"
+image monika_c_b3 = "mod_assets/sprites/monika_casual_b3.png"
+image monika_c_b4 = "mod_assets/sprites/monika_casual_b4.png"
+image monika_c_b5a = "mod_assets/sprites/monika_casual_b5a.png"
+image monika_c_b5b = "mod_assets/sprites/monika_casual_b5b.png"
+
 #--uniform, hands down, slight frown, blush, closed eyes, concerned eyebrows
 #image monika u113342 = im.Composite((960, 960), (0, 0), "mod_assets/character_images/monika/1_uniform/1_body_left/1.png", (0, 0), "mod_assets/character_images/monika/1_uniform/2_body_right/1.png", (0, 0), "mod_assets/character_images/monika/2_face/base.png", (0, 0), "mod_assets/character_images/monika/2_face/1_mouth/3.png", (0, 0), "mod_assets/character_images/monika/2_face/2_nose/3.png", (0, 0), "mod_assets/character_images/monika/2_face/3_eyes/4.png", (0, 0), "mod_assets/character_images/monika/2_face/4_eyebrows/2.png")
 #---uniform, hands down, slighty opened mouth, no blush, eyes forward, eyebrows lowered to stern

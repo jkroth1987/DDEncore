@@ -86,20 +86,28 @@ by yagamirai10 [[Community Asset Folder]
 
 \"encoretextbox.png\" by TheD0ct0r#8275(Discord)
 
-closet_dark by POBAW
-club_nothing by The Monika Before Story Team
-closet_dark by Agent Gold
-music_room by vayar2000
-n_void_1 by Agent Gold
-residential_dusk by SovietSpartan
+\"closet_dark/" by POBAW
 
+\"club_nothing/" by The Monika Before Story Team
 
-Cafeteria BG: Image Saved By Alania Frank on Pintrest https://i.pinimg.com/originals/ac/32/ab/ac32ab03f90d8d08ef88cfafe788bddf.jpg
-Music Room BG: http://papers.co/wallpaper/papers.co-aw48-arseniy-chebynkin-music-room-piano-illustration-art-25-wallpaper.jpg
+\"closet_dark/" by Agent Gold
 
+\"music_room/" by vayar2000
 
-bg void: www.videoblocks.com
-bg void_2 b Kent Stone
+\"n_void_1/" by Agent Gold
+
+\"residential_dusk/" by SovietSpartan
+
+\"cafeteria\": Image Saved By Alania Frank on Pintrest https://i.pinimg.com/originals/ac/32/ab/ac32ab03f90d8d08ef88cfafe788bddf.jpg
+
+\"music_room\": By vayar2000
+
+\"city_overlook\": From: https://archive.nyafuu.org/w/thread/1906906/
+
+\"bg void\": www.videoblocks.com
+
+\"bg void_2\" by Kent Stone
+
 Void Door: https://icouldcrybutidonthavetime.files.wordpress.com/2014/10/doors.jpg"""
 
     # 8
@@ -120,6 +128,14 @@ SPOTIFY: https://open.spotify.com/album/5jUz1WljGky4hbD3K0XMd0
 SOUNDCLOUD: https://bit.ly/2QebCyi
 ITUNES: https://apple.co/2yPipYr
 AMAZON: https://www.amazon.com/gp/product/B078MFKXTQ
+
+Ohayou_Monika by Monika Before Story
+
+Ohayou_Natsuki by Monika Before Story
+
+Ohayou_Sayori by Monika Before Story
+
+Ohayou_Yuri by Monika Before Story
 
 *\"Knocking On Door-SoundBible.com-84643603.mp3\" from
 http://soundbible.com/1196-Knocking-On-Door.html
@@ -157,14 +173,12 @@ audio.doorbell: By Acid Rival on YouTube
 
 
 
+
+
     # 9
     # 5 lines, +200 pixels
     c_text_9 = """Sprites Used
 
-Ohayou_Monika by Monika Before Story
-Ohayou_Natsuki by Monika Before Story
-Ohayou_Sayori by Monika Before Story
-Ohayou_Yuri by Monika Before Story
 
 Air Pods by Reenaki
 \"Breaking_Neck\" by TheD0ctor
@@ -179,6 +193,7 @@ Air Pods by Reenaki
 Silhouetted Sprites by POBAW
 Yandere Sayori by Agent Gold
 \"y_mad\" by AjTheYandere
+Casual Monika Sprites by Cyrke on https://imgur.com/gallery/keKxUoB
 Other Unique Sprites by Agent Gold"""
 
     # 10
