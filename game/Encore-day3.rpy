@@ -8557,6 +8557,12 @@ mc "What the hell am I going to do?"
 #$ same_doki = "Yuri"
 #$ same_y = (hangout2 == "same_doki" and hangout3 == "same_doki")
 
+# Simplifying the commented logic above--These variables will tell you if you spent Day 2 and Day 3 with the same character (one for each girl).
+$ same_m = (hangout2 == "Monika" and hangout3 == "Monika")
+$ same_n = (hangout2 == "Natsuki" and hangout3 == "Natsuki")
+$ same_s = (hangout2 == "Sayori" and hangout3 == "Sayori")
+$ same_y = (hangout2 == "Yuri" and hangout3 == "Yuri")
+
 #$ conflict_doki = "Monika"
 #$ conflict_m = (hangout1 == "conflict_doki" and (hangout2 !="conflict_doki" or hangout3 != "conflict_doki"))
 
@@ -8567,24 +8573,48 @@ mc "What the hell am I going to do?"
 #$ conflict_s = (hangout1 == "conflict_doki" and (hangout2 !="conflict_doki" or hangout3 != "conflict_doki"))
 
 #$ conflict_doki = "Yuri"
-#$ conflict_y = (hangout1 == "conflict_doki" and (hangout2 !="conflict_doki" or hangout3 != "conflict_doki"))
+#$ conflict_y = (hangout1 == "conflict_doki" and (hangout2 !="conflict_doki" or hangout3 != "conflict_doki"))4
+
+# More simplifying--Did you spend Day 1 with one girl and then NOT hang out with her on Day 2, Day 3, or both?
+$ conflict_m = (hangout1 == "Monika" and (hangout2 !="Monika" or hangout3 != "Monika"))
+$ conflict_n = (hangout1 == "Natsuki" and (hangout2 !="Natsuki" or hangout3 != "Natsuki"))
+$ conflict_s = (hangout1 == "Sayori" and (hangout2 !="Sayori" or hangout3 != "Sayori"))
+$ conflict_y = (hangout1 == "Yuri" and (hangout2 !="Yuri" or hangout3 != "Yuri"))
 
 
-$ loyal_route = "Sayori" = (encore_sayoriquestion_1 == True or False and hangout1 == "Sayori" and hangout2 == "Sayori" and hangout3 == "Sayori")
+#$ loyal_route = "Sayori" = (encore_sayoriquestion_1 == True or False and hangout1 == "Sayori" and hangout2 == "Sayori" and hangout3 == "Sayori")
 
-$ loyal_roue = "Natsuki" = (encore_sayoriquestion_1 == False and hangout1 == "Natsuki" and hangout2 == "Natsuki" and hangout3 == "Natsuki")
+#$ loyal_roue = "Natsuki" = (encore_sayoriquestion_1 == False and hangout1 == "Natsuki" and hangout2 == "Natsuki" and hangout3 == "Natsuki")
 
-$ loyal_route = "Monika" = (encore_sayoriquestion_1 == False and hangout1 == "Monika" and hangout2 == "Monika" and hangout3 == "Monika")
+#$ loyal_route = "Monika" = (encore_sayoriquestion_1 == False and hangout1 == "Monika" and hangout2 == "Monika" and hangout3 == "Monika")
 
-$ loyal_route = "Yuri" = (encore_sayoriquestion_1 == False and hangout1 == "Yuri" and hangout2 == "Yuri" and hangout3 == "Yuri")
+#$ loyal_route = "Yuri" = (encore_sayoriquestion_1 == False and hangout1 == "Yuri" and hangout2 == "Yuri" and hangout3 == "Yuri")
 
-$ cheater_route_n (encore_sayoriquestion_1 == True and hangout1 == "Natsuki" and hangout2 == "Natsuki")
+# I'm not 100% sure what loyal_route will be used for, so I'll leave two options here. You can use loyal_route for the name of the person,
+# and you can check an individual variable for each girl to see if it's her.
+# As written, Sayori doesn't care if you confessed to her or not, but for anyone else, you need to have turned her down.
 
-$ cheater_route_m (encore_sayoriquestion_1 == True and hangout1 == "Monika" and hangout2 == "Monika")
+$ loyal_route = None # Check "if loyal_route != None" before using this.
+$ loyal_route_s = False
+$ loyal_route_n = False
+$ loyal_route_m = False
+$ loya_route_y = False
 
-$ cheater_route_y (encore_sayoriquestion_1 == True and hangout1 == "Yuri" and hangout2 == "Yuri")
+if hangout1 == "Sayori" and hangout2 == "Sayori" and hangout3 == "Sayori":
+    $ loyal_route = "Sayori"
+    $ loyal_route_s = True
+elif encore_sayoriquestion_1 == False and (hangout1 == hangout2 and hangout1 == hangout3): # We declined Sayori's confession and spent each day with the same girl
+    $ loyal_route = hangout1
+    $ loyal_route_n = loyal_route == "Natsuki"
+    $ loyal_route_m = loyal_route == "Monika"
+    $ loyal_route_y = loyal_route == "Yuri"
 
-$ disloyal_route (encore_sayoriquestion_1 == False)
+# These just needed equal signs to assign the values.
+# As written, you are disloyal if you declined Sayori's confession, and you are cheater if you accepted it but spent the first two days with a single other girl.
+$ cheater_route_n = (encore_sayoriquestion_1 == True and hangout1 == "Natsuki" and hangout2 == "Natsuki")
+$ cheater_route_m = (encore_sayoriquestion_1 == True and hangout1 == "Monika" and hangout2 == "Monika")
+$ cheater_route_y = (encore_sayoriquestion_1 == True and hangout1 == "Yuri" and hangout2 == "Yuri")
+$ disloyal_route = (encore_sayoriquestion_1 == False)
 
 ########Sayori#############
 
