@@ -2629,8 +2629,10 @@ show monika 1h at t22 zorder 2
 
 menu:
     "Tell Monika.":
+        $ tell_monika = True
         jump tell_m
     "Don't Tell Monika.":
+        $ tell_monika = False
         jump ntell_m
 
 

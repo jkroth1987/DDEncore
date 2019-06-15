@@ -6632,10 +6632,13 @@ n 42a "You...{w=0.38}just don't get anything, do you?"
 
 if natsuki_continued_hug == False:
     mc "What, did you want me to keep hugging you?"
+    jump n_scold
 
 if natsuki_hug == False:
     mc "What, did you want me to hug you?"
+    jump n_scold
 
+label n_scold:
 
 n 3e "Maybe I did! But not anymore!"
 n 1p "You're so...{w=0.38}you're so..."
@@ -8558,10 +8561,10 @@ mc "What the hell am I going to do?"
 #$ same_y = (hangout2 == "same_doki" and hangout3 == "same_doki")
 
 # Simplifying the commented logic above--These variables will tell you if you spent Day 2 and Day 3 with the same character (one for each girl).
-$ same_m = (hangout2 == "Monika" and hangout3 == "Monika")
-$ same_n = (hangout2 == "Natsuki" and hangout3 == "Natsuki")
-$ same_s = (hangout2 == "Sayori" and hangout3 == "Sayori")
-$ same_y = (hangout2 == "Yuri" and hangout3 == "Yuri")
+$ same_m = (hangout1 == "Monika" and hangout2 == "Monika")
+$ same_n = (hangout1 == "Natsuki" and hangout2 == "Natsuki")
+$ same_s = (hangout1 == "Sayori" and hangout2 == "Sayori")
+$ same_y = (hangout1 == "Yuri" and hangout2 == "Yuri")
 
 #$ conflict_doki = "Monika"
 #$ conflict_m = (hangout1 == "conflict_doki" and (hangout2 !="conflict_doki" or hangout3 != "conflict_doki"))
@@ -8576,10 +8579,10 @@ $ same_y = (hangout2 == "Yuri" and hangout3 == "Yuri")
 #$ conflict_y = (hangout1 == "conflict_doki" and (hangout2 !="conflict_doki" or hangout3 != "conflict_doki"))4
 
 # More simplifying--Did you spend Day 1 with one girl and then NOT hang out with her on Day 2, Day 3, or both?
-$ conflict_m = (hangout1 == "Monika" and (hangout2 !="Monika" or hangout3 != "Monika"))
-$ conflict_n = (hangout1 == "Natsuki" and (hangout2 !="Natsuki" or hangout3 != "Natsuki"))
-$ conflict_s = (hangout1 == "Sayori" and (hangout2 !="Sayori" or hangout3 != "Sayori"))
-$ conflict_y = (hangout1 == "Yuri" and (hangout2 !="Yuri" or hangout3 != "Yuri"))
+$ conflict_m = (hangout1 == "Monika" and hangout2 !="Monika") or (hangout1 != "Monika" and hangout2 == "Monika")
+$ conflict_n = (hangout1 == "Natsuki" and hangout2 !="Natsuki") or (hangout1 != "Natsuki" and hangout2 == "Natsuki")
+$ conflict_s = (hangout1 == "Sayori" and hangout2 !="Sayori") or (hangout1 != "Sayori" and hangout2 == "Sayori")
+$ conflict_y = (hangout1 == "Yuri" and hangout2 !="Yuri") or (hangout1 != "Yuri" and hangout2 == "Yuri")
 
 
 #$ loyal_route = "Sayori" = (encore_sayoriquestion_1 == True or False and hangout1 == "Sayori" and hangout2 == "Sayori" and hangout3 == "Sayori")
@@ -8616,148 +8619,213 @@ $ cheater_route_m = (encore_sayoriquestion_1 == True and hangout1 == "Monika" an
 $ cheater_route_y = (encore_sayoriquestion_1 == True and hangout1 == "Yuri" and hangout2 == "Yuri")
 $ disloyal_route = (encore_sayoriquestion_1 == False)
 
+
+#Triggers for Sayori
+
+if same_s == True:
+    if loyal_route == "Sayori":
+        if encore_sayoriquestion_1 == True:
+            jump s_mono1
+
+if same_s == True:
+    if loyal_route == "Sayori":
+        if encore_sayoriquestion_1 == False:
+            jump s_mono2
+
+#Triggers for Natsuki
+
+if same_n == True:
+    if cheater_route_n == True:
+        jump n_mono1
+
+if same_n == True:
+    if loyal_route == "Natsuki":
+        if cheater_route_n == False:
+            jump n_mono2
+
+#Triggers for Monika
+
+if same_m == True:
+    if cheater_route_m == True:
+        jump m_mono1
+
+if same_m == True:
+    if loyal_route == "Monika":
+        if cheater_route_m == False:
+            jump m_mono2
+
+
+#Triggers for Yuri
+
+if same_y == True:
+    if cheater_route_y == True:
+        jump y_mono1
+
+if same_y == True:
+    if loyal_route == "Yuri":
+        if cheater_route_n == False:
+            jump y_mono2
+
+#Triggers for conflicted
+
+if conflict_m == True or conflict_n == True or conflict_y == True:
+    if encore_sayoriquestion_1 == True:
+        jump mix_mono1
+
+if conflict_s == True:
+    if encore_sayoriquestion_1 == True:
+        jump mix_mono2
+
+if conflict_m == True or conflict_n == True or conflict_y == True:
+    if encore_sayoriquestion_1 == False:
+        jump mix_mono3
+
+if conflict_s == True:
+    if encore_sayoriquestion_1 == False:
+        jump mix_mono4
+
 ########Sayori#############
 
-if encore_sayoriquestion_1 == True:
+label s_mono1:
 
-        "I know I love Sayori."
-        "I do..."
-        "I've enjoyed every moment I've been around her..."
-        "There's no reason to change that..."
-        "But I don't feel like I can let [poem_giver] down..."
-        "Should I give her a chance at least?"
-        "I mean in hindsight..{w=0.38}I did kind of say yes to Sayori righ on the spot..."
-        "I only spent time alone with [poem_giver] once..."
-        "But I know I have an obligation to stick to Sayori..."
-        "She needs me..."
-        "But, I guess it's worth asking myself:{w=0.38}Do I really need her?"
-        "I stare up at my celling as I repeat the question in my head over and over."
-        "I mean...{w=0.38}where would I be without her?"
-        "If it wasn't for her inviting me to the club...{w=0.38}she wouldn't be my girlfriend right now..."
-        "I wouldn't have met any of the others..."
-        "I'd probably be in this room, just watching whatever anime was on and playing online..."
-        "It's a simple life, sure...{w=0.38}but it's kind of sad in retrospect."
-        "I'd probably be feeling sorry for myself that I didn't let Sayori take me to the club..."
-        "I owe her so much...{w=0.38}even if she won't admit it..."
-        "And she does light up my world in a way that no anime or game could ever do..."
-        "She does make me feel genuinely happy and I do feel accepted aroud her..."
-        "Not to mention we've put up with each other for all these years..."
-        "My life probably be pretty dull and boring with out her..."
-        "I mean even the little fight we had over the ice cream was kind of fun..."
+    "I know I love Sayori."
+    "I do..."
+    "I've enjoyed every moment I've been around her..."
+    "There's no reason to change that..."
+    "But I don't feel like I can let [poem_giver] down..."
+    "Should I give her a chance at least?"
+    "I mean in hindsight..{w=0.38}I did kind of say yes to Sayori righ on the spot..."
+    "I only spent time alone with [poem_giver] once..."
+    "But I know I have an obligation to stick to Sayori..."
+    "She needs me..."
+    "But, I guess it's worth asking myself:{w=0.38}Do I really need her?"
+    "I stare up at my celling as I repeat the question in my head over and over."
+    "I mean...{w=0.38}where would I be without her?"
+    "If it wasn't for her inviting me to the club...{w=0.38}she wouldn't be my girlfriend right now..."
+    "I wouldn't have met any of the others..."
+    "I'd probably be in this room, just watching whatever anime was on and playing online..."
+    "It's a simple life, sure...{w=0.38}but it's kind of sad in retrospect."
+    "I'd probably be feeling sorry for myself that I didn't let Sayori take me to the club..."
+    "I owe her so much...{w=0.38}even if she won't admit it..."
+    "And she does light up my world in a way that no anime or game could ever do..."
+    "She does make me feel genuinely happy and I do feel accepted aroud her..."
+    "Not to mention we've put up with each other for all these years..."
+    "My life probably be pretty dull and boring with out her..."
+    "I mean even the little fight we had over the ice cream was kind of fun..."
 
-        if sayori_ice == True:
-            "Even though I did indulge her and let her take my ice cream from me..."
-            "It's good to see that despite whatever she has to endure from her 'rainclouds', she still knows how to be herself..."
-
-
-        if sayori_ice == False:
-            "Even though I didn't let her have my ice cream, and the mood took a rather sour turn from there..."
-            "Probably her 'rainclouds' acting up again, but she's been handiling herself better all things considered..."
-
-        "But if I wasn't in here life, and she had those rainclouds, where would she be?"
-        "I almost fear the answer..."
-        "Not that I think Sayori would ever do anything I saw in my dreams...{w=0.38}I have a sinking feeling that it may have crossed her mind..."
-        "I mean she's told me what, three times now that 'I'm the reason she's even alive'?"
-        "What does that even mean?"
-        "I know her well enough to know it's not her way of flirting..."
-        "But it's not like she's ever given me any huge warning signs aside from this..."
-        "..."
-        "Maybe I should ask her about it sometime..."
-        "She'll probably say no, but even if she tells me that, I could use the piece of mind..."
-        "But I guess speaking piece of mind, I know that's what [poem_giver] wants..."
-        "And...{w=0.38} I'm just going to have to lay it out for her."
-        "I guess at one point, I did have similar feelings for [poem_giver]."
-        "Especially with how last Sunday went..."
-        "And I still find part of me wondering what if what could've been...{w=0.38}still could be..."
-        "Especially considering how much fun I had with her preparing for and at the festival..."
-        "Even if she was competiting with Sayori for my attention..."
-        "But...{w=0.38}can I really do that to Sayori?"
-        "I roll over to face my bookshelves."
-        "On one of the shelves, I spot a picture of me and Sayori at the carnival."
-        "Man...{w=0.38}that must've been at least ten years ago..."
-        "Do I really have it in me to tell her, that same girl, who's now my girlfriend, that I want to dump her for another relationship that's not even guraunteed to work out?"
-        "And risk possibly dividing the club?"
-        "I get out of my bed and walk over to pick up the picture frame."
-        "Upon a closer look, I see Sayori clutching a familar giant sized cow..."
-        "Huh...{w=0.38}I almost forgot that's when I won it for her..."
-        "I always did tell Sayori that she deserved the best..."
-        play music e17
-        "Suddenly I hear my phone ringing."
-        "I put the picture frame down and run over to my phone to see who's calling."
-        "To my surprise...{w=0.38}it's Sayori!"
-        "Why is she calling me? We saw each other like ten minutes ago..."
-        stop music
-        jump s_hangout_ask
+    if sayori_ice == True:
+        "Even though I did indulge her and let her take my ice cream from me..."
+        "It's good to see that despite whatever she has to endure from her 'rainclouds', she still knows how to be herself..."
 
 
-if encore_sayoriquestion_1 == False:
+    if sayori_ice == False:
+        "Even though I didn't let her have my ice cream, and the mood took a rather sour turn from there..."
+        "Probably her 'rainclouds' acting up again, but she's been handiling herself better all things considered..."
 
-        "I really think I'm starting to have second thoughts about Sayori...."
-        "Over the last few days, I've really come to re-discover the connection we once had..."
-        "Even though it's mostly been me trying to mend her damaged heart and just help her out the best I can..."
-        "But in doing so...{w=0.38}I almost feel like I'm still looking after her..."
-        "Almost in a way a boyfriend would..."
-        "I still do really care about Sayori and her feelings..."
-        "Even though I didn't exactly expect her to to react well when I rejected her confession, in some ways I may have felt as bad as she did about the whole thing..."
-        "I considered it a mircale that she bothered to talk to me the next day..."
-        "Even though the pain was very much apparent, she still tried to make the festival as fun of an experience as possible."
-        "I guess that's why she chose to stick around Monika while I was off with [poem_giver]..."
-        "Oh, Sayori..."
-        "I didn't want to hurt you..."
-        "But if I'm having these feelings for Sayori now, why didn't I have them when she confessed?"
-        "Could this just be pure second-guessing on my part? Pity?"
-        "Or do I genuinely like her back..."
-        "I mean...{w=0.38}I've always liked Sayori, but I only saw as more as friends than anything else."
-        "Though in recent years the idea has crossed my mind, and well, she's clearly thought of it for a while..."
-        "I know I care about Sayori..."
-        "And we know each other like the back of our hand..."
-        "And I'm pretty sure she still loves me..."
-        "But would she believe me if I told her I changed my mind?"
-        "I mean...{w=0.38}earlier she acted like the girl I always knew..."
-        "Her trying to grab my ice cream was so typical of her..."
-        "And it's nice that she's still able to act like her old self around me..."
+    "But if I wasn't in here life, and she had those rainclouds, where would she be?"
+    "I almost fear the answer..."
+    "Not that I think Sayori would ever do anything I saw in my dreams...{w=0.38}I have a sinking feeling that it may have crossed her mind..."
+    "I mean she's told me what, three times now that 'I'm the reason she's even alive'?"
+    "What does that even mean?"
+    "I know her well enough to know it's not her way of flirting..."
+    "But it's not like she's ever given me any huge warning signs aside from this..."
+    "..."
+    "Maybe I should ask her about it sometime..."
+    "She'll probably say no, but even if she tells me that, I could use the piece of mind..."
+    "But I guess speaking piece of mind, I know that's what [poem_giver] wants..."
+    "And...{w=0.38} I'm just going to have to lay it out for her."
+    "I guess at one point, I did have similar feelings for [poem_giver]."
+    "Especially with how last Sunday went..."
+    "And I still find part of me wondering what if what could've been...{w=0.38}still could be..."
+    "Especially considering how much fun I had with her preparing for and at the festival..."
+    "Even if she was competiting with Sayori for my attention..."
+    "But...{w=0.38}can I really do that to Sayori?"
+    "I roll over to face my bookshelves."
+    "On one of the shelves, I spot a picture of me and Sayori at the carnival."
+    "Man...{w=0.38}that must've been at least ten years ago..."
+    "Do I really have it in me to tell her, that same girl, who's now my girlfriend, that I want to dump her for another relationship that's not even guraunteed to work out?"
+    "And risk possibly dividing the club?"
+    "I get out of my bed and walk over to pick up the picture frame."
+    "Upon a closer look, I see Sayori clutching a familar giant sized cow..."
+    "Huh...{w=0.38}I almost forgot that's when I won it for her..."
+    "I always did tell Sayori that she deserved the best..."
+    play music e17
+    "Suddenly I hear my phone ringing."
+    "I put the picture frame down and run over to my phone to see who's calling."
+    "To my surprise...{w=0.38}it's Sayori!"
+    "Why is she calling me? We saw each other like ten minutes ago..."
+    stop music
+    jump s_hangout_ask
 
-        if sayori_ice == True:
-            "I mean I did indulge her and let her take my ice cream from me..."
 
-        if sayori_ice == False:
-            "Even though I didn't lt her have my ice cream, the episode still was a little fun, even if she felt otherwise..."
+label s_mono2:
 
-        "Still, even though I've been trying to make it up to Sayori over the last few days, I know I still let her let down these last few years."
-        "And nothing I do can make up for that."
-        "But, she does deserve to have someone that cares about her and who'll support her..."
-        "So, in what way can I best do that?"
-        "Can I really see Sayori as my girlfriend?"
-        "I mean...{w=0.38}it could work out..."
-        "We already take care and look after each other..."
-        "We both care about each other deeply..."
-        "She's never shyed away from being there for me when I needed it, and I'm trying to do the same for her."
-        "I mean...{w=0.38}maybe we can give it a chance and see how it works out..."
-        "But that would mean I'd have to break [poem_giver]'s heart..."
-        "And I'd rather not break two hearts in two weeks..."
-        "But is my interest in [poem_giver] the same as it was when I first joined?"
-        "I guess at one point, I did have similar feelings for [poem_giver]."
-        "Especially with how last Sunday went..."
-        "And I've enjoyed spending time around her, she's really fun to be around..."
-        "She was a blast to hang around during the festival..."
-        "But if I give [poem_giver] a chance, how would Sayori feel?"
-        "I mean...{w=0.38}I did reject her with [poem_giver] on my mind..."
-        "I roll over to face my bookshelves."
-        "On one of the shelves, I spot a picture of me and Sayori at the carnival."
-        "Man...{w=0.38}that must've been at least ten years ago..."
-        "Do I really have it in me to tell her, that same girl, that I want to give her a chance at a relationship that's not even guraunteed to work out?"
-        "And risk hurting [poem_giver]?"
-        "I get out of my bed and walk over to pick up the picture frame."
-        "Upon a closer look, I see Sayori clutching a familar giant sized cow..."
-        "Huh...{w=0.38}I almost forgot that's when I won it for her..."
-        "I always did tell Sayori that she deserved the best..."
-        play music e17
-        "Suddenly I hear my phone ringing."
-        "I put the picture frame down and run over to my phone to see who's calling."
-        "To my surprise...{w=0.38}it's Sayori!"
-        "Why is she calling me? We saw each other like ten minutes ago..."
-        stop music
-        jump s_hangout_ask
+    "I really think I'm starting to have second thoughts about Sayori...."
+    "Over the last few days, I've really come to re-discover the connection we once had..."
+    "Even though it's mostly been me trying to mend her damaged heart and just help her out the best I can..."
+    "But in doing so...{w=0.38}I almost feel like I'm still looking after her..."
+    "Almost in a way a boyfriend would..."
+    "I still do really care about Sayori and her feelings..."
+    "Even though I didn't exactly expect her to to react well when I rejected her confession, in some ways I may have felt as bad as she did about the whole thing..."
+    "I considered it a mircale that she bothered to talk to me the next day..."
+    "Even though the pain was very much apparent, she still tried to make the festival as fun of an experience as possible."
+    "I guess that's why she chose to stick around Monika while I was off with [poem_giver]..."
+    "Oh, Sayori..."
+    "I didn't want to hurt you..."
+    "But if I'm having these feelings for Sayori now, why didn't I have them when she confessed?"
+    "Could this just be pure second-guessing on my part? Pity?"
+    "Or do I genuinely like her back..."
+    "I mean...{w=0.38}I've always liked Sayori, but I only saw as more as friends than anything else."
+    "Though in recent years the idea has crossed my mind, and well, she's clearly thought of it for a while..."
+    "I know I care about Sayori..."
+    "And we know each other like the back of our hand..."
+    "And I'm pretty sure she still loves me..."
+    "But would she believe me if I told her I changed my mind?"
+    "I mean...{w=0.38}earlier she acted like the girl I always knew..."
+    "Her trying to grab my ice cream was so typical of her..."
+    "And it's nice that she's still able to act like her old self around me..."
+
+    if sayori_ice == True:
+        "I mean I did indulge her and let her take my ice cream from me..."
+
+    if sayori_ice == False:
+        "Even though I didn't lt her have my ice cream, the episode still was a little fun, even if she felt otherwise..."
+
+    "Still, even though I've been trying to make it up to Sayori over the last few days, I know I still let her let down these last few years."
+    "And nothing I do can make up for that."
+    "But, she does deserve to have someone that cares about her and who'll support her..."
+    "So, in what way can I best do that?"
+    "Can I really see Sayori as my girlfriend?"
+    "I mean...{w=0.38}it could work out..."
+    "We already take care and look after each other..."
+    "We both care about each other deeply..."
+    "She's never shyed away from being there for me when I needed it, and I'm trying to do the same for her."
+    "I mean...{w=0.38}maybe we can give it a chance and see how it works out..."
+    "But that would mean I'd have to break [poem_giver]'s heart..."
+    "And I'd rather not break two hearts in two weeks..."
+    "But is my interest in [poem_giver] the same as it was when I first joined?"
+    "I guess at one point, I did have similar feelings for [poem_giver]."
+    "Especially with how last Sunday went..."
+    "And I've enjoyed spending time around her, she's really fun to be around..."
+    "She was a blast to hang around during the festival..."
+    "But if I give [poem_giver] a chance, how would Sayori feel?"
+    "I mean...{w=0.38}I did reject her with [poem_giver] on my mind..."
+    "I roll over to face my bookshelves."
+    "On one of the shelves, I spot a picture of me and Sayori at the carnival."
+    "Man...{w=0.38}that must've been at least ten years ago..."
+    "Do I really have it in me to tell her, that same girl, that I want to give her a chance at a relationship that's not even guraunteed to work out?"
+    "And risk hurting [poem_giver]?"
+    "I get out of my bed and walk over to pick up the picture frame."
+    "Upon a closer look, I see Sayori clutching a familar giant sized cow..."
+    "Huh...{w=0.38}I almost forgot that's when I won it for her..."
+    "I always did tell Sayori that she deserved the best..."
+    play music e17
+    "Suddenly I hear my phone ringing."
+    "I put the picture frame down and run over to my phone to see who's calling."
+    "To my surprise...{w=0.38}it's Sayori!"
+    "Why is she calling me? We saw each other like ten minutes ago..."
+    stop music
+    jump s_hangout_ask
 
 
 
@@ -8850,278 +8918,290 @@ s "Okay...{w=0.38}just try not to overthink yourself..."
 
 ########Natsuki#############
 
-if encore_sayoriquestion_1 == True:
+label n_mono1:
 
-        "I know I love Sayori."
-        "I do..."
-        "I've enjoyed every moment I've been around her..."
-        "Even if she's a bit much to hanlde at times..."
-        "But...{w=0.38}I can't help myself from feeling attracted to Natsuki..."
+    "I know I love Sayori."
+    "I do..."
+    "I've enjoyed every moment I've been around her..."
+    "Even if she's a bit much to handle at times..."
+    "But...{w=0.38}I can't help myself from feeling attracted to Natsuki..."
 
-        if encore_festivalquestion_2 == "Natsuki":
-            "Ever since last Sunday, I've felt myself wanting her more and more..."
+    if encore_festivalquestion_2 == "Natsuki":
+        "Ever since last Sunday, I've felt myself wanting her more and more..."
 
-        if encore_festivalquestion_2 == "Yuri":
-            "Even though we haven't spent much time around each other, I feel like we've really bonded over the last recently..."
+    if encore_festivalquestion_2 == "Yuri":
+        "Even though we haven't spent much time around each other, I feel like we've really bonded over the last recently..."
 
-        "She's truly been wonderful to be around!"
-        "Even though she came off to me initially as someone with an attitude problem, she isn't really all that bad once you get to know her..."
-        "And well, recently, I can definitely say I've gotten to know a lot more about her that I didn't already know..."
-        "Considering what she told me today about her home life..."
-        "I still can't stop myself from worrying about her saftey..."
-        "Maybe I'm just being paranoid...{w=0.38}but something tells me there's more to it then what she told me..."
-        "I know learning more will be difficult since it's not something most people would just open up to you randomly..."
-        "But...{w=0.38}that doesn't mean I can't find out more..."
-        "All things considered, I think Natsuki truly appreciates that there's someone out there who takes her seriously..."
-        "Who shares the same interests and hobbies as her..."
-        "It's quite amazing how we were able to bond over manga..."
-        "Finding a girl who likes manga more than you is pretty rare..."
-        "Not to mention, I'm pretty Natsuki also appreciates having someone who cares about her and her opinions and doesn't take everything she does and says at face value..."
-        "Even if it's still a little hard to understand what she's doing at times..."
-        "I always know she means well..."
-        "And I've had a blast spending every moment I can around her."
-        "Her laughter, her smile, she's never been boring to hang around..."
-        "And she always looks cute 24/7, even if she won't admit it!"
-        "I think she enjoys spending time around me too..."
-        "Even without her poem, I was starting to suspect that she liked me..."
-        "I mean the signs were there..."
+    "She's truly been wonderful to be around!"
+    "Even though she came off to me initially as someone with an attitude problem, she isn't really all that bad once you get to know her..."
+    "And well, recently, I can definitely say I've felt closer to her than ever before..."
+    "It's clear she feels the same way..."
+    "And even though I want to avoid her until I can figure out what to say to her, I did have some fun spending time around [hangout3] today..."
 
-        if encore_festivalquestion_2 == "Natsuki":
+    if hangout3 == "Yuri":
+        "Even though it took a rather serious turn..."
 
-            if hangout2 == "Natsuki":
-                "We almost kissed a few times on Sunday..."
-                "She even hugged me yesterday..."
-                "And She really did want to spend more time around me today..."
-                "I'm really enjoyed her hug yesterday..."
+    if hangout3 == "Monika":
+        "Even though I didn't expect Monika and I to end up flirting like that..."
 
-            else:
-
-                "She's been adamant about us trying to spend time together..."
-                "But would it be bad to give her a chance?"
-
-        if encore_festivalquestion_2 == "Yuri":
-
-            if hangout2 == "Natsuki":
-                "She hugged me yesterday and told me she wanted us to spend more time like this..."
-                "And She really did want to spend more time around me today..."
-                "I'm really enjoyed her hug yesterday..."
-
-            else:
-
-                "She's been adamant about us trying to spend time together..."
-                "But would it be bad to give her a chance?"
+    if hangout3 == "Sayori":
+        "I think I've undid some of the damage I've done recently to our relationship..."
 
 
+    "All things considered, I think Natsuki truly appreciates that there's someone out there who takes her seriously..."
+    "Who shares the same interests and hobbies as her..."
+    "It's quite amazing how we were able to bond over manga..."
+    "Finding a girl who likes manga more than you is pretty rare..."
+    "Not to mention, I'm pretty Natsuki also appreciates having someone who cares about her and her opinions and doesn't take everything she does and says at face value..."
+    "Even if it's still a little hard to understand what she's doing at times..."
+    "I always know she means well..."
+    "And I've had a blast spending every moment I can around her."
+    "Her laughter, her smile, she's never been boring to hang around..."
+    "And she always looks cute 24/7, even if she won't admit it!"
+    "I think she enjoys spending time around me too..."
+    "Even without her poem, I was starting to suspect that she liked me..."
+    "I mean the signs were there..."
 
-        "*sighs*"
-        "I know that this is all wrong..."
-        "By thinking like this, I'm really risking betraying my relationship with Sayori..."
-        "Only she should be able to hug me like that..."
-        "She was rightfully pissed at me yesterday for it..."
-        "And if she found out we did it again, especially when I promised to stop doing it, Sayori would be heartbroken..."
-        "God...{w=0.38}why am I so bad at this?!?!"
-        "I throw my hands over my face."
-        "I love Sayori...{w=0.38}but I'm pretty sure I've caught feelings for Natsuki too..."
-        "And what makes this complicated is that Natsuki likes me back too!"
-        "I'm in a literal love triangle..."
-        "And I don't want to hurt either of them..."
-        "I already know they both have serious problems, and I don't want to add on to anything..."
-        "But if I do decide that I want to be with Natsuki...{w=0.38}I'd have to breakup with Sayori..."
-        "And that would be easier said then done...{w=0.38}and I don't know if that's what I want to do..."
-        "I've known her for fourteen years...{w=0.38}and I know she'd never do the same to me!"
-        "And we're both still trying to make this work..."
-        "But...{w=0.38}maybe she and I aren't really meant to be?"
-        "I mean...{w=0.38}lately I've been more interested in Natsuki than Sayori..."
-        "And though it's my fault completely for our relationship starting to deteriorate...{w=0.38}I just don't have the same passion for her as I do for Natsuki..."
+    if encore_festivalquestion_2 == "Natsuki":
 
-        if encore_festivalquestion_2 == "Natsuki":
-            "Especially with how last Sunday went..."
+        if hangout2 == "Natsuki":
+            "We almost kissed a few times on Sunday..."
+            "She even hugged me yesterday..."
+            "And she really did want to spend more time around me today..."
+            "I'm really enjoyed her hug yesterday..."
 
-        if encore_festivalquestion_2 == "Yuri":
-            "I still can't help feel sorry for Yuri..."
-            "I mean, granted we haven't talked much since Sunday."
-            "We only did share a few realtively intimate moments with each other, though nothing became of it..."
-            "And I still find part of me wondering what if what could've been...{w=0.38}still could be..."
+        else:
 
+            "She's been adamant about us trying to spend time together..."
+            "But would it be bad to give her a chance?"
 
-        "Especially considering how much fun I had with her preparing for and at the festival..."
-        "Even if she was competiting with Sayori for my attention..."
-        "But...{w=0.38}can I really do that to Sayori?"
-        "I roll over to face my bookshelves."
-        "On one of the shelves, I spot a picture of me and Sayori at the carnival."
-        "Man...{w=0.38}that must've been at least ten years ago..."
-        "Do I really have it in me to tell her, that same girl, who's now my girlfriend, that I want to dump her for another relationship that's not even guaranteed to work out?"
-        "And risk possibly ending the club?"
-        "I get out of my bed and walk over to pick up the picture frame."
-        "Upon a closer look, I see Sayori clutching a familar giant sized cow..."
-        "Huh...{w=0.38}I almost forgot that's when I won it for her..."
-        "I always did tell Sayori that she deserved the best..."
-        play music e17
-        "Suddenly I hear my phone ringing."
-        "I put the picture frame down and run over to my phone to see who's calling."
+    if encore_festivalquestion_2 == "Yuri":
 
+        if hangout2 == "Natsuki":
+            "She hugged me yesterday and told me she wanted us to spend more time like this..."
+            "And she really did want to spend more time around me today..."
+            "I really enjoyed her hug yesterday..."
 
-        if encore_festivalquestion_2 == "Natsuki":
-            "To my surprise...{w=0.38}it's Natsuki!"
-            "Why is she calling me?"
-            "I just hope something didn't happen..."
-            stop music
-            "I answer the phone."
-            mc "Natsuki?"
-            n "Hey, [player]!"
-            mc "W-{w=0.38}what's up?"
-            n "Why do you sound so surprised?"
-            mc "I just...{w=0.38}wasn't expecting you to call, that's all!"
-            n "I guess that's true..."
+        else:
 
-        if encore_festivalquestion_2 == "Yuri":
-            "I look down at the number...{w=0.38}I don't recongize it."
-            "Eh, I'm not doing anything right now..."
-            "At worst I'll be talking to a telemarkter..."
-            stop music
-            "I answer the phone."
-            mc "Hello?"
-            n "[player]? Is that you?"
-            mc "Y-{w=0.38}yeah...{w=0.38}what's up?"
-            n "Why do you sound so surprised?"
-            mc "Well, I don't remember giving you my number..."
-            n "Sayori told me what it was."
-            "Figured she would do that..."
-
-
-        if natsuki_continued_hug == True or natsuki_hug == True:
-            "Thankfully, judging by the tone in Natsuki's voice, it doesn't sound like anything bad happened..."
-            jump n_hangout_ask
-
-        if natsuki_continued_hug == False or natsuki_hug == False:
-            "Thankfully, judging by the tone in Natsuki's voice, she seems to have cooled off from earlier..."
-            jump n_hangout_ask
+            "She's been adamant about us trying to spend time together..."
+            "But would it be bad to give her a chance?"
 
 
 
+    "*sighs*"
+    "I know that this is all wrong..."
+    "By thinking like this, I'm really risking betraying my relationship with Sayori..."
+    "Only she should be able to hug me like that..."
+    "She was rightfully pissed at me yesterday for it..."
+    "And if she found out we did it again, especially when I promised to stop doing it, Sayori would be heartbroken..."
+    "God...{w=0.38}why am I so bad at this?!?!"
+    "I throw my hands over my face."
+    "I love Sayori...{w=0.38}but I'm pretty sure I've caught feelings for Natsuki too..."
+    "And what makes this complicated is that Natsuki likes me back too!"
+    "I'm in a literal love triangle..."
+    "And I don't want to hurt either of them..."
+    "I already know they both have serious problems, and I don't want to add on to anything..."
+    "But if I do decide that I want to be with Natsuki...{w=0.38}I'd have to breakup with Sayori..."
+    "And that would be easier said then done...{w=0.38}and I don't know if that's what I want to do..."
+    "I've known her for fourteen years...{w=0.38}and I know she'd never do the same to me!"
+    "And we're both still trying to make this work..."
+    "But...{w=0.38}maybe she and I aren't really meant to be?"
+    "I mean...{w=0.38}lately I've been more interested in Natsuki than Sayori..."
+    "And though it's my fault completely for our relationship starting to deteriorate...{w=0.38}I just don't have the same passion for her as I do for Natsuki..."
+
+    if encore_festivalquestion_2 == "Natsuki":
+        "Especially with how last Sunday went..."
+
+    if encore_festivalquestion_2 == "Yuri":
+        "I still can't help feel sorry for Yuri..."
+        "I mean, granted we haven't talked much since Sunday."
+        "We only did share a few realtively intimate moments with each other, though nothing became of it..."
+        "And I still find part of me wondering what if what could've been...{w=0.38}still could be..."
 
 
-if encore_sayoriquestion_1 == False:
-
-        "I really do think that I'm falling for Natsuki..."
-
-        if encore_festivalquestion_2 == "Natsuki":
-            "Having spent the last two weeks getting to know her has truly been something..."
-
-        if encore_festivalquestion_2 == "Yuri":
-            "Having spent the last few days getting to know her has truly been something..."
-
-        "It's truly amazing how far we've come in such a relatively short amount of time..."
-        "At first I thought she hated me, but now it's like we've been friends our whole lives!"
-        "I even think I'm even getting used to hear teasing..."
-        "And she's clearly able to deal with my quirks now as well."
-        "I didn't know it at the time, but I didn't think we'd be able to get along as well as we do now."
-        "Considering she wasn't all that welcoming when I first joined..."
-        "But now that I know her and what she's like, almost everything I know about her makes sense."
-        "For the first time, I feel like I truly understand Natsuki."
-        "And with what she told me earlier today, I'm just worried about her."
-        "I know she just puts on the act to try to be taken seriously at school, but at home, who knows..."
-        "After all she only gave me a 'summary'."
-        "Well if I do know her, she's a strong person, and I'm hopeful she won't need me to try to step in and help her resolve her homelife..."
-        "But, I think Natsuki truly appreciates that there's someone out there who takes her seriously..."
-        "Who shares the same interests and hobbies as her..."
-        "And who cares about her and her opinions and doesn't take everything she does and says at face value..."
-        "Even if it's still a little hard to understand what she's doing at times..."
-        "I always know she means well..."
-        "And I've had a blast spending every moment I could around her."
-        "Her laughter, her smiles, she's never been boring to hang around..."
-        "And I think she enjoys spending time around me too..."
-        "It's almost like we're a perfect match...{w=0.38}we both complimenet and balance each other out pretty well..."
-        "And I have a pretty good reason to believe she likes me back..."
-        "For the past two days she's been hugging me..."
-
-        if natsuki_continued_hug == True or natsuki_hug == True:
-            "And each time...{w=0.38}it felt almost magical..."
-
-        if natsuki_continued_hug == False or natsuki_hug == False:
-            "Even though I was an idiot and messed up earlier..."
-            "But I don't think she'd stay mad at me for that..."
-
-        "All things considered, I do think I want to go for Natsuki..."
-        "But the problem is, I know that in doing so, I'd be breaking Yuri's heart..."
-        "And possibly causing Sayori even more anguish..."
-        "I just don't know if the timing is right..."
-        "Maybe once Sayori is better shape, and I feel like I have a proper way of rejecting Yuri, then maybe I can figure out how to talk to Natsuki about all this..."
-        "But then again, do I really need to wait for that?"
-        "Rebuilding my friendship with Sayori is going to take time either way..."
-        "And well, I'd like to think we've estabished that we're going to remain friends, nothing more or less..."
-        "Even though the possbility to go for more is still there..."
-        "But I just don't think I have the same connection with Sayori like I do for Natsuki..."
-        "Same goes for Yuri too I guess..."
-
-        if encore_festivalquestion_2 == "Natsuki":
-            "I mean, maybe I could give Yuri a chance and see if we have any real chemistry..."
-            "But from the times I've interacted with her, maybe it's just not there..."
+    "Especially considering how much fun I had with her preparing for and at the festival..."
+    "Even if she was competiting with Sayori for my attention..."
+    "But...{w=0.38}can I really do that to Sayori?"
+    "I roll over to face my bookshelves."
+    "On one of the shelves, I spot a picture of me and Sayori at the carnival."
+    "Man...{w=0.38}that must've been at least ten years ago..."
+    "Do I really have it in me to tell her, that same girl, who's now my girlfriend, that I want to dump her for another relationship that's not even guaranteed to work out?"
+    "And risk possibly ending the club?"
+    "I get out of my bed and walk over to pick up the picture frame."
+    "Upon a closer look, I see Sayori clutching a familar giant sized cow..."
+    "Huh...{w=0.38}I almost forgot that's when I won it for her..."
+    "I always did tell Sayori that she deserved the best..."
 
 
-        if encore_festivalquestion_2 == "Yuri":
-            "I mean, maybe I could give Yuri another chance..."
-            "We did have a good thing going for a while..."
-            "But...{w=0.38}I guess my feelings for her have just kind of faded for her recently..."
+if hangout3 == "Yuri":
+    play music e17
+    "Suddenly I hear my phone ringing."
+    "I put the picture frame down and run over to my phone to see who's calling."
 
-        "Considering how Yuri tends to put a lot of emotion into things, I don't think she'd react to well if I rejected her..."
-        "Breaking two hearts wouldn't exactly sit well with my sub-concious..."
-        "But, if I do go for Yuri, then Natsuki would be left out..."
-        "Basically, no matter what, if one of them gets chosen, the other gets the heartbreak..."
-        "And I don't now if I'm ready to do that again..."
-        "I sigh as I pull up my phone and scroll through my picture gallery."
+if hangout3 == "Monika":
+    "But am I what she needs?"
+    "Am I what she deserves?"
+    "..."
+    "Agh! This is hopeless!"
+    "I'm being pulled in all directions!"
+    "Maybe a walk will help me clear my head..."
+    "I'd probably be able to think better that way..."
+    "And maybe along the way I'll figure out who I feel the most strongly towards..."
+    "I put the picture frame back, grab my keys and walk out of my house."
+    jump m_hangout_ask
 
-        if encore_festivalquestion_2 == "Natsuki":
-            "As I'm scrolling, I come across some pictures I took with Natsuki at the festival."
-            "Looking back at some of the photos, I see just how happy we look doing all these silly poses throughout the festival."
-            "It's funny how most of these photos were her idea..."
-            "I scroll to the last photo which is us standing by the entrance to the school at the end of the festival."
-            "I notice just how close together we are in this photo, with her even wrapping her arm around me."
-            "Huh...{w=0.38}I guess we would make a good couple..."
-            play music e17
-            "Suddenly my phone starts to ring."
-            "I look down at the contact name...{w=0.38}it's Natsuki!"
-            "Why is she calling me?"
-            "I just hope something didn't happen..."
-            stop music
-            "I answer the phone."
-            mc "Natsuki?"
-            n "Hey, [player]!"
-            mc "W-{w=0.38}what's up?"
-            n "Why do you sound so surprised?"
-            mc "I just...{w=0.38}wasn't expecting you to call, that's all!"
-            n "I guess that's true..."
-
-        if encore_festivalquestion_2 == "Yuri":
-            "As I'm scrolling, I come across some pictures I took with Yuri at the festival."
-            "Looking back at some of the photos, I see just how happy we look doing all these silly poses throughout the festival."
-            "I'm surprised she even agreed to do them with me..."
-            "I scroll to the last photo which is us standing by the entrance to the school at the end of the festival."
-            "I notice just how close together we are in this photo, with her even letting em wrap my arm around her."
-            "Maybe we would make a good couple..."
-            play music e17
-            "Suddenly my phone starts to ring."
-            "I look down at the number...{w=0.38}I don't recongize it."
-            "Eh, I'm not doing anything right now..."
-            "At worst I'll be talking to a telemarkter..."
-            stop music
-            "I answer the phone."
-            mc "Hello?"
-            n "[player]? Is that you?"
-            mc "Y-{w=0.38}yeah...{w=0.38}what's up?"
-            n "Why do you sound so surprised?"
-            mc "Well, I don't remember giving you my number..."
-            n "Sayori told me what it was."
-            "Figured she would do that..."
+if hangout3 == "Sayori":
+    play music e17
+    "Suddenly I hear my phone ringing."
+    "I put the picture frame down and run over to my phone to see who's calling."
+    "To my surprise...{w=0.38}it's Sayori!"
+    "Why is she calling me? We saw each other like ten minutes ago..."
+    stop music
+    jump s_hangout_ask
 
 
-        if natsuki_continued_hug == True or natsuki_hug == True:
-            "Thankfully, judging by the tone in Natsuki's voice, it doesn't sound like anything bad happened..."
-            jump n_hangout_ask
+if hangout3 == "Yuri":
 
-        if natsuki_continued_hug == False or natsuki_hug == False:
-            "Thankfully, judging by the tone in Natsuki's voice, she seems to have cooled off from earlier..."
-            jump n_hangout_ask
+    if encore_festivalquestion_2 == "Natsuki":
+        "I look down at the number...{w=0.38}I don't recongize it."
+        "Eh, I'm not doing anything right now..."
+        "It's probably just a wrong number..."
+        stop music
+        "I answer the phone."
+        mc "Hello?"
+        jump y_hangout_ask
+
+    if encore_festivalquestion_2 == "Yuri":
+        "I look down at the contact name...{w=0.38}it's Yuri!"
+        "Why is she calling me?"
+        stop music
+        "I answer the phone."
+        mc "Yuri?"
+        jump y_hangout_ask
+
+
+label n_mono2:
+
+"I really do think that I'm falling for Natsuki..."
+
+if encore_festivalquestion_2 == "Natsuki":
+    "Having spent the last two weeks getting to know her has truly been something..."
+
+if encore_festivalquestion_2 == "Yuri":
+    "Having spent the last few days getting to know her has truly been something..."
+
+"It's truly amazing how far we've come in such a relatively short amount of time..."
+"At first I thought she hated me, but now it's like we've been friends our whole lives!"
+"I even think I'm even getting used to hear teasing..."
+"And she's clearly able to deal with my quirks now as well."
+"I didn't know it at the time, but I didn't think we'd be able to get along as well as we do now."
+"Considering she wasn't all that welcoming when I first joined..."
+"But now that I know her and what she's like, almost everything I know about her makes sense."
+"For the first time, I feel like I truly understand Natsuki."
+"And with what she told me earlier today, I'm just worried about her."
+"I know she just puts on the act to try to be taken seriously at school, but at home, who knows..."
+"After all she only gave me a 'summary'."
+"Well if I do know her, she's a strong person, and I'm hopeful she won't need me to try to step in and help her resolve her homelife..."
+"But, I think Natsuki truly appreciates that there's someone out there who takes her seriously..."
+"Who shares the same interests and hobbies as her..."
+"And who cares about her and her opinions and doesn't take everything she does and says at face value..."
+"Even if it's still a little hard to understand what she's doing at times..."
+"I always know she means well..."
+"And I've had a blast spending every moment I could around her."
+"Her laughter, her smiles, she's never been boring to hang around..."
+"And I think she enjoys spending time around me too..."
+"It's almost like we're a perfect match...{w=0.38}we both complimenet and balance each other out pretty well..."
+"And I have a pretty good reason to believe she likes me back..."
+"For the past two days she's been hugging me..."
+
+if natsuki_continued_hug == True or natsuki_hug == True:
+    "And each time...{w=0.38}it felt almost magical..."
+
+if natsuki_continued_hug == False or natsuki_hug == False:
+    "Even though I was an idiot and messed up earlier..."
+    "But I don't think she'd stay mad at me for that..."
+
+"All things considered, I do think I want to go for Natsuki..."
+"But the problem is, I know that in doing so, I'd be breaking Yuri's heart..."
+"And possibly causing Sayori even more anguish..."
+"I just don't know if the timing is right..."
+"Maybe once Sayori is better shape, and I feel like I have a proper way of rejecting Yuri, then maybe I can figure out how to talk to Natsuki about all this..."
+"But then again, do I really need to wait for that?"
+"Rebuilding my friendship with Sayori is going to take time either way..."
+"And well, I'd like to think we've estabished that we're going to remain friends, nothing more or less..."
+"Even though the possbility to go for more is still there..."
+"But I just don't think I have the same connection with Sayori like I do for Natsuki..."
+"Same goes for Yuri too I guess..."
+
+if encore_festivalquestion_2 == "Natsuki":
+    "I mean, maybe I could give Yuri a chance and see if we have any real chemistry..."
+    "But from the times I've interacted with her, maybe it's just not there..."
+
+
+if encore_festivalquestion_2 == "Yuri":
+    "I mean, maybe I could give Yuri another chance..."
+    "We did have a good thing going for a while..."
+    "But...{w=0.38}I guess my feelings for her have just kind of faded for her recently..."
+
+"Considering how Yuri tends to put a lot of emotion into things, I don't think she'd react to well if I rejected her..."
+"Breaking two hearts wouldn't exactly sit well with my sub-concious..."
+"But, if I do go for Yuri, then Natsuki would be left out..."
+"Basically, no matter what, if one of them gets chosen, the other gets the heartbreak..."
+"And I don't now if I'm ready to do that again..."
+"I sigh as I pull up my phone and scroll through my picture gallery."
+
+if encore_festivalquestion_2 == "Natsuki":
+    "As I'm scrolling, I come across some pictures I took with Natsuki at the festival."
+    "Looking back at some of the photos, I see just how happy we look doing all these silly poses throughout the festival."
+    "It's funny how most of these photos were her idea..."
+    "I scroll to the last photo which is us standing by the entrance to the school at the end of the festival."
+    "I notice just how close together we are in this photo, with her even wrapping her arm around me."
+    "Huh...{w=0.38}I guess we would make a good couple..."
+    play music e17
+    "Suddenly my phone starts to ring."
+    "I look down at the contact name...{w=0.38}it's Natsuki!"
+    "Why is she calling me?"
+    "I just hope something didn't happen..."
+    stop music
+    "I answer the phone."
+    mc "Natsuki?"
+    n "Hey, [player]!"
+    mc "W-{w=0.38}what's up?"
+    n "Why do you sound so surprised?"
+    mc "I just...{w=0.38}wasn't expecting you to call, that's all!"
+    n "I guess that's true..."
+
+if encore_festivalquestion_2 == "Yuri":
+    "As I'm scrolling, I come across some pictures I took with Yuri at the festival."
+    "Looking back at some of the photos, I see just how happy we look doing all these silly poses throughout the festival."
+    "I'm surprised she even agreed to do them with me..."
+    "I scroll to the last photo which is us standing by the entrance to the school at the end of the festival."
+    "I notice just how close together we are in this photo, with her even letting em wrap my arm around her."
+    "Maybe we would make a good couple..."
+    play music e17
+    "Suddenly my phone starts to ring."
+    "I look down at the number...{w=0.38}I don't recongize it."
+    "Eh, I'm not doing anything right now..."
+    "At worst I'll be talking to a telemarkter..."
+    stop music
+    "I answer the phone."
+    mc "Hello?"
+    n "[player]? Is that you?"
+    mc "Y-{w=0.38}yeah...{w=0.38}what's up?"
+    n "Why do you sound so surprised?"
+    mc "Well, I don't remember giving you my number..."
+    n "Sayori told me what it was."
+    "Figured she would do that..."
+
+
+if natsuki_continued_hug == True or natsuki_hug == True:
+    "Thankfully, judging by the tone in Natsuki's voice, it doesn't sound like anything bad happened..."
+    jump n_hangout_ask
+
+if natsuki_continued_hug == False or natsuki_hug == False:
+    "Thankfully, judging by the tone in Natsuki's voice, she seems to have cooled off from earlier..."
+    jump n_hangout_ask
 
 
 
@@ -9172,119 +9252,119 @@ n "It's alright, [player]..."
 
 ########Monika#############
 
-if encore_sayoriquestion_1 == True:
+label m_mono1:
 
-        "I know I love Sayori."
-        "I do..."
-        "I've enjoyed every moment I've been around her..."
-        "Even if she's a bit much to hanlde at times..."
-        "But...{w=0.38}I can't help myself from feeling attracted to Monika..."
-        "Even though we've just recently started talking to each other..."
-        "I'm still dumbfounded by how easy it's been to talk to her!"
-        "Not to mention she's been incredibly helpful with giving advice through this situation..."
-        "However, she has been rather forward with me lately..."
-        "The past two times we have gotten rather close..."
-        "As much as I do enjoy when Monika is like that with me...{w=0.38}it still doesn't change the fact it's wrong..."
-        "Even though I told her that we probably shouldn't be doing that anymore, she's still been doing it..."
-        "But I don't know if I want to put my foot down and tell her to stop."
-        "I mean...{w=0.38}even though Sayori has shown me affection before, Monika seems like the kind of girl who'd shower me in it..."
-        "Heck...{w=0.38}she's everything that any guy would want:{w=0.38}smart, sweet, funny, athletic..."
-        "And drop dead beautiful!"
-        "Though at the same time...{w=0.38}she's the kind of girl that's too good for me..."
-        "Why would she be interested in someone like me? It's not like I'm anything special..."
-        "And I haven't known her nearly as long as Sayori..."
-        "I mean practically speaking...{w=0.38}it makes sense for me to have gotten with Sayori in the first place..."
-        "But Monika...{w=0.38}it's completely unexpected!"
-        "Oh well, if Monika does indeed like me, and she isn't trying to tease me or anything like that, then I should be grateful that she does..."
-        "But that does pose a problem:{w=0.38}if I do decide that I want to be with Monika...{w=0.38}I'd have to breakup with Sayori..."
-        "And that would be easier said then done...{w=0.38}and I don't know if that's what I want to do..."
-        "I've known her for fourteen years...{w=0.38}and I know she'd never do the same to me!"
-        "And we're both still trying to make this work..."
-        "There's nothing about Sayori that I don't like..."
-        "She's fun, she's beautiful, and she's always beem there for me..."
-        "But...{w=0.38}maybe she and I aren't really meant to be?"
-        "I mean...{w=0.38}lately I've been more interested in Monika than Sayori..."
-        "And though it's my fault completely for our relationship starting to deteriorate...{w=0.38}I just don't have the same passion for her as I do for Monika..."
-        "Then there's [poem_giver], and I know for a fact she likes me...{w=0.38}I have the poem to show for it..."
-        "I'm sure at some point I had similar feelings for [poem_giver] like she does for me..."
-        "Especially with how last Sunday went..."
-        "And I still find part of me wondering what if what could've been...{w=0.38}still could be..."
-        "Especially considering how much fun I had with her preparing for and at the festival..."
-        "Even if she was competiting with Sayori for my attention..."
-        "But...{w=0.38}can I really do that to Sayori?"
-        "I roll over to face my bookshelves."
-        "On one of the shelves, I spot a picture of me and Sayori at the carnival."
-        "Man...{w=0.38}that must've been at least ten years ago..."
-        "Do I really have it in me to tell her, that same girl, who's now my girlfriend, that I want to dump her for another relationship that's not even guraunteed to work out?"
-        "And risk possibly ending the club?"
-        "I get out of my bed and walk over to pick up the picture frame."
-        "Upon a closer look, I see Sayori clutching a familar giant sized cow..."
-        "Huh...{w=0.38}I almost forgot that's when I won it for her..."
-        "I always did tell Sayori that she deserved the best..."
-        "My hand starts to shake as tears start to swell up in my eyes."
-        "Could I really do it?"
-        "Is it even right to think this way?"
-        "No matter who I choose...{w=0.38}someone's getting heartbroken because of me..."
-        "Agh! This is hopeless!"
-        "I'm being pulled in all directions!"
-        "Maybe a walk will help me clear my head..."
-        "I'd probably be able to think better that way..."
-        "And maybe along the way I'll figure out who I feel the most strongly towards..."
-        "I put the picture frame back, grab my keys and walk out of my house."
-        jump m_hangout_ask
+"I know I love Sayori."
+"I do..."
+"I've enjoyed every moment I've been around her..."
+"Even if she's a bit much to hanlde at times..."
+"But...{w=0.38}I can't help myself from feeling attracted to Monika..."
+"Even though we've just recently started talking to each other..."
+"I'm still dumbfounded by how easy it's been to talk to her!"
+"Not to mention she's been incredibly helpful with giving advice through this situation..."
+"However, she has been rather forward with me lately..."
+"The past two times we have gotten rather close..."
+"As much as I do enjoy when Monika is like that with me...{w=0.38}it still doesn't change the fact it's wrong..."
+"Even though I told her that we probably shouldn't be doing that anymore, she's still been doing it..."
+"But I don't know if I want to put my foot down and tell her to stop."
+"I mean...{w=0.38}even though Sayori has shown me affection before, Monika seems like the kind of girl who'd shower me in it..."
+"Heck...{w=0.38}she's everything that any guy would want:{w=0.38}smart, sweet, funny, athletic..."
+"And drop dead beautiful!"
+"Though at the same time...{w=0.38}she's the kind of girl that's too good for me..."
+"Why would she be interested in someone like me? It's not like I'm anything special..."
+"And I haven't known her nearly as long as Sayori..."
+"I mean practically speaking...{w=0.38}it makes sense for me to have gotten with Sayori in the first place..."
+"But Monika...{w=0.38}it's completely unexpected!"
+"Oh well, if Monika does indeed like me, and she isn't trying to tease me or anything like that, then I should be grateful that she does..."
+"But that does pose a problem:{w=0.38}if I do decide that I want to be with Monika...{w=0.38}I'd have to breakup with Sayori..."
+"And that would be easier said then done...{w=0.38}and I don't know if that's what I want to do..."
+"I've known her for fourteen years...{w=0.38}and I know she'd never do the same to me!"
+"And we're both still trying to make this work..."
+"There's nothing about Sayori that I don't like..."
+"She's fun, she's beautiful, and she's always beem there for me..."
+"But...{w=0.38}maybe she and I aren't really meant to be?"
+"I mean...{w=0.38}lately I've been more interested in Monika than Sayori..."
+"And though it's my fault completely for our relationship starting to deteriorate...{w=0.38}I just don't have the same passion for her as I do for Monika..."
+"Then there's [poem_giver], and I know for a fact she likes me...{w=0.38}I have the poem to show for it..."
+"I'm sure at some point I had similar feelings for [poem_giver] like she does for me..."
+"Especially with how last Sunday went..."
+"And I still find part of me wondering what if what could've been...{w=0.38}still could be..."
+"Especially considering how much fun I had with her preparing for and at the festival..."
+"Even if she was competiting with Sayori for my attention..."
+"But...{w=0.38}can I really do that to Sayori?"
+"I roll over to face my bookshelves."
+"On one of the shelves, I spot a picture of me and Sayori at the carnival."
+"Man...{w=0.38}that must've been at least ten years ago..."
+"Do I really have it in me to tell her, that same girl, who's now my girlfriend, that I want to dump her for another relationship that's not even guraunteed to work out?"
+"And risk possibly ending the club?"
+"I get out of my bed and walk over to pick up the picture frame."
+"Upon a closer look, I see Sayori clutching a familar giant sized cow..."
+"Huh...{w=0.38}I almost forgot that's when I won it for her..."
+"I always did tell Sayori that she deserved the best..."
+"My hand starts to shake as tears start to swell up in my eyes."
+"Could I really do it?"
+"Is it even right to think this way?"
+"No matter who I choose...{w=0.38}someone's getting heartbroken because of me..."
+"Agh! This is hopeless!"
+"I'm being pulled in all directions!"
+"Maybe a walk will help me clear my head..."
+"I'd probably be able to think better that way..."
+"And maybe along the way I'll figure out who I feel the most strongly towards..."
+"I put the picture frame back, grab my keys and walk out of my house."
+jump m_hangout_ask
 
 
-if encore_sayoriquestion_1 == False:
+label m_mono2:
 
-        "I mean...{w=0.38}I've always liked Monika..."
-        "But I never seriously went after her because I thought I would've tried and failed like everyone else has..."
-        "That was until recently when I decided to finally start talking to her."
-        "And it's amazing how well things have went for us since then!"
-        "Not even I thought she and I would connect so easily..."
-        "I guess that's what happenes when you just man up and start talking to someone..."
-        "But I don't know why Monika likes me though..."
-        "I mean, what's special about me?"
-        "I'm not doing any sports, I'm defintley not the smartest guy in the class..."
-        "I'm not terribly funny nor talented..."
-        "Why would Monika like me, literally the most average of the average?"
-        "Maybe it's one of those things where you don't understand it but you just roll with it anyways."
-        "I feel like that might be one of those times..."
-        "Man if I got with Monika, I'd probably be crowned king of the school or something!"
-        "Every guy would probably hate me though, but being with Monika easily outweighs any of that..."
-        "And speaking of outweighing..."
-        "I know that if I do somehow end up getting with Monika, I'd have to break [poem_giver]'s heart..."
-        "And I'd be breaking Sayori's heart even more..."
-        "I should also ask myself if it's really worth to scuttle what I had with [encore_festivalquestion_2]..."
-        "I mean...{w=0.38}we did have a pretty good thing going for a while..."
-        "And she's been fun to hang around, and I'd feel bad if [encore_festivalquestion_2] felt like I was leading her on..."
-        "Especially given what happened last Sunday between us..."
-        "And since then she's been trying to spend more time with me, but I've been too busy hanging out with Monika..."
-        "Ah, this is gonna suck..."
-        "But, I also genuinely like Monika..."
-        "She's really helped me out with everything..."
-        "From getting me integrated into the club and helping me out with this..."
-        "And she's every guy's dream girl..."
-        "It'd be a too good of an opportunity to pass up if she truly likes me back..."
-        "And I think the signs are there, like how she got so close to me yesterday and today..."
-        "Not to mention, if I did reject her for [encore_festivalquestion_2], how would she feel?"
-        "Looks like no matter what I do, I'm going to have to hurt someone..."
-        "And what sucks is that Sayori's pretty much going to be hurt regardless, unless I decide to change my mind on her..."
-        "But I just don't think I have the same level of enthusasim of being a couple with her as she does..."
-        "The funny thing is though...{w=0.38}I could see myself with any of them..."
+"I mean...{w=0.38}I've always liked Monika..."
+"But I never seriously went after her because I thought I would've tried and failed like everyone else has..."
+"That was until recently when I decided to finally start talking to her."
+"And it's amazing how well things have went for us since then!"
+"Not even I thought she and I would connect so easily..."
+"I guess that's what happenes when you just man up and start talking to someone..."
+"But I don't know why Monika likes me though..."
+"I mean, what's special about me?"
+"I'm not doing any sports, I'm defintley not the smartest guy in the class..."
+"I'm not terribly funny nor talented..."
+"Why would Monika like me, literally the most average of the average?"
+"Maybe it's one of those things where you don't understand it but you just roll with it anyways."
+"I feel like that might be one of those times..."
+"Man if I got with Monika, I'd probably be crowned king of the school or something!"
+"Every guy would probably hate me though, but being with Monika easily outweighs any of that..."
+"And speaking of outweighing..."
+"I know that if I do somehow end up getting with Monika, I'd have to break [poem_giver]'s heart..."
+"And I'd be breaking Sayori's heart even more..."
+"I should also ask myself if it's really worth to scuttle what I had with [encore_festivalquestion_2]..."
+"I mean...{w=0.38}we did have a pretty good thing going for a while..."
+"And she's been fun to hang around, and I'd feel bad if [encore_festivalquestion_2] felt like I was leading her on..."
+"Especially given what happened last Sunday between us..."
+"And since then she's been trying to spend more time with me, but I've been too busy hanging out with Monika..."
+"Ah, this is gonna suck..."
+"But, I also genuinely like Monika..."
+"She's really helped me out with everything..."
+"From getting me integrated into the club and helping me out with this..."
+"And she's every guy's dream girl..."
+"It'd be a too good of an opportunity to pass up if she truly likes me back..."
+"And I think the signs are there, like how she got so close to me yesterday and today..."
+"Not to mention, if I did reject her for [encore_festivalquestion_2], how would she feel?"
+"Looks like no matter what I do, I'm going to have to hurt someone..."
+"And what sucks is that Sayori's pretty much going to be hurt regardless, unless I decide to change my mind on her..."
+"But I just don't think I have the same level of enthusasim of being a couple with her as she does..."
+"The funny thing is though...{w=0.38}I could see myself with any of them..."
 
-        if encore_festivalquestion_2 == "Natsuki":
-            "Even Yuri...{w=0.38}even though we've rarley talked and she likely has zero interest in me..."
+if encore_festivalquestion_2 == "Natsuki":
+    "Even Yuri...{w=0.38}even though we've rarley talked and she likely has zero interest in me..."
 
-        if encore_festivalquestion_2 == "Yuri":
-            "Even Natsuki...{w=0.38}even though we've rarley talked and she likely has no interest in me..."
+if encore_festivalquestion_2 == "Yuri":
+    "Even Natsuki...{w=0.38}even though we've rarley talked and she likely has no interest in me..."
 
-        "Agh! This is hopeless!"
-        "I'm being pulled in all directions!"
-        "Maybe a walk will help me clear my head..."
-        "I'd probably be able to think better that way..."
-        "And maybe along the way I'll figure out who I feel the most strongly towards..."
-        "I get off my bed, grab my keys and walk out of my house."
-        jump m_hangout_ask
+"Agh! This is hopeless!"
+"I'm being pulled in all directions!"
+"Maybe a walk will help me clear my head..."
+"I'd probably be able to think better that way..."
+"And maybe along the way I'll figure out who I feel the most strongly towards..."
+"I get off my bed, grab my keys and walk out of my house."
+jump m_hangout_ask
 
 
 
@@ -9412,247 +9492,287 @@ m "That would be nice..."
 
 ########Yuri#############
 
-if encore_sayoriquestion_1 == True:
+label y_mono1:
 
-        "I know I love Sayori."
-        "I do..."
-        "I've enjoyed every moment I've been around her..."
-        "Even if she's a bit much to hanlde at times..."
-        "But...{w=0.38}I can't help myself from feeling attracted to Yuri..."
+"I know I love Sayori."
+"I do..."
+"I've enjoyed every moment I've been around her..."
+"Even if she's a bit much to hanlde at times..."
+"But...{w=0.38}I can't help myself from feeling attracted to Yuri..."
 
-        if encore_festivalquestion_2 == "Natsuki":
-            "Even though we haven't spent much time around each other, I feel like we've really bonded over the last two days..."
+if encore_festivalquestion_2 == "Natsuki":
+    "Even though we haven't spent much time around each other, I feel like we've really bonded over the last two days..."
 
-        if encore_festivalquestion_2 == "Yuri":
-            "Ever since last Sunday, I've felt myself wanting her more and more..."
+if encore_festivalquestion_2 == "Yuri":
+    "Ever since last Sunday, I've felt myself wanting her more and more..."
 
-        "I didn't know it at the time, but I didn't think we'd be able to get along as well as we do now."
-        "Considering how shy she was and everything..."
-        "But the more I think about it, especially with what happened earlier, I think I understand why Yuri always acts so reserved and distant from everyone else..."
-        "The more I think about it...{w=0.38}the more worried I am about her saftey..."
+"And well, recently, I can definitely say I've felt closer to her than ever before..."
+"It's clear she feels the same way..."
+"And even though I want to avoid her until I can figure out what to say to her, I did have some fun spending time around [hangout3] today..."
 
-        if tell_monika == True:
-            "If she does actually cut herself...{w=0.38}what else is she doing?"
-            "Why is she doing it?"
-            "And how long has she been doing it?"
-            "There's just more questions than answers right now..."
-            "I just hope I can talk about it with her in an honest fashion..."
+if hangout3 == "Natsuki":
+    "Even though it took a rather unexpected turn..."
 
-        if tell_monika == False:
-            "I'm not completelty convinced that thise were ordinary cat scratches..."
-            "And if she's actually cutting herself and denying it, then that's a serious problem in of itself..."
-            "But...{w=0.38}maybe I don't need Monika's help on this..."
-            "Maybe I can talk to Yuri about this one-on-one?"
-            "I mean, I hope she trusts me that much..."
+if hangout3 == "Monika":
+    "Even though I didn't expect Monika and I to end up flirting like that..."
 
-        "But, maybe there's a chance she was just telling me the truth and didn't want me to worry..."
-        "It'd be kind of funny if I ended up stressing all over this for nothing..."
-        "I guess I really do care about her, huh?"
-        "I've really become more invested in her the more time I've spent around her..."
-        "No matter what it is we're doing, whether it be reading, drinking tea, or just even talking, being in Yuri's presence alone is its own reward."
-        "Even though Yuri might think she might be boring me, I kind of like it when she goes on her little tangents..."
-        "She always has something interesting and insightful to say about practically anything!"
-        "In fact, I'm just surprised she doesn't find me boring, considering my tastes in literature is rather non-existent..."
-        "Hopefully, Yuri feels the same way about me as I do about her, and I think she does..."
-        "She's become much more relaxed around me since when we first started talking."
-        "Even if it did take some time to get used to each other..."
-        "She's never really hesistated to talk to me once we got accquainted..."
-        "I mean, I should've seen the signs that Yuri was into me..."
+if hangout3 == "Sayori":
+    "I think I've undid some of the damage I've done recently to our relationship..."
+
+"But, all things considered, I didn't think we'd be able to get along as well as we do now."
+"Considering how shy she was and everything..."
+"No matter what it is we're doing, whether it be reading, drinking tea, or just even talking, being in Yuri's presence alone is its own reward."
+"Even though Yuri might think she might be boring me, I kind of like it when she goes on her little tangents..."
+"She always has something interesting and insightful to say about practically anything!"
+"In fact, I'm just surprised she doesn't find me boring, considering my tastes in literature is rather non-existent..."
+"Hopefully, Yuri feels the same way about me as I do about her, and I think she does..."
+"She's become much more relaxed around me since when we first started talking."
+"Even if it did take some time to get used to each other..."
+"She's never really hesistated to talk to me once we got accquainted..."
+"I mean, I should've seen the signs that Yuri was into me..."
 
 
-        if encore_festivalquestion_2 == "Natsuki":
+if encore_festivalquestion_2 == "Natsuki":
 
-            if hangout2 == "Yuri":
-                "We almost kissed yesterday..."
-                "And she really did want to spend more time around me today..."
-                "I've really come to enjoy her company, I wish we started talking sooner..."
+    if hangout2 == "Yuri":
+        "We almost kissed yesterday..."
+        "And she really did want to spend more time around me today..."
+        "I've really come to enjoy her company, I wish we started talking sooner..."
 
-            else:
+    else:
 
-                "She's been adamant about us trying to spend more time together..."
-                "But would it be bad to give her a chance?"
+        "She's been adamant about us trying to spend more time together..."
+        "But would it be bad to give her a chance?"
 
-        if encore_festivalquestion_2 == "Yuri":
+if encore_festivalquestion_2 == "Yuri":
 
-            if hangout2 == "Yuri":
-                "Yesterday, she esclated things all on her own, something I thought she'd never do..."
-                "If we we were alone, we might've actually gotten the chance to kiss..."
+    if hangout2 == "Yuri":
+        "Yesterday, she esclated things all on her own, something I thought she'd never do..."
+        "If we we were alone, we might've actually gotten the chance to kiss..."
 
-            else:
+    else:
 
-                "She's been adamant about us trying to spend more time together..."
-                "But would it be bad to give her a chance?"
+        "She's been adamant about us trying to spend more time together..."
+        "But would it be bad to give her a chance?"
 
-        "*sighs*"
-        "I know that this is all wrong..."
-        "By thinking like this, I'm really risking betraying my relationship with Sayori..."
-        "Only she should be able to hug me like that..."
-        "She was rightfully pissed at me yesterday for it..."
-        "And if she found out we did it again, especially when I promised to stop doing it, Sayori would be heartbroken..."
-        "God...{w=0.38}why am I so bad at this?!?!"
-        "I throw my hands over my face."
-        "I love Sayori...{w=0.38}but I'm pretty sure I've caught feelings for Yuri too..."
-        "And what makes this complicated is that Natsuki likes me back too!"
-        "I'm in a literal love triangle..."
-        "And I don't want to hurt either of them..."
-        "I already know they both have serious problems, and I don't want to add on to anything..."
-        "But if I do decide that I want to be with Natsuki...{w=0.38}I'd have to breakup with Sayori..."
-        "And that would be easier said then done...{w=0.38}and I don't know if that's what I want to do..."
-        "I've known her for fourteen years...{w=0.38}and I know she'd never do the same to me!"
-        "And we're both still trying to make this work..."
-        "But...{w=0.38}maybe she and I aren't really meant to be?"
-        "I mean...{w=0.38}lately I've been more interested in Yuri than Sayori..."
-        "And though it's my fault completely for our relationship starting to deteriorate...{w=0.38}I just don't have the same passion for her as I do for Yuri..."
+"*sighs*"
+"I know that this is all wrong..."
+"By thinking like this, I'm really risking betraying my relationship with Sayori..."
+"Only she should be able to kiss me..."
+"She was rightfully pissed at me yesterday for it..."
+"And if she ever found out that Yuri and I were in that position again , especially when I promised for it to never happen again, Sayori would be heartbroken..."
+"God...{w=0.38}why am I so bad at this?!?!"
+"I throw my hands over my face."
+"I love Sayori...{w=0.38}but I'm pretty sure I've caught feelings for Yuri too..."
+"And what makes this complicated is that Yuri likes me back too!"
+"I'm in a literal love triangle..."
+"And I don't want to hurt any of them..."
+"I already know they both have serious problems, and I don't want to add on to anything..."
+"But if I do decide that I want to be with Yuri...{w=0.38}I'd have to breakup with Sayori..."
+"And that would be easier said then done...{w=0.38}and I don't know if that's what I want to do..."
+"I've known her for fourteen years...{w=0.38}and I know she'd never do the same to me!"
+"And we're both still trying to make this work..."
+"But...{w=0.38}maybe she and I aren't really meant to be?"
+"I mean...{w=0.38}lately I've been more interested in Yuri than Sayori..."
+"And though it's my fault completely for our relationship starting to deteriorate...{w=0.38}I just don't have the same passion for her as I do for Yuri..."
 
-        if encore_festivalquestion_2 == "Natsuki":
-            "I still can't help feel sorry for Natsuki..."
-            "I mean, granted we haven't talked much since Sunday."
-            "We only did share a few realtively intimate moments with each other, though nothing became of it..."
-            "And I still find part of me wondering what if what could've been...{w=0.38}still could be..."
+if encore_festivalquestion_2 == "Natsuki":
+    "I still can't help feel sorry for Natsuki..."
+    "I mean, granted we haven't talked much since Sunday."
+    "We only did share a few realtively intimate moments with each other, though nothing became of it..."
+    "And I still find part of me wondering what if what could've been...{w=0.38}still could be..."
 
-        if encore_festivalquestion_2 == "Yuri":
-            "Especially with how last Sunday went..."
-
-
-        "Even if she was competiting with Sayori for my attention..."
-        "But...{w=0.38}can I really do that to Sayori?"
-        "I roll over to face my bookshelves."
-        "On one of the shelves, I spot a picture of me and Sayori at the carnival."
-        "Man...{w=0.38}that must've been at least ten years ago..."
-        "Do I really have it in me to tell her, that same girl, who's now my girlfriend, that I want to dump her for another relationship that's not even guraunteed to work out?"
-        "And risk possibly ending the club?"
-        "I get out of my bed and walk over to pick up the picture frame."
-        "Upon a closer look, I see Sayori clutching a familar giant sized cow..."
-        "Huh...{w=0.38}I almost forgot that's when I won it for her..."
-        "I always did tell Sayori that she deserved the best..."
-        play music e17
-        "Suddenly I hear my phone ringing."
-        "I put the picture frame down and run over to my phone to see who's calling."
-
-        if encore_festivalquestion_2 == "Natsuki":
-            "I look down at the number...{w=0.38}I don't recongize it."
-            "Eh, I'm not doing anything right now..."
-            "It's probably just a wrong number..."
-            stop music
-            "I answer the phone."
-            mc "Hello?"
-            jump y_hangout_ask
-
-        if encore_festivalquestion_2 == "Yuri":
-            "I look down at the contact name...{w=0.38}it's Yuri!"
-            "Why is she calling me?"
-            stop music
-            "I answer the phone."
-            mc "Yuri?"
-            jump y_hangout_ask
+if encore_festivalquestion_2 == "Yuri":
+    "Especially with how last Sunday went..."
 
 
+"Even if she was competiting with Sayori for my attention..."
+"But...{w=0.38}can I really do that to Sayori?"
+"I roll over to face my bookshelves."
+"On one of the shelves, I spot a picture of me and Sayori at the carnival."
+"Man...{w=0.38}that must've been at least ten years ago..."
+"Do I really have it in me to tell her, that same girl, who's now my girlfriend, that I want to dump her for another relationship that's not even guraunteed to work out?"
+"And risk possibly ending the club?"
+"I get out of my bed and walk over to pick up the picture frame."
+"Upon a closer look, I see Sayori clutching a familar giant sized cow..."
+"Huh...{w=0.38}I almost forgot that's when I won it for her..."
+"I always did tell Sayori that she deserved the best..."
+
+if hangout3 == "Natsuki":
+    play music e17
+    "Suddenly I hear my phone ringing."
+    "I put the picture frame down and run over to my phone to see who's calling."
+
+if hangout3 == "Monika":
+    "But am I what she needs?"
+    "Am I what she deserves?"
+    "..."
+    "Agh! This is hopeless!"
+    "I'm being pulled in all directions!"
+    "Maybe a walk will help me clear my head..."
+    "I'd probably be able to think better that way..."
+    "And maybe along the way I'll figure out who I feel the most strongly towards..."
+    "I put the picture frame back, grab my keys and walk out of my house."
+    jump m_hangout_ask
+
+if hangout3 == "Sayori":
+    play music e17
+    "Suddenly I hear my phone ringing."
+    "I put the picture frame down and run over to my phone to see who's calling."
+    "To my surprise...{w=0.38}it's Sayori!"
+    "Why is she calling me? We saw each other like ten minutes ago..."
+    stop music
+    jump s_hangout_ask
 
 
-
-
-if encore_sayoriquestion_1 == False:
-
-        "I really do think I like Yuri..."
-
-        if encore_festivalquestion_2 == "Natsuki":
-            "Having spent the last two weeks getting to know her has truly been something..."
-
-        if encore_festivalquestion_2 == "Yuri":
-            "Having spent the last few days getting to know her has truly been something..."
-
-    "It's truly amazing how far we've come in such a relatively short amount of time..."
-    "At first I thought she wanted to stay to herself, but now she has no problem talking to me!"
-    "I even think I'm starting to take an appreciation to her demenaor..."
-    "And well, she can clearly put up with me now..."
-    "I didn't know it at the time, but I didn't think we'd be able to get along as well as we do now."
-    "Considering how shy she was and everything..."
-    "But the more I think about it, especially with what happened earlier, I think I understand why Yuri always acts so reserved and distant from everyone else..."
-    "The more I think about it...{w=0.38}the more worried I am about her saftey..."
-
-    if tell_monika == True:
-        "If she does actually cut herself...{w=0.38}what else is she doing?"
-        "Why is she doing it?"
-        "And how long has she been doing it?"
-        "There's just more questions than answers right now..."
-        "I just hope I can talk about it with her in an honest fashion..."
-
-    if tell_monika == False:
-        "I'm not completelty convinced that thise were ordinary cat scratches..."
-        "And if she's actually cutting herself and denying it, then that's a serious problem in of itself..."
-        "But...{w=0.38}maybe I don't need Monika's help on this..."
-        "Maybe I can talk to Yuri about this one-on-one?"
-        "I mean, I hope she trusts me that much..."
-
-    "But, maybe there's a chance she was just telling me the truth and didn't want me to worry..."
-    "It'd be kind of funny if I ended up stressing all over this for nothing..."
-    "I guess I really do care about her, huh?"
-    "I've really become more invested in her the more time I've spent around her..."
-    "No matter what it is we're doing, whether it be reading, drinking tea, or just even talking, being in Yuri's presence alone is its own reward."
-    "Even though Yuri might think she might be boring me, I kind of like it when she goes on her little tangents..."
-    "She always has something interesting and insightful to say about practically anything!"
-    "In fact, I'm just surprised she doesn't find me boring, considering my tastes in literature is rather non-existent..."
-    "Hopefully, Yuri feels the same way about me as I do about her, and I think she does..."
-    "She's become much more relaxed around me since when we first started talking."
-    "Even if it did take some time to get used to each other..."
-    "She's never really hesistated to talk to me once we got accquainted..."
-    "And yesterday, she esclated things all on her own, something I thought she'd never do..."
-    "If we we were alone, we might've actually gotten the chance to kiss..."
-    "And I'd be the luckiest guy on Earth to have kissed someone as beautiful as Yuri..."
-    "While I don't exactly expect for Yuri to be the one to confess her feelings to me directly, I do think she's been trying to say lately she does have mutual feelings..."
-    "So, I guess it'll be up to me to figure out how to put it to her that I just want to be more than her friend..."
-    "Though that also poses a problem for me..."
-    "I know Natsuki likes me back...{w=0.38}I mean she confessed to me through her poem..."
-    "And Sayori...{w=0.38}well I already know how she feels about me..."
-    "If I do ultimately go for Yuri, I would have to break Natsuki's heart..."
-    "And Sayori likely wouldn't have a a great inital reaction either..."
-    "So it seems no matter what I do, someone's going to get hurt thanks to my choice..."
-    "And my odds of getting a harem are probably non-existent, at least practically speaking..."
-    "I'm going to have to choose one of them by the end of this..."
-    "And...{w=0.38}I don't think I have the feelings to go for Sayori, especially since I already turned her down once..."
-    "I just don't have those kinds of feelings for her, even if part of me still entertains the idea every now and then..."
-
+if hangout3 == "Natsuki":
 
     if encore_festivalquestion_2 == "Natsuki":
-        "I mean, maybe I could give Natsuki another chance..."
-        "We did have a good thing going for a while..."
-        "But...{w=0.38}I guess my interest in her has just kind of faded recently..."
-        "I sigh as I pull up my phone and scroll through my picture gallery."
-        "As I'm scrolling, I come across some pictures I took with Natsuki at the festival."
-        "Looking back at some of the photos, I see just how happy we look doing all these silly poses throughout the festival."
-        "It's funny how most of these photos were her idea..."
-        "I scroll to the last photo which is us standing by the entrance to the school at the end of the festival."
-        "I notice just how close together we are in this photo, with her even wrapping her arm around me."
-        "Huh...{w=0.38}I guess we would make a good couple..."
+        play music e17
+        "Suddenly my phone starts to ring."
+        "I look down at the contact name...{w=0.38}it's Natsuki!"
+        "Why is she calling me?"
+        "I just hope something didn't happen..."
+        stop music
+        "I answer the phone."
+        mc "Natsuki?"
+        n "Hey, [player]!"
+        mc "W-{w=0.38}what's up?"
+        n "Why do you sound so surprised?"
+        mc "I just...{w=0.38}wasn't expecting you to call, that's all!"
+        n "I guess that's true..."
+
+    if encore_festivalquestion_2 == "Yuri":
         play music e17
         "Suddenly my phone starts to ring."
         "I look down at the number...{w=0.38}I don't recongize it."
         "Eh, I'm not doing anything right now..."
-        "It's probably just a wrong number..."
+        "At worst I'll be talking to a telemarkter..."
         stop music
         "I answer the phone."
         mc "Hello?"
-        jump y_hangout_ask
+        n "[player]? Is that you?"
+        mc "Y-{w=0.38}yeah...{w=0.38}what's up?"
+        n "Why do you sound so surprised?"
+        mc "Well, I don't remember giving you my number..."
+        n "Sayori told me what it was."
+        "Figured she would do that..."
 
 
-    if encore_festivalquestion_2 == "Yuri":
-        "I mean, maybe I could give Natsuki a chance and see if we have any real chemistry..."
-        "But from the times I've interacted with her, I don't think there's much room for us to grow like that..."
-        "I sigh as I pull up my phone and scroll through my picture gallery."
-        "As I'm scrolling, I come across some pictures I took with Yuri at the festival."
-        "Looking back at some of the photos, I see just how happy we look doing all these silly poses throughout the festival."
-        "I'm surprised she even agreed to do them with me..."
-        "I scroll to the last photo which is us standing by the entrance to the school at the end of the festival."
-        "I notice just how close together we are in this photo, with her even letting em wrap my arm around her."
-        "Maybe we would make a good couple..."
-        play music e17
-        "Suddenly my phone starts to ring."
-        "I look down at the contact name...{w=0.38}it's Yuri!"
-        "Why is she calling me?"
-        stop music
-        "I answer the phone."
-        mc "Yuri?"
-        jump y_hangout_ask
+if natsuki_continued_hug == True or natsuki_hug == True:
+    "Thankfully, judging by the tone in Natsuki's voice, it doesn't sound like anything bad happened..."
+    jump n_hangout_ask
+
+if natsuki_continued_hug == False or natsuki_hug == False:
+    "Thankfully, judging by the tone in Natsuki's voice, she seems to have cooled off from earlier..."
+    jump n_hangout_ask
+
+
+
+
+
+label y_mono2:
+
+"I really do think I like Yuri..."
+
+if encore_festivalquestion_2 == "Natsuki":
+    "Having spent the last few days getting to know her has truly been something..."
+
+if encore_festivalquestion_2 == "Yuri":
+    "Having spent the last two weeks getting to know her has truly been something..."
+
+"It's truly amazing how far we've come in such a relatively short amount of time..."
+"At first I thought she wanted to stay to herself, but now she has no problem talking to me!"
+"I even think I'm starting to take an appreciation to her demenaor..."
+"And well, she can clearly put up with me now..."
+"I didn't know it at the time, but I didn't think we'd be able to get along as well as we do now."
+"Considering how shy she was and everything..."
+"But the more I think about it, especially with what happened earlier, I think I understand why Yuri always acts so reserved and distant from everyone else..."
+"The more I think about it...{w=0.38}the more worried I am about her saftey..."
+
+if tell_monika == True:
+    "If she does actually cut herself...{w=0.38}what else is she doing?"
+    "Why is she doing it?"
+    "And how long has she been doing it?"
+    "There's just more questions than answers right now..."
+    "I just hope I can talk about it with her in an honest fashion..."
+
+if tell_monika == False:
+    "I'm not completelty convinced that thise were ordinary cat scratches..."
+    "And if she's actually cutting herself and denying it, then that's a serious problem in of itself..."
+    "But...{w=0.38}maybe I don't need Monika's help on this..."
+    "Maybe I can talk to Yuri about this one-on-one?"
+    "I mean, I hope she trusts me that much..."
+
+"But, maybe there's a chance she was just telling me the truth and didn't want me to worry..."
+"It'd be kind of funny if I ended up stressing all over this for nothing..."
+"I guess I really do care about her, huh?"
+"I've really become more invested in her the more time I've spent around her..."
+"No matter what it is we're doing, whether it be reading, drinking tea, or just even talking, being in Yuri's presence alone is its own reward."
+"Even though Yuri might think she might be boring me, I kind of like it when she goes on her little tangents..."
+"She always has something interesting and insightful to say about practically anything!"
+"In fact, I'm just surprised she doesn't find me boring, considering my tastes in literature is rather non-existent..."
+"Hopefully, Yuri feels the same way about me as I do about her, and I think she does..."
+"She's become much more relaxed around me since when we first started talking."
+"Even if it did take some time to get used to each other..."
+"She's never really hesistated to talk to me once we got accquainted..."
+"And yesterday, she esclated things all on her own, something I thought she'd never do..."
+"If we we were alone, we might've actually gotten the chance to kiss..."
+"And I'd be the luckiest guy on Earth to have kissed someone as beautiful as Yuri..."
+"While I don't exactly expect for Yuri to be the one to confess her feelings to me directly, I do think she's been trying to say lately she does have mutual feelings..."
+"So, I guess it'll be up to me to figure out how to put it to her that I just want to be more than her friend..."
+"Though that also poses a problem for me..."
+"I know Natsuki likes me back...{w=0.38}I mean she confessed to me through her poem..."
+"And Sayori...{w=0.38}well I already know how she feels about me..."
+"If I do ultimately go for Yuri, I would have to break Natsuki's heart..."
+"And Sayori likely wouldn't have a a great inital reaction either..."
+"So it seems no matter what I do, someone's going to get hurt thanks to my choice..."
+"And my odds of getting a harem are probably non-existent, at least practically speaking..."
+"I'm going to have to choose one of them by the end of this..."
+"And...{w=0.38}I don't think I have the feelings to go for Sayori, especially since I already turned her down once..."
+"I just don't have those kinds of feelings for her, even if part of me still entertains the idea every now and then..."
+
+
+if encore_festivalquestion_2 == "Natsuki":
+    "I mean, maybe I could give Natsuki another chance..."
+    "We did have a good thing going for a while..."
+    "But...{w=0.38}I guess my interest in her has just kind of faded recently..."
+    "I sigh as I pull up my phone and scroll through my picture gallery."
+    "As I'm scrolling, I come across some pictures I took with Natsuki at the festival."
+    "Looking back at some of the photos, I see just how happy we look doing all these silly poses throughout the festival."
+    "It's funny how most of these photos were her idea..."
+    "I scroll to the last photo which is us standing by the entrance to the school at the end of the festival."
+    "I notice just how close together we are in this photo, with her even wrapping her arm around me."
+    "Huh...{w=0.38}I guess we would make a good couple..."
+    play music e17
+    "Suddenly my phone starts to ring."
+    "I look down at the number...{w=0.38}I don't recongize it."
+    "Eh, I'm not doing anything right now..."
+    "It's probably just a wrong number..."
+    stop music
+    "I answer the phone."
+    mc "Hello?"
+    jump y_hangout_ask
+
+
+if encore_festivalquestion_2 == "Yuri":
+    "I mean, maybe I could give Natsuki a chance and see if we have any real chemistry..."
+    "But from the times I've interacted with her, I don't think there's much room for us to grow like that..."
+    "I sigh as I pull up my phone and scroll through my picture gallery."
+    "As I'm scrolling, I come across some pictures I took with Yuri at the festival."
+    "Looking back at some of the photos, I see just how happy we look doing all these silly poses throughout the festival."
+    "I'm surprised she even agreed to do them with me..."
+    "I scroll to the last photo which is us standing by the entrance to the school at the end of the festival."
+    "I notice just how close together we are in this photo, with her even letting em wrap my arm around her."
+    "Maybe we would make a good couple..."
+    play music e17
+    "Suddenly my phone starts to ring."
+    "I look down at the contact name...{w=0.38}it's Yuri!"
+    "Why is she calling me?"
+    stop music
+    "I answer the phone."
+    mc "Yuri?"
+    jump y_hangout_ask
 
 
 
@@ -9724,224 +9844,225 @@ y "Oh..."
 #These can't repeat
 #No Sayori
 
-if encore_sayoriquestion_1 == True:
 
-        "I know I love Sayori."
-        "I do..."
-        "I've enjoyed every moment I've been around her..."
-        "Even if she's a bit much to handle at times..."
+label mix_mono1:
 
-        if hangout1 == "Natsuki" or hangout1 == "Yuri" or  hangout1 == "Monika":
-            if hangout2 == "Natsuki" or hangout2 == "Yuri" or  hangout2 == "Monika":
-                "But...{w=0.38}lately I've found myself having fun spending time around [hangout1] and [hangout2]..."
-                "And I can't stop myself from wanting to spend more time around them..."
+"I know I love Sayori."
+"I do..."
+"I've enjoyed every moment I've been around her..."
+"Even if she's a bit much to handle at times..."
 
-                if encore_festivalquestion_2 == "Natsuki":
-                    if hangout1 == "Natsuki":
-                        if hangout2 == "Yuri" or hangout2 == "Monika":
-                            "It was nice to catch up with Natsuki again..."
-                            "But I had even more fun with [hangout2] yesterday, even though I had no intention of getting so close to her..."
+if hangout1 == "Natsuki" or hangout1 == "Yuri" or  hangout1 == "Monika":
+    if hangout2 == "Natsuki" or hangout2 == "Yuri" or  hangout2 == "Monika":
+        "But...{w=0.38}lately I've found myself having fun spending time around [hangout1] and [hangout2]..."
+        "And I can't stop myself from wanting to spend more time around them..."
 
-                if encore_festivalquestion_2 == "Natsuki":
-                    if hangout1 == "Yuri":
-                        if hangout2 == "Natsuki":
-                            "It was nice to finally spend sometime around Natsuki..."
-                            "Getting close to her reminded me of the fun we had on Sunday..."
+        if encore_festivalquestion_2 == "Natsuki":
+            if hangout1 == "Natsuki":
+                if hangout2 == "Yuri" or hangout2 == "Monika":
+                    "It was nice to catch up with Natsuki again..."
+                    "But I had even more fun with [hangout2] yesterday, even though I had no intention of getting so close to her..."
 
-                if encore_festivalquestion_2 == "Natsuki":
-                    if hangout1 == "Monika":
-                        if hangout2 == "Natsuki":
-                            "It was nice to finally talk to Monika a little bit more than usual..."
-                            "But, I had fun spend time around Natsuki on Tuesday..."
-                            "Getting close to her reminded me of the fun we had on Sunday..."
+        if encore_festivalquestion_2 == "Natsuki":
+            if hangout1 == "Yuri":
+                if hangout2 == "Natsuki":
+                    "It was nice to finally spend sometime around Natsuki..."
+                    "Getting close to her reminded me of the fun we had on Sunday..."
 
-                if encore_festivalquestion_2 == "Yuri":
-                    if hangout1 == "Natsuki":
-                        if hangout2 == "Yuri":
-                            "It was nice to finally spend sometime around Natsuki..."
-                            "Getting close to her reminded me of the fun we had on Sunday..."
+        if encore_festivalquestion_2 == "Natsuki":
+            if hangout1 == "Monika":
+                if hangout2 == "Natsuki":
+                    "It was nice to finally talk to Monika a little bit more than usual..."
+                    "But, I had fun spend time around Natsuki on Tuesday..."
+                    "Getting close to her reminded me of the fun we had on Sunday..."
 
-                if encore_festivalquestion_2 == "Yuri":
-                    if hangout1 == "Yuri":
-                        if hangout2 == "Natsuki" or hangout2 == "Monika":
-                            "It was nice to catch up with Yuri again..."
-                            "But I had even more fun with Natsuki yesterday, even though I had no intention of getting so close to her..."
+        if encore_festivalquestion_2 == "Yuri":
+            if hangout1 == "Natsuki":
+                if hangout2 == "Yuri":
+                    "It was nice to finally spend sometime around Natsuki..."
+                    "Getting close to her reminded me of the fun we had on Sunday..."
 
-                if encore_festivalquestion_2 == "Yuri":
-                    if hangout1 == "Monika":
-                        if hangout2 == "Yuri":
-                            "It was nice to finally talk to Monika a little bit more than usual..."
-                            "But, I had fun spend time around Yuri on Tuesday..."
-                            "Getting close to her reminded me of the fun we had on Sunday..."
+        if encore_festivalquestion_2 == "Yuri":
+            if hangout1 == "Yuri":
+                if hangout2 == "Natsuki" or hangout2 == "Monika":
+                    "It was nice to catch up with Yuri again..."
+                    "But I had even more fun with Natsuki yesterday, even though I had no intention of getting so close to her..."
 
-
-
-                "Even though I was still in the wrong..."
-
-                if apologize_sn == False or apologize_sy == False or apologize_sm == False:
-                    "What's even worse is that I tried to lie about it to Sayori's face..."
-                    "And even though I still ended up telling the truth and apologizing for it..."
-
-                if apologize_sn == True or apologize_sy == True or apologize_sm == True:
-                    "At least I apologized to her about it..."
-
-                "Still, I can't change the fact that I've seriously damaged my relationship with Sayori..."
-
-                if hangout3 == "Sayori":
-                    "Though I've been trying to make up for it by spending time with her today..."
-
-                    if sayori_ice == True:
-                        "And I guess it helped..."
-
-                    if sayori_ice == False:
-                        "But I'm not exactly sure if it helped or not..."
-
-                "But the damage has been done and she hardly trusts me now..."
-                "Even if she won't admit it..."
-                "I'm just making things worse for her, and she's already in a fragile state of mind!"
-                "Why am I so bad at looking after for Sayori? I've been messing it up for years at this point and then I decide to get into a relationship with her?"
-
-                if hangout3 == "Natsuki" or hangout3 == "Monika" or hangout3 == "Yuri":
-                    "And I really haven't done anything to make up for that lost trust, especially when I had an opportunity to spend some time with her today..."
-
-                    if hangout3 == "Natsuki":
-
-                        if hangout2 == "Natsuki":
-                            "I've just spent the last two days with Natsuki..."
-                            "And I feel myself growing more attracted to her..."
-
-                        if hangout2 == else:
-                            "I've just spent the last two days with [hangout2] and Natsuki..."
-                            "And I really can't decide who I've enjoyed spending time with more..."
-
-
-                    if hangout3 == "Monika":
-
-                        if hangout2 == "Monika":
-                            "I've just spent the last two days with Monika..."
-                            "And I feel myself growing more attracted to her..."
-
-                        if hangout2 == else:
-                            "I've just spent the last two days with [hangout2] and Monika..."
-                            "And I really can't decide who I've enjoyed spending time with more..."
-
-                    if hangout3 == "Yuri":
-
-                        if hangout2 == "Yuri":
-                            "I've just spent the last two days with Yuri.."
-                            "And I feel myself growing more attracted to her..."
-
-                        if hangout2 == else:
-                            "I've just spent the last two days with [hangout2] and Yuri..."
-                            "And I really can't decide who I've enjoyed spending time with more..."
-
-
-                "I let a sigh to myself."
-                "Maybe I made a mistake..."
-                "Maybe I said yes too early, even if things were going well for us at first..."
-                "After all, I did kind of decide it on the spot..."
-                "And now I have to deal with the weight of that decision."
-                "With me unable to decide who I like the most..."
-                "I guess Monika was right..."
-                "Maybe my relationship with Sayori is doomed to fail if I keep thinking like this..."
-                "I don't know who I like anymore, even though Sayori and [poem_giver] have feelings for me..."
-                "I roll over to face my bookshelves."
-                "On one of the shelves, I spot a picture of me and Sayori at the carnival."
-                "Man...{w=0.38}that must've been at least ten years ago..."
-                "Do I really have it in me to tell her, that same girl, who's now my girlfriend, that I want to dump her for another relationship that's not even guraunteed to work out?"
-                "And risk possibly ending the club?"
-                "I get out of my bed and walk over to pick up the picture frame."
-                "Upon a closer look, I see Sayori clutching a familar giant sized cow..."
-                "Huh...{w=0.38}I almost forgot that's when I won it for her..."
-                "I always did tell Sayori that she deserved the best..."
-                "My hand starts to shake as tears start to swell up in my eyes."
-                "Could I really do it?"
-                "Is it even right to think this way?"
-                "No matter who I choose...{w=0.38}someone's getting heartbroken because of me..."
-                "And when I do make that decision, how am I going to live with myself?"
+        if encore_festivalquestion_2 == "Yuri":
+            if hangout1 == "Monika":
+                if hangout2 == "Yuri":
+                    "It was nice to finally talk to Monika a little bit more than usual..."
+                    "But, I had fun spend time around Yuri on Tuesday..."
+                    "Getting close to her reminded me of the fun we had on Sunday..."
 
 
 
-                if hangout3 == "Natsuki" or hangout3 == "Yuri":
-                    play music e17
-                    "Suddenly I hear my phone ringing."
-                    "I put the picture frame down and run over to my phone to see who's calling."
+"Even though I was still in the wrong..."
 
-                if hangout3 == "Monika":
-                    "Agh! This is hopeless!"
-                    "I'm being pulled in all directions!"
-                    "Maybe a walk will help me clear my head..."
-                    "I'd probably be able to think better that way..."
-                    "And maybe along the way I'll figure out who I feel the most strongly towards..."
-                    "I put the picture frame back, grab my keys and walk out of my house."
-                    jump m_hangout_ask
+if apologize_sn == False or apologize_sy == False or apologize_sm == False:
+    "What's even worse is that I tried to lie about it to Sayori's face..."
+    "And even though I still ended up telling the truth and apologizing for it..."
 
-                if hangout3 == "Sayori":
-                    play music e17
-                    "Suddenly I hear my phone ringing."
-                    "I put the picture frame down and run over to my phone to see who's calling."
-                    "To my surprise...{w=0.38}it's Sayori!"
-                    "Why is she calling me? We saw each other like ten minutes ago..."
-                    stop music
-                    jump s_hangout_ask
+if apologize_sn == True or apologize_sy == True or apologize_sm == True:
+    "At least I apologized to her about it..."
 
-                    if hangout3 == "Natsuki":
+"Still, I can't change the fact that I've seriously damaged my relationship with Sayori..."
 
-                        if encore_festivalquestion_2 == "Natsuki":
-                            "To my surprise...{w=0.38}it's Natsuki!"
-                            "Why is she calling me?"
-                            "I just hope something didn't happen..."
-                            stop music
-                            "I answer the phone."
-                            mc "Natsuki?"
-                            n "Hey, [player]!"
-                            mc "W-{w=0.38}what's up?"
-                            n "Why do you sound so surprised?"
-                            mc "I just...{w=0.38}wasn't expecting you to call, that's all!"
-                            n "I guess that's true..."
+if hangout3 == "Sayori":
+    "Though I've been trying to make up for it by spending time with her today..."
 
-                        if encore_festivalquestion_2 == "Yuri":
-                            "I look down at the number...{w=0.38}I don't recongize it."
-                            "Eh, I'm not doing anything right now..."
-                            "At worst I'll be talking to a telemarkter..."
-                            stop music
-                            "I answer the phone."
-                            mc "Hello?"
-                            n "[player]? Is that you?"
-                            mc "Y-{w=0.38}yeah...{w=0.38}what's up?"
-                            n "Why do you sound so surprised?"
-                            mc "Well, I don't remember giving you my number..."
-                            n "Sayori told me what it was."
-                            "Figured she would do that..."
+    if sayori_ice == True:
+        "And I guess it helped..."
+
+    if sayori_ice == False:
+        "But I'm not exactly sure if it helped or not..."
+
+"But the damage has been done and she hardly trusts me now..."
+"Even if she won't admit it..."
+"I'm just making things worse for her, and she's already in a fragile state of mind!"
+"Why am I so bad at looking after for Sayori? I've been messing it up for years at this point and then I decide to get into a relationship with her?"
+
+if hangout3 == "Natsuki" or hangout3 == "Monika" or hangout3 == "Yuri":
+    "And I really haven't done anything to make up for that lost trust, especially when I had an opportunity to spend some time with her today..."
+
+    if hangout3 == "Natsuki":
+
+        if hangout2 == "Natsuki":
+            "I've just spent the last two days with Natsuki..."
+            "And I feel myself growing more attracted to her..."
+
+        else:
+            "I've just spent the last two days with [hangout2] and Natsuki..."
+            "And I really can't decide who I've enjoyed spending time with more..."
 
 
-                        if natsuki_continued_hug == True or natsuki_hug == True:
-                            "Thankfully, judging by the tone in Natsuki's voice, it doesn't sound like anything bad happened..."
-                            jump n_hangout_ask
+    if hangout3 == "Monika":
 
-                        if natsuki_continued_hug == False or natsuki_hug == False:
-                            "Thankfully, judging by the tone in Natsuki's voice, she seems to have cooled off from earlier..."
-                            jump n_hangout_ask
+        if hangout2 == "Monika":
+            "I've just spent the last two days with Monika..."
+            "And I feel myself growing more attracted to her..."
+
+        else:
+            "I've just spent the last two days with [hangout2] and Monika..."
+            "And I really can't decide who I've enjoyed spending time with more..."
+
+    if hangout3 == "Yuri":
+
+        if hangout2 == "Yuri":
+            "I've just spent the last two days with Yuri.."
+            "And I feel myself growing more attracted to her..."
+
+        else:
+            "I've just spent the last two days with [hangout2] and Yuri..."
+            "And I really can't decide who I've enjoyed spending time with more..."
 
 
-                    if hangout3 == "Yuri":
+"I let a sigh to myself."
+"Maybe I made a mistake..."
+"Maybe I said yes too early, even if things were going well for us at first..."
+"After all, I did kind of decide it on the spot..."
+"And now I have to deal with the weight of that decision."
+"With me unable to decide who I like the most..."
+"I guess Monika was right..."
+"Maybe my relationship with Sayori is doomed to fail if I keep thinking like this..."
+"I don't know who I like anymore, even though Sayori and [poem_giver] have feelings for me..."
+"I roll over to face my bookshelves."
+"On one of the shelves, I spot a picture of me and Sayori at the carnival."
+"Man...{w=0.38}that must've been at least ten years ago..."
+"Do I really have it in me to tell her, that same girl, who's now my girlfriend, that I want to dump her for another relationship that's not even guraunteed to work out?"
+"And risk possibly ending the club?"
+"I get out of my bed and walk over to pick up the picture frame."
+"Upon a closer look, I see Sayori clutching a familar giant sized cow..."
+"Huh...{w=0.38}I almost forgot that's when I won it for her..."
+"I always did tell Sayori that she deserved the best..."
+"My hand starts to shake as tears start to swell up in my eyes."
+"Could I really do it?"
+"Is it even right to think this way?"
+"No matter who I choose...{w=0.38}someone's getting heartbroken because of me..."
+"And when I do make that decision, how am I going to live with myself?"
 
-                        if encore_festivalquestion_2 == "Natsuki":
-                            "I look down at the number...{w=0.38}I don't recongize it."
-                            "Eh, I'm not doing anything right now..."
-                            "It's probably just a wrong number..."
-                            stop music
-                            "I answer the phone."
-                            mc "Hello?"
-                            jump y_hangout_ask
 
-                        if encore_festivalquestion_2 == "Yuri":
-                            "I look down at the contact name...{w=0.38}it's Yuri!"
-                            "Why is she calling me?"
-                            stop music
-                            "I answer the phone."
-                            mc "Yuri?"
-                            jump y_hangout_ask
+
+if hangout3 == "Natsuki" or hangout3 == "Yuri":
+    play music e17
+    "Suddenly I hear my phone ringing."
+    "I put the picture frame down and run over to my phone to see who's calling."
+
+if hangout3 == "Monika":
+    "Agh! This is hopeless!"
+    "I'm being pulled in all directions!"
+    "Maybe a walk will help me clear my head..."
+    "I'd probably be able to think better that way..."
+    "And maybe along the way I'll figure out who I feel the most strongly towards..."
+    "I put the picture frame back, grab my keys and walk out of my house."
+    jump m_hangout_ask
+
+if hangout3 == "Sayori":
+    play music e17
+    "Suddenly I hear my phone ringing."
+    "I put the picture frame down and run over to my phone to see who's calling."
+    "To my surprise...{w=0.38}it's Sayori!"
+    "Why is she calling me? We saw each other like ten minutes ago..."
+    stop music
+    jump s_hangout_ask
+
+    if hangout3 == "Natsuki":
+
+        if encore_festivalquestion_2 == "Natsuki":
+            "To my surprise...{w=0.38}it's Natsuki!"
+            "Why is she calling me?"
+            "I just hope something didn't happen..."
+            stop music
+            "I answer the phone."
+            mc "Natsuki?"
+            n "Hey, [player]!"
+            mc "W-{w=0.38}what's up?"
+            n "Why do you sound so surprised?"
+            mc "I just...{w=0.38}wasn't expecting you to call, that's all!"
+            n "I guess that's true..."
+
+        if encore_festivalquestion_2 == "Yuri":
+            "I look down at the number...{w=0.38}I don't recongize it."
+            "Eh, I'm not doing anything right now..."
+            "At worst I'll be talking to a telemarkter..."
+            stop music
+            "I answer the phone."
+            mc "Hello?"
+            n "[player]? Is that you?"
+            mc "Y-{w=0.38}yeah...{w=0.38}what's up?"
+            n "Why do you sound so surprised?"
+            mc "Well, I don't remember giving you my number..."
+            n "Sayori told me what it was."
+            "Figured she would do that..."
+
+
+        if natsuki_continued_hug == True or natsuki_hug == True:
+            "Thankfully, judging by the tone in Natsuki's voice, it doesn't sound like anything bad happened..."
+            jump n_hangout_ask
+
+        if natsuki_continued_hug == False or natsuki_hug == False:
+            "Thankfully, judging by the tone in Natsuki's voice, she seems to have cooled off from earlier..."
+            jump n_hangout_ask
+
+
+    if hangout3 == "Yuri":
+
+        if encore_festivalquestion_2 == "Natsuki":
+            "I look down at the number...{w=0.38}I don't recongize it."
+            "Eh, I'm not doing anything right now..."
+            "It's probably just a wrong number..."
+            stop music
+            "I answer the phone."
+            mc "Hello?"
+            jump y_hangout_ask
+
+        if encore_festivalquestion_2 == "Yuri":
+            "I look down at the contact name...{w=0.38}it's Yuri!"
+            "Why is she calling me?"
+            stop music
+            "I answer the phone."
+            mc "Yuri?"
+            jump y_hangout_ask
 
 
 
@@ -9951,219 +10072,224 @@ if encore_sayoriquestion_1 == True:
 #Sayori must be one of these options
 
 
-if encore_sayoriquestion_1 == True:
+label mix_mono2:
 
-        "I know I love Sayori."
-        "I do..."
-        "I've enjoyed every moment I've been around her..."
-        "Even if she's a bit much to handle at times..."
-        "But I don't know if she really has my undivided attention at this point..."
-
-
-        if hangout1 == "Sayori":
-            if hangout2 == "Natsuki" or hangout2 == "Yuri" or hangout2 == "Monika":
-                "Especially after I spent yesterday with [hangout2]..."
-                "Granted, I didn't expect [hangout2] to get so close to me like that..."
-                "It still felt nice...{w=0.38}even though it was wrong for me to be in that position for so long in the first place..."
-
-                if apologize_sn == False or apologize_sy == False or apologize_sm == False:
-                    "What's even worse is that I tried to lie about it to Sayori's face..."
-                    "And even though I still ended up telling the truth and apologizing for it..."
-
-                if apologize_sn == True or apologize_sy == True or apologize_sm == True:
-                    "At least I apologized to her about it..."
-
-                "But I can't deny that I still hurt her pretty badly..."
-                "And given how she's been lately, I know I shouldn't be getting myself into positions like that with the others..."
-                "Not to mention I still have to figure out how to respond to [poem_giver]'s poem..."
-                "And if I tell Sayori about it, she's only going to get more suspicious of me..."
+"I know I love Sayori."
+"I do..."
+"I've enjoyed every moment I've been around her..."
+"Even if she's a bit much to handle at times..."
+"But I don't know if she really has my undivided attention at this point..."
 
 
-        if hangout1 == "Natsuki" or hangout1 == "Yuri" or hangout1 == "Monika":
-            if hangout2 == "Sayori":
+if hangout1 == "Sayori":
+    if hangout2 == "Natsuki" or hangout2 == "Yuri" or hangout2 == "Monika":
+        "Especially after I spent yesterday with [hangout2]..."
+        "Granted, I didn't expect [hangout2] to get so close to me like that..."
+        "It still felt nice...{w=0.38}even though it was wrong for me to be in that position for so long in the first place..."
 
+        if apologize_sn == False or apologize_sy == False or apologize_sm == False:
+            "What's even worse is that I tried to lie about it to Sayori's face..."
+            "And even though I still ended up telling the truth and apologizing for it..."
+
+        if apologize_sn == True or apologize_sy == True or apologize_sm == True:
+            "At least I apologized to her about it..."
+
+        "But I can't deny that I still hurt her pretty badly..."
+        "And given how she's been lately, I know I shouldn't be getting myself into positions like that with the others..."
+        "Not to mention I still have to figure out how to respond to [poem_giver]'s poem..."
+        "And if I tell Sayori about it, she's only going to get more suspicious of me..."
+
+
+if hangout1 == "Natsuki" or hangout1 == "Yuri" or hangout1 == "Monika":
+    if hangout2 == "Sayori":
+
+
+        if hangout1 == "Natsuki":
+            if encore_festivalquestion_2 == "Natsuki":
+                "It was really nice to catch up with Natsuki again..."
+                "Especially since we had so much preparing for and at the festival..."
+
+
+
+            if hangout1 == "Yuri":
                 if encore_festivalquestion_2 == "Natsuki":
-                    if hangout1 == "Natsuki":
-                        "It was really nice to catch up with Natsuki again..."
-                        "Especially since we had so much preparing for and at the festival..."
+                    "It was really nice to finally spend sometime around Yuri..."
+                    "Given that we haven't really talked much since I first joined..."
 
 
-                if encore_festivalquestion_2 == "Natsuki":
-                    if hangout1 == "Yuri":
-                        "It was really nice to finally spend sometime around Yuri..."
-                        "Given that we haven't really talked much since I first joined..."
 
-
+            if hangout1 == "Monika":
                 if encore_festivalquestion_2 == "Natsuki" or encore_festivalquestion_2 == "Yuri":
-                    if hangout1 == "Monika":
-                        "It was really nice to finally talk to Monika a little bit more than usual..."
-                        "Given that we've never really talked with each other..."
+                    "It was really nice to finally talk to Monika a little bit more than usual..."
+                    "Given that we've never really talked with each other..."
 
 
+
+            if hangout1 == "Natsuki":
                 if encore_festivalquestion_2 == "Yuri":
-                    if hangout1 == "Natsuki":
-                        "It was really nice to finally spend sometime around Natsuki..."
-                        "Given that we haven't really talked much since I first joined..."
+                    "It was really nice to finally spend sometime around Natsuki..."
+                    "Given that we haven't really talked much since I first joined..."
 
+
+            if hangout1 == "Yuri":
                 if encore_festivalquestion_2 == "Yuri":
-                    if hangout1 == "Yuri":
-                        "It was really nice to catch up with Yuri again..."
-                        "Especially since we had so much preparing for and at the festival..."
+                    "It was really nice to catch up with Yuri again..."
+                    "Especially since we had so much preparing for and at the festival..."
 
 
-                    "But she really didn't seem to like seeing Sayori rest on me like that..."
-                    "Maybe she could be jealous?"
-                    "I mean it would make sense for [poem_giver] to be, since I know she likes me..."
+            "But she really didn't seem to like seeing Sayori rest on me like that..."
+            "Maybe she could be jealous?"
+            "I mean it would make sense for [poem_giver] to be, since I know she likes me..."
 
-                    if hangout3 == "Sayori":
-                        "And she really wanted to spend more time around me today..."
-                        "Though, I felt the need look after Sayori..."
+            if hangout3 == "Sayori":
+                "And she really wanted to spend more time around me today..."
+                "Though, I felt the need look after Sayori..."
 
-                        if sayori_ice == True:
-                            "And I guess spending time around her today helped..."
+                if sayori_ice == True:
+                    "And I guess spending time around her today helped..."
 
-                        if sayori_ice == False:
-                            "But I'm not exactly sure if I helped her or not..."
+                if sayori_ice == False:
+                    "But I'm not exactly sure if I helped her or not..."
 
-                        "Still, I can't deny that I had fun spending time around her..."
-                        "It brought back a sense of nostalgia from our childhood..."
-                        "Before all this craziniess...{w=0.38}when things were so much simpler back then..."
-                        "And for once...{w=0.38}we got to reminisce a little together..."
+            "Still, I can't deny that I had fun spending time around her..."
+            "It brought back a sense of nostalgia from our childhood..."
+            "Before all this craziniess...{w=0.38}when things were so much simpler back then..."
+            "And for once...{w=0.38}we got to reminisce a little together..."
 
-
-                    if hangout3 == "Natsuki":
-                        "But Natuski seemed to have gotten over it by the time we were done hanging out..."
-
-                        if natsuki_continued_hug == True or natsuki_hug == True:
-                            "Especially with what she told me about her home life...
-                            "It's got me worried for her saftey, even though I haven't known her that long..."
-                            "I still care about her..."
-
-                        if natsuki_continued_hug == False or natsuki_hug == False:
-                            "Even though she ended up blowing up at me later..."
-                            "Ah, I'm sure she'll cool down..."
-                            "I still care about her..."
-
-                    if hangout3 == "Monika":
-                        "But Monika didn't really seem to show any signs of jealously when I was around her today..."
-                        "In fact, she almost acted like it never even happened..."
-
-
-                    if hangout3 == "Yuri":
-                        "But Yuri seemed to have gotten over it by the time we were done hanging out..."
-                        "Though she ended up getting mad at me because I pressed her on what I thought I saw..."
-                        "It's got me worried for her saftey, even though I haven't known her that long..."
-                        "I still care about her..."
-
-
-
-
-
-        "I let a sigh to myself."
-        "Maybe I made a mistake..."
-        "Maybe I said yes too early, without really getting the chance to know everyone first..."
-        "After all, I did kind of decide it on the spot..."
-        "And now I have to deal with the weight of that decision."
-        "With me unable to decide who I like the most..."
-        "I guess Monika was right..."
-        "Maybe my relationship with Sayori is doomed to fail if I keep thinking like this..."
-        "I don't know who I like anymore, even though Sayori and [poem_giver] have feelings for me..."
-        "I roll over to face my bookshelves."
-        "On one of the shelves, I spot a picture of me and Sayori at the carnival."
-        "Man...{w=0.38}that must've been at least ten years ago..."
-        "Do I really have it in me to tell her, that same girl, who's now my girlfriend, that I want to dump her for another relationship that's not even guraunteed to work out?"
-        "And risk possibly ending the club?"
-        "I get out of my bed and walk over to pick up the picture frame."
-        "Upon a closer look, I see Sayori clutching a familar giant sized cow..."
-        "Huh...{w=0.38}I almost forgot that's when I won it for her..."
-        "I always did tell Sayori that she deserved the best..."
-        "My hand starts to shake as tears start to swell up in my eyes."
-        "Could I really do it?"
-        "Is it even right to think this way?"
-        "No matter who I choose...{w=0.38}someone's getting heartbroken because of me..."
-        "And when I do make that decision, how am I going to live with myself?"
-
-
-        if hangout3 == "Natsuki" or hangout3 == "Yuri":
-            play music e17
-            "Suddenly I hear my phone ringing."
-            "I put the picture frame down and run over to my phone to see who's calling."
-
-        if hangout3 == "Monika":
-            "Agh! This is hopeless!"
-            "I'm being pulled in all directions!"
-            "Maybe a walk will help me clear my head..."
-            "I'd probably be able to think better that way..."
-            "And maybe along the way I'll figure out who I feel the most strongly towards..."
-            "I put the picture frame back, grab my keys and walk out of my house."
-            jump m_hangout_ask
-
-        if hangout3 == "Sayori":
-            play music e17
-            "Suddenly I hear my phone ringing."
-            "I put the picture frame down and run over to my phone to see who's calling."
-            "To my surprise...{w=0.38}it's Sayori!"
-            "Why is she calling me? We saw each other like ten minutes ago..."
-            stop music
-            jump s_hangout_ask
 
             if hangout3 == "Natsuki":
-
-                if encore_festivalquestion_2 == "Natsuki":
-                    "To my surprise...{w=0.38}it's Natsuki!"
-                    "Why is she calling me?"
-                    "I just hope something didn't happen..."
-                    stop music
-                    "I answer the phone."
-                    mc "Natsuki?"
-                    n "Hey, [player]!"
-                    mc "W-{w=0.38}what's up?"
-                    n "Why do you sound so surprised?"
-                    mc "I just...{w=0.38}wasn't expecting you to call, that's all!"
-                    n "I guess that's true..."
-
-                if encore_festivalquestion_2 == "Yuri":
-                    "I look down at the number...{w=0.38}I don't recongize it."
-                    "Eh, I'm not doing anything right now..."
-                    "At worst I'll be talking to a telemarkter..."
-                    stop music
-                    "I answer the phone."
-                    mc "Hello?"
-                    n "[player]? Is that you?"
-                    mc "Y-{w=0.38}yeah...{w=0.38}what's up?"
-                    n "Why do you sound so surprised?"
-                    mc "Well, I don't remember giving you my number..."
-                    n "Sayori told me what it was."
-                    "Figured she would do that..."
-
+                "But Natuski seemed to have gotten over it by the time we were done hanging out..."
 
                 if natsuki_continued_hug == True or natsuki_hug == True:
-                    "Thankfully, judging by the tone in Natsuki's voice, it doesn't sound like anything bad happened..."
-                    jump n_hangout_ask
+                    "Especially with what she told me about her home life..."
+                    "It's got me worried for her saftey, even though I haven't known her that long..."
+                    "I still care about her..."
 
                 if natsuki_continued_hug == False or natsuki_hug == False:
-                    "Thankfully, judging by the tone in Natsuki's voice, she seems to have cooled off from earlier..."
-                    jump n_hangout_ask
+                    "Even though she ended up blowing up at me later..."
+                    "Ah, I'm sure she'll cool down..."
+                    "I still care about her..."
+
+            if hangout3 == "Monika":
+                "But Monika didn't really seem to show any signs of jealously when I was around her today..."
+                "In fact, she almost acted like it never even happened..."
 
 
             if hangout3 == "Yuri":
+                "But Yuri seemed to have gotten over it by the time we were done hanging out..."
+                "Though she ended up getting mad at me because I pressed her on what I thought I saw..."
+                "It's got me worried for her saftey, even though I haven't known her that long..."
+                "I still care about her..."
 
-                if encore_festivalquestion_2 == "Natsuki":
-                    "I look down at the number...{w=0.38}I don't recongize it."
-                    "Eh, I'm not doing anything right now..."
-                    "It's probably just a wrong number..."
-                    stop music
-                    "I answer the phone."
-                    mc "Hello?"
-                    jump y_hangout_ask
 
-                if encore_festivalquestion_2 == "Yuri":
-                    "I look down at the contact name...{w=0.38}it's Yuri!"
-                    "Why is she calling me?"
-                    stop music
-                    "I answer the phone."
-                    mc "Yuri?"
-                    jump y_hangout_ask
+
+
+
+"I let a sigh to myself."
+"Maybe I made a mistake..."
+"Maybe I said yes too early, without really getting the chance to know everyone first..."
+"After all, I did kind of decide it on the spot..."
+"And now I have to deal with the weight of that decision."
+"With me unable to decide who I like the most..."
+"I guess Monika was right..."
+"Maybe my relationship with Sayori is doomed to fail if I keep thinking like this..."
+"I don't know who I like anymore, even though Sayori and [poem_giver] have feelings for me..."
+"I roll over to face my bookshelves."
+"On one of the shelves, I spot a picture of me and Sayori at the carnival."
+"Man...{w=0.38}that must've been at least ten years ago..."
+"Do I really have it in me to tell her, that same girl, who's now my girlfriend, that I want to dump her for another relationship that's not even guraunteed to work out?"
+"And risk possibly ending the club?"
+"I get out of my bed and walk over to pick up the picture frame."
+"Upon a closer look, I see Sayori clutching a familar giant sized cow..."
+"Huh...{w=0.38}I almost forgot that's when I won it for her..."
+"I always did tell Sayori that she deserved the best..."
+"My hand starts to shake as tears start to swell up in my eyes."
+"Could I really do it?"
+"Is it even right to think this way?"
+"No matter who I choose...{w=0.38}someone's getting heartbroken because of me..."
+"And when I do make that decision, how am I going to live with myself?"
+
+
+if hangout3 == "Natsuki" or hangout3 == "Yuri":
+    play music e17
+    "Suddenly I hear my phone ringing."
+    "I put the picture frame down and run over to my phone to see who's calling."
+
+if hangout3 == "Monika":
+    "Agh! This is hopeless!"
+    "I'm being pulled in all directions!"
+    "Maybe a walk will help me clear my head..."
+    "I'd probably be able to think better that way..."
+    "And maybe along the way I'll figure out who I feel the most strongly towards..."
+    "I put the picture frame back, grab my keys and walk out of my house."
+    jump m_hangout_ask
+
+if hangout3 == "Sayori":
+    play music e17
+    "Suddenly I hear my phone ringing."
+    "I put the picture frame down and run over to my phone to see who's calling."
+    "To my surprise...{w=0.38}it's Sayori!"
+    "Why is she calling me? We saw each other like ten minutes ago..."
+    stop music
+    jump s_hangout_ask
+
+    if hangout3 == "Natsuki":
+
+        if encore_festivalquestion_2 == "Natsuki":
+            "To my surprise...{w=0.38}it's Natsuki!"
+            "Why is she calling me?"
+            "I just hope something didn't happen..."
+            stop music
+            "I answer the phone."
+            mc "Natsuki?"
+            n "Hey, [player]!"
+            mc "W-{w=0.38}what's up?"
+            n "Why do you sound so surprised?"
+            mc "I just...{w=0.38}wasn't expecting you to call, that's all!"
+            n "I guess that's true..."
+
+        if encore_festivalquestion_2 == "Yuri":
+            "I look down at the number...{w=0.38}I don't recongize it."
+            "Eh, I'm not doing anything right now..."
+            "At worst I'll be talking to a telemarkter..."
+            stop music
+            "I answer the phone."
+            mc "Hello?"
+            n "[player]? Is that you?"
+            mc "Y-{w=0.38}yeah...{w=0.38}what's up?"
+            n "Why do you sound so surprised?"
+            mc "Well, I don't remember giving you my number..."
+            n "Sayori told me what it was."
+            "Figured she would do that..."
+
+
+        if natsuki_continued_hug == True or natsuki_hug == True:
+            "Thankfully, judging by the tone in Natsuki's voice, it doesn't sound like anything bad happened..."
+            jump n_hangout_ask
+
+        if natsuki_continued_hug == False or natsuki_hug == False:
+            "Thankfully, judging by the tone in Natsuki's voice, she seems to have cooled off from earlier..."
+            jump n_hangout_ask
+
+
+    if hangout3 == "Yuri":
+
+        if encore_festivalquestion_2 == "Natsuki":
+            "I look down at the number...{w=0.38}I don't recongize it."
+            "Eh, I'm not doing anything right now..."
+            "It's probably just a wrong number..."
+            stop music
+            "I answer the phone."
+            mc "Hello?"
+            jump y_hangout_ask
+
+        if encore_festivalquestion_2 == "Yuri":
+            "I look down at the contact name...{w=0.38}it's Yuri!"
+            "Why is she calling me?"
+            stop music
+            "I answer the phone."
+            mc "Yuri?"
+            jump y_hangout_ask
 
 
 
@@ -10174,217 +10300,217 @@ if encore_sayoriquestion_1 == True:
 #These can't repeat
 #No Sayori
 
-if encore_sayoriquestion_1 == False:
+label mix_mono3:
 
-        "I don't even know where to begin..."
-        "My feelings are all over the place..."
-
-
-            if hangout1 == "Natsuki" or hangout1 == "Yuri" or  hangout1 == "Monika":
-                if hangout2 == "Natsuki" or hangout2 == "Yuri" or  hangout2 == "Monika":
-                    "I can't decide if I like spending my time more with [hangout1] or [hangout2]..."
-
-                    if encore_festivalquestion_2 == "Natsuki":
-                        if hangout1 == "Natsuki":
-                            if hangout2 == "Yuri" or hangout2 == "Monika":
-                                "It was really nice to catch up with Natsuki again..."
-                                "But I had even more fun with [hangout2] yesterday, even though I had no intention of getting so close to her..."
+"I don't even know where to begin..."
+"My feelings are all over the place..."
 
 
-                    if encore_festivalquestion_2 == "Natsuki":
-                        if hangout1 == "Yuri":
-                            if hangout2 == "Natsuki":
-                                "It was really nice to finally spend sometime around Natsuki..."
-                                "Getting close to her reminded me of the fun we had on Sunday..."
+if hangout1 == "Natsuki" or hangout1 == "Yuri" or  hangout1 == "Monika":
+    if hangout2 == "Natsuki" or hangout2 == "Yuri" or  hangout2 == "Monika":
+        "I can't decide if I like spending my time more with [hangout1] or [hangout2]..."
 
-                    if encore_festivalquestion_2 == "Natsuki":
-                        if hangout1 == "Monika":
-                            if hangout2 == "Natsuki":
-                                "It was really nice to finally talk to Monika a little bit more than usual..."
-                                "But, I had fun spend time around Natsuki on Tuesday..."
-                                "Getting close to her reminded me of the fun we had on Sunday..."
-
-                    if encore_festivalquestion_2 == "Yuri":
-                        if hangout1 == "Natsuki":
-                            if hangout2 == "Yuri":
-                                "It was really nice to finally spend sometime around Natsuki..."
-                                "Getting close to her reminded me of the fun we had on Sunday..."
-
-                    if encore_festivalquestion_2 == "Yuri":
-                        if hangout1 == "Yuri":
-                            if hangout2 == "Natsuki" or hangout2 == "Monika":
-                                "It was really nice to catch up with Yuri again..."
-                                "But I had even more fun with Natsuki yesterday, even though I had no intention of getting so close to her..."
-
-                    if encore_festivalquestion_2 == "Yuri":
-                        if hangout1 == "Monika":
-                            if hangout2 == "Yuri":
-                                "It was really nice to finally talk to Monika a little bit more than usual..."
-                                "But, I had fun spend time around Yuri on Tuesday..."
-                                "Getting close to her reminded me of the fun we had on Sunday..."
+        if encore_festivalquestion_2 == "Natsuki":
+            if hangout1 == "Natsuki":
+                if hangout2 == "Yuri" or hangout2 == "Monika":
+                    "It was really nice to catch up with Natsuki again..."
+                    "But I had even more fun with [hangout2] yesterday, even though I had no intention of getting so close to her..."
 
 
+        if encore_festivalquestion_2 == "Natsuki":
+            if hangout1 == "Yuri":
+                if hangout2 == "Natsuki":
+                    "It was really nice to finally spend sometime around Natsuki..."
+                    "Getting close to her reminded me of the fun we had on Sunday..."
 
-                    "And I'm really glad we got to share the moment we did yesterday..."
-                    "Even though I didn't ask for it, her embrace felt warm and comforting..."
-                    "Still, I can't change the fact that I've seriously damaged my relationship with Sayori..."
+        if encore_festivalquestion_2 == "Natsuki":
+            if hangout1 == "Monika":
+                if hangout2 == "Natsuki":
+                    "It was really nice to finally talk to Monika a little bit more than usual..."
+                    "But, I had fun spend time around Natsuki on Tuesday..."
+                    "Getting close to her reminded me of the fun we had on Sunday..."
 
-                    if hangout3 == "Sayori":
-                        "Though I've been trying to make up for it by spending time with her today..."
+        if encore_festivalquestion_2 == "Yuri":
+            if hangout1 == "Natsuki":
+                if hangout2 == "Yuri":
+                    "It was really nice to finally spend sometime around Natsuki..."
+                    "Getting close to her reminded me of the fun we had on Sunday..."
 
-                        if sayori_ice == True:
-                            "And I guess it helped..."
+        if encore_festivalquestion_2 == "Yuri":
+            if hangout1 == "Yuri":
+                if hangout2 == "Natsuki" or hangout2 == "Monika":
+                    "It was really nice to catch up with Yuri again..."
+                    "But I had even more fun with Natsuki yesterday, even though I had no intention of getting so close to her..."
 
-                        if sayori_ice == False:
-                            "But I'm not exactly sure if it helped or not..."
-
-                        "I just know that I shouldn't play with her feelings..."
-                        "She's already in a fragile state of mind..."
-                        "Yet, part of me still wants to give her a chance..."
-                        "Maybe the girl I've needed has been beside me this whole time..."
-
-                    if hangout3 == "Natsuki" or hangout3 == "Monika" or hangout3 == "Yuri":
-                        "And I really haven't done much to fix it, especially when I had an opportunity to spend some time with her today..."
-
-                        if hangout3 == "Natsuki":
-
-                            if hangout2 == "Natsuki":
-                                "I've just spent the last two days with Natsuki..."
-                                "And I feel myself growing more attracted to her..."
-
-                            if hangout2 == else:
-                                "I've just spent the last two days with [hangout2] and Natsuki..."
-                                "And I really can't decide who I've enjoyed spending time with more..."
-
-
-                        if hangout3 == "Monika":
-
-                            if hangout2 == "Monika":
-                                "I've just spent the last two days with Monika..."
-                                "And I feel myself growing more attracted to her..."
-
-                            if hangout2 == else:
-                                "I've just spent the last two days with [hangout2] and Monika..."
-                                "And I really can't decide who I've enjoyed spending time with more..."
-
-                        if hangout3 == "Yuri":
-
-                            if hangout2 == "Yuri":
-                                "I've just spent the last two days with Yuri.."
-                                "And I feel myself growing more attracted to her..."
-
-                            if hangout2 == else:
-                                "I've just spent the last two days with [hangout2] and Yuri..."
-                                "And I really can't decide who I've enjoyed spending time with more..."
+        if encore_festivalquestion_2 == "Yuri":
+            if hangout1 == "Monika":
+                if hangout2 == "Yuri":
+                    "It was really nice to finally talk to Monika a little bit more than usual..."
+                    "But, I had fun spend time around Yuri on Tuesday..."
+                    "Getting close to her reminded me of the fun we had on Sunday..."
 
 
-                    "I let a sigh to myself."
-                    "How am I supposed to decide this?"
-                    "I mean at this point I probably like [hangout1] and [hangout2]..."
-                    "And I know I can't have both of them, that scenario would never work out..."
-                    "I know I'm supposed to go with what's in my heart, but..."
-                    "I don't even know who I'm interested in at this point..."
-                    "I have options..."
-                    "I know for a fact Sayori and [poem_giver] like me..."
-                    "But why should I limit myself to just two choices?"
-                    "I mean...{w=0.38}at this point I probably could go for anybody..."
-                    "I sigh as I pull up my phone and scroll through my picture gallery."
 
-                    if encore_festivalquestion_2 == "Natsuki":
-                        "As I'm scrolling, I come across some pictures I took with Natsuki at the festival."
-                        "Looking back at some of the photos, I see just how happy we look doing all these silly poses throughout the festival."
-                        "It's funny how most of these photos were her idea..."
-                        "I scroll to the last photo which is us standing by the entrance to the school at the end of the festival."
-                        "I notice just how close together we are in this photo, with her even wrapping her arm around me."
-                        "Huh...{w=0.38}I guess we would make a good couple..."
+"And I'm really glad we got to share the moment we did yesterday..."
+"Even though I didn't ask for it, her embrace felt warm and comforting..."
+"Still, I can't change the fact that I've seriously damaged my relationship with Sayori..."
 
+if hangout3 == "Sayori":
+    "Though I've been trying to make up for it by spending time with her today..."
 
-                    if encore_festivalquestion_2 == "Yuri":
-                        "As I'm scrolling, I come across some pictures I took with Yuri at the festival."
-                        "Looking back at some of the photos, I see just how happy we look doing all these silly poses throughout the festival."
-                        "I'm surprised she even agreed to do them with me..."
-                        "I scroll to the last photo which is us standing by the entrance to the school at the end of the festival."
-                        "I notice just how close together we are in this photo, with her even letting em wrap my arm around her."
-                        "Maybe we would make a good couple..."
+    if sayori_ice == True:
+        "And I guess it helped..."
 
+    if sayori_ice == False:
+        "But I'm not exactly sure if it helped or not..."
 
-                    if hangout3 == "Natsuki" or hangout3 == "Yuri" or hangout3 == "Sayori"::
-                        play music e17
-                        "Suddenly, my phone begins to ring."
+    "I just know that I shouldn't play with her feelings..."
+    "She's already in a fragile state of mind..."
+    "Yet, part of me still wants to give her a chance..."
+    "Maybe the girl I've needed has been beside me this whole time..."
 
-                    if hangout3 == "Monika":
-                        "But, can I really make that decision based off of pictures?"
-                        "Agh! This is hopeless!"
-                        "I'm being pulled in all directions!"
-                        "Maybe a walk will help me clear my head..."
-                        "I'd probably be able to think better that way..."
-                        "And maybe along the way I'll figure out who I feel the most strongly towards..."
-                        "I get off my bed, grab my keys and walk out of my house."
-                        jump m_hangout_ask
+if hangout3 == "Natsuki" or hangout3 == "Monika" or hangout3 == "Yuri":
+    "And I really haven't done much to fix it, especially when I had an opportunity to spend some time with her today..."
 
-                    if hangout3 == "Sayori":
-                        "To my surprise...{w=0.38}it's Sayori!"
-                        "Why is she calling me? We saw each other like ten minutes ago..."
-                        stop music
-                        jump s_hangout_ask
+    if hangout3 == "Natsuki":
 
-                        if hangout3 == "Natsuki":
+        if hangout2 == "Natsuki":
+            "I've just spent the last two days with Natsuki..."
+            "And I feel myself growing more attracted to her..."
 
-                            if encore_festivalquestion_2 == "Natsuki":
-                                "To my surprise...{w=0.38}it's Natsuki!"
-                                "Why is she calling me?"
-                                "I just hope something didn't happen..."
-                                stop music
-                                "I answer the phone."
-                                mc "Natsuki?"
-                                n "Hey, [player]!"
-                                mc "W-{w=0.38}what's up?"
-                                n "Why do you sound so surprised?"
-                                mc "I just...{w=0.38}wasn't expecting you to call, that's all!"
-                                n "I guess that's true..."
-
-                            if encore_festivalquestion_2 == "Yuri":
-                                "I look down at the number...{w=0.38}I don't recongize it."
-                                "Eh, I'm not doing anything right now..."
-                                "At worst I'll be talking to a telemarkter..."
-                                stop music
-                                "I answer the phone."
-                                mc "Hello?"
-                                n "[player]? Is that you?"
-                                mc "Y-{w=0.38}yeah...{w=0.38}what's up?"
-                                n "Why do you sound so surprised?"
-                                mc "Well, I don't remember giving you my number..."
-                                n "Sayori told me what it was."
-                                "Figured she would do that..."
+        else:
+            "I've just spent the last two days with [hangout2] and Natsuki..."
+            "And I really can't decide who I've enjoyed spending time with more..."
 
 
-                            if natsuki_continued_hug == True or natsuki_hug == True:
-                                "Thankfully, judging by the tone in Natsuki's voice, it doesn't sound like anything bad happened..."
-                                jump n_hangout_ask
+    if hangout3 == "Monika":
 
-                            if natsuki_continued_hug == False or natsuki_hug == False:
-                                "Thankfully, judging by the tone in Natsuki's voice, she seems to have cooled off from earlier..."
-                                jump n_hangout_ask
+        if hangout2 == "Monika":
+            "I've just spent the last two days with Monika..."
+            "And I feel myself growing more attracted to her..."
+
+        else:
+            "I've just spent the last two days with [hangout2] and Monika..."
+            "And I really can't decide who I've enjoyed spending time with more..."
+
+    if hangout3 == "Yuri":
+
+        if hangout2 == "Yuri":
+            "I've just spent the last two days with Yuri.."
+            "And I feel myself growing more attracted to her..."
+
+        else:
+            "I've just spent the last two days with [hangout2] and Yuri..."
+            "And I really can't decide who I've enjoyed spending time with more..."
 
 
-                        if hangout3 == "Yuri":
+"I let a sigh to myself."
+"How am I supposed to decide this?"
+"I mean at this point I probably like [hangout1] and [hangout2]..."
+"And I know I can't have both of them, that scenario would never work out..."
+"I know I'm supposed to go with what's in my heart, but..."
+"I don't even know who I'm interested in at this point..."
+"I have options..."
+"I know for a fact Sayori and [poem_giver] like me..."
+"But why should I limit myself to just two choices?"
+"I mean...{w=0.38}at this point I probably could go for anybody..."
+"I sigh as I pull up my phone and scroll through my picture gallery."
 
-                            if encore_festivalquestion_2 == "Natsuki":
-                                "I look down at the number...{w=0.38}I don't recongize it."
-                                "Eh, I'm not doing anything right now..."
-                                "It's probably just a wrong number..."
-                                stop music
-                                "I answer the phone."
-                                mc "Hello?"
-                                jump y_hangout_ask
+if encore_festivalquestion_2 == "Natsuki":
+    "As I'm scrolling, I come across some pictures I took with Natsuki at the festival."
+    "Looking back at some of the photos, I see just how happy we look doing all these silly poses throughout the festival."
+    "It's funny how most of these photos were her idea..."
+    "I scroll to the last photo which is us standing by the entrance to the school at the end of the festival."
+    "I notice just how close together we are in this photo, with her even wrapping her arm around me."
+    "Huh...{w=0.38}I guess we would make a good couple..."
 
-                            if encore_festivalquestion_2 == "Yuri":
-                                "I look down at the contact name...{w=0.38}it's Yuri!"
-                                "Why is she calling me?"
-                                stop music
-                                "I answer the phone."
-                                mc "Yuri?"
-                                jump y_hangout_ask
+
+if encore_festivalquestion_2 == "Yuri":
+    "As I'm scrolling, I come across some pictures I took with Yuri at the festival."
+    "Looking back at some of the photos, I see just how happy we look doing all these silly poses throughout the festival."
+    "I'm surprised she even agreed to do them with me..."
+    "I scroll to the last photo which is us standing by the entrance to the school at the end of the festival."
+    "I notice just how close together we are in this photo, with her even letting em wrap my arm around her."
+    "Maybe we would make a good couple..."
+
+
+if hangout3 == "Natsuki" or hangout3 == "Yuri" or hangout3 == "Sayori":
+    play music e17
+    "Suddenly, my phone begins to ring."
+
+if hangout3 == "Monika":
+    "But, can I really make that decision based off of pictures?"
+    "Agh! This is hopeless!"
+    "I'm being pulled in all directions!"
+    "Maybe a walk will help me clear my head..."
+    "I'd probably be able to think better that way..."
+    "And maybe along the way I'll figure out who I feel the most strongly towards..."
+    "I get off my bed, grab my keys and walk out of my house."
+    jump m_hangout_ask
+
+if hangout3 == "Sayori":
+    "To my surprise...{w=0.38}it's Sayori!"
+    "Why is she calling me? We saw each other like ten minutes ago..."
+    stop music
+    jump s_hangout_ask
+
+if hangout3 == "Natsuki":
+
+    if encore_festivalquestion_2 == "Natsuki":
+        "To my surprise...{w=0.38}it's Natsuki!"
+        "Why is she calling me?"
+        "I just hope something didn't happen..."
+        stop music
+        "I answer the phone."
+        mc "Natsuki?"
+        n "Hey, [player]!"
+        mc "W-{w=0.38}what's up?"
+        n "Why do you sound so surprised?"
+        mc "I just...{w=0.38}wasn't expecting you to call, that's all!"
+        n "I guess that's true..."
+
+    if encore_festivalquestion_2 == "Yuri":
+        "I look down at the number...{w=0.38}I don't recongize it."
+        "Eh, I'm not doing anything right now..."
+        "At worst I'll be talking to a telemarkter..."
+        stop music
+        "I answer the phone."
+        mc "Hello?"
+        n "[player]? Is that you?"
+        mc "Y-{w=0.38}yeah...{w=0.38}what's up?"
+        n "Why do you sound so surprised?"
+        mc "Well, I don't remember giving you my number..."
+        n "Sayori told me what it was."
+        "Figured she would do that..."
+
+
+    if natsuki_continued_hug == True or natsuki_hug == True:
+        "Thankfully, judging by the tone in Natsuki's voice, it doesn't sound like anything bad happened..."
+        jump n_hangout_ask
+
+    if natsuki_continued_hug == False or natsuki_hug == False:
+        "Thankfully, judging by the tone in Natsuki's voice, she seems to have cooled off from earlier..."
+        jump n_hangout_ask
+
+
+if hangout3 == "Yuri":
+
+    if encore_festivalquestion_2 == "Natsuki":
+        "I look down at the number...{w=0.38}I don't recongize it."
+        "Eh, I'm not doing anything right now..."
+        "It's probably just a wrong number..."
+        stop music
+        "I answer the phone."
+        mc "Hello?"
+        jump y_hangout_ask
+
+    if encore_festivalquestion_2 == "Yuri":
+        "I look down at the contact name...{w=0.38}it's Yuri!"
+        "Why is she calling me?"
+        stop music
+        "I answer the phone."
+        mc "Yuri?"
+        jump y_hangout_ask
 
 
 
@@ -10392,114 +10518,117 @@ if encore_sayoriquestion_1 == False:
 #Mixed Choices
 #These can't repeat
 #Sayori must be one of these options
-if encore_sayoriquestion_1 == False:
 
-    "I don't even know where to begin..."
-    "My feelings are all over the place..."
+label mix_mono4:
 
-
-    if hangout1 == "Sayori":
-        if hangout2 == "Natsuki" or hangout2 == "Yuri" or hangout2 == "Monika":
-            "Especially after I spent yesterday with [hangout2]..."
-            "Granted, I didn't expect [hangout2] to get so close to me like that..."
-            "It still felt nice..."
-            "But part of me regrets doing it too..."
-            "Seeing the look on Sayori's face reminded me of how she was last Sunday..."
-            "I know she wants to see me happy, but it's still pretty painful for her to watch me spend time with the others..."
-            "And I don't really want to hurt Sayori anymore than I already have..."
-            "I can't deny that I've been a horrible friend for these last few years..."
-            "And given how she's been lately, I should probably be more careful when I'm around the others in the clubromm..."
-            "Not to mention I still have to figure out how to respond to [poem_giver]'s poem..."
-            "And if I tell Sayori about it, she's only going to get more heartbroken..."
+"I don't even know where to begin..."
+"My feelings are all over the place..."
 
 
-    if hangout1 == "Natsuki" or hangout1 == "Yuri" or hangout1 == "Monika":
-        if hangout2 == "Sayori":
+if hangout1 == "Sayori":
+    if hangout2 == "Natsuki" or hangout2 == "Yuri" or hangout2 == "Monika":
+        "Especially after I spent yesterday with [hangout2]..."
+        "Granted, I didn't expect [hangout2] to get so close to me like that..."
+        "It still felt nice..."
+        "But part of me regrets doing it too..."
+        "Seeing the look on Sayori's face reminded me of how she was last Sunday..."
+        "I know she wants to see me happy, but it's still pretty painful for her to watch me spend time with the others..."
+        "And I don't really want to hurt Sayori anymore than I already have..."
+        "I can't deny that I've been a horrible friend for these last few years..."
+        "And given how she's been lately, I should probably be more careful when I'm around the others in the clubromm..."
+        "Not to mention I still have to figure out how to respond to [poem_giver]'s poem..."
+        "And if I tell Sayori about it, she's only going to get more heartbroken..."
 
-            if encore_festivalquestion_2 == "Natsuki":
-                if hangout1 == "Natsuki":
+
+if hangout1 == "Natsuki" or hangout1 == "Yuri" or hangout1 == "Monika":
+    if hangout2 == "Sayori":
+
+
+            if hangout1 == "Natsuki":
+                if encore_festivalquestion_2 == "Natsuki":
                     "Still, it was really nice to catch up with Natsuki again..."
                     "Especially since we had so much preparing for and at the festival..."
 
-
-            if encore_festivalquestion_2 == "Natsuki":
-                if hangout1 == "Yuri":
+            if hangout1 == "Yuri":
+                if encore_festivalquestion_2 == "Natsuki":
                     "Still, it was really nice to finally spend sometime around Yuri..."
                     "Given that we haven't really talked much since I first joined..."
 
 
-            if encore_festivalquestion_2 == "Natsuki" or encore_festivalquestion_2 == "Yuri":
-                if hangout1 == "Monika":
+            if hangout1 == "Monika":
+                if encore_festivalquestion_2 == "Natsuki" or encore_festivalquestion_2 == "Yuri":
                     "Still, it was really nice to finally talk to Monika a little bit more than usual..."
                     "Given that we've never really talked with each other..."
 
 
-            if encore_festivalquestion_2 == "Yuri":
-                if hangout1 == "Natsuki":
+
+            if hangout1 == "Natsuki":
+                if encore_festivalquestion_2 == "Yuri":
                     "It was really nice to finally spend sometime around Natsuki..."
                     "Given that we haven't really talked much since I first joined..."
 
-            if encore_festivalquestion_2 == "Yuri":
-                if hangout1 == "Yuri":
+
+            if hangout1 == "Yuri":
+                if encore_festivalquestion_2 == "Yuri":
                     "Still, it was really nice to catch up with Yuri again..."
                     "Especially since we had so much preparing for and at the festival..."
 
 
-                "But she really didn't seem to like seeing Sayori rest on me like that..."
-                "Maybe she could be jealous?"
-                "I mean it would make sense for [poem_giver] to be, since I know she likes me..."
+"But she really didn't seem to like seeing Sayori rest on me like that..."
+"Maybe she could be jealous?"
+"I mean it would make sense for [poem_giver] to be, since I know she likes me..."
 
-                if hangout3 == "Sayori":
-                    "And she really wanted to spend more time around me today..."
+if hangout3 == "Sayori":
+    "And she really wanted to spend more time around me today..."
 
-                    if sayori_ice == True:
-                        "And I guess it helped..."
+    if sayori_ice == True:
+        "And I guess it helped..."
 
-                    if sayori_ice == False:
-                        "But I'm not exactly sure if it helped or not..."
+    if sayori_ice == False:
+        "But I'm not exactly sure if it helped or not..."
 
-                    "But, I did have fun spending time around her today..."
-                    "It brought back a sense of nostalgia from our childhood..."
-                    "Before all this craziniess...{w=0.38}when things were so much simpler back then..."
-                    "I miss those days with Sayori, but I don't think I can bring them back."
-
-
-                if hangout3 == "Natsuki":
-                    "But Natuski seemed to have gotten over it by the time we were done hanging out..."
-
-                    if natsuki_continued_hug == True or natsuki_hug == True:
-                        "Especially with what she told me about her home life...
-                        "It's got me worried for her saftey, even though I haven't known her that long..."
-                        "I still care about her..."
-
-                    if natsuki_continued_hug == False or natsuki_hug == False:
-                        "Even though she ended up blowing up at me later..."
-                        "Ah, I'm sure she'll cool down..."
-                        "I still care about her..."
-
-                if hangout3 == "Monika":
-                    "But Monika didn't really seem to show any signs of jealously when I was around her today..."
-                    "In fact, she almost acted like it never even happened..."
+    "But, I did have fun spending time around her today..."
+    "It brought back a sense of nostalgia from our childhood..."
+    "Before all this craziniess...{w=0.38}when things were so much simpler back then..."
+    "I miss those days with Sayori, but I don't think I can bring them back."
 
 
-                if hangout3 == "Yuri":
-                    "But Yuri seemed to have gotten over it by the time we were done hanging out..."
-                    "Though she ended up getting mad at me because I pressed her on what I thought I saw..."
-                    "It's got me worried for her saftey, even though I haven't known her that long..."
-                    "I still care about her..."
+if hangout3 == "Natsuki":
+    "But Natuski seemed to have gotten over it by the time we were done hanging out..."
+
+    if natsuki_continued_hug == True or natsuki_hug == True:
+        "Especially with what she told me about her home life..."
+        "It's got me worried for her saftey, even though I haven't known her that long..."
+        "I still care about her..."
+
+    if natsuki_continued_hug == False or natsuki_hug == False:
+        "Even though she ended up blowing up at me later..."
+        "Ah, I'm sure she'll cool down..."
+        "I still care about her..."
+
+if hangout3 == "Monika":
+    "But Monika didn't really seem to show any signs of jealously when I was around her today..."
+    "In fact, she almost acted like it never even happened..."
 
 
-    "I let a sigh to myself."
-    "Maybe I made a mistake..."
-    "I know I was deciding on the spot on Sunday, but maybe I could've worded things differently to her..."
-    "Now I may be having second thoughts"
-    "With me unable to decide who I like the most..."
-    "Monika was right..."
-    "I should probably just try to stay friends with everyone until I can decide on my feelings..."
-    "I mean...{w=0.38}I don't even know who I'm interested in at this point..."
-    "I have options..."
-    "And I know for a fact Sayori and [poem_giver] like me..."
-    "I sigh as I pull up my phone and scroll through my picture gallery."
+if hangout3 == "Yuri":
+    "But Yuri seemed to have gotten over it by the time we were done hanging out..."
+    "Though she ended up getting mad at me because I pressed her on what I thought I saw..."
+    "It's got me worried for her saftey, even though I haven't known her that long..."
+    "I still care about her..."
+
+
+"I let a sigh to myself."
+"Maybe I made a mistake..."
+"I know I was deciding on the spot on Sunday, but maybe I could've worded things differently to her..."
+"Now I may be having second thoughts"
+"With me unable to decide who I like the most..."
+"Monika was right..."
+"I should probably just try to stay friends with everyone until I can decide on my feelings..."
+"I mean...{w=0.38}I don't even know who I'm interested in at this point..."
+"I have options..."
+"And I know for a fact Sayori and [poem_giver] like me..."
+"I sigh as I pull up my phone and scroll through my picture gallery."
 
 if encore_festivalquestion_2 == "Natsuki":
     "As I'm scrolling, I come across some pictures I took with Natsuki at the festival."

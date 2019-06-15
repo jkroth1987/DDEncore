@@ -1776,7 +1776,27 @@ label nencore_3:
 
     if hangout1 == "Natsuki":
         if hangout2 == "Sayori" or hangout2 == "Monika" or hangout2 == "Yuri":
-            n 42c "I think I lost one of my copies of Parfait Girls..."
+            n 42a "Why do you care?"
+            n 42b "Aren't you supposed to be hugging [hangout2] right now?"
+            "I awkwardly scratch the back of my head."
+            "I should've known she would've brought that up..."
+
+            if encore_sayoriquestion_1 == True:
+                "She didn't look too happy yesterday when she saw me with [hangout2]..."
+
+            if encore_sayoriquestion_1 == False:
+                "She did punch me after all..."
+
+            "How am I supposed to explain this to her? It's not like she's going to believe me..."
+            "I mean...{w=0.38}it was pretty much spontaneous..."
+            show natsuki 42a
+            mc "Look, I get that you're angry with me over yesterday..."
+            mc "I'm sorry, I didn't initate anything, it just happened, I swear!"
+            n 42b "Whatever, I got too much to worry about to be angry at you for yesterday..."
+            mc "So now will you tell me what's wrong?"
+            show natsuki 42c
+            "Natsuki lets out a long, reluctant sigh."
+            n 42a "I think I lost one of my copies of Parfait Girls..."
             mc "Oh, no! Which one?"
             n 42e "It was special edition copy..."
             "Well, I can see why she’d be upset about that..."
