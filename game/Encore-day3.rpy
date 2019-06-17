@@ -9497,8 +9497,10 @@ mc "Why not?"
 show monika 1j at h11 zorder 1
 "Awesome!"
 "Monika does a little jump in excitment."
-"Which I'm surprised, given her usual cool nature..."
-"I guess she just really likes excersing..."
+"Which I'm surprised at, given how even tempered she usually is in school..."
+"Though it could be when she's not in school, she's much more willing to let loose..."
+"That or she just really likes excersing..."
+"Either way, I like it..."
 mc "So...{w=0.38}do you walk to some place special or do you just walk around in a giant circle?"
 show monika_c_b5a as monika at t11 zorder 1
 "Monika lets out a giggle."

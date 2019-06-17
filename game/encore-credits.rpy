@@ -93,6 +93,12 @@ by yagamirai10 [[Community Asset Folder]
 
 \"fountain_bg/" edited by POBAW, original image by Night Wolf23 on https://backgrounddownload.com/anime-visual-novel-background-8/
 
+\"monika_walk1/" edited by POBAW, original image on https://animelandscape.blogspot.com/2018/10/neighborhood-anime-background.html
+
+\"monika_walk2/" edited by POBAW, original image on https://www.pinterest.com/pin/492933121699797858/?lp=true
+
+\"monika_walk3/" edited by POBAW, original image on https://www.pinterest.com/pin/147070744053778151/
+
 \"music_room/" by Cyrke, used in Doki Doki: Relapse
 
 \"n_void_1/" by Agent Gold
