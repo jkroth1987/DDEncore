@@ -8601,7 +8601,7 @@ $ loyal_route = None # Check "if loyal_route != None" before using this.
 $ loyal_route_s = False
 $ loyal_route_n = False
 $ loyal_route_m = False
-$ loya_route_y = False
+$ loyal_route_y = False
 
 if hangout1 == "Sayori" and hangout2 == "Sayori" and hangout3 == "Sayori":
     $ loyal_route = "Sayori"
@@ -8668,21 +8668,26 @@ if same_y == True:
 
 #Triggers for conflicted
 
-if conflict_m == True or conflict_n == True or conflict_y == True:
-    if encore_sayoriquestion_1 == True:
-        jump mix_mono1
-
 if conflict_s == True:
     if encore_sayoriquestion_1 == True:
+        #"I should go through mix_mono2...\ns: [conflict_s], y: [conflict_y], m: [conflict_m], n: [conflict_n]"
         jump mix_mono2
 
 if conflict_m == True or conflict_n == True or conflict_y == True:
-    if encore_sayoriquestion_1 == False:
-        jump mix_mono3
-
+    if encore_sayoriquestion_1 == True:
+        #"I should go through mix_mono1...\ns: [conflict_s], y: [conflict_y], m: [conflict_m], n: [conflict_n]"
+        jump mix_mono1
+        
 if conflict_s == True:
     if encore_sayoriquestion_1 == False:
+        #"I should go through mix_mono4...\ns: [conflict_s], y: [conflict_y], m: [conflict_m], n: [conflict_n]"
         jump mix_mono4
+
+if conflict_m == True or conflict_n == True or conflict_y == True:
+    if encore_sayoriquestion_1 == False:
+        #"I should go through mix_mono3...\ns: [conflict_s], y: [conflict_y], m: [conflict_m], n: [conflict_n]"
+        jump mix_mono3
+
 
 ########Sayori#############
 
