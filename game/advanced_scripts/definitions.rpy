@@ -189,6 +189,11 @@ image bg cafeteria = "mod_assets/bgs/cafeteria.png"
 image bg school_rooftop = "mod_assets/bgs/school_rooftop.png"
 image bg thank_you = "bandicam 2019-03-18-09-10-05-743.png"
 image bg music_room = "mod_assets/bgs/music_room.png"
+image bg fountain = "mod_assets/bgs/fountain_bg.png"
+image bg monika_walk1 = "mod_assets/bgs/Monika Walk 1.png"
+image bg monika_walk2 = "mod_assets/bgs/Monika Walk 2.png"
+image bg monika_walk3 = "mod_assets/bgs/Monika Walk 3.png"
+image bg city_overlook = "mod_assets/bgs/city_overlook.png"
 
 image glitch_color:
     ytile 3
@@ -1524,7 +1529,7 @@ image cg door 2 = "mod_assets/cgs/The_Door_Opens.png"
 image cg n_day3cg_1 = "mod_assets/cgs/n_day3cg_1.png"
 image cg n_day3cg_2 = "mod_assets/cgs/n_day3cg_2.png"
 image cg n_day3cg_3 = "mod_assets/cgs/n_day3cg_3.png"
-image cg city_overlook = "mod_assets/cgs/city_overlook.png"
+
 
 #Encore's New Sprites
 image monika s = "mod_assets/sprites/ms.png"

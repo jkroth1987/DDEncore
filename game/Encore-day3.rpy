@@ -8668,21 +8668,22 @@ if same_y == True:
 
 #Triggers for conflicted
 
-if conflict_m == True or conflict_n == True or conflict_y == True:
-    if encore_sayoriquestion_1 == True:
-        jump mix_mono1
-
 if conflict_s == True:
     if encore_sayoriquestion_1 == True:
         jump mix_mono2
+
+if conflict_s == True:
+    if encore_sayoriquestion_1 == False:
+        jump mix_mono4
+
+if conflict_m == True or conflict_n == True or conflict_y == True:
+    if encore_sayoriquestion_1 == True:
+        jump mix_mono1
 
 if conflict_m == True or conflict_n == True or conflict_y == True:
     if encore_sayoriquestion_1 == False:
         jump mix_mono3
 
-if conflict_s == True:
-    if encore_sayoriquestion_1 == False:
-        jump mix_mono4
 
 ########Sayori#############
 
@@ -9376,75 +9377,100 @@ with wipeleft_scene
 "Off in the distance I can hear the birds chirping the same song I've heard hundreds if not thousands of times."
 "I look up to see the sky almost cloud free, and better yet, the sun hasn't even started to set."
 "I should be able to do a walk around the neighborhood and get back before dark..."
-"I take another few steps out onto the sidewalk when a gust of wind comes hurling at me. The gust is strong enough to where I need to shield my eyes."
+"I take another few steps out onto the sidewalk when a strong gust of wind comes hurling at me, forcing me to shield my eyes."
 "Today has been rather windy I guess..."
 $ m_name = "???"
 m "[player]?"
-show monika_c_b1 as monika at t11 zorder 1
+show monika 1d at t11 zorder 1
 "I turn around to see Monika standing right behind me."
 mc "Monika?!?"
 $ m_name = "Monika"
-m "Well this is a surprise!"
-m "I didn't know you lived here!"
+m 3l "Well this is a surprise!"
+m 3b "I didn't know you lived here!"
+show monika_c_b1 as monika at t11 zorder 1
 mc "Yeah...{w=0.38}my house is just right over there."
 "I point out my house to Monika."
-m "You have a nice house, [player]!"
+m 1b "You have a nice house, [player]!"
+show monika_c_b1 as monika at t11 zorder 1
 mc "Ah, it's alright. It's nothing too special."
 mc "Anyways, I didn't know you lived around here! I thought you lived on the other side of town in the Swan District..."
-m "Oh, I still live there, I just took the bus to get here."
+m 2e "Oh, I still live there, I just took the bus to get over here."
 "Figures she would still live there. The Swan district is where all the rich people in our surrounding area live who don't want to live in the city."
 "There's some incredibly gorgeous houses over there, though it's not something most families like mine would ever be able to afford considering everything is pretty much gated..."
 "Considering Monika's family is pretty well off, it doesn't surprise me that she lives there."
 mc "Oh! Well what brought you all the way over here?"
 mc "Are you visiting Sayori?"
 "I point to Sayori's house as I ask that."
-m "No, I was just wanted to go out for a stroll..."
-m "It's part of my excerise routine that I do a ten mile walk once a week."
-m "And I remembered that I haven't gone this way in a while..."
+m 2m "No, I was just out for a stroll..."
+m 3k "It's part of my excerise routine that I do a ten mile walk once a week."
+m 3n "And I remembered that I haven't gone this way in a while..."
+show monika 3m
 mc "Wow...{w=0.38}a ten mile walk? You're defintley dedicated!"
-m "I always strive to stay in shape, [player]..."
+m 1j "I always strive to stay in shape, [player]..."
 show monika_c_b5a as monika at t11 zorder 1
 m "Mentally as well as a physically."
-mc "Well, now I know while you're the best!"
-show monika_c_b1 as monika at t11 zorder 1
+mc "Well, now I know why you're the best!"
+show monika 1m at t11 zorder 1
 "Monika blushes brightly at my compliment."
-m "Well I'm glad you feel that way."
-m "Most people would be envious of my success..."
-m "I have my share of admiers though~"
+m 1n "Well I'm glad you feel that way."
+m 2p "You'd be surprised at how many people at school are envious of my success..."
+m 2e "I have my share of admiers though~"
+show monika u111151
 "Monika gives me a sly wink."
+show monika_c_b1 as monika at t11 zorder 1
 mc "W-{w=0.38}well hey...{w=0.38}I'm just happy for you."
 mc "I mean, I'm nothing special..."
-show monika_c_b5a as monika at t11 zorder 1
+show monika 2f at t11 zorder 1
 "Monika gives me a concerning frown."
-show monika_c_b3 as monika at t11 zorder 1
-m "But you are!"
-m "You may not know it, [player], but you never fail to put a smile on anyone's face."
-m "You're always supportive of others, and you're always willing to hear people out."
-m "It counts for more than you think..."
+m 2g "But you are!"
+m 2e "You may not know it, [player], but you never fail to put a smile on anyone's face."
+m "You're always supportive of others...{w=0.38}always willing to hear people out."
+m 1m "It counts for more than you think..."
 mc "Ah! Well..."
-"I scratch the back of my head as I blush brightly."
+"I scratch the back of my head as I blush brightly in embrassment."
+show monika 1e at t11 zorder 1
 mc "Well...{w=0.38}that means a lot coming from you, Monika..."
 mc "Thank you..."
-m "Don't mention it!"
-mc "I mean lately I haven't felt like that at all to be honest with you..."
+m 1k "Don't mention it!"
+show monika 1d at t11 zorder 1
+mc "I mean lately, I haven't felt like that at all to be honest with you..."
 mc "I've been thinking a lot about what you said..."
-m "And how's that going?"
+m 1g "How's that going?"
+show monika 1f
 mc "I still feel lost..."
 mc "Like I don't know what to do..."
 mc "So, I wanted to take a walk to help better clear my head..."
-m "Well, it's good you're taking some time to think to yourself..."
-m "I do a fair share of relfection during most of my walks anyways."
-show monika_c_b1 as monika at t11 zorder 1
-m "It really does help the thought process."
-m "I mean, you might be walking and just have a new idea just dawn on you!"
-m "It's happened to me plenty of times!"
+m 3e "Well, it's good you're taking some time to think to yourself..."
+m 3m "I do a fair share of reflection during most of my walks anyways."
+m 1e "It really does help the thought process."
+m 1b "I mean, you might be walking and just have a new idea just dawn on you!"
+m 1j "It's happened to me plenty of times!"
 mc "Well, if it's worked for you, it'll defintley work for me..."
+show monika 2e
+"There's a brief pause between us as another breeze gently blows past us."
+"Seeing Monika's hair flow in the wind manages to mesmerize me."
+show monika 2m
+"She looks so beautiful..."
+"Her long hair flowing in the wind..."
+show monika 2e
+"Those emerald eyes gleaming brightly at me..."
+"Paired with that picture-perfect smile..."
+"And her dress suits her completely..."
+"Matter of fact, I've never even seen Monika outside of school..."
 show monika_c_b5a as monika at t11 zorder 1
+"I see then Monika forming her casual smirk at me."
+"Apparently she must've realized I've been staring at her."
+"Thankfully she doesn't seem bothered by it..."
+show monika smirk
 m "Hey, [player]..."
-mc "Yeah?"
-m "I could use the company on this walk..."
-m "My memory's a little rusty for this area..."
+show monika_c_b5a as monika at t11 zorder 1
+mc "Y-{w=0.38}yeah?"
+"I barley manage to stammer out."
+show monika smirk
+m "I could use a little company on this walk..."
+m "My memory's rusty for this area..."
 m "I could use a guide..."
+show monika_c_b5a as monika at t11 zorder 1
 mc "Y-{w=0.38}you want me to walk with you?"
 m "You know it~"
 "Wow! I can't believe this!"
@@ -9452,7 +9478,7 @@ m "You know it~"
 "This is unreal!"
 "But...{w=0.38}I'm not entirley sure if I want to be around anyone right now..."
 "This walk really was meant for some time by myself..."
-"Especially since I'm trying to figure out if I really want to go for the very girl whose standing right in front of me!"
+"Especially since I'm trying to figure out if Monika is really someone I could be with!"
 
 menu:
     "Should I walk with Monika?"
@@ -9468,27 +9494,39 @@ label m_hangout:
 
 "Ah...{w=0.38}screw it!"
 mc "Why not?"
-show monika_casual_b1 as monika at h11 zorder 1
-m "Awesome!"
+show monika 1j at h11 zorder 1
+"Awesome!"
 "Monika does a little jump in excitment."
 "Which I'm surprised, given her usual cool nature..."
 "I guess she just really likes excersing..."
-mc "Which way are we heading?"
-show monika_casual_b5a as monika at t11 zorder 1
-m "I have an idea in mind~"
+mc "So...{w=0.38}do you walk to some place special or do you just walk around in a giant circle?"
+show monika_c_b5a as monika at t11 zorder 1
+"Monika lets out a giggle."
+m "Just follow me~"
+mc "Well, lead the way!"
+"Without another word spoken, Monika and I start heading eastward."
+"Which just so happens to be in the direction of the countryside..."
+"Oh, I just hope she doesn't include hiking as a part of her walk..."
+"In fact, I just hope I can keep up with someone of her physqiue in general..."
+"I'm not exactly out of shape, but Monika has quite the reputation when it comes to endurance..."
+"Hopefully, I don't fall behind her..."
+show monika at thide
+hide monika
+jump mencore_4
 
 label m_no_hangout:
 
 "I think I should just be alone right now..."
 "I don't think I'm in the best state of mind to have everything on my mind and have Monika right there with me."
+show monika 1f at t11 zorder 1
 mc "Look...{w=0.38}I really appreciate the offer, but..."
-show monika_casual_b1 as monika at t11 zorder 1
-m "It's okay, [player]...{w=0.38}I understand."
-m "You're going through a lot right now and it's probably best you have some time to yourself..."
+m 1r "It's okay, [player]...{w=0.38}I understand."
+m 2p "You're going through a lot right now and it's probably best you have some time to yourself..."
 mc "Thank you..."
-"Monika dejectedly looks off into the neighborhood."
+show monika 1o at t11 zorder 1
+"Monika somberly looks off into the neighborhood."
 mc "I wouldn't mind giving you directions though..."
-m "That would be nice..."
+m 1e "That would be nice..."
 
 ########Yuri#############
 

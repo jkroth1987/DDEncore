@@ -18,18 +18,17 @@ Writers: Agent Gold, Bug, Nick (Canad1an),
 Rose, Ploxmaster708, Rudy, Andrew J. Striedl
 Writing Contributors: Lucy CN, Jacob Smallman
 Artists: 3Monika4 (Monika), Elaina Sasso,
- @reenaki_m (Instagram), vayar2000"""
+ @reenaki_m (Instagram)"""
 
     # 2
     # 6 lines, +250 pixels
     c_text_2 = """Coders: Agent Gold, Bug, Nico, Andrew J. Striedl\n
-Art Contributors: Kent Stone, SkynnarahSerenity49
+Art Contributors: Kent Stone, SkynnarahSerenity49, vayar2000
 Coding Contributor: POBAW
 General Contributions: Nep, Rezzy
 Image Editing: POBAW, TheD0ctor,
 Agent Gold, Andrew J. Striedl
 Image Editing Contributor: AjTheYandere
-
 Music: Daniel Kruyer (Angelic Beast)"""
 
     # 3
@@ -92,7 +91,9 @@ by yagamirai10 [[Community Asset Folder]
 
 \"closet_dark/" by Agent Gold
 
-\"music_room/" by vayar2000
+\"fountain_bg/" edited by POBAW, original image by Night Wolf23 on https://backgrounddownload.com/anime-visual-novel-background-8/
+
+\"music_room/" by Cyrke, used in Doki Doki: Relapse
 
 \"n_void_1/" by Agent Gold
 

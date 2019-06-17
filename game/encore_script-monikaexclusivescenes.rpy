@@ -951,3 +951,201 @@ label mencore_3:
     show monika at thide
     hide monika
     jump day3_mreturn
+
+
+label mencore_4:
+
+play music t6 fadein 2.0
+scene bg monika_walk1
+with wipeleft_scene
+"As we're walking through the neighborhood, it occured me how just long it's been since I've visited this part..."
+"Granted, I've usually walked in the direction towards town for school, this part of the neighborhood is almost alien to me..."
+"It must've been since last summer I walked through here..."
+"Every now and then my parents make me go on walks with them just to make sure I don't spend my summer constantly inside playing video games and watching anime..."
+"Not that I've ever been a big fan of walking, I suppose it was nice to get out of the house every now and then..."
+show monika 1j at t11 zorder 1
+"Which is a pretty stark contrast compared to Monika, who seems to be happily content with herself, even though we haven't said much since we started walking a few minutes ago..."
+"Well, considering I don't get the chance to talk to Monika often, I should probably try to make an effort to have a conversation with her..."
+"As I'm trying to think of something to talk about, I look off to the horizon where I can start to see the little mountains off the distance."
+"I wouldn't want to be a drag on her mood, but I didn't exactly have hiking in mind for this little trip..."
+show monika 1d
+mc "So, Monika..."
+mc "Where exactly are we walking to?"
+mc "I mean, eventually we're going to run into those mountains."
+"I point out to the little mountains to Monika."
+m 1b "That's where we're heading to, [player]!"
+m 1k "I know this nice spot where we can watch the sun set on the city."
+m 1j "The views are quite breathtaking!"
+mc "We're not going to have to hike to get there, are we?"
+mc "I didn't exactly bring the best hiking shoes..."
+show monika 1d
+"I show off my plain sneakers for emphaisis."
+m 3b "Oh don't worry, there'll be no hiking on this trip!"
+m 3m "Not even I came prepared for that unfortuantely..."
+m 2b "The path to get there is already pre-constructed, and it's not even all the way at the peak!"
+mc "Well...{w=0.38}that's good I guess..."
+show monika 2g
+"Monika raises an eyebrow at me."
+m 2f "You're not scared of heighs, are you, [player]?"
+mc "No, I can manage..."
+mc "I've just never walked that far out before..."
+m 2d "Where do you usually go?"
+show monika 2c
+mc "Usually just to school and back..."
+mc "Maybe occasionally I walk a little further to go to the resturants and shops near school, but that's usually it."
+m 2d "You've never walked into the city?"
+mc "I mean I could...{w=0.38}it's just a little far for my tastes I guess."
+mc "Where do you usually walk to?"
+m 1b "All over the place!"
+m 1a "I never have a set route of where I go, I always try to mix it up!"
+mc "Well I just hope you don't go to the north side of town too often..."
+show monika_c_b5a as monika at t11 zorder 1
+m "Awww~"
+m "Are you worried about me, [player]?"
+mc "I-{w=0.38}I mean..."
+"I'm completely tongue twisted as Monika continues to grin at my expense."
+
+if encore_sayoriquestion_1 == True:
+    "How can I word this in a way that's not too flirty..."
+
+if encore_sayoriquestion_1 == False:
+    "Come on, what's the best thing to say to her!"
+
+"I just blurt out the first thing that comes to mind."
+mc "Why wouldn't I be?"
+show monika 1g at t11 zorder 1
+m "Eh?"
+mc "I mean come on..."
+show monika u114312 at t11 zorder 1
+mc "A girl like you going around in an area like that..."
+mc "I mean...{w=0.38}I'd hate to find out if something bad happened to you when you were out on one of your walks..."
+mc "What would we do without you at the club?"
+show monika 1m
+"Now it's Monika's turn to be flustered."
+show monika 1n
+m "Oh come on...{w=0.38}are you saying Sayori wouldn't do a good job in my absence?"
+mc "I mean, I'm sure she'd do fine..."
+mc "It just wouldn't be the same without you, you know?"
+show monika u114312 at t11 zorder 1
+mc "You're kinda of ireplaceable..."
+m 1m "Aren't you such a gentlemen?"
+show monika_c_b5a as monika at t11 zorder 1
+
+if encore_sayoriquestion_1 == True:
+    m "Sayori's really lucky to have a guy like you!"
+
+if encore_sayoriquestion_1 == False:
+    m "Now I see why [poem_giver] likes you so much!"
+
+mc "Ah...!"
+mc "I look off to the horizon in an attempt to process what Monika had just said."
+
+if encore_sayoriquestion_1 == True:
+    mc "I guess she is..."
+    "I mutter softly."
+
+    if hangout1 == "Natsuki" or hangout1 == "Yuri" or hangout1 == "Monika":
+        if hangout2 == "Natsuki" or hangout2 == "Yuri" or hangout2 == "Monika":
+            "Or is she?"
+            "I mean I've hardly spent time around her lately..."
+            "And she isn't really showing any signs of getting better..."
+            "In fact, I've just been making things worse for her..."
+
+    if hangout1 == "Sayori":
+        if hangout2 == "Sayori":
+            "I mean...{w=0.38}I've tried to be there for her as much as possible..."
+            "And so far things have generally gone well..."
+
+    if hangout1 == "Natsuki" or hangout1 == "Yuri" or hangout1 == "Monika":
+        if hangout2 == "Sayori":
+            "I've tried to be there for Sayori as much as I can..."
+            "I mean, I know she was a little jealous when I was with [hangout1] on Monday..."
+            "I just hope she doesn't have a bad reaction if she finds out I took this walk with Monika..."
+            "Not that Sayori's a control freak..."
+
+
+    if hangout1 == "Sayori":
+        if hangout2 == "Natsuki" or hangout2 == "Yuri" or hangout2 == "Monika":
+            "How can I honestly say that?"
+            "I haven't really spent time with her since Monday..."
+            "Not to mention our relationship was really tested when I was with [hangout2] yesterday..."
+            "And if Sayori found out what Monika and I said to each other earlier..."
+            "That's likely the end of it..."
+
+
+if encore_sayoriquestion_1 == False:
+    mc "I guess my personality is more charming than I first realized..."
+    "I mutter softly."
+
+    if encore_festivalquestion_2 == "Natsuki":
+        if hangout1 == "Sayori" or hangout1 == "Yuri" or hangout1 == "Monika":
+            if hangout2 == "Sayori" or hangout2 == "Yuri" or hangout2 == "Monika":
+                "Even though it's not like I've spent a whole lot of time with [poem_giver] since the festival..."
+                "What could she possibly see in me now?"
+                "I've been so distant from her..."
+                "It's like I'm accidentally giving her an abridged version of how I've treated Sayori over the last few years..."
+                "God, I'm awful at keeping friendships..."
+
+    if encore_festivalquestion_2 == "Natsuki":
+        if hangout1 == "Natsuki":
+            if hangout2 == "Sayori" or hangout2 == "Yuri" or hangout2 == "Monika":
+                "I mean given what [poem_giver] and I have gone through over the last two weeks, I guess we've really connected..."
+                "Maybe I'm not so unapproachable after all!"
+                "Though I guess my little incident with [hangout2] yesterday might've pushed her to confess to me..."
+
+
+    if encore_festivalquestion_2 == "Natsuki":
+        if hangout1 == "Sayori" or hangout1 == "Yuri" or hangout1 == "Monika":
+            if hangout2 == "Natsuki":
+                "I mean given what [poem_giver] and I have gone through over the last two weeks, I guess we've really connected..."
+                "Maybe I'm not so unapproachable after all!"
+                "Though I guess my little incident with her yesterday might've pushed her to confess to me..."
+
+    if encore_festivalquestion_2 == "Yuri":
+        if hangout1 == "Sayori" or hangout1 == "Natsuki" or hangout1 == "Monika":
+            if hangout2 == "Sayori" or hangout2 == "Natsuki" or hangout2 == "Monika":
+                "Even though it's not like I've spent a whole lot of time with [poem_giver] since the festival..."
+                "What could she possibly see in me now?"
+                "I've been so distant from her..."
+                "It's like I'm accidentally giving her an abridged version of how I've treated Sayori over the last few years..."
+                "God, I'm awful at keeping friendships..."
+
+    if encore_festivalquestion_2 == "Yuri":
+        if hangout1 == "Yuri":
+            if hangout2 == "Sayori" or hangout2 == "Natsuki" or hangout2 == "Monika":
+                "I mean given what [poem_giver] and I have gone through over the last two weeks, I guess we've really connected..."
+                "Maybe I'm not so unapproachable after all!"
+                "Though I guess my little incident with [hangout2] yesterday might've pushed her to confess to me..."
+
+
+    if encore_festivalquestion_2 == "Yuri":
+        if hangout1 == "Sayori" or hangout1 == "Natsuki" or hangout1 == "Monika":
+            if hangout2 == "Yuri":
+                "I mean given what [poem_giver] and I have gone through over the last two weeks, I guess we've really connected..."
+                "Maybe I'm not so unapproachable after all!"
+                "Though I guess my little incident with her yesterday might've pushed her to confess to me..."
+
+
+m "Like I said before [player], you don't give yourself enough credit!"
+show monika 1f
+mc "Maybe you give me too much..."
+m 2n "I'd have to disagree..."
+"I manage a small smile at Monika before turning back to face the path in front of us."
+show monika 2m
+"We walk the next few minutes in silence before Monika leads us on a sudden turn."
+show monika at thide
+hide monika
+scene bg monika_walk2
+with wipeleft_scene
+"Text"
+
+
+
+
+
+scene bg monika_walk3
+with wipeleft_scene
+
+scene bg city_overlook
+with wipeleft_scene
+"Text"
