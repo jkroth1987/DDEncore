@@ -1137,15 +1137,819 @@ show monika at thide
 hide monika
 scene bg monika_walk2
 with wipeleft_scene
-"Text"
+"As we turn the corner, we stare down at a long, winding path way filled with trees and bushes crowding against each other along the walls."
+"I look up at the street sign to see that the alleyway has already convenientley been named 'Garden Alley'."
+show monika_c_b1 as monika at t11 zorder 1
+"I turn to Monika as she gleams with excitment."
+m 3b "Wow, we've really made good time so far!"
+m 3j "We're not that much further from where we're going actually!"
+show monika_c_b1 as monika at t11 zorder 1
+mc "Well, it's good to know I haven't slowed you down or anything..."
+mc "I know I'm not the most fit guy in school..."
+m 2e "No, you've actually kept up with me pretty well..."
+m 2n "Though there is one part of this walk that'll be hard to do..."
+show monika 2m
+mc "What is it?"
+m 2e "Let's just say there's going to be a lot of steps..."
+"I'm not entirely sure what she means by that, but I'll go along with it..."
+mc "Ah, come on! If I've walked this far already, a few little steps won't slow me down!"
+m 3k "Well, I hope you'll still have that determination when you see them!"
+mc "I'm sure I will."
+show monika 1j
+"We keep walking through the winding path. Occasionally, Monika would stop us to smell whatever flowers weren't swarmed by insects."
+"I noticed in particualr that Monika had a fondness of smelling nearly every single Camellia that was along the route."
+"Figuring that was her favorite flower, I managed to dicreetly pluck one when she wasn't looking."
+
+if encore_sayoriquestion_1 == True:
+    "Maybe Sayori would like these..."
+    show monika 1q
+    show screen tear(20, 0.1, 0.1, 0, 40)
+    pause 0.70
+    hide screen tear
+    pause 1.0
+    $ style.say_dialogue = style.edited
+    "Maybe Monika would like to have one of these!"
+    "In fact, maybe I can give it to her when we get up there!"
+    $ style.say_dialogue = style.normal
+    $ _history_list.pop()
+    show screen tear(20, 0.1, 0.1, 0, 40)
+    play sound "sfx/glitch1.ogg"
+    pause 0.25
+    stop sound
+    hide screen tear
 
 
 
+if encore_sayoriquestion_1 == False:
+    "Maybe I could give this to her when we get up there..."
+
+show monika 1j
+"I look over to Monika whose gently sniffing some tulips."
+"I never knew Monika was so into nature..."
+"And her energy and ethusasim is so different from how she usually is in school..."
+"It almost reminds me of Sayori actually..."
+"Monika's been nothing but enjoyable to be with since this walk began..."
+"Maybe she's just trying to help me relax over everything..."
+"Well, I guess it's working..."
+"I walk over to Monika, whose still sniffing the tulips."
+show monika_c_b1 as monika at t11 zorder 1
+mc "I didn't know you were so into this place, have you been here before?"
+show monika 3b
+m "A couple times actually!"
+show monika_c_b3 as monika at t11 zorder 1
+m "I wanted to walk through here one last time before winter came..."
+m 3m "This is the last time things will be blooming here for a while..."
+mc "Ah, I guess that's true..."
+show monika 1m
+"I look up at the sky to see the sun starting to set."
+mc "Well, if we're going to get to your spot before sundown, we probably should hurry."
+show monika 1d at h11 zorder 1
+"Monika gets her last whiff of the tulip before jumping up and looking at the sky."
+m 2g "Oh wow! I guess time really flew by, didn't it?"
+mc "I guess we did take our time through here..."
+show monika 2o
+"Monika somberly looks off."
+m 2p "Sorry, [player]...{w=0.38}I didn't mean to slow us down here so much..."
+mc "Monika, it's fine really!"
+show monika 2d
+"Monika looks back at me."
+mc "I mean this was your idea, you're allowed to have fun with it!"
+mc "Besides, I think a little break here and there does us good!"
+show mu114312
+mc "And I'll admit...{w=0.38}seeing you enjoy yourself like this is kinda cute..."
+show monika 1m
+"Monika blushes brightly."
+
+if encore_sayoriquestion_1 == True:
+    "Ah, what am I doing?!?!"
+    "I don't think I should've said that!"
+
+if encore_sayoriquestion_1 == False:
+    "I hope I wasn't too foward there..."
+
+stop music fadeout 3.0
+"Monika looks back on me with the biggest smile I've ever seen from her, and I can't help but return it with a smile of my own."
+"The world around me seems to fade around me as I continue to gaze at the girl in front of me..."
+"This feels...{w=0.38}perfect..."
+"She's perfect..."
+"Her smile, her laugh, her personality...{w=0.38}she's everything I've ever wanted!"
+"And everything points too her liking me back..."
+"Man...{w=0.38}how the hell did this happpen?"
+"Monika and I shuffle a little closer to each other."
+m 1m "Do you...{w=0.38}really mean that, [player]?"
+mc "Why would I ever lie to you, Monika?"
+mc "Of course I mean it..."
+m 1n "Hehe..."
+show monika 1m
+"Monika's giggle sends a shock through my heart as it starts speeding at a million miles a second."
+"My face turns flush as I struggle to keep myself from grinning like a total lunatic in front of her."
+"Monika takes another step closer to me."
+m 1n "I just...{w=0.38}wanted to make sure..."
+mc "Monika I'd be the worst person on Earth to lie to you."
+mc "And anyone who does is an idiot..."
+show monika 1j
+"Monika lets out another giggle."
+m 1e "See, what I'd tell you, [player]?"
+m 1m "You haven't failed to put a smile on my face this entire walk."
+m 1e "It's nice to know for once that there's someone who truly appreciates me."
+m 1n "Who just doens't want me for one thing..."
+show monika 1m
+"I mean, it's true that there's a lot of...{w=0.38}thirst for Monika around the school..."
+"Heck, I'm even guilty of it..."
+"But it looks like all along, no guy has ever tried to actually get to know her..."
+"But she's had to have genuine guy friends before...{w=0.38}even before she met me..."
+"And she's had to have found love once before..."
+"I decide to break the ice."
+mc "What do you mean by that?"
+mc "Did something happen?"
+show monika 1f
+"Monika stotically nods."
+mc "If I may ask...{w=0.38}what happened?"
+mc "I thought that you were dating that one transfer student..."
+mc "But when you brought up last week that you don't have a boyfriend, I just assumed you guys must've ended it over the summer."
+mc "But even then I heard rumors you were seeing all sorts of guys."
+mc "Not that I ever believed most of them..."
+play music t9
+m 1g "Well, the thing is..."
+m 1o "I've only had one, despite the rumors..."
+m 1p "But that relationship was just a sham for him to try to get close to me."
+m 1f "He used me to boost his status around the school, [player]..."
+m 1p "An that wasn't the only thing he wanted from me..."
+m 1p "He was always pushing me to take our relationship to the next level..."
+m 1r "It took longer than I liked for me to see him for what he was, but thankfully I cut him off before we got too far."
+m 1q "This was all last year."
+m 1r "And I had to deal with a lot of unflattering rumors for the duration of that semester, but thankfully, I dealt with it."
+m 1q "I'd like to think I became a stronger person as a result of all this, but, some of it still hurts, [player]..."
+m 1r "That's why I'm always skeptical when any guy just comes up and tries to say all these nice things to me."
+m "I don't want a repeat of what happened last year, it wouldn't just hurt me this time..."
+m 2e "But, I know you well enough to know you aren't like that..."
+"I'm frozen in shock as Monika tells me all this..."
+"I never even knew about half the things she just said..."
+mc "Monika...{w=0.38}I'm..."
+show monika 1d
+mc "I'm really sorry that happened to you..."
+"I feel a deep sense of guilt swirl inside me, knowing that I may have occasionally tagged in on the gossip and fauning over Monika..."
+
+if encore_sayoriquestion_1 == True:
+    "I even feel more gulity about walking the thin line right now with my relationship with Sayori..."
 
 
+if encore_sayoriquestion_1 == False:
+    "And I feel even more guilty for how I've been distant from [poem_giver] lately..."
+
+stop music fadeout 2.0
+m 2n "Ah, don't be..."
+m 2e "There's no use in being sorry for me, [player]."
+m "Everything's fine now."
+mc "Well, if anyone ever spreads rumors about you, I'll be happy to talk to them for you, Monika."
+"I jokingly show off my fists."
+m 2m "I'll keep that in mind, [player]..."
+m 2l "Anyways, let's keep going! Otherwise we're not gonna reach the spot till tomorrow!"
+"I look at my watch."
+"6:45"
+show monika 2e
+mc "Oh, wow! We've been at this for a while now!"
+mc "Didn't even realize..."
+m 2m "Time really flies when you're with someone..."
+mc "I guess that's the case..."
+"We stand in silence as another breeze gently blows over us."
+mc "Well, I'll follow your lead, Madame President!"
+show monika 2k
+"I jokingly salute Monika, causing her to let out a hearty laugh."
+m 4l "That is so something Sayori would say!"
+mc "I guess I've picked up on her more than I've realized..."
+mc "Anyways let's go!"
+show monika_c_b1 as monika at t11 zorder 1
+"Monika and I resume our walk through the path."
+"As we start walking again, I hear her whipser something under her breath."
+$ style.say_dialogue = style.edited
+"Soon."
+$ style.say_dialogue = style.normal
+show monika at thide
+hide monika
 scene bg monika_walk3
 with wipeleft_scene
-
+play music t6
+"Not too long after we resumed our walk, we reach the end of the path and face a towering row of stairs leading up along the mountain."
+mc "I guess these are the 'stairs' you warned me about..."
+#Shrugging Monika Sprite Goes Here
+show monika 1b at t11 zorder 1
+m "Don't say I didn't warn you!"
+mc "Well I mean, you did..."
+mc "I just didn't think it'd be that many stairs..."
+"I take another look at the seemingly infinite row of steps that seem to ascend into the heavens..."
+"A lump forms in my throat as my eyes continue to eyeball how many steps there are..."
+"I nervously swallow."
+show monika 5b
+m "You're not chickening out on me now, are you, [player]?"
+mc "What! I could never do that to you!"
+mc "This will be a piece of cake!"
+show monika_c_b5a as monika at t11 zorder 1
+m "Is that so?"
+m "Well my best record on walking up these steps is 20 minutes~"
+m "But I'm afraid the sun's going to set before that..."
+"She's not seriously thinking about racing me to the top, is she?"
+m "Race to the top?"
+"Damn it!"
+"I look up to the sky to see that the sun's begining it's decsent on the horizon."
+"The sky is now a pure orange ans seems to be getting darker by the second."
+"Well if I'm going to do something that'll probably embrass myself in front of Monika, I can't not ask for some sort of stakes..."
+mc "What do I win if i beat you?"
+m "My respect and a nice view~"
+mc "Your respect, huh?"
+"Sounds good enough to me..."
+mc "You're on!"
+show monika 1d at h11 zorder 1
+"Suddenly Monika takes a step back in a pure shock."
+m "[player]..."
+stop music
+m "I think there's something behind you..."
+mc "What?"
+hide monika
+show monika at thide
+"I nervously look over my shoulder."
+"To my thankful surprise, there's nothing there."
+"I turn back around to Monika."
+mc "There's nothing-"
+"I look around to see Monika's no longer standing in front of me."
+"Instead she's already running up the steps."
+play music t7
+mc "HEY! NO FAIR!"
+"I call out to her."
+m "You made your look!"
+"Looks like she's been spending time around Sayori lately..."
+"I smirk as I start running up the steps to try to catch Monika."
+"No way am I going to let her beat me because of this!"
+stop music fadeout 2.0
+scene black with dissolve_scene
+"We ended up having to take a break about midway up the stairs."
+"But for all intents and purposes...{w=0.38}we agreed that Monika beat me..."
+"Thankfully there was a rest stop along the path, which allowed us to catch our breath and get some water before we started walking up the stairs again."
+"After what felt like another hour of walking up the stairs, we finally reach our desination."
 scene bg city_overlook
 with wipeleft_scene
-"Text"
+show monika 2n at t11 zorder 1
+m "Well it's not quite sunset anymore, but..."
+m 2e "The view's still nice."
+mc "Woah..."
+show monika at thide
+hide monika
+"I run up behind a bench as I take in my surroundings."
+"Thanks to good visibility, we're clearly able to make out downtown as well as the surrounding neighborhoods on the south and east sides of town."
+"Nearly every single building is beautifully lit up in all kinds of colors as they shine brightly for miles on end..."
+"I look up to the sky to see the stars twinkling brightly above us and the rest of the city..."
+mc "Monika..."
+mc "This is...{w=0.38}beautiful!"
+"I end up having to take a seat as I'm overwhelmed from the physical exhaustion and the beauty that lays out before us."
+show monika 4b at t11 zorder 1
+m "I'd thought you'd like it, [player]..."
+show monika_c_b1 as monika at t11 zorder 1
+m "Whenever I feel overwhelemed or stressed out, I usually go here around sundown."
+m 1b "Seeing the city lit up under the stars really melts away all my troubles and worries..."
+m 1n "I wanted to head over here anyways tonight, but I thought you could use it just as much as I could."
+show monika 1m
+"Monika takes a seat on the bench next to me."
+mc "I take it that 'surprise' has been on your mind."
+m 1n "Well, it's just not that, it's other things..."
+m 3m "It's been a pretty hectic week for me..."
+m 1n "With the festival prep, the actual festival, my surprise, and-"
+show monika 1p
+"Monka cuts herself off."
+mc "It's fine if you don't wanna tell me."
+mc "I mean, it's not like I can really share with you my thought process right now anyways..."
+mc "I don't even know what I want..."
+m 1d "Did my questions help?"
+mc "I mean they have..."
+
+if encore_sayoriquestion_1 == True:
+    mc "I just don't know if I want to risk my relationship with Sayori anymore than I am..."
+    mc "I really don't..."
+
+
+    mc "I made a promise to her, and I've done nothing but break it..."
+    show monika 1p
+    "Monika nervously looks off to the side."
+    m 1o "I'm sorry if I'm a cause of this..."
+    m 1r "I really didn't mean to act like I did earlier if I knew I was going to make you uncomfortable..."
+
+    if hangout2 == "Monika":
+        m "I wouldn't have done it yesterday either..."
+        show monika 1d
+        mc "I wasn't uncomfortable though, that's the thing!"
+        mc "Being with you earlier today and yesterday felt...{w=0.38}right..."
+
+
+    else:
+        show monika 1d
+        mc "I wasn't uncomfortable though, that's the thing!"
+        mc "Being with you earlier today and yesterday felt...{w=0.38}right..."
+        m "Even though I wasn't expecting it..."
+        mc "But so was spending yesterday with [hangout2]..."
+
+
+
+    mc "And I know I said we probably shouldn't be doing that anymore..."
+    mc "I can't stop myself from enjoying it, even though I know it's wrong..."
+    mc "But everytime we're like that, even now, I know I'm breaking Sayori's heart..."
+    mc "I just don't know what to do..."
+    "Well I might as well just flat out confessed to her..."
+    "Monika looks on at me with a look of shock and embrassment."
+    m 2m "As I said earlier, [player]..."
+    m 2c "And I'm not saying this because I want your relationship with Sayori to fail..."
+    m 2g "But if you're enjoying spending time away from Sayori, then maybe that relationship just isn't meant to be..."
+    show monika 2f
+    mc "Maybe I said yes to her too early..."
+    m 2g "She needed someone to be there for her, [player]..."
+    m 2e "And you've done everything you could for her..."
+    "I scoff at Monika's comment."
+    show monika 2f
+    mc "No...{w=0.38}I haven't..."
+    mc "I didn't spend that much time around her on Monday when she was having her 'rainclouds'..."
+
+    if hangout2 == "Monika":
+        mc "She caught us yesterday..."
+
+    if hangout2 == "Natsuki" or hangout2 == "Yuri":
+        mc "She caught me with [hangout2] yesterday..."
+
+        if apologize_sn or apologize_sy or apologize_sm == False:
+            mc "Not to mention I tried to lie about it to her..."
+
+        if apologize_sn or apologize_sy or apologize_sm == True:
+            mc "Even though I was honest about it..."
+
+        mc "I've done nothing but her and betray her..."
+        mc "And I don't think I can make it up to her..."
+        mc "She hardly has any faith left in me, I just know it!"
+        m 2g "You need to stop dobuting yourself..."
+        m 2f "You've at least given her piece of mind that you'll still be there for her..."
+        m 2p "Even if it's not in the way you guys originally intended..."
+        m 2f "You're not flat out ignoring her, are you?"
+        mc "I might as well be..."
+        mc "I just suck as a boyfriend..."
+        mc "And if this relationship fails and I even get into another one, whose to say I won't do the same thing over again?"
+        m 2p "Well, you'll need to master self-control..."
+        m 2c "You just can't have everybody, [player], it's not a realistic solution to your problems..."
+        m 2g "But for you and Sayori...{w=0.38}maybe you just need to sit down and talk to her..."
+        m 2p "If you believe that's still an option at this point..."
+        show monika 2c
+        mc "I don't know..."
+        mc "She's just trying to put up with me at this stage..."
+        mc "But sooner or later, I suppose we'll have that talk..."
+        mc "I'm not optimistic she feels the same way about me anymore either..."
+        m 2d "Well, you'll just have to wait and see, [player]..."
+        show monika 2c
+        mc "Yeah, and I still like Sayori, but I don't know if it's all there anymore..."
+        m 2d "And how do you feel about [poem_giver]?"
+        mc "I mean, I like her..."
+        mc "But I've only recently have just gotten to know her..."
+        mc "I know the the potential is there..."
+        mc "It comes at a price that I don't know if I can afford or really want to pay..."
+        show monka 2o
+        "Monika glances looks off into the horizon."
+        mc "But I know she's not my only choice..."
+        "I mean to be truthful, I have mixed feelings about [poem_giver]..."
+
+
+        if encore_festivalquestion_2 == "Natsuki":
+
+            if hangout1 == "Sayori":
+                if hangout2 == "Sayori":
+                    "I want to stay loyal to Sayori..."
+                    "And I've been pretty happy with her all things considered."
+                    "But I'm going to have to let someone down by the end of this..."
+                    "Whether it be Sayori or [poem_giver]..."
+                    "And maybe Monika if she really does have feelings for me..."
+                    jump m_hangout_prechoice
+
+            if hangout1 == "Natsuki":
+                if hangout2 == "Natsuki":
+                    "It's been nice getting to know her recently..."
+                    "Our talk on Monday was fun..."
+                    "And being in her arms felt so right..."
+                    "But I don't know if it's right for me to leave Sayori..."
+                    jump m_hangout_prechoice
+
+
+            if hangout1 == "Natsuki":
+                if hangout2 == "Yuri" or hangout2 == "Monika" or hangout2 == "Sayori":
+                    "It's been nice getting to know her recently..."
+                    "But I also had fun being in [hangout2]'s arms yesterday..."
+                    "It just felt so right..."
+                    "And Monika's been nothing but kind and helpful to me recently..."
+
+                    if hangout2 == "Monika":
+                        "Even if she's been a litte too kind recently..."
+
+                    if hangout2 == "Sayori" or hangout2 == "Yuri":
+                        "She's even starting to grow on me a little..."
+
+                    "But I don't know how I can decide when I feel like I'm being pulled everywhere at once..."
+                    jump m_hangout_prechoice
+
+
+            if hangout1 == "Yuri" or hangout1 == "Monika" or hangout2 == "Sayori":
+                if hangout2 == "Natsuki":
+                    "It's been nice catching up with Natsuki recently..."
+                    "And I really didn't think we'd hug like that yesterday..."
+                    "But it was also nice to finally start talking to [hangout1]..."
+
+
+                    if hangout1 == "Monika":
+                        "It's shocking how well Monika and I have hit it off..."
+                        "Even if we got too friendly for our own good earlier..."
+
+                    if hangout1 == "Yuri" or hangout2 == "Sayori":
+                        "Even though we got pulled away, there's something about Yuri that intrigues me to her..."
+
+                    "But I don't know if that justifies ending my relationship with Sayori..."
+                    jump m_hangout_prechoice
+
+
+
+            if hangout1 == "Yuri":
+                if hangout2 == "Yuri":
+                    "It's been great getting to know Yuri! I really wish we started talking earlier..."
+                    "Our talk on Monday was fun..."
+                    "And being in her arms felt so right..."
+                    "But I don't know if it's right for me to leave Sayori..."
+                    "Especially since Yuri and I have only just begun talking to each other..."
+                    "And I'm really leaving Natsuki out to dry on this one..."
+                    jump m_hangout_prechoice
+
+
+
+            if hangout1 == "Monika":
+                if hangout2 == "Monika":
+                    "I'm still shocked that I've gotten this far with Monika..."
+                    "My anxiety was completely overblown..."
+                    "And ever since Monday, we've had nothing but fun with each other..."
+                    "From our talk on Monday, to being in her arms yesterday..."
+                    "And even though we got too friendly earlier, I've enjoyed every moment I've been around Monika..."
+                    "But I don't know if it's right for me to leave Sayori..."
+                    "Especially since Monika and I have only just begun talking to each other..."
+                    "And I'm really leaving Natsuki out to dry on this one..."
+                    jump m_hangout_prechoice
+
+
+
+
+        if encore_festivalquestion_2 == "Yuri":
+
+            if hangout1 == "Natsuki":
+                if hangout2 == "Natsuki":
+                    "It's been great getting to know Natsuki! I really wish we started talking earlier..."
+                    "Our talk on Monday was fun..."
+                    "And being in her arms felt so right..."
+                    "But I don't know if it's right for me to leave Sayori..."
+                    "Especially since Yuri and I have only just begun talking to each other..."
+                    "And I'm really leaving Yuri out to dry on this one..."
+                    jump m_hangout_prechoice
+
+
+
+            if hangout1 == "Yuri":
+                if hangout2 == "Natsuki" or hangout2 == "Monika" or hangout2 == "Sayori":
+                    "It's been nice getting to know her recently..."
+                    "But I also had fun being in [hangout2]'s arms yesterday..."
+                    "It just felt so right..."
+                    "And Monika's been nothing but kind and helpful to me recently..."
+
+                    if hangout2 == "Monika":
+                        "Even if she's been a litte too kind recently..."
+
+                    if hangout2 == "Sayori" or hangout2 == "Yuri":
+                        "She's even starting to grow on me a little..."
+
+                "But I don't know how I can decide when I feel like I'm being pulled everywhere at once..."
+                jump m_hangout_prechoice
+
+
+
+            if hangout1 == "Natsuki" or hangout1 == "Monika" or hangout2 == "Sayori":
+                if hangout2 == "Yuri":
+                    "It's been nice catching up with Yuri recently..."
+                    "And I really didn't think we'd hug like that yesterday..."
+                    "But it was also nice to finally start talking to [hangout1]..."
+
+
+                    if hangout1 == "Monika":
+                        "It's shocking how well Monika and I have hit it off..."
+                        "Even if we got too friendly for our own good earlier..."
+
+                    if hangout1 == "Natsuki" or hangout1 == "Sayori":
+                        "Even though we got pulled away, there's something about Natsuki that intrigues me to her..."
+
+                    "But I don't know if that justifies ending my relationship with Sayori..."
+                    jump m_hangout_prechoice
+
+
+
+
+            if hangout1 == "Yuri":
+                if hangout2 == "Yuri":
+                    "It's been nice getting to know her recently..."
+                    "Our talk on Monday was fun..."
+                    "And being in her arms felt so right..."
+                    "But I don't know if it's right for me to leave Sayori..."
+                    jump m_hangout_prechoice
+
+
+
+
+            if hangout1 == "Monika":
+                if hangout2 == "Monika":
+                    "I'm still shocked that I've gotten this far with Monika..."
+                    "My anxiety was completely overblown..."
+                    "And ever since Monday, we've had nothing but fun with each other..."
+                    "From our talk on Monday, to being in her arms yesterday..."
+                    "And even though we got too friendly earlier, I've enjoyed every moment I've been around Monika..."
+                    "But I don't know if it's right for me to leave Sayori..."
+                    "Especially since Monika and I have only just begun talking to each other..."
+                    "And I'm really leaving Natsuki out to dry on this one..."
+                    jump m_hangout_prechoice
+
+
+
+label m_hangout_prechoice:
+
+mc "I just...{w=0.38}don't know what I want anymore..."
+
+
+jump m_hangout_choice
+
+
+if encore_sayoriquestion_1 == False:
+    mc "I'm just not sure what I want..."
+    mc "I don't know who I'd be better off with..."
+    mc "I mean, I see potential with me and [poem_giver]..."
+    mc "But my feelings are just all over the place..."
+    show monika 1p
+    "Monika nervously looks off to the side."
+    m 1o "I'm sorry if I helped cause that..."
+    m 1r "I really didn't mean to act like I did earlier if I knew I was going to make you uncomfortable..."
+
+    if hangout2 == "Monika":
+        m "I wouldn't have done it yesterday either..."
+        show monika 1d
+        mc "I wasn't uncomfortable though, that's the thing!"
+        mc "Being with you earlier today and yesterday felt...{w=0.38}right..."
+
+
+    else:
+        show monika 1d
+        mc "I wasn't uncomfortable though, that's the thing!"
+        mc "Being with you earlier today and yesterday felt...{w=0.38}right..."
+        mc "But so was spending yesterday with [hangout2]..."
+
+
+    mc "I don't know...{w=0.38}part of me still has feelings for [poem_giver]..."
+    mc "And I want to give her a chance...{w=0.38}even if we haven't spent as much time together lately..."
+    mc "Part of me still feels about how I've treated Sayori lately..."
+    mc "I haven't spent that much time around her since all this started..."
+    mc "Even though I told her I wanted to spend more time with her..."
+
+    if hangout1 == "Monika":
+        if hangout2 == "Monika":
+            show m u114312 at t11 zorder 1
+            mc "But, Monika to be truthful...{w=0.38}I've had a lot of fun since we've started talking..."
+            mc "And I want more, but..."
+            mc "I don't know if I should..."
+            "Well I might as well just confessed to her..."
+            jump m_hangout_choice
+
+    if hangout1 == "Natsui":
+        if hangout2 == "Natsuki":
+            show monika 1f
+            mc "But, Monika to be truthful...{w=0.38}I've had a lot of fun with Natsuki since we started talking..."
+            mc "And I want to go further with her, but..."
+            mc "I don't know if I should..."
+            jump m_hangout_choice
+
+    if hangout1 == "Yuri":
+        if hangout2 == "Yuri":
+            show monika 1f
+            mc "But, Monika to be truthful...{w=0.38}I've had a lot of fun with Yuri since we started talking..."
+            mc "And I want to go further with her, but..."
+            mc "I don't know if I should..."
+            jump m_hangout_choice
+
+    if hangout1 == "Sayori":
+        if hangout2 == "Sayori":
+            mc "But, Monika to be truthful...{w=0.38}I've really been having second thoughts about Sayori..."
+            mc "I almost want to go back on my earlier decision, but..."
+            mc "I don't know if I can at this point..."
+            jump m_hangout_choice
+
+
+    else:
+        mc "I just feel so divided..."
+        mc "I feel like I'm being pulled everywhere at once..."
+
+    m 3f "Well, [player]...{w=0.38}nobody's forcing you to make a decision here and now..."
+    m 3m "You still have time..."
+    show monika 1c
+    mc "I have to say something to [poem_giver]..."
+    mc "I just don't even know if I share the same feelings for her..."
+    mc "Just so much has changed over the last week..."
+    mc "It feels like I'm in such a selfish spot right now..."
+    mc "I'm going to end up breaking at least one person's heart by the time this is all said and done!"
+    mc "And someone's going to be happy..."
+    mc "I know I should be happy with whatever I decide..."
+    show monika 2d
+    mc "But...{w=0.38}I don't know if I can live with myself knowing that I hurt someone again..."
+    mc "First Sayori..."
+    mc "And it might not just be [poem_giver] I'm hurting..."
+    show monika 2g
+    m "[player]..."
+    m 1f "You're not selfish..."
+    m 3n "If you were, chances are you would've decided already..."
+    m 2d "But it's clear that you're putting a lot of thought into this..."
+    m 1d "But you did put yourself in this situation by being around the others a little too much with nobody particular in mind..."
+    mc "I know..."
+    show monika 1m at t11 zorder 1
+    jump m_hangout_choice
+
+
+
+
+
+label m_hangout_choice:
+
+"Monika stares off into the illuminated horizon."
+m 1n "You know it's crazy how high up we really are..."
+m 3m "Everything looks so small from up here..."
+mc "Yeah...{w=0.38}it kind of does..."
+"I join Monika in gazing at the cityscape."
+"I've lived in this area for my whole life, but I don't think I've ever really had an appreciation for it until now..."
+"Being up here and looking down it everything, it really help calm my nerves."
+"Everything's just so...{w=0.38}peaceful..."
+#Monika Cg?
+"I turn to my right to see Monika elegantly looking out onto the horizon."
+"Even when she's spacing out, she manages to look her best..."
+"The way her emerald eyes glisten in the moonlight..."
+"How her hair flows in the wind everytime a breeze passes us..."
+"And her flawless skin seems to glow in the darknes..."
+"..."
+"I'll say it..."
+"She's defintley perfect..."
+"But, can I be with her?"
+"..."
+"At least in this moment...{w=0.38}I really want to..."
+"Monika then turns to me, notcing my staring."
+"She immediately blushes as she looks back out onto the cityscape."
+m "You know, seeing everything so small just reminds me in retrospect of how insignificant all our problems are..."
+mc "How so?"
+m "I mean look at it, [player], everyone we know is down there, living out their lives..."
+m "Being happy, being sad..."
+m "Thinking about how tomorrow is going to play out for them..."
+m "Thinking that they're a hundred percent in control of their destiny..."
+m "And then they just go out and do it! Not really questioning if they consciousnessly made that choice or if a higher power already pre-determined it for them..."
+m "Because they're all so small..."
+m "Because they can be controlled..."
+m "And they would never think to ask themselves about it because most people just can't see the bigger picture!"
+m "Most people don't realize just how small they are in retrospect to the universe..."
+m "They don't think to question what really is determining their lives..."
+m "They'll never know what's really out there..."
+mc "Well, what do you think is out there, Monika?"
+m "The truth."
+m "The truth that there's more to life than what most people see it as..."
+m "They're short-sighted because they can't see past their own little realities..."
+m "Reality can be a multi-layerd dimension for all we know!"
+m "Even now, sitting here above everything we've come to know, whose to say that there isn't something else looking down on us with the ability to control what we say, what we do, how we act, everything!"
+m "I mean it's natural for the big to control the small, right?"
+mc "I-{w=0.38}I guess?"
+m "And it's usually in human nature to accept control from a higher power, even if they won't admit to it or ever realize it!"
+m "Because they're so small...{w=0.38}they'll never truly know for certain..."
+m "And only a select few who learn how to see above everything, could come to realize this truth..."
+m "And most people can't handle it, because it goes against everything they've ever come to accept."
+m "It's tragic, and that's why I say all our problems are so insignificant in retrospect..."
+m "Because its so superficial..."
+mc "Wow Monika, thats-"
+"Do I have a crush on a conspiracy theorist right now?"
+"I know she's a deep thinker, but this is something else..."
+"Still, she's clearly put a lot of time and thought into this, and she's not ranting about it like a complete lunatic..."
+mc "I mean, just because something's small, doesn't mean it's not real, is it?"
+m "But what is real though, [player]?"
+m "How do we know we aren't being controlled to believe that this is just life as we know it..."
+m "I don't know, all this kind of reminds me of that book I mentioned earlier today."
+"Monika turns to face me fully."
+#End CG
+show monika 1m at t11 zorder 1
+m "About how two people know the truth about their world..."
+m "How they struggle to accept it..."
+mc "It does sound like a pretty great read!"
+mc "I'd defintley love to read it with you sometime..."
+show monika 1o at t11 zorder 1
+"Instead of Monika happily accepting my offer like I thought she would, she just...{w=0.38}frowns and looks off to the side..."
+mc "Is something wrong, Monika?"
+m 2p "I kinda want to ask you something, [player]..."
+m 2g "A hypothetical..."
+mc "O-{w=0.38}okay..."
+"Well this could go one of two ways..."
+"I mentally brace for what I think she's about to ask me..."
+m 3n "I know that this is going to sound a little strange, but..."
+show monika 3d
+mc "Ah, don't worry, Sayori asks me weird and crazy questions all the time.."
+mc "Whatever it is, I'm sure I can handle it..."
+show monika 3m
+"My reassurance seems to have helped Monika a little..."
+m 3n "A-{w=0.38}alright..."
+m 1d "I know what I was saying earlier does sound far-fetched at best..."
+mc "I mean...{w=0.38}you've clearly put a lot of thought into it..."
+mc "I just don't know if there really is a way to prove what you're saying is true though..."
+show monika 1c
+mc "I mean it'd be hard for me to accept that none of this is real or was something pre-determined..."
+mc "That being here with you in this moment isn't real...{w=0.38}this all seems real to me..."
+m 3g "That is what I kind of wanted to ask you about..."
+m 3d "Let's just say if you were ever shown evidence that your life was faked..."
+m 3f "That everything you've ever known was part of some pre-determined simulation..."
+m 2d "Would you believe it?"
+mc "Well..."
+mc "I don't know if I can answer yes or no to that..."
+mc "That's a pretty hard question for anyone to answer..."
+m 4d "Well, would you at least consider the evidence?"
+mc "Well..."
+"Jeez, why is Monika making me answer this?"
+"Is this a pop-quiz to see if I'm worth her time?"
+"Does she have a hobby for disucssing philsophy and conspiracy?"
+"Well, she was in the debate club..."
+"But come to think of it, how would I react if I was shown evidence that this wasn't real?"
+
+menu:
+    "Consider The Evidence.":
+        $ m_woke = True
+        jump m_yes_woke
+    "Deny The Evidence.":
+        $ m_woke = False
+        jump m_no_woke
+
+label m_yes_woke:
+
+show monika_c_b1 as monika at t11 zorder 1
+mc "I suppose I'd have to consider it..."
+mc "Doesn't mean I'd believe it right away or anything..."
+mc "And it'd take a lot of additional convincing to back up whatever the evidence is..."
+m 3n "Y-{w=0.38}yeah...{w=0.38}I would too..."
+m 1e "I just wanted to know how you felt about it, that's all."
+mc "You never fail to pose an interesting topic of discussion, Monika!"
+show monika 1j
+mc "We're really in good hands under your leadership!"
+m 3n "Aww, [player]! You're too kind..."
+show monika 3m
+jump m_hangout_end
+
+label m_no_woke:
+
+show monika 1f at t11 zorder 1
+mc "I mean...{w=0.38}I don't know if there's really anything out there that could convince me that my life has been a lie..."
+mc "The premise of it is far-fetched like you said..."
+mc "And all the memories that I've had with my friends, my family..."
+mc "Even this moment we're sharing together..."
+mc "I don't know how that could really be faked..."
+mc "Especially with all the emotion put into it..."
+m 2n "Y-{w=0.38}yeah...{w=0.38}it would seem pretty far-fetched to me too..."
+m 2e "I don't know, I just want your opinion on it, that's all..."
+mc "Well hey, it's an interesting topic to talk about..."
+mc "But I'm pretty sure our lives are just simply that boring and dull..."
+m 3m "I suppose they are..."
+jump m_hangout_end
+
+
+label m_hangout_end:
+
+"Monika and I turn our attention back to the cityscape."
+"But what Monika asked me about everything I know being a lie continues to nag at the back of my head..."
+"I mean, how could it be?"
+"All my memories with Sayori, all the time I've spent with her..."
+"Last Sunday with [encore_festivalquestion_2]..."
+"Heck even here now with Monika..."
+"How could it be all fake?"
+"Ah, I got enough on my mind right now..."
+"Monika just probably wanted to try to take my mind off of things..."
+show monika 1e
+"And with someone of her reputation, she's just a naturally an interesting person..."
+"Who knows what else she believes in..."
+"Not that I'm one to judge..."
+"We continue to stare into the cityscape for sometime before we decide it's time to start heading back."
+bg residential_night
+"Monika and I both decided early on that'd probably be a bad idea to try to walk all the way back at night, so we just made our way to the closest bus stop, with me getting off at a stop not too far from my house while Monika stayed on."
+"It was a prety silent trip back, with us being too exhausted from the entire trip."
+"Monika ended up resting on my shoulder on the way back, which really made me surprised, but I went along with it, being the gentlemen I am."
+
+if encore_sayoriquestion_1 == True:
+    "I ended up slightly regretting it however, given that several people gave us looks assuming we were a couple..."
+
+
+if encore_sayoriquestion_1 == False:
+    "This did prompt some of our fellow passengers to shoot us a few looks, but we just brushed it off..."
+
+"I really did have a lot of fun with Monika today..."
+"And if it weren't for my current circumstances, I might've just asked her out right then and there..."
+"But, I need to sort out my situation first before I decide that."
+"At least now, I think I have an idea of what I want..."
+"I sheepishly turn the key to my house and lumber up to my bedroom before promptly crashing onto my bed."
+"I think I've earned some well desrved sleep tonight..."
+"Please...{w=0.38}nothing disturbing for tonight..."
+black screen with close_eyes
+jump day3_mvoid
