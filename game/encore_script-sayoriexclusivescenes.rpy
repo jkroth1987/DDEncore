@@ -4696,3 +4696,89 @@ label day3_sconverge:
         mc "Good."
         "Sayori and I share a smile before we just practically wait around for Monika to call us for the activity for today."
         jump day3_sreturn
+
+
+
+#if hangout1 == "Sayori":
+    #if hangout2 == "Sayori":
+
+#if hangout1 != "Sayori":
+    #if hangout2 == "Sayori":
+
+#if hangout1 == "Sayori":
+    #if hangout2 != "Sayori":
+
+#if hangout1 != "Sayori":
+    #if hangout2 != "Sayori":
+
+label sencore_4:
+
+play music t6 fadein 2.0
+scene bg house
+with wipeleft_scene
+"I walk out of my house and wait by the fence that seperates our two houses."
+show sayori 1ba at t11 zorder 1
+"Not long after I arrive, I see Sayori exiting her backdoor and walking up to the fence."
+"I unlock the gate and hold it open for her."
+mc "Hey, Sayori!"
+
+
+
+if encore_sayoriquestion_1 == True:
+
+    if hangout1 == "Sayori":
+        if hangout2 == "Sayori":
+            s 4bd "Hey, [player]!"
+            show sayori 4bq
+            "I take Sayori into my arms."
+
+    if hangout1 != "Sayori":
+        if hangout2 == "Sayori":
+            s 4bd "Hey, [player]..."
+
+
+    if hangout1 == "Sayori":
+        if hangout2 != "Sayori":
+            s 4bl "Hey, [player]..."
+
+    if hangout1 != "Sayori":
+        if hangout2 != "Sayori":
+            s 4bk "Hey, [player]..."
+
+if encore_sayoriquestion_1 == False:
+
+    if hangout1 == "Sayori":
+        if hangout2 == "Sayori":
+            s 4bd "Hey, [player]..."
+
+    if hangout1 != "Sayori":
+        if hangout2 == "Sayori":
+            s 4bd "Hey, [player]..."
+
+    if hangout1 == "Sayori":
+        if hangout2 != "Sayori":
+            s 4bl "Hey, [player]..."
+
+    if hangout1 != "Sayori":
+        if hangout2 != "Sayori":
+            s 4bk "Hey, [player]..."
+
+
+
+
+scene bg city_sidewalk2
+with wipeleft_scene
+"Walking to the resturant."
+
+scene bg fastfood
+with wipeleft_scene
+"Resturant Scene"
+
+scene bg park_dusk
+with wipeleft_scene
+"Park/Reflection Scene."
+
+scene bg residential_night
+with wipeleft_scene
+"Heading Home."
+jump day3_night

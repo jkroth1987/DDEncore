@@ -7058,8 +7058,10 @@ if hangout3 == "Natsuki":
         mc "Hey, look..."
         mc "If things ever get too bad over there..."
         mc "You can crash at my place for as long as you need to..."
-        n 5m "Well it's never been that bad, but..."
-        n 5t "I'll keep it in mind."
+        n 5m "Well it's not really that bad, but..."
+        n 5t "I'll keep it in mind..."
+        show natsuki 5u
+        "Natsuki somberly looks down at the floor before cracking a quick joke."
         n 5y "Maybe that way I can convince you to get a bigger blender!"
         mc "Heh, well, maybe when my parents come back I'll talk to them about it..."
         show natsuki 1k
@@ -9224,14 +9226,41 @@ menu:
 label s_food:
 
 mc "Yeah, sure! I wouldn't mind going out."
-mc "I mean...{w=0.38}it's not like we had a proper first date yet..."
+
+if encore_sayoriquestion_1 == True:
+    mc "I mean...{w=0.38}it's not like we had a proper first date yet..."
+
+if encore_sayoriquestion_1 == False:
+    mc "I'm kind of getting hungry myself..."
+
 s "I'm not taking you away from anything, am I?"
 mc "No, and to be honest I probably could use the fresh air..."
 s "Okay..."
 s "Well we're not going anywhere super fancy, but I did have one place in mind..."
 s "It's in the city."
 mc "Sounds fancy to me."
+s "It's not really anything super, it's more of a fast food place..."
+mc "Hey, I don't mind!"
+mc "Food is food!"
+mc "It's not like I have a preference right now."
+s "Yeah...{w=0.38}me neither..."
+mc "I'll meet you outside in a few minutes, okay?"
+s "Alright! See you in a bit!"
+mc "Bye!"
+"Sayori disconnects the call."
+"I'm fairly surprised that Sayori wants to go out..."
+"We haven't gone out to eat together in years..."
+"Although, I'm more than happy to take her up on her offer..."
+"All this thinking does work up quite an appetite..."
 
+if sayori_ice == True:
+    "Hopefully she doesn't try to take my food again..."
+
+if sayori_ice == False:
+    "Hopefully we can avoid another mishap like earlier..."
+
+"I grab my keys and wallet and walk out of my house to meet Sayori."
+jump sencore_4
 
 label s_no_food:
 
@@ -9421,7 +9450,7 @@ if encore_festivalquestion_2 == "Yuri":
 
 "It's truly amazing how far we've come in such a relatively short amount of time..."
 "At first I thought she hated me, but now it's like we've been friends our whole lives!"
-"I even think I'm even getting used to hear teasing..."
+"I even think I'm even getting used to her teasing..."
 "And she's clearly able to deal with my quirks now as well."
 "I didn't know it at the time, but I didn't think we'd be able to get along as well as we do now."
 "Considering she wasn't all that welcoming when I first joined..."
@@ -9466,7 +9495,7 @@ if hangout3 == "Natsuki":
     "Even if it's still a little hard to understand what she's doing at times..."
     "I always know she means well..."
     "And I've had a blast spending every moment I could around her."
-    "Her laughter, her smiles, she's never been boring to hang around..."
+    "Her laugh, her smiles, she's never been boring to hang around..."
     "And I think she enjoys spending time around me too..."
     "It's almost like we're a perfect match...{w=0.38}we both complimenet and balance each other out pretty well..."
     "And I have a pretty good reason to believe she likes me back..."
@@ -9474,22 +9503,26 @@ if hangout3 == "Natsuki":
 
     if natsuki_continued_hug == True or natsuki_hug == True:
         "And each time...{w=0.38}it felt almost magical..."
+        jump n_continued
 
     if natsuki_continued_hug == False or natsuki_hug == False:
         "Even though I was an idiot and messed up earlier..."
         "But I don't think she'd stay mad at me for that..."
+        jump n_continued
 
-    "All things considered, I do think I want to go for Natsuki..."
-    "But the problem is, I know that in doing so, I'd be breaking Yuri's heart..."
-    "And possibly causing Sayori even more anguish..."
-    "I just don't know if the timing is right..."
-    "Maybe once Sayori is better shape, and I feel like I have a proper way of rejecting Yuri, then maybe I can figure out how to talk to Natsuki about all this..."
-    "But then again, do I really need to wait for that?"
-    "Rebuilding my friendship with Sayori is going to take time either way..."
-    "And well, I'd like to think we've estabished that we're going to remain friends, nothing more or less..."
-    "Even though the possbility to go for more is still there..."
-    "But I just don't think I have the same connection with Sayori like I do for Natsuki..."
-    "Same goes for Yuri too I guess..."
+label n_continued:
+
+"All things considered, I do think I want to go for Natsuki..."
+"But the problem is, I know that in doing so, I'd be breaking Yuri's heart..."
+"And possibly causing Sayori even more anguish..."
+"I just don't know if the timing is right..."
+"Maybe once Sayori is better shape, and I feel like I have a proper way of rejecting Yuri, then maybe I can figure out how to talk to Natsuki about all this..."
+"But then again, do I really need to wait for that?"
+"Rebuilding my friendship with Sayori is going to take time either way..."
+"And well, I'd like to think we've estabished that we're going to remain friends, nothing more or less..."
+"Even though the possbility to go for more is still there..."
+"But I just don't think I have the same connection with Sayori like I do for Natsuki..."
+"Same goes for Yuri too I guess..."
 
 
 if hangout3 == "Monika":
@@ -9622,7 +9655,7 @@ mc "Right now?"
 n "When else, dummy?"
 n "And we don't have long before the store closes so..."
 n "You better hurry up and decide if you want to come along!"
-n "Because I have to leave soon before the store closes, and I can meet you on the way."
+n "We'll have to leave soon before the store closes. If you want, I can meet you on the way."
 "The idea of hanging out some more with Natsuki is tempting..."
 "I could use this opportunity to get a better feel for Natsuki's home life and hopefully put my anxiety over the subject to rest..."
 "But I don't know if I really want to leave the house considering I got some heavy-duty thinking to do..."
@@ -9644,6 +9677,20 @@ label n_hangout:
 mc "Yeah, sure! I'd love to go with you!"
 n "Wow, really?!?"
 mc "Yeah...{w=0.38}I could use some fresh air right now anyways..."
+n "Don't worry, you'll be getting plenty if we don't leave like right now..."
+n "They're apparently selling them left and right..."
+mc "I guess this release was well advertised..."
+mc "Where should I meet you?"
+n "The bookstore is past the school, so we can probably meet there."
+mc "Well good news for us is that the school's not terribly far from me. I can probably make it in there in ten minutes."
+n "That's pretty much how long it'll take me to get there by bus!"
+mc "Perfect! I'll see you then!"
+n "Laters!"
+"Natsuki promptly hangs up the call."
+"Well, I know better than to keep her waiting."
+"I quickly grab my wallet and keys and start speed walking back to school."
+jump nencore_4
+
 
 label n_no_hangout:
 
@@ -9730,6 +9777,7 @@ if hangout3 == "Natsuki":
         "But lately I've felt myself graviating too Monika, and now I'm suddenly seriously interested in Natsuki..."
         "Even though we haven't talked much recently..."
         "Is it right for me to give them a chance?"
+
 
 
     if natsuki_continued_hug == False or natsuki_hug == False:
@@ -10210,13 +10258,11 @@ mc "So...{w=0.38}do you walk to some place special or do you just walk around in
 show monika_c_b5a as monika at t11 zorder 1
 "Monika lets out a giggle."
 m "Just follow me~"
-mc "Well, lead the way!"
-"Without another word spoken, Monika and I start heading eastward."
-"Which just so happens to be in the direction of the countryside..."
+"Without another word spoken, Monika and I start heading eastward, which just so happens to be in the direction of the countryside..."
 "Oh, I just hope she doesn't include hiking as a part of her walk..."
 "In fact, I just hope I can keep up with someone of her physqiue in general..."
 "I'm not exactly out of shape, but Monika has quite the reputation when it comes to endurance..."
-"Hopefully, I don't fall behind her..."
+"Hopefully, I don't fall behind..."
 show monika at thide
 hide monika
 jump mencore_4

@@ -91,9 +91,17 @@ by yagamirai10 [[Community Asset Folder]
 
 \"closet_dark/" by Agent Gold
 
+\"city_sidewalk/" https://animelandscape.blogspot.com/2018/01/city-anime-background.html
+
+\"city_sidewalk2/" Original background from https://k-after.at.webry.info/ and edited by yagamirai10#7046
+
+\"fast_food/" by yagamirai10#7046 in the Community Assets Folder
+
 \"fountain_bg/" edited by POBAW, original image by Night Wolf23 on https://backgrounddownload.com/anime-visual-novel-background-8/
 
-\"monika_walk1/" edited by POBAW, original image on https://animelandscape.blogspot.com/2018/10/neighborhood-anime-background.html
+\"library_bg/": https://animelandscape.blogspot.com/2018/02/library-anime-background.html
+
+\"manga_section/": https://www.pinterest.com/pin/652529433479832795/
 
 \"monika_walk2/" edited by POBAW, original image on https://www.pinterest.com/pin/492933121699797858/?lp=true
 
@@ -101,21 +109,27 @@ by yagamirai10 [[Community Asset Folder]
 
 \"music_room/" by Cyrke, used in Doki Doki: Relapse
 
+\"Mod Logo/" by Monika
+
 \"n_void_1/" by Agent Gold
+
+\"park_dusk/" Original Image on https://lemmasoft.renai.us/forums/viewtopic.php?t=17302
 
 \"residential_dusk/" by SovietSpartan
 
-\"cafeteria\": Image Saved By Alania Frank on Pintrest https://i.pinimg.com/originals/ac/32/ab/ac32ab03f90d8d08ef88cfafe788bddf.jpg
+\"residential_dusk/" by Alex[ORG]#9077 in the Community Assests Folder
 
-\"music_room\": By vayar2000
+\"school_bg/" by yagamirai10#7046 in the Community Assets Folder
 
-\"city_overlook\": From: https://archive.nyafuu.org/w/thread/1906906/
+\"cafeteria/": Image Saved By Alania Frank on Pintrest https://i.pinimg.com/originals/ac/32/ab/ac32ab03f90d8d08ef88cfafe788bddf.jpg
 
-\"bg void\": www.videoblocks.com
+\"city_overlook/": From: https://archive.nyafuu.org/w/thread/1906906/
 
-\"bg void_2\" by Kent Stone
+\"bg void/": www.videoblocks.com
 
-Void Door: https://icouldcrybutidonthavetime.files.wordpress.com/2014/10/doors.jpg"""
+\"bg void_2/" by Kent Stone
+
+\"Void Door/": https://icouldcrybutidonthavetime.files.wordpress.com/2014/10/doors.jpg"""
 
     # 8
     # 41 lines, +2000 pixels

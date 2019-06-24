@@ -194,6 +194,13 @@ image bg monika_walk1 = "mod_assets/bgs/Monika Walk 1.png"
 image bg monika_walk2 = "mod_assets/bgs/Monika Walk 2.png"
 image bg monika_walk3 = "mod_assets/bgs/Monika Walk 3.png"
 image bg city_overlook = "mod_assets/bgs/city_overlook.png"
+image bg library = "mod_assets/bgs/library.png"
+image bg manga = "mod_assets/bgs/manga_section.png"
+image bg school = "mod_assets/bgs/school.png"
+image bg city_sidewalk = "mod_assets/bgs/city_sidewalk.png"
+image bg fastfood = "mod_assets/bgs/fastfood.png"
+image bg city_sidewalk2 = "mod_assets/bgs/city_sidewalk2.png"
+image bg park_dusk = "mod_assets/bgs/park_dusk.png"
 
 image glitch_color:
     ytile 3
@@ -1437,8 +1444,8 @@ default lpoem = "Yuri" #Who's love poem did you see on Day 2?
 default tell_s = True #Do you trouble Sayori with your dreams?
 default m_walk = True #Do you let Monika walk you back to class on Day 3?
 default m_choice = True #Do you pick Monika's choice on Day 3?
-default natsuki_hug = False #Do you return the Natsuki hug you on Day 3?
-default natsuki_continued_hug = False #Do you let Natsuki keep hugging you on Day 3?
+default natsuki_hug = True #Do you return the Natsuki hug you on Day 3?
+default natsuki_continued_hug = True #Do you let Natsuki keep hugging you on Day 3?
 default sayori_ice = True #Do you share your ice cream with Sayori on Day 3?
 default tell_monika = True #Do you tell Monika about Yuri on Day 3?
 default sayori_hangout = True #Do you get food with Sayori on Day 3?

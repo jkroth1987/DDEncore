@@ -956,17 +956,17 @@ label mencore_3:
 label mencore_4:
 
 play music t6 fadein 2.0
-scene bg monika_walk1
+scene bg residential_day
 with wipeleft_scene
 "As we're walking through the neighborhood, it occured me how just long it's been since I've visited this part..."
 "Granted, I've usually walked in the direction towards town for school, this part of the neighborhood is almost alien to me..."
 "It must've been since last summer I walked through here..."
 "Every now and then my parents make me go on walks with them just to make sure I don't spend my summer constantly inside playing video games and watching anime..."
-"Not that I've ever been a big fan of walking, I suppose it was nice to get out of the house every now and then..."
+"Not that I've ever been a big fan of walking, though I suppose it was nice to get out of the house every now and then..."
 show monika 1j at t11 zorder 1
 "Which is a pretty stark contrast compared to Monika, who seems to be happily content with herself, even though we haven't said much since we started walking a few minutes ago..."
-"Well, considering I don't get the chance to talk to Monika often, I should probably try to make an effort to have a conversation with her..."
-"As I'm trying to think of something to talk about, I look off to the horizon where I can start to see the little mountains off the distance."
+"Well, considering I don't get the chance to talk to Monika often, I should probably try to make an effort to make conversation with her..."
+"As I'm trying to think of something to talk about, I look off to the horizon where I can start to see the little mountains off in the distance."
 "I wouldn't want to be a drag on her mood, but I didn't exactly have hiking in mind for this little trip..."
 show monika 1d
 mc "So, Monika..."
@@ -1009,7 +1009,7 @@ if encore_sayoriquestion_1 == True:
     "How can I word this in a way that's not too flirty..."
 
 if encore_sayoriquestion_1 == False:
-    "Come on, what's the best thing to say to her!"
+    "Come on, what's the best thing to say to her?!?"
 
 "I just blurt out the first thing that comes to mind."
 mc "Why wouldn't I be?"
@@ -1038,7 +1038,7 @@ if encore_sayoriquestion_1 == False:
     m "Now I see why [poem_giver] likes you so much!"
 
 mc "Ah...!"
-mc "I look off to the horizon in an attempt to process what Monika had just said."
+"I look off to the horizon in an attempt to process what Monika had just said."
 
 if encore_sayoriquestion_1 == True:
     mc "I guess she is..."
@@ -1215,7 +1215,7 @@ show monika 2d
 "Monika looks back at me."
 mc "I mean this was your idea, you're allowed to have fun with it!"
 mc "Besides, I think a little break here and there does us good!"
-show mu114312
+show monika u114312
 mc "And I'll admit...{w=0.38}seeing you enjoy yourself like this is kinda cute..."
 show monika 1m
 "Monika blushes brightly."
@@ -1342,7 +1342,7 @@ mc "I just didn't think it'd be that many stairs..."
 "I nervously swallow."
 show monika 5b
 m "You're not chickening out on me now, are you, [player]?"
-mc "What! I could never do that to you!"
+mc "What? I could never do that to you!"
 mc "This will be a piece of cake!"
 show monika_c_b5a as monika at t11 zorder 1
 m "Is that so?"
@@ -1352,7 +1352,7 @@ m "But I'm afraid the sun's going to set before that..."
 m "Race to the top?"
 "Damn it!"
 "I look up to the sky to see that the sun's begining it's decsent on the horizon."
-"The sky is now a pure orange ans seems to be getting darker by the second."
+"The sky is now a pure orange and seems to be getting darker by the second."
 "Well if I'm going to do something that'll probably embrass myself in front of Monika, I can't not ask for some sort of stakes..."
 mc "What do I win if i beat you?"
 m "My respect and a nice view~"
@@ -1360,13 +1360,13 @@ mc "Your respect, huh?"
 "Sounds good enough to me..."
 mc "You're on!"
 show monika 1d at h11 zorder 1
+stop music
 "Suddenly Monika takes a step back in a pure shock."
 m "[player]..."
-stop music
 m "I think there's something behind you..."
 mc "What?"
-hide monika
 show monika at thide
+hide monika
 "I nervously look over my shoulder."
 "To my thankful surprise, there's nothing there."
 "I turn back around to Monika."
@@ -1385,7 +1385,7 @@ scene black with dissolve_scene
 "We ended up having to take a break about midway up the stairs."
 "But for all intents and purposes...{w=0.38}we agreed that Monika beat me..."
 "Thankfully there was a rest stop along the path, which allowed us to catch our breath and get some water before we started walking up the stairs again."
-"After what felt like another hour of walking up the stairs, we finally reach our desination."
+"After what felt like another hour of walking up the stairs, we finally reached our desination."
 scene bg city_overlook
 with wipeleft_scene
 show monika 2n at t11 zorder 1
@@ -1673,102 +1673,210 @@ if encore_sayoriquestion_1 == True:
 
 label m_hangout_prechoice:
 
+if encore_sayoriquestion_1 == True:
+    jump m_hangout_prechoice1
+
+if encore_sayoriquestion_1 == False:
+    jump m_hangout_prechoice2
+
+
+label m_hangout_prechoice1:
 mc "I just...{w=0.38}don't know what I want anymore..."
+mc "I want to stay with Sayori..."
+mc "We did make this commitment to be together, and I want to make it work..."
+mc "But I haven't exactly been the most faithful to her..."
+
+if hangout1 != "Sayori":
+    if hangout2 != "Sayori":
+        mc "Especially recently..."
+        m 1o "I'm sorry if I helped cause that..."
+
+if hangout1 == "Sayori":
+    if hangout2 != "Sayori":
+        mc "I seriously hurt our relationship yesterday..."
+        m 1o "I'm sorry if I helped cause that..."
+
+if hangout1 == "Sayori":
+    if hangout2 == "Sayori":
+        mc "Earlier today, we did kind of get closer than I expected..."
+        m 1o "I'm sorry..."
 
 
+m 1r "I really didn't mean to act like I did earlier if I knew I was going to make you uncomfortable..."
+
+if hangout2 == "Monika":
+    m "I wouldn't have done it yesterday either..."
+    show monika 1d
+    mc "I wasn't uncomfortable though, that's the thing!"
+    mc "Being with you earlier today and yesterday felt...{w=0.38}right..."
+
+
+else:
+    show monika 1d
+    mc "I wasn't uncomfortable though, that's the thing!"
+    mc "Being with you earlier today and yesterday felt...{w=0.38}right..."
+    mc "But so was spending yesterday with [hangout2]..."
+
+
+mc "I don't know...{w=0.38}part of me still has feelings for [poem_giver]..."
+mc "And I want to give her a chance...{w=0.38}even if we haven't spent as much time together lately..."
+mc "But I want to make things worth with Sayori..."
+mc "I have a responsbility to try..."
+
+if hangout1 == "Monika":
+    if hangout2 == "Monika":
+        show m u114312 at t11 zorder 1
+        mc "But, Monika to be truthful...{w=0.38}I've had a lot of fun since we've started talking..."
+        mc "And I want more, but..."
+        mc "I don't know if I should..."
+        "Well I might as well just confessed to her..."
+
+
+if hangout1 == "Natsui":
+    if hangout2 == "Natsuki":
+        show monika 1f
+        mc "But, Monika to be truthful...{w=0.38}I've had a lot of fun with Natsuki since we started talking..."
+        mc "And I want to go further with her, but..."
+        mc "I know I shouldn't..."
+
+
+if hangout1 == "Yuri":
+    if hangout2 == "Yuri":
+        show monika 1f
+        mc "But, Monika to be truthful...{w=0.38}I've had a lot of fun with Yuri since we started talking..."
+        mc "And I want to go further with her, but..."
+        mc "I know I shouldn't..."
+
+
+if hangout1 == "Sayori":
+    if hangout2 == "Sayori":
+        mc "And I'm happy with Sayori..."
+        mc "But, I just still feel that temptation to see who else is out there..."
+        mc "It could be anybody..."
+
+
+
+else:
+    mc "I just feel so divided..."
+    mc "I feel like I'm being pulled everywhere at once..."
+
+m 3f "Well, [player]...{w=0.38}nobody's forcing you to make a decision here and now..."
+m 3m "You still have time..."
+show monika 1c
+mc "I have to say something to [poem_giver]..."
+mc "I just don't even know if I share the same feelings for her..."
+mc "Just so much has changed over the last week..."
+mc "It feels like I'm in such a selfish spot right now..."
+mc "I'm going to end up breaking at least one person's heart by the time this is all said and done!"
+mc "And someone's going to be happy..."
+mc "I know I should be happy with whatever I decide..."
+show monika 2d
+mc "But...{w=0.38}I don't know if I can live with myself knowing that I hurt someone..."
+mc "And it might not just be [poem_giver] I'm hurting..."
+show monika 2g
+m "[player]..."
+m 1f "You're not selfish..."
+m 3n "If you were, chances are you would've decided already..."
+m 2d "But it's clear that you're putting a lot of thought into this..."
+m 1d "But you did put yourself in this situation by being around the others a little too much with nobody particular in mind..."
+mc "I know..."
+show monika 1m at t11 zorder 1
 jump m_hangout_choice
 
 
-if encore_sayoriquestion_1 == False:
-    mc "I'm just not sure what I want..."
-    mc "I don't know who I'd be better off with..."
-    mc "I mean, I see potential with me and [poem_giver]..."
-    mc "But my feelings are just all over the place..."
-    show monika 1p
-    "Monika nervously looks off to the side."
-    m 1o "I'm sorry if I helped cause that..."
-    m 1r "I really didn't mean to act like I did earlier if I knew I was going to make you uncomfortable..."
 
+
+
+
+label m_hangout_prechoice2:
+
+mc "I'm just not sure what I want..."
+mc "I don't know who I'd be better off with..."
+mc "I mean, I see potential with me and [poem_giver]..."
+mc "But my feelings are just all over the place..."
+show monika 1p
+"Monika nervously looks off to the side."
+m 1o "I'm sorry if I helped cause that..."
+m 1r "I really didn't mean to act like I did earlier if I knew I was going to make you uncomfortable..."
+
+if hangout2 == "Monika":
+    m "I wouldn't have done it yesterday either..."
+    show monika 1d
+    mc "I wasn't uncomfortable though, that's the thing!"
+    mc "Being with you earlier today and yesterday felt...{w=0.38}right..."
+
+
+else:
+    show monika 1d
+    mc "I wasn't uncomfortable though, that's the thing!"
+    mc "Being with you earlier today and yesterday felt...{w=0.38}right..."
+    mc "But so was spending yesterday with [hangout2]..."
+
+
+mc "I don't know...{w=0.38}part of me still has feelings for [poem_giver]..."
+mc "And I want to give her a chance...{w=0.38}even if we haven't spent as much time together lately..."
+mc "Part of me still feels bad about how I've treated Sayori lately..."
+mc "I haven't spent that much time around her since all this started..."
+mc "Even though I told her I wanted to spend more time with her..."
+
+if hangout1 == "Monika":
     if hangout2 == "Monika":
-        m "I wouldn't have done it yesterday either..."
-        show monika 1d
-        mc "I wasn't uncomfortable though, that's the thing!"
-        mc "Being with you earlier today and yesterday felt...{w=0.38}right..."
+        show m u114312 at t11 zorder 1
+        mc "But, Monika to be truthful...{w=0.38}I've had a lot of fun since we've started talking..."
+        mc "And I want more, but..."
+        mc "I don't know if I should..."
+        "Well I might as well just confessed to her..."
 
 
-    else:
-        show monika 1d
-        mc "I wasn't uncomfortable though, that's the thing!"
-        mc "Being with you earlier today and yesterday felt...{w=0.38}right..."
-        mc "But so was spending yesterday with [hangout2]..."
+if hangout1 == "Natsui":
+    if hangout2 == "Natsuki":
+        show monika 1f
+        mc "But, Monika to be truthful...{w=0.38}I've had a lot of fun with Natsuki since we started talking..."
+        mc "And I want to go further with her, but..."
+        mc "I don't know if I should..."
 
 
-    mc "I don't know...{w=0.38}part of me still has feelings for [poem_giver]..."
-    mc "And I want to give her a chance...{w=0.38}even if we haven't spent as much time together lately..."
-    mc "Part of me still feels about how I've treated Sayori lately..."
-    mc "I haven't spent that much time around her since all this started..."
-    mc "Even though I told her I wanted to spend more time with her..."
-
-    if hangout1 == "Monika":
-        if hangout2 == "Monika":
-            show m u114312 at t11 zorder 1
-            mc "But, Monika to be truthful...{w=0.38}I've had a lot of fun since we've started talking..."
-            mc "And I want more, but..."
-            mc "I don't know if I should..."
-            "Well I might as well just confessed to her..."
-            jump m_hangout_choice
-
-    if hangout1 == "Natsui":
-        if hangout2 == "Natsuki":
-            show monika 1f
-            mc "But, Monika to be truthful...{w=0.38}I've had a lot of fun with Natsuki since we started talking..."
-            mc "And I want to go further with her, but..."
-            mc "I don't know if I should..."
-            jump m_hangout_choice
-
-    if hangout1 == "Yuri":
-        if hangout2 == "Yuri":
-            show monika 1f
-            mc "But, Monika to be truthful...{w=0.38}I've had a lot of fun with Yuri since we started talking..."
-            mc "And I want to go further with her, but..."
-            mc "I don't know if I should..."
-            jump m_hangout_choice
-
-    if hangout1 == "Sayori":
-        if hangout2 == "Sayori":
-            mc "But, Monika to be truthful...{w=0.38}I've really been having second thoughts about Sayori..."
-            mc "I almost want to go back on my earlier decision, but..."
-            mc "I don't know if I can at this point..."
-            jump m_hangout_choice
+if hangout1 == "Yuri":
+    if hangout2 == "Yuri":
+        show monika 1f
+        mc "But, Monika to be truthful...{w=0.38}I've had a lot of fun with Yuri since we started talking..."
+        mc "And I want to go further with her, but..."
+        mc "I don't know if I should..."
 
 
-    else:
-        mc "I just feel so divided..."
-        mc "I feel like I'm being pulled everywhere at once..."
+if hangout1 == "Sayori":
+    if hangout2 == "Sayori":
+        mc "But, Monika to be truthful...{w=0.38}I've really been having second thoughts about Sayori..."
+        mc "I almost want to go back on my earlier decision, but..."
+        mc "I don't know if I can at this point..."
 
-    m 3f "Well, [player]...{w=0.38}nobody's forcing you to make a decision here and now..."
-    m 3m "You still have time..."
-    show monika 1c
-    mc "I have to say something to [poem_giver]..."
-    mc "I just don't even know if I share the same feelings for her..."
-    mc "Just so much has changed over the last week..."
-    mc "It feels like I'm in such a selfish spot right now..."
-    mc "I'm going to end up breaking at least one person's heart by the time this is all said and done!"
-    mc "And someone's going to be happy..."
-    mc "I know I should be happy with whatever I decide..."
-    show monika 2d
-    mc "But...{w=0.38}I don't know if I can live with myself knowing that I hurt someone again..."
-    mc "First Sayori..."
-    mc "And it might not just be [poem_giver] I'm hurting..."
-    show monika 2g
-    m "[player]..."
-    m 1f "You're not selfish..."
-    m 3n "If you were, chances are you would've decided already..."
-    m 2d "But it's clear that you're putting a lot of thought into this..."
-    m 1d "But you did put yourself in this situation by being around the others a little too much with nobody particular in mind..."
-    mc "I know..."
-    show monika 1m at t11 zorder 1
-    jump m_hangout_choice
+else:
+    mc "I just feel so divided..."
+    mc "I feel like I'm being pulled everywhere at once..."
+
+m 3f "Well, [player]...{w=0.38}nobody's forcing you to make a decision here and now..."
+m 3m "You still have time..."
+show monika 1c
+mc "I have to say something to [poem_giver]..."
+mc "I just don't even know if I share the same feelings for her..."
+mc "Just so much has changed over the last week..."
+mc "It feels like I'm in such a selfish spot right now..."
+mc "I'm going to end up breaking at least one person's heart by the time this is all said and done!"
+mc "And someone's going to be happy..."
+mc "I know I should be happy with whatever I decide..."
+show monika 2d
+mc "But...{w=0.38}I don't know if I can live with myself knowing that I hurt someone again..."
+mc "First Sayori..."
+mc "And it might not just be [poem_giver] I'm hurting this time..."
+show monika 2g
+m "[player]..."
+m 1f "You're not selfish..."
+m 3n "If you were, chances are you would've decided already..."
+m 2d "It's clear that you're putting a lot of thought into this..."
+m 1d "But you did put yourself in this situation by being around the others a little too much with nobody particular in mind..."
+mc "I know..."
+show monika 1m at t11 zorder 1
+jump m_hangout_choice
 
 
 
@@ -1777,12 +1885,13 @@ if encore_sayoriquestion_1 == False:
 label m_hangout_choice:
 
 "Monika stares off into the illuminated horizon."
-m 1n "You know it's crazy how high up we really are..."
+m 1n "You know, it's crazy how high up we are..."
 m 3m "Everything looks so small from up here..."
 mc "Yeah...{w=0.38}it kind of does..."
+show monika 1m
 "I join Monika in gazing at the cityscape."
-"I've lived in this area for my whole life, but I don't think I've ever really had an appreciation for it until now..."
-"Being up here and looking down it everything, it really help calm my nerves."
+"I've lived in this area my whole life, but I don't think I've ever really had an appreciation for it until now..."
+"Being up here to look down at everything really helps calm my nerves."
 "Everything's just so...{w=0.38}peaceful..."
 #Monika Cg?
 "I turn to my right to see Monika elegantly looking out onto the horizon."
@@ -1796,7 +1905,7 @@ mc "Yeah...{w=0.38}it kind of does..."
 "But, can I be with her?"
 "..."
 "At least in this moment...{w=0.38}I really want to..."
-"Monika then turns to me, notcing my staring."
+"Monika then turns to me, notcing my stare."
 "She immediately blushes as she looks back out onto the cityscape."
 m "You know, seeing everything so small just reminds me in retrospect of how insignificant all our problems are..."
 mc "How so?"
@@ -1805,17 +1914,16 @@ m "Being happy, being sad..."
 m "Thinking about how tomorrow is going to play out for them..."
 m "Thinking that they're a hundred percent in control of their destiny..."
 m "And then they just go out and do it! Not really questioning if they consciousnessly made that choice or if a higher power already pre-determined it for them..."
-m "Because they're all so small..."
-m "Because they can be controlled..."
-m "And they would never think to ask themselves about it because most people just can't see the bigger picture!"
+m "Because they're all so small...{w=0.38}they can be controlled..."
+m "And they would never think to ask themselves about it because they just can't see the bigger picture!"
 m "Most people don't realize just how small they are in retrospect to the universe..."
 m "They don't think to question what really is determining their lives..."
 m "They'll never know what's really out there..."
 mc "Well, what do you think is out there, Monika?"
 m "The truth."
-m "The truth that there's more to life than what most people see it as..."
+m "The truth that there's more to life then what most people see it as..."
 m "They're short-sighted because they can't see past their own little realities..."
-m "Reality can be a multi-layerd dimension for all we know!"
+m "Reality can be a multi-layered dimension for all we know!"
 m "Even now, sitting here above everything we've come to know, whose to say that there isn't something else looking down on us with the ability to control what we say, what we do, how we act, everything!"
 m "I mean it's natural for the big to control the small, right?"
 mc "I-{w=0.38}I guess?"
@@ -1830,7 +1938,7 @@ mc "Wow Monika, thats-"
 "I know she's a deep thinker, but this is something else..."
 "Still, she's clearly put a lot of time and thought into this, and she's not ranting about it like a complete lunatic..."
 mc "I mean, just because something's small, doesn't mean it's not real, is it?"
-m "But what is real though, [player]?"
+m "But what is 'real', [player]?"
 m "How do we know we aren't being controlled to believe that this is just life as we know it..."
 m "I don't know, all this kind of reminds me of that book I mentioned earlier today."
 "Monika turns to face me fully."
@@ -1919,8 +2027,8 @@ jump m_hangout_end
 label m_hangout_end:
 
 "Monika and I turn our attention back to the cityscape."
-"But what Monika asked me about everything I know being a lie continues to nag at the back of my head..."
-"I mean, how could it be?"
+"But Monika's question continues to nag at the back of my head..."
+"I mean, how could my memories be fake?"
 "All my memories with Sayori, all the time I've spent with her..."
 "Last Sunday with [encore_festivalquestion_2]..."
 "Heck even here now with Monika..."
@@ -1932,7 +2040,7 @@ show monika 1e
 "Who knows what else she believes in..."
 "Not that I'm one to judge..."
 "We continue to stare into the cityscape for sometime before we decide it's time to start heading back."
-bg residential_night
+scene bg residential_night
 "Monika and I both decided early on that'd probably be a bad idea to try to walk all the way back at night, so we just made our way to the closest bus stop, with me getting off at a stop not too far from my house while Monika stayed on."
 "It was a prety silent trip back, with us being too exhausted from the entire trip."
 "Monika ended up resting on my shoulder on the way back, which really made me surprised, but I went along with it, being the gentlemen I am."
@@ -1948,8 +2056,11 @@ if encore_sayoriquestion_1 == False:
 "And if it weren't for my current circumstances, I might've just asked her out right then and there..."
 "But, I need to sort out my situation first before I decide that."
 "At least now, I think I have an idea of what I want..."
-"I sheepishly turn the key to my house and lumber up to my bedroom before promptly crashing onto my bed."
-"I think I've earned some well desrved sleep tonight..."
+"I did decide to hang on to the Camellia, figuring that I could give it to Monika at a more appropriate time..."
+"I sheepishly turn the key to my house and stumble to my livingroom to put the Camellia in a vase."
+"I then lumber up to my bedroom before promptly crashing onto my bed."
+"I think I've earned some well deserved sleep tonight..."
 "Please...{w=0.38}nothing disturbing for tonight..."
-black screen with close_eyes
+scene black
+with close_eyes
 jump day3_mvoid

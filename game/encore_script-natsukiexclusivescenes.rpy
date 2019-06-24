@@ -1765,7 +1765,7 @@ label nencore_3:
     mc "Hey, everything ok in there?"
     show natsuki 5m
     n "No..."
-    show natsuki 42b
+    show natsuki 42bb
     "Natsuki turns away, attempting to compose herself."
     mc "Well, what’s wrong?"
 
@@ -1777,7 +1777,7 @@ label nencore_3:
     if hangout1 == "Natsuki":
         if hangout2 == "Sayori" or hangout2 == "Monika" or hangout2 == "Yuri":
             n 42a "Why do you care?"
-            n 42b "Aren't you supposed to be hugging [hangout2] right now?"
+            n 42bb "Aren't you supposed to be hugging [hangout2] right now?"
             "I awkwardly scratch the back of my head."
             "I should've known she would've brought that up..."
 
@@ -1792,7 +1792,7 @@ label nencore_3:
             show natsuki 42a
             mc "Look, I get that you're angry with me over yesterday..."
             mc "I'm sorry, I didn't initate anything, it just happened, I swear!"
-            n 42b "Whatever, I got too much to worry about to be angry at you for yesterday..."
+            n 42bb "Whatever, I got too much to worry about to be angry at you for yesterday..."
             mc "So now will you tell me what's wrong?"
             show natsuki 42c
             "Natsuki lets out a long, reluctant sigh."
@@ -1879,7 +1879,7 @@ label nencore_3:
     mc "Did you have it with you earlier today?"
     n 4m "Yeah, I had it with me it all day..."
     n 3q "I could’ve sworn I had it with me when I came here..."
-    show natsuki 42b
+    show natsuki 42bb
     "Natsuki clenches her fists in frustration."
     n 42c "I swear to God if I can’t find it..."
     show natsuki 42d
@@ -2201,13 +2201,13 @@ label day3_arrival:
     "After searching the entire bin, I wasn’t able to find Natsuki’s manga."
     "I call out to Natsuki."
     mc "Any luck in the closet?"
-    show natsuki 42b at t11 zorder 1
+    show natsuki 42bb at t11 zorder 1
     "Natsuki emerges from the closet with a dejected look."
     n 42c "No..."
     n 42a "How about you?"
     "I shake my head."
     mc "It’s not in the bin."
-    n 42b "Great..."
+    n 42bb "Great..."
     play music t9 fadein 1.0
     show natsuki 12b at s11 zorder 1
     "Natsuki shuts her eyes as she slumps down next to the closet door."
@@ -2447,20 +2447,20 @@ label day3_npos:
         mc "I mean, I don't..."
         mc "We really don't know that much about each other..."
         n 42a "Well, let me tell you about my home life..."
-        n 42b "Short version: it sucks."
+        n 42bb "Short version: it sucks."
         mc "Can I get a longer version?"
         show natsuki 42c
         "Natsuki let's out a pained sigh."
 
 
     n 5q "If I ever want anything for myself, it costs an arm and a leg..."
-    n 5r "My Dad’s so friggin’ self-ish..."
+    n 5r "My Dad’s so friggin’ selfish..."
     n 4x "It’s not like we’re tight on money or anything, in fact, we’re decently well-off..."
     n 4w "He spends it all on himself!"
     n 42a "He barely sees me as his own child..."
-    n 42b "Just as some nuisance he has to deal with for at least two more years..."
+    n 42bb "Just as some nuisance he has to deal with for at least two more years..."
     n 5m "Sometimes he’s so ridiculously strict, and other times, he just doesn’t care about what I do..."
-    n 42b "We fight a lot to say the least..."
+    n 42bb "We fight a lot to say the least..."
     mc "I’m...{w=0.38}really sorry, Natsuki..."
     mc "I wish there was something I could do..."
     n 42a "You can’t."
@@ -2471,7 +2471,7 @@ label day3_npos:
     show natsuki 42c
     "Natsuki lets out a deep sigh."
     n 42a "I just hope you get along with your parents, [player]."
-    n 42b "It’s something I never got the chance to experience..."
+    n 42bb "It’s something I never got the chance to experience..."
     mc "I’d say they’re fair for the most part..."
     show natsuki 1t
     "Natsuki lets out a slight chuckle."
@@ -2544,3 +2544,997 @@ label day3_nminus:
     "I just don’t get her sometimes..."
     "I sigh as I start fast walking to catch up to her."
     jump day3_nreturn2
+
+
+
+label nencore_4:
+
+play music t6 fadein 2.0
+scene bg school
+with wipeleft_scene
+"Sure enough, I take my usual route to school and I arrive pretty much on the dot."
+"As I'm waiting on the sidewalk by the school, I peer both ways down the street for any sign of Natsuki."
+"Surprisingly, not only is there no sign of Natsuki, but there's hardly anyone around."
+"Well then again, who hangs around after school on a Wednesday?"
+"I'm sure she'll be here any minute, the bus runs pretty periodically through here anyways."
+"I just hope I don't get called out for looking too suspicious..."
+$ n_name = "???"
+n "Hey, weirdo! What are you doing?"
+$ n_name = "Natsuki"
+"Damn it."
+"I turn my head to see who was yelling at me."
+show natsuki 1ba at t11 zorder 1
+"Unsurprisingly, I see Natsuki walking over towards me."
+show natsuki 5bg
+mc "You're late."
+"I say teasingly."
+n 5bw "It's not my fault! There was a lot of traffic out on Rockefeller street!"
+mc "There's always traffic on Rockefeller street..."
+n 4bx "Exactly! That's why I just I got off the bus and walked all the way here."
+n 5bd "By the time I rode it all the way here, you probably would've gotten the cops called on you or something for standing like a weirdo by the school!"
+show natsuki 5bz
+mc "Good to see you didn't leave your sense of humor on the bus..."
+show natsuki 1bx
+n "Uuu..."
+"Natsuki lightly punches me in the arm."
+mc "Hey! What was that for?"
+n 3by "For acting like a smart ass!"
+n 3bz "And there's more where that came from if you keep acting like one!"
+mc "Dually noted..."
+
+if natsuki_continued_hug == True or natsuki_hug == True:
+    "Natsuki joyfully giggles."
+    "She always did have a twisted sense of humor..."
+    "Can't say I'm not that different either..."
+    jump n_walk
+
+if natsuki_continued_hug == False or natsuki_hug == False:
+    "Considering my screw up around her earlier today, I imagine she wouldn't hesistate to let loose on me if I stepped out of line."
+    "In fact, I'm surprised how quickly she seems to have gotten over it."
+    "Not that she's one to hold onto gruges for very long, but I should probably be more careful around her..."
+    jump n_walk
+
+label n_walk:
+
+n 3bb "Anyways, let's get going!"
+n 3bc "We wait any longer and they'll be totally sold out!"
+mc "Yeah, let's get going!"
+show natsuki 3ba
+"Natsuki and I begin making our way in the direction of the city."
+show natsuki at thide
+hide natsuki
+scene bg city_sidewalk
+with wipeleft_scene
+"Early on, Natsuki and I are able to move at a pretty rapid pace towards the bookstore."
+"But our progress gets hindered by a growing number of people crowding on the sidewalk the farther we get into the city."
+"And thanks to all the cars driving, there isn't exactly a safe way of bypassing the crowds, so we're forced to move with them block to block."
+show natsuki 5br at t11 zorder 1
+"At one point, Natsuki tried taking me by the arm in attempt to cut through the crowd, but I really couldn't keep up with her thanks to her small size."
+show natsuki 5bx
+"Naturally, that irritated her."
+n 5bw "You just had to be so tall!"
+mc "Well, it's not like I can do much about it..."
+mc "I'm pretty sure we're almost there..."
+n 1bm "We still got two more blocks to go, [player]..."
+n 1bq "I'm just worried it'll be sold out by the time we get there..."
+show natsuki 1bn
+mc "I'm sure there's bound to at least a few copies left..."
+mc "You think they would've planned for this sort of thing..."
+n 1bq "I hope so..."
+n 1bn "I don't think I'd have time to walk to the other store and make it back in time before my dad gets home..."
+n 1bu "And I don't really want to order it online..."
+mc "Right..."
+
+if natsuki_continued_hug == True or natsuki_hug == True:
+    "I remembered that with the way Natsuki described her father to me, he doesn't exactly seem lke the most open-minded person..."
+
+    if encore_sayoriquestion_1 == False:
+        "In fact, I remembered that there was a rather specfic reason that Natsuki stored her manga collection in school rather then at home..."
+        "But even then, I'm sure she's stowed away a few copies in her room somewhere..."
+
+        if hangout1 == "Monika" or hangout2 == "Monika":
+            show screen tear(20, 0.1, 0.1, 0, 40)
+            pause 0.70
+            hide screen tear
+            pause 1.0
+            $ style.say_dialogue = style.edited
+            n "I don't even know what my dad would do if he found this!"
+            n "He'd probably beat the shit out of me because I'm an ungrateful little twerp!"
+            $ style.say_dialogue = style.normal
+            $ _history_list.pop()
+            show screen tear(20, 0.1, 0.1, 0, 40)
+            play sound "sfx/glitch1.ogg"
+            pause 0.25
+            stop sound
+            hide screen tear
+            "I blink a few times just to make sure I didn't just imagine Natsuki saying that."
+            show natsuki 1bn
+            mc "Did you say something?"
+            "Natsuki shoots me a puzzled look."
+            n 1bk "No, why?"
+            mc "Ah, forget that..."
+            "Maybe I just heard some random conversation..."
+            mc "Anyways..."
+
+        else:
+            pass
+
+
+    if encore_sayoriquestion_1 == True:
+        "I guess that's why she's resorted to storing her manga in the closet back at the clubroom..."
+        "From the times I've seen it, it's a pretty large collection, no wonder why she's always fighting with Monika about it..."
+
+        if hangout1 == "Monika" or hangout2 == "Monika":
+            show screen tear(20, 0.1, 0.1, 0, 40)
+            pause 0.70
+            hide screen tear
+            pause 1.0
+            $ style.say_dialogue = style.edited
+            n "I don't even know what my dad would do if he found it!"
+            n "He'd probably beat the shit out of me because I'm an ungrateful little twerp!"
+            n "I don't even know why Monika tolerates putting trash in the closet! It belongs in the garbage!"
+            $ style.say_dialogue = style.normal
+            $ _history_list.pop()
+            show screen tear(20, 0.1, 0.1, 0, 40)
+            play sound "sfx/glitch1.ogg"
+            pause 0.25
+            stop sound
+            hide screen tear
+            "I blink a few times just to make sure I didn't just imagine Natsuki saying that."
+            show natsuki 1bn
+            mc "Did you say something?"
+            "Natsuki shoots me a puzzled look."
+            n 1bk "No, why?"
+            mc "Ah, forget that..."
+            "Maybe I just heard some random conversation..."
+            mc "Anyways..."
+
+        else:
+            pass
+
+if natsuki_continued_hug == False or natsuki_hug == False:
+
+    if encore_sayoriquestion_1 == False:
+        "I remembered that there was a reason that Natsuki stored her manga collection in school rather then at home..."
+        "But even then, I'm sure she's stowed away a few copies in her room somewhere..."
+        "I think she said something about being afraid if her dad found out about her collection..."
+
+        if hangout1 == "Monika" or hangout2 == "Monika":
+            show screen tear(20, 0.1, 0.1, 0, 40)
+            pause 0.70
+            hide screen tear
+            pause 1.0
+            $ style.say_dialogue = style.edited
+            n "I don't even know what my dad would do if he found this!"
+            n "He'd probably beat the shit out of me because I'm an ungrateful little twerp!"
+            $ style.say_dialogue = style.normal
+            $ _history_list.pop()
+            show screen tear(20, 0.1, 0.1, 0, 40)
+            play sound "sfx/glitch1.ogg"
+            pause 0.25
+            stop sound
+            hide screen tear
+            "I blink a few times just to make sure I didn't just imagine Natsuki saying that."
+            show natsuki 1bn
+            mc "Did you say something?"
+            "Natsuki shoots me a puzzled look."
+            n 1bk "No, why?"
+            mc "Ah, forget that..."
+            "Maybe I just heard some random conversation..."
+            mc "Anyways..."
+
+        else:
+            pass
+
+    if encore_sayoriquestion_1 == True:
+        "I'm not entirley sure why Natsuki doesn't keep her manga at home like most people would..."
+        "Maybe she's embrassed at what her parents would think if they saw it?"
+        "Then again, the series does seem something typical that girls would read..."
+        "Even if it might be a little out of Natsuki's age range..."
+        "Still, I'm sure she as a perfectly good reason for storing all her manga in the closet back at the club..."
+
+        if hangout1 == "Monika" or hangout2 == "Monika":
+            show screen tear(20, 0.1, 0.1, 0, 40)
+            pause 0.70
+            hide screen tear
+            pause 1.0
+            $ style.say_dialogue = style.edited
+            n "I don't even know what my dad would do if he found this!"
+            n "He'd probably beat the shit out of me because I'm an ungrateful little twerp!"
+            $ style.say_dialogue = style.normal
+            $ _history_list.pop()
+            show screen tear(20, 0.1, 0.1, 0, 40)
+            play sound "sfx/glitch1.ogg"
+            pause 0.25
+            stop sound
+            hide screen tear
+            "I blink a few times just to make sure I didn't just imagine Natsuki saying that."
+            show natsuki 1bn
+            mc "Did you say something?"
+            "Natsuki shoots me a puzzled look."
+            n 1bk "No, why?"
+            mc "Ah, forget that..."
+            "Maybe I just heard some random conversation..."
+            mc "Anyways..."
+
+        else:
+            pass
+
+
+
+
+mc "I'm sure that all the bookstores in town have the new copy on them..."
+n 1bm "Well it's usually avalible first at the one we're going to..."
+n "It's where I got the last few editions when they just came out."
+n 1bn "I couldn't get the last edition on the day it came out, I had to go the week after to get it then..."
+mc "Well I can get it for you if we can't find it there..."
+mc "It's not like I have any plans for tonight..."
+"Except trying to sort out the cluster that is my emotions right now..."
+n 1bm "You don't have to do that for me, [player], really..."
+mc "I insist..."
+show natsuki 5bu
+"Natsuki pauses for a momemnt to think over my offer."
+show natsuki 5bw
+"Eventually she lets out a defeated sigh."
+n 5bq "Well...{w=0.38}let's just see if they have it first..."
+mc "Seems reasonable to me."
+n 5bt "Thank you, [player]..."
+mc "Ah, don't mention it..."
+
+if encore_sayoriquestion_1 == False:
+    if encore_festivalquestion_2 == "Natsuki":
+        mc "I know how much you love the series."
+        n 4bl "Well, you aren't wrong..."
+
+        if hangout1 == "Natsuki":
+            if hangout2 == "Natsuki":
+                n 2bt "And it seems like you've been enjoying it so far..."
+                show natsuki 2ba
+                mc "I have."
+
+        if hangout1 != "Natsuki":
+            if hangout2 == "Natsuki":
+                n 2bt "I'm just glad I got you to stick to reading the series..."
+                show natsuki 2ba
+                mc "You've done a pretty good job so far..."
+
+        if hangout1 == "Natsuki":
+            if hangout2 != "Natsuki":
+                n 2bq "Though we are kind of falling behind..."
+                show natsuki 2ba
+                mc "Yeah, I really want to get back into the swing of things..."
+                mc "It's just there's been a lot going on my end lately..."
+
+
+        if hangout1 != "Natsuki":
+            if hangout2 != "Natsuki":
+                n 2bu "Though we really need to catch up..."
+                show natsuki 2ba
+                mc "Yeah, I really want to get back into reading it..."
+                mc "It's just there's been a lot going on my end lately..."
+
+
+
+if encore_sayoriquestion_1 == False:
+    if encore_festivalquestion_2 == "Yuri":
+        mc "You seem pretty into the series, so..."
+        n 4bl "Guilty as charged on that one!"
+
+        if hangout1 == "Natsuki":
+            if hangout2 == "Natsuki":
+                n 2bt "And it seems like you've been enjoying it so far..."
+                show natsuki 2ba
+                mc "I have."
+
+        if hangout1 != "Natsuki":
+            if hangout2 == "Natsuki":
+                n 2bt "You seemed like you were getting into it yesterday..."
+                show natsuki 2ba
+                mc "I was."
+
+        if hangout1 == "Natsuki":
+            if hangout2 != "Natsuki":
+                n 2bq "To bad we haven't been able to read together yet."
+                show natsuki 2ba
+                mc "Well hey, the new edition is gonna provide some motivation!"
+
+
+        if hangout1 != "Natsuki":
+            if hangout2 != "Natsuki":
+                n 2bq "I just wish I can get you into reading it."
+                show natsuki 2ba
+                mc "Well, I'm more than willing to sit down and read with you sometime!"
+                mc "The new edition is going to provide some extra motivation!"
+
+
+
+if encore_sayoriquestion_1 == True:
+    mc "I can tell you're really into the series, so..."
+    n 4bl "You'd be right!"
+
+    if hangout1 == "Natsuki":
+        if hangout2 == "Natsuki":
+            n 2bt "And it seems like you've been enjoying reading the series so far..."
+            show natsuki 2ba
+            mc "I have."
+
+
+    if hangout1 != "Natsuki":
+        if hangout2 == "Natsuki":
+            n 2bt "You seemed pretty interested yesterday yourself..."
+            show natsuki 2ba
+            mc "I did, and still am!"
+
+    if hangout1 == "Natsuki":
+        if hangout2 != "Natsuki":
+            n 2bq "Sucks we've lucked out on reading together..."
+            show natsuki 2ba
+            mc "Well hey, with the new edition, we'll have a reason to find time together!"
+
+    if hangout1 != "Natsuki":
+        if hangout2 != "Natsuki":
+            n 2bq "I just wish I can get you into reading it."
+            show natsuki 2ba
+            mc "Well, I'm more than willing to sit down and read with you sometime!"
+            mc "The new edition is going to provide some extra motivation!"
+
+
+mc "Anyways, I think we're here."
+"We promptly stop right by the entrance t0 the bookstore."
+n 1bc "Yep! This is the place!"
+mc "I knew this looked familiar..."
+n 3bk "You've been here before?"
+mc "Yeah, a few times..."
+mc "Haven't had the chance to go recently."
+n 3bl "Well you'll see how much they've expanded their manga section!"
+n 4bl "They actually ended up moving it to the second floor!"
+mc "Woah, really?!? That's awesome!"
+mc "I'll let you lead the way, ladies first after all..."
+"I gesture for Natsuki to enter the store."
+n 5by "Wow! What a gentleman!"
+"She says sarcastically."
+mc "So you dobut me?"
+"I walk over and hold the door open for Natsuki."
+show natsuki 5bz
+"She lets out a small laugh before eventually composing herself."
+n 4by "Okay, okay...{w=0.38}I believe you."
+show natsuki 1bj
+"Natsuki happily enters the bookstore with me tailing right behind her."
+scene bg library
+with wipeleft_scene
+"As we step into the lobby, we're greeted with a long line by the register, with additional clusters of people walking around and looking at the various shelves."
+show natsuki 1bu at t11 zorder 1
+"That only makes Natsuki even more visibly anxious."
+"Noticing this, I try to reassure her."
+mc "Well...{w=0.38}it doesn't seem like there's too many people coming up and down the stairs..."
+n 1bq "Let's hope they're not sold out..."
+"Natsuki and I head to the stairwell and walk up to the second floor."
+show natsuki at thide
+hide natsuki
+scene bg manga
+with wipeleft_scene
+"As so as we reach to the second floor, Natsuki anxiously rushes to the manga section, while I slowly follow behind her."
+show natsuki 1bu at t11 zorder 1
+"Natsuki frantically begins searching through the shelves to find anything related to Parfait Girls, while I'm on the otherside browsing at the selection."
+"Considering Natsuki has probably spent much more time here than me, chances are she'd find it sooner."
+"As I'm browsing, I come across some old familar titles I used to read when I was kid."
+"'Exterminator'...{w=0.38}'Interstellar Pirates'..."
+"Hey! This is something I haven't read in a long time!"
+"I pull off the shelves a copy of 'The Galaxy War Chronicles'..."
+"I lost my copies of these years ago!"
+"It was one of my favorite things to read growing up..."
+"I even remember seeing the movies with Sayori..."
+"Though it was her more reluctantly seeing it with me so we can get ice cream afterwards..."
+"In fact, I didn't even know that these were still in distribution, let alone that they were still making new editions!"
+"And it would look like I could just about afford it!"
+"I can probably order the previous volumes online somewhere..."
+show natsuki 1bz at h11 zorder 1
+n "YES!"
+"My train of thought is interupted by Natsuki's sudden cheering."
+mc "What is it?"
+n "I found it!"
+#Possible Natsuki CG
+"Natsuki proudly twirls around as she clutches the book close to her chest."
+"I just stand there smiling as Natsuki does her little celebration."
+"She really is something..."
+"Even though she can be a handful at times, seeing her this happy is quite infectious."
+"She probably doesn't even realize how cute she looks right now..."
+"All things considered, Natsuki isn't that hard of a person to make happy, so long as you keep an open and understanding mind..."
+"It makes me wonder if I can make her even more happy..."
+"Suddenly I see Natsuki twirling a little too close to the bookshelves."
+mc "Hey, just make sure you don't hit the shelves..."
+#End CG
+show natsuki 1be at t11 zorder 1
+n "Oh come on! It's not like I'm that clumsy!"
+show natsuki 1bg
+mc "Heh, well fair point..."
+mc "But hey, I'm glad you found it!"
+n 4bl "It was the last copy they had!"
+mc "I guess we're just that lucky."
+n 4bt "Yeah..."
+n 4by "I'm glad you could share in the moment with me, [player]!"
+mc "Hey, it's what I do..."
+n 2bk "Are you getting anything while we're here?"
+mc "Yeah, I'm getting this!"
+show natsuki 2bc
+"I proudly show Natsuki the copy of 'The Galaxy Chronicles'."
+n "'The Galaxy Chronciles', huh?"
+n 2bd "I haven't read it recently, but it's pretty good!"
+n 2bt "Even if it's a little boy-ish for my tastes..."
+mc "Well, maybe we can read this one together too!"
+mc "We can broaden our horizons together!"
+n 4by "Well, look at you, getting me to into other kinds of manga!"
+n 5by "Looks like the student has become the master!"
+mc "Ah, well..."
+"I embarrassingly scratch the back of my head."
+mc "That's how the literature club works, doesn't it?"
+mc "Stepping outside our comfort zones to read new things?"
+n 1ba "Yep! Pretty much!"
+n 1bt "Anyways, let's head downstairs and buy these!"
+n 1bz "I'm already getting excited just thinking about reading them!"
+mc "You and me both!"
+"Natsuki and I happily trot downstairs to the register."
+show natsuki at thide
+hide natsuki
+scene bg library
+with wipeleft_scene
+"Despite a relatively long wait in line, we're finally able to have our turn at the register."
+show natsuki 1ba at t11 zorder 1
+"Being the gentleman I am, I let Natsuki go first."
+stop music fadeout 2.0
+show natsuki 5bu
+"However, her cheerful mood quickly disappears as the price comes up on the screen."
+show natsuki
+"She's had to have counted her money at least a dozen times before finally letting out a defeated sigh."
+n 5bq "[player]..."
+play music t9
+n 5bm "I don't think I can afford it..."
+n 5bu "It was a lot more than I thoguht it'd be..."
+mc "Well how short are you?"
+n 12ba "300 yen..."
+mc "Oh..."
+"Yikes."
+"We pull ourselves briefly to the side to let the peple behind us pay for their things."
+n 12bb "This is my fault...{w=0.38}I should've known it would've been that expensive..."
+n 12ba "Even though I've been saving up for months now..."
+show natsuki 12bd
+"Natsuki clenchs the manga tightly in an effort to compose herself."
+"I decide to look down my wallet."
+"Well, if we pool our money together, we could afford it..."
+"Though I wouldn't be able to buy the copy I wanted..."
+"Well...{w=0.38}Natsuki clearly wants her copy more than I want mine, so..."
+mc "Natsuki."
+show natsuki 12ba
+n "W-{w=0.38}what?"
+"She looks as tears start to well in her eyes."
+mc "If we pool our money together, we can afford it."
+n "[player], no..."
+n "Don't bail me out because of my mistake..."
+mc "But you didn't do anything wrong!"
+mc "Trust me...{w=0.38}you want your manga more than I want mine..."
+mc "I can get this whenever..."
+n 12bc "[player]..."
+n 12ba "Why are you so nice to me?"
+
+if natsuki_continued_hug == False or natsuki_hug == False:
+    n "Especially since I blew up at you earlier..."
+    n "I didn't even think you'd want to go with me..."
+    mc "Look, what happened earlier was my fault...{w=0.38}okay?"
+    mc "I just kinda froze..."
+    mc "It was my fault for misunderstanding, and I'm sorry..."
+    show natsuki 12be
+    n "I'm sorry for blowing up at you earlier too..."
+    show natsuki 42bd
+    "We stand there awkwardly by the register for a few moments as people continue to walk in and out of the lobby."
+    mc "Look...{w=0.38}let me make it up to you and pay for the manga, okay?"
+    show natsuki 42be
+    "Natsuki reluctantly sighs."
+    stop music fadeout 2.0
+    n 42bb "Alright, fine..."
+    n 12ba "Just don't tell anyone about this, okay?"
+    mc "You have my word."
+    "Natsuki sheepishly hands over her money and the manga as I walk over to re-join the line."
+    "After a few minutes I'm able to pay for Natsuki's manga, return my own and begin our walk back."
+    show natsuki at thide
+    hide natsuki
+    jump n_resolved
+
+
+if natsuki_continued_hug == True or natsuki_hug == True:
+    if encore_sayoriquestion_1 == False:
+        if encore_festivalquestion_2 == "Natsuki":
+
+            if hangout1 == "Natsuki":
+                if hangout2 == "Natsuki":
+                    n "I know I haven't always been nice back..."
+                    n "But you've put up with me better than anyone ever has!"
+                    n 42bb "I'm just so selfish and self-asborbed..."
+                    show natsuki 12ba
+                    mc "No, you aren't..."
+                    mc "Look, I understand you better than anyone in the club."
+                    mc "I know why you're like this..."
+                    mc "And, it doesn't change my opinion on you, it just makes me want to spend more time around you!"
+                    show natsuki 42bb
+                    "Natsuki clenches the manga tighter."
+                    mc "Look...{w=0.38}let me pay for the manga, okay?"
+
+
+
+            if hangout1 != "Natsuki":
+                if hangout2 == "Natsuki":
+                    n "I was a little worried that you didn't want to talk to me on Monday when you were [hangout1]..."
+                    n "And I know I wasn't in the best mood at the time..."
+                    n 12bb "And I wasn't really sure how I felt about us being together yesterday..."
+                    show natsuki 42ba
+                    mc "It was surprsing to be sure..."
+                    mc "But look, I understand you better than anyone in the club right now."
+                    mc "I know why you're like this..."
+                    mc "And, it doesn't change my opinion on you, it just makes me want to spend more time around you!"
+                    show natsuki 42bb
+                    "Natsuki clenches the manga tighter."
+                    mc "Look...{w=0.38}let me pay for the manga, okay?"
+
+
+
+            if hangout1 == "Natsuki":
+                if hangout2 != "Natsuki":
+                    n "I know we haven't had the chance to spend a lot of time together recently..."
+                    n "But I thought that was because I did something to piss you off..."
+                    n 42bb "I thought I might've accidentally driven you away..."
+                    mc "You didn't do anything wrong, Natsuki..."
+                    mc "I've been meaning to spend more time with you."
+                    mc "I just haven't gotten the chance to until today..."
+                    mc "I'm sorry if you felt like I was avoding you..."
+                    mc "Espeically now considering how you explained to me your home situation..."
+                    show natsuki 42bb
+                    "Natsuki clenches the manga tighter."
+                    mc "Look...{w=0.38}let me make it up to you and pay for the manga, okay?"
+
+
+
+            if hangout1 != "Natsuki":
+                if hangout2 != "Natsuki":
+                    n "And why are you showing so much interest in me now?"
+                    n "We haven't really been around each other since the festival..."
+                    n 42bb "I didn't mean to drive you away or anything..."
+                    show natsuki 12ba
+                    mc "You didn't do anything wrong, Natsuki..."
+                    mc "I've been meaning to spend more time with you."
+                    mc "I just haven't gotten the chance to until today..."
+                    mc "I'm sorry if you felt like I was avoding you..."
+                    mc "Espeically now considering how you explained to me your home situation..."
+                    show natsuki 42bb
+                    "Natsuki clenches the manga tighter."
+                    mc "Look...{w=0.38}let me make it up to you and pay for the manga, okay?"
+
+
+
+
+show natsuki 14be
+"Natsuki reluctantly sighs."
+stop music fadeout 2.0
+n 12bb "Alright, fine..."
+n 12ba "Just don't tell anyone about this, okay?"
+mc "You have my word."
+"Natsuki sheepishly hands over her money and the manga while I quickly walk over to re-join the line."
+"After a few minutes I'm able to pay for Natsuki's manga, return my own and begin our walk back."
+show natsuki at thide
+hide natsuki
+jump n_resolved
+
+if encore_sayoriquestion_1 == False:
+    if encore_festivalquestion_2 == "Yuri":
+
+        if hangout1 == "Natsuki":
+            if hangout2 == "Natsuki":
+                n "And why are you showing so much interest in me now?"
+                n "Ever since the festival, you've been coming over and talking to me..."
+                n 42bb "And I remember how gross I thought you were..."
+                n "But I've just been wrong..."
+                n "I'm sorry for driving you away..."
+                show natsuki 12ba
+                mc "You didn't do anything wrong, Natsuki..."
+                mc "Look, I understand now why you're like this..."
+                mc "It doesn't really make me think any less of you..."
+                mc "And I want to spend more time around you!"
+                mc "Espeically now considering how you explained to me your life outside of school..."
+                show natsuki 42bb
+                "Natsuki clenches the manga tighter."
+                mc "Look...{w=0.38}let me make it up to you and pay for the manga, okay?"
+
+
+        if hangout1 != "Natsuki":
+            if hangout2 == "Natsuki":
+                n "And why are you showing so much interest in me now?"
+                n "You've only started coming to talk to me since yesterday!"
+                n 42bb "And I remember how gross I thought you were..."
+                n "But I've just been wrong..."
+                n "And I didn't know if you were going to come back to me after yesterday..."
+                show natsuki 12ba
+                mc "Well yesterday was still kind of surprsing..."
+                mc "But, you didn't do anything wrong, Natsuki..."
+                mc "Look, I understand now why you're like this..."
+                mc "It doesn't really make me think any less of you..."
+                mc "And I want to spend more time around you!"
+                mc "Espeically now considering how you explained to me your life outside of school..."
+                show natsuki 42bb
+                "Natsuki clenches the manga tighter."
+                mc "Look...{w=0.38}let me make it up to you and pay for the manga, okay?"
+
+
+
+        if hangout1 == "Natsuki":
+            if hangout2 != "Natsuki":
+                n "And why are you showing so much interest in me now?"
+                n "You've only started coming to talk to on Monday, and you didn't even come back to talk to me yesterday!"
+                n 42bb "What's the big idea, [player]?"
+                n "Did I do something wrong?"
+                show natsuki 12ba
+                mc "You didn't do anything wrong, Natsuki..."
+                mc "I've been meaning to spend more time with you."
+                mc "I just haven't gotten the chance to until today..."
+                mc "I'm sorry if you felt like I was avoding you..."
+                mc "Espeically now considering how you explained to me your home situation..."
+                show natsuki 42bb
+                "Natsuki clenches the manga tighter."
+                mc "Look...{w=0.38}let me make it up to you and pay for the manga, okay?"
+
+
+
+        if hangout1 != "Natsuki":
+            if hangout2 != "Natsuki":
+                n "And why are you showing so much interest in me now?"
+                n "We haven't really been around each other..."
+                n 42bb "I was afraid that I pushed you away..."
+                show natsuki 12ba
+                mc "You didn't do anything wrong, Natsuki..."
+                mc "I've been wanting to get to know better for a while now.."
+                mc "I just haven't gotten the chance to until today..."
+                mc "I'm sorry if you felt like I was avoding you..."
+                mc "Espeically now considering how you explained to me your life outside of school..."
+                show natsuki 42bb
+                "Natsuki clenches the manga tighter."
+                mc "Look...{w=0.38}let me make it up to you and pay for the manga, okay?"
+
+show natsuki 14be
+"Natsuki reluctantly sighs."
+stop music fadeout 2.0
+n 12bb "Alright, fine..."
+n 12ba "Just don't tell anyone about this, okay?"
+mc "You have my word."
+"Natsuki sheepishly hands over her money and the manga while I quickly walk over to re-join the line."
+"After a few minutes I'm able to pay for Natsuki's manga, return my own and begin our walk back."
+show natsuki at thide
+hide natsuki
+jump n_resolved
+
+if encore_sayoriquestion_1 == True:
+    if encore_festivalquestion_2 == "Yuri" or encore_festivalquestion_2 == "Natsuki":
+
+        if hangout1 == "Natsuki":
+            if hangout2 == "Natsuki":
+                n "And why are you showing so much interest in me now after you've spent so much time with Sayori?"
+                n "Ever since the festival, you've been coming over and talking to me..."
+                n 42bb "And I remember how gross I thought you were..."
+                n "But I've just been wrong..."
+                n "I'm sorry for driving you away..."
+                show natsuki 12ba
+                mc "You didn't do anything wrong, Natsuki..."
+                mc "Look, I understand now why you're like this..."
+                mc "It doesn't really make me think any less of you..."
+                mc "And I want to spend more time around you!"
+                mc "Espeically now considering how you explained to me your life outside of school..."
+                show natsuki 42bb
+                "Natsuki clenches the manga tighter."
+                mc "Look...{w=0.38}let me make it up to you and pay for the manga, okay?"
+
+
+        if hangout1 != "Natsuki":
+            if hangout2 == "Natsuki":
+                n "And why are you showing so much interest in me now after you've spent so much time with Sayori?"
+                n "You've only started coming to talk to me since yesterday!"
+                n 42bb "And I remember how gross I thought you were..."
+                n "But I've just been wrong..."
+                n "And I didn't know if you were going to come back to me after yesterday..."
+                show natsuki 12ba
+                mc "Well yesterday was still kind of surprsing..."
+                mc "But, you didn't do anything wrong, Natsuki..."
+                mc "Look, I understand now why you're like this..."
+                mc "It doesn't really make me think any less of you..."
+                mc "And I want to spend more time around you!"
+                mc "Espeically now considering how you explained to me your life outside of school..."
+                show natsuki 42bb
+                "Natsuki clenches the manga tighter."
+                mc "Look...{w=0.38}let me make it up to you and pay for the manga, okay?"
+
+        if hangout1 == "Natsuki":
+            if hangout2 != "Natsuki":
+                n "And why are you showing so much interest in me now after you've spent so much time with Sayori?"
+                n "You've only started coming to talk to on Monday, and you didn't even come back to talk to me yesterday!"
+                n 42bb "What's the big idea, [player]?"
+                n "Did I do something wrong?"
+                show natsuki 12ba
+                mc "You didn't do anything wrong, Natsuki..."
+                mc "I've been meaning to spend more time with you."
+                mc "I just haven't gotten the chance to until today..."
+                mc "I'm sorry if you felt like I was avoding you..."
+                mc "Espeically now considering how you explained to me your home situation..."
+                show natsuki 42bb
+                "Natsuki clenches the manga tighter."
+                mc "Look...{w=0.38}let me make it up to you and pay for the manga, okay?"
+
+        if hangout1 != "Natsuki":
+            if hangout2 != "Natsuki":
+                n "And why are you showing so much interest in me now after you've spent so much time with Sayori?"
+                n "We haven't really been around each other..."
+                n 42bb "I was afraid that I pushed you away..."
+                show natsuki 12ba
+                mc "You didn't do anything wrong, Natsuki..."
+                mc "I've been wanting to get to know better for a while now.."
+                mc "I just haven't gotten the chance to until today..."
+                mc "I'm sorry if you felt like I was avoding you..."
+                mc "Espeically now considering how you explained to me your life outside of school..."
+                show natsuki 42bb
+                "Natsuki clenches the manga tighter."
+                mc "Look...{w=0.38}let me make it up to you and pay for the manga, okay?"
+
+show natsuki 14be
+"Natsuki reluctantly sighs."
+stop music fadeout 2.0
+n 12bb "Alright, fine..."
+n 12ba "Just don't tell anyone about this, okay?"
+mc "You have my word."
+"Natsuki sheepishly hands over her money and the manga while I quickly walk over to re-join the line."
+"After a few minutes I'm able to pay for Natsuki's manga, return my own and begin our walk back."
+show natsuki at thide
+hide natsuki
+jump n_resolved
+
+
+label n_resolved:
+
+play music t8 fadein 2.0
+scene bg city_sidewalk
+with wipeleft_scene
+show natsuki 5bu at t11 zorder 1
+"As we walk out of the bookstore, I hand the bag over to Natsuki."
+n 5bq "You really didn't have to do that for me, [player]..."
+mc "It's nothing, really..."
+mc "That's what friends are for, right?"
+show natsuki 1bq
+"Natsuki doesn't answer and simply sheeplishly takes the bag as we start walking, but after a few minutes she speaks up again."
+n 1bm "I really can't thank you enough, [player]..."
+n "Nobody's ever been that kind to me..."
+show natsuki 5bn
+mc "Well, hopefully I won't be the last person to treat you fairly..."
+mc "I'm just glad I'm your friend, Natsuki."
+mc "You're not so bad to hang around..."
+n 5bt "Y-{w=0.38}yeah...{w=0.38}you too..."
+"Natsuki blushes brightly as we continue on the direction to the school."
+show natsuki at thide
+scene bg school
+with wipeleft_scene
+"The walk back to school was surprisingly quicker than it was to the bookstore."
+"Though it does mean that it's pretty much time for Natsuki and I to part ways until tomorrow."
+show natsuki 5bk at t11 zorder 1
+mc "Well...{w=0.38}I guess this is your stop..."
+show natsuki 5bq
+n "Yeah...{w=0.38}I guess so..."
+"Theres an obvious trace of disappointment in her voice as she looks down at the ground."
+mc "Well, I can stay until the bus comes if you'd want..."
+n 5bm "Actually..."
+n 5bq "Do you...{w=0.38}mind if I walk you back to your place?"
+n 5bn "I know I have some time before my dad comes home..."
+"I'm thrown off by Natsuki's request."
+"I mean...{w=0.38}I wouldn't mind spend some more time with her, but I'm not exactly sure why she'd want to walk me back with me."
+
+if natsuki_continued_hug == False or natsuki_hug == False:
+    "Though I don't want to screw this up again with Natsuki, so I'll take her up on her off this time."
+
+if natsuki_continued_hug == True or natsuki_hug == True:
+    pass
+
+mc "Uh...{w=0.38}sure..."
+mc "I wouldn't mind..."
+n 4bd "Great!"
+"I'm not sure what her motivation is here, but I'll roll with it."
+show natsuki 1bj
+"We start walking back to my place, with Natsuki noticably walking closer to me than normal."
+stop music fadeout 2.0
+scene bg residential_day
+with wipeleft_scene
+"The walk back was mostly silent, with Natsuki almost holding my hand at a few points."
+"I shoot her an occasional look, but she doesn't seem to notice."
+"I can't say I'd be against holding her hand right now..."
+"I mean...{w=0.38}we've had quite the day together..."
+show natsuki 1bu at t11 zorder 1
+mc "So...{w=0.38}this is where I live..."
+
+if encore_festivalquestion_2 == "Natsuki":
+    mc "Well, of course you'd recongize the place..."
+    show natsuki 1bu
+    n "Yeah...{w=0.38}I remember..."
+    "Natsuki somberly scans up at my house."
+
+if encore_festivalquestion_2 == "Yuri":
+    mc "Not bad, huh?"
+    show natsuki 1bu
+    n "Yeah...{w=0.38}it's really nice, [player]..."
+    "She somberly scans up and down my house."
+
+mc "Is something wrong?"
+n 12ba "Can you do me a favor, [player]?"
+mc "Uh...{w=0.38}sure?"
+show natsuki 12bb
+"Natsuki hands me her manga book, her hands shaking."
+n 12be "Can you hold onto this until tomorrow?"
+n 12ba "Just put it in the closet when you get into the club..."
+mc "Why?"
+play music t9
+
+if natsuki_continued_hug == True or natsuki_hug == True:
+    show natsuki 42ba
+    n "You know why!"
+    "Suddenly, it clicks for me."
+    mc "It's because of your dad, isn't it?"
+    n 42bd "Yes!"
+    "She barely squeaks out."
+    n 42bb "He'd kick me out of the house and disown me if he ever found me reading that..."
+    "My anxiety that I've supressed earlier about Natsuki's home life suddenly bursts out into the open."
+    mc "Natsuki...{w=0.38}I know earlier you said it wasn't that bad but..."
+    mc "Is it really that bad?"
+    show natsuki 42bf
+    "Natsuki meerly nods her head as tears start rolling down her face."
+    n 42bg "It hasn't been bad recently..."
+    n 42bb "He's been in a good mood lately..."
+    n 42bi "But I'm scared that one little thing will set him off like always!"
+    n 42bh "And he'll take it out on me one way or another..."
+    "I drop the manga as I take Natsuki into my arms."
+    scene black
+    with close_eyes
+    mc "Natsuki..."
+    mc "I'm so sorry..."
+    mc "You need to get away from him!"
+    n "Fat chance I can!"
+    "She abruptly pulls away from me."
+    scene bg residential_day
+    with open_eyes
+    show natsuki 42bh at t11 zorder 1
+    n "If I leave, he'll find me."
+    n 42bd "He can and will do that."
+    n 42ba "And when he catches me, it'll be the end of me..."
+    mc "What does he do you do?!?"
+    mc "Does he...{w=0.38}physically hurt you?"
+    n 42bg "He hasn't in a while thankfully..."
+    n 42be "But it's not like I'm spared from his harsh insults..."
+    n 42bd "And anytime I fight back, it gets worse..."
+    n 42be "I guess because I've put up with his crap lately, he's found me tolerable..."
+    mc "I guess that's all you can do for now, until you can get away..."
+    n 42ba "Believe me, first chance I get, I'm getting away from him!"
+    mc "Well, look..."
+    mc "If anything ever happens, just come to me okay?"
+    mc "I mean, I guess walking from school to here helps make this all a little more familar to you, right?"
+    show natsuki 4bt
+    "Natsuki lets out a little chuckle."
+    n "Yeah...{w=0.38}it does..."
+    n 4bm "I'm sorry for not telling you the full truth earlier..."
+    n 4bq "I didn't want you to worry about me..."
+    show natsuki 1bm
+    mc "I've been worried!"
+    mc "Ever since you told me, it's been nagging in the back of my mind..."
+    mc "Look if something ever happened to you...{w=0.38}I don't know what I'd do!"
+    mc "Nothing would be the same without you, Natsuki..."
+    show natsuki 5bu
+    "Natsuki stares off with a mixed expression of guilt and embarrassment."
+    n 5bm "Well...{w=0.38}it means a lot that you really care about me, [player]..."
+    n 5bc "I'll come to you if I ever need you, okay?"
+    mc "Okay..."
+    show natsuki 5bu
+    "We stand in silence for a few moments before Natsuki breaks it."
+    show natsuki 5bm
+    n "Well, I gotta head home..."
+    n 5bl "All the emotions aside...{w=0.38}I had fun today, [player]!"
+    n 5bt "You really did make this a better day than I thought it was gonna be..."
+    mc "I'm glad I helped..."
+    n 5ba "You did."
+    n 5bl "Well, I'll see you tomorrow!"
+    mc "You too!"
+    show natsuki at thide
+    hide natsuki
+    "We embrace each other one last time before Natsuki walks off back in the direction of the school."
+    "I smile to myself as I watch her walk off into the horizon, knowing that I helped make her day..."
+    "I pick up the bag containing her manga and enter my house."
+    stop music fadeout 2.0
+    jump day3_night
+
+if natsuki_continued_hug == False or natsuki_hug == False:
+    n 42ba "Look...{w=0.38}I debated telling you this earlier, but I think I'll just say it now..."
+    mc "Well, what is it?"
+    n 42bb "There's a reason I keep my manga in the clubroom and not at home..."
+    n 42ba "There's a reason I'm so defensive about everything..."
+    n "To put it plainly...{w=0.38}I don't exactly have the best home situation..."
+    n 42bc "I never really did..."
+    mc "What do you mean by that?"
+    n 42ba "I live with my dad..."
+    n 42bb "And he's not exactly the most supportive parent out there..."
+    n 42bc "He doesn't let me do anything without his say so, and never cares to help me with anything!"
+    n 42ba "If I ever want something for myself, it's like pulling teeth."
+    n 42bd "Needless to say, we fight...{w=0.38}a lot..."
+    n 5bn "It took me months to save up the money I showed you..."
+    n 5bu "And it was a bigger pain to try to earn it..."
+    n 5bm "It's not like we're tight on money...{w=0.38}we're pretty well off..."
+    n 5bx "It's just that my dad's a selfish jerk who keeps all our money to himself and spends it on stuff he wants!"
+    n 5bn "He doesn't care about me..."
+    show natsuki 5bm
+    "I stand there completetly stunned at Natsuki's revleations."
+
+    if encore_sayoriquestion_1 == True:
+        "I never knew Natsuki dealt with something like that on a daily basis..."
+        "It would explain why she's rough around the edges..."
+
+
+    if encore_sayoriquestion_1 == False:
+        if encore_festivalquestion_2 == "Natsuki":
+            "She mentioned something before about not having the greatest relationship with her dad, but..."
+            "I didn't think it was that bad..."
+
+        if encore_festivalquestion_2 == "Yuri":
+            "I never knew Natsuki dealt with something like that on a daily basis..."
+            "It would explain why she's rough around the edges..."
+
+    "Yet, there's something nagging at the back of my mind here..."
+    "Just how bad is it really for her?"
+    mc "When you guys say you fight a lot...{w=0.38}what does he exactly do..."
+    show natsuki 42bf
+    "Tears start to stream down Natsuki's face."
+    "My heart drops into my stomach as my fists tighten in anger."
+    "What did he do to her?!?"
+    n 42bg "He insults me in every way imaginable..."
+    n 42bh "He's...{w=0.38}hit me before too..."
+    mc "Has he done it recently?"
+    n 42bg "He hasn't in a while thankfully..."
+    n 42be "But it's not like I'm spared from his harsh insults..."
+    n 42bd "And anytime I fight back, it gets worse..."
+    mc "Jesus..."
+    "I drop the manga as I take Natsuki into my arms."
+    scene black
+    with close_eyes
+    mc "Natsuki..."
+    mc "I'm so sorry..."
+    mc "You need to get away from him!"
+    n "Fat chance I can!"
+    "She abruptly pulls away from me."
+    scene bg residential_day
+    with open_eyes
+    show natsuki 42bh at t11 zorder 1
+    n "If I leave, he'll find me."
+    n 42bd "He can and will do that."
+    n 42ba "And when he catches me, it'll be the end of me..."
+    n 42bb "I have to put up with him...{w=0.38}for now..."
+    mc "Can you really do that though?"
+    n 5bm "I've done it for this long..."
+    n 5bs "I just need to do it for two more years, then I'm off to college and I'll never have to see his face again!"
+    mc "Well if something happens in the mean time, I'd take you in..."
+    mc "I don't want you to be in danger like this, Natsuki!"
+    mc "If something happened to you...{w=0.38}I don't know what I'd do..."
+    n 5bm "Well...{w=0.38}it means a lot that you really care about me, [player]..."
+    n 5bt "Not too many people would even offer to do something like that for me..."
+    n 5bc "I'll come to you if I ever need you, okay?"
+    mc "Okay..."
+    show natsuki 5bu
+    "We stand in silence for a few moments before Natsuki breaks it."
+    show natsuki 5bm
+    n "Well, I gotta head home..."
+    n 5bl "All the emotions aside...{w=0.38}I had fun today, [player]!"
+    n 5bt "You really did make this a better day than I thought it was gonna be..."
+    mc "I'm glad I helped..."
+    n 5ba "You did."
+    n 5bl "Well, I'll see you tomorrow!"
+    mc "You too!"
+    show natsuki at thide
+    hide natsuki
+    "We embrace each other one last time before Natsuki walks off back in the direction of the school."
+    "I smile to myself as I watch her walk off into the horizon, knowing that I helped her today in some way..."
+    "I pick up the bag containing her manga and enter my house."
+    stop music fadeout 2.0
+    jump day3_night
