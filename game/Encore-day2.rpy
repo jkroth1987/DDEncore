@@ -2564,7 +2564,7 @@ m "She can't even decide how she feels about you..."
 m "So why spend all your time around her..."
 stop music
 $ style.say_dialogue = style.edited
-m "{w=0.38}WHEN {w=0.38}SHE {w=0.38}TREATS {w=0.38}YOU {w=0.38}LIKE {w=0.38}DIRT!!!"
+m "{w=0.38}WHEN {w=0.38}SHE {w=0.38}TREATS {w=0.38}YOU {w=0.38}LIKE {w=0.38}SHIT!!!"
 $ style.say_dialogue = style.normal
 $ renpy.pause(delay=0.10)
 window show(None)

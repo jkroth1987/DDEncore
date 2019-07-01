@@ -486,7 +486,7 @@ label day1_beginning:
     show natsuki 5u
     "Natsuki shifts around awkwardly in her seat, as if Monika was directly addressing her."
     "Just how much did Monika overhear?"
-    m 3h  "Which in of itself is unfortunate."
+    m 3h  "Which in and of itself is unfortunate."
     m 1q "We put in a lot of effort to making the club look its best at the festival, and it was all for nothing."
     "Everyone avoids making eye contact at Monika, wanting to avoid her disappointed gaze."
     m 1r "We tried our best, and in the end, we couldn't attract even one new member."

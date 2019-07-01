@@ -963,43 +963,54 @@ with wipeleft_scene
 "It must've been since last summer I walked through here..."
 "Every now and then my parents make me go on walks with them just to make sure I don't spend my summer constantly inside playing video games and watching anime..."
 "Not that I've ever been a big fan of walking, though I suppose it was nice to get out of the house every now and then..."
-show monika 1j at t11 zorder 1
+show mb1j as monika at t11 zorder 1
 "Which is a pretty stark contrast compared to Monika, who seems to be happily content with herself, even though we haven't said much since we started walking a few minutes ago..."
 "Well, considering I don't get the chance to talk to Monika often, I should probably try to make an effort to make conversation with her..."
 "As I'm trying to think of something to talk about, I look off to the horizon where I can start to see the little mountains off in the distance."
 "I wouldn't want to be a drag on her mood, but I didn't exactly have hiking in mind for this little trip..."
-show monika 1d
+show mb1d as monika at t11 zorder 1
 mc "So, Monika..."
 mc "Where exactly are we walking to?"
 mc "I mean, eventually we're going to run into those mountains."
 "I point out to the little mountains to Monika."
-m 1b "That's where we're heading to, [player]!"
-m 1k "I know this nice spot where we can watch the sun set on the city."
-m 1j "The views are quite breathtaking!"
+show mb1b as monika at t11 zorder 1
+m "That's where we're heading to, [player]!"
+show mb1k as monika at t11 zorder 1
+m "I know this nice spot where we can watch the sun set on the city."
+show mb1j as monika at t11 zorder 1
+m "The views are quite breathtaking!"
 mc "We're not going to have to hike to get there, are we?"
 mc "I didn't exactly bring the best hiking shoes..."
-show monika 1d
+show mb1d as monika at t11 zorder 1
 "I show off my plain sneakers for emphaisis."
-m 3b "Oh don't worry, there'll be no hiking on this trip!"
-m 3m "Not even I came prepared for that unfortuantely..."
-m 2b "The path to get there is already pre-constructed, and it's not even all the way at the peak!"
+show mb3b as monika at t11 zorder 1
+m "Oh don't worry, there'll be no hiking on this trip!"
+show mb3m as monika at t11 zorder 1
+m "Not even I came prepared for that unfortuantely..."
+show mb2b as monika at t11 zorder 1
+m "The path to get there is already pre-constructed, and it's not even all the way at the peak!"
 mc "Well...{w=0.38}that's good I guess..."
-show monika 2g
+show mb2g as monika at t11 zorder 1
 "Monika raises an eyebrow at me."
-m 2f "You're not scared of heighs, are you, [player]?"
+show mb2f as monika at t11 zorder 1
+m "You're not scared of heighs, are you, [player]?"
 mc "No, I can manage..."
 mc "I've just never walked that far out before..."
-m 2d "Where do you usually go?"
-show monika 2c
+show mb2d as monika at t11 zorder 1
+m "Where do you usually go?"
+show mb2c as monika at t11 zorder 1
 mc "Usually just to school and back..."
 mc "Maybe occasionally I walk a little further to go to the resturants and shops near school, but that's usually it."
-m 2d "You've never walked into the city?"
+show mb2d as monika at t11 zorder 1
+m "You've never walked into the city?"
 mc "I mean I could...{w=0.38}it's just a little far for my tastes I guess."
 mc "Where do you usually walk to?"
-m 1b "All over the place!"
-m 1a "I never have a set route of where I go, I always try to mix it up!"
+show mb1b as monika at t11 zorder 1
+m "All over the place!"
+show mb1a as monika at t11 zorder 1
+m "I never have a set route of where I go, I always try to mix it up!"
 mc "Well I just hope you don't go to the north side of town too often..."
-show monika_c_b5a as monika at t11 zorder 1
+show mb5a as monika at t11 zorder 1
 m "Awww~"
 m "Are you worried about me, [player]?"
 mc "I-{w=0.38}I mean..."
@@ -1013,23 +1024,24 @@ if encore_sayoriquestion_1 == False:
 
 "I just blurt out the first thing that comes to mind."
 mc "Why wouldn't I be?"
-show monika 1g at t11 zorder 1
+show mb_flustered as monika at t11 zorder 1
 m "Eh?"
 mc "I mean come on..."
-show monika u114312 at t11 zorder 1
+show mb_embarassed as monika at t11 zorder 1
 mc "A girl like you going around in an area like that..."
 mc "I mean...{w=0.38}I'd hate to find out if something bad happened to you when you were out on one of your walks..."
 mc "What would we do without you at the club?"
-show monika 1m
 "Now it's Monika's turn to be flustered."
-show monika 1n
+show mbe_talking as monika at t11 zorder 1
 m "Oh come on...{w=0.38}are you saying Sayori wouldn't do a good job in my absence?"
+show mb_embarassed as monika at t11 zorder 1
 mc "I mean, I'm sure she'd do fine..."
 mc "It just wouldn't be the same without you, you know?"
-show monika u114312 at t11 zorder 1
+show mbe_talking2 as monika at t11 zorder 1
 mc "You're kinda of ireplaceable..."
-m 1m "Aren't you such a gentlemen?"
-show monika_c_b5a as monika at t11 zorder 1
+show mbe_talking3 as monika at t11 zorder 1
+m "Aren't you such a gentlemen?"
+show mb5a as monika at t11 zorder 1
 
 if encore_sayoriquestion_1 == True:
     m "Sayori's really lucky to have a guy like you!"
@@ -1127,11 +1139,12 @@ if encore_sayoriquestion_1 == False:
 
 
 m "Like I said before [player], you don't give yourself enough credit!"
-show monika 1f
+show mb1f as monika at t11 zorder 1
 mc "Maybe you give me too much..."
-m 2n "I'd have to disagree..."
+show mb2n as monika at t11 zorder 1
+m "I'd have to disagree..."
 "I manage a small smile at Monika before turning back to face the path in front of us."
-show monika 2m
+show mb2m as monika at t11 zorder 1
 "We walk the next few minutes in silence before Monika leads us on a sudden turn."
 show monika at thide
 hide monika
@@ -1139,30 +1152,36 @@ scene bg monika_walk2
 with wipeleft_scene
 "As we turn the corner, we stare down at a long, winding path way filled with trees and bushes crowding against each other along the walls."
 "I look up at the street sign to see that the alleyway has already convenientley been named 'Garden Alley'."
-show monika_c_b1 as monika at t11 zorder 1
+show mb1a as monika at t11 zorder 1
 "I turn to Monika as she gleams with excitment."
-m 3b "Wow, we've really made good time so far!"
-m 3j "We're not that much further from where we're going actually!"
-show monika_c_b1 as monika at t11 zorder 1
+show mb3b as monika at t11 zorder 1
+m "Wow, we've really made good time so far!"
+show mb3j as monika at t11 zorder 1
+m "We're not that much further from where we're going actually!"
+show mb1a as monika at t11 zorder 1
 mc "Well, it's good to know I haven't slowed you down or anything..."
 mc "I know I'm not the most fit guy in school..."
-m 2e "No, you've actually kept up with me pretty well..."
-m 2n "Though there is one part of this walk that'll be hard to do..."
-show monika 2m
+show mb2e as monika at t11 zorder 1
+m "No, you've actually kept up with me pretty well..."
+show mb2n as monika at t11 zorder 1
+m "Though there is one part of this walk that'll be hard to do..."
+show mb2m as monika at t11 zorder 1
 mc "What is it?"
-m 2e "Let's just say there's going to be a lot of steps..."
+show mb2e as monika at t11 zorder 1
+m "Let's just say there's going to be a lot of steps..."
 "I'm not entirely sure what she means by that, but I'll go along with it..."
 mc "Ah, come on! If I've walked this far already, a few little steps won't slow me down!"
-m 3k "Well, I hope you'll still have that determination when you see them!"
+show mb3k as monika at t11 zorder 1
+m "Well, I hope you'll still have that determination when you see them!"
 mc "I'm sure I will."
-show monika 1j
+show mb1j as monika at t11 zorder 1
 "We keep walking through the winding path. Occasionally, Monika would stop us to smell whatever flowers weren't swarmed by insects."
-"I noticed in particualr that Monika had a fondness of smelling nearly every single Camellia that was along the route."
+"I noticed in particular that Monika had a fondness of smelling nearly every single Camellia that was along the route."
 "Figuring that was her favorite flower, I managed to dicreetly pluck one when she wasn't looking."
 
 if encore_sayoriquestion_1 == True:
     "Maybe Sayori would like these..."
-    show monika 1q
+    show mb1q as monika at t11 zorder 1
     show screen tear(20, 0.1, 0.1, 0, 40)
     pause 0.70
     hide screen tear
@@ -1183,7 +1202,7 @@ if encore_sayoriquestion_1 == True:
 if encore_sayoriquestion_1 == False:
     "Maybe I could give this to her when we get up there..."
 
-show monika 1j
+show mb1j as monika at t11 zorder 1
 "I look over to Monika whose gently sniffing some tulips."
 "I never knew Monika was so into nature..."
 "And her energy and ethusasim is so different from how she usually is in school..."
@@ -1192,32 +1211,34 @@ show monika 1j
 "Maybe she's just trying to help me relax over everything..."
 "Well, I guess it's working..."
 "I walk over to Monika, whose still sniffing the tulips."
-show monika_c_b1 as monika at t11 zorder 1
 mc "I didn't know you were so into this place, have you been here before?"
-show monika 3b
+show mb3b as monika at t11 zorder 1
 m "A couple times actually!"
-show monika_c_b3 as monika at t11 zorder 1
+show mb3a as monika at t11 zorder 1
 m "I wanted to walk through here one last time before winter came..."
-m 3m "This is the last time things will be blooming here for a while..."
+show mb3m as monika at t11 zorder 1
+m "This is the last time things will be blooming here for a while..."
 mc "Ah, I guess that's true..."
-show monika 1m
+show mb1m as monika at t11 zorder 1
 "I look up at the sky to see the sun starting to set."
 mc "Well, if we're going to get to your spot before sundown, we probably should hurry."
-show monika 1d at h11 zorder 1
+show mb1d as monika at t11 zorder 1
 "Monika gets her last whiff of the tulip before jumping up and looking at the sky."
-m 2g "Oh wow! I guess time really flew by, didn't it?"
+show mb2g as monika at t11 zorder 1
+m "Oh wow! I guess time really flew by, didn't it?"
 mc "I guess we did take our time through here..."
-show monika 2o
+show mb2o as monika at t11 zorder 1
 "Monika somberly looks off."
-m 2p "Sorry, [player]...{w=0.38}I didn't mean to slow us down here so much..."
+show mb2p as monika at t11 zorder 1
+m "Sorry, [player]...{w=0.38}I didn't mean to slow us down here so much..."
 mc "Monika, it's fine really!"
-show monika 2d
+show mb2d as monika at t11 zorder 1
 "Monika looks back at me."
 mc "I mean this was your idea, you're allowed to have fun with it!"
 mc "Besides, I think a little break here and there does us good!"
-show monika u114312
+show mb_flustered as monika at t11 zorder 1
 mc "And I'll admit...{w=0.38}seeing you enjoy yourself like this is kinda cute..."
-show monika 1m
+show mb_blush as monika at t11 zorder 1
 "Monika blushes brightly."
 
 if encore_sayoriquestion_1 == True:
@@ -1236,24 +1257,30 @@ stop music fadeout 3.0
 "And everything points too her liking me back..."
 "Man...{w=0.38}how the hell did this happpen?"
 "Monika and I shuffle a little closer to each other."
-m 1m "Do you...{w=0.38}really mean that, [player]?"
+show mb_flustered as monika at t11 zorder 1
+m "Do you...{w=0.38}really mean that, [player]?"
 mc "Why would I ever lie to you, Monika?"
 mc "Of course I mean it..."
-m 1n "Hehe..."
-show monika 1m
+show mb_blush as monika at t11 zorder 1
+m "Hehe..."
 "Monika's giggle sends a shock through my heart as it starts speeding at a million miles a second."
 "My face turns flush as I struggle to keep myself from grinning like a total lunatic in front of her."
 "Monika takes another step closer to me."
-m 1n "I just...{w=0.38}wanted to make sure..."
+show mb1n as monika at t11 zorder 1
+m "I just...{w=0.38}wanted to make sure..."
 mc "Monika I'd be the worst person on Earth to lie to you."
 mc "And anyone who does is an idiot..."
-show monika 1j
+show mb1j as monika at t11 zorder 1
 "Monika lets out another giggle."
-m 1e "See, what I'd tell you, [player]?"
-m 1m "You haven't failed to put a smile on my face this entire walk."
-m 1e "It's nice to know for once that there's someone who truly appreciates me."
-m 1n "Who just doens't want me for one thing..."
-show monika 1m
+show mb1e as monika at t11 zorder 1
+m "See, what I'd tell you, [player]?"
+show mb1m as monika at t11 zorder 1
+m "You haven't failed to put a smile on my face this entire walk."
+show mb1e as monika at t11 zorder 1
+m "It's nice to know for once that there's someone who truly appreciates me."
+show mb1n as monika at t11 zorder 1
+m "Who just doens't want me for one thing..."
+show mb1m as monika at t11 zorder 1
 "I mean, it's true that there's a lot of...{w=0.38}thirst for Monika around the school..."
 "Heck, I'm even guilty of it..."
 "But it looks like all along, no guy has ever tried to actually get to know her..."
@@ -1262,7 +1289,7 @@ show monika 1m
 "I decide to break the ice."
 mc "What do you mean by that?"
 mc "Did something happen?"
-show monika 1f
+show mb1f as monika at t11 zorder 1
 "Monika stotically nods."
 mc "If I may ask...{w=0.38}what happened?"
 mc "I thought that you were dating that one transfer student..."
@@ -1270,23 +1297,34 @@ mc "But when you brought up last week that you don't have a boyfriend, I just as
 mc "But even then I heard rumors you were seeing all sorts of guys."
 mc "Not that I ever believed most of them..."
 play music t9
-m 1g "Well, the thing is..."
-m 1o "I've only had one, despite the rumors..."
-m 1p "But that relationship was just a sham for him to try to get close to me."
-m 1f "He used me to boost his status around the school, [player]..."
-m 1p "An that wasn't the only thing he wanted from me..."
-m 1p "He was always pushing me to take our relationship to the next level..."
-m 1r "It took longer than I liked for me to see him for what he was, but thankfully I cut him off before we got too far."
-m 1q "This was all last year."
-m 1r "And I had to deal with a lot of unflattering rumors for the duration of that semester, but thankfully, I dealt with it."
-m 1q "I'd like to think I became a stronger person as a result of all this, but, some of it still hurts, [player]..."
-m 1r "That's why I'm always skeptical when any guy just comes up and tries to say all these nice things to me."
+show mb1g as monika at t11 zorder 1
+m "Well, the thing is..."
+show mb1o as monika at t11 zorder 1
+m "I've only had one, despite the rumors..."
+show mb1p as monika at t11 zorder 1
+m "But that relationship was just a sham for him to try to get close to me."
+show mb1f as monika at t11 zorder 1
+m "He used me to boost his status around the school, [player]..."
+show mb1p as monika at t11 zorder 1
+m "An that wasn't the only thing he wanted from me..."
+m "He was always pushing me to take our relationship to the next level..."
+show mb1r as monika at t11 zorder 1
+m "It took longer than I liked for me to see him for what he was, but thankfully I cut him off before we got too far."
+show mb1q as monika at t11 zorder 1
+m "This was all last year."
+show mb1r as monika at t11 zorder 1
+m "And I had to deal with a lot of unflattering rumors for the duration of that semester, but thankfully, I dealt with it."
+show mb1q as monika at t11 zorder 1
+m "I'd like to think I became a stronger person as a result of all this, but, some of it still hurts, [player]..."
+show mb1r as monika at t11 zorder 1
+m "That's why I'm always skeptical when any guy just comes up and tries to say all these nice things to me."
 m "I don't want a repeat of what happened last year, it wouldn't just hurt me this time..."
-m 2e "But, I know you well enough to know you aren't like that..."
+show mb2e as monika at t11 zorder 1
+m "But, I know you well enough to know you aren't like that..."
 "I'm frozen in shock as Monika tells me all this..."
 "I never even knew about half the things she just said..."
 mc "Monika...{w=0.38}I'm..."
-show monika 1d
+show mb1d as monika at t11 zorder 1
 mc "I'm really sorry that happened to you..."
 "I feel a deep sense of guilt swirl inside me, knowing that I may have occasionally tagged in on the gossip and fauning over Monika..."
 
@@ -1298,30 +1336,37 @@ if encore_sayoriquestion_1 == False:
     "And I feel even more guilty for how I've been distant from [poem_giver] lately..."
 
 stop music fadeout 2.0
-m 2n "Ah, don't be..."
-m 2e "There's no use in being sorry for me, [player]."
+show mb2n as monika at t11 zorder 1
+m "Ah, don't be..."
+show mb2e as monika at t11 zorder 1
+m "There's no use in being sorry for me, [player]."
 m "Everything's fine now."
 mc "Well, if anyone ever spreads rumors about you, I'll be happy to talk to them for you, Monika."
 "I jokingly show off my fists."
-m 2m "I'll keep that in mind, [player]..."
-m 2l "Anyways, let's keep going! Otherwise we're not gonna reach the spot till tomorrow!"
+show mb2m as monika at t11 zorder 1
+m "I'll keep that in mind, [player]..."
+show mb2l as monika at t11 zorder 1
+m "Anyways, let's keep going! Otherwise we're not gonna reach the spot till tomorrow!"
 "I look at my watch."
 "6:45"
-show monika 2e
+show mb2e as monika at t11 zorder 1
 mc "Oh, wow! We've been at this for a while now!"
 mc "Didn't even realize..."
-m 2m "Time really flies when you're with someone..."
+show mb2m as monika at t11 zorder 1
+m "Time really flies when you're with someone..."
 mc "I guess that's the case..."
 "We stand in silence as another breeze gently blows over us."
 mc "Well, I'll follow your lead, Madame President!"
-show monika 2k
+show mb2k as monika at t11 zorder 1
 "I jokingly salute Monika, causing her to let out a hearty laugh."
-m 4l "That is so something Sayori would say!"
+show mb4l as monika at t11 zorder 1
+m "That is so something Sayori would say!"
 mc "I guess I've picked up on her more than I've realized..."
 mc "Anyways let's go!"
-show monika_c_b1 as monika at t11 zorder 1
+show mb1a as monika at t11 zorder 1
 "Monika and I resume our walk through the path."
 "As we start walking again, I hear her whipser something under her breath."
+show mb1j as monika at t11 zorder 1
 $ style.say_dialogue = style.edited
 "Soon."
 $ style.say_dialogue = style.normal
@@ -1333,18 +1378,18 @@ play music t6
 "Not too long after we resumed our walk, we reach the end of the path and face a towering row of stairs leading up along the mountain."
 mc "I guess these are the 'stairs' you warned me about..."
 #Shrugging Monika Sprite Goes Here
-show monika 1b at t11 zorder 1
+show mb1b as monika at t11 zorder 1
 m "Don't say I didn't warn you!"
 mc "Well I mean, you did..."
 mc "I just didn't think it'd be that many stairs..."
 "I take another look at the seemingly infinite row of steps that seem to ascend into the heavens..."
 "A lump forms in my throat as my eyes continue to eyeball how many steps there are..."
 "I nervously swallow."
-show monika 5b
+show mb5b as monika at t11 zorder 1
 m "You're not chickening out on me now, are you, [player]?"
 mc "What? I could never do that to you!"
 mc "This will be a piece of cake!"
-show monika_c_b5a as monika at t11 zorder 1
+show mb5a as monika at t11 zorder 1
 m "Is that so?"
 m "Well my best record on walking up these steps is 20 minutes~"
 m "But I'm afraid the sun's going to set before that..."
@@ -1359,7 +1404,7 @@ m "My respect and a nice view~"
 mc "Your respect, huh?"
 "Sounds good enough to me..."
 mc "You're on!"
-show monika 1d at h11 zorder 1
+show mb1d as monika at h11 zorder 1
 stop music
 "Suddenly Monika takes a step back in a pure shock."
 m "[player]..."
@@ -1388,9 +1433,10 @@ scene black with dissolve_scene
 "After what felt like another hour of walking up the stairs, we finally reached our desination."
 scene bg city_overlook
 with wipeleft_scene
-show monika 2n at t11 zorder 1
+show mb2n as monika at t11 zorder 1
 m "Well it's not quite sunset anymore, but..."
-m 2e "The view's still nice."
+show mb2e as monika at t11 zorder 1
+m "The view's still nice."
 mc "Woah..."
 show monika at thide
 hide monika
@@ -1401,24 +1447,30 @@ hide monika
 mc "Monika..."
 mc "This is...{w=0.38}beautiful!"
 "I end up having to take a seat as I'm overwhelmed from the physical exhaustion and the beauty that lays out before us."
-show monika 4b at t11 zorder 1
+show mb4b as monika at t11 zorder 1
 m "I'd thought you'd like it, [player]..."
-show monika_c_b1 as monika at t11 zorder 1
+show mb1a as monika at t11 zorder 1
 m "Whenever I feel overwhelemed or stressed out, I usually go here around sundown."
-m 1b "Seeing the city lit up under the stars really melts away all my troubles and worries..."
-m 1n "I wanted to head over here anyways tonight, but I thought you could use it just as much as I could."
-show monika 1m
+show mb1b as monika at t11 zorder 1
+m "Seeing the city lit up under the stars really melts away all my troubles and worries..."
+show mb1n as monika at t11 zorder 1
+m "I wanted to head over here anyways tonight, but I thought you could use it just as much as I could."
+show mb1m as monika at t11 zorder 1
 "Monika takes a seat on the bench next to me."
 mc "I take it that 'surprise' has been on your mind."
-m 1n "Well, it's just not that, it's other things..."
-m 3m "It's been a pretty hectic week for me..."
-m 1n "With the festival prep, the actual festival, my surprise, and-"
-show monika 1p
+show mb1n as monika at t11 zorder 1
+m "Well, it's just not that, it's other things..."
+show mb3m as monika at t11 zorder 1
+m "It's been a pretty hectic week for me..."
+show mb1n as monika at t11 zorder 1
+m "With the festival prep, the actual festival, my surprise, and-"
+show mb1p as monika at t11 zorder 1
 "Monka cuts herself off."
 mc "It's fine if you don't wanna tell me."
 mc "I mean, it's not like I can really share with you my thought process right now anyways..."
 mc "I don't even know what I want..."
-m 1d "Did my questions help?"
+show mb1d as monika at t11 zorder 1
+m "Did my questions help?"
 mc "I mean they have..."
 
 if encore_sayoriquestion_1 == True:
@@ -1427,20 +1479,22 @@ if encore_sayoriquestion_1 == True:
 
 
     mc "I made a promise to her, and I've done nothing but break it..."
-    show monika 1p
+    show mb1p as monika at t11 zorder 1
     "Monika nervously looks off to the side."
-    m 1o "I'm sorry if I'm a cause of this..."
-    m 1r "I really didn't mean to act like I did earlier if I knew I was going to make you uncomfortable..."
+    show mb1o as monika at t11 zorder 1
+    m "I'm sorry if I'm a cause of this..."
+    show mb1r as monika at t11 zorder 1
+    m "I really didn't mean to act like I did earlier if I knew I was going to make you uncomfortable..."
 
     if hangout2 == "Monika":
         m "I wouldn't have done it yesterday either..."
-        show monika 1d
+        show mb1d as monika at t11 zorder 1
         mc "I wasn't uncomfortable though, that's the thing!"
         mc "Being with you earlier today and yesterday felt...{w=0.38}right..."
 
 
     else:
-        show monika 1d
+        show mb1d as monika at t11 zorder 1
         mc "I wasn't uncomfortable though, that's the thing!"
         mc "Being with you earlier today and yesterday felt...{w=0.38}right..."
         m "Even though I wasn't expecting it..."
@@ -1454,15 +1508,20 @@ if encore_sayoriquestion_1 == True:
     mc "I just don't know what to do..."
     "Well I might as well just flat out confessed to her..."
     "Monika looks on at me with a look of shock and embrassment."
-    m 2m "As I said earlier, [player]..."
-    m 2c "And I'm not saying this because I want your relationship with Sayori to fail..."
-    m 2g "But if you're enjoying spending time away from Sayori, then maybe that relationship just isn't meant to be..."
-    show monika 2f
+    show mb2m as monika at t11 zorder 1
+    m "As I said earlier, [player]..."
+    show mb2c as monika at t11 zorder 1
+    m "And I'm not saying this because I want your relationship with Sayori to fail..."
+    show mb2g as monika at t11 zorder 1
+    m "But if you're enjoying spending time away from Sayori, then maybe that relationship just isn't meant to be..."
+    show mb2f as monika at t11 zorder 1
     mc "Maybe I said yes to her too early..."
-    m 2g "She needed someone to be there for her, [player]..."
-    m 2e "And you've done everything you could for her..."
+    show mb2g as monika at t11 zorder 1
+    m "She needed someone to be there for her, [player]..."
+    show mb2e as monika at t11 zorder 1
+    m "And you've done everything you could for her..."
     "I scoff at Monika's comment."
-    show monika 2f
+    show mb2f as monika at t11 zorder 1
     mc "No...{w=0.38}I haven't..."
     mc "I didn't spend that much time around her on Monday when she was having her 'rainclouds'..."
 
@@ -1481,31 +1540,41 @@ if encore_sayoriquestion_1 == True:
         mc "I've done nothing but her and betray her..."
         mc "And I don't think I can make it up to her..."
         mc "She hardly has any faith left in me, I just know it!"
-        m 2g "You need to stop dobuting yourself..."
-        m 2f "You've at least given her piece of mind that you'll still be there for her..."
-        m 2p "Even if it's not in the way you guys originally intended..."
-        m 2f "You're not flat out ignoring her, are you?"
+        show mb2g as monika at t11 zorder 1
+        m "You need to stop dobuting yourself..."
+        show mb2f as monika at t11 zorder 1
+        m "You've at least given her piece of mind that you'll still be there for her..."
+        show mb2p as monika at t11 zorder 1
+        m "Even if it's not in the way you guys originally intended..."
+        show mb2f as monika at t11 zorder 1
+        m "You're not flat out ignoring her, are you?"
         mc "I might as well be..."
         mc "I just suck as a boyfriend..."
         mc "And if this relationship fails and I even get into another one, whose to say I won't do the same thing over again?"
-        m 2p "Well, you'll need to master self-control..."
-        m 2c "You just can't have everybody, [player], it's not a realistic solution to your problems..."
-        m 2g "But for you and Sayori...{w=0.38}maybe you just need to sit down and talk to her..."
-        m 2p "If you believe that's still an option at this point..."
+        show mb2p as monika at t11 zorder 1
+        m "Well, you'll need to master self-control..."
+        show mb2c as monika at t11 zorder 1
+        m "You just can't have everybody, [player], it's not a realistic solution to your problems..."
+        show mb2g as monika at t11 zorder 1
+        m "But for you and Sayori...{w=0.38}maybe you just need to sit down and talk to her..."
+        show mb2p as monika at t11 zorder 1
+        m "If you believe that's still an option at this point..."
         show monika 2c
         mc "I don't know..."
         mc "She's just trying to put up with me at this stage..."
         mc "But sooner or later, I suppose we'll have that talk..."
         mc "I'm not optimistic she feels the same way about me anymore either..."
-        m 2d "Well, you'll just have to wait and see, [player]..."
-        show monika 2c
+        show mb2d as monika at t11 zorder 1
+        m "Well, you'll just have to wait and see, [player]..."
+        show mb2c as monika at t11 zorder 1
         mc "Yeah, and I still like Sayori, but I don't know if it's all there anymore..."
-        m 2d "And how do you feel about [poem_giver]?"
+        show mb2d as monika at t11 zorder 1
+        m "And how do you feel about [poem_giver]?"
         mc "I mean, I like her..."
         mc "But I've only recently have just gotten to know her..."
         mc "I know the the potential is there..."
         mc "It comes at a price that I don't know if I can afford or really want to pay..."
-        show monka 2o
+        show mb2o as monika at t11 zorder 1
         "Monika glances looks off into the horizon."
         mc "But I know she's not my only choice..."
         "I mean to be truthful, I have mixed feelings about [poem_giver]..."
@@ -1689,30 +1758,33 @@ mc "But I haven't exactly been the most faithful to her..."
 if hangout1 != "Sayori":
     if hangout2 != "Sayori":
         mc "Especially recently..."
-        m 1o "I'm sorry if I helped cause that..."
+        show mb1o as monika at t11 zorder 1
+        m "I'm sorry if I helped cause that..."
 
 if hangout1 == "Sayori":
     if hangout2 != "Sayori":
         mc "I seriously hurt our relationship yesterday..."
-        m 1o "I'm sorry if I helped cause that..."
+        show mb1o as monika at t11 zorder 1
+        m "I'm sorry if I helped cause that..."
 
 if hangout1 == "Sayori":
     if hangout2 == "Sayori":
         mc "Earlier today, we did kind of get closer than I expected..."
-        m 1o "I'm sorry..."
+        show mb1o as monika at t11 zorder 1
+        m "I'm sorry..."
 
-
-m 1r "I really didn't mean to act like I did earlier if I knew I was going to make you uncomfortable..."
+show mb1r as monika at t11 zorder 1
+m "I really didn't mean to act like I did earlier if I knew I was going to make you uncomfortable..."
 
 if hangout2 == "Monika":
     m "I wouldn't have done it yesterday either..."
-    show monika 1d
+    show mb1d as monika at t11 zorder 1
     mc "I wasn't uncomfortable though, that's the thing!"
     mc "Being with you earlier today and yesterday felt...{w=0.38}right..."
 
 
 else:
-    show monika 1d
+    show mb1d as monika at t11 zorder 1
     mc "I wasn't uncomfortable though, that's the thing!"
     mc "Being with you earlier today and yesterday felt...{w=0.38}right..."
     mc "But so was spending yesterday with [hangout2]..."
@@ -1725,7 +1797,7 @@ mc "I have a responsbility to try..."
 
 if hangout1 == "Monika":
     if hangout2 == "Monika":
-        show m u114312 at t11 zorder 1
+        show mb_flustered as monika at t11 zorder 1
         mc "But, Monika to be truthful...{w=0.38}I've had a lot of fun since we've started talking..."
         mc "And I want more, but..."
         mc "I don't know if I should..."
@@ -1734,7 +1806,7 @@ if hangout1 == "Monika":
 
 if hangout1 == "Natsui":
     if hangout2 == "Natsuki":
-        show monika 1f
+        show mb1f as monika at t11 zorder 1
         mc "But, Monika to be truthful...{w=0.38}I've had a lot of fun with Natsuki since we started talking..."
         mc "And I want to go further with her, but..."
         mc "I know I shouldn't..."
@@ -1742,7 +1814,7 @@ if hangout1 == "Natsui":
 
 if hangout1 == "Yuri":
     if hangout2 == "Yuri":
-        show monika 1f
+        show mb1f as monika at t11 zorder 1
         mc "But, Monika to be truthful...{w=0.38}I've had a lot of fun with Yuri since we started talking..."
         mc "And I want to go further with her, but..."
         mc "I know I shouldn't..."
@@ -1750,6 +1822,7 @@ if hangout1 == "Yuri":
 
 if hangout1 == "Sayori":
     if hangout2 == "Sayori":
+        show mb1f as monika at t11 zorder 1
         mc "And I'm happy with Sayori..."
         mc "But, I just still feel that temptation to see who else is out there..."
         mc "It could be anybody..."
@@ -1760,9 +1833,11 @@ else:
     mc "I just feel so divided..."
     mc "I feel like I'm being pulled everywhere at once..."
 
-m 3f "Well, [player]...{w=0.38}nobody's forcing you to make a decision here and now..."
-m 3m "You still have time..."
-show monika 1c
+show mb3f as monika at t11 zorder 1
+m "Well, [player]...{w=0.38}nobody's forcing you to make a decision here and now..."
+show mb3m as monika at t11 zorder 1
+m "You still have time..."
+show mb2c as monika at t11 zorder 1
 mc "I have to say something to [poem_giver]..."
 mc "I just don't even know if I share the same feelings for her..."
 mc "Just so much has changed over the last week..."
@@ -1770,17 +1845,21 @@ mc "It feels like I'm in such a selfish spot right now..."
 mc "I'm going to end up breaking at least one person's heart by the time this is all said and done!"
 mc "And someone's going to be happy..."
 mc "I know I should be happy with whatever I decide..."
-show monika 2d
+show mb2d as monika at t11 zorder 1
 mc "But...{w=0.38}I don't know if I can live with myself knowing that I hurt someone..."
 mc "And it might not just be [poem_giver] I'm hurting..."
-show monika 2g
+show mb2g as monika at t11 zorder 1
 m "[player]..."
-m 1f "You're not selfish..."
-m 3n "If you were, chances are you would've decided already..."
-m 2d "But it's clear that you're putting a lot of thought into this..."
-m 1d "But you did put yourself in this situation by being around the others a little too much with nobody particular in mind..."
+show mb1f as monika at t11 zorder 1
+m "You're not selfish..."
+show mb3n as monika at t11 zorder 1
+m "If you were, chances are you would've decided already..."
+show mb2d as monika at t11 zorder 1
+m "But it's clear that you're putting a lot of thought into this..."
+show mb1d as monika at t11 zorder 1
+m "But you did put yourself in this situation by being around the others a little too much with nobody particular in mind..."
 mc "I know..."
-show monika 1m at t11 zorder 1
+show mb1m as monika at t11 zorder 1
 jump m_hangout_choice
 
 
@@ -1794,20 +1873,22 @@ mc "I'm just not sure what I want..."
 mc "I don't know who I'd be better off with..."
 mc "I mean, I see potential with me and [poem_giver]..."
 mc "But my feelings are just all over the place..."
-show monika 1p
+show mb1p as monika at t11 zorder 1
 "Monika nervously looks off to the side."
-m 1o "I'm sorry if I helped cause that..."
-m 1r "I really didn't mean to act like I did earlier if I knew I was going to make you uncomfortable..."
+show mb1o as monika at t11 zorder 1
+m "I'm sorry if I helped cause that..."
+show mb1r as monika at t11 zorder 1
+m "I really didn't mean to act like I did earlier if I knew I was going to make you uncomfortable..."
 
 if hangout2 == "Monika":
     m "I wouldn't have done it yesterday either..."
-    show monika 1d
+    show mb1d as monika at t11 zorder 1
     mc "I wasn't uncomfortable though, that's the thing!"
     mc "Being with you earlier today and yesterday felt...{w=0.38}right..."
 
 
 else:
-    show monika 1d
+    show mb1d as monika at t11 zorder 1
     mc "I wasn't uncomfortable though, that's the thing!"
     mc "Being with you earlier today and yesterday felt...{w=0.38}right..."
     mc "But so was spending yesterday with [hangout2]..."
@@ -1821,7 +1902,7 @@ mc "Even though I told her I wanted to spend more time with her..."
 
 if hangout1 == "Monika":
     if hangout2 == "Monika":
-        show m u114312 at t11 zorder 1
+        show mb_flustered as monika at t11 zorder 1
         mc "But, Monika to be truthful...{w=0.38}I've had a lot of fun since we've started talking..."
         mc "And I want more, but..."
         mc "I don't know if I should..."
@@ -1830,7 +1911,7 @@ if hangout1 == "Monika":
 
 if hangout1 == "Natsui":
     if hangout2 == "Natsuki":
-        show monika 1f
+        show mb1f as monika at t11 zorder 1
         mc "But, Monika to be truthful...{w=0.38}I've had a lot of fun with Natsuki since we started talking..."
         mc "And I want to go further with her, but..."
         mc "I don't know if I should..."
@@ -1838,7 +1919,7 @@ if hangout1 == "Natsui":
 
 if hangout1 == "Yuri":
     if hangout2 == "Yuri":
-        show monika 1f
+        show mb1f as monika at t11 zorder 1
         mc "But, Monika to be truthful...{w=0.38}I've had a lot of fun with Yuri since we started talking..."
         mc "And I want to go further with her, but..."
         mc "I don't know if I should..."
@@ -1846,6 +1927,7 @@ if hangout1 == "Yuri":
 
 if hangout1 == "Sayori":
     if hangout2 == "Sayori":
+        show mb1f as monika at t11 zorder 1
         mc "But, Monika to be truthful...{w=0.38}I've really been having second thoughts about Sayori..."
         mc "I almost want to go back on my earlier decision, but..."
         mc "I don't know if I can at this point..."
@@ -1854,9 +1936,11 @@ else:
     mc "I just feel so divided..."
     mc "I feel like I'm being pulled everywhere at once..."
 
-m 3f "Well, [player]...{w=0.38}nobody's forcing you to make a decision here and now..."
-m 3m "You still have time..."
-show monika 1c
+show mb3f as monika at t11 zorder 1
+m "Well, [player]...{w=0.38}nobody's forcing you to make a decision here and now..."
+show mb3m as monika at t11 zorder 1
+m "You still have time..."
+show mb2c as monika at t11 zorder 1
 mc "I have to say something to [poem_giver]..."
 mc "I just don't even know if I share the same feelings for her..."
 mc "Just so much has changed over the last week..."
@@ -1864,18 +1948,22 @@ mc "It feels like I'm in such a selfish spot right now..."
 mc "I'm going to end up breaking at least one person's heart by the time this is all said and done!"
 mc "And someone's going to be happy..."
 mc "I know I should be happy with whatever I decide..."
-show monika 2d
+show mb2d as monika at t11 zorder 1
 mc "But...{w=0.38}I don't know if I can live with myself knowing that I hurt someone again..."
 mc "First Sayori..."
 mc "And it might not just be [poem_giver] I'm hurting this time..."
-show monika 2g
+show mb2g as monika at t11 zorder 1
 m "[player]..."
-m 1f "You're not selfish..."
-m 3n "If you were, chances are you would've decided already..."
-m 2d "It's clear that you're putting a lot of thought into this..."
-m 1d "But you did put yourself in this situation by being around the others a little too much with nobody particular in mind..."
+show mb1f as monika at t11 zorder 1
+m "You're not selfish..."
+show mb3n as monika at t11 zorder 1
+m "If you were, chances are you would've decided already..."
+show mb2d as monika at t11 zorder 1
+m "It's clear that you're putting a lot of thought into this..."
+show mb1d as monika at t11 zorder 1
+m "But you did put yourself in this situation by being around the others a little too much with nobody particular in mind..."
 mc "I know..."
-show monika 1m at t11 zorder 1
+show mb1m as monika at t11 zorder 1
 jump m_hangout_choice
 
 
@@ -1885,10 +1973,12 @@ jump m_hangout_choice
 label m_hangout_choice:
 
 "Monika stares off into the illuminated horizon."
-m 1n "You know, it's crazy how high up we are..."
-m 3m "Everything looks so small from up here..."
+show mb1n as monika at t11 zorder 1
+m "You know, it's crazy how high up we are..."
+show mb3m as monika at t11 zorder 1
+m "Everything looks so small from up here..."
 mc "Yeah...{w=0.38}it kind of does..."
-show monika 1m
+show mb1m as monika at t11 zorder 1
 "I join Monika in gazing at the cityscape."
 "I've lived in this area my whole life, but I don't think I've ever really had an appreciation for it until now..."
 "Being up here to look down at everything really helps calm my nerves."
@@ -1943,40 +2033,50 @@ m "How do we know we aren't being controlled to believe that this is just life a
 m "I don't know, all this kind of reminds me of that book I mentioned earlier today."
 "Monika turns to face me fully."
 #End CG
-show monika 1m at t11 zorder 1
+show mb1m as monika at t11 zorder 1
 m "About how two people know the truth about their world..."
 m "How they struggle to accept it..."
 mc "It does sound like a pretty great read!"
 mc "I'd defintley love to read it with you sometime..."
-show monika 1o at t11 zorder 1
+show mb1o as monika at t11 zorder 1
 "Instead of Monika happily accepting my offer like I thought she would, she just...{w=0.38}frowns and looks off to the side..."
 mc "Is something wrong, Monika?"
-m 2p "I kinda want to ask you something, [player]..."
-m 2g "A hypothetical..."
+show mb2p as monika at t11 zorder 1
+m "I kinda want to ask you something, [player]..."
+show mb2g as monika at t11 zorder 1
+m "A hypothetical..."
 mc "O-{w=0.38}okay..."
 "Well this could go one of two ways..."
 "I mentally brace for what I think she's about to ask me..."
-m 3n "I know that this is going to sound a little strange, but..."
-show monika 3d
+show mb3n as monika at t11 zorder 1
+m "I know that this is going to sound a little strange, but..."
+show mb3d as monika at t11 zorder 1
 mc "Ah, don't worry, Sayori asks me weird and crazy questions all the time.."
 mc "Whatever it is, I'm sure I can handle it..."
-show monika 3m
+show mb3m as monika at t11 zorder 1
 "My reassurance seems to have helped Monika a little..."
-m 3n "A-{w=0.38}alright..."
-m 1d "I know what I was saying earlier does sound far-fetched at best..."
+show mb3n as monika at t11 zorder 1
+m "A-{w=0.38}alright..."
+show mb1d as monika at t11 zorder 1
+m "I know what I was saying earlier does sound far-fetched at best..."
 mc "I mean...{w=0.38}you've clearly put a lot of thought into it..."
 mc "I just don't know if there really is a way to prove what you're saying is true though..."
-show monika 1c
+show mb2c as monika at t11 zorder 1
 mc "I mean it'd be hard for me to accept that none of this is real or was something pre-determined..."
 mc "That being here with you in this moment isn't real...{w=0.38}this all seems real to me..."
-m 3g "That is what I kind of wanted to ask you about..."
-m 3d "Let's just say if you were ever shown evidence that your life was faked..."
-m 3f "That everything you've ever known was part of some pre-determined simulation..."
-m 2d "Would you believe it?"
+show mb1g as monika at t11 zorder 1
+m "That is what I kind of wanted to ask you about..."
+show mb3d as monika at t11 zorder 1
+m "Let's just say if you were ever shown evidence that your life was faked..."
+show mb3f as monika at t11 zorder 1
+m "That everything you've ever known was part of some pre-determined simulation..."
+show mb2d as monika at t11 zorder 1
+m "Would you believe it?"
 mc "Well..."
 mc "I don't know if I can answer yes or no to that..."
 mc "That's a pretty hard question for anyone to answer..."
-m 4d "Well, would you at least consider the evidence?"
+show mb4d as monika at t11 zorder 1
+m "Well, would you at least consider the evidence?"
 mc "Well..."
 "Jeez, why is Monika making me answer this?"
 "Is this a pop-quiz to see if I'm worth her time?"
@@ -1994,33 +2094,39 @@ menu:
 
 label m_yes_woke:
 
-show monika_c_b1 as monika at t11 zorder 1
+show mb1a as monika at t11 zorder 1
 mc "I suppose I'd have to consider it..."
 mc "Doesn't mean I'd believe it right away or anything..."
 mc "And it'd take a lot of additional convincing to back up whatever the evidence is..."
-m 3n "Y-{w=0.38}yeah...{w=0.38}I would too..."
-m 1e "I just wanted to know how you felt about it, that's all."
+show mb3n as monika at t11 zorder 1
+m "Y-{w=0.38}yeah...{w=0.38}I would too..."
+show mb1e as monika at t11 zorder 1
+m "I just wanted to know how you felt about it, that's all."
 mc "You never fail to pose an interesting topic of discussion, Monika!"
-show monika 1j
+show mb1j as monika at t11 zorder 1
 mc "We're really in good hands under your leadership!"
-m 3n "Aww, [player]! You're too kind..."
-show monika 3m
+show mb3n as monika at t11 zorder 1
+m "Aww, [player]! You're too kind..."
+show mb3m as monika at t11 zorder 1
 jump m_hangout_end
 
 label m_no_woke:
 
-show monika 1f at t11 zorder 1
+show mb1f as monika at t11 zorder 1
 mc "I mean...{w=0.38}I don't know if there's really anything out there that could convince me that my life has been a lie..."
 mc "The premise of it is far-fetched like you said..."
 mc "And all the memories that I've had with my friends, my family..."
 mc "Even this moment we're sharing together..."
 mc "I don't know how that could really be faked..."
 mc "Especially with all the emotion put into it..."
-m 2n "Y-{w=0.38}yeah...{w=0.38}it would seem pretty far-fetched to me too..."
-m 2e "I don't know, I just want your opinion on it, that's all..."
+show mb2n as monika at t11 zorder 1
+m "Y-{w=0.38}yeah...{w=0.38}it would seem pretty far-fetched to me too..."
+show mb2e as monika at t11 zorder 1
+m "I don't know, I just want your opinion on it, that's all..."
 mc "Well hey, it's an interesting topic to talk about..."
 mc "But I'm pretty sure our lives are just simply that boring and dull..."
-m 3m "I suppose they are..."
+show mb3m as monika at t11 zorder 1
+m "I suppose they are..."
 jump m_hangout_end
 
 
@@ -2035,13 +2141,16 @@ label m_hangout_end:
 "How could it be all fake?"
 "Ah, I got enough on my mind right now..."
 "Monika just probably wanted to try to take my mind off of things..."
-show monika 1e
+show mb1e as monika at t11 zorder 1
 "And with someone of her reputation, she's just a naturally an interesting person..."
 "Who knows what else she believes in..."
 "Not that I'm one to judge..."
 "We continue to stare into the cityscape for sometime before we decide it's time to start heading back."
+show monika at thide
+hide monika
 scene bg residential_night
-"Monika and I both decided early on that'd probably be a bad idea to try to walk all the way back at night, so we just made our way to the closest bus stop, with me getting off at a stop not too far from my house while Monika stayed on."
+with wipeleft_scene
+"Monika and I both decided early on that'd probably be a bad idea to try to walk all the way back at night, so we just made our way to the closest bus stop, with me getting off at a stop not too far from my house."
 "It was a prety silent trip back, with us being too exhausted from the entire trip."
 "Monika ended up resting on my shoulder on the way back, which really made me surprised, but I went along with it, being the gentlemen I am."
 
