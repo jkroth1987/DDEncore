@@ -73,13 +73,13 @@ play music t2 fadein 1.0
 "The hell is that supposed to mean?"
 
 if hangout1 == "Sayori":
-        "Whose 'her'?{w=0.38} Sayori?"
+        "Who's 'her'?{w=0.38} Sayori?"
 
 if hangout1 == "Natsuki":
-       "Whose 'her'?{w=0.38} Natsuki?"
+       "Who's 'her'?{w=0.38} Natsuki?"
 
 if hangout1 == "Yuri":
-       "Whose 'her'?{w=0.38} Yuri?"
+       "Who's 'her'?{w=0.38} Yuri?"
 
 "Why on Earth would I do that?"
 "More importantly, why would I let anyone die?"
@@ -105,12 +105,12 @@ with wipeleft_scene
 play music t2 fadein 1.0
 "After getting my stuff ready for school, I head downstairs to the kitchen to fix myself up a quick breakfast."
 "After how I woke up, I think I'd rather go with something simple..."
-"I reach for the kitchen cabinet to grab my favorite brand of cereal and quickly grab some milk from the fridge."
+"I reach for the kitchen cabinet to grab my favorite brand of cereal and quickly fetch some milk from the fridge."
 "As I sit down, I try to wrap my head around my nightmare."
 "'Let them die'."
 "I scoff to myself."
 "The hell is that supposed to mean?"
-"Whose 'them'?"
+"Who's 'them'?"
 "Why on Earth would I do that?"
 "More importantly, why would I let anyone die?"
 "Still, I know one thing for certain..."
@@ -1403,7 +1403,7 @@ if encore_festivalquestion_2 == "Yuri":
 
 label day2_t6:
 y 1b "I did happen to keep the welcome banner that [player] and I made for the festival. I'd just need to find it."
-y 3j "It's somewhere at my house, and I wouldn't mind for some help looking for it."
+y 3j "It's somewhere at my house, and I wouldn't mind some help looking for it."
 show yuri 3s
 "Yuri looks whimsically at me."
 "She isn't asking..."
@@ -1431,7 +1431,7 @@ jump day2_awk_2
 
 label day2_t8:
 y 1b "I did happen to keep the welcome banner that [player] and I made for the festival. I'd just need to find it."
-y 3j "It's somewhere at my house, and I wouldn't mind for some help looking for it."
+y 3j "It's somewhere at my house, and I wouldn't mind some help looking for it."
 show yuri 3s
 "Yuri looks whimsically at me."
 "It doesn't seem like she wants to let what happened between me and [hangout2] go..."
@@ -1525,7 +1525,7 @@ if hangout2 == "Sayori":
 
 label day2_smad2:
 show sayori 1g
-"Sayori once again shoots me the same quizzical glance she gave me yesterday when Natsuki brought up the time we spent together last Sunday."
+"Sayori once again shoots me the same quizzical glance she gave me yesterday, when Natsuki brought up the time we spent together last Sunday."
 "Sooner or later, I'm going to have to resolve all this and tell Natsuki that I'm with Sayori..."
 "As well as tell Sayori everything that happened between us on Sunday."
 "Hopefully that will put her mind to rest..."
@@ -1534,7 +1534,7 @@ jump day2_tend
 
 
 label day2_smad3:
-"Sayori once again shoots me the same quizzical glance she gave me yesterday when Yuri brought up the time we spent together last Sunday."
+"Sayori once again shoots me the same quizzical glance she gave me yesterday, when Yuri brought up the time we spent together last Sunday."
 "Sooner or later, I'm going to have to resolve all this and tell Yuri that I'm with Sayori..."
 "As well as tell Sayori everything that happened between us on Sunday."
 "Hopefully that will put her mind to rest..."
@@ -1555,7 +1555,7 @@ m 1b "Great call, Sayori!"
 m 1a "As for you, [player], do you have any ideas?"
 mc "Hmmmm..."
 "I take a few moments to think to myself."
-"Suddenly I got an idea."
+"Suddenly I get an idea."
 mc "Well, I can bring in some famous poems that we could also use for the photo ops, I'd think it'd be great to show that there's more to literature than just books."
 mc "Heck, maybe we can even use some of our own poems as well!"
 mc "I can organize them together like Monika did, but I'll need everyone else's poems."
