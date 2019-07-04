@@ -10249,23 +10249,23 @@ with wipeleft_scene
 $ m_name = "???"
 m "[player]?"
 play music e2 fadein 2.0
-show mb1d as monika at t11 zorder 1
+show monika 1bd at t11 zorder 1
 "I turn around to see Monika standing right behind me."
 mc "Monika?!?"
 $ m_name = "Monika"
-show mb3l as monika at t11 zorder 1
+show monika 3bl  at t11 zorder 1
 m "Well this is a surprise!"
-show mb3b as monika at t11 zorder 1
+show monika 3bb  at t11 zorder 1
 m "I didn't know you lived here!"
-show mb1a as monika at t11 zorder 1
+show monika 1ba at t11 zorder 1
 mc "Yeah...{w=0.38}my house is just right over there."
 "I point out my house to Monika."
-show mb1b as monika at t11 zorder 1
+show monika 1bb at t11 zorder 1
 m "Nice house, [player]!"
-show mb1a as monika at t11 zorder 1
+show monika 1ba at t11 zorder 1
 mc "Ah, it's alright. It's nothing too special."
 mc "Anyways, I didn't know you lived around here! I thought you lived on the other side of town in the Swan District..."
-show mb2e as monika at t11 zorder 1
+show monika 2be  at t11 zorder 1
 m "Oh, I still live there, I just took the bus to get over here."
 "Figures she would still live there. The Swan district is where all the rich people in our surrounding area live who don't want to live in the city."
 "There's some incredibly gorgeous houses over there, though it's not something most families like mine would ever be able to afford considering everything is pretty much gated..."
@@ -10273,92 +10273,92 @@ m "Oh, I still live there, I just took the bus to get over here."
 mc "Oh! Well what brought you all the way over here?"
 mc "Are you visiting Sayori?"
 "I point to Sayori's house as I ask that."
-show mb2m as monika at t11 zorder 1
+show monika 2bm  at t11 zorder 1
 m "No, I was just out for a stroll..."
-show mb3k as monika at t11 zorder 1
+show monika 3bk  at t11 zorder 1
 m "It's part of my excerise routine that I do a ten mile walk once a week."
-show mb3n as monika at t11 zorder 1
+show monika 3bn  at t11 zorder 1
 m "And I remembered that I haven't gone this way in a while..."
-show mb3m as monika at t11 zorder 1
+show monika 3bm  at t11 zorder 1
 mc "Wow...{w=0.38}a ten mile walk? You're defintley dedicated!"
-show mb1j as monika at t11 zorder 1
+show monika 1bj at t11 zorder 1
 m "I always strive to stay in shape, [player]..."
-show mb5a as monika at t11 zorder 1
+show monika 5ba at t11 zorder 1
 m "Mentally as well as a physically."
 mc "Well, now I know why you're the best!"
 show mb_blush as monika at t11 zorder 1
 "Monika blushes brightly at my compliment."
-show mb1n as monika at t11 zorder 1
+show monika 1bn  at t11 zorder 1
 m "Well I'm glad you feel that way."
-show mb2p as monika at t11 zorder 1
+show monika 2bp  at t11 zorder 1
 m "You'd be surprised at how many people at school are envious of my success..."
-show mb2e as monika at t11 zorder 1
+show monika 2be  at t11 zorder 1
 m "I have my share of admiers though~"
 show mb_wink as monika at t11 zorder 1
 "Monika gives me a sly wink."
 mc "W-{w=0.38}well hey...{w=0.38}I'm just happy for you."
 mc "I mean, I'm nothing special..."
-show mb2f as monika at t11 zorder 1
+show monika 2bf  at t11 zorder 1
 "Monika gives me a concerning frown."
-show mb2g as monika at t11 zorder 1
+show monika 2bg  at t11 zorder 1
 m "But you are!"
-show mb2e as monika at t11 zorder 1
+show monika 2be  at t11 zorder 1
 m "You may not know it, [player], but you never fail to put a smile on anyone's face."
 m "You're always supportive of others...{w=0.38}always willing to hear people out."
-show mb1m as monika at t11 zorder 1
+show monika 1bm  at t11 zorder 1
 m "It counts for more than you think..."
 mc "Ah! Well..."
 "I scratch the back of my head as I blush brightly in embrassment."
-show mb1e as monika at t11 zorder 1
+show monika 1be  at t11 zorder 1
 mc "Well...{w=0.38}that means a lot coming from you, Monika..."
 mc "Thank you..."
-show mb1k as monika at t11 zorder 1
+show monika 1bk  at t11 zorder 1
 m "Don't mention it!"
-show mb1d as monika at t11 zorder 1
+show monika 1bd at t11 zorder 1
 mc "I mean lately, I haven't felt like that at all to be honest with you..."
 mc "I've been thinking a lot about what you said..."
-show mb1g as monika at t11 zorder 1
+show monika 1bg  at t11 zorder 1
 m "How's that going?"
-show mb1f as monika at t11 zorder 1
+show monika 1bf  at t11 zorder 1
 mc "I still feel lost..."
 mc "Like I don't know what to do..."
 mc "So, I wanted to take a walk to help better clear my head..."
-show mb3e as monika at t11 zorder 1
+show monika 3be  at t11 zorder 1
 m "Well, it's good you're taking some time to think to yourself..."
-show mb3m as monika at t11 zorder 1
+show monika 3bm  at t11 zorder 1
 m "I do a fair share of reflection during most of my walks anyways."
-show mb1e as monika at t11 zorder 1
+show monika 1be  at t11 zorder 1
 m "It really does help the thought process."
-show mb1b as monika at t11 zorder 1
+show monika 1bb at t11 zorder 1
 m "I mean, you might be walking and just have a new idea just dawn on you!"
-show mb1j as monika at t11 zorder 1
+show monika 1bj at t11 zorder 1
 m "It's happened to me plenty of times!"
 mc "Well, if it's worked for you, it'll defintley work for me..."
-show mb2e as monika at t11 zorder 1
+show monika 2be  at t11 zorder 1
 "There's a brief pause between us as another breeze gently blows past us."
 "Seeing Monika's hair flow in the wind manages to mesmerize me."
-show mb2m as monika at t11 zorder 1
+show monika 2bm  at t11 zorder 1
 "She looks so beautiful..."
 "Her long hair flowing in the wind..."
-show mb2e as monika at t11 zorder 1
+show monika 2be  at t11 zorder 1
 "Those emerald eyes gleaming brightly at me..."
 "Paired with that picture-perfect smile..."
 "And her dress suits her completely..."
 "Matter of fact, I've never even seen Monika outside of school..."
-show mb5a as monika at t11 zorder 1
+show monika 5ba at t11 zorder 1
 "I see then Monika forming her casual smirk at me."
 "Apparently she must've realized I've been staring at her."
 "Thankfully she doesn't seem bothered by it..."
-show mb5c as monika at t11 zorder 1
+show monika 5bc  at t11 zorder 1
 m "Hey, [player]..."
-show mb5a as monika at t11 zorder 1
+show monika 5ba at t11 zorder 1
 mc "Y-{w=0.38}yeah?"
 "I barley manage to stammer out."
-show mb5c as monika at t11 zorder 1
+show monika 5bc  at t11 zorder 1
 m "I could use a little company on this walk..."
 m "My memory's rusty for this area..."
 m "I could use a guide..."
-show mb5a as monika at t11 zorder 1
+show monika 5ba at t11 zorder 1
 mc "Y-{w=0.38}you want me to walk with you?"
 m "You know it~"
 "Wow! I can't believe this!"
@@ -10383,7 +10383,7 @@ label m_hangout:
 
 "Ah...{w=0.38}screw it!"
 mc "Why not?"
-show mb1j as monika at h11 zorder 1
+show monika 1bj at h11 zorder 1
 "Awesome!"
 "Monika does a little jump in excitment."
 "Which I'm surprised at, given how even tempered she usually is in school..."
@@ -10391,7 +10391,7 @@ show mb1j as monika at h11 zorder 1
 "That or she just really likes excersing..."
 "Either way, I like it..."
 mc "So...{w=0.38}do you walk to some place special or do you just walk around in a giant circle?"
-show mb5a as monika at t11 zorder 1
+show monika 5ba at t11 zorder 1
 "Monika lets out a giggle."
 m "Just follow me~"
 "Without another word spoken, Monika and I start heading eastward, which just so happens to be in the direction of the countryside..."
