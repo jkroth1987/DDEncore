@@ -15,10 +15,10 @@ init python:
     # 6 lines, +250 pixels
     c_text_1 = """Created and Directed By: Andrew J. Striedl
 Writers: Agent Gold, Bug, Nick (Canad1an),
-Rose, Ploxmaster708, Rudy, Andrew J. Striedl
-Writing Contributors: Lucy CN, Jacob Smallman
+Ploxmaster708, Rudy, Andrew J. Striedl
 Artists: 3Monika4 (Monika), Elaina Sasso,
- @reenaki_m (Instagram)"""
+ @reenaki_m (Instagram)
+Music: Daniel Kruyer (Angelic Beast)"""
 
     # 2
     # 6 lines, +250 pixels
@@ -29,7 +29,7 @@ General Contributions: Nep, Rezzy
 Image Editing: POBAW, TheD0ctor,
 Agent Gold, Andrew J. Striedl
 Image Editing Contributor: AjTheYandere
-Music: Daniel Kruyer (Angelic Beast)"""
+Writing Contributors: Lucy CN, Jacob Smallman, Rose"""
 
     # 3
     # 5 lines, +200 pixels
@@ -115,9 +115,9 @@ by yagamirai10 [[Community Asset Folder]
 
 \"park_dusk/" Original Image on https://lemmasoft.renai.us/forums/viewtopic.php?t=17302
 
-\"residential_dusk/" by SovietSpartan
+\"residential_dark/" by Alex[ORG]#9077 in the Community Assests Folder
 
-\"residential_dusk/" by Alex[ORG]#9077 in the Community Assests Folder
+\"residential_dusk/" by SovietSpartan
 
 \"school_bg/" by yagamirai10#7046 in the Community Assets Folder
 
@@ -190,6 +190,9 @@ IPhone Ringing Sound Effect: By HyperView on YouTube
 (converted to .ogg by Andrew)
 
 audio.doorbell: By Acid Rival on YouTube
+(converted to .ogg by Andrew)
+
+audio.gust: https://www.youtube.com/channel/UCTdyXszrxhMP-pbhy85Pa-g
 (converted to .ogg by Andrew)"""
 
 

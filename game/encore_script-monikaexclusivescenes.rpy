@@ -1433,12 +1433,13 @@ scene black with dissolve_scene
 "After what felt like another hour of walking up the stairs, we finally reached our desination."
 scene bg city_overlook
 with wipeleft_scene
+play music e18 fadein 2.0
 show mb2n as monika at t11 zorder 1
 m "Well it's not quite sunset anymore, but..."
 show mb2e as monika at t11 zorder 1
 m "The view's still nice."
 mc "Woah..."
-show monika at thide
+show m2be as monika at thide
 hide monika
 "I run up behind a bench as I take in my surroundings."
 "Thanks to good visibility, we're clearly able to make out downtown as well as the surrounding neighborhoods on the south and east sides of town."
@@ -1446,7 +1447,7 @@ hide monika
 "I look up to the sky to see the stars twinkling brightly above us and the rest of the city..."
 mc "Monika..."
 mc "This is...{w=0.38}beautiful!"
-"I end up having to take a seat as I'm overwhelmed from the physical exhaustion and the beauty that lays out before us."
+"I end up having to take a seat as I'm overwhelmed from physical exhaustion and the beauty that lays out before us."
 show mb4b as monika at t11 zorder 1
 m "I'd thought you'd like it, [player]..."
 show mb1a as monika at t11 zorder 1
@@ -2146,6 +2147,7 @@ show mb1e as monika at t11 zorder 1
 "Who knows what else she believes in..."
 "Not that I'm one to judge..."
 "We continue to stare into the cityscape for sometime before we decide it's time to start heading back."
+stop music fadeout 2.0
 show monika at thide
 hide monika
 scene bg residential_night

@@ -2945,6 +2945,7 @@ show natsuki at thide
 hide natsuki
 scene bg manga
 with wipeleft_scene
+stop music fadeout 2.0
 "As so as we reach to the second floor, Natsuki anxiously rushes to the manga section, while I slowly follow behind her."
 show natsuki 1bu at t11 zorder 1
 "Natsuki frantically begins searching through the shelves to find anything related to Parfait Girls, while I'm on the otherside browsing at the selection."
@@ -2961,6 +2962,7 @@ show natsuki 1bu at t11 zorder 1
 "And it would look like I could just about afford it!"
 "I can probably order the previous volumes online somewhere..."
 show natsuki 1bz at h11 zorder 1
+play music e3 fadein 2.0
 n "YES!"
 "My train of thought is interupted by Natsuki's sudden cheering."
 mc "What is it?"
@@ -3156,7 +3158,7 @@ if encore_sayoriquestion_1 == False:
 
 
 
-show natsuki 14be
+show natsuki 42be
 "Natsuki reluctantly sighs."
 stop music fadeout 2.0
 n 12bb "Alright, fine..."
@@ -3242,7 +3244,7 @@ if encore_sayoriquestion_1 == False:
                 "Natsuki clenches the manga tighter."
                 mc "Look...{w=0.38}let me make it up to you and pay for the manga, okay?"
 
-show natsuki 14be
+show natsuki 42be
 "Natsuki reluctantly sighs."
 stop music fadeout 2.0
 n 12bb "Alright, fine..."
@@ -3324,7 +3326,7 @@ if encore_sayoriquestion_1 == True:
                 "Natsuki clenches the manga tighter."
                 mc "Look...{w=0.38}let me make it up to you and pay for the manga, okay?"
 
-show natsuki 14be
+show natsuki 42be
 "Natsuki reluctantly sighs."
 stop music fadeout 2.0
 n 12bb "Alright, fine..."

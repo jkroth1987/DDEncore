@@ -2948,8 +2948,30 @@ label sencore_3:
     mc "You seem to be doing a lot better today!"
 
     if encore_sayoriquestion_1 == True:
-        show sayori 2q
-        s "Well, that’s because I get to spend so much time around you, silly!"
+
+        if hangout1 == "Sayori":
+            if hangout2 == "Sayori":
+                show sayori 2q
+                s "Well, that’s because I get to spend so much time around you, silly!"
+
+        if hangout1 != "Sayori":
+            if hangout2 == "Sayori":
+                show sayori 2y
+                s "Well, that's because we get to spend some more time together..."
+
+
+        if hangout1 == "Sayori":
+            if hangout2 != "Sayori":
+                show sayori 2y
+                s "Well, you're sticking to your word..."
+
+
+        if hangout1 != "Sayori":
+            if hangout2 != "Sayori":
+                show sayori 2y
+                s "Well, it's because you're keeping your promise this time..."
+
+
 
     if encore_sayoriquestion_1 == False:
         show sayori 2d
@@ -4713,13 +4735,13 @@ label day3_sconverge:
 
 label sencore_4:
 
-play music t6 fadein 2.0
+play music e4 fadein 2.0
 scene bg house
 with wipeleft_scene
 "I walk out of my house and wait by the fence that seperates our two houses."
 show sayori 1ba at t11 zorder 1
 "Not long after I arrive, I see Sayori exiting her backdoor and walking up to the fence."
-"I unlock the gate and hold it open for her."
+"I unlock the gate and hold it open as she walks through."
 mc "Hey, Sayori!"
 
 
@@ -4729,54 +4751,837 @@ if encore_sayoriquestion_1 == True:
     if hangout1 == "Sayori":
         if hangout2 == "Sayori":
             s 4bd "Hey, [player]!"
-            show sayori 4bq
-            "I take Sayori into my arms."
+            show sayori 4bq at face
+            "I gleefully take Sayori into my arms."
+            "Feeling her embrace once again seems to melt away all the stress and worrying I experienced just a few minutes ago."
+            "I only hold her tighter as I continue to relif my stress."
+            "Fortunately, Sayori doesn't seem to mind, as she only blushes brighter as my embrace tightens."
+            "I don't know why, but everytime I find myself in Sayori's arms...{w=0.38}it just feels like I'm in heaven..."
+            "She's always given great hugs, sure..."
+            "But lately it's been different..."
+            "Almost a magical sort of feeling that I really can't put into words..."
+            "Well, I can't complain! I'll just enjoy this magical moment we're sharing for as long as possible..."
+            show sayori 4bn at face
+            play sound belly
+            "However, the magical moment is quickly ruined as Sayori's stomach emits a loud enough rumble that I'm sure everybody in the neighborhood heard."
+            show sayori 1by at t11 zorder 1
+            "Sayori breaks the embrace and steps back in embrassment."
+
 
     if hangout1 != "Sayori":
         if hangout2 == "Sayori":
-            s 4bd "Hey, [player]..."
+            s 4ba "Hey, [player]!"
+            "Sayori smiles cheerfully at me."
+            "I can't help but smile back at her."
+            "Though it quickly occurs to me just how big of an effort it takes for Sayori to put on such a smile."
+            "I can't ever always know what goes inside her head a hundred percent of the time, or what she's really feeling in every waking moment."
+            "But if I'm making this a happy moment for her, that's all that matters."
+            "I have noticed lately that her smiles have been particualrly infectious..."
+            "Anytime I see her smile, I can't help but feel the urge to smile with her..."
+            "It's as if her joyful charm has infected me..."
+            "Well, I can't complain about that, can I?"
+            "I always seem to be in better spirits around her, espically now given all the stress I've been dealing with..."
+            "It's almost magical in a sense..."
+            play sound belly
+            "However, the magic of the moment is quickly ruined as Sayori's stomach emits a loud enough rumble that I'm sure everybody in the neighborhood heard."
+            show sayori 1by at t11 zorder 1
+            "Sayori steps back in embrassment."
+
 
 
     if hangout1 == "Sayori":
         if hangout2 != "Sayori":
             s 4bl "Hey, [player]..."
+            "Sayori nervously smiles at me."
+            show sayori 1k
+            "I try to return a smile back but she instead awkwardly looks off."
+            "I hoped that by spending some time around Sayori today, I would've put what happened between me and [hangout2] behind us..."
+            "Though I guess it's going take some more time than I thought..."
+            "Especially since Sayori saw me arguing with [poem_giver] before we left..."
+            "I just really hope she isn't getting the wrong idea about things..."
+            "Even though, I've been starting to have those thoughts..."
+            "I really don't know what I can say to move past this awkward moment as Sayori continues to gaze off into the distance."
+            play sound belly
+            "Thankfully, the tension of the moment is lifted by Sayori's insanley loud stomach growl."
+            show sayori 1by at t11 zorder 1
+            "Sayori steps back in embrassment."
 
     if hangout1 != "Sayori":
         if hangout2 != "Sayori":
             s 4bk "Hey, [player]..."
+            "Sayori stares off into the horizon."
+            show sayori 1k
+            "I try to return a smile back but she ignores it."
+            "I hoped that by spending some time around Sayori today, I would've made up for the lack of time I've spent around her recently..."
+            "Though I guess it's going take a lot of time before we're back where we were originally..."
+            "If we can even get back to how we were before all this..."
+            "I don't know what I can do at this stage..."
+            "We did have fun together earlier, but it seemed like that progress was lost after she saw me aruging with [poem_giver]..."
+            "I don't know what I can say or do that can win her trust back..."
+            "But maybe later I can make up lost ground..."
+            play sound belly
+            "To my relief, the tension of the moment is lifted by Sayori's insanley loud stomach growl."
+            show sayori 1by at t11 zorder 1
+            "Sayori steps back in embrassment."
+
+
+s 1bl "S-{w=0.38}sorry, [player]..."
+s "I guess I'm kind of hungry..."
+mc "I'm not sure if 'kind of hungry' is really an accurate way to describe your appetite, Sayori..."
+s 2by "I don't think anything can to be quite honest..."
+mc "Ha! I guess that's true..."
+mc "I just hope wherever we're going has enough food for you to conqueror your hunger..."
+s 4bq "Well, there's only one way to find out!"
+s 4bx "Let's get going!"
+mc "After you!"
+stop music fadeout 2.0
+show sayori 4bq
+"I lock the gate behind us as Sayori and I begin our journey to the resturant."
+jump s_citywalk
 
 if encore_sayoriquestion_1 == False:
 
     if hangout1 == "Sayori":
         if hangout2 == "Sayori":
             s 4bd "Hey, [player]..."
+            "Sayori shoots me a warm smile."
+            show sayori 1by
+            "I return the favor with one of my own, causing Sayori to blush with embrassment."
+            "I almost feel compelled to hug her for some reason, but I decided against it, feeling that it'd bee too foward."
+            "Lately, I've been finding myself attracted to Sayori more..."
+            "I guess making up for all the lost time we could've had in the clubroom when I first joined sparked something in me..."
+            "And even though I learned the hard way that she liked me, I think I'm starting to understand why she's wanted to spend time around me, in spite of everything..."
+            "Sharing these moments with her, even though small, really do bring out an old sense of joy I only felt around her..."
+            "I wonder what other moments we can still have together..."
+            show sayori 4bn at face
+            play sound belly
+            "However, the moment is quickly ruined as Sayori's stomach emits a loud enough rumble that I'm sure everybody in the neighborhood heard."
+            show sayori 1by at t11 zorder 1
+            "Sayori takes a step back."
+
 
     if hangout1 != "Sayori":
         if hangout2 == "Sayori":
-            s 4bd "Hey, [player]..."
+            s 4ba "Hey, [player]..."
+            "Sayori shoots me her usual warm and friendly smile."
+            show sayori 1by
+            "I return the favor with one of my own, causing Sayori to blush with embrassment."
+            "However, it quickly occurs to me just how big of an effort it takes for Sayori to put on such a smile."
+            "I can't ever always know what goes inside her head a hundred percent of the time, or what she's really feeling in every waking moment."
+            "But if I'm making this a happy moment for her, that's all that matters."
+            "She needs it after what happened last Sunday..."
+            "But, ever since I hugged her yesterday, I began to notice that her smiles have been particualrly infectious..."
+            "Anytime I see her smile, I can't help but feel the urge to smile with her..."
+            "It's as if her joyful charm has suddenly infected me..."
+            "I actually haven't felt like this since when were kids..."
+            "Well, I can't complain about that now, can I?"
+            "Lately, I've been in better spirits around her, espically now given all the stress I've been dealing with..."
+            "It's almost magical in a sense..."
+            play sound belly
+            "However, the magic of the moment is quickly ruined as Sayori's stomach emits a loud enough rumble that I'm sure everybody in the neighborhood heard."
+            show sayori 1by at t11 zorder 1
+            "Sayori steps back in embrassment."
+
+
 
     if hangout1 == "Sayori":
         if hangout2 != "Sayori":
             s 4bl "Hey, [player]..."
+            "Sayori nervously smiles at me."
+            show sayori 1k
+            "I try to return a smile back but she instead awkwardly looks off."
+            "I hoped that by spending some time around Sayori today, she would've gotten over what happened between me and [hangout2] behind us..."
+            "I mean, I'm just trying to fufil my promise to spend more time around her..."
+            "Though I guess it's going take some more time than I thought..."
+            "Especially since Sayori saw me arguing with [poem_giver] before we left..."
+            "I just really hope she isn't getting the wrong idea about things..."
+            "I know she has feelings for me, but I don't want her getting her hopes up again..."
+            "But I don't know how I really feel about her anymore..."
+            "I had fun fooling around with her today, it really brought back some good times we had when we were kids..."
+            "Part of me wants to go further with her, and maybe we can get further together tonight..."
+            "But I'd hate to make my situation worse..."
+            "And at the very least, Sayori already has her suspicions about who I like..."
+            "I really don't know what to even say to her..."
+            play sound belly
+            "Thankfully, the tension of the moment is lifted by Sayori's insanley loud stomach growl."
+            show sayori 1by at t11 zorder 1
+            "Sayori steps back in embrassment."
+
 
     if hangout1 != "Sayori":
         if hangout2 != "Sayori":
             s 4bk "Hey, [player]..."
+            show sayori 1k
+            "I try to return a smile back but she ignores it."
+            "I hoped that by spending some time around Sayori today, I would've made up for the lack of time I've spent around her recently..."
+            "I mean, I'm just trying to fufil my promise to spend more time around her..."
+            "Though I guess it's going take a lot of time before we're back where we were originally..."
+            "If we can even get back to how we were before all this..."
+            "I don't know what I can do at this stage..."
+            "We did have fun together yesterday afternoon and earlier, but it seemed like that progress was lost after she saw me aruging with [poem_giver]..."
+            "I don't know what I can say or do that can undo all the pain I've caused her..."
+            "I know she still likes me, but I don't really know if I have the same level of interest in her..."
+            "But maybe I can find that out tonight..."
+            "Or at least continue to fix things...."
+            play sound belly
+            "To my relief, the tension of the moment is lifted by Sayori's insanley loud stomach growl."
+            show sayori 1by at t11 zorder 1
+            "Sayori steps back in embrassment."
 
 
 
+s 1bl "S-{w=0.38}sorry, [player]..."
+s "I guess I'm kind of hungry..."
+mc "You're always hungry, Sayori..."
+show sayori 1be
+mc "I just hoped you picked out a place that can satisfy your hunger..."
+mc "Though I'll admit I'm fairly hungry myself..."
+s 4by "Well, I think I found a place we'll both like..."
+mc "Is that so?"
+s 4bx "Yep! Let's get going!"
+mc "Lead the way!"
+stop music fadeout 2.0
+show sayori 4bq
+"I lock the gate behind us as Sayori and I begin our journey to the resturant."
+jump s_citywalk
 
+label s_citywalk:
+
+play music t6 fadein 2.0
 scene bg city_sidewalk2
 with wipeleft_scene
-"Walking to the resturant."
+"As we begin our walk to the resturant, I immediately begin to realize where Sayori is taking us."
+"I turn to Sayori, eyeing her suspiciously."
+show sayori 1bq at t11 zorder 1
+mc "You're taking us to Gomaya's, aren't you?"
+s 2bx "Yep!"
+s 2bc "How did you know?"
+show sayori 2bb
+mc "I remember these old sidestreets."
+mc "Our parents always took this way to get there."
+mc "I think my dad always called it 'The Shortcut'."
+s 1bc "That's because they wanted to avoid all the traffic on Rockefeller Street."
+show sayori 1bb
+mc "I don't blame them."
+mc "Still, I'm a little surprised you remember the way!"
+s 1br "How could I forget, [player]?!?"
+s 4bq "I always loved the walk to Gomaya's!"
+mc "Though you always hated the walk back..."
+mc "I think you liked that place too much for your own good, Sayori..."
+s 4bx "Their ice cream was so good though!"
+s 1br "Not to mention the jungle gym they kept outside!"
+mc "Heh, that was pretty fun now that I think about it..."
+mc "Sucks we can't go on it now though..."
+s 1bh "Why not? What's stopping us?"
+show sayori 1bg
+mc "Sayori..."
+"I try to hold in a chuckle."
+"I still sometimes forget Sayori's still a child at heart."
 
+if encore_sayoriquestion_1 == True:
+    "It's what I really like about her..."
+
+if encore_sayoriquestion_1 == False:
+    "It's still one of her traits that's survived this whole ordeal..."
+
+mc "We're way too old to go on it..."
+mc "I'm pretty sure they set the age limit at 12..."
+mc "I dobut the staff would let us anywhere near it..."
+s 1bi "Well that's no fair!"
+mc "Sayori, we're not kids anymore."
+mc "I don't even think we'd fit between the bars to be honest with you..."
+s 1bq "Not me! I'm pretty sure I can fit!"
+mc "Yeah, right!"
+mc "You'd get stuck between the bars and then we'd have to call someone to cut you out!"
+mc "Remember the 'Swingset Incident' back in the fourth grade..."
+s 1bj "Hey! It wasn't my fault!"
+s 1bl "That swingset was just realy old..."
+mc "I don't think it's age was the problem, Sayori..."
+mc "It was meant for toddlers..."
+mc "Matter of fact, I was surprised you still managed to squeeze in..."
+s 4br "It was the best hundred yen I ever made in elementary school!"
+mc "Even though I got a week's worth of detention because I somehow got blamed for putting you up to it..."
+mc "It wasn't even originally my idea!"
+s 1bx "It was small price to pay, [player]!"
+mc "Hey!"
+show sayori 1br
+"Sayori and I share a brief laugh together."
+
+if encore_sayoriquestion_1 == True:
+    "I always did find her laugh to be really cute..."
+    "Even as kids, I always enjoyed hearing it..."
+    "And hearing it now, I almost feel like I'm back on the elementary school playground with Sayori..."
+
+if encore_sayoriquestion_1 == False:
+    "Man, where did these times go?"
+    "Hearing Sayori's giggling almost throws me back into my old elementary school memories..."
+    "And hearing it again, it almost feels like we're back on the playground, enjoying life together..."
+    "I can't believe I've almost forgotten about all my crazy adventures with her..."
+    "And how much I enjoyed being around her..."
+
+s 2bx "But you would've never been able to pull it off!"
+mc "Eh? What do you mean?"
+s 2bl "Let's just face it, [player]..."
+s 1bx "You would've gotten stuck worse than me, or you wouldn't have been able to fit in that swingset at all!"
+mc "*pfft*!"
+mc "I could've if I tried hard enough!"
+mc "I just didn't feel like it that day..."
+s 1br "[player], your belly was too big back then to fit!"
+s 1bs "And It's still kinda big now!"
+show sayori 1bq
+"Sayori jokingly rubs my belly for emphaisis."
+mc "Hey! Cut it out!"
+show sayori 1br
+"I playfully swat her hand away from me as she continues laughing."
+mc "I was never like that!"
+
+if encore_sayoriquestion_1 == True:
+    s 1br "It's okay, [player]! I still love you!"
+    "I struggle to supress my blushing."
+    "Even when she's teasing me, she still finds a way to make me blush!"
+
+if encore_sayoriquestion_1 == False:
+    s 1br "It's okay, [player]! I don't see you any differently than before!"
+    mc "Well, thanks..."
+    "I try supress a smile at Sayori's half-compliment."
+
+"Well, I'm not going to let Sayori continue to one-up me!"
+"Let's see if she'll take a bet..."
+mc "I bet you I could fit between those bars on the jungle gym!"
+show sayori c112171
+s "That sounds like a challenge, [player]!"
+"Sayori deviously winks at me."
+show sayori 1ba
+mc "Maybe it is one..."
+s 1br "Alright! You're on!"
+show sayori 1bq
+"What did I just get myself into?"
+"Well, I'm sure it won't be that bad, assuming we can even get in."
+"But there's a chance Sayori will probably forget by the time we get food."
+"Not that I'm worried about losing some stupid little bet."
+show sayori 4bq
+"Leave it to Sayori to bring out the kid in me..."
+show sayori at thide
+hide sayori
 scene bg fastfood
 with wipeleft_scene
-"Resturant Scene"
+"After a few more minutes of walking, we turn the corner to find our old childhood favorite resturant still standing in all its glory."
+"Sayori and I almost rush into the building to see if everything was still the same as remembered it."
+"Despite a few apparent changes, everything was still the same!"
+show sayori 1bn at t11 zorder 1
+"Sayori seems to be completely lost in thought as she stares around at everything."
+"I guess she hasn't stopped by in a long time either."
+"This place really did mean a lot to us both..."
+"I snap myself out of my train of thought and nudge Sayori to do the same."
+s 1be "Eh?"
+mc "Well...{w=0.38}this still looks the same for the most part, doesn't it?"
+s 1by "Yeah...{w=0.38}it does..."
+s 1bg "I still hope the food tastes the same..."
+mc "Well, there's only one way to find out, right?"
+mc "Lets get some food!"
+s 1bq "Tehee~"
+s 1bx "Now you're speaking my language!"
+mc "It comes in handy to know you so well."
+s 1by "Y{w=0.38}-yeah..."
+"Looks like I got my revenge for earlier."
+"Though I decide to be merciful and end Sayori's embrassement by quickly finding a table for us to sit at."
+show sayori 1bn
+"Sayori and I immediately crack open the menus to see what's avalible."
+show sayori 1bo
+"I'm able to quickly pick out what I want while Sayori furrows her as she continues to pour over the menu."
+"If I had all the money in the world, there's no question Sayori would find a way to convince me to get her one of everything..."
+"After a few minutes I decide to ask her what she's thinking."
+mc "See anything you like?"
+s 1bm "There's so many choices, [player]..."
+show sayori 1bn
+mc "Is there anything in particular you're leaning towards?"
+mc "I'm thinking about just getting a burger..."
+s "Hmmm..."
+"Sayor closes her eyes for a moment."
+mc "What're you doing?"
+s "I'm trying to see which way my tummy's leaning towards..."
+s "I can't decide if I want a burger or pizza..."
+mc "Well hey, it's up to you Sayori."
+mc "My treat!"
+"Sayori takes the next few minutes to think it over."
+"It gets to the point where I'm just considering ordering first and then going back for Sayori's order."
+mc "So what does your tummy say?"
+show sayori 1bb
+"Sayori takes one more look at the menu."
+s 4br "I want pizza!"
+mc "What do you want on it?"
+s 1bo "Oh..."
+"Sayori takes yet another look at the menu."
+mc "I mean usually you just get pepperoni."
+s 1bc "Yeah, but I'm thinking about trying something new this time!"
+s 1bo "I'm thinking about trying out some anchovies!"
+mc "Anchovies, huh?"
+mc "Who are you and what have you done with Sayori?"
+show sayori 1br
+"Sayori let's out a small laugh."
+s 1bx "There's nothing wrong with trying something new, [player]!"
+s 1bq "Besides I remember that their pizzas are super good here!"
+mc "Yeah, I really did enjoy their pizzas..."
+"Matter of fact, this place was where I always went to get pizza as kid."
+"They were always freshly baked too, not the cheap re-heated store bought ones I've seen in a lot of resturants do around here."
+mc "You know what? I think I'll try one too!"
+s 1bx "There you go, [player]! That's the spirit!"
+mc "It seems like you just have a special way over me, don't you?"
+show sayori 1be
+mc "First the literature club..."
 
+if encore_sayoriquestion_1 == True:
+    mc "Then last Sunday..."
+    mc "And even now..."
+
+if encore_sayoriquestion_1 == False:
+    "Now here..."
+
+show sayori 1by
+mc "I guess you're just still that good into talking me into things!"
+s "Well...{w=0.38}I try my best..."
+mc "You succeed."
+mc "You always do."
+"I flash her a smile as Sayori continues to brush brightly."
+mc "I'll go put in our orders."
+"I get up and walk to the register to put in our order for a large anchovie pizza."
+"I just hope my stomach doesn't make me regret this later..."
+show sayori at thide
+hide sayori
+scene bg fastfood
+with wipeleft_scene
+"After about a ten minute wait, the waiter comes by and delivers our pizza and water."
+show sayori 1bm at t11 zorder 1
+"Sayori and I are shocked at the size of it."
+"I don't think I could finish it, but knowing Sayori and her appetite, anything's possible."
+mc "I'll admit it smells nice."
+show sayori 2bn
+"Sayori quietly takes a slice and stares at it, I follow suit."
+"There's literally a little embedded in the pizza."
+"Not that I've ever had a problem with fish...{w=0.38}this just seems kind of weird to me."
+s 2br "This is so cute!"
+s 2bq "It's like it's swimming in the pizza!"
+mc "Well, now it's going to swim in our stomachs!"
+mc "Cheers?"
+s 2bb "What do you mean? What are we cheering for?"
+mc "No, no it's not like that!"
+mc "It's like another word for toast..."
+s 2bo "They have toast here?"
+mc "I don't know...{w=0.38}but it doesn't have anything to do with food, silly!"
+mc "It's like we're celebrating."
+s 2bc "Well what are we celebrating then?"
+show sayori 2bb
+mc "Hmm..."
+"I take a moment to think this over."
+
+
+
+if encore_sayoriquestion_1 == True:
+
+    if hangout1 == "Sayori":
+        if hangout2 == "Sayori":
+            "Well...{w=0.38}how much progress we've made in our relationship is definitely worth celebrating!"
+            mc "How about to this great, loving relationship we've found ourselves in?"
+            show sayori 2by
+            mc "I mean after everything we've been through...{w=0.38}look at us now!"
+            jump s_cheers
+
+    if hangout1 != "Sayori":
+        if hangout2 == "Sayori":
+            "Well...{w=0.38}, being able to enjoy ourselves in peace again is definitely worth celebrating!"
+            mc "How about to tonight, where we get some peace and quiet to ourselves again?"
+            show sayori 2by
+            mc "Nothing but me, this pizza that fish in it, and the best girl in the world right in front of me..."
+            jump s_cheers
+
+
+    if hangout1 == "Sayori":
+        if hangout2 != "Sayori":
+            "Considering that Sayori's still a little mad at me from yesterday, I really need to choose my words carefully here."
+            "Well, it never hurts to celebrate a fresh start..."
+            show sayori 2be
+            mc "How about to a fresh start for our rleationship?"
+            s "Eh? What do you mean?"
+            mc "I know that I messed up yesterday..."
+            mc "And you deserve better from me."
+            mc "So let's let today be a fresh start in our relationship!"
+            mc "Just you and me, Sayori..."
+            jump s_cheers
+
+    if hangout1 != "Sayori":
+        if hangout2 != "Sayori":
+            "Considering that Sayori's been mad at me lately, I really need to choose my words carefully here."
+            "Well, it never hurts to celebrate a resrt..."
+            show sayori 2be
+            mc "How about to a reset for our relationship?"
+            s "Eh? What do you mean?"
+            mc "I know that I messed up yesterday..."
+            mc "Well, lately I've messed up a lot around you..."
+            mc "I haven't been spending as much time around you as I should be..."
+            mc "You deserve better from me."
+            mc "So let's let today be a resrt in our relationship!"
+            mc "Just you and me, Sayori..."
+            jump s_cheers
+
+if encore_sayoriquestion_1 == False:
+
+    if hangout1 == "Sayori":
+        if hangout2 == "Sayori":
+            "Well...{w=0.38}all the time we've spent together recently is definitely worth celebrating!"
+            mc "How about to how much time we've spent together?"
+            show sayori 2by
+            mc "I mean even though we had that 'incident' last Sunday..{w=0.38}look at us now!"
+            mc "I've had nothing but fun spending time around you..."
+            mc "And I don't regret a single minute of it!"
+            jump s_cheers
+
+
+
+    if hangout1 != "Sayori":
+        if hangout2 == "Sayori":
+            "Well...{w=0.38}being able to re-connect with Sayori after everything is definitely worth celebrating!"
+            mc "How about to re-connecting our friendship?"
+            show sayori 2by
+            mc "I mean even though we had that 'incident' last Sunday..{w=0.38}look at us now!"
+            mc "I've had nothing but fun spending time around you these past two days..."
+            mc "And I don't regret any of it!"
+            jump s_cheers
+
+
+    if hangout1 == "Sayori":
+        if hangout2 != "Sayori":
+            "Considering that Sayori's still a little mad at me from yesterday, I really need to choose my words carefully here."
+            "Well, it never hurts to celebrate a fresh start..."
+            show sayori 2be
+            mc "How about to a fresh start for our friendship?"
+            s "Eh? What do you mean?"
+            mc "Well, lately I've messed up a lot around you..."
+            mc "On Sunday, and how you saw me with [hangout2] yesterday..."
+            mc "I haven't been spending as much time around you as I should be..."
+            mc "I haven't kept my promise and you deserve better from me."
+            mc "So let's let today be a resrt in our relationship!"
+            mc "Just you and me, Sayori..."
+            jump s_cheers
+
+
+    if hangout1 != "Sayori":
+        if hangout2 != "Sayori":
+            "Considering that Sayori and I haven't been around each other lately, I really need to choose my words carefully here."
+            "Well, it never hurts to celebrate a resrt..."
+            show sayori 2be
+            mc "How about to a reset for our friendship?"
+            s "Eh? What do you mean?"
+            mc "Well, lately I've messed up a lot around you..."
+            mc "On Sunday, and how you saw me with [hangout2] yesterday..."
+            mc "I haven't been spending as much time around you as I should be..."
+            mc "I haven't kept my promise and you deserve better from me."
+            mc "So let's let today be a resrt in our relationship!"
+            mc "Just you and me, Sayori..."
+            jump s_cheers
+
+
+label s_cheers:
+
+"Sayori blushes brighter than pizza sauce."
+s "T-{w=0.38}thats very sweet of you, [player]..."
+s 4by "I agree!"
+s 4br "Cheers!"
+show sayori 4bq
+"Sayori and I playfully chink our pizzas and take a bite into the anchovie-flavored crust."
+"Hey, this isn't half bad!"
+mc "So, how's yours?"
+show sayori 2br
+"Sayori, whose joyfully chowing down her slice of pizza, manages an answer with a mouthful of pizza."
+s "It's shoo good!"
+show sayori 2bq
+"I try to look away from Sayori's mouth as I take in my next bite."
+"I'm still surprised with how well the taste of the anchovies mixes in with the curst and sauce!"
+"It all mixes together for a surpsingly satisfying flavour! Who knew anchoives mixed in with bread and sauce could be so tasty?!?"
+"I'm defintley going to have to get this again at some point..."
+"I continue to pick away at the pizza while Sayori seems to gobble down slices left and right."
+"Even as a kid, Sayori's always managed to consume the craziest amount of food in the shortest amount of time."
+"Hopefully there'll be some pizza left for me to eat before I decide to tap out..."
+show sayori at thide
+hide sayori
+scene bg fastfood
+with wipeleft_scene
+"After having roughly five slices, I eventually decide to call it quits on the pizza."
+show sayori 2bq
+"I simply nurse my water as I watch Sayori continue to shred through slice after slice as if were nothing."
+show sayori 1bq
+"Eventually, Sayori finishes the last slice of pizza, leaning back in her chair with satisfaction."
+mc "So...{w=0.38}I take it you enjoyed it!"
+s 1bx "Yeah! It was really good!"
+s 1bd "You seemed like you enjoyed the piza too!"
+mc "Well hey, we both know Gomaya's has the best pizza in town!"
+s 4br "And the best ice cream!"
+
+if encore_sayoriquestion_1 == True:
+    "I suddenly remember the bet I made with Sayori yesterday when we were playing Mario Kart."
+    "So this why she wanted us to come here..."
+    "Well, a bet's a bet, and it looks like it's time for me to pay up..."
+    show sayori 1ba
+    mc "Well...{w=0.38}I suppose I do owe you from yesterday's bet."
+    mc "You beat me fair and square..."
+    s 1by "Awww, [player]..."
+    s 1bd "I'm glad you remembered..."
+    mc "Well if I forgot, you would've reminded me anyway!"
+    mc "That's why I you wanted to come here for dinner, right?"
+    s 1by "Well...{w=0.38}maybe that was part of the reason..."
+    "I chuckle to myself."
+    mc "Alright, let's go see what they have."
+
+if encore_sayoriquestion_1 == False:
+    "I suddenly remember one of the reasons Sayori and I always loved coming back to this place."
+    "Aside from having the best pizza in town, they also had a pretty good ice cream selection to choose from."
+    show sayori 1ba
+    mc "This is a real trip down memory lane, isn't it?"
+    mc "You take us down the same way our parents would take us to our favorite childhood resturant..."
+    mc "We order their awesome pizza..."
+    mc "And now we're getting the best ice cream in town together!"
+    show sayori 1by
+    mc "I gotta say Sayori, you've really outdone yourself this time!"
+    s 1by "I'm glad you're having fun, [player]..."
+    s 1bd "This brings back so many good times we used to have!"
+    s 1by "I just wish we could have as much fun as we used to..."
+    mc "Well...{w=0.38}I mean we still can, right?"
+    mc "There's nothing really stopping us from enjoying each other's company except ourselves."
+    mc "Besides, ice cream's a great peace maker!"
+    mc "Come on! Let's see what they have!"
+
+show sayori 1bd
+"Sayori warmly smiles as we get up to check out the ice cream selection."
+"I declined to get anything, but Sayori opted to get two scopes of some sort of blue berry-banna combination I never even heard of."
+show sayori 1bq
+"As per the bet, I ended up paying the cost for the ice cream, and politely covered the costs for our meal as well."
+"Naturally, Sayori was pretty happy she quickly gobbled down her ice cream as we began the walk home."
+show sayori at thide
+hide sayori
+stop music fadeout 2.0
 scene bg park_dusk
 with wipeleft_scene
-"Park/Reflection Scene."
+"On our way back, Sayori and I realized that we weren't actually that far from the park we used to spend a lot of time in as kids."
+"Given that we were both in a reminiscing mood, we decided to take s light detour to head to the park."
+"Though the by the time we reached it, the sun had already set and it was starting to get darker by the minute, so we agreed to do only one walkaround before heading home."
+show sayori 1ba at t11 zorder 1
+"Sayori was in a cheerful mood as we started walking, pointing out all our former hangout spots and reminiscing all the moments we shared."
+"Seeing this side of Sayori in full bloom almost really makes me forget that she has depression."
+show sayori 1by
+"Her being so cheery and energetic is a far cry from how she's been acting recently."
+"Maybe it's because I'm spending time with her?"
+"Or she's just trying her best to show that side of her."
+show sayori 1bb
+"Either way, I'd want her to be honest with how she's feeling right now..."
+mc "I gotta say Sayori, you've been in a pretty good mood today."
+s 1bx "Yeah! Today's been really great!"
+s 1by "And you helped make it so..."
+mc "I see..."
+mc "You didn't have your rainclouds today?"
+s 1bc "No, not really, why?"
+mc "I just want to make sure my bundle of sunshine stays the way."
+show sayori 4bs
+"I playfully ruffle up Sayori's hair, causing her to giggle loudly."
+s "Okay, okay, cut it out!"
+show sayori 1by
+"She playfully pushes me away."
+s 1by "But yeah...{w=0.38}today's been pretty good..."
+s 1bd "And I do think it's partly because of you..."
+show sayori 1be
+
+
+if encore_sayoriquestion_1 == True:
+
+    if hangout1 == "Sayori":
+        if hangout2 == "Sayori":
+            mc "I'm just doing my job, Sayori..."
+
+    if hangout1 != "Sayori":
+        if hangout2 == "Sayori":
+            mc "I'm just doing my job, Sayori..."
+
+    if hangout1 == "Sayori":
+        if hangout2 != "Sayori":
+            mc "I'm just trying to make up for yesterday..."
+
+    if hangout1 != "Sayori":
+        if hangout2 != "Sayori":
+            mc "I'm just trying to make up for how I've been acting lately..."
+
+if encore_sayoriquestion_1 == False:
+
+    if hangout1 == "Sayori":
+        if hangout2 == "Sayori":
+            "I'm just keeping my word..."
+
+    if hangout1 != "Sayori":
+        if hangout2 == "Sayori":
+            "I'm just keeping my word..."
+
+    if hangout1 == "Sayori":
+        if hangout2 != "Sayori":
+            mc "I'm just trying to set things right between us..."
+
+    if hangout1 != "Sayori":
+        if hangout2 != "Sayori":
+            mc "I'm just trying to set things right between us..."
+
+
+mc "Besides, looking after you is what I do best!"
+show sayori 1by
+mc "And to be truthful...{w=0.38}I kind of enjoy it..."
+mc "It just feels right, you know?"
+
+
+if encore_sayoriquestion_1 == True:
+    mc "Like this was always supposed to happen..."
+
+    if hangout1 == "Monika" or hangout2 == "Monika":
+        show screen tear(20, 0.1, 0.1, 0, 40)
+        pause 0.70
+        hide screen tear
+        pause 1.0
+        $ style.say_dialogue = style.edited
+        s "No, it wasn't!"
+        s "You were supposed to get with Monika!"
+        $ style.say_dialogue = style.normal
+        $ _history_list.pop()
+        show screen tear(20, 0.1, 0.1, 0, 40)
+        play sound "sfx/glitch1.ogg"
+        pause 0.25
+        stop sound
+        hide screen tear
+        "I blink a few times just to make sure I heard Sayori right."
+        show sayori 1be
+        mc "What did you say?"
+        "Sayori shoots me a confused look."
+        s 1bg "I didn't say anything..."
+        mc "Huh, that's weird..."
+        mc "I guess it's those anchovies!"
+        s 4bx "So you're saying you're feeling...{w=0.38}fishy?"
+        mc "Ah, stop..."
+        show sayori 4br
+        "Sayori lets out a laugh at her own joke, to which I let her laugh it out so I can get back to my original train of thought."
+        show sayori 1ba
+        mc "Anyways, as I was saying..."
+
+    else:
+        pass
+
+    mc "Spending all this time around you over these last two weeks...{w=0.38}it's been really fun Sayori..."
+    show sayori 1by
+    mc "I almost feel like we're kids again and it's just us going around, having a good time..."
+    mc "It's just still a little hard for me to realize you've been battling depression the entire time..."
+    s 1bl "Well, you helped make it mangeable..."
+    s 1bk "Honestly, if it weren't for you, I don't know where I'd be right now..."
+    mc "Where do you think you would be?"
+    s 1bl "Ah, there's really no point in thinking about it, right?"
+    s 1bd "We had a great childhood together, that's really all that matters..."
+    s 1by "And I'm just glad we've been able to re-connect and make many more lasting memories together..."
+
+    if hangout1 == "Sayori":
+        if hangout2 == "Sayori":
+            mc "Yeah, you're right..."
+
+    if hangout1 != "Sayori":
+        if hangout2 == "Sayori":
+            mc "Yeah, you're right..."
+
+    if hangout1 == "Sayori":
+        if hangout2 != "Sayori":
+            show sayori 1be
+            mc "I just wish things have gone more smoothly..."
+            s 1bl "Well, I'm sure every relationship has it's bump in the road, [player]..."
+            s 1bd "Don't worry about it too much, okay?"
+            mc "Alright..."
+
+    if hangout1 != "Sayori":
+        if hangout2 != "Sayori":
+            show sayori 1be
+            mc "I just wish things have gone more smoothly..."
+            mc "I want what we have to work, Sayori..."
+            mc "I love you..."
+            s 1bk "I know you do..."
+            s 1bl "I'm sure this is just a bump in the road for us, that's all..."
+            s 1bd "I mean, we're here together talking!"
+            s 1by "I'm sure things will smooth over, [player]..."
+            s 1bd "I'm glad you're trying to make up for everything..."
+            mc "I'm just glad you're not totally mad at me..."
+            s 1by "Aw, I couldn't stay mad at for long..."
+            s 1bd "Especially if you're trying to better yourself and not repeat what you did..."
+            mc "Yeah..."
+
+
+        jump s_talk
+
+
+
+if encore_sayoriquestion_1 == False:
+    mc "Like this is how it should be..."
+
+    if hangout1 == "Monika" or hangout2 == "Monika":
+        show screen tear(20, 0.1, 0.1, 0, 40)
+        pause 0.70
+        hide screen tear
+        pause 1.0
+        $ style.say_dialogue = style.edited
+        s "No, it shouldn't!"
+        s "You should be going for Monika!"
+        $ style.say_dialogue = style.normal
+        $ _history_list.pop()
+        show screen tear(20, 0.1, 0.1, 0, 40)
+        play sound "sfx/glitch1.ogg"
+        pause 0.25
+        stop sound
+        hide screen tear
+        "I blink a few times just to make sure I heard Sayori right."
+        show sayori 1be
+        mc "What did you say?"
+        "Sayori shoots me a confused look."
+        s 1bg "I didn't say anything..."
+        mc "Huh, that's weird..."
+        mc "I guess it's those anchovies!"
+        s 4bx "So you're saying you're feeling...{w=0.38}fishy?"
+        mc "Ah, stop..."
+        show sayori 4br
+        "Sayori lets out a laugh at her own joke, to which I let her laugh it out so I can get back to my original train of thought."
+        show sayori 1ba
+        mc "Anyways, as I was saying..."
+
+    else:
+        pass
+
+
+    mc "I've really enjoyed spending time with you yesterday and today...
+
+    if hangout1 == "Sayori":
+        if hangout2 == "Sayori":
+            "text"
+
+    if hangout1 != "Sayori":
+        if hangout2 == "Sayori":
+            "text"
+
+    if hangout1 == "Sayori":
+        if hangout2 != "Sayori":
+            "text"
+
+    if hangout1 != "Sayori":
+        if hangout2 != "Sayori":
+            "text"
+
+
+
+    jump s_talk
+
+
+
+label s_talk:
+
+show sayori 1be
+mc "But, I've been meaning to ask you something, Sayori..."
+mc "About your 'rainclouds'..."
+
+
 
 scene bg residential_night
 with wipeleft_scene

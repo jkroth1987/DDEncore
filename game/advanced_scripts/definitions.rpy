@@ -115,6 +115,7 @@ define audio.drop = "mod_assets/audio/Metal_Drop.ogg"
 define audio.belly = "mod_assets/audio/Stomach-Growl.ogg"
 define audio.sample = "mod_assets/audio/Your_Reality_Sample.ogg" #Sample Music
 define audio.doorbell = "mod_assets/audio/Doorbell.ogg"
+define audio.gust = "mod_assets/audio/Gust.ogg" #Wind Gust
 #--Encore's New Music
 define audio.e1 = "<loop 0>mod_assets/audio/void1.ogg" #The Void (First Void Scene Music)
 define audio.f1 = "<loop 0>mod_assets/audio/mainmenu.ogg" #Doki Doki Forever (Main Menu Music, Doki Doki!~)
@@ -134,7 +135,7 @@ define audio.e14 = "<loop 0>mod_assets/audio/Ohayou_Natsuki.ogg" #Alternate Nats
 define audio.e15 = "<loop 0>mod_assets/audio/Ohayou_Sayori.ogg" #Alternate Sayori Theme MBS
 define audio.e16 = "<loop 0>mod_assets/audio/Ohayou_Yuri.ogg" #Alternate Yuri Theme MBS
 define audio.e17 = "<loop 0>mod_assets/audio/iPhone_Ring.ogg" #iPhone
-
+define audio.e18 = "<loop 0>mod_assets/audio/Hypothetical Romance.ogg" #Monika Day 3 Unique OST
 
 
 # Backgrounds

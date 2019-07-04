@@ -154,7 +154,7 @@ if hangout1 == "Sayori" or hangout1 == "Natsuki" or hangout1 == "Yuri":
 
 
 if hangout1 == "Monika":
-    if hangout2 == "Sayori" or hangout1 == "Natsuki" or hangout1 == "Yuri":
+    if hangout2 == "Sayori" or hangout2 == "Natsuki" or hangout2 == "Yuri":
         "I suddenly wake up with the sudden urge to vomit."
         "I quickly prop myself, trying to supress it."
         "Though as soon as I do that, I feel my head quickly start to ache."
@@ -2928,7 +2928,6 @@ if hangout1 == "Monika":
             mc "I don't know..."
             mc "I've enjoyed spending time around [poem_giver], she's fun to be with..."
             mc "And last Sunday, I did feel like maybe there was something there..."
-            mc "But Sayori's been on my mind lately..."
             show monika 2m
             mc "But Sayori's been on my mind lately..."
             m 2g "You're not having second thoughs about your answer to her confession, are you?"
@@ -10245,8 +10244,9 @@ with wipeleft_scene
 "Off in the distance I can hear the birds chirping the same song I've heard hundreds if not thousands of times."
 "I look up to see the sky almost cloud free, and better yet, the sun hasn't even started to set."
 "I should be able to do a walk around the neighborhood and get back before dark..."
+play sound gust
 "I take another few steps out onto the sidewalk when a strong gust of wind comes hurling at me, forcing me to shield my eyes."
-"Today has been rather windy I guess..."
+"Well, that certainly came out of no where..."
 $ m_name = "???"
 m "[player]?"
 play music e2 fadein 2.0
@@ -11767,3 +11767,9 @@ if hangout3 == "Yuri":
         "I answer the phone."
         mc "Yuri?"
         jump y_hangout_ask
+
+
+
+label day3_night:
+
+"text"
