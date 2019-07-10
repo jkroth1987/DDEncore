@@ -3058,7 +3058,7 @@ label sencore_3:
         mc "Ah, I guess not..."
 
 
-    show sayori 3q
+    show sayori 3q at t11 zorder 1
     "Sayori and I continue eating our ice cream."
     "As usual, Sayori finishes hers in under a minute while I nurse mine."
     show sayori 3n
@@ -5096,6 +5096,7 @@ s 1bm "There's so many choices, [player]..."
 show sayori 1bn
 mc "Is there anything in particular you're leaning towards?"
 mc "I'm thinking about just getting a burger..."
+show sayori_think as sayori at t11 zorder 1
 s "Hmmm..."
 "Sayor closes her eyes for a moment."
 mc "What're you doing?"
@@ -5306,7 +5307,7 @@ hide sayori
 scene bg fastfood
 with wipeleft_scene
 "After having roughly five slices, I eventually decide to call it quits on the pizza."
-show sayori 2bq
+show sayori 2bq at t11 zorder 1
 "I simply nurse my water as I watch Sayori continue to shred through slice after slice as if were nothing."
 show sayori 1bq
 "Eventually, Sayori finishes the last slice of pizza, leaning back in her chair with satisfaction."
@@ -5551,26 +5552,39 @@ if encore_sayoriquestion_1 == False:
         pass
 
 
-    mc "I've really enjoyed spending time with you yesterday and today...
+    mc "I've really enjoyed spending time with you yesterday and today..."
 
     if hangout1 == "Sayori":
         if hangout2 == "Sayori":
-            "text"
+            mc "Heck, I didn't even mind comforting you yesterday and on Monday..."
 
     if hangout1 != "Sayori":
         if hangout2 == "Sayori":
-            "text"
+            mc "Heck, I didn't even mind comforting you yesterday."
 
     if hangout1 == "Sayori":
         if hangout2 != "Sayori":
-            "text"
+            mc "Heck, I didn't even mind comforting you yesterday on Monday..."
 
     if hangout1 != "Sayori":
         if hangout2 != "Sayori":
-            "text"
+            mc "Heck, today's been pretty fun!"
 
+            if sayori_ice = True:
+                mc "I've had nothing but fun with you today..."
 
+            if sayori_ice = False:
+                mc "It was nice that we got to spend some time together for once, even if you did try sweet talking me into sharing my ice cream..."
 
+    show sayori 1be
+    mc "I've really missed this..."
+    mc "Being able to laugh and be ourselves..."
+    mc "You've shown me what I've been missing out on..."
+    mc "And I'd like for us to keep doing this..."
+    mc "Especially since I know you enjoy this too and it makes you feel better when I'm around..."
+    s 1by "Yeah...{w=0.38}it helps when we're together, [player]..."
+    s 1bd "Just you being here is enough to keep the rainclouds away..."
+    s 1by "At least for a while..."
     jump s_talk
 
 
@@ -5578,12 +5592,251 @@ if encore_sayoriquestion_1 == False:
 label s_talk:
 
 show sayori 1be
-mc "But, I've been meaning to ask you something, Sayori..."
+mc "Actually, I've been meaning to ask you something, Sayori..."
 mc "About your 'rainclouds'..."
+s "Oh?"
+s "What about them?"
+mc "Well, you've said you had them for what, your entire life?"
+s 1bk "Yeah, I guess..."
+mc "Have you...{w=0.38}ever thought about seeing someone about this?"
+"There's a long pause of silence between us."
+show sayori 1bg
+"Finally Sayori turns to me with a pained look in her eyes"
+play music t7 fadein 2.0
+s 1bh "I mean...{w=0.38}I have..."
+"I'm shocked as I hear this."
+"She's been debating about whether to seek help for all these years?"
+"That doesn't make any sense! Why would she want to feel like crap all the time?!?"
+mc "Well, why haven't you gone to anyone yet?"
+"I say in my most level voice possible."
+show sayori 1be
+"Though Sayori seems to pick up on the hint of fustration in my voice."
+mc "I mean, surley your whole philsophy that 'you're meant to feel this way' doesn't apply to seeking professional help?"
+s 1bl "Well, not exactly..."
+s 1bh "It's something else..."
+mc "Well, what is it?"
+s 1bk "I've...{w=0.38}read up on the effects that anti-depressants have on people..."
+s 1bl "And what I read terrified me..."
+s 1bh "Anti-depressants can completely change your personality, [player]!"
+s "It changes everything about you..."
+s 1bk "How you act, how you feel, what you like or don't like..."
+s "As well as some other side effects..."
+s "It makes you numb to everything..."
+s "To pain, to sadness, to joy..."
+s "You just become empty..."
+s 1bj "It's like you're better off not taking them!"
+s 1bg "And I don't want to run the risk of just not feeling anything anymore!"
+s 4bh "I don't want to let anything change who I am!"
+s 4bu "If I take them...{w=0.38}I might not be the same girl you've always known!"
+s 4bw "I can't let that happen!"
+s 4bt "So if I have to put up with all this pain and suffering just to have a little fun with you, then to me it's worth it!"
+s "I want you to be happy, [player], and I know you want what's best for me..."
+s 1bk "But I'd rather feel the full weight of my rainclouds barrel down on me than not feel anything at all..."
+s 1bu "I just couldn't do that to you..."
+s 4bu "I'd only be recieving your kidness, and I could never return it!"
+s 1bk "At least with how I am now, I can..."
+s 2bt "And since you know the truth, I can be honest with how I feel, especially around you..."
+"I completelty stop in my tracks as I look at Sayori the same way a deer would look at headlights."
+"I can't believe what I'm hearing!"
+"She'd rather put up with all this rather than take the chance at getting better?"
+"Oh God, what do I even say here..."
+show sayori 1bu
+"Sayori stops walking as well, staring on at me as tears continue to build in her eyes."
+"I just try to stammer out something that makes sense."
+mc "S-{w=0.38}Sayori, look..."
+mc "I'm not going to pretend like I'm some expert doctor or whatever..."
+mc "Because I'm not!"
+mc "But look, dealing with your depression like this isn't healthy at all..."
+mc "I think we can both agree to that."
+mc "But, you never know what works unless you try it, right?"
+show sayori 1bk
+mc "Like how you convinced me to join the literature club..."
+show sayori 4bu
+mc "And like earlier, how you convinced me to try out anchovie pizza for the first time!"
+mc "If you have the chance to get out of this constant cycle of feeling down and happy, you really should consider it..."
+mc "Maybe you just need simple therapy or something, I don't know!"
+mc "Because I know I can't be around you all the time to make you feel better, it's just not practical!"
+mc "And I know you say you feel better when you're around me..."
+
+if hangout1 == "Sayori":
+    if hangout2 == "Sayori":
+        mc "And I've really tried my best..."
+
+if hangout1 != "Sayori":
+    if hangout2 == "Sayori":
+        mc "And I've tried my best to be around you as much as I could..."
+
+if hangout1 == "Sayori":
+    if hangout2 != "Sayori":
+        mc "Even though I really didn't know if I did more to hurt than help you yesterday..."
+
+if hangout1 != "Sayori":
+    if hangout2 != "Sayori":
+        mc "Even though I've felt like I've done hardly anything lately to help you..."
+        mc "Or in some cases, I've felt like I've made things worse!"
+        mc "I've just done more to hurt you..."
+        s 1bv "Are you saying you don't want to be around me?"
+        mc "No! I'm not saying that!"
+        mc "But..."
+
+mc "I just don't know if I can be the only solution to this..."
+mc "We need to try something else..."
+mc "You need to get better, Sayori..."
+s 1bk "Well what do you want me to do, [player]?"
+s 2bf "Believe me, if I could've wished the rainclouds away, I would've done it long ago!"
+s 1bk "And I don't really believe that just talking it out is going to make it better..."
+s "I know those anti-depressants are going to be the only way out of this..."
+s 1bf "But it comes at the cost of all my feelings, just not the bad ones!"
+mc "Maybe it's brand based, I don't know..."
+mc "But look, can you just promise me to at least think this over?"
+show sayori 1bk
+"Sayori stares off into the darkness as she mulls my request over."
+"I know this isn't the first time she's thought about getting help..."
+"But maybe its different now that I'm the one pushing for it?"
+"Sayori then lets out a sigh."
+s 1bg "Alright...{w=0.38}I'll think it over..."
+s 1bk "Just...{w=0.38}no promises, okay?"
+mc "It would mean the world to me if you think long and hard about this..."
+s "I know..."
+s 1bu "You won't...{w=0.38}see me any differently if something happens right?"
+mc "What do you mean?"
+s 4bv "If I take them...{w=0.38}and something happens, you'll still see me as the same girl you grew up with right?"
+
+if encore_sayoriquestion_1 == True:
+    s "You'll still love me?"
+    mc "Of course I'll still love you! Nothing's going to change that!"
+
+if encore_sayoriquestion_1 == False:
+    s "You'll still be friends with me?"
+    mc "Of course I'll still be friends with you! Nothing will ever change that"
 
 
+s 4bt "I...{w=0.38}I love you, [player]..."
 
+if encore_sayoriquestion_1 == True:
+    mc "I love you too, Sayori..."
+    jump s_arm
+
+if encore_sayoriquestion_1 == False:
+    "My face blushes brightly as I hear Sayori say that..."
+    "I know that we've gone through this before, but this time, it feels different."
+    "It doesn't feel like she's pouring everything out this time..."
+    "And I know she meant it back on Sunday, but it feels like there's more weight to it this time..."
+
+    if hangout1 == "Sayori":
+        if hangout2 == "Sayori":
+            "And lately...{w=0.38}I think I've been feeling the same way..."
+            "Though I still don't know what to do..."
+
+    if hangout1 != "Sayori":
+        if hangout2 == "Sayori":
+            "And these past two days...{w=0.38}I feel live I've begun to have a newfound interest in Sayori..."
+            "But I don't know if I should act on it..."
+
+    if hangout1 == "Sayori":
+        if hangout2 != "Sayori":
+            "And I think I may be starting to feel the same way back..."
+            "But I don't know if this is just another come-and-go feeling..."
+
+
+    if hangout1 != "Sayori":
+        if hangout2 != "Sayori":
+            "And today, I've felt that spark we once had, I still feel it even now..."
+            "But I don't know if it's just simply that or I'm really starting to catch feelings for her..."
+
+    "In any case..."
+    mc "And I...{w=0.38}really care about you too..."
+    show sayori 1bk
+    "Sayori stares off dejectedly, as if she was expecting me to say something else."
+    "Well, she was..."
+    "I try to salvage the moment."
+    jump s_arm
+
+label s_arm:
+
+mc "Well, look...{w=0.38}it's getting late."
+mc "We should probably start heading back."
+
+if encore_sayoriquestion_1 == True:
+    show sayori 1by
+    "I offer my arm to Sayori, who giggles at my gesture."
+    s "Aren't you such the gentleman?"
+    mc "Only for you..."
+    show sayori 2bd
+    "Sayori smiles as she wraps herself around my arm."
+    show sayori at thide
+    hide sayori
+
+
+if encore_sayoriquestion_1 == False:
+    show sayori 1bg
+    "I offer my arm to Sayori, who looks on at me with uncertainity."
+    s "What're you doing?"
+    mc "Come on, just take my arm."
+    show sayori 1by
+    mc "I'll let you lean on me for the walk back."
+    s "Are you sure you're okay with that?"
+    mc "Just for you."
+    show sayori 2by
+    "Sayori blushes as she wraps herself around my arm."
+    show sayori at thide
+    hide sayori
+
+
+#show cg
+"With Sayori secured, we begin walking back on the path we came, illuminated by the lightpoles scattered along the path and the stars above us."
+"Walking back, I notice several small animals scurrying around in the shadows, persumably looking for food."
+"I'm able to make out a few squirrels and rabbits, but it's hard to make out exact details with it being so dark by this point."
+"Strangely enough, Sayori doesn't really seem to notice them."
+"I turn to her, and she's simply starting ahead with the biggest grin on her face, enjoying latching on to my arm."
+stop music fadeout 2.0
+"I simply smile to myself as we continue to make the journey home, with the sound of animals frolicking behind us."
+#Fadeout CG
 scene bg residential_night
-with wipeleft_scene
-"Heading Home."
+with open_eyes
+"It was a mostly silent walk back."
+"We occasionally made some small talk, but I just generally let Sayori enjoy the feeling of being close to me."
+"Though I can't say I didn't enjoy being close to her like that either."
+
+
+if encore_sayoriquestion_1 == True:
+    "I mean that's what couples do, right?"
+    "Sharing these kinds of moments with each other..."
+
+if encore_sayoriquestion_1 == False:
+    "This is probably the closest I've felt to being a couple with her..."
+
+"Though eventually Sayoru is forced to let go as we stop at our houses."
+show sayori 1by
+s "I'll...{w=0.38}see you tomorrow, [player]..."
+"I can still tell she's flustered over the walk back."
+"Though I can feel my face is a little red as well."
+mc "Y-{w=0.38}yeah...I'll see you tomorrow..."
+s 1bd "Try to get some good sleep tonight, alright?"
+mc "I'll try my best."
+
+if tell_s == True:
+    "Hopefully telling Sayori about my dreams will ease them off of me for tonight."
+
+if tell_s == False:
+    "I just hope she doesn't worry too much about me tonight."
+
+
+mc "See you tomorrow."
+show sayori 4bq
+"I take Sayori into my arms and hug her tightly."
+
+if encore_sayoriquestion_1 == True:
+    show sayori 4bs
+    "I decde to throw in a peck on the cheek for good measure, which she seemed to enjoy as she giggled."
+
+if encore_sayoriquestion_1 == False:
+    "Even though I think I may be overdoing it, I still feel like this is what I should be doing, regardless of how I feel about [poem_giver] or anyone else."
+    "Though fortuantely, Sayori seems to appreciate the gesture as she blushes brighter than the pizza sauce we had earlier."
+
+show sayori 1by at t11 zorder 1
+"Eventually we break our embrace and wave good-bye to each other as we head back to our respective houses."
+show sayori at thide
+hide sayori
+"I watch Sayori disappear from sight as I turn they key to open the door and head upstairs to my bedroom."
 jump day3_night

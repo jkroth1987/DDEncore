@@ -116,6 +116,8 @@ define audio.belly = "mod_assets/audio/Stomach-Growl.ogg"
 define audio.sample = "mod_assets/audio/Your_Reality_Sample.ogg" #Sample Music
 define audio.doorbell = "mod_assets/audio/Doorbell.ogg"
 define audio.gust = "mod_assets/audio/Gust.ogg" #Wind Gust
+define audio.train = "mod_assets/audio/Train.ogg"
+define audio.train_journey = "mod_assets/audio/Train-Journey.ogg"
 #--Encore's New Music
 define audio.e1 = "<loop 0>mod_assets/audio/void1.ogg" #The Void (First Void Scene Music)
 define audio.f1 = "<loop 0>mod_assets/audio/mainmenu.ogg" #Doki Doki Forever (Main Menu Music, Doki Doki!~)
@@ -203,6 +205,12 @@ image bg fastfood = "mod_assets/bgs/fastfood.png"
 image bg city_sidewalk2 = "mod_assets/bgs/city_sidewalk2.png"
 image bg park_dusk = "mod_assets/bgs/park_dusk.png"
 image bg residential_night = "mod_assets/bgs/residential_night.png"
+image bg residential_2 = "mod_assets/bgs/residential_2.png"
+image bg train_night = "mod_assets/bgs/train_night.png"
+image bg train_day = "mod_assets/bgs/train_day.png"
+image bg train_station = "mod_assets/bgs/train_station.png"
+image bg garden_dusk = "mod_assets/bgs/garden_dusk.png"
+image bg garden_day = "mod_assets/bgs/garden_day.png"
 
 image glitch_color:
     ytile 3
@@ -1603,6 +1611,7 @@ image monika 5bc = "mod_assets/sprites/mb5c.png"
 image mbe_talking = "mod_assets/sprites/mbe_talking.png"
 image mbe_talking2 = "mod_assets/sprites/mbe_talking2.png"
 image mbe_talking3 = "mod_assets/sprites/mbe_talking3.png"
+image monika_shrug = "mod_assets/sprites/monika_shrug.png"
 
 #--uniform, hands down, slight frown, blush, closed eyes, concerned eyebrows
 #image monika u113342 = im.Composite((960, 960), (0, 0), "mod_assets/character_images/monika/1_uniform/1_body_left/1.png", (0, 0), "mod_assets/character_images/monika/1_uniform/2_body_right/1.png", (0, 0), "mod_assets/character_images/monika/2_face/base.png", (0, 0), "mod_assets/character_images/monika/2_face/1_mouth/3.png", (0, 0), "mod_assets/character_images/monika/2_face/2_nose/3.png", (0, 0), "mod_assets/character_images/monika/2_face/3_eyes/4.png", (0, 0), "mod_assets/character_images/monika/2_face/4_eyebrows/2.png")
@@ -1678,6 +1687,7 @@ image sayori_end_1 = "mod_assets/sprites/end-glitch1.png"
 image sayori_end_2 = "mod_assets/sprites/end-glitch2.png"
 image sayori_silhouette = "mod_assets/sprites/sayori_silhouette.png"
 image sayori_ice = "mod_assets/sprites/s_ice.png"
+image sayori_think = "mod_assets/sprites/sayori_think.png"
 #image sayori u114152 = im.Composite((960, 960), (0, 0), "mod_assets/character_images/sayori/1_uniform/1_body_left/1.png", (0, 0), "mod_assets/character_images/sayori/1_uniform/2_body_right/1.png", (0, 0), "mod_assets/character_images/sayori/2_face/base.png", (0, 0), "mod_assets/character_images/sayori/2_face/1_mouth/4.png", (0, 0), "mod_assets/character_images/sayori/2_face/2_nose/1.png", (0, 0), "mod_assets/character_images/sayori/2_face/3_eyes/5.png", (0, 0), "mod_assets/character_images/sayori/2_face/4_eyebrows/2.png")
 #image sayori u115313 = im.Composite((960, 960), (0, 0), "mod_assets/character_images/sayori/1_uniform/1_body_left/1.png", (0, 0), "mod_assets/character_images/sayori/1_uniform/2_body_right/1.png", (0, 0), "mod_assets/character_images/sayori/2_face/base.png", (0, 0), "mod_assets/character_images/sayori/2_face/1_mouth/5.png", (0, 0), "mod_assets/character_images/sayori/2_face/2_nose/3.png", (0, 0), "mod_assets/character_images/sayori/2_face/3_eyes/1.png", (0, 0), "mod_assets/character_images/sayori/2_face/4_eyebrows/3.png")
 #image sayori u112313 = im.Composite((960, 960), (0, 0), "mod_assets/character_images/sayori/1_uniform/1_body_left/1.png", (0, 0), "mod_assets/character_images/sayori/1_uniform/2_body_right/1.png", (0, 0), "mod_assets/character_images/sayori/2_face/base.png", (0, 0), "mod_assets/character_images/sayori/2_face/1_mouth/2.png", (0, 0), "mod_assets/character_images/sayori/2_face/2_nose/3.png", (0, 0), "mod_assets/character_images/sayori/2_face/3_eyes/1.png", (0, 0), "mod_assets/character_images/sayori/2_face/4_eyebrows/3.png")
@@ -1711,6 +1721,9 @@ image yb5 = "mod_assets/sprites/yb5.png"
 image yb6 = "mod_assets/sprites/yb6.png"
 image yb7 = "mod_assets/sprites/yb7.png"
 image y_mad = "mod_assets/sprites/GrrYuri.png"
+image y2by1 = "mod_assets/sprites/y2by1.png"
+image y2by3 = "mod_assets/sprites/y2by3.png"
+image y2by4 = "mod_assets/sprites/y2by4.png"
 #image yuri u122218 = im.Composite((960, 960), (0, 0), "mod_assets/character_images/yuri/1_uniform/1_body_left/1.png", (0, 0), "mod_assets/character_images/yuri/1_uniform/2_body_right/2.png", (0, 0), "mod_assets/character_images/yuri/2_face/base.png", (0, 0), "mod_assets/character_images/yuri/2_face/1_mouth/2.png", (0, 0), "mod_assets/character_images/yuri/2_face/2_nose/2.png", (0, 0), "mod_assets/character_images/yuri/2_face/3_eyes/1.png", (0, 0), "mod_assets/character_images/yuri/2_face/4_eyebrows/8.png")
 #image yuri u114221 = im.Composite((960, 960), (0, 0), "mod_assets/character_images/yuri/1_uniform/1_body_left/1.png", (0, 0), "mod_assets/character_images/yuri/1_uniform/2_body_right/1.png", (0, 0), "mod_assets/character_images/yuri/2_face/base.png", (0, 0), "mod_assets/character_images/yuri/2_face/1_mouth/4.png", (0, 0), "mod_assets/character_images/yuri/2_face/2_nose/2.png", (0, 0), "mod_assets/character_images/yuri/2_face/3_eyes/2.png", (0, 0), "mod_assets/character_images/yuri/2_face/4_eyebrows/1.png")
 #image yuri u125111 = im.Composite((960, 960), (0, 0), "mod_assets/character_images/yuri/1_uniform/1_body_left/1.png", (0, 0), "mod_assets/character_images/yuri/1_uniform/2_body_right/2.png", (0, 0), "mod_assets/character_images/yuri/2_face/base.png", (0, 0), "mod_assets/character_images/yuri/2_face/1_mouth/5.png", (0, 0), "mod_assets/character_images/yuri/2_face/2_nose/1.png", (0, 0), "mod_assets/character_images/yuri/2_face/3_eyes/1.png", (0, 0), "mod_assets/character_images/yuri/2_face/4_eyebrows/1.png")

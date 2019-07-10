@@ -956,7 +956,7 @@ label mencore_3:
 label mencore_4:
 
 play music t6 fadein 2.0
-scene bg residential_day
+scene bg residential_2
 with wipeleft_scene
 "As we're walking through the neighborhood, it occured me how just long it's been since I've visited this part..."
 "Granted, I've usually walked in the direction towards town for school, this part of the neighborhood is almost alien to me..."
@@ -1377,15 +1377,14 @@ with wipeleft_scene
 play music t6
 "Not too long after we resumed our walk, we reach the end of the path and face a towering row of stairs leading up along the mountain."
 mc "I guess these are the 'stairs' you warned me about..."
-#Shrugging Monika Sprite Goes Here
-show monika 1bb at t11 zorder 1
+show monika_shrug as monika at t11 zorder 1
 m "Don't say I didn't warn you!"
 mc "Well I mean, you did..."
 mc "I just didn't think it'd be that many stairs..."
 "I take another look at the seemingly infinite row of steps that seem to ascend into the heavens..."
 "A lump forms in my throat as my eyes continue to eyeball how many steps there are..."
 "I nervously swallow."
-show monika 5bb  at t11 zorder 1
+show monika 5bb at t11 zorder 1
 m "You're not chickening out on me now, are you, [player]?"
 mc "What? I could never do that to you!"
 mc "This will be a piece of cake!"
@@ -1433,17 +1432,13 @@ scene black with dissolve_scene
 "After what felt like another hour of walking up the stairs, we finally reached our desination."
 scene bg city_overlook
 with wipeleft_scene
-<<<<<<< HEAD
 play music e18 fadein 2.0
-show mb2n as monika at t11 zorder 1
-=======
 show monika 2bn  at t11 zorder 1
->>>>>>> 1462bad2249ad26cdbdba6e46d1bd262f27e1d01
 m "Well it's not quite sunset anymore, but..."
 show monika 2be  at t11 zorder 1
 m "The view's still nice."
 mc "Woah..."
-show m2be as monika at thide
+show monika at thide
 hide monika
 "I run up behind a bench as I take in my surroundings."
 "Thanks to good visibility, we're clearly able to make out downtown as well as the surrounding neighborhoods on the south and east sides of town."
@@ -1451,13 +1446,8 @@ hide monika
 "I look up to the sky to see the stars twinkling brightly above us and the rest of the city..."
 mc "Monika..."
 mc "This is...{w=0.38}beautiful!"
-<<<<<<< HEAD
 "I end up having to take a seat as I'm overwhelmed from physical exhaustion and the beauty that lays out before us."
-show mb4b as monika at t11 zorder 1
-=======
-"I end up having to take a seat as I'm overwhelmed from the physical exhaustion and the beauty that lays out before us."
 show monika 4bb  at t11 zorder 1
->>>>>>> 1462bad2249ad26cdbdba6e46d1bd262f27e1d01
 m "I'd thought you'd like it, [player]..."
 show monika 1ba at t11 zorder 1
 m "Whenever I feel overwhelemed or stressed out, I usually go here around sundown."
@@ -2178,9 +2168,7 @@ if encore_sayoriquestion_1 == False:
 "At least now, I think I have an idea of what I want..."
 "I did decide to hang on to the Camellia, figuring that I could give it to Monika at a more appropriate time..."
 "I sheepishly turn the key to my house and stumble to my livingroom to put the Camellia in a vase."
-"I then lumber up to my bedroom before promptly crashing onto my bed."
-"I think I've earned some well deserved sleep tonight..."
-"Please...{w=0.38}nothing disturbing for tonight..."
+"I then lumber up to my bedroom before heading upstairs."
 scene black
 with close_eyes
 jump day3_mvoid

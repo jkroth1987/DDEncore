@@ -2772,3 +2772,921 @@ label day3_yconverge:
         "Now would be as a good as time as any to get some reading done..."
 
     jump day3_yreturn
+
+
+
+
+label yencore_4:
+
+play music t6 fadein 2.0
+scene bg train_station
+with wipeleft_scene
+"After roughly a ten minute walk, I arrive at the train station."
+"I texted Yuri to let her know I was here, to which she quickly replied and told me to meet her at the upper platform."
+"I walk up the stairs to the upper deck to find not too many people standing around waiting for the next train."
+"I guess business is slow today..."
+show yuri 3bg at t11 zorder 1
+"Out of the corner of my eye, I see Yuri sitting alone on the far bench at the edge platform, her face deep into a book."
+"I send her a text to let her know I'm here and start walking over to the bench."
+show yuri 2be
+"I see Yuri take out of her phone to read my text, she subsquently glances over in my direction."
+show yuri 4bc
+"To which she nervously turns away from my direction."
+"I cautiously take a seat next to her, figuring she's still guilty over the altercation we had earlier."
+mc "H-{w=0.38}hey, Yuri..."
+"I try to sound as friendly as possible without it coming across as forced."
+show yuri 4ba
+"Yuri manages to make eye contact with me for a brief moment."
+show yuri 4bb
+y "H-{w=0.38}hey, [player]..."
+y "Thank you for agreeing to accompany me..."
+mc "Ah, it's no problem!"
+show yuri 4ba
+mc "I actually didn't know they were opening a new nature perserve!"
+y 3bq "Yeah, I've been following it's construction for the last few years now..."
+y 1bq "So as soon as I found out it was finished and it was going to be open to the public, I knew I had to go!"
+show yuri 1be
+mc "Is it the grand opening or something?"
+y 3bf "The grand opening ceremony was actually this morning during school."
+y 3bb "But, I'm confident that it won't be nearly as crowded now, given it's later in the day."
+show yuri 3ba
+mc "Well hey, I'm sure we'll have a great time together!"
+y 3bu "Yeah, me too..."
+show yuri 3be
+mc "You know I don't think I've ever been to an perserve before."
+mc "Well actually, I really haven't done anything outdoorsy in years!"
+y 3bb "Well I can assure you that you'll be in for a very memorable experience!"
+y 3bl "Being able to connect with nature at your own pace in a controlled environment...{w=0.38}just feeling the natural energy around you..."
+y 3bm "It's an inspirational and exhilerating experience!"
+y 3bq "A few of the first poems I ever written were actualy about nature..."
+mc "Woah, really? That's awesome!"
+mc "Do you still have them?"
+y 3bo "Uuuu...."
+y "They're kind of...{w=0.38}embarrassing..."
+mc "I mean how could they?"
+mc "It's about nature and your own personal connection with it."
+mc "I mean I have no real connection to speak of, so why would I judge you for having one?"
+mc "I didn't actually think you were into nature, Yuri! I think it's cool that you are!"
+y 3bq "Well...{w=0.38}thanks, [player]..."
+y 3bf "Actually, I grew up in the country."
+y "I spent a good portion of my early years growing up there."
+y 3bm "Nobody was around us, and I learned to embrace the solitude it gave me!"
+y 3bq "I guess I still retain a good portion of my lifestyle that I grew up with..."
+mc "So why'd you move then?"
+y 3bf "It was because-"
+show yuri 3bo at h11 zorder 1
+play sound train
+"Suddenly, we're greeted by the sound of a train whistling by us as it slowly grinds to a halt at the station."
+"The sound is sudden enough to make us both jump a little out of our seats as we really weren't looking out for our train."
+show yuri 4bc
+"Yuri's face is bright red with embrassment as she scavenges through her bag for the tickets."
+"Without making eye contact, she hands me my ticket."
+mc "I assume that's our train..."
+y 3bq "Y-{w=0.38}yeah it is..."
+y "Sorry for acting so surprised..."
+y "I should've been paying attention for the train..."
+mc "It's fine, Yuri, really! I didn't even see it coming either!"
+mc "Come on, let's climb aboard!"
+"I stand up and offer Yuri my hand."
+show yuri 3bn
+"Yuri nervously looks up."
+"Why is she?"
+show yuri 3bo
+"..."
+"Oh...{w=0.38}right..."
+"Our conversation was going so well that the events that transpired earlier today semeed to have slipped my mind."
+show yuri 4bc
+"Yuri nervously stands up as she walks toward the train doors."
+show yuri at thide
+hide yuri
+"I'm an idiot..."
+"I shouldn't have done that! That was too soon!"
+
+if tell_monika == True:
+    "Well, at least it doesn't seem like she knew I told Monika about earlier..."
+    "Or at least she doesn't seem to suspect..."
+
+if tell_monika == False:
+    "Heck, she might've been mad at me had I told Monika what I thought I saw!"
+
+"I sigh to myslef as I join the line with Yuri."
+"We silently show our tickets to the security guard as he lets us pass onto the train."
+
+
+
+scene bg train_day
+with wipeleft_scene
+"As we board the train, Yuri immediately turns and sits on the far side of the cart, sitting as far away as possible from the other passengers who're sitting in the middle."
+"I gingerly walk over and take the seat next to her."
+show yuri 4bc at t11 zorder 1
+
+
+if encore_sayoriquestion_1 == True:
+    mc "I take it you're not big on sitting with others, huh?"
+    "Yuri simply nods her head."
+    jump y_train_ride
+
+if encore_sayoriquestion_1 == False:
+
+    if encore_festivalquestion_2 == "Natsuki":
+
+        if hangout1 == "Yuri":
+            if hangout2 == "Yuri":
+                mc "I take it you're not big on sitting with others, huh?"
+                "Yuri simply nods her head."
+                jump y_train_ride
+
+        if hangout1 != "Yuri":
+            if hangout2 == "Yuri":
+                mc "I take it you're not big on crowds..."
+                y "Yeah...{w=0.38}I'm really not..."
+                jump y_train_ride
+
+
+        if hangout1 == "Yuri":
+            if hangout2 != "Yuri":
+                mc "I take it you're not big on crowds..."
+                y "Yeah...{w=0.38}I'm really not..."
+                jump y_train_ride
+
+        if hangout1 != "Yuri":
+            if hangout2 != "Yuri":
+                mc "I take it you're not big on crowds..."
+                y "Yeah...{w=0.38}I'm really not..."
+                jump y_train_ride
+
+
+
+    if encore_festivalquestion_2 == "Yuri":
+
+        if hangout1 == "Yuri":
+            if hangout2 == "Yuri":
+                mc "I kind of assumed you'd want to sit away from everyone else..."
+                "Yuri simply nods her head."
+                jump y_train_ride
+
+        if hangout1 != "Yuri":
+            if hangout2 == "Yuri":
+                mc "I forgot you weren't big on crowds..."
+                y "Yeah...{w=0.38}I'm really not..."
+                jump y_train_ride
+
+
+        if hangout1 == "Yuri":
+            if hangout2 != "Yuri":
+                mc "I forgot you weren't big on crowds..."
+                y "Yeah...{w=0.38}I'm really not..."
+                jump y_train_ride
+
+        if hangout1 != "Yuri":
+            if hangout2 != "Yuri":
+                mc "I forgot you weren't big on crowds..."
+                y "Yeah...{w=0.38}I'm really not..."
+                jump y_train_ride
+
+
+label y_train_ride:
+
+mc "It's alright, I'm not being around people too much either..."
+mc "Matter of fact, I've kind of spent the last few years to myself..."
+show yuri 4ba
+mc "Though it wasn't exactly for the most productive reasons..."
+mc "Still, it was nice of Sayori to convince me to join the literature club."
+mc "I mean if it weren't for her, I don't think we'd be here now, would we?"
+y 4bb "I suppose..."
+y 3bq "To be honest, [player], I'm surprised you've been able to put up with me for this long..."
+y "Espeically with how I've been acting around you today..."
+y 3bv "Most people would just give up on me out of fustration..."
+y 3bt "And yet...{w=0.38}you're still here!"
+"I guess other than the girls at the club, I've been probably been the only other friend Yuri's had in a while..."
+
+if hangout2 == "Yuri":
+    "I mean, she did tell me as much yesterday..."
+
+else:
+    pass
+
+"I can't help but feel sorry for her."
+"Once you get to know her, she really is fun to be around!"
+"But, I guess most people haven't been able to connect with her like I have..."
+mc "I'm just trying to be the best friend I can be, Yuri..."
+mc "And to be fair, I might've gotten a little carried away earlier..."
+y 3bq "It's fine, [player]..."
+y 3bb "I appreciate your concern, but I really am fine."
+y 3bu "My cat got a little too...{w=0.38}aggresive when we were playing together last night..."
+mc "I see..."
+"At this point, Yuri's either telling me the truth about what happened, or she's just trying to mantain a lie."
+"I try to be subtle about the subject."
+mc "I didn't know you had any pets! I don't think you ever brought it up!"
+y 3bq "It's not something I go out of my way to bring up to people..."
+"I knew if Sayori ever got a pet, she'd be reminding people constantly..."
+"Though for better or worse, we've been spared of that because Sayori's parents split up a few years ago..."
+"She did always did want a puppy..."
+"Still, I'm a little surprised Yuri never brought it up in any conversation we've had since I joined..."
+mc "How come?"
+y "Uhh...{w=0.38}well..."
+play sound train
+show yuri 3bn at face
+"Suddenly the train kicks into motion, causing Yuri to slide into me, which in turn, makes slide into the rail."
+play sound train_journey loop
+mc "Agh!"
+y "I-{w=0.38}I'm so sorry, [player]! Are you hurt?"
+mc "No, no...{w=0.38}I'm fine..."
+show yuri 3bo at t11 zorder 1
+"Yuri scootches all the way back to the edge of her seat, her face bright with embrassment."
+"Even some of the other passengers in the car are looking on at the commotion."
+"I quickly notice that most of the other passengers are strapped in with seat belts."
+"I look down at my seat to find the buckle."
+"Well that would've been nice to have known about..."
+mc "Yuri, it's fine really..."
+mc "Who knew they had seat belts?"
+"Yuri awkardley looks down at her seat to to fit the strap into the buckle."
+y 1bq "Yeah, I should have told you about that..."
+y 1bt "The trains don't always stop and go smoothly..."
+mc "You take the train a lot?"
+y 3bb "Yes actually!"
+y 3bj "It's what one my means of transportation around town."
+y 3bb "I usually take the train to and from school, actually!"
+y 3bi "Though sometimes on a nice day, I'll brave a walk."
+mc "You live far from school?"
+y 1bf "Yes, I live all the way on the east side of town."
+show yuri 1be
+mc "Oh, wow!"
+mc "You certainly have the longest commute out of all of us!"
+mc "I mean, Sayori and I live pretty close to school, so we always walk there."
+
+if encore_festivalquestion_2 == "Yuri":
+    y 3ba "Yes, I do remember your house!"
+    y 3bj "I was actually pretty surprise with how close you were to school!"
+    mc "I take it you took the train to get all the way out here."
+    show yuri 1bc at t11 zorder 1
+    "Yuri simply nods her head."
+    y 1bu "But all things considered, I did enjoy my visit to your house, [player]..."
+    y 1bs "Even if we were just doing fesitival preperations, I had fun!"
+    y 1bu "And I wouldn't mind coming over again sometime if you'd want me to..."
+    "What's with her?"
+    show yuri 1ba at t11 zorder 1
+    "One minute she's hardly able to find the will to talk to me."
+    "Now she wants to hang out with me more?!?"
+    "She's just been all over the place..."
+    mc "Well...{w=0.38}I wouldn't mind having you over again!"
+
+if encore_festivalquestion_2 == "Natsuki":
+    y 3ba "That must be nice to be able to live so close to the school like that!"
+    mc "Yeah...{w=0.38}I guess I got lucky..."
+    y 3bb "I wouldn't mind hanging out your place sometime, [player]!"
+    y 3bq "If you'd ever want to that is..."
+    mc "Ah, you're not really missing much..."
+    mc "It's not like I live in a mansion like Monika probably does!"
+    y 3bj "I mean my house isn't exacltly anything stellar either, but your house is probably eaiser to get to."
+    mc "I suppose so..."
+    mc "And we could probably get a lot reading done together."
+    show yuri 1bc at t11 zorder 1
+    "Yuri simply nods her head."
+    "What's with her?"
+    show yuri 1ba at t11 zorder 1
+    "One minute she's hardly able to find the will to talk to me."
+    "Now she wants to hang out with me more?!?"
+    "She's just been all over the place..."
+    mc "Well...{w=0.38}I wouldn't mind having you over!"
+
+
+y 2bu "That's nice to hear, [player]!"
+show yuri 2bs
+"We smile warmly at each other for a few minutes, unsure of what to say or do next."
+"I decide against trying to bring up Yuri's cat again, as she was getting uncomfortable talking about the subject..."
+"And I wouldn't want to put her in a bad mood again..."
+"In hindsight, this wouldn't actually be a bad time to get some reading done..."
+mc "Hey, Yuri...{w=0.38}you were reading Portrait of Markov when I came over to you at the station, right?"
+y 2bf "Yes, why?"
+mc "Well...{w=0.38}I figured this would be a pretty good time to read some more!"
+mc "I imagine we could knock out a few chapters before we get there."
+y 2bb "That's actually a great idea, [player]!"
+y 2ba "We'll defintley have time to finish the next chapter at the very least!"
+mc "Sounds good to me!"
+show yuri 3bc
+"Yuri joyfully opens her bag and pulls out the copy of Portrait of Markov and puts the book between us, much like how we did earlier."
+show yuri 3ba
+"We share a warm smile between ourselves as we begin reading once again."
+show yuri at thide
+hide yuri
+stop sound
+scene bg garden_day
+with wipeleft_scene
+play music t6 fadein 2.0
+"After about an hour's worth of reading, we finally reach our stop and disembark from the train."
+"Yuri and I end up having to walk a dozen blocks to get to the entrance of the nature perserve, but considering that it was a nice day, it wasn't too much of an issue for us."
+"We mostly spent the duration of the walk talking about the events of the few chapters we managed to read."
+"I'm still surprised that we're almost getting close to the end of the book! It's defintley been one of the better books I've read over the last few years."
+"After a good twenty minutes of walking, we finally reach the entrance to the perserve."
+"I offered to pay the entry fee, but it turned out that Yuri had gotten the tickets in advance, so were able to walk right in."
+"I was immediately blown away with just how massive the perserve was, and it was all open space!"
+"Yuri and I opted to travel this one trail that deviated from the main path and took us deep into the perserve."
+"As we we're walking, I was sure to take in all my surroundings."
+"Seeing how green the grass was...{w=0.38}how clear the air was...{w=0.38}it almost felt like heaven!"
+show yuri 1bb at t11 zorder 1
+y "So, how is your first experience with a nature perserve going, [player]?"
+show yuri 1ba at t11 zorder 1
+mc "I love it!"
+mc "This is everything you said it'd be and more!"
+y 3bd "That's great to hear! I'm glad you're enjoying this experience!"
+
+if encore_sayoriquestion_1 == True:
+    mc "Well hey...{w=0.38}being here with you defintley makes this much more enjoyable..."
+    show yuri 4be
+    "Yuri immediately blushes, though I can't tell if it's out of shock or flattery."
+    "Part of me immediately regrets the way I worded that as well..."
+    "I really shouldn't be flirting with anyone when I'm committed to Sayori..."
+    "But a little flattery never hurt anyone..."
+
+
+if encore_sayoriquestion_1 == False:
+    mc "Well...{w=0.38}it helps that you're here..."
+    show yuri 4be
+    "Yuri immediately blushes a bright crimson."
+
+
+y "You don't really mean that...{w=0.38}do you?"
+mc "Of course I do!"
+mc "Yuri, it's enjoyable to be around you..."
+mc "You're not boring or dull or any of that!"
+mc "And sure you can get carried away from time to time, but who doesn't? It happens to all of us!"
+mc "I guess what I'm trying to say is: I'm glad we're here....{w=0.38}together..."
+y "I-{w=0.38}I see..."
+"Yuri is barley able to compose herself for several minutes, so we end up walking in silence as we head deeper into the nature perseve."
+show yuri 4ba
+stop music fadeout 4.0
+"During this period, I can't help but notice Yuri sneaking several glances in my direction."
+"At one point our eyes happen to meet of the blue, but instead of her looking off in her usual flustered manner, she doesn't break her gaze."
+"Naturally, this causes me to smile at her, but with really nothing to say, we just simply maintain our silence."
+show yuri at thide
+hide yuri
+scene bg garden_day
+with wipeleft_scene
+play music e5
+"As we walk further into the nature perserve, we start to notice that the insects flying about through the path happen growing in size.."
+"At first it started off as simple gnats and flies whizzing past us, it eventually turned into dragonflies and bees flying near us."
+show yuri 3bm at t11 zorder 1
+"Though surprsingly, Yuri seemed to be generally unbothered."
+"Not that I'm resentful to insects in anyway, I'm just not a fan of things flying near my face."
+"I guess Yuri might be used to it due to her upbringing."
+mc "You don't seem to mind all the bugs, Yuri."
+y 3bb "They're harmless creatures, [player], they're not going to harm you!"
+y 3bj "Though, I'll admit I don't care for the big insects flying near me."
+y 3bc "However, I do exceptions for butterflies..."
+mc "Butterflies, huh?"
+mc "How come?"
+y 3ba "They're quite elegant creatures, [player]! Butterflies are very friendly to humans!"
+y 3bb "I've grown to admire them over the years..."
+y 3bl "Seeing them flutter in the wind with such grace is truly a testament to the beauties of nature!"
+y "It's really no wonder why many authors throughout history have used them as some form of symbolism in their work..."
+y 3bi "I always did enjoy chasing after them when I was much younger."
+show yuri 1be
+"Sure enough, right as Yuri finished talking, we see a butterfly flutter down from a nearby tree and right into our path."
+"It's your usual orange and black pattern, though the pattern on it's wings is something I haven't really ever seen before on butterflies."
+"I guess they could've been introduced to the perserve..."
+y 1bs "My, aren't you beauitful?"
+show yuri 2bu
+"Yuri outstretches her plam, beckoning the butterfly to come to her."
+"And sure it enough, it does exactly that, promptly flying foward and landing in Yuri's palm."
+"After a few seconds, the butterfly then flutters over to Yuri's other hand, crawling down to her wrist."
+show yuri 2bc
+"Yuri smiles bashfully as her newfound friend explores her arm."
+#Yuri CG
+
+
+if encore_festivalquestion_2 == "Natsuki":
+
+    if hangout1 == "Yuri":
+        if hangout2 == "Yuri":
+            "I'm not really used to seeing Yuri smile like that..."
+            "The only times she's smiled like that has been when we we're reading together."
+            "Even though Yuri might try to apologize me later for how much attention she's giving the butterfly, I can't help but notice how incredibly cute she looks right now!"
+            "The way her long violet hair flows in the wind..."
+            "How the sound of her giggling gracefully echos through the air..."
+            "And how beautifully crimson her cheeks are!"
+            "It's like she's a completely different person!"
+            "No longer does she seemed to be worried about being judged, she's just simply living in the moment..."
+            "I think I can get used to this side of Yuri..."
+
+    if hangout1 != "Yuri":
+        if hangout2 == "Yuri":
+            "I haven't really seen Yuri smile like this until recently when we started reading together..."
+            "I may not be used to it, but it's nice to see Yuri smile so brightly."
+            "Even though she might try to apologize for 'looking weird' or something later, I really can't help but notice how incredibly adorable she looks right now!"
+            "Her long, violet hair flowing in the wind..."
+            "The sound of her giggling echoing through the air..."
+            "And how rosy her cheeks are right now..."
+            "If this the care-free side of Yuri...{w=0.38}I could defintley get used to this!"
+
+
+    if hangout1 == "Yuri":
+        if hangout2 != "Yuri":
+            "I don't think I've ever seen Yuri smile like that..."
+            "Granted, the only times I've had alone time with her have been today and on Monday..."
+            "Knowing how she is though, she might try to apologize to me later, thinking that I'm finding her weird or something..."
+            "But, I really can't help but notice how incredibly adorable she looks right now!"
+            "Her long, violet hair flowing in the wind..."
+            "The sound of her giggling echoing through the air..."
+            "And how rosy her cheeks are right now..."
+            "If this is what Yuri's like when she's having fun not reading, I think I coul get used to it!"
+
+
+    if hangout1 != "Yuri":
+        if hangout2 != "Yuri":
+            "I don't even think I've ever seen her smile like this before..."
+            "Granted, I haven't been around her much until today, it's still truly a pleasant sight!"
+            "Knowing how she is though, she might try to apologize to me later, thinking that I'm finding her weird or something..."
+            "But, I wish she could see just how incredibly cute she looks right now!"
+            "Her long, violet hair flowing in the wind..."
+            "The sound of her giggling echoing through the air..."
+            "And how rosy her cheeks are right now..."
+            "If this is what Yuri's always been like, I should defintley spend more time with her..."
+
+
+
+
+if encore_festivalquestion_2 == "Yuri":
+
+
+    if hangout1 == "Yuri":
+        if hangout2 == "Yuri":
+            "I haven't seen Yuri smile like that too much..."
+            "The only times she's smiled like that has been when we we're reading together."
+            "Even though Yuri might try to apologize me later for how much attention she's giving the butterfly, I can't help but notice how incredibly cute she looks right now!"
+            "The way her long violet hair flows in the wind..."
+            "How the sound of her giggling gracefully echos through the air..."
+            "And how beautifully crimson her cheeks are!"
+            "It's like she's a completely different person!"
+            "No longer does she seemed to be worried about being judged, she's just simply living in the moment..."
+            "I really do enjoy this side of Yuri..."
+
+
+    if hangout1 != "Yuri":
+        if hangout2 == "Yuri":
+            "I haven't really seen Yuri smile like this in a while..."
+            "She's usually only this happy when we're reading together..."
+            "But it's nice to see Yuri smile so brightly."
+            "Even though she might try to apologize for 'looking weird' or something later, I really can't help but notice how incredibly adorable she looks right now!"
+            "Her long, violet hair flowing in the wind..."
+            "The sound of her giggling echoing through the air..."
+            "And how rosy her cheeks are right now..."
+            "I wish Yuri was a little more open with herself..."
+
+
+
+    if hangout1 == "Yuri":
+        if hangout2 != "Yuri":
+            "It's been a while since I've seen Yuri smile like that..."
+            "She's only usually like that when we're reading together..."
+            "Knowing how she is though, she might try to apologize to me later, thinking that I'm finding her weird or something..."
+            "But, I really can't help but notice how incredibly adorable she looks right now!"
+            "Her long, violet hair flowing in the wind..."
+            "The sound of her giggling echoing through the air..."
+            "And how rosy her cheeks are right now..."
+            "I really should spend more time with her..."
+
+
+    if hangout1 != "Yuri":
+        if hangout2 != "Yuri":
+            "It's been a while since I've seen Yuri enjoy herself this much..."
+            "Granted, we haven't been around each other much recently, it's still truly a pleasant sight!"
+            "Knowing how she is though, she might try to apologize to me later, thinking that I'm finding her weird or something..."
+            "But, I wish she could see just how incredibly cute she looks right now!"
+            "Her long, violet hair flowing in the wind..."
+            "The sound of her giggling echoing through the air..."
+            "And how rosy her cheeks are right now..."
+            "I should defintley spend more time with her..."
+
+
+
+"I actually debate if I want to sneak a picture of her enjoying the company of her butterfly, but I didn't want to ruin the moment."
+"Instead, I simply stand by her as the butterfly continues to hop between Yuri's arms, crawling up and down before staying still for a few moments only to flutter over and repeat the same process again."
+"Yuri simply giggles and smiles as she watches it's movements."
+#End Yuri CG
+show yuri 2be at t11 zorder 1
+"After a few minutes, the butterfly lands on Yuri's nose."
+"For a moment, she's completelty still, not wanting to scare off the butterfly."
+show yuri 3bu
+"But the butterfly ends up flying away into the treeline, leaving Yuri brightly blushing."
+mc "I guess you were right about the butterflies!"
+y 3bs "That was truly one of the best experiences I've ever had with them!"
+y 3bd "I felt like I was a little girl on then, playing in our backyard chasing and playing with them!"
+show yuri 1ba
+mc "Well, I'm glad you enjoyed yourself Yuri!"
+y 3bq "Sorry that I couldn't really share the experience with you..."
+mc "Ah, don't worry about it! I'm sure we'll run into more along the way!"
+mc "Besides, I didn't want to disturb the moment with how cute you two looked!"
+show yuri 4be
+"Yuri's entire face immediately returns to crimson."
+y "Y-{w=0.38}you thought I looked cute?"
+mc "You always do..."
+mc "I guess that moment just happened to remind me of that fact..."
+y 3bs "[player]..."
+"We stand in silence for a few moments, simply gazing into each other's eyes."
+"Her violet eyes seem to hypontize me, as if they were telling me to come foward."
+"We end up both slowly shuffling closer to each other until out faces are only just a few inches apart."
+show yuri 4be
+"Yuri continues to blush a new shade of crimison with every passing second."
+"With nobody around and nothing stopping us...{w=0.38}this might be my chance to really make something happen with Yuri..."
+stop music fadeout 3.0
+"As much as the cicrumstances say to go for it, my conscious is telling me not to..."
+
+if encore_sayoriquestion_1 == True:
+    "I'd be betraying Sayori..."
+
+if encore_sayoriquestion_1 == False:
+    "Am I really sure I want to commit to Yuri now when I haven't decided what I wanted to say to Natsuki?"
+
+show yuri 3bn
+"Suddenly, Yuri seems to snap out of our trance, as if she just realized what was about to happen."
+y 1bq "Ah! Sorry..."
+y "I really wasn't paying attention..."
+y "It feels like something just came over me..."
+"Well so much for that..."
+"I try to go along with the awkward situation we've now found ourselves in."
+mc "I-{w=0.38}it's fine..."
+"I manage to stammer out."
+"We're both completely flustered for a few seconds until Yuri manages to muster up enough courage to talk."
+y "Well...{w=0.38}we can just keep walking if you'd like..."
+y "I'm plenty there's much more to see..."
+mc "Y-{w=0.38}yeah...{w=0.38}that works!"
+"Yuri and I then silently proceed to continue our walk down the path, hardly being able to make eye contact with each other."
+scene bg garden_dusk with dissolve_cg
+"After several hours of walking through the perserve, taking many different trails crisscrossing throughout the preserve, the sun finally starts to set."
+"As if on cue, several small animals start coming out from the tree line and onto the path."
+show yuri 1be at t11 zorder 1
+mc "Well, I take it we should start heading back."
+mc "The perserve is going to close pretty soon anyways..."
+y 1bh "Yes, I suppose it is indeed that time..."
+show yuri 1bg
+"I can tell Yuri isn't exactly keen on the idea of leaving, considering how much fun we've had with each other today."
+"We start walking back to the main trail as it would be the most direct path back to the entrance."
+"After several minutes, I've noticed that Yuri's maintained a rather conflicted epression on her face since we've decided to leave."
+"I assumed it was because she didn't want to leave, but something was telling me it was more than that..."
+"I decide to carefully ask her mood in a roundabout way, hoping to avoid another episode like earlier today."
+mc "We've had quite the day together, haven't we?"
+show yuri 1be
+"Yuri quizically looks up."
+mc "I mean, if you told me earlier after our argument that we would've spent all afternoon together, I thought you would've been joking!"
+y 1bv "Yes...{w=0.38}I do suppose this day had it's unexpected twists and turns..."
+show yuri 3bu
+"Yuri manages a smile as she looks off, but I can easily tell it's not genuine."
+"I let out a sigh as we keep on walking."
+"I just can't get through to her today for some reason..."
+"Seriously, what's with her?!?"
+"Suddenly Yuri grabs my arm."
+"I turn to her with a shocked expression on my face."
+y 3bw "I'm sorry...{w=0.38}[player]..."
+mc "For what?"
+show yuri 1bl at t11 zorder 1
+"Yuri releases her grip on me as she takes a moment to collect herself."
+"Finally, she lets it out."
+play music t7 fadein 2.0
+y 3bv "I...{w=0.38}I'm not trying to purposefully shut you out or anything..."
+y 3bw "I know that my behavior around you today has been rather...{w=0.38}erratic to say the least."
+y 3bt "I know I've been confusing and agitating throughout the entire day..."
+mc "Yuri...{w=0.38}it's fine...{w=0.38}really I-"
+y 1bv "It's not, [player]..."
+y "I haven't felt in control of my emotions, and I've been lashing out or acting cold towards you..."
+y 1bt "There really is no excuse for it!"
+y 2bq "But to tell you the truth, I've been wanting to ask you to come with me here for a while now..."
+y 2bs "And now that it's actually happening..."
+y 4be "I feel so happy!"
+
+if hangout1 == "Monika" or hangout2 == "Monika":
+    show y2by3 as yuri at t11 zorder 1
+    show screen tear(20, 0.1, 0.1, 0, 40)
+    pause 0.70
+    hide screen tear
+    pause 1.0
+    $ style.say_dialogue = style.edited
+    y "I FEEL LIKE I CAN NOW TELL YOU WHY I BROUGHT YOU ALL THE WAY OUT HERE!"
+    show y2by1 as yuri at t11 zorder 1
+    y "I'M GOING TO KIDNAP YOU SO I CAN LOCK YOU IN MY BASEMENT SO THAT YOU CAN BE ALL MINE"
+    show y2by4 as yuri at t11 zorder 1
+    y "WE'RE GOING TO BE TOGETHER FOREVER!"
+    show y2by3 as yuri at t11 zorder 1
+    y "DOESN'T THAT SOUND WONDERFUL, MY DARLING?!?!?!?!?"
+    $ style.say_dialogue = style.normal
+    $ _history_list.pop()
+    show screen tear(20, 0.1, 0.1, 0, 40)
+    play sound "sfx/glitch1.ogg"
+    pause 0.25
+    stop sound
+    hide screen tear
+    hide y2by3
+    show yuri 4be at t11 zorder 1
+    "I blink a few times just to make sure I heard Yuri right."
+    "What the hell did she just say."
+    mc "Uh...{w=0.38}can you repeat that?"
+    "I say that as I take slowly take a step back."
+    y 2bn "Uuu...{w=0.38}was I mumbling again?"
+    mc "No, no, you were loud and clear..."
+    mc "I just thought I heard you say something weird..."
+    mc "As in, something you normally wouldn't say..."
+    y 2bq "Oh..."
+    y "Well let me re-phrase myself..."
+    "I mentally brace myself to run in case Yuri tries something."
+    y 3bs "I'm glad you agreed to come with me and for putting up with me today."
+
+
+y 3bu "I've never really gotten the opportunity to share my interests with another boy..."
+y 3bs "Not until you came into my life..."
+y "You've showed me nothing but kidness, patience and respect towards me lately..."
+
+
+if encore_festivalquestion_2 == "Natsuki":
+
+    if hangout1 == "Yuri":
+        if hangout2 == "Yuri":
+            y 4be "I'm glad that we've started talking to each other!"
+
+    if hangout1 != "Yuri":
+        if hangout2 == "Yuri":
+            y 4be "I'm glad that we've started spending time together!"
+
+
+    if hangout1 == "Yuri":
+        if hangout2 != "Yuri":
+            mc "I still feel guiltiy for yesterday..."
+            mc "I didn't mean to hurt you or anything..."
+            y 2bq "Ah, well, I think we can move on from that..."
+            mc "Okay..."
+
+
+    if hangout1 != "Yuri":
+        if hangout2 != "Yuri":
+            mc "I mean, I know we haven't had the chance to really get to know each other..."
+            mc "So, I wanted to start things off with you on the right foot for once..."
+            y 1bs "I really appreciate that, [player]!"
+
+
+
+
+
+if encore_festivalquestion_2 == "Yuri":
+
+    if hangout1 == "Yuri":
+        if hangout2 == "Yuri":
+            y 4be "I'm glad that we've gotten to know each other so well!"
+
+    if hangout1 != "Yuri":
+        if hangout2 == "Yuri":
+            y 4be "I'm glad that we haven't stopped talking!"
+
+    if hangout1 == "Yuri":
+        if hangout2 != "Yuri":
+            mc "I still feel guiltiy for yesterday..."
+            mc "I didn't mean to hurt you or anything..."
+            y 2bq "Ah, well, I think we can move on from that..."
+            mc "Okay..."
+
+
+    if hangout1 != "Yuri":
+        if hangout2 != "Yuri":
+            mc "I mean...{w=0.38}I feel like I owe you an apology for more than just what happened yesterday..."
+            mc "I've felt like I've pretty much ghosted you since the festival..."
+            mc "And I feel bad about it..."
+            y 1bq "Well, what matters to me more is that you're here now."
+
+
+y 3bw "And to tell you something else...{w=0.38}I really haven't gone on a date before..."
+"I feel my blood rush to my face as soon Yuri utters 'date'..."
+"Not that I've thought this to be a date, but..."
+"I'm still surprised to hear Yuri call it as such!"
+y 3bv "I've been pretty much anxious this entire time..."
+y 3bk "Maybe what's causing this behavior..."
+mc "Well, in the spirit of honesty, I'll admit I've been a little anxious too..."
+show yuri 3be
+mc "I wasn't expecting this chance to hang around you more..."
+mc "And I was just hoping I wasn't going to bore you or something..."
+y 3bt "No, you've been great company, [player]!"
+y "Really!"
+y 3bv "I just didn't think you were going to be interested!"
+mc "Well...{w=0.38}a lot of things have piqued my interest lately..."
+mc "So, I appreciate you letting me tag along, I'd be happy to do this again!"
+y 3bc "I'll keep that in mind!"
+y 1bf "But...{w=0.38}I did have another question..."
+y 1bo "Something I'm a little embrassed to ask..."
+mc "Well, I'm not going to judge you, Yuri."
+mc "That's been my policy with you and everyone in the club from the get-go, and it's not going to change because of some silly question!"
+y 2bq "Well, I suppose it is a bit of a 'silly question'..."
+mc "Well, Sayori asks those all the time, so you can't do worse than her..."
+y 1bq "Alright..."
+y 3bt "Did you...{w=0.38}want us to kiss earlier?"
+y 3bu "After the butterfly flew away..."
+mc "Oh! Well, uh..."
+"I'm completely tounge tied here!"
+
+if encore_sayoriquestion_1 == True:
+    "I really can't answer truthfully without it considered being cheating..."
+    "But today I've crossed all sorts of lines I shouldn't have crossed in any respectable relationship..."
+
+
+if encore_sayoriquestion_1 == False:
+    "I defintley don't feel ready to confess my feelings for her..."
+    "Especially since I got Natsuki to deal with..."
+
+"I decide to answer indirectly, figuring that it'd be my best bet."
+show yuri 1bs
+mc "It might've crossed my mind..."
+show yuri 1bu
+y "I see..."
+"Not sure if that was the best to way to answer, but it's how I answered..."
+y 1bb "Well, I think we've had enough heartfelt sentimient for today, wouldn't you agree, [player]?"
+mc "Yeah, I do!"
+mc "Let's hope we can get to the entrance before they close it on us!"
+show yuri 1bd
+"Yuri lets out another giggle as we resume our walk to the entrance."
+stop music fadeout 2.0
+show yuri 1bc
+"Yuri is certaintly one of the most deep and complex people I've ever met."
+"And even though I still have some questions about her..."
+"At least I know for sure now how she feels about me..."
+show yuri at thide
+hide yuri
+scene bg train_night
+with wipeleft_scene
+play music t6 fadein 2.0
+play sound train_journey loop
+"Fortunately we were able to get out of the nature perserve just in time for closing."
+"Though, by the time we got out, night had already fallen, so we hurriedly went back to the station to catch the soonest possible train."
+"We were able to get lucky and got on a train about ten minutes after we got to the station."
+"As soon as the train started moving, I immediately felt my stomach growl."
+show yuri 1be at t11 zorder 1
+"I turn to Yuri, and we both quickly come to the realization that we didn't eat anything while we were at the perserve."
+"We only largely got by thanks to the occasional water fountain scattered along the trails."
+mc "I don't suppose you have any snacks on you, do you?"
+y 1bh "Let me see..."
+"Yuri digs through her bag and pulls out two chocolate bars."
+y 3bb "Here you are!"
+show yuri 2bc
+"Yuri hands me one of the chocolate bars and we immediately being stuffing our faces."
+"I quickly realize that Yuri gave me dark chocolate, which isn't something I've had in a while..."
+show yuri 2be
+mc "Hey, this is actually pretty good, Yuri!"
+mc "I haven't had dark chocolate in a while..."
+y 2bb "I'm glad you like it, [player]!"
+y 2bu "I saw that they were on sale at the supermarket and I figured I'd buy some."
+y 2bm "I just love the taste of it!"
+mc "Ha! Well I guess that makes two of us!"
+y 2bi "It's really surprising how much we have in common with each other..."
+mc "Yeah...{w=0.38}it really is..."
+show yuri 2bu
+"I see a smile form across Yuri's face as we return to eating our chocolate, which we manage to finish relatively quickly."
+y 2bf "So, have you started on your part for the photoshoot?"
+mc "I'm probably gonna start getting everything together later tonight, but I should have everything together by the weekend at the latest."
+y 1ba "Well, that's good to hear."
+y 1bq "I thought I left the banner in my room, but it wasn't there when I checked..."
+mc "Maybe you left it in the closet?"
+y 1bh "Perhaps, but it's not like I haven't gotten the opportunity to check lately..."
+y 1bl "Given how Natsuki is with the closet..."
+y 1bf "And she always gets there before I do..."
+mc "Well, I'm sure you can ask her to check..."
+y 1bq "Given her track record with keeping her manga together, I'm not entirely sure if she'd be capable of finding it..."
+y 1bv "I'd rather look myself."
+mc "Well what's stopping you?"
+y 1bk "I just don't want her coming to me the next time she can't find something in her closet."
+y 1br "You've seen how she's been yelling at Monika over it, and I'd rather not have that happen to me!"
+mc "Ah, that's fair..."
+"I would offer to check in the closet for her, but given that I don't feel ready to face Natsuki right now, I try to stay silent on the matter..."
+"I'd hate to prematurely trigger a confortnation over her letter..."
+y 1bt "Maybe you could check for me?"
+"Drat!"
+"Well, maybe I can get by not talking to Natsuki about it."
+"After all, she only gave it to me yesterday..."
+mc "I can try for you..."
+y 1ba "Thank you, [player]! I really appreciate it!"
+show yuri 1be
+mc "Though, if I may ask, I thought you and Natsuki were friends..."
+mc "Did something happen?"
+y 1bt "No, no! We're still friends!"
+y 1bv "I just don't want to risk conflict with her, that's all!"
+y 1bu "We've been trying to be nice to each other, and for the most part, I'd say it's been working out..."
+mc "Well that's good to hear!"
+
+
+if hangout2 == "Natsuki":
+    "I kind of figured that Yuri would've been mad at Natsuki as well for yesterday..."
+    "But, I can't seem to pick up on anything, so I'll put that to rest."
+
+
+if hangout2 == "Monika" or hangout2 == "Sayori" or hangout2 == "Natsuki":
+    pass
+
+show yuri 1be
+mc "It's good to see you two get along."
+mc "For a while, I was worried you two hated each other..."
+y 2bi "No, we never had anything serious against each other..."
+y 2bf "But ironically enough, we only started to really get to know each other around the time you joined."
+mc "Really?"
+y 2bu "Yeah..."
+y 2ba "I knew Monika from my biology class, and she just one day after our class walked over to me and invited me to join her club."
+y 2bu "I was kind of surprised that she even noticed me, let alone found the time to talk to me!"
+y 2ba "And I'm glad I took her up on it..."
+y 2bb "Through her, I met Sayori and Natsuki for the first time."
+y 2bj "Looking back, I probably interacted the most with Sayori."
+y 2bq "She'd always try to find someway to include me..."
+mc "Now that sounds like the Sayori I know!"
+mc "She really does go out of her way to make people feel right at home."
+y 1ba "She's been a positive presence in the club ever since we started, [player]!"
+y 1bf "If you don't mind me asking, how did you and Sayori meet?"
+y "I knew that you haven't met Natsuki and I before you joined, and you met Monika in one of your classes last year..."
+show yuri 1be
+mc "Well, we grew up with each other."
+mc "Our parents always lived next door to each other, and we just happened to be born around the same time, so they bonded that way."
+mc "And when we were little we'd always play with each other and for a while, we were best friends..."
+stop music fadeout 2.0
+y 1bf "Did something hapeen between you two?"
+"I feel a heart sting as I reflect on why Sayori and I drifted apart in the first place."
+
+if encore_sayoriquestion_1 == True:
+    "It's not something I like to reflect too much on, given how we are now..."
+
+if encore_sayoriquestion_1 == False:
+    "Even more so given last Sunday..."
+
+mc "I guess the only answer I can really give is that I discovered anime and video games and it just pulled me in..."
+mc "And we stopped hanging out together as often, and eventually we stopped hanging out all together."
+mc "Our freshman year, we hardly talked to each other..."
+mc "And she oversleeping around that time as well, so the opportunites to talk to each other were rather scarce."
+mc "Looking back on it, I was a terrible friend during that time to her, and I should've been there."
+"I wish I could tell Yuri more about Sayori and her depression, but that's not for me to reveal."
+y 1bh "I suppose I can relate to this on some level."
+play music t7 fadein 2.0
+y 2bu "When I moved into the city, I left practically everything I knew behind."
+y "All my friends, my memories, everything I've ever known was left behind."
+y 2bq "And I wasn't exactly great at adjusting."
+y 2bu "But in middle school, I did make friends with this one girl, and she was very kind to me."
+y 2bq "She's sort of the only reason I didn't have a total breakdown when I was dealing with the adjustment..."
+y 3bw "But she helped me power through, in spite of what everyone said and how they felt about me..."
+mc "What happened to her?"
+y 3bf "I still don't know to this day to be quite honest..."
+y 3bh "When eight grade rolled around, she didn't come to school with the rest of us..."
+y "We tried calling her parents, but they never took our calls."
+y "It got to the point where we went to their house and it was completetly abanonded!"
+mc "Yikes..."
+mc "It sounds like they skipped town or something..."
+y 1bg "That's my theory as well."
+y 1bf "My father did always say that he found her parents to be 'strange'..."
+stop music fadeout 1.0
+mc "In what way?"
+y 1bh "Like they were always hiding something..."
+play sound train
+"Suddenly we feel the sound of train hit the breaks, starting it's slow grind to a halt."
+show yuri 3bw
+"Yuri let's out a sigh."
+mc "I take this is your stop?"
+y 1bl "Sadly, yes..."
+y 1bq "I'm really sorry that I can't stay on with you for your journey home..."
+mc "It's alright, Yuri. You need to get yourself home."
+mc "I had fun today, I really did."
+y 1bu "Me too..."
+mc "Ah, come here..."
+show yuri 1bc at face
+play sound "sfx/fall.ogg"
+"I bring Yuri into my arms and hug her tightly."
+"Almost instantly, the stress and worries of the last two days instantly melt away."
+"I'm surprised with how tightly Yuri is holding onto to me as well, as if she too has been waiting to do this."
+"Her jasmine-scented pefume fills my nostrils with every breath I take as I continue to hold her tightly."
+"Even though there might be a few bystanders looking on at us, I couldn't really care less if there was."
+"Just having in her arms is the best thing I've ever felt...{w=0.38}it's hard for me to even put it into words!"
+"I really hate to see her go..."
+show yuri 4be at t11 zorder 1
+"Yuri eventually pulls away from me, blushing wildly."
+y "I-{w=0.38}I'll see you tomorrow!"
+mc "Bye, Yuri..."
+show yuri at lhide
+hide yuri
+"Yuri hurries off of the train right before the doors close."
+"I simply lean back in my seat, still dazed over the experience I've had with her today."
+"I'm still baffled about how I managed to turn today around and ended on a postive note with her!"
+"There really isn't anyone like Yuri..."
+"And I can defintley say she likes me..."
+"I know I like her back..."
+"But do I have the will to act on it?"
+"These thoughts continue to swirl in my head as the train starts up again."
+scene black
+with close_eyes
+scene bg residential_night
+with open_eyes
+"After about a half hour later, I finally reach my stop and begin the walk home."
+"All things considered, things wen't pretty well today."
+"I dug myself out of a hole with Yuri and managed to end things on a positive note."
+
+if encore_sayoriquestion_1 == True:
+    "Even though I probably crossed some lines I shouldn't have regarding my relationship with Sayori..."
+    "But at the same time, I feel oddly at peace with it."
+    "Maybe it's because nothing super romantic happened between us..."
+
+if encore_sayoriquestion_1 == False:
+    pass 
+
+"Still, I regret that I wasn't able to confirm my suspicions about her potentially cutting herself..."
+"Not that I was able to really see her wrists at all, she managed to keep them covered pretty well."
+"Even I found her excuse for not talking about her cat to be odd at best."
+"But, maybe she's just telling the truth and I'm being overly-paranoid..."
+"I have had a lot to think about recently, no use in trying to overexert my mind."
+"I finally reach my house and turn the key to enter."
+jump day3_night

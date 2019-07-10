@@ -91,7 +91,7 @@ by yagamirai10 [[Community Asset Folder]
 
 \"closet_dark/" by Agent Gold
 
-\"city_sidewalk/" https://animelandscape.blogspot.com/2018/01/city-anime-background.html
+\"city_sidewalk/" From: https://k-after.at.webry.info/200905/article_1.html
 
 \"city_sidewalk2/" Original background from https://k-after.at.webry.info/ and edited by yagamirai10#7046
 
@@ -99,7 +99,7 @@ by yagamirai10 [[Community Asset Folder]
 
 \"fountain_bg/" edited by POBAW, original image by Night Wolf23 on https://backgrounddownload.com/anime-visual-novel-background-8/
 
-\"library_bg/": https://animelandscape.blogspot.com/2018/02/library-anime-background.html
+\"library_bg/" From: https://k-after.at.webry.info/201012/article_1.html
 
 \"manga_section/": https://www.pinterest.com/pin/652529433479832795/
 
@@ -121,13 +121,21 @@ by yagamirai10 [[Community Asset Folder]
 
 \"school_bg/" by yagamirai10#7046 in the Community Assets Folder
 
-\"cafeteria/": Image Saved By Alania Frank on Pintrest https://i.pinimg.com/originals/ac/32/ab/ac32ab03f90d8d08ef88cfafe788bddf.jpg
+\"cafeteria/" Image Saved By Alania Frank on Pintrest https://i.pinimg.com/originals/ac/32/ab/ac32ab03f90d8d08ef88cfafe788bddf.jpg
 
-\"city_overlook/": From: https://archive.nyafuu.org/w/thread/1906906/
+\"city_overlook/" From: https://archive.nyafuu.org/w/thread/1906906/
 
 \"bg void/": www.videoblocks.com
 
 \"bg void_2/" by Kent Stone
+
+\"Garden Bg's/" From: https://k-after.at.webry.info/upload/detail/134747125007113227040_BG10b_80.jpg.html
+
+\"residential_2_bg/" From: https://k-after.at.webry.info/201101/article_1.html
+
+\"train_station_bg/" by LeoDeCraprio#4239 in the Community Assets Folder
+
+\"Train Bg's/" From: https://k-after.at.webry.info/200806/article_27.html
 
 \"Void Door/": https://icouldcrybutidonthavetime.files.wordpress.com/2014/10/doors.jpg"""
 
@@ -192,6 +200,12 @@ IPhone Ringing Sound Effect: By HyperView on YouTube
 audio.doorbell: By Acid Rival on YouTube
 (converted to .ogg by Andrew)
 
+audio.train: By Sound Effects & Templates on YouTube
+(converted to .ogg by Andrew)
+
+audio.train_journey: By SoundEffectsFactory on YouTube
+(converted to .ogg by Andrew)
+
 audio.gust: https://www.youtube.com/channel/UCTdyXszrxhMP-pbhy85Pa-g
 (converted to .ogg by Andrew)"""
 
@@ -218,6 +232,7 @@ Silhouetted Sprites by POBAW
 Yandere Sayori by Agent Gold
 \"y_mad\" by AjTheYandere
 Casual Monika Sprites by Cyrke on https://imgur.com/gallery/keKxUoB
+Original Monika Shrugging Sprite on https://knowyourmeme.com/photos/1337212-doki-doki-literature-club
 Other Unique Sprites by Agent Gold"""
 
     # 10

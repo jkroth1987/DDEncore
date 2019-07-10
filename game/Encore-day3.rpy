@@ -10780,8 +10780,6 @@ if hangout3 == "Yuri":
         jump y_hangout_ask
 
 
-
-
 label y_hangout_ask:
 
 y "H-{w=0.38}hey, [player]..."
@@ -10812,7 +10810,7 @@ mc "It's fine..."
 "Well this conversation has already turned out better than I thought it would, so I can't complain too much..."
 y "Hey, [player]?"
 mc "Yeah?"
-y "If you want...{w=0.38}I heard that they just opened a new Bontanical Garden in the city!"
+y "If you want...{w=0.38}I heard that they just opened a new nature perserve near the city!"
 y "I think visting it would clear our heads..."
 y "It will close by 8 tonight though, so if we want to go, we should probably get moving..."
 "The idea of hanging out some more with Yuri is tempting..."
@@ -10823,10 +10821,10 @@ y "It will close by 8 tonight though, so if we want to go, we should probably ge
 menu:
     "Should I hangout with Yuri?"
     "Yes.":
-        $ natsuki_hangout = True
+        $ yuri_hangout = True
         jump y_hangout
     "No.":
-        $ natsuki_hangout = False
+        $ yuri_hangout = False
         jump y_no_hangout
 
 label y_hangout:
@@ -10834,7 +10832,18 @@ label y_hangout:
 mc "Yeah, sure! I'd love to go with you!"
 y "Really?!? That's wondeful, [player]!"
 mc "Yeah...{w=0.38}I could use some fresh air right now anyways..."
-
+y "Well I suppose that makes two of us..."
+y "I can meet you by the train station if you wish, it's not too far from school..."
+mc "Yeah I can meet you there!"
+y "Great! I'll see you soon!"
+mc "Bye!"
+"Yuri hangs up the call."
+"I must admit that I'm surprised that Yuri's inviting me to spend more time with her."
+"It's not something I would've expected given what happened in the club today..."
+"But, I'm not going to pass up an opportunity to get closer to Yuri!"
+"And maybe there's a chance I can put my concerns about her saftey to rest..."
+"I grab my keys and wallet and hurriedly head towards the train station."
+jump yencore_4
 
 label y_no_hangout:
 
