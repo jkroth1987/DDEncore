@@ -16,7 +16,7 @@ init python:
     c_text_1 = """Created and Directed By: Andrew J. Striedl
 Writers: Agent Gold, Bug, Nick (Canad1an),
 Ploxmaster708, Rudy, Andrew J. Striedl
-Artists: 3Monika4 (Monika), Elaina Sasso,
+Artists: 3Monika4 (Monika), Elaina Sasso, Kiiori
  @reenaki_m (Instagram)
 Music: Daniel Kruyer (Angelic Beast)"""
 
@@ -101,6 +101,12 @@ by yagamirai10 [[Community Asset Folder]
 
 \"library_bg/" From: https://k-after.at.webry.info/201012/article_1.html
 
+\"livingroom_dark/" From Nuxill#7870 in the Community Assets Folder
+
+\"kitchen_dark/" From Nuxill#7870 in the Community Assets Folder
+
+\"kitchen_light/" From noah.rpy#1267 in the Community Assets Folder
+
 \"manga_section/": https://www.pinterest.com/pin/652529433479832795/
 
 \"monika_walk2/" edited by POBAW, original image on https://www.pinterest.com/pin/492933121699797858/?lp=true
@@ -120,6 +126,8 @@ by yagamirai10 [[Community Asset Folder]
 \"residential_dusk/" by SovietSpartan
 
 \"school_bg/" by yagamirai10#7046 in the Community Assets Folder
+
+\"space_room/" by yagamirai10#7046 in the Community Assets Folder
 
 \"cafeteria/" Image Saved By Alania Frank on Pintrest https://i.pinimg.com/originals/ac/32/ab/ac32ab03f90d8d08ef88cfafe788bddf.jpg
 
@@ -177,6 +185,9 @@ audio.fingersnap: By GamingSoundEffects on YouTube
 (converted to .ogg by Andrew)
 
 audio.bone: By SoundEffectsFactory on YouTube
+(converted to .ogg by Andrew)
+
+audio.drop: By Sound laboratory on YouTube
 (converted to .ogg by Andrew)
 
 audio.neck: From Doki Doki Literature Club

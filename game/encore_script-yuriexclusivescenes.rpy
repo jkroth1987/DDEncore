@@ -3073,7 +3073,6 @@ hide yuri
 stop sound
 scene bg garden_day
 with wipeleft_scene
-play music t6 fadein 2.0
 "After about an hour's worth of reading, we finally reach our stop and disembark from the train."
 "Yuri and I end up having to walk a dozen blocks to get to the entrance of the nature perserve, but considering that it was a nice day, it wasn't too much of an issue for us."
 "We mostly spent the duration of the walk talking about the events of the few chapters we managed to read."
@@ -3342,7 +3341,7 @@ mc "For what?"
 show yuri 1bl at t11 zorder 1
 "Yuri releases her grip on me as she takes a moment to collect herself."
 "Finally, she lets it out."
-play music t7 fadein 2.0
+play music t9 fadein 2.0
 y 3bv "I...{w=0.38}I'm not trying to purposefully shut you out or anything..."
 y 3bw "I know that my behavior around you today has been rather...{w=0.38}erratic to say the least."
 y 3bt "I know I've been confusing and agitating throughout the entire day..."
@@ -3614,7 +3613,7 @@ mc "And she oversleeping around that time as well, so the opportunites to talk t
 mc "Looking back on it, I was a terrible friend during that time to her, and I should've been there."
 "I wish I could tell Yuri more about Sayori and her depression, but that's not for me to reveal."
 y 1bh "I suppose I can relate to this on some level."
-play music t7 fadein 2.0
+play music t9 fadein 2.0
 y 2bu "When I moved into the city, I left practically everything I knew behind."
 y "All my friends, my memories, everything I've ever known was left behind."
 y 2bq "And I wasn't exactly great at adjusting."
@@ -3623,9 +3622,9 @@ y 2bq "She's sort of the only reason I didn't have a total breakdown when I was 
 y 3bw "But she helped me power through, in spite of what everyone said and how they felt about me..."
 mc "What happened to her?"
 y 3bf "I still don't know to this day to be quite honest..."
-y 3bh "When eight grade rolled around, she didn't come to school with the rest of us..."
+y 3bh "When eighth grade rolled around, she didn't come to school with the rest of us..."
 y "We tried calling her parents, but they never took our calls."
-y "It got to the point where we went to their house and it was completetly abanonded!"
+y "It got to the point where we went to their house and it was completetly abandoned!"
 mc "Yikes..."
 mc "It sounds like they skipped town or something..."
 y 1bg "That's my theory as well."
@@ -3634,7 +3633,7 @@ stop music fadeout 1.0
 mc "In what way?"
 y 1bh "Like they were always hiding something..."
 play sound train
-"Suddenly we feel the sound of train hit the breaks, starting it's slow grind to a halt."
+"Suddenly, we hear the horn of the train, starting it's slow grind to a halt."
 show yuri 3bw
 "Yuri let's out a sigh."
 mc "I take this is your stop?"
@@ -3681,7 +3680,7 @@ if encore_sayoriquestion_1 == True:
     "Maybe it's because nothing super romantic happened between us..."
 
 if encore_sayoriquestion_1 == False:
-    pass 
+    pass
 
 "Still, I regret that I wasn't able to confirm my suspicions about her potentially cutting herself..."
 "Not that I was able to really see her wrists at all, she managed to keep them covered pretty well."

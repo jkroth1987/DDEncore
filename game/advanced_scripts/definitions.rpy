@@ -118,6 +118,7 @@ define audio.doorbell = "mod_assets/audio/Doorbell.ogg"
 define audio.gust = "mod_assets/audio/Gust.ogg" #Wind Gust
 define audio.train = "mod_assets/audio/Train.ogg"
 define audio.train_journey = "mod_assets/audio/Train-Journey.ogg"
+define audio.drop2 = "mod_assets/audio/drop2.ogg"
 #--Encore's New Music
 define audio.e1 = "<loop 0>mod_assets/audio/void1.ogg" #The Void (First Void Scene Music)
 define audio.f1 = "<loop 0>mod_assets/audio/mainmenu.ogg" #Doki Doki Forever (Main Menu Music, Doki Doki!~)
@@ -211,6 +212,10 @@ image bg train_day = "mod_assets/bgs/train_day.png"
 image bg train_station = "mod_assets/bgs/train_station.png"
 image bg garden_dusk = "mod_assets/bgs/garden_dusk.png"
 image bg garden_day = "mod_assets/bgs/garden_day.png"
+image bg space_room = "mod_assets/bgs/space_room.png"
+image bg kitchen_dark = "mod_assets/bgs/kitchen_dark.png"
+image bg kitchen_light = "mod_assets/bgs/kitchen_light.png"
+image bg livingroom_dark = "mod_assets/bgs/livingroom_dark.png"
 
 image glitch_color:
     ytile 3
@@ -1459,7 +1464,9 @@ default natsuki_continued_hug = False #Do you let Natsuki keep hugging you on Da
 default sayori_ice = True #Do you share your ice cream with Sayori on Day 3?
 default tell_monika = True #Do you tell Monika about Yuri on Day 3?
 default sayori_hangout = True #Do you get food with Sayori on Day 3?
-default natsuki_hangout = True #Do yoy hangout with Natsuki outside of school on Day 3?
+default natsuki_hangout = True #Do you hangout with Natsuki outside of school on Day 3?
+default monika_hangout = True #Do you hangout with Monika outside of school on Day 3?
+default yuri_hangout = True #Do you hangout with Yuri outside of school on Day 3?
 
 # Instantiating variables for poem appeal. This is how much each character likes the poem for each day.
 # -1 = Dislike, 0 = Neutral, 1 = Like
@@ -1724,6 +1731,16 @@ image y_mad = "mod_assets/sprites/GrrYuri.png"
 image y2by1 = "mod_assets/sprites/y2by1.png"
 image y2by3 = "mod_assets/sprites/y2by3.png"
 image y2by4 = "mod_assets/sprites/y2by4.png"
+image yuri_ghost1 = "mod_assets/sprites/yuri_ghost1.png"
+image yuri_ghost2 = "mod_assets/sprites/yuri_ghost2.png"
+image yuri_ghost3 = "mod_assets/sprites/yuri_ghost3.png"
+image yuri_ghost4 = "mod_assets/sprites/yuri_ghost4.png"
+image yuri_knife1 = "mod_assets/sprites/yuri_knife1.png"
+image yuri_knife2 = "mod_assets/sprites/yuri_knife2.png"
+image yuri_knife3 = "mod_assets/sprites/yuri_knife3.png"
+image yuri_knife4 = "mod_assets/sprites/yuri_knife4.png"
+image yuri_knife5 = "mod_assets/sprites/yuri_knife5.png"
+image yuri_knife6 = "mod_assets/sprites/yuri_knife6.png"
 #image yuri u122218 = im.Composite((960, 960), (0, 0), "mod_assets/character_images/yuri/1_uniform/1_body_left/1.png", (0, 0), "mod_assets/character_images/yuri/1_uniform/2_body_right/2.png", (0, 0), "mod_assets/character_images/yuri/2_face/base.png", (0, 0), "mod_assets/character_images/yuri/2_face/1_mouth/2.png", (0, 0), "mod_assets/character_images/yuri/2_face/2_nose/2.png", (0, 0), "mod_assets/character_images/yuri/2_face/3_eyes/1.png", (0, 0), "mod_assets/character_images/yuri/2_face/4_eyebrows/8.png")
 #image yuri u114221 = im.Composite((960, 960), (0, 0), "mod_assets/character_images/yuri/1_uniform/1_body_left/1.png", (0, 0), "mod_assets/character_images/yuri/1_uniform/2_body_right/1.png", (0, 0), "mod_assets/character_images/yuri/2_face/base.png", (0, 0), "mod_assets/character_images/yuri/2_face/1_mouth/4.png", (0, 0), "mod_assets/character_images/yuri/2_face/2_nose/2.png", (0, 0), "mod_assets/character_images/yuri/2_face/3_eyes/2.png", (0, 0), "mod_assets/character_images/yuri/2_face/4_eyebrows/1.png")
 #image yuri u125111 = im.Composite((960, 960), (0, 0), "mod_assets/character_images/yuri/1_uniform/1_body_left/1.png", (0, 0), "mod_assets/character_images/yuri/1_uniform/2_body_right/2.png", (0, 0), "mod_assets/character_images/yuri/2_face/base.png", (0, 0), "mod_assets/character_images/yuri/2_face/1_mouth/5.png", (0, 0), "mod_assets/character_images/yuri/2_face/2_nose/1.png", (0, 0), "mod_assets/character_images/yuri/2_face/3_eyes/1.png", (0, 0), "mod_assets/character_images/yuri/2_face/4_eyebrows/1.png")

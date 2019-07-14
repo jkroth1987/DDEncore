@@ -2171,4 +2171,4 @@ if encore_sayoriquestion_1 == False:
 "I then lumber up to my bedroom before heading upstairs."
 scene black
 with close_eyes
-jump day3_mvoid
+jump day3_night
