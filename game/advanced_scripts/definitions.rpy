@@ -217,6 +217,31 @@ image bg kitchen_dark = "mod_assets/bgs/kitchen_dark.png"
 image bg kitchen_light = "mod_assets/bgs/kitchen_light.png"
 image bg livingroom_dark = "mod_assets/bgs/livingroom_dark.png"
 
+# Space room code, ported from script-ch30
+image mask_test = AnimatedMask("#ff6000", "mask_mask", "maskb", 0.10, 32)
+image mask_test2 = AnimatedMask("#ffffff", "mask_mask", "maskb", 0.03, 16)
+image mask_test3 = AnimatedMask("#ff6000", "mask_mask_flip", "maskb", 0.10, 32)
+image mask_test4 = AnimatedMask("#ffffff", "mask_mask_flip", "maskb", 0.03, 16)
+
+image mask_2:
+    "images/cg/monika/mask_2.png"
+    xtile 3 subpixel True
+    block:
+        xoffset 1280
+        linear 1200 xoffset 0
+        repeat
+
+image mask_3:
+    "images/cg/monika/mask_3.png"
+    xtile 3 subpixel True
+    block:
+        xoffset 1280
+        linear 180 xoffset 0
+        repeat
+
+image room_mask = LiveComposite((1280, 720), (0, 0), "mask_test", (0, 0), "mask_test2")
+image room_mask2 = LiveComposite((1280, 720), (0, 0), "mask_test3", (0, 0), "mask_test4")
+
 image glitch_color:
     ytile 3
     zoom 2.5
@@ -1760,6 +1785,18 @@ image natsuki 1b shadow = shadow("mod_assets/sprites/char_bases/nb_base")
 image yuri 1shadow = shadow("mod_assets/sprites/char_bases/y_base")
 image yuri 1bshadow = shadow("mod_assets/sprites/char_bases/yb_base")
 image monika 1shadow = shadow("mod_assets/sprites/char_bases/m_base")
+
+image yuri strobe:
+    block:
+        "mod_assets/sprites/yuri_ghost3.png" # Show the first image
+        0.1 # Wait this many seconds
+        "mod_assets/sprites/yuri_ghost4.png" # Show the second image
+        0.1 # Wait this many seconds
+        repeat # Repeat over and over
+    
+    time 3.0 # After this many seconds, stop flashing and show the next image
+    # copied from yuri 3y3
+    im.Composite((960, 960), (0, 0), "yuri/2l.png", (0, 0), "yuri/2r.png", (0, 0), "yuri/y3.png")
 
 #This channel is used for times when secondary tracks are needed to be played aside music.
 #like if we needed m1 to play AND heartbeat to play

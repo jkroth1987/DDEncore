@@ -13013,10 +13013,11 @@ $ style.say_dialogue = style.edited
 y "You should've checked the couches, [player]."
 $ style.say_dialogue = style.normal
 mc "Wha-"
-show yuri_ghost3 as yuri at face
-show yuri_ghost3 as yuri at thide
-show yuri_ghost4 as yuri at face
-show yuri_ghost4 as yuri at thide
+show yuri strobe at face
+#show yuri_ghost3 as yuri at face
+#show yuri_ghost3 as yuri at thide
+#show yuri_ghost4 as yuri at face
+#show yuri_ghost4 as yuri at thide
 play music e9
 "Yuri's sudden apperance behind makes me fall backwards into my kitchen table."
 "Before I have time to react, I realize I'm practically backed into a corner."
@@ -13125,12 +13126,22 @@ mc "HELP!"
 y "Stop struggling my darling..."
 y "I'm only doing this because I love you..."
 #Bloodscreen
+show veins onlayer front:
+    additive 1.0
+#show veins zorder 10:
+#    alpha 1.0
+    block:
+        easeout 1.0 alpha 0.5
+        easein 1.0 alpha 1.0
+        repeat
 play sound stab
 "I feel the weight of Yuri's knife thrusted into the back of my neck."
 "I try to scream but nothing even comes out of my lungs..."
 "Instead the world around me simply fades to back, with the last thing I hear is Yuri's maniacal laughter."
 #Stop all effects
 #Hide textbox
+window hide
+hide veins onlayer front
 scene black
 with close_eyes
 $ renpy.pause(delay=5.0, hard=True)
