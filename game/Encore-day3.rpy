@@ -13111,14 +13111,14 @@ show veins onlayer front:
 "It hurts to breathe..."
 "I try to look up at Natsuki, whose continuing to yell at me."
 "I'm barley able to make her out..."
-n "IS THIS HOW YOU EXPECT TO HELP ME, [player]?!?!?!"
+n "IS THIS HOW YOU EXPECT TO HELP ME, [PLAYER]?!?!?!"
 n "HAVE YOU CONSIDERED THAT MAYBE I DON'T WANT YOUR HELP?!?!!"
-show n_rects_ghost1 zorder 4
-show n_rects_ghost2 zorder 4
-show n_rects_ghost3 zorder 4
+show n_encore_rects_ghost1 zorder 4
+show n_encore_rects_ghost2 zorder 4
+show n_encore_rects_ghost3 zorder 4
 n "YOU'RE SO IGNORANT!!!"
 n "AND IN MY FAMILY, THERE'S PRICE FOR THAT!"
-n "SO YOU WANNA KNOW HOW YOU CAN 'HELP' ME, [player]?!?!"
+n "SO YOU WANNA KNOW HOW YOU CAN 'HELP' ME, [PLAYER]?!?!"
 n "NEVER TALK TO ME AGAIN!!!!"
 n "BECAUSE I..."
 n "NEVER."
@@ -13126,7 +13126,13 @@ n "LIKED."
 $ style.say_dialogue = style.edited
 n "YOU!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
 $ style.say_dialogue = style.normal
-show n_rects_ghost3 at face
+show natsuki at face
+show n_rects_ghost1:
+    size (40, 50)
+show n_rects_ghost2:
+    size (40, 50)
+show n_rects_ghost3:
+    size (50, 30)
 play sound fall
 "Natsuki proceeds to get on top of me and wraps her hands around my throat."
 "She proceeds to squeeze tightly, immediately causing me to gag."
@@ -13145,6 +13151,9 @@ play sound bone
 "...\"{w=0.75}{nw}"
 show natsuki at thide
 hide natsuki
+hide n_rects_ghost1
+hide n_rects_ghost2
+hide n_rects_ghost3
 window hide
 hide veins onlayer front
 hide layer master

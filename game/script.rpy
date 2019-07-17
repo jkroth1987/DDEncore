@@ -21,6 +21,8 @@ label start:
     $ n_name = "Natsuki"
     $ y_name = "Yuri"
     $ e_name = "Extra"
+    
+    $ PLAYER = player.upper()
 
 
     $ quick_menu = True

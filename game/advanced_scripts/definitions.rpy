@@ -979,6 +979,65 @@ image natsuki vomit = "natsuki/vomit.png"
 image n_blackeyes = "images/natsuki/blackeyes.png"
 image n_eye = "images/natsuki/eye.png"
 
+image n_encore_rects_ghost1:
+    RectCluster(Solid("#000"), 4, 15, 5).sm
+    pos (580, 270)
+    size (20, 25)
+    alpha 0.0
+    4.0
+    easeout 8.0 alpha 1.0
+
+image n_encore_rects_ghost2:
+    RectCluster(Solid("#000"), 4, 15, 5).sm
+    pos (652, 264)
+    size (20, 25)
+    alpha 0.0
+    4.0
+    easeout 8.0 alpha 1.0
+
+image n_encore_rects_ghost3:
+    RectCluster(Solid("#000"), 4, 15, 5).sm
+    pos (616, 310)
+    size (25, 15)
+    alpha 0.0
+    4.0
+    easeout 8.0 alpha 1.0
+    
+image natsuki encore_ghost_base:
+    "natsuki 1ba"
+image natsuki encore_ghost1:       #Eyes begin to fade
+    "natsuki 1bl"
+    "natsuki encore_ghost_base" with Dissolve(10.0, alpha=True)
+
+init python:
+    class RectCluster(object):
+        def __init__(self, theDisplayable, numRects=12, areaWidth = 30, areaHeight = 30):
+            self.sm = SpriteManager(update=self.update)
+            self.rects = [ ]
+            self.displayable = theDisplayable
+            self.numRects = numRects
+            self.areaWidth = areaWidth
+            self.areaHeight = areaHeight
+
+            for i in range(self.numRects):
+                self.add(self.displayable)
+           
+        def add(self, d):
+            s = self.sm.create(d)
+            s.x = (random.random() - 0.5) * self.areaWidth * 2
+            s.y = (random.random() - 0.5) * self.areaHeight * 2
+            s.width = random.random() * self.areaWidth / 2
+            s.height = random.random() * self.areaHeight / 2
+            self.rects.append(s)
+            
+        def update(self, st):
+            for s in self.rects:
+                s.x = (random.random() - 0.5) * self.areaWidth * 2
+                s.y = (random.random() - 0.5) * self.areaHeight * 2
+                s.width = random.random() * self.areaWidth / 2
+                s.height = random.random() * self.areaHeight / 2
+            return 0
+
 # Yuri
 image yuri 1 = im.Composite((960, 960), (0, 0), "yuri/1l.png", (0, 0), "yuri/1r.png", (0, 0), "yuri/a.png")
 image yuri 2 = im.Composite((960, 960), (0, 0), "yuri/1l.png", (0, 0), "yuri/2r.png", (0, 0), "yuri/a.png")
@@ -1431,6 +1490,7 @@ define _dismiss_pause = config.developer
 
 default persistent.playername = ""
 default player = persistent.playername
+default PLAYER = persistent.playername.upper()
 default persistent.playthrough = 0
 default persistent.yuri_kill = 0
 default persistent.seen_eyes = None
