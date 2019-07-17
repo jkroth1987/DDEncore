@@ -1003,6 +1003,24 @@ image n_encore_rects_ghost3:
     4.0
     easeout 8.0 alpha 1.0
     
+image n_encore_rects_ghost1 large:
+    RectCluster(Solid("#000"), 4, 30, 10).sm
+    pos (664, 289)
+    size (40, 50)
+    alpha 1.0
+
+image n_encore_rects_ghost2 large:
+    RectCluster(Solid("#000"), 4, 30, 10).sm
+    pos (521, 303)
+    size (40, 50)
+    alpha 1.0
+
+image n_encore_rects_ghost3 large:
+    RectCluster(Solid("#000"), 4, 30, 10).sm
+    pos (599,385)
+    size (50, 30)
+    alpha 1.0
+    
 image natsuki encore_ghost_base:
     "natsuki 1ba"
 image natsuki encore_ghost1:       #Eyes begin to fade

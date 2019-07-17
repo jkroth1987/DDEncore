@@ -13127,12 +13127,9 @@ $ style.say_dialogue = style.edited
 n "YOU!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
 $ style.say_dialogue = style.normal
 show natsuki at face
-show n_rects_ghost1:
-    size (40, 50)
-show n_rects_ghost2:
-    size (40, 50)
-show n_rects_ghost3:
-    size (50, 30)
+show n_encore_rects_ghost1 large
+show n_encore_rects_ghost2 large
+show n_encore_rects_ghost3 large
 play sound fall
 "Natsuki proceeds to get on top of me and wraps her hands around my throat."
 "She proceeds to squeeze tightly, immediately causing me to gag."
@@ -13151,9 +13148,9 @@ play sound bone
 "...\"{w=0.75}{nw}"
 show natsuki at thide
 hide natsuki
-hide n_rects_ghost1
-hide n_rects_ghost2
-hide n_rects_ghost3
+hide n_encore_rects_ghost1
+hide n_encore_rects_ghost2
+hide n_encore_rects_ghost3
 window hide
 hide veins onlayer front
 hide layer master
