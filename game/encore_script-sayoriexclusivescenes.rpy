@@ -5602,7 +5602,7 @@ mc "Have you...{w=0.38}ever thought about seeing someone about this?"
 "There's a long pause of silence between us."
 show sayori 1bg
 "Finally Sayori turns to me with a pained look in her eyes"
-play music t7 fadein 2.0
+play music t9 fadein 2.0
 s 1bh "I mean...{w=0.38}I have..."
 "I'm shocked as I hear this."
 "She's been debating about whether to seek help for all these years?"
@@ -5807,7 +5807,7 @@ if encore_sayoriquestion_1 == False:
     "This is probably the closest I've felt to being a couple with her..."
 
 "Though eventually Sayoru is forced to let go as we stop at our houses."
-show sayori 1by
+show sayori 1by at t11 zorder 1
 s "I'll...{w=0.38}see you tomorrow, [player]..."
 "I can still tell she's flustered over the walk back."
 "Though I can feel my face is a little red as well."
@@ -5823,11 +5823,11 @@ if tell_s == False:
 
 
 mc "See you tomorrow."
-show sayori 4bq
+show sayori 4bq at t11 zorder 1
 "I take Sayori into my arms and hug her tightly."
 
 if encore_sayoriquestion_1 == True:
-    show sayori 4bs
+    show sayori 4bs at t11 zorder 1
     "I decde to throw in a peck on the cheek for good measure, which she seemed to enjoy as she giggled."
 
 if encore_sayoriquestion_1 == False:

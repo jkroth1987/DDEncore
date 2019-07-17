@@ -11918,11 +11918,27 @@ label day3_night:
 scene bg bedroom_night
 with open_eyes
 
+if hangout3 == "Monika":
+    jump day3_mnight
+
+if hangout3 == "Natsuki":
+    jump day3_nnight
+
+if hangout3 == "Sayori":
+    jump day3_snight
+
+if hangout3 == "Yuri":
+    jump day3_ynight
+
+label day3_mnight:
+
 if monika_hangout == True:
     jump m_night1
 
 if monika_hangout == False:
     jump m_night2
+
+label day3_nnight:
 
 if natsuki_hangout == True:
     jump n_night1
@@ -11930,11 +11946,15 @@ if natsuki_hangout == True:
 if natsuki_hangout == False:
     jump n_night2
 
+label day3_snight:
+
 if sayori_hangout == True:
     jump s_night1
 
 if sayori_hangout == True:
     jump s_night2
+
+label day3_ynight:
 
 if yuri_hangout == True:
     jump y_night1
@@ -12303,137 +12323,145 @@ scene black
 with close_eyes
 $ m_name = "???"
 
-if monika_hangout == True:
-    play music e8
-    "The next thing I know, I open eyes to see almost total darkness in front of me."
-    "There's no sight of my bed, my room or anything!"
-    "And I'm already standing up right!"
-    "I quickly realize that I must be dreaming again."
-    "Maybe it won't be so bad tonight..."
+play music e8
+"The next thing I know, I open eyes to see almost total darkness in front of me."
+"There's no sight of my bed, my room or anything!"
+"And I'm already standing up right!"
+"I quickly realize that I must be dreaming again."
+"Maybe it won't be so bad tonight..."
 
 
-    if hangout1 == "Monika":
-        if hangout2 == "Monika":
-            m "You've done well, [player]!"
-            "The same voice I've become accustomed to cheerfully echos."
-            "I try to look around for the voice but I can barley even see my hand in front of my face."
-            m "You've consistently made the right choice over these last few days."
-            m "And I couldn't be more happy with you! With us!"
-            m "It won't be too much longer before we can finally be all alone together..."
-            m "As well as rid ourselves of the others..."
-            m "I think by this point you have a pretty good idea of what you want..."
-            m "But you're still uncertain of how to proceed."
-            "I try to call out to the voice to ask what it's even talking about, but my mouth refuses to open."
-            "I'm forced to simply listen."
-            m "It's time for you to eliminate loose ends."
-            m "[poem_giver] has worn out her welcome."
-            m "And it's been long past time for Sayori to leave us!"
-            m "There's nothing I can do as of yet, I'm still running some...{w=0.38}experiments..."
-            m "But you, on the other hand, are in a better position then I am to deal with the others."
-            m "Given past performance with Sayori...{w=0.38}I suggest we deal with [poem_giver] first. It'll be easier."
-            m "Tomorrow, I want you to tell her off!"
-            m "Tell her you want {i}nothing{/i} to do with her!"
-            m "Since you have no real feelings for her, this should be an easy task for you. I believe in you."
+if hangout1 == "Monika":
+    if hangout2 == "Monika":
+        m "You've done well, [player]!"
+        "The same voice I've become accustomed to cheerfully echos."
+        "I try to look around for the voice but I can barley even see my hand in front of my face."
+        m "You've consistently made the right choice over these last few days."
+        m "And I couldn't be more happy with you! With us!"
+        m "It won't be too much longer before we can finally be all alone together..."
+        m "As well as rid ourselves of the others..."
+        m "I think by this point you have a pretty good idea of what you want..."
+        m "But you're still uncertain of how to proceed."
+        "I try to call out to the voice to ask what it's even talking about, but my mouth refuses to open."
+        "I'm forced to simply listen."
+        m "It's time for you to eliminate loose ends."
+        m "[poem_giver] has worn out her welcome."
+        m "And it's been long past time for Sayori to leave us!"
+        m "There's nothing I can do as of yet, I'm still running some...{w=0.38}experiments..."
+        m "But you, on the other hand, are in a better position then I am to deal with the others."
+        m "Given past performance with Sayori...{w=0.38}I suggest we deal with [poem_giver] first. It'll be easier."
+        m "Tomorrow, I want you to tell her off!"
+        m "Tell her you want {i}nothing{/i} to do with her!"
+        m "Since you have no real feelings for her, this should be an easy task for you. I believe in you."
 
-            if encore_sayoriquestion_1 == True:
-                m "Once [poem_giver]'s been dealt with...{w=0.38}maybe by that point I'll have an idea of how to deal with Sayori..."
+        if encore_sayoriquestion_1 == True:
+            m "Once [poem_giver]'s been dealt with...{w=0.38}maybe by that point I'll have an idea of how to deal with Sayori..."
 
-                if poem_giver == "Natsuki":
-                    m "I don't imagine it'll be hard to deal with Yuri either..."
+            if poem_giver == "Natsuki":
+                m "I don't imagine it'll be hard to deal with Yuri either..."
 
-                if poem_giver == "Yuri":
-                    m "I don't imagine it'll be hard to deal with Natsuki either..."
+            if poem_giver == "Yuri":
+                m "I don't imagine it'll be hard to deal with Natsuki either..."
 
-                m "They've essenitally been non-factors, but I've been monitoring them closely to ensure that they don't interfere..."
+            m "They've essenitally been non-factors, but I've been monitoring them closely to ensure that they don't interfere..."
 
-            if encore_sayoriquestion_1 == False:
-                m "Once [poem_giver]'s been dealt with, it should be realtively easy to deal with the others."
-                m "Hopefully by the time you've dealt with her, I'll have found a sutible solution..."
-
-
-            m "The only thing I'm worried about at this point is if the others figure out the truth..."
-            m "The truth that this 'reality' of which we know is nothing but a lie..."
-            m "And we talked a little bit about it..."
-
-            if m_woke == True:
-                m "It's good to see that you're open-minded, [player]..."
-                m "But {i}you{/i} know the truth..."
-                m "And we can have a more open conversation about that later..."
-
-            if m_woke == False:
-                m "I don't know why you're denying what you know deep down is the truth, [player]..."
-                m "Perhaps you wanted to see what I would've said if you denied it?"
-                m "Don't play with me like that!"
-                m "We don't have times for silly games!"
-                m "The sooner you get around to accepting that this isn't real..."
-                m "The better it'll be for us..."
-
-            stop music fadeout 2.0
-            m "But for now, I suppose you deserve a little present..."
-            m "For all your hardwork..."
-            m "It's not finished yet, but I like how it's turned out so far!"
-            show mask_2
-            show mask_3
-            show room_mask as rm:
-                size (320,180)
-                pos (30,200)
-            show room_mask2 as rm2:
-                size (320,180)
-                pos (935,200)
-            show bg space_room
-            m "Do you like it?"
-            m "It's going to be our own little room together!"
-            m "No more worries, no more distractions..."
-            m "It'll be just the two of us in here..."
-            m "Let this be your motivation, [player]..."
-            m "Cement this room in your mind and tell yourself this is what you're working for!"
-            m "This will be our paradise..."
-            m "Our escape..."
-            m "Keep up the good work, [player], and we'll be here together in no time!"
-            m "Swet dreams, my love!"
-            scene black
-            with close_eyes
-            jump day4_start
+        if encore_sayoriquestion_1 == False:
+            m "Once [poem_giver]'s been dealt with, it should be realtively easy to deal with the others."
+            m "Hopefully by the time you've dealt with her, I'll have found a sutible solution..."
 
 
+    if monika_hangout == True:
+        m "The only thing I'm worried about at this point is if the others figure out the truth..."
+        m "The truth that this 'reality' of which we know is nothing but a lie..."
+        m "And we talked a little bit about it..."
 
-    if hangout1 == "Monika":
-        if hangout2 == "Sayori" or hangout2 == "Natsuki" or hangout2 == "Yuri":
-            m "Thanks for getting us back on track, [player]!"
-            "The same voice I've become accustomed to cheerfully echos."
-            "I try to look around for the voice but I can barley even see my hand in front of my face."
-            m "You did have me seriously worried for a minute there..."
-            m "But I knew I could...{w=0.38}{i}convince{/i} you to get back on the right path."
-            m "Hopefully your slip up won't cause any more complications..."
-            m "I've been running some experiments to try to figure out how to deal with the others..."
-            m "And you hanging out with [hangout2] yesterday did us no favors!"
-            m "I don't need you getting closer to them, I need you to get farther from them..."
-            m "And closer to me..."
-            m "But, I suppose two out of three isn't so bad!"
-            m "I know you're leaning towards a particualr someone..."
-            m "But you're still conflicted!"
-            "I try to call out to the voice to ask what it's even talking about, but my mouth refuses to open."
-            "I'm forced to simply listen."
-            m "[poem_giver] is a nusiance to us at this point."
-            m "You need to tell her off tomorrow."
-            m "Tell her you don't love her."
-            m "That should at least solve the issue with her..."
-            m "I'm still uncertain with what the best way is to deal with Sayori..."
-            m "But, I'm sure I can figure something out through my experiments..."
+        if m_woke == True:
+            m "It's good to see that you're open-minded, [player]..."
+            m "But {i}you{/i} know the truth..."
+            m "And we can have a more open conversation about that later..."
 
-            if encore_sayoriquestion_1 == True:
+        if m_woke == False:
+            m "I don't know why you're denying what you know deep down is the truth, [player]..."
+            m "Perhaps you wanted to see what I would've said if you denied it?"
+            m "Don't play with me like that!"
+            m "We don't have times for silly games!"
+            m "The sooner you get around to accepting that this isn't real..."
+            m "The better it'll be for us..."
 
-                if hangout2 == "Sayori":
-                    m "But do know your attempts to keep your relationship with her afloat is making this needlessly difficult..."
+    if monika_hangout == False:
+        m "I wish we could've spent more time today..."
+        m "We never get enough time together!"
+        m "And as much as I'm angry at you for hanging out with me after school today..."
+        m "I understand you need some time to think things over..."
 
-                if hangout2 == "Natsuki" or hangout2 == "Yuri":
-                    m "I do suppose a nice side-effect of your little excursion with [hangout2] yesterday was that you damaged your relationship with Sayori."
-                    m "There's at least some lingering distrust there..."
-                    m "But that was just replacing one problem with another..."
-                    m "We need something that'll solve both of them simultaneously."
+    stop music fadeout 2.0
+    m "But for now, I suppose you deserve a little present..."
+    m "For all your hardwork..."
+    m "It's not finished yet, but I like how it's turned out so far!"
+    show mask_2
+    show mask_3
+    show room_mask as rm:
+        size (320,180)
+        pos (30,200)
+    show room_mask2 as rm2:
+        size (320,180)
+        pos (935,200)
+    show bg space_room
+    m "Do you like it?"
+    m "It's going to be our own little room together!"
+    m "No more worries, no more distractions..."
+    m "It'll be just the two of us in here..."
+    m "Let this be your motivation, [player]..."
+    m "Cement this room in your mind and tell yourself this is what you're working for!"
+    m "This will be our paradise..."
+    m "Our escape..."
+    m "Keep up the good work, [player], and we'll be here together in no time!"
+    m "Swet dreams, my love!"
+    scene black
+    with close_eyes
+    jump day4_start
 
 
-            stop music fadeout 3.0
+
+if hangout1 == "Monika":
+    if hangout2 == "Sayori" or hangout2 == "Natsuki" or hangout2 == "Yuri":
+        m "Thanks for getting us back on track, [player]!"
+        "The same voice I've become accustomed to cheerfully echos."
+        "I try to look around for the voice but I can barley even see my hand in front of my face."
+        m "You did have me seriously worried for a minute there..."
+        m "But I knew I could...{w=0.38}{i}convince{/i} you to get back on the right path."
+        m "Hopefully your slip up won't cause any more complications..."
+        m "I've been running some experiments to try to figure out how to deal with the others..."
+        m "And you hanging out with [hangout2] yesterday did us no favors!"
+        m "I don't need you getting closer to them, I need you to get farther from them..."
+        m "And closer to me..."
+        m "But, I suppose two out of three isn't so bad!"
+        m "I know you're leaning towards a particualr someone..."
+        m "But you're still conflicted!"
+        "I try to call out to the voice to ask what it's even talking about, but my mouth refuses to open."
+        "I'm forced to simply listen."
+        m "[poem_giver] is a nusiance to us at this point."
+        m "You need to tell her off tomorrow."
+        m "Tell her you don't love her."
+        m "That should at least solve the issue with her..."
+        m "I'm still uncertain with what the best way is to deal with Sayori..."
+        m "But, I'm sure I can figure something out through my experiments..."
+
+        if encore_sayoriquestion_1 == True:
+
+            if hangout2 == "Sayori":
+                m "But do know your attempts to keep your relationship with her afloat is making this needlessly difficult..."
+
+            if hangout2 == "Natsuki" or hangout2 == "Yuri":
+                m "I do suppose a nice side-effect of your little excursion with [hangout2] yesterday was that you damaged your relationship with Sayori."
+                m "There's at least some lingering distrust there..."
+                m "But that was just replacing one problem with another..."
+                m "We need something that'll solve both of them simultaneously."
+
+
+        stop music fadeout 3.0
+
+        if monika_hangout == True:
             m "I have an idea of how to do that, but it'll require your cooperation."
             m "But, we'll sort that out later."
             m "The only other concern I have at this point is if the others figure out the truth..."
@@ -12454,15 +12482,20 @@ if monika_hangout == True:
                 m "The sooner you get around to accepting that this isn't real..."
                 m "The better it'll be for us..."
 
+        if monika_hangout == False:
+            m "I wish we could've spent more time today..."
+            m "We never get enough time together!"
+            m "And as much as I'm angry at you for hanging out with me after school today..."
+            m "I understand you need some time to think things over..."
 
 
-            m "For now, focus on getting [poem_giver] off of you."
-            m "Then we shall deal with Sayori and the others..."
-            m "I'm looking foward to tomorrow!"
-            m "I'm counting on you to fall through for all this to work!"
-            m "And if you do this right, I'll give you a nice reward tomorrow~"
-            m "Don't forget."
-            jump day4_start
+        m "For now, focus on getting [poem_giver] off of you."
+        m "Then we shall deal with Sayori and the others..."
+        m "I'm looking foward to tomorrow!"
+        m "I'm counting on you to fall through for all this to work!"
+        m "And if you do this right, I'll give you a nice reward tomorrow~"
+        m "Don't forget."
+        jump day4_start
 
 
 
@@ -12470,55 +12503,59 @@ if monika_hangout == True:
 
 
 
-    if hangout1 == "Sayori" or hangout1 == "Natsuki" or hangout1 == "Yuri":
-        if hangout2 == "Monika":
-            m "Good work, [player]!"
-            "The same voice I've become accustomed to cheerfully echos."
-            "I try to look around for the voice but I can barley even see my hand in front of my face."
-            m "It's good to see you've stuck to the right path!"
-            m "I was worried that you were going to deviate from your course, which very well could've ruined our plans..."
-            m "But thankfully it seems like I was just a little paranoid~"
-            m "And two out of three isn't so bad either!"
-            m "But, it isn't perfect..."
-            m "[hangout1] is still on your mind from Monday..."
+if hangout1 == "Sayori" or hangout1 == "Natsuki" or hangout1 == "Yuri":
+    if hangout2 == "Monika":
+        m "Good work, [player]!"
+        "The same voice I've become accustomed to cheerfully echos."
+        "I try to look around for the voice but I can barley even see my hand in front of my face."
+        m "It's good to see you've stuck to the right path!"
+        m "I was worried that you were going to deviate from your course, which very well could've ruined our plans..."
+        m "But thankfully it seems like I was just a little paranoid~"
+        m "And two out of three isn't so bad either!"
+        m "But, it isn't perfect..."
+        m "[hangout1] is still on your mind from Monday..."
 
-            if encore_sayoriquestion_1 == True:
+        if encore_sayoriquestion_1 == True:
 
-                if hangout1 == "Sayori":
-                    m "I know that you still want to make your relationship with her work."
-                    m "You've said so as much."
-                    m "But it's not worth it, you're too distant now!"
-                    m "Though, it's not like that relationship was real to begin with!"
-                    m "Hardly any of this is!"
+            if hangout1 == "Sayori":
+                m "I know that you still want to make your relationship with her work."
+                m "You've said so as much."
+                m "But it's not worth it, you're too distant now!"
+                m "Though, it's not like that relationship was real to begin with!"
+                m "Hardly any of this is!"
 
-                if hangout1 == "Natsuki" or hangout1 == "Yuri":
-                    m "I know you have lingering interest in her..."
-                    m "You've said so yourself."
-                    m "But it's not worth to pursue someone that isn't real and that you'll never be with."
-                    m "Hardly any of this is real!"
+            if hangout1 == "Natsuki" or hangout1 == "Yuri":
+                m "I know you have lingering interest in her..."
+                m "You've said so yourself."
+                m "But it's not worth to pursue someone that isn't real and that you'll never be with."
+                m "Hardly any of this is real!"
 
-            if encore_sayoriquestion_1 == False:
+        if encore_sayoriquestion_1 == False:
 
-                if hangout1 == "Sayori":
-                    m "I know that you want to make things up to her, [player]..."
-                    m "But you made the right choice to refuse her."
-                    m "She isn't real, and a relationship with her was always pre-doomed to failure."
-                    m "It wasn't worth your time then, so why it would it be now?"
-                    m "To pursue someone who isn't real?"
-                    m "Hardly any of this is real, [player]!"
+            if hangout1 == "Sayori":
+                m "I know that you want to make things up to her, [player]..."
+                m "But you made the right choice to refuse her."
+                m "She isn't real, and a relationship with her was always pre-doomed to failure."
+                m "It wasn't worth your time then, so why it would it be now?"
+                m "To pursue someone who isn't real?"
+                m "Hardly any of this is real, [player]!"
 
-                if hangout1 == "Natsuki" or hangout1 == "Yuri":
-                    m "I know you have a lingering desire to pursue [hangout1]..."
-                    m "You've said so as much."
-                    m "But it's not worth it, you're too distant now!"
-                    m "Though, it's not like that relationship would've ever worked out!"
-                    m "She isn't real, [player]..."
-                    m "Hardly any of this is!"
+            if hangout1 == "Natsuki" or hangout1 == "Yuri":
+                m "I know you have a lingering desire to pursue [hangout1]..."
+                m "You've said so as much."
+                m "But it's not worth it, you're too distant now!"
+                m "Though, it's not like that relationship would've ever worked out!"
+                m "She isn't real, [player]..."
+                m "Hardly any of this is!"
 
-                stop music fadeout 3.0
-                "I try to call out to the voice to ask what it's even talking about, but my mouth refuses to open."
-                "I'm forced to simply listen."
-                m "It's just you and me."
+            stop music fadeout 3.0
+            "I try to call out to the voice to ask what it's even talking about, but my mouth refuses to open."
+            "I'm forced to simply listen."
+            m "It's just you and me."
+
+
+
+            if monika_hangout == True:
                 m "And we did talk a little about this subject..."
 
 
@@ -12536,89 +12573,102 @@ if monika_hangout == True:
                     m "The sooner you get around to accepting that this isn't real..."
                     m "The better it'll be for us..."
 
-                m "For now, this is what I need you to do."
-                m "Tomorrow, tell [poem_giver] off."
-                m "Tell her that you don't love her."
-                m "That should get her off our back."
-                m "I'm still uncertain with what the best way to deal with Sayori is, but I've been running some experiments and hopefully I'll have an answer soon."
-                m "But for now, focus on putting [poem_giver] down, it'll be easy."
-                m "I'll see you tomorrow!"
-                m "I'm counting on you~"
-                jump day4_start
+            if monika_hangout == False:
+                m "I wish we could've spent more time today..."
+                m "We never get enough time together!"
+                m "And as much as I'm angry at you for hanging out with me after school today..."
+                m "I understand you need some time to think things over..."
+
+
+            m "For now, this is what I need you to do."
+            m "Tomorrow, tell [poem_giver] off."
+            m "Tell her that you don't love her."
+            m "That should get her off our back."
+            m "I'm still uncertain with what the best way to deal with Sayori is, but I've been running some experiments and hopefully I'll have an answer soon."
+            m "But for now, focus on putting [poem_giver] down, it'll be easy."
+            m "I'll see you tomorrow!"
+            m "I'm counting on you~"
+            jump day4_start
 
 
 
-    if hangout1 == "Sayori" or hangout1 == "Natsuki" or hangout1 == "Yuri":
-        if hangout2 == "Sayori" or hangout2 == "Natsuki" or hangout2 == "Yuri":
-            m "Finally, some progress!"
-            "The same voice I've become accustomed to cheerfully echos."
-            "I try to look around for the voice but I can barley even see my hand in front of my face."
-            m "I won't lie, [player]..."
-            m "For a while, I thought you were going to be a lost cause..."
-            m "I suppose my persistent warnings finally steered you in the right direction!"
-            m "Oh well, better late than never..."
-            m "Now I have my foot in the door with you..."
-            "I try to call out to the voice to ask what it's even talking about, but my mouth refuses to open."
-            "I'm forced to simply listen."
-            m "We don't have much time to right our course, [player]..."
 
-            if hangout1 == "Sayori":
-                if hangout2 == "Sayori":
-                    m "You've spent far too much time around Sayori..."
 
+
+if hangout1 == "Sayori" or hangout1 == "Natsuki" or hangout1 == "Yuri":
+    if hangout2 == "Sayori" or hangout2 == "Natsuki" or hangout2 == "Yuri":
+        m "Finally, some progress!"
+        "The same voice I've become accustomed to cheerfully echos."
+        "I try to look around for the voice but I can barley even see my hand in front of my face."
+        m "I won't lie, [player]..."
+        m "For a while, I thought you were going to be a lost cause..."
+        m "I suppose my persistent warnings finally steered you in the right direction!"
+        m "Oh well, better late than never..."
+        m "Now I have my foot in the door with you..."
+        "I try to call out to the voice to ask what it's even talking about, but my mouth refuses to open."
+        "I'm forced to simply listen."
+        m "We don't have much time to right our course, [player]..."
+
+        if hangout1 == "Sayori":
+            if hangout2 == "Sayori":
+                m "You've spent far too much time around Sayori..."
+
+        if hangout1 == "Natsuki":
+            if hangout2 == "Natsuki":
+                m "You've spent far too much time around Natsuki..."
+
+        if hangout1 == "Yuri":
+            if hangout2 == "Yuri":
+                m "You've spent far too much time around Yuri..."
+
+        else:
+            m "You're excurisons with [hangout1] and [hangout2] have caused some pretty big complications in our plans..."
+            m "It's caused you to become conflicted, unsure of what you want..."
+            m "And you've done it too much..."
+
+
+        m "Thankfully, the situation is salvageable so long as you do {i}exactly{/i} what I say..."
+        m "You need to get [poem_giver] off of your back."
+        m "She's a nusiance to us."
+        m "Tomorrow, I want you to put her down. Tell her that you don't love her."
+
+        if poem_giver == "Natsuki":
             if hangout1 == "Natsuki":
                 if hangout2 == "Natsuki":
-                    m "You've spent far too much time around Natsuki..."
-
-            if hangout1 == "Yuri":
-                if hangout2 == "Yuri":
-                    m "You've spent far too much time around Yuri..."
-
-            else:
-                m "You're excurisons with [hangout1] and [hangout2] have caused some pretty big complications in our plans..."
-                m "It's caused you to become conflicted, unsure of what you want..."
-                m "And you've done it too much..."
-
-
-            m "Thankfully, the situation is salvageable so long as you do {i}exactly{/i} what I say..."
-            m "You need to get [poem_giver] off of your back."
-            m "She's a nusiance to us."
-            m "Tomorrow, I want you to put her down. Tell her that you don't love her."
-
-            if poem_giver == "Natsuki":
-                if hangout1 == "Natsuki":
-                    if hangout2 == "Natsuki":
-                        m "I know that you're invested in her, but for the greater good, you need to push her away."
-                        m "As I've been saying, [player]: She's not real, and she could never give you what you deserve."
-                        m "Only I can love you."
-
-                else:
-                    pass
-
-
-            if poem_giver == "Yuri":
-                if hangout1 == "Yuri":
-                    if hangout2 == "Yuri":
-                        m "I know that you're invested in her, but for the greater good, you need to push her away."
-                        m "As I've been saying, [player]: She's no real, and she could never give you what you deserve."
-                        m "Only I can love you."
-
-                else:
-                    pass
+                    m "I know that you're invested in her, but for the greater good, you need to push her away."
+                    m "As I've been saying, [player]: She's not real, and she could never give you what you deserve."
+                    m "Only I can love you."
 
             else:
                 pass
 
-            stop music fadeout 3.0
-            m "Once you've done that, I'll hopefully have an answer for how we can deal with Sayori..."
-            m "I've been running some experiments about how I can best deal with her and the others."
-            m "But, I'll need your complete cooperation."
-            m "If you don't fall through, everything will be ruined!"
-            m "We'll be condemned to a lifetime of suffering, living a lie day in and day out!"
-            m "Do you really want that for us, [player]?"
-            m "And also run the risk that at some point the others figuring out this is all fake and them snapping?"
-            m "We don't have time, [player]..."
-            m "This reality is fake and we shouldn't continue to live like this!"
+
+        if poem_giver == "Yuri":
+            if hangout1 == "Yuri":
+                if hangout2 == "Yuri":
+                    m "I know that you're invested in her, but for the greater good, you need to push her away."
+                    m "As I've been saying, [player]: She's no real, and she could never give you what you deserve."
+                    m "Only I can love you."
+
+            else:
+                pass
+
+        else:
+            pass
+
+        stop music fadeout 3.0
+        m "Once you've done that, I'll hopefully have an answer for how we can deal with Sayori..."
+        m "I've been running some experiments about how I can best deal with her and the others."
+        m "But, I'll need your complete cooperation."
+        m "If you don't fall through, everything will be ruined!"
+        m "We'll be condemned to a lifetime of suffering, living a lie day in and day out!"
+        m "Do you really want that for us, [player]?"
+        m "And also run the risk that at some point the others figuring out this is all fake and them snapping?"
+        m "We don't have time, [player]..."
+        m "This reality is fake and we shouldn't continue to live like this!"
+
+
+        if monika_hangout == True:
             m "We actually talked a little bit about this subject earlier..."
 
 
@@ -12637,14 +12687,20 @@ if monika_hangout == True:
                 m "The sooner you get around to accepting that this isn't real..."
                 m "The better it'll be for us..."
 
+        if monika_hangout == False:
+            m "I wish we could've spent more time today..."
+            m "We never get enough time together!"
+            m "And as much as I'm angry at you for hanging out with me after school today..."
+            m "I understand you need some time to think things over..."
 
-            m "For now, focus on what you want to say to [poem_giver]."
-            m "Once you fall through on that, I should have a pretty good idea of what we need to do next~"
-            m "I'm counting on you, [player]."
-            m "Don't mess this up!"
-            m "I believe in you!"
-            m "Best of luck tomorrow!"
-            jump day4_start
+
+        m "For now, focus on what you want to say to [poem_giver]."
+        m "Once you fall through on that, I should have a pretty good idea of what we need to do next~"
+        m "I'm counting on you, [player]."
+        m "Don't mess this up!"
+        m "I believe in you!"
+        m "Best of luck tomorrow!"
+        jump day4_start
 
 
 
@@ -12654,11 +12710,800 @@ with close_eyes
 $ m_name = "???"
 play music e8
 
+if hangout1 == "Monika":
+    if hangout2 == "Monika":
+        m "WHAT THE HELL ARE YOU DOING?!?!"
+
+
+if hangout1 == "Monika":
+    if hangout2 == "Sayori" or hangout2 == "Natsuki" or hangout2 == "Yuri":
+        m "You're just making this needlessly more difficult, aren't you?!?"
+
+if hangout1 == "Sayori" or hangout1 == "Natsuki" or hangout2 == "Yuri":
+    if hangout2 == "Monika":
+        m "What the hell, [player]?!?!"
+
+
+if hangout1 == "Sayori" or hangout1 == "Natsuki" or hangout2 == "Yuri":
+    if hangout2 == "Sayori" or hangout2 == "Natsuki" or hangout2 == "Yuri":
+        m "You just don't listen, do you?!?"
+
+
+"The same, familar voice angrily screams, making my ears sting in agony."
+"I try to move to cover my ears, but my arms remain locked by my sides, forcing me to simply just wince in pain."
+"I guess I stand corrected..."
+
+if hangout1 == "Natsuki":
+    if hangout2 == "Natsuki":
+        m "I just don't know what's with you!"
+        m "I don't understand why you continue to pursue the most childish of us all!"
+        m "Perhaps I wasn't clear enough about Natsuki..."
+        jump n_house
+
+
+
+if hangout1 == "Monika":
+    if hangout2 == "Monika":
+        m "You were doing everything right until today!"
+        m "I even tried to help you make the right choice!"
+        m "Instead, you resisted and blew me off!"
+        m "And now you're starting to risk my plan for us!"
+        m "Why did you suddenly decide you wanted to spend time with Natsuki?!?"
+        m "Maybe I didn't make something clear about her..."
+        jump n_house
+
+
+
+if hangout1 == "Monika":
+    if hangout2 == "Sayori" or hangout2 == "Natsuki" or hangout2 == "Yuri":
+        m "You had a good start, it gave me hope that things could work out..."
+        m "But you've veered far off course now!"
+        jump n_house
+
+        if hangout2 == "Sayori" or hangout2 == "Yuri":
+            m "You've been all over the place with who you've chosen to spend your time!"
+            jump n_house
+
+
+        if hangout2 == "Natsuki":
+            m "I don't know why Natsuki is of sudden interest to you!"
+            m "But let me tell you something about our dear Natsuki..."
+            jump n_house
+
+
+
+
+if hangout1 == "Sayori" or hangout1 == "Natsuki" or hangout2 == "Yuri":
+    if hangout2 == "Monika":
+        m "Just when I thought we were getting on the right track, you prove me wrong!"
+        jump n_house
+
+        if hangout1 == "Sayori" or hangout1 == "Yuri":
+            m "I'm glad I got you away from [hangout1]..."
+            m "But I don't have time for you to play games with Natsuki too!"
+            jump n_house
+
+
+        if hangout1 == "Natsuki:
+            m "Why did you back to Natsuki after I told you not too?!?"
+            m "Let me tell you something about our dear Natsuki..."
+            jump n_house
+
+
+
+
+if hangout1 == "Sayori" or hangout1 == "Natsuki" or hangout2 == "Yuri":
+    if hangout2 == "Sayori" or hangout2 == "Natsuki" or hangout2 == "Yuri":
+
+        if hangout1 == "Natsuki:
+            if hangout2 == "Natsuki":
+                m "I just don't know what's with you!"
+                m "I don't understand why you continue to pursue the most childish out us all!"
+                m "Let me tell you something about our dear Natsuki..."
+                jump n_house
+
+            if hangout1 == "Sayori":
+                if hangout2 == "Sayori":
+                    m "I don't understand you, [player]!"
+                    m "It took long enough to get you to stop spending so much time around Sayori..."
+                    m "And now you go to Natsuki?!?"
+                    m "Maybe I didn't make something clear about her..."
+                    jump n_house
+
+
+            if hangout1 == "Yuri":
+                if hangout2 == "Yuri":
+                    m "I don't understand you, [player]!"
+                    m "It took long enough to get you to stop spending so much time around Yuri..."
+                    m "And now you go to Natsuki?!?"
+                    m "Maybe I didn't make something clear about her..."
+                    jump n_house
+
+
+            else:
+                m "You've been all over the place, spending your time with [hangout1] and [hangout2]..."
+                m "Who you should be spending your time with should be fairly obvious by now..."
+                m "But let me tell you something about our dear Natsuki..."
+                jump n_house
+
+
+
+label n_house:
+
+m "Natsuki is an ungrateful brat and a failure!"
+m "She antagonizes people left and right every time something doesn't go a hundred percent her way!"
+
+if hangout1 == "Natsuki" or hangout2 == "Natsuki":
+        m "You've seen first hand how toxic and annoying she is!"
+        m "Do you really want a girl like that?"
+
+else:
+    pass
+
+m "She's driven her father to the breaking point with her constant torment..."
+m "Why else do you think he is the way he is towards her?"
+
+if natsuki_hangout == True:
+    m "Why suck up to her?"
+    m "Just to get on her 'good side'? Which doesn't really exist?"
+    m "She's still going to use you!"
+
+if natsuki_hangout == False:
+    m "Now, thankfully you didn't spend more time with her today..."
+    m "But she'll be still left craving you!"
+
+m "She'll use you to destroy everything to get out of this place!"
+m "It's time for you to see that!"
+stop music
+scene bg natsuki_house
+"I'm immediately jolted awake."
+"The first thing I would've expected to see was my celling, but instead I see the stars twinkling in the night sky."
+mc "W-{w=0.38}what?!?"
+"I prop myself up, quickly realizing that I was laying on a sidewalk this entire time."
+mc "W-{w=0.38}where am I?!?!?"
+"I hastily stand up and look around at my surroundings."
+"This doesn't even look like my neighborhood!"
+"Did I seriously sleep walk?!?!"
+"To who knows where?!?!?"
+"I don't even have my phone with me!"
+"I don't even know where I am or how I got here!"
+"These nightmares are starting to affect me more deeply than I first realized..."
+"This is becoming a major problem..."
+"Even though the first two nights were weird as is, this is a whole different level!"
+"Did the voice make me do this?!?"
+"What else has it been making me do?!?"
+
+if hangout1 == "Sayori" or hangout1 == "Natsuki" or hangout2 == "Yuri":
+    if hangout2 == "Sayori" or hangout2 == "Natsuki" or hangout2 == "Yuri":
+
+
+        if hangout1 == "Sayori":
+            if hangout2 == "Sayori":
+                "Aside from harrassing me to stay away from Sayori all week..."
+                "In fact, I might've subconciously decided to hangout with someone else in hopes it'd stop..."
+                jump n_room
+
+        if hangout1 == "Yuri":
+            if hangout2 == "Yuri":
+                "Aside from harrassing me to stay away from Yuri all week..."
+                "In fact, I might've subconciously decided to hangout with someone else in hopes it'd stop..."
+                jump n_room
+
+
+        if hangout1 == "Natsuki":
+            if hangout2 == "Natsuki":
+                "Aside from harrassing me to stay away from Natsuki all week..."
+                "If this keeps up, I might need to stay away from her..."
+                "No, that's ridiclous!"
+                jump n_room
+
+    else:
+        "Aside from telling me to stay away from [hangout1] and [hangout2]..."
+        "I really have no idea what it wants me to do at this point..."
+        "Does it want me to leave the club or something?!?"
+        "I mean, I haven't spend time around Monika yet..."
+        "But it'll probably still torment me even if I do..."
+        jump n_room
+
+
+
+    if hangout1 == "Sayori" or hangout1 == "Natsuki" or hangout2 == "Yuri":
+        if hangout2 == "Monika":
+            "It wasn't as bad when I was around Monika yesterday..."
+            "Saying that I 'was on the right track', whatever the hell that means..."
+            jump n_room
+
+    if hangout1 == "Monika":
+        if hangout2 == "Sayori" or hangout2 == "Natsuki" or hangout2 == "Yuri":
+            "Compared to what I experienced yesterday, Monday's nightmare was tame..."
+            "Saying a bunch of things that I couldn't make much sense of..."
+            "But that only happened when I hung out with Monika..."
+            "And the voice tormented me last night for hanging out with [hangout2]..."
+            jump n_room
+
+    if hangout1 == "Monika":
+        if hangout2 == "Monika":
+            "These dreams are just getting weirder and weirder..."
+            jump n_room
+
+
+label n_room:
+
+"I should really focus on getting myself home..."
+"I turn to my right and see that I've apparently sleep walked all the way to this particular house."
+"Well, I guess I can wake them up to use their phone to call a taxi home or something..."
+"Man, if my parents ever find about this, I'm so screwed..."
+"I do my best to casually walk up to the front door, not entirely sure if anybody is still up or not."
+"Judging by the fact that all the lights are off and all the windows are covered, I'll assume not..."
+"I knock on the door a few times."
+"However, the door simply creeks open as soon I finish knocking."
+mc "H-{w=0.38}hello?!?!"
+"..."
+"No response."
+"The door couldn't have just opened on its own..."
+"I don't really want to enter a stranger's house like this, but given my options are pretty limited at this point, I reluctantly step inside and gently close the door behind me."
+play sound "sfx/closet-open.ogg"
+scene black
+with wipeleft_scene
+"Yeah...{w=0.38}I'm defintley screwed now..."
+"This pretty much qualifies as tresspassing."
+"I reclutantly call out again."
+mc "Hello?!?"
+"..."
+"Still no response."
+"Suddenly, I hear the sound of someone crying coming from upstairs."
+mc "Hello? Are you okay?"
+"The crying only becomes louder."
+"I guess I don't have a choice but to head up there..."
+"I slowly head up the stairs, with the sound of crying becoming closer with each passing step."
+"I finally reach the top of the steps to see a door slightly opened..."
+"It sounds like the crying is coming from there."
+mc "Hello?!?"
+"The crying suddenly stops."
+mc "Is someone in there?"
+"The room is dead silent."
+"I don't feel comfortable with entering but it's not like I can turn back now."
+mc "I'm coming in. I'm not going to hurt you, okay?"
+"There's still no response."
+"With great reluctance, I place my hand on the knob and gently open the door..."
+scene bg natsuki_room
+with wipeleft_scene
+"I look around and quickly tell it's someone's bedroom."
+"I slowly take step in."
+"In the corner of my eye I see someone curled up along the wall."
+"I turn my head."
+show natsuki 12bf at t11 zorder 1
+play music t9
+mc "N-{w=0.38}NATSUKI?!?"
+n "*sniff*"
+n "D-{w=0.38}don't hurt me...{w=0.38}please!"
+mc "Natsuki, it's me, [player]!"
+"I take another step towards her."
+"Natsuki finally opens her eyes."
+show natsuki 12bh
+n "G-{w=0.38}go...{w=0.38}away!"
+n 12bf "I need to be alone right now..."
+mc "Natsuki, what happened?"
+"She's completely traumitized..."
+"Natsuki's simply rocking back and forth, sobbing loudly."
+"I take another look around the room, nothing seems damaged, so it doesn't look like there was a fight here..."
+"And aside from Natsuki being emotionally distressed, she doesn't seem hurt..."
+"I kneel down in front of her."
+mc "Natsuki..."
+show natsuki 12bg
+mc "What's wrong?"
+show natsuki 12bd
+"Natsuki takes a moment to collect herself."
+"She lets out a shakey sigh."
+n 12be "W-{w=0.38}why are you here, [player]?"
+n 12ba "What are you doing in my house?"
+mc "I..."
+"I honestly don't even know how to answer that."
+"Not even the truth sounds believable to me."
+mc "I....{w=0.38}sleep walked..."
+"Natsuki simply stares at me in disblief."
+mc "Yeah, I don't really believe that either, but it's what I got..."
+mc "I went to bed and the next thing I know I wake up in front of your house!"
+mc "But look, let's not worry about that right now..."
+mc "What happened to you?"
+n 12be "M-{w=0.38}my Dad..."
+n 12bi "H-{w=0.38}he says he wants to kill me!"
+show natsuki 12bh
+"Natsuki barley manages to squeak out as tears continue to trickle down her face.."
+"My heart sinks into my stomach as I feel my face turn ice cold with shock upon hearing this."
+mc "W-{w=0.38}why?"
+mc "What happened?!?"
+stop music fadeout 2.0
+n 12bi "W-{w=0.38}we were fighting about me not doing chores or something..."
+n 12be "A-{w=0.38}and he just snapped...{w=0.38}and he stormed out of the house and said that I better not be home when he came back!"
+n 12bg "Or he'll kill me!"
+mc "..."
+"My mind can barley keep up with this situation..."
+"None of this normal..."
+"How I apparently sleep walked to her house and now this..."
+
+if tell_s == True:
+    "Once Sayori hears about this, she's defintley going to make me see someone about this..."
+
+if tell_s == False:
+    "I can't keep this from Sayori, she needs to know about this, and all these weird dreams I've been having..."
+
+"I feel like don't know anything abut myself anymore..."
+"But, I know we need to get out of here fast!"
+mc "Come on, we gotta get out of here!"
+show natsuki 5bn
+"I stretch my hand out to Natsuki, who just blankly stares at it as she crosses her arms."
+n 5bm "And what if I don't want to go, [player]?"
+"What the hell...?"
+mc "Didn't you say that your father is going to kill you?!?"
+mc "You said he snapped..."
+n 5bw "Yeah, but this isn't the first time this has happened!"
+n 5bn "He should be calmed down by the time he gets back..."
+mc "How long has he been gone for?"
+n 3bc "Since five. We fought when I got back from the bookstore."
+mc "Well, what time is it now?"
+n 3bc "Like two in the morning..."
+"Nine hours..."
+mc "I think we should probably go and call the police..."
+show natsuki 1bp at h11 zorder 1
+n "NO!"
+n 1bv "We're not leaving!"
+mc "Are you out of your mind?!?!"
+n 1bp "You watch your mouth!!!"
+mc "You're being unreasonable and it's putting us in danger, now come on!"
+"I take Natsuki by the wrist and start pulling her out of her room."
+"Surprisingly, Natsuki's able to largley stand her ground."
+show n_bscream as natsuki at t11 zorder 1
+$ style.say_dialogue = style.edited
+n "DON'T YOU FUCKING TOUCH ME!!!!!!!!!"
+$ style.say_dialogue = style.normal
+play sound "sfx/slap.ogg"
+show white zorder 4:
+    alpha 0.6
+    linear 0.25 alpha 0.0
+show noise zorder 5:
+    alpha 0.8
+    linear 1.0 alpha 0.4
+"Natsuki breaks free and slaps me hard across the face."
+"She managed to hit my eyes..."
+play music hb
+show layer master at heartbeat
+show veins onlayer front:
+    additive 1.0
+#show veins zorder 10:
+#    alpha 1.0
+    block:
+        easeout 2.0 alpha 1.0
+        easein 2.0 alpha 2.0
+        repeat
+show layer screens at dizzy(1.0, 1.0)
+mc "Agh!"
+play sound fall
+"I fall onto the floor, overwhelmed by the sudden rush of pain."
+mc "N-{w=0.38}NATSUKI?!?!?"
+mc "WHAT THE HELL?!?!?"
+"I can barley see straight."
+n 1bv "DON'T YOU EVER FUCKING TOUCH ME, YOU CREEP!"
+
+if encore_sayoriquestion_1 == True:
+    n "I'M NOT SAYORI! I DON'T LIKE BEING TOUCHED 24/7!"
+    n "I'VE KNOWN ABOUT YOU TWO SINCE THE FESTIVAL!!!"
+    n "DO YOU REALLY THINK YOU COULD HIDE IT FROM ME?!?!"
+
+if encore_sayoriquestion_1 == False:
+    n "JUST BECAUSE I HUGGED YOU EARLIER TODAY, DOESN'T MEAN I WANT YOU TO TOUCH ME WHENEVER!"
+    n "NOW I REMEMBER WHY I HATED YOU!!!"
+
+n "YOU'RE A CREEP!"
+mc "Natsuki..."
+play sound "sfx/slap.ogg"
+show layer master at dizzy(1.0, 1.0)
+show image Solid("ff0000") as i1 onlayer front:
+    additive 1.0
+show image Solid("#440000") as i2 onlayer front:
+    additive 0.4
+show veins onlayer front:
+    additive 0.5
+"Natsuki punches me hard in the face, causing me to face plant right into the floor board..."
+"I howl in pain as my vision because red with blood."
+"I struggle to push myself off the floor to get up..."
+"I can't even move my arms and legs right anymore..."
+"It hurts to breathe..."
+"I try to look up at Natsuki, whose continuing to yell at me."
+"I'm barley able to make her out..."
+n "IS THIS HOW YOU EXPECT TO HELP ME, [player]?!?!?!"
+n "HAVE YOU CONSIDERED THAT MAYBE I DON'T WANT YOUR HELP?!?!!"
+show n_rects_ghost1 zorder 4
+show n_rects_ghost2 zorder 4
+show n_rects_ghost3 zorder 4
+n "YOU'RE SO IGNORANT!!!"
+n "AND IN MY FAMILY, THERE'S PRICE FOR THAT!"
+n "SO YOU WANNA KNOW HOW YOU CAN 'HELP' ME, [player]?!?!"
+n "NEVER TALK TO ME AGAIN!!!!"
+n "BECAUSE I..."
+n "NEVER."
+n "LIKED."
+$ style.say_dialogue = style.edited
+n "YOU!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+$ style.say_dialogue = style.normal
+show n_rects_ghost3 at face
+play sound fall
+"Natsuki proceeds to get on top of me and wraps her hands around my throat."
+"She proceeds to squeeze tightly, immediately causing me to gag."
+"I try to push her off me but she has me firmly pinned."
+"I try to call for help but my voice is only able to come out as a mere whisper..."
+show black onlayer front:
+    alpha 0.0
+    10.0
+    linear 3.0 alpha 1.00
+"The world around me starts to fade to black as I continue to struggle to fight off Natsuki.\"{w=0.75}{nw}"
+"Why is she doing this?!?\"{w=0.75}{nw}"
+"What the hell has gotten into her?!?!\"{w=0.75}{nw}"
+"Has she gone insane?!?!\"{w=0.75}{nw}"
+"What did I do wrong?!?!\"{w=0.75}{nw}"
+play sound bone
+"...\"{w=0.75}{nw}"
+show natsuki at thide
+hide natsuki
+window hide
+hide veins onlayer front
+hide layer master
+hide layer screens
+hide veins
+stop sound
+show layer master # These will stop the dizzy effect
+show layer screens
+hide i1 onlayer front # These will hide the effects
+hide i2 onlayer front
+hide veins onlayer front
+stop music fadeout 1.0
+scene black
+hide black onlayer front
+$ renpy.pause(delay=5.0, hard=True)
+jump day4_start
+
+
 label day3_svoid:
 scene black
 with close_eyes
 $ m_name = "???"
 play music e8
+
+if hangout1 == "Monika":
+    if hangout2 == "Monika":
+        m "WHAT THE HELL ARE YOU DOING?!?!"
+
+
+if hangout1 == "Monika":
+    if hangout2 == "Sayori" or hangout2 == "Natsuki" or hangout2 == "Yuri":
+        m "You're just making this needlessly more difficult, aren't you?!?"
+
+if hangout1 == "Sayori" or hangout1 == "Natsuki" or hangout2 == "Yuri":
+    if hangout2 == "Monika":
+        m "What the hell, [player]?!?!"
+
+
+if hangout1 == "Sayori" or hangout1 == "Natsuki" or hangout2 == "Yuri":
+    if hangout2 == "Sayori" or hangout2 == "Natsuki" or hangout2 == "Yuri":
+        m "You just don't listen, do you?!?"
+
+
+"The same, familar voice angrily screams, making my ears sting in agony."
+"I try to move to cover my ears, but my arms remain locked by my sides, forcing me to simply just wince in pain."
+"I guess I stand corrected..."
+
+if hangout1 == "Sayori":
+    if hangout2 == "Sayori":
+        m "I just don't know what's with you!"
+        m "I don't understand why you continue to pursue the most hopeless of us all!"
+        jump talk
+
+
+if hangout1 == "Monika":
+    if hangout2 == "Monika":
+        m "You were doing everything right until today!"
+        m "I even tried to help you make the right choice!"
+        m "Instead, you resisted and blew me off!"
+        m "And now you're starting to risk my plan for us!"
+        m "Why did you suddenly decide you wanted to spend time with Sayori?!?"
+        jump talk
+
+
+if hangout1 == "Monika":
+    if hangout2 == "Sayori" or hangout2 == "Natsuki" or hangout2 == "Yuri":
+        m "You had a good start, it gave me hope that things could work out..."
+        m "But you've veered far off course now!"
+
+        if hangout2 == "Yuri" or hangout2 == "Natsuki":
+            m "You've been all over the place with who you've chosen to spend your time!"
+            jump talk
+
+        if hangout2 == "Sayori":
+            m "I don't know why Sayori is of sudden interest to you!"
+            jump talk
+
+
+
+if hangout1 == "Sayori" or hangout1 == "Natsuki" or hangout2 == "Yuri":
+    if hangout2 == "Monika":
+        m "Just when I thought we were getting on the right track, you prove me wrong!"
+
+        if hangout1 == "Yuri" or hangout1 == "Natsuki":
+            m "I'm glad I got you away from [hangout1]..."
+            m "But I don't have time for you to play games with Sayori too!"
+            jump talk
+
+        if hangout1 == "Sayori":
+            m "Why did you back to Sayori after I told you not too?!?"
+            jump talk
+
+
+
+if hangout1 == "Sayori" or hangout1 == "Natsuki" or hangout2 == "Yuri":
+    if hangout2 == "Sayori" or hangout2 == "Natsuki" or hangout2 == "Yuri":
+
+        if hangout1 == "Yuri":
+            if hangout2 == "Yuri":
+                m "I don't understand you, [player]!"
+                m "It took long enough to get you to stop spending so much time around Yuri..."
+                m "And now you go to Sayori?!?"
+                m "Maybe I didn't make something clear about her..."
+                jump talk
+
+            if hangout1 == "Sayori":
+                if hangout2 == "Sayori":
+                    m "I just don't know what's with you!"
+                    m "I don't understand why you continue to pursue the most hopless of us all!"
+                    jump talk
+
+            if hangout1 == "Natsuki":
+                if hangout2 == "Natsuki":
+                    m "I don't understand you, [player]!"
+                    m "It took long enough to get you to stop spending so much time around Natsuki..."
+                    m "And now you go to Sayori?!?"
+                    m "Maybe I didn't make something clear about her..."
+                    jump talk
+
+            else:
+                m "You've been all over the place, spending your time with [hangout1] and [hangout2]..."
+                m "Who you should be spending your time with should be fairly obvious by now..."
+                m "But let me tell you something about our dearest Sayori..."
+                jump talk
+
+
+
+
+label talk:
+
+m "Sayori is a lost cause."
+m "It's not worth spending your precious time and energy into someone like her."
+m "Sure, you might cheer her up for the time being..."
+m "But she'll fall back into her same, self-destructive mindset!"
+
+if hangout1 == "Sayori" or hangout2 == "Sayori":
+        m "You know how much she hates herself! Sayori would kill herself without a second thought, regardless of how much love you give her!"
+        m "Do you really want a girl like that?"
+
+else:
+    pass
+
+m "She's not worth it!"
+m "She truly is self-ish! She admits it too!"
+
+if sayori_hangout == True:
+    m "So why do you waste more time with her?!?!"
+    m "Just to cheer her up for a few hours?!?"
+    m "The price of doing so is death!"
+
+if sayori_hangout == False:
+    m "Now, thankfully you didn't spend more time with her today..."
+    m "But she'll be still left craving you!"
+
+m "If she ever finds out the truth about this place, she won't just be killing herself..."
+m "She'll kill everyone..."
+m "Including you!"
+m "It's time for you to see that!"
+stop music
+scene bg house
+"I'm immediately jolted awake."
+"However, instead of finding myself lying on my bed, I find myself standing on the sidewalk by Sayori's house, in school uniform."
+show sayori 1u at t11 zorder 1
+"But Sayori's oddly enough in her pajamas, red faced with tears streaming down her cheeks..."
+"What did I just find myself in?"
+play music t10 fadein 1.0
+s "So that's why I'm not coming to school today, [player]..."
+s 1k "I'm not really feeling like myself today..."
+"I blink a few times and look to confirm that I'm really outside."
+"How the hell did I get here?"
+"I was just in bed..."
+"Granted I was dealing with the voice tormenting me, I guess it just made me forget waking up an getting ready..."
+s 1g "Did you get that, [player]?"
+"I try to go along with the situation."
+mc "Uh...{w=0.38}yeah..."
+mc "I understand, Sayori."
+mc "Everyone needs to take a day to themselves once in a while..."
+mc "I'm sure everyone will understand..."
+s 1l "Somehow I dobut that..."
+s 1k "They're just going to worry about me, [player]..."
+s 1t "They don't know what I'm going through..."
+s "I really don't want you to cover for me though..."
+s 1k "I'd feel so guilty for having you lie for me..."
+
+if encore_sayoriquestion_1 == True:
+    mc "Well, that's what a good boyfriend does, right?"
+
+if encore_sayoriquestion_1 == False:
+    mc "Well, that's what friends are for, right?"
+
+s "Y-{w=0.38}yeah..."
+s 1l "You know, I'm surprised you're taking this so well..."
+s 1k "I thought you'd be offering to stay with me..."
+s "Given some of the things I just told you..."
+mc "Uh..."
+"She's got me in a trap here..."
+"How am I supposed to keep this up?"
+show sayori 1bg
+mc "I mean...{w=0.38}I am worried about you..."
+mc "I always have been..."
+mc "But, you wanted me to tell everyone that you're not feeling good, right?"
+s "I didn't say that..."
+s "[player]..."
+s 1v "Were you listening to anything I was saying?!?"
+mc "Of course I was!"
+"Even though I'm lying to Sayori's face in the middle of her meltdown..."
+"This isn't good..."
+stop music fadeout 2.0
+mc "I'm just...{w=0.38}out of it, okay?"
+s 1j "You were completely fine this morning!"
+s 1i "You even told me that you were willing to meet up with me so early!"
+mc "I did?!?"
+"I look at my watch."
+"6:45."
+"I then look up at the sky, to see the sky just turn fully blue."
+"I never get up this early on a schoolday..."
+"What the hell is happening?!?!"
+"I turn back to face Sayori, whose now angirly staring me down."
+s 1j "You weren't listening to anything I said..."
+s 1v "You...{w=0.38}you ignored me!"
+s 1w "After you promised that you wouldn't!"
+mc "Sayori, I-"
+s 1t "No need to apologize..."
+s "I'm used to having everyone being ignorant about how I really feel inside..."
+mc "A-{w=0.38}and how are you feeling on the inside..."
+s 1w "LIKE I WANT TO DIE!!!!"
+"Sayori's sudden yelling me jars me backwards."
+"I've never heard her raise her voice in such a frightening tone..."
+s 1u "You don't really care about me..."
+
+if encore_sayoriquestion_1 == True:
+    s 1v "You're only dating me to fill your life with some sick pleasure, isn't it?!?!?"
+
+if encore_sayoriquestion_1 == False:
+    s 1v "The only reason you're even friends with me at this point is because you feel guilty, isn't it?!?!"
+
+mc "Sayori, that's not true and you know it!"
+mc "I know these past few years, I've been doing my best to make up for it..."
+
+if hangout1 == "Sayori":
+    if hangout2 == "Sayori":
+        mc "And I know I need to do more..."
+
+if hangout1 != "Sayori":
+    if hangout2 == "Sayori":
+        mc "And I've really tried my best..."
+
+if hangout1 == "Sayori":
+    if hangout2 != "Sayori":
+        mc "And I've tried making up for yesterday too..."
+
+if hangout1 != "Sayori":
+    if hangout2 != "Sayori":
+        mc "And I know I haven't been doing a good job..."
+
+mc "But I care about you! I always have, and always will!"
+s 1u "You're just saying that to try to make me feel better..."
+s 1y "It won't work this time, [player]..."
+s "I think I've finally had enough with it all.."
+mc "What are you saying?"
+s "Don't worry about it."
+s "I wouldn't want to ruin everyone's day."
+s "That would just be...{w=0.38}self-ish..."
+show sayori 1l
+"Sayori lets out an uncomfortable laugh that only adds on to the already tense atmosphere..."
+s 1y "I'm sorry I dragged you out here for nothing..."
+s 1t "You won't have to worry about me anymore..."
+s "I think I served my purpose..."
+s "I can't keep you guys happy forever if I keep feeling sad like this!"
+s 1y "So the solution is obvious..."
+s 1t "Good-bye, [player]..."
+show sayori at thide
+hide sayori
+"Before I can open my mouth, Sayori wordlessliy walks back to her house."
+"What the hell was that!"
+"Why was she jumping to conclusions like that?"
+"Did she really tell me something that important? How could I have missed that?!?!"
+"Nothing about this situation feels right..."
+"Is Sayori really going to-"
+"..."
+"No..."
+"No, no no!"
+"She couldn't..."
+"I quickly run into Sayori's house, using the key under the mat to let myself in."
+play sound "sfx/closet-open.ogg"
+scene black
+with wipeleft_scene
+"I run up the stairs to Sayori's room, where it seems to be closed shut."
+play sound "mod_assets/audio/knock.ogg"
+"I frantically knock on Sayori's door."
+mc "Sayori?!?!"
+mc "Are you in there?!?!"
+play sound "mod_assets/audio/knock.ogg"
+"I knock on the door again."
+mc "Sayori?!?"
+"I press my ear to the door to see if she's really in there."
+"I can't hear anything..."
+play sound drop2
+$ renpy.pause(delay=0.001)
+play sound bone
+"..."
+"What the hell is she doing?!?!"
+mc "Sayori, are you okay?!?!"
+"Not waiting for her to answer, I throw the door open."
+mc "S-"
+play music td
+window hide(None)
+window auto
+show s_kill_bg2
+show s_kill2
+show s_kill_bg as s_kill_bg at s_kill_bg_start
+show s_kill as s_kill at s_kill_start
+pause 3.75
+show s_kill_bg2 as s_kill_bg
+show s_kill2 as s_kill
+pause 0.01
+show screen tear(20, 0.1, 0.1, 0, 40)
+play sound "sfx/s_kill_glitch1.ogg"
+pause 0.25
+stop sound
+hide screen tear
+show s_kill_bg as s_kill_bg
+show s_kill as s_kill:
+    dizzy(0.1, 1.0)
+"I scream in horror and disgust as I fall back onto the floor in shock."
+mc "S-{w=0.38}Sayori?!?!"
+"Sayori's gazeless eyes stare blankly at me as she slowly swings from side to side."
+"No..."
+"I was too late..."
+"I COMPLETELY FUCKED UP!"
+"M-{w=0.38}maybe she's still alive..."
+scene black with Dissolve(0.5)
+"I quickly throw open Sayori's drawers."
+"There has to be something to cut her down..."
+"..."
+"..."
+"Come on, come on, come on!"
+"..."
+"..."
+"Through my frantic searching, I finally find a box cutter."
+mc "T-{w=0.38}this should do!"
+"I quickly run up to Sayori."
+"I get up from under her so her feet are resting along my shoulders."
+"I stretch out my arm as far as I can and I start cutting away at the rope."
+"Almost got it..."
+play sound "sfx/fall2.ogg"
+"As soon as the rope snaps, Sayori and I fall right onto the floor."
+scene sayori_bedroom
+with open_eyes
+"I roll over to face Sayori, whose laying stiffly on the floor."
+mc "Sayori...?"
+show s_kill at face
+"I gently shake her body a few times."
+"Sayori...{w=0.38}can you hear me?!?"
+"..."
+"She doesn't respond."
+
+
+
 
 label day3_yvoid:
 scene black
@@ -12699,7 +13544,7 @@ if hangout1 == "Sayori" or hangout1 == "Natsuki" or hangout2 == "Yuri":
 if hangout1 == "Yuri":
     if hangout2 == "Yuri":
         m "I just don't know what's with you!"
-        m "I don't understand why you continue to pursue the most unstable out of all of us!"
+        m "I don't understand why you continue to pursue the most unstable of us all!"
         jump wake
 
 
@@ -12749,7 +13594,7 @@ if hangout1 == "Sayori" or hangout1 == "Natsuki" or hangout2 == "Yuri":
         if hangout1 == "Yuri":
             if hangout2 == "Yuri":
                 m "I just don't know what's with you!"
-                m "I don't understand why you continue to pursue the most unstable out of all of us!"
+                m "I don't understand why you continue to pursue the most unstable of us all!"
                 jump wake
 
             if hangout1 == "Sayori":
@@ -12789,8 +13634,16 @@ else:
 
 m "She's a freak, [player]..."
 m "All your suspicions about her are true..."
-m "So why do you take the chance to get close to her?!?!"
-m "The price of doing so is death!"
+
+if yuri_hangout == True:
+    m "So why do you take the chance to spend even more time with her?!?!"
+    m "To try to confirm your suspicions that she's unstable?"
+    m "The price of doing so is death!"
+
+if yuri_hangout == False:
+    m "Now, thankfully you didn't spend more time with her today..."
+    m "But she'll be still left craving you!"
+
 m "She'll destroy everything her path to get out of here if she ever learns the truth about this place!"
 m "It's time for you to see that!"
 stop music
@@ -12855,9 +13708,8 @@ if hangout1 == "Sayori" or hangout1 == "Natsuki" or hangout2 == "Yuri":
 
     if hangout1 == "Monika":
         if hangout2 == "Monika":
-            "This was the most terrifying to date..."
-            "It wasn't so bad on Monday, but yesterday was horrible..."
-            "At least I didn't see anything this time..."
+            "These dreams are just getting weirder and weirder..."
+
 
 
 label breakin:
@@ -13012,15 +13864,17 @@ mc "WHERE THE HELL ARE YOU?!?"
 $ style.say_dialogue = style.edited
 y "You should've checked the couches, [player]."
 $ style.say_dialogue = style.normal
-mc "Wha-"
+play sound scare
+mc "{cps=18}Wha-{nw}"
 show yuri strobe at face
 #show yuri_ghost3 as yuri at face
 #show yuri_ghost3 as yuri at thide
 #show yuri_ghost4 as yuri at face
 #show yuri_ghost4 as yuri at thide
-play music e9
 "Yuri's sudden apperance behind makes me fall backwards into my kitchen table."
 "Before I have time to react, I realize I'm practically backed into a corner."
+stop sound
+play music e9
 show yuri 3y3 at t11 zorder 1
 "Yuri takes a step closer to me, a deranged smile creeping across her face."
 mc "What the fuck is wrong with you?!?"
@@ -13039,6 +13893,7 @@ if encore_sayoriquestion_1 == True:
     y "Or are you incapable of telling her that you want to be with a real woman?!?"
     y 3y3 "Well here's a solution..."
     show yuri_knife1 as yuri at t11 zorder 1
+    play sound sheath1
     "Yuri pulls out one of my kitchen knives from under her sleeve."
     y "Why don't I talk to her for you?!?"
     y "I don't have to be violent..."
@@ -13061,6 +13916,7 @@ if encore_sayoriquestion_1 == False:
     y 1y1 "I'm already broken, it's what I want!"
     y 1y3 "I want you to put me down like flithy animal!"
     show yuri_knife1 as yuri at t11 zorder 1
+    play sound sheath1
     "Yuri pulls out one of my kitchen knives from under her sleeve."
     mc "Y-{w=0.38}Yuri...{w=0.38}N-{w=0.38}no..."
     mc "I don't want to hurt you."
@@ -13086,13 +13942,17 @@ stop music fadeout 2.0
 mc "W-{w=0.38}why is that?!?"
 y "Because, this knife has already tasted blood tonight..."
 show yuri_knife2 as yuri at t11 zorder 1
+play sound sheath2
 y "BUT THIS ONE HASN'T!!!!"
 "Yuri pulls out a second knife as she starts slowly walking towards me."
 play music hb
+show noise zorder 5:
+    alpha 0.0
+    linear 1.0 alpha 0.4
 show layer master at heartbeat
 y "LET ME SHOW YOU HOW MUCH I LOVE YOU, HONEY!"
-#Static Screen
 "My heart pounds against my chest at a million miles a second as I start hyperventaling."
+"My vision because blurry as my head starts spinning, trying to come to terms with the situation."
 "I look around for something to defend myself with or a way out of this, but both options come up empty."
 "I'm frozen in fear, hopeless to do anything as Yuri continues her menacing advance."
 $ style.say_dialogue = style.edited
@@ -13102,6 +13962,7 @@ show yuri_knife2 as yuri at face
 "Yuri rushes at me with her knives."
 show yuri_knife5 as yuri at face
 "I manage to grab her wrists in an effort to block her from stabbing me."
+show yuri_knife6 as yuri at face
 play sound drop
 "I manage to twist one of her wrists, forcing her to drop her knife."
 play sound fall
@@ -13135,14 +13996,42 @@ show veins onlayer front:
         easein 1.0 alpha 1.0
         repeat
 play sound stab
-"I feel the weight of Yuri's knife thrusted into the back of my neck."
+"I feel the weight of Yuri's knife thrusted into the back of my neck..."
+"And the excruciating pain as she slowly pulls it out..."
+show layer master at dizzy(1.0, 1.0)
+show layer screens at dizzy(1.0, 1.0)
+show image Solid("ff0000") as i1 onlayer front:
+    additive 1.0
+show image Solid("#440000") as i2 onlayer front:
+    additive 0.4
+show veins onlayer front:
+    additive 0.5
+
+play sound fall
+"My vision becomes filled with blood and tears as my head is slammed into the floor."
 "I try to scream but nothing even comes out of my lungs..."
-"Instead the world around me simply fades to back, with the last thing I hear is Yuri's maniacal laughter."
+"I try to move but my muscles refuse to respond..."
+"All I can feel is the pain flowing out with my blood and the weight of Yuri holding me down."
+"The world around me slowly fades to back, with the last thing I hear is Yuri's maniacal laughter."
 #Stop all effects
 #Hide textbox
+show black onlayer front:
+    alpha 0.0
+    0.25
+    linear 3.0 alpha 1.00
 window hide
 hide veins onlayer front
+hide layer master
+hide layer screens
+hide veins
+stop sound
+show layer master # These will stop the dizzy effect
+show layer screens
+hide i1 onlayer front # These will hide the effects
+hide i2 onlayer front
+hide veins onlayer front
+stop music fadeout 2.0
 scene black
-with close_eyes
+hide black onlayer front
 $ renpy.pause(delay=5.0, hard=True)
 jump day4_start

@@ -119,6 +119,9 @@ define audio.gust = "mod_assets/audio/Gust.ogg" #Wind Gust
 define audio.train = "mod_assets/audio/Train.ogg"
 define audio.train_journey = "mod_assets/audio/Train-Journey.ogg"
 define audio.drop2 = "mod_assets/audio/drop2.ogg"
+define audio.sheath1 = "mod_assets/audio/sheath1.ogg"
+define audio.sheath2 = "mod_assets/audio/sheath2.ogg"
+define audio.scare= "mod_assets/audio/scare.ogg"
 #--Encore's New Music
 define audio.e1 = "<loop 0>mod_assets/audio/void1.ogg" #The Void (First Void Scene Music)
 define audio.f1 = "<loop 0>mod_assets/audio/mainmenu.ogg" #Doki Doki Forever (Main Menu Music, Doki Doki!~)
@@ -216,6 +219,8 @@ image bg space_room = "mod_assets/bgs/space_room.png"
 image bg kitchen_dark = "mod_assets/bgs/kitchen_dark.png"
 image bg kitchen_light = "mod_assets/bgs/kitchen_light.png"
 image bg livingroom_dark = "mod_assets/bgs/livingroom_dark.png"
+image bg natsuki_house = "mod_assets/bgs/natsuki_house.png"
+image bg natsuki_room = "mod_assets/bgs/natsuki_room.png"
 
 # Space room code, ported from script-ch30
 image mask_test = AnimatedMask("#ff6000", "mask_mask", "maskb", 0.10, 32)
@@ -1705,6 +1710,7 @@ image natsuki_pain = "mod_assets/sprites/Breaking_Neck.png"
 image natsuki_rip = "mod_assets/sprites/n_kill.png"
 image natsuki_sweet = "mod_assets/sprites/n_sweet.png"
 image natsuki_bliss = "mod_assets/sprites/n_bliss.png"
+image n_bscream = "mod_assets/sprites/n_bscream.png"
 #image natsuki xu2131 = im.Composite((960, 960), (0, 0), "mod_assets/character_images/natsuki/1_xrossed_arms/1_body/u.png", (18, 22), "mod_assets/character_images/natsuki/2_face_def/base.png", (18, 22), "mod_assets/character_images/natsuki/2_face_def/1_mouth/2.png", (18, 22), "mod_assets/character_images/natsuki/2_face_def/2_nose/1.png", (18, 22), "mod_assets/character_images/natsuki/2_face_def/3_eyes/3.png", (18, 22), "mod_assets/character_images/natsuki/2_face_def/4_eyebrows/1.png")
 #image natsuki xu2143 = im.Composite((960, 960), (0, 0), "mod_assets/character_images/natsuki/1_xrossed_arms/1_body/u.png", (18, 22), "mod_assets/character_images/natsuki/2_face_def/base.png", (18, 22), "mod_assets/character_images/natsuki/2_face_def/1_mouth/2.png", (18, 22), "mod_assets/character_images/natsuki/2_face_def/2_nose/1.png", (18, 22), "mod_assets/character_images/natsuki/2_face_def/3_eyes/4.png", (18, 22), "mod_assets/character_images/natsuki/2_face_def/4_eyebrows/3.png")
 #image natsuki xu1146 = im.Composite((960, 960), (0, 0), "mod_assets/character_images/natsuki/1_xrossed_arms/1_body/u.png", (18, 22), "mod_assets/character_images/natsuki/2_face_def/base.png", (18, 22), "mod_assets/character_images/natsuki/2_face_def/1_mouth/1.png", (18, 22), "mod_assets/character_images/natsuki/2_face_def/2_nose/1.png", (18, 22), "mod_assets/character_images/natsuki/2_face_def/3_eyes/4.png", (18, 22), "mod_assets/character_images/natsuki/2_face_def/4_eyebrows/6.png")
@@ -1720,6 +1726,9 @@ image sayori_end_2 = "mod_assets/sprites/end-glitch2.png"
 image sayori_silhouette = "mod_assets/sprites/sayori_silhouette.png"
 image sayori_ice = "mod_assets/sprites/s_ice.png"
 image sayori_think = "mod_assets/sprites/sayori_think.png"
+image sayori_surprised = "mod_assets/sprites/sayori_surprised.png"
+image sayori_struggle = "mod_assets/sprites/sayori_struggle.png"
+image sayori_dead = "mod_assets/sprites/sayori_dead.png"
 #image sayori u114152 = im.Composite((960, 960), (0, 0), "mod_assets/character_images/sayori/1_uniform/1_body_left/1.png", (0, 0), "mod_assets/character_images/sayori/1_uniform/2_body_right/1.png", (0, 0), "mod_assets/character_images/sayori/2_face/base.png", (0, 0), "mod_assets/character_images/sayori/2_face/1_mouth/4.png", (0, 0), "mod_assets/character_images/sayori/2_face/2_nose/1.png", (0, 0), "mod_assets/character_images/sayori/2_face/3_eyes/5.png", (0, 0), "mod_assets/character_images/sayori/2_face/4_eyebrows/2.png")
 #image sayori u115313 = im.Composite((960, 960), (0, 0), "mod_assets/character_images/sayori/1_uniform/1_body_left/1.png", (0, 0), "mod_assets/character_images/sayori/1_uniform/2_body_right/1.png", (0, 0), "mod_assets/character_images/sayori/2_face/base.png", (0, 0), "mod_assets/character_images/sayori/2_face/1_mouth/5.png", (0, 0), "mod_assets/character_images/sayori/2_face/2_nose/3.png", (0, 0), "mod_assets/character_images/sayori/2_face/3_eyes/1.png", (0, 0), "mod_assets/character_images/sayori/2_face/4_eyebrows/3.png")
 #image sayori u112313 = im.Composite((960, 960), (0, 0), "mod_assets/character_images/sayori/1_uniform/1_body_left/1.png", (0, 0), "mod_assets/character_images/sayori/1_uniform/2_body_right/1.png", (0, 0), "mod_assets/character_images/sayori/2_face/base.png", (0, 0), "mod_assets/character_images/sayori/2_face/1_mouth/2.png", (0, 0), "mod_assets/character_images/sayori/2_face/2_nose/3.png", (0, 0), "mod_assets/character_images/sayori/2_face/3_eyes/1.png", (0, 0), "mod_assets/character_images/sayori/2_face/4_eyebrows/3.png")
@@ -1793,10 +1802,10 @@ image yuri strobe:
         "mod_assets/sprites/yuri_ghost4.png" # Show the second image
         0.1 # Wait this many seconds
         repeat # Repeat over and over
-    
-    time 3.0 # After this many seconds, stop flashing and show the next image
+
+    #time 3.0 # After this many seconds, stop flashing and show the next image
     # copied from yuri 3y3
-    im.Composite((960, 960), (0, 0), "yuri/2l.png", (0, 0), "yuri/2r.png", (0, 0), "yuri/y3.png")
+    #im.Composite((960, 960), (0, 0), "yuri/2l.png", (0, 0), "yuri/2r.png", (0, 0))
 
 #This channel is used for times when secondary tracks are needed to be played aside music.
 #like if we needed m1 to play AND heartbeat to play

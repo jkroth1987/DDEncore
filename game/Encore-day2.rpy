@@ -2490,20 +2490,20 @@ pause 0.15
 stop sound
 hide screen tear
 hide sayori
-show image "mod_assets/cgs/sayori_cg3.png" with dissolve_cg
+play sound bone
+show sayori_surprised as sayori at t11 zorder 1
 "The next thing I know, a noose appears right around Sayori's neck."
 "I see another silhouetted figure emerge from the fog right next to Sayori..."
-show monika s at t33
+show sayori_surprised as sayori at t21 zorder 1
+show monika s at t22 zorder 2
 m "Let's make this quick."
 $ renpy.pause(delay=0.10)
 window show(None)
 show screen tear(20, 0.1, 0.1, 0, 40)
-hide monika s
 pause 0.15
 hide screen tear
-hide image "mod_assets/cgs/sayori_cg3.png"
-show image "mod_assets/cgs/sayori_cg3_struggle.png"
-show monika s at t22
+play sound bone
+show sayori_struggle as sayori at t21 zorder 1
 "The next thing I know, the noose tightens around Sayori's neck as she's suddenly hoisted into the air."
 "As Sayori begins crying out for help and trying to free herself, the figure takes a step closer to me."
 m "Now, listen carefully this time, [player]..."
@@ -2527,25 +2527,26 @@ m "She is nothing."
 m "She is truly useless."
 m "And useless things need to be cast aside..."
 stop music
-show monika snap at t33
+show monika snap at t22 zorder 2
 play sound fingersnap
 "The figure takes a few steps back, raising it's hand and snapping its fingers."
 play sound neck
-hide image "mod_assets/cgs/sayori_cg3_struggle.png"
-show image "mod_assets/cgs/sayori_cg3_gone.png" at t11
+show sayori_dead as sayori at t21 zorder 2
 "I hear a painful crack as Sayori's body slowly goes limp."
-"She's no longer making any noise..."
-"Her gazeless eyes look upon me as a final tear runs down her face."
+"The color suddenly drains from her face, making her skin a ghostly pale..."
+"Even her uniform is drained of its bright colors..."
+"Sayori's gazeless eyes look upon me as a final tear runs down her face."
 m "You can't stop this from happening, [player]."
 m "You need to let her go..."
-show image "mod_assets/cgs/sayori_cg3_gone.png" at face
+show sayori_dead as sayori at face
 hide monika snap
 m "Leave her behind..."
 m "Forget about her..."
 m "Worry about us..."
 m "There is only us..."
 m "Just {w=0.38}us..."
-hide image "mod_assets/cgs/sayori_cg3_struggle.png"
+show sayori_dead as sayori at thide
+hide sayori
 jump day3_start
 
 

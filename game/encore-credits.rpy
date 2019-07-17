@@ -117,6 +117,10 @@ by yagamirai10 [[Community Asset Folder]
 
 \"Mod Logo/" by Monika
 
+\"natsuki_house/" From Kimagure After
+
+\"natsuki_room/" by Rez#6478 in the Community Assets Folder
+
 \"n_void_1/" by Agent Gold
 
 \"park_dusk/" Original Image on https://lemmasoft.renai.us/forums/viewtopic.php?t=17302
@@ -215,6 +219,12 @@ audio.train: By Sound Effects & Templates on YouTube
 (converted to .ogg by Andrew)
 
 audio.train_journey: By SoundEffectsFactory on YouTube
+(converted to .ogg by Andrew)
+
+audio.knife_sheaths: By SOUND and IMAGE FX on YouTube
+(converted to .ogg by Andrew)
+
+audio.scare: By SoundEffectsFactory on YouTube
 (converted to .ogg by Andrew)
 
 audio.gust: https://www.youtube.com/channel/UCTdyXszrxhMP-pbhy85Pa-g
