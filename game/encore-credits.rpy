@@ -227,6 +227,9 @@ audio.knife_sheaths: By SOUND and IMAGE FX on YouTube
 audio.scare: By SoundEffectsFactory on YouTube
 (converted to .ogg by Andrew)
 
+audio.groan: From Five Nights At Freddy's
+(converted to .ogg by Andrew)
+
 audio.gust: https://www.youtube.com/channel/UCTdyXszrxhMP-pbhy85Pa-g
 (converted to .ogg by Andrew)"""
 
@@ -250,7 +253,7 @@ Air Pods by Reenaki
 \"n_kill\" by TheD0ctor with assets from Doki Doki: Exit Music
 \"n_sweet\" by r/user/TacticalCupcakes
 Silhouetted Sprites by POBAW
-Yandere Sayori by Agent Gold
+Yandere and Angry Sayori by LeoDeCraprio
 \"y_mad\" by AjTheYandere
 Casual Monika Sprites by Cyrke on https://imgur.com/gallery/keKxUoB
 Original Monika Shrugging Sprite on https://knowyourmeme.com/photos/1337212-doki-doki-literature-club

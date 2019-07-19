@@ -122,6 +122,8 @@ define audio.drop2 = "mod_assets/audio/drop2.ogg"
 define audio.sheath1 = "mod_assets/audio/sheath1.ogg"
 define audio.sheath2 = "mod_assets/audio/sheath2.ogg"
 define audio.scare= "mod_assets/audio/scare.ogg"
+define audio.groan= "mod_assets/audio/groan.ogg"
+define audio.run= "mod_assets/audio/run.ogg"
 #--Encore's New Music
 define audio.e1 = "<loop 0>mod_assets/audio/void1.ogg" #The Void (First Void Scene Music)
 define audio.f1 = "<loop 0>mod_assets/audio/mainmenu.ogg" #Doki Doki Forever (Main Menu Music, Doki Doki!~)
@@ -1002,7 +1004,7 @@ image n_encore_rects_ghost3:
     alpha 0.0
     4.0
     easeout 8.0 alpha 1.0
-    
+
 image n_encore_rects_ghost1 large:
     RectCluster(Solid("#000"), 4, 30, 10).sm
     pos (664, 289)
@@ -1020,7 +1022,7 @@ image n_encore_rects_ghost3 large:
     pos (599,385)
     size (50, 30)
     alpha 1.0
-    
+
 image natsuki encore_ghost_base:
     "natsuki 1ba"
 image natsuki encore_ghost1:       #Eyes begin to fade
@@ -1039,7 +1041,7 @@ init python:
 
             for i in range(self.numRects):
                 self.add(self.displayable)
-           
+
         def add(self, d):
             s = self.sm.create(d)
             s.x = (random.random() - 0.5) * self.areaWidth * 2
@@ -1047,7 +1049,7 @@ init python:
             s.width = random.random() * self.areaWidth / 2
             s.height = random.random() * self.areaHeight / 2
             self.rects.append(s)
-            
+
         def update(self, st):
             for s in self.rects:
                 s.x = (random.random() - 0.5) * self.areaWidth * 2
@@ -1807,6 +1809,35 @@ image sayori_think = "mod_assets/sprites/sayori_think.png"
 image sayori_surprised = "mod_assets/sprites/sayori_surprised.png"
 image sayori_struggle = "mod_assets/sprites/sayori_struggle.png"
 image sayori_dead = "mod_assets/sprites/sayori_dead.png"
+image s_1pu  = "mod_assets/sprites/s_1pu.png"
+image s_1pk  = "mod_assets/sprites/s_1pk.png"
+image s_1pg  = "mod_assets/sprites/s_1pg.png"
+image s_1pl  = "mod_assets/sprites/s_1pl.png"
+image s_1pt  = "mod_assets/sprites/s_1pt.png"
+image s_2pv  = "mod_assets/sprites/s_2pv.png"
+image s_2pq  = "mod_assets/sprites/s_2pq.png"
+image s_4pj  = "mod_assets/sprites/s_4pj.png"
+image s_4pi  = "mod_assets/sprites/s_4pi.png"
+image s_4pv  = "mod_assets/sprites/s_4pv.png"
+image s_4pw  = "mod_assets/sprites/s_4pw.png"
+image s_4pu  = "mod_assets/sprites/s_4pu.png"
+image s_3pv  = "mod_assets/sprites/s_3pv.png"
+image s_1py  = "mod_assets/sprites/s_1py.png"
+image s_4pr  = "mod_assets/sprites/s_4pr.png"
+image s_1pr  = "mod_assets/sprites/s_1pr.png"
+image s_1pq  = "mod_assets/sprites/s_1pq.png"
+image s_4pq  = "mod_assets/sprites/s_4pq.png"
+image s_mad1  = "mod_assets/sprites/s_mad1.png"
+image s_mad11  = "mod_assets/sprites/s_mad11.png"
+image s_mad12  = "mod_assets/sprites/s_mad12.png"
+image s_mad13  = "mod_assets/sprites/s_mad13.png"
+image s_mad14  = "mod_assets/sprites/s_mad14.png"
+image s_mad2  = "mod_assets/sprites/s_mad2.png"
+image s_mad4  = "mod_assets/sprites/s_mad4.png"
+image s_mad42  = "mod_assets/sprites/s_mad42.png"
+image s_mad43  = "mod_assets/sprites/s_mad43.png"
+image s_mad44  = "mod_assets/sprites/s_mad44.png"
+image s_mad45  = "mod_assets/sprites/s_mad45.png"
 #image sayori u114152 = im.Composite((960, 960), (0, 0), "mod_assets/character_images/sayori/1_uniform/1_body_left/1.png", (0, 0), "mod_assets/character_images/sayori/1_uniform/2_body_right/1.png", (0, 0), "mod_assets/character_images/sayori/2_face/base.png", (0, 0), "mod_assets/character_images/sayori/2_face/1_mouth/4.png", (0, 0), "mod_assets/character_images/sayori/2_face/2_nose/1.png", (0, 0), "mod_assets/character_images/sayori/2_face/3_eyes/5.png", (0, 0), "mod_assets/character_images/sayori/2_face/4_eyebrows/2.png")
 #image sayori u115313 = im.Composite((960, 960), (0, 0), "mod_assets/character_images/sayori/1_uniform/1_body_left/1.png", (0, 0), "mod_assets/character_images/sayori/1_uniform/2_body_right/1.png", (0, 0), "mod_assets/character_images/sayori/2_face/base.png", (0, 0), "mod_assets/character_images/sayori/2_face/1_mouth/5.png", (0, 0), "mod_assets/character_images/sayori/2_face/2_nose/3.png", (0, 0), "mod_assets/character_images/sayori/2_face/3_eyes/1.png", (0, 0), "mod_assets/character_images/sayori/2_face/4_eyebrows/3.png")
 #image sayori u112313 = im.Composite((960, 960), (0, 0), "mod_assets/character_images/sayori/1_uniform/1_body_left/1.png", (0, 0), "mod_assets/character_images/sayori/1_uniform/2_body_right/1.png", (0, 0), "mod_assets/character_images/sayori/2_face/base.png", (0, 0), "mod_assets/character_images/sayori/2_face/1_mouth/2.png", (0, 0), "mod_assets/character_images/sayori/2_face/2_nose/3.png", (0, 0), "mod_assets/character_images/sayori/2_face/3_eyes/1.png", (0, 0), "mod_assets/character_images/sayori/2_face/4_eyebrows/3.png")
