@@ -223,6 +223,7 @@ image bg kitchen_light = "mod_assets/bgs/kitchen_light.png"
 image bg livingroom_dark = "mod_assets/bgs/livingroom_dark.png"
 image bg natsuki_house = "mod_assets/bgs/natsuki_house.png"
 image bg natsuki_room = "mod_assets/bgs/natsuki_room.png"
+image bg bedroom_dawn = "mod_assets/bgs/bedroom_dawn.png"
 
 # Space room code, ported from script-ch30
 image mask_test = AnimatedMask("#ff6000", "mask_mask", "maskb", 0.10, 32)
@@ -1663,6 +1664,8 @@ image cg door 2 = "mod_assets/cgs/The_Door_Opens.png"
 image cg n_day3cg_1 = "mod_assets/cgs/n_day3cg_1.png"
 image cg n_day3cg_2 = "mod_assets/cgs/n_day3cg_2.png"
 image cg n_day3cg_3 = "mod_assets/cgs/n_day3cg_3.png"
+image cg piano_cg = "mod_assets/cgs/piano_cg.png"
+image cg piano_cg_alt = "mod_assets/cgs/piano_cgalt.png"
 
 
 #Encore's New Sprites

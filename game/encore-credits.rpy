@@ -85,6 +85,8 @@ by yagamirai10 [[Community Asset Folder]
 
 \"encoretextbox.png\" by TheD0ct0r#8275(Discord)
 
+\"bedroom_dawn/" by Gorosona#8350
+
 \"closet_dark/" by POBAW
 
 \"club_nothing/" by The Monika Before Story Team

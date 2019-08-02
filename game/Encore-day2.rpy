@@ -2631,7 +2631,7 @@ mc "I-{w=0.38}is that you?"
 hide yuri_silhouette
 show yuri 1n at t11 zorder 2
 "Yuri comes into my view."
-m "Yuri is obessed with you."
+m "Yuri is obsessed with you."
 m "Did you know that?"
 m "She can't go five seconds without thinking of you..."
 m "She's suppressed herself for so long, she can't even figure out how to tell you how she feels..."
@@ -2691,7 +2691,7 @@ show monika s at t44 zorder 4
 "Come on Yuri..."
 "Use it on that thing!"
 show yb2 as yuri at t41
-"Yuri clusmily scoops up the knife with one hand and slowly stands up."
+"Yuri clumsily scoops up the knife with one hand and slowly stands up."
 "Her breathing is erratic as she clutches the knives with both hands."
 m "Think of that \'racoon'\, Yuri."
 m "The one that's always followed you around..."

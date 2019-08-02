@@ -11951,7 +11951,7 @@ label day3_snight:
 if sayori_hangout == True:
     jump s_night1
 
-if sayori_hangout == True:
+if sayori_hangout == False:
     jump s_night2
 
 label day3_ynight:

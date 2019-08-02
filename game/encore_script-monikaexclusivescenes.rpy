@@ -719,22 +719,27 @@ label mencore_3:
     m 1l "Thanks, [player]!"
     show monika 1r
     "Monika cracks her knuckles, letting out one more breath before positioning her fingers above the keys."
+    scene black
     play music "<to 50.88>bgm/credits.ogg" noloop
     "A split second later, she begins playing."
     "I can’t help but notice how elegantly her fingers grace the keys."
     "The melody is calm, but purposeful. Every action with intent, and care...{w=0.38}it's almost hypnotizing!"
     "Unexpectedly, Monika starts to sing."
+    show cg piano_cg_alt with dissolve_cg
     m "Every day, I imagine a future where I can be with you..."
-    m "In my hand, is a pen that will write a poem for me and you..."
+    m "In my hand, is a pen that will write a poem of me and you..."
     "Not even ten seconds in and I’m already blown away..."
     "Her voice is almost angelic as her emerald green eyes light up with a fiery passion I've never seen before..."
     m "The ink flows down into a dark puddle...{w=0.38}just move your hand..."
     m "Write the way into his heart!"
+    show cg piano_cg with dissolve_cg
     "Monika takes a brief look over at me, smiling before she goes back to focusing on the piano."
-    m "But in this world of infinite choices...what would it take just to find that special day?"
+    show cg piano_cg_alt with dissolve_cg
+    m "But in this world of infinite choices...{w=0.38}what would it take just to find that special day?"
     m "What will it take...{w=0.38}just to find...{w=0.38}that special day!"
+    scene bg music_room
+    show monika 2m at t11 zorder 1
     "Monika suddenly stops playing and turns to face me."
-    show monika 2m
     m "Well...{w=0.38}that’s about all I have right now..."
     "I can barely contain my enjoyment as I stand up and applaud as loudly as humanly possible."
     mc "Encore! Encore!"
