@@ -144,6 +144,8 @@ define audio.e15 = "<loop 0>mod_assets/audio/Ohayou_Sayori.ogg" #Alternate Sayor
 define audio.e16 = "<loop 0>mod_assets/audio/Ohayou_Yuri.ogg" #Alternate Yuri Theme MBS
 define audio.e17 = "<loop 0>mod_assets/audio/iPhone_Ring.ogg" #iPhone
 define audio.e18 = "<loop 0>mod_assets/audio/Hypothetical Romance.ogg" #Monika Day 3 Unique OST
+define audio.e19 = "<loop 0>mod_assets/audio/Natsuki_Confession.ogg" #Natsuki Confession Music
+define audio.e20 = "<loop 0>mod_assets/audio/Yuri_Confession.ogg" #Yuri Confession Music
 
 
 # Backgrounds
