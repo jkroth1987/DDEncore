@@ -1580,6 +1580,8 @@ default sayori_hangout = True #Do you get food with Sayori on Day 3?
 default natsuki_hangout = True #Do you hangout with Natsuki outside of school on Day 3?
 default monika_hangout = True #Do you hangout with Monika outside of school on Day 3?
 default yuri_hangout = True #Do you hangout with Yuri outside of school on Day 3?
+default n_love = False #Do you accept Natsuki's confession on Day 4?
+default y_love = False #Do you accept Yuri's confession on Day 4?
 
 # Instantiating variables for poem appeal. This is how much each character likes the poem for each day.
 # -1 = Dislike, 0 = Neutral, 1 = Like
@@ -1668,6 +1670,7 @@ image cg n_day3cg_2 = "mod_assets/cgs/n_day3cg_2.png"
 image cg n_day3cg_3 = "mod_assets/cgs/n_day3cg_3.png"
 image cg piano_cg = "mod_assets/cgs/piano_cg.png"
 image cg piano_cg_alt = "mod_assets/cgs/piano_cgalt.png"
+image cg n_day3_h2 = "mod_assets/cgs/n_day3_h2.png"
 
 
 #Encore's New Sprites
@@ -1796,6 +1799,9 @@ image natsuki_rip = "mod_assets/sprites/n_kill.png"
 image natsuki_sweet = "mod_assets/sprites/n_sweet.png"
 image natsuki_bliss = "mod_assets/sprites/n_bliss.png"
 image n_bscream = "mod_assets/sprites/n_bscream.png"
+image n_cry1 = "mod_assets/sprites/n_cry1.png"
+image n_cry2 = "mod_assets/sprites/n_cry2.png"
+
 #image natsuki xu2131 = im.Composite((960, 960), (0, 0), "mod_assets/character_images/natsuki/1_xrossed_arms/1_body/u.png", (18, 22), "mod_assets/character_images/natsuki/2_face_def/base.png", (18, 22), "mod_assets/character_images/natsuki/2_face_def/1_mouth/2.png", (18, 22), "mod_assets/character_images/natsuki/2_face_def/2_nose/1.png", (18, 22), "mod_assets/character_images/natsuki/2_face_def/3_eyes/3.png", (18, 22), "mod_assets/character_images/natsuki/2_face_def/4_eyebrows/1.png")
 #image natsuki xu2143 = im.Composite((960, 960), (0, 0), "mod_assets/character_images/natsuki/1_xrossed_arms/1_body/u.png", (18, 22), "mod_assets/character_images/natsuki/2_face_def/base.png", (18, 22), "mod_assets/character_images/natsuki/2_face_def/1_mouth/2.png", (18, 22), "mod_assets/character_images/natsuki/2_face_def/2_nose/1.png", (18, 22), "mod_assets/character_images/natsuki/2_face_def/3_eyes/4.png", (18, 22), "mod_assets/character_images/natsuki/2_face_def/4_eyebrows/3.png")
 #image natsuki xu1146 = im.Composite((960, 960), (0, 0), "mod_assets/character_images/natsuki/1_xrossed_arms/1_body/u.png", (18, 22), "mod_assets/character_images/natsuki/2_face_def/base.png", (18, 22), "mod_assets/character_images/natsuki/2_face_def/1_mouth/1.png", (18, 22), "mod_assets/character_images/natsuki/2_face_def/2_nose/1.png", (18, 22), "mod_assets/character_images/natsuki/2_face_def/3_eyes/4.png", (18, 22), "mod_assets/character_images/natsuki/2_face_def/4_eyebrows/6.png")
@@ -1889,6 +1895,12 @@ image yuri_knife3 = "mod_assets/sprites/yuri_knife3.png"
 image yuri_knife4 = "mod_assets/sprites/yuri_knife4.png"
 image yuri_knife5 = "mod_assets/sprites/yuri_knife5.png"
 image yuri_knife6 = "mod_assets/sprites/yuri_knife6.png"
+image y_cry1 = "mod_assets/sprites/yuri_cry1.png"
+image y_cry2 = "mod_assets/sprites/yuri_cry2.png"
+image y_cry3 = "mod_assets/sprites/yuri_cry3.png"
+image y_cry4 = "mod_assets/sprites/yuri_cry4.png"
+image y_cry5 = "mod_assets/sprites/yuri_cry5.png"
+image y_cry6 = "mod_assets/sprites/yuri_cry6.png"
 #image yuri u122218 = im.Composite((960, 960), (0, 0), "mod_assets/character_images/yuri/1_uniform/1_body_left/1.png", (0, 0), "mod_assets/character_images/yuri/1_uniform/2_body_right/2.png", (0, 0), "mod_assets/character_images/yuri/2_face/base.png", (0, 0), "mod_assets/character_images/yuri/2_face/1_mouth/2.png", (0, 0), "mod_assets/character_images/yuri/2_face/2_nose/2.png", (0, 0), "mod_assets/character_images/yuri/2_face/3_eyes/1.png", (0, 0), "mod_assets/character_images/yuri/2_face/4_eyebrows/8.png")
 #image yuri u114221 = im.Composite((960, 960), (0, 0), "mod_assets/character_images/yuri/1_uniform/1_body_left/1.png", (0, 0), "mod_assets/character_images/yuri/1_uniform/2_body_right/1.png", (0, 0), "mod_assets/character_images/yuri/2_face/base.png", (0, 0), "mod_assets/character_images/yuri/2_face/1_mouth/4.png", (0, 0), "mod_assets/character_images/yuri/2_face/2_nose/2.png", (0, 0), "mod_assets/character_images/yuri/2_face/3_eyes/2.png", (0, 0), "mod_assets/character_images/yuri/2_face/4_eyebrows/1.png")
 #image yuri u125111 = im.Composite((960, 960), (0, 0), "mod_assets/character_images/yuri/1_uniform/1_body_left/1.png", (0, 0), "mod_assets/character_images/yuri/1_uniform/2_body_right/2.png", (0, 0), "mod_assets/character_images/yuri/2_face/base.png", (0, 0), "mod_assets/character_images/yuri/2_face/1_mouth/5.png", (0, 0), "mod_assets/character_images/yuri/2_face/2_nose/1.png", (0, 0), "mod_assets/character_images/yuri/2_face/3_eyes/1.png", (0, 0), "mod_assets/character_images/yuri/2_face/4_eyebrows/1.png")

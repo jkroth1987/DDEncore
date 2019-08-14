@@ -2967,7 +2967,7 @@ n "YES!"
 "My train of thought is interupted by Natsuki's sudden cheering."
 mc "What is it?"
 n "I found it!"
-#Possible Natsuki CG
+show cg n_day3_h2 with dissolve_cg
 "Natsuki proudly twirls around as she clutches the book close to her chest."
 "I just stand there smiling as Natsuki does her little celebration."
 "She really is something..."
@@ -2977,7 +2977,7 @@ n "I found it!"
 "It makes me wonder if I can make her even more happy..."
 "Suddenly I see Natsuki twirling a little too close to the bookshelves."
 mc "Hey, just make sure you don't hit the shelves..."
-#End CG
+scene bg manga
 show natsuki 1be at t11 zorder 1
 n "Oh come on! It's not like I'm that clumsy!"
 show natsuki 1bg

@@ -17,8 +17,8 @@ init python:
 Writers: Agent Gold, Bug, Nick (Canad1an),
 Ploxmaster708, Rudy, Andrew J. Striedl
 Editor: LeoHughes02
-Artists: 3Monika4 (Monika), Elaina Sasso, Kiiori
- @reenaki_m (Instagram)
+Artists: 3Monika4 (Monika), Elaina Sasso, Kiiori,
+ @reenaki_m (Instagram), Tat-bunny (https://www.deviantart.com/tat-bunny)
 Music: Daniel Kruyer (Angelic Beast)"""
 
     # 2
@@ -258,6 +258,7 @@ Air Pods by Reenaki
 Silhouetted Sprites by POBAW
 Yandere and Angry Sayori by LeoDeCraprio
 \"y_mad\" by AjTheYandere
+Crying Yuri Sprites from Doki Doki: Exit Music 
 Casual Monika Sprites by Cyrke on https://imgur.com/gallery/keKxUoB
 Original Monika Shrugging Sprite on https://knowyourmeme.com/photos/1337212-doki-doki-literature-club
 Other Unique Sprites by Agent Gold"""

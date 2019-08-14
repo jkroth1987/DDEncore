@@ -10728,7 +10728,7 @@ if hangout3 == "Yuri":
         "I just hope I can talk about it with her in an honest fashion..."
 
     if tell_monika == False:
-        "I'm not completelty convinced that thise were ordinary cat scratches..."
+        "I'm not completely convinced that thise were ordinary cat scratches..."
         "And if she's actually cutting herself and denying it, then that's a serious problem in of itself..."
         "But...{w=0.38}maybe I don't need Monika's help on this..."
         "Maybe I can talk to Yuri about this one-on-one?"
@@ -13676,7 +13676,7 @@ show s_mad12 as sayori at t11 zorder 1
 s "FORGET SCHOOL!"
 s "THEY NEVER TAUGHT US ANYTHING USEFUL ANYWAY!"
 s "IT'S ALL AN ELABORATE GAME, [player]..."
-s "YOU AND THIS WORLD HAVE PLAED ME FOR SO LONG..."
+s "YOU AND THIS WORLD HAVE PLAYED ME FOR SO LONG..."
 s "USING MY KIDNESS TO MAKE YOU FEEL GOOD ABOUT YOURSELVES..."
 show s_mad44 as sayori at t11 zorder 1
 s "BUT I FIGURED OUT HOW TO BEAT IT!!!"
