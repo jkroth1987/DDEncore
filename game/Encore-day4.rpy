@@ -5088,6 +5088,101 @@ show yuri at thide
 hide yuri
 scene bg bedroom
 with wipeleft_scene
+"I ended walking the way home alone, not bothering to wait for Sayori to catch up with me."
+"I didn't even look behind me once to check if she was there, and if she was, I didn't hear her."
+"As soon I got home, I got changed out of my uniform and hole myself up in my room."
+"I lay back on my bed, my ears still ringing from all the vicious insults the girls hurled at one another..."
+"I still can't believe what I heard in there..."
+"They treated each other like dirt just so they could try to win me over..."
+"What am I going to do?"
+"I don’t even know if I should even come back..."
+
+if n_love == True:
+    "The damage is done, thanks to me..."
+
+if n_love == False:
+    "With how brutal they were to each other, I don't think they'll make ammends anytime soon..."
+
+"The club’s probably ruined for good, even if by some mircale we can move past this. They all like me and they’ll probably continue to fight each other whether I’m there or not."
+"I suppose I have an obligation to stick around. I need to do my part for the photoshoot..."
+"Assuming the club doesn't disband by Monday..."
+"I let out a long sigh and stare up at my ceeling as I slowly begin to get lost in my thoughts."
+"..."
+"..."
+"..."
+"BZZT!"
+"I suddenly feel my phone vibrate."
+"I reach over to my phone to see who messaged me."
+
+if encore_sayoriquestion_1 == True:
+    jump s_offer
+
+if encore_sayoriquestion_2 == False:
+
+#Sayori
+
+if hangout1 == "Sayori" and hangout2 == "Sayori" and hangout3 == "Sayori" or hangout3 == "Natsuki" or hangout3 == "Monika" or hangout3 == "Yuri":
+    jump s_offer
+
+if hangout1 == "Sayori" and hangout2 == "Sayori" or hangout2 == "Natsuki" or hangout2 == "Monika" or hangout2 == "Yuri" and hangout3 == "Sayori":
+    jump s_offer
+
+if hangout1 == "Sayori" or hangout1 == "Natsuki" or hangout1 == "Monika" or hangout1 == "Yuri" and hangout2 == "Sayori" and hangout3 == "Sayori":
+    jump s_offer
+
+
+#Natsuki
+
+if hangout1 == "Natsuki" and hangout2 == "Natsuki" and hangout3 == "Natsuki" or hangout3 == "Sayori" or hangout3 == "Monika" or hangout3 == "Yuri":
+    jump n_offer
+
+if hangout1 == "Natsuki" and hangout2 == "Natsuki" or hangout2 == "Sayori" or hangout2 == "Monika" or hangout2 == "Yuri" and hangout3 == "Natsuki":
+    jump n_offer
+
+if hangout1 == "Natsuki" or hangout1 == "Sayori" or hangout1 == "Monika" or hangout1 == "Yuri" and hangout2 == "Natsuki" and hangout3 == "Natsuki":
+    jump n_offer
+
+
+#Monika
+
+if hangout1 == "Monika" and hangout2 == "Monika" and hangout3 == "Monika" or hangout3 == "Sayori" or hangout3 == "Natsuki" or hangout3 == "Yuri":
+    jump m_offer
+
+if hangout1 == "Monika" and hangout2 == "Monika" or hangout2 == "Sayori" or hangout2 == "Natsuki" or hangout2 == "Yuri" and hangout3 == "Monika":
+    jump m_offer
+
+if hangout1 == "Monika" or hangout1 == "Sayori" or hangout1 == "Natsuki" or hangout1 == "Yuri" and hangout2 == "Monika" and hangout3 == "Monika":
+    jump m_offer
+
+
+#Yuri
+
+if hangout1 == "Yuri" and hangout2 == "Yuri" and hangout3 == "Yuri" or hangout3 == "Sayori" or hangout3 == "Monika" or hangout3 == "Natsuki":
+    jump y_offer
+
+if hangout1 == "Yuri" and hangout2 == "Yuri" or hangout2 == "Sayori" or hangout2 == "Monika" or hangout2 == "Natsuki" and hangout3 == "Yuri":
+    jump y_offer
+
+if hangout1 == "Yuri" or hangout1 == "Sayori" or hangout1 == "Monika" or hangout1 == "Natsuki" and hangout2 == "Yuri" and hangout3 == "Yuri":
+    jump y_offer
+
+
+#Mixed Case
+
+else:
+
+    if hangout3 == "Sayori":
+        jump s_offer
+
+    if hangout3 == "Natsuki":
+        jump n_offer
+
+    if hangout3 == "Monika":
+        jump m_offer
+
+    if hangout3 == "Yuri":
+        jump y_offer
+
 
 
 
@@ -5556,3 +5651,120 @@ show yuri at thide
 hide yuri
 scene bg bedroom
 with wipeleft_scene
+"I ended walking the way home alone, not bothering to wait for Sayori to catch up with me."
+"I didn't even look behind me once to check if she was there, and if she was, I didn't hear her."
+"As soon I got home, I got changed out of my uniform and hole myself up in my room."
+"I lay back on my bed, my ears still ringing from all the vicious insults the girls hurled at one another..."
+"I still can't believe what I heard in there..."
+"They treated each other like dirt just so they could try to win me over..."
+"What am I going to do?"
+"I don’t even know if I should even come back..."
+
+if y_love == True:
+    "The damage is done, thanks to me..."
+
+if y_love == False:
+    "With how brutal they were to each other, I don't think they'll make ammends anytime soon..."
+
+"The club’s probably ruined for good, even if by some mircale we can move past this. They all like me and they’ll probably continue to fight each other whether I’m there or not."
+"I suppose I have an obligation to stick around. I need to do my part for the photoshoot..."
+"Assuming the club doesn't disband by Monday..."
+"I let out a long sigh and stare up at my ceeling as I slowly begin to get lost in my thoughts."
+"..."
+"..."
+"..."
+"BZZT!"
+"I hear my phone vibrate."
+"I reach over to my phone to see who messaged me."
+
+if encore_sayoriquestion_1 == True:
+    jump s_offer
+
+if encore_sayoriquestion_2 == False:
+
+#Sayori
+
+if hangout1 == "Sayori" and hangout2 == "Sayori" and hangout3 == "Sayori" or hangout3 == "Natsuki" or hangout3 == "Monika" or hangout3 == "Yuri":
+    jump s_offer
+
+if hangout1 == "Sayori" and hangout2 == "Sayori" or hangout2 == "Natsuki" or hangout2 == "Monika" or hangout2 == "Yuri" and hangout3 == "Sayori":
+    jump s_offer
+
+if hangout1 == "Sayori" or hangout1 == "Natsuki" or hangout1 == "Monika" or hangout1 == "Yuri" and hangout2 == "Sayori" and hangout3 == "Sayori":
+    jump s_offer
+
+
+#Natsuki
+
+if hangout1 == "Natsuki" and hangout2 == "Natsuki" and hangout3 == "Natsuki" or hangout3 == "Sayori" or hangout3 == "Monika" or hangout3 == "Yuri":
+    jump n_offer
+
+if hangout1 == "Natsuki" and hangout2 == "Natsuki" or hangout2 == "Sayori" or hangout2 == "Monika" or hangout2 == "Yuri" and hangout3 == "Natsuki":
+    jump n_offer
+
+if hangout1 == "Natsuki" or hangout1 == "Sayori" or hangout1 == "Monika" or hangout1 == "Yuri" and hangout2 == "Natsuki" and hangout3 == "Natsuki":
+    jump n_offer
+
+
+#Monika
+
+if hangout1 == "Monika" and hangout2 == "Monika" and hangout3 == "Monika" or hangout3 == "Sayori" or hangout3 == "Natsuki" or hangout3 == "Yuri":
+    jump m_offer
+
+if hangout1 == "Monika" and hangout2 == "Monika" or hangout2 == "Sayori" or hangout2 == "Natsuki" or hangout2 == "Yuri" and hangout3 == "Monika":
+    jump m_offer
+
+if hangout1 == "Monika" or hangout1 == "Sayori" or hangout1 == "Natsuki" or hangout1 == "Yuri" and hangout2 == "Monika" and hangout3 == "Monika":
+    jump m_offer
+
+
+#Yuri
+
+if hangout1 == "Yuri" and hangout2 == "Yuri" and hangout3 == "Yuri" or hangout3 == "Sayori" or hangout3 == "Monika" or hangout3 == "Natsuki":
+    jump y_offer
+
+if hangout1 == "Yuri" and hangout2 == "Yuri" or hangout2 == "Sayori" or hangout2 == "Monika" or hangout2 == "Natsuki" and hangout3 == "Yuri":
+    jump y_offer
+
+if hangout1 == "Yuri" or hangout1 == "Sayori" or hangout1 == "Monika" or hangout1 == "Natsuki" and hangout2 == "Yuri" and hangout3 == "Yuri":
+    jump y_offer
+
+
+#Mixed Case
+
+else:
+
+    if hangout3 == "Sayori":
+        jump s_offer
+
+    if hangout3 == "Natsuki":
+        jump n_offer
+
+    if hangout3 == "Monika":
+        jump m_offer
+
+    if hangout3 == "Yuri":
+        jump y_offer
+
+
+
+
+label s_offer:
+
+"It's from Sayori."
+s "Can we please talk about today? Face-to-face?"
+
+label n_offer:
+
+"It's from Natsuki."
+n "I want to talk about what happened earlier, in person."
+
+label m_offer:
+
+"It's from Monika."
+m "If you're free, I want to talk to you about what happened. In person."
+
+label y_offer:
+
+"It's from Yuri."
+y "I'd like for us to discuss what happened earlier in person, if you have the time..."

@@ -12352,7 +12352,7 @@ if hangout1 == "Monika":
         m "Given past performance with Sayori...{w=0.38}I suggest we deal with [poem_giver] first. It'll be easier."
         m "Tomorrow, I want you to tell her off!"
         m "Tell her you want {i}nothing{/i} to do with her!"
-        m "Since you have no real feelings for her, this should be an easy task for you. I believe in you."
+        m "Since you should have no real feelings for her, this will be an easy task for you. I believe in you."
 
         if encore_sayoriquestion_1 == True:
             m "Once [poem_giver]'s been dealt with...{w=0.38}maybe by that point I'll have an idea of how to deal with Sayori..."
@@ -12391,7 +12391,7 @@ if hangout1 == "Monika":
     if monika_hangout == False:
         m "I wish we could've spent more time today..."
         m "We never get enough time together!"
-        m "And as much as I'm angry at you for hanging out with me after school today..."
+        m "And as much as I'm angry at you for not hanging out with me after school today..."
         m "I understand you need some time to think things over..."
 
     stop music fadeout 2.0

@@ -65,7 +65,7 @@ label mencore_1:
     mc "You seemed to have had a rough day..."
     show monika u114311
     "Monika suddenly realises how excitable she's become and recomposes herself."
-    m 2n "Oh...{w=0.38} yeah...{w=0.38} sorry, I got kind of carried away there, didn't I?"
+    m 2n "Oh...{w=0.38} yeah...{w=0.38} sorry, I got kind of got carried away there, didn't I?"
     m 2l "Sorry, [player]! Just seeing you seems to have put me in better spirits~"
     mc "Well, hey! Glad I could help!"
     show monika 1j
@@ -1988,7 +1988,7 @@ show monika 1bm  at t11 zorder 1
 "I've lived in this area my whole life, but I don't think I've ever really had an appreciation for it until now..."
 "Being up here to look down at everything really helps calm my nerves."
 "Everything's just so...{w=0.38}peaceful..."
-#Monika Cg?
+show cg city_cg_monika
 "I turn to my right to see Monika elegantly looking out onto the horizon."
 "Even when she's spacing out, she manages to look her best..."
 "The way her emerald eyes glisten in the moonlight..."
@@ -2000,7 +2000,9 @@ show monika 1bm  at t11 zorder 1
 "But, can I be with her?"
 "..."
 "At least in this moment...{w=0.38}I really want to..."
+show cg city_cg_monika2
 "Monika then turns to me, notcing my stare."
+show cg city_cg_monika
 "She immediately blushes as she looks back out onto the cityscape."
 m "You know, seeing everything so small just reminds me in retrospect of how insignificant all our problems are..."
 mc "How so?"
@@ -2015,8 +2017,10 @@ m "Most people don't realize just how small they are in retrospect to the univer
 m "They don't think to question what really is determining their lives..."
 m "They'll never know what's really out there..."
 mc "Well, what do you think is out there, Monika?"
+show cg city_cg_monika2
 m "The truth."
 m "The truth that there's more to life then what most people see it as..."
+show cg city_cg_monika
 m "They're short-sighted because they can't see past their own little realities..."
 m "Reality can be a multi-layered dimension for all we know!"
 m "Even now, sitting here above everything we've come to know, whose to say that there isn't something else looking down on us with the ability to control what we say, what we do, how we act, everything!"
@@ -2037,8 +2041,9 @@ m "But what is 'real', [player]?"
 m "How do we know we aren't being controlled to believe that this is just life as we know it..."
 m "I don't know, all this kind of reminds me of that book I mentioned earlier today."
 "Monika turns to face me fully."
-#End CG
-show monika 1bm  at t11 zorder 1
+scene bg city_overlook
+with dissolve_cg
+show monika 1bm at t11 zorder 1
 m "About how two people know the truth about their world..."
 m "How they struggle to accept it..."
 mc "It does sound like a pretty great read!"
