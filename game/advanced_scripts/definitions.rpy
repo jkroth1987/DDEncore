@@ -114,6 +114,7 @@ define audio.stab = "mod_assets/audio/Stab.ogg"
 define audio.drop = "mod_assets/audio/Metal_Drop.ogg"
 define audio.belly = "mod_assets/audio/Stomach-Growl.ogg"
 define audio.sample = "mod_assets/audio/Your_Reality_Sample.ogg" #Sample Music
+define audio.preview = "mod_assets/audio/Your_Reality_Preview.ogg"
 define audio.doorbell = "mod_assets/audio/Doorbell.ogg"
 define audio.gust = "mod_assets/audio/Gust.ogg" #Wind Gust
 define audio.train = "mod_assets/audio/Train.ogg"

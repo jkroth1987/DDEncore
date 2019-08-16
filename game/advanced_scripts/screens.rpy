@@ -1377,6 +1377,15 @@ style history_label_text:
 ## Additional screens
 ################################################################################
 
+# Disables all control from the player.
+# Only use this if you know you'll be hiding the screen later, or the game will soft lock!
+screen disable_control():
+    # Disable controls for some automatic action
+    key "mouseup_1" action NullAction()
+    key "K_RETURN" action NullAction()
+    key "K_SPACE" action NullAction()
+    key "K_KP_ENTER" action NullAction()
+    key "joy_dismiss" action NullAction()
 
 ## Confirm screen ##############################################################
 ##

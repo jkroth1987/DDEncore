@@ -637,6 +637,7 @@ label mencore_3:
     m 1a "Yep! Right now it's just going to be a piano solo."
     mc "Alright..."
     "Monika hits the play button on her ipod."
+    window hide
     play audio sample
     $ renpy.pause(delay=10.00, hard=True)
     show monika 1j
@@ -710,6 +711,16 @@ label mencore_3:
     show monika 1m
     "We both turn to face the piano."
     m 1n "Well...{w=0.38}here I go."
+    
+    $ skip_song = False
+    
+    if config.developer == True:
+        call screen confirm("You are about to lose control in developer mode.\nSkip ahead instead?", Return(True), Return(False))
+        if _return:
+            $ skip_song = True
+        else:
+            pass
+    
     show monika 1m
     "She quietly makes her way towards the piano and sits down."
     "I pull up a chair and sit right across from Monika."
@@ -719,24 +730,43 @@ label mencore_3:
     m 1l "Thanks, [player]!"
     show monika 1r
     "Monika cracks her knuckles, letting out one more breath before positioning her fingers above the keys."
+    
+    if skip_song == True:
+        jump post_monika_song
+    
+    show screen disable_control
+    $ renpy.choice_for_skipping()
+    $ quick_menu = False
+    $ m.what_prefix = ''
+    $ m.what_suffix = ''
     scene black
-    play music "<to 50.88>bgm/credits.ogg" noloop
-    "A split second later, she begins playing."
-    "I can’t help but notice how elegantly her fingers grace the keys."
-    "The melody is calm, but purposeful. Every action with intent, and care...{w=0.38}it's almost hypnotizing!"
-    "Unexpectedly, Monika starts to sing."
+    play music preview noloop
+    "{cps=34}A split second later, she begins playing.{/cps}{w=3.0}{nw}"
+    "{cps=34}I can’t help but notice how elegantly her fingers grace the keys.{/cps}{w=3.0}{nw}"
+    "{cps=34}The melody is calm, but purposeful. Every action with intent, and care...{/cps}{w=0.38}{cps=34}it's almost hypnotizing!{/cps}{w=3.0}{nw}"
+    "{cps=34}Unexpectedly, Monika starts to sing.{/cps}{w=1.5}{nw}"
     show cg piano_cg_alt with dissolve_cg
-    m "Every day, I imagine a future where I can be with you..."
-    m "In my hand, is a pen that will write a poem of me and you..."
-    "Not even ten seconds in and I’m already blown away..."
-    "Her voice is almost angelic as her emerald green eyes light up with a fiery passion I've never seen before..."
-    m "The ink flows down into a dark puddle...{w=0.38}just move your hand..."
-    m "Write the way into his heart!"
-    show cg piano_cg with dissolve_cg
-    "Monika takes a brief look over at me, smiling before she goes back to focusing on the piano."
-    show cg piano_cg_alt with dissolve_cg
-    m "But in this world of infinite choices...{w=0.38}what would it take just to find that special day?"
-    m "What will it take...{w=0.38}just to find...{w=0.38}that special day!"
+    m "{cps=34}\"Every day, {/cps}{w=1.5}{cps=34}I imagine a future where {/cps}{w=1.25}{cps=34}I can be with you...\"{/cps}{w=3.7}{nw}"
+    m "{cps=34}\"In my hand, {/cps}{w=1.45}{cps=34}is a pen that will write a poem {/cps}{w=1.4}{cps=34}of me and you...\"{/cps}{w=3.0}{nw}"
+    "{cps=34}Not even ten seconds in and I’m already blown away...{/cps}{w=3.0}{nw}"
+    "{cps=34}Her voice is almost angelic as her emerald green eyes light up with a fiery passion I've never seen before...{/cps}{w=3.1}{nw}"
+    m "{cps=34}\"The ink flows down {/cps}{w=1.31}{cps=34}into a dark puddle...{/cps}{w=2.01}{cps=34}just move your hand...\"{/cps}{w=1.04}{nw}"
+    m "{cps=34}\"Write the way into his heart!\"{/cps}{w=1.96}{nw}"
+    #show cg piano_cg with dissolve_cg
+    show cg piano_cg as cg2 at cgfade
+    "{cps=34}Monika takes a brief look over at me, smiling before she goes back to focusing on the piano.{/cps}{w=6.5}{nw}"
+    hide cg2
+    #show cg piano_cg_alt with dissolve_cg
+    m "{cps=34}\"But in this world of infinite choices...{/cps}{w=3.48}{cps=34}what will it take just to find that special day?\"{/cps}{w=2.93}{nw}"
+    m "{cps=24}\"What will it take...{/cps}{w=0.684}{cps=24}just to find...{/cps}{w=1.36}{cps=24}that special day!\"{/cps}{w=4.0}{nw}"
+    
+    $ m.what_prefix = '"'
+    $ m.what_suffix = '"'
+    $ quick_menu = True
+    hide screen disable_control
+    
+    label post_monika_song:
+        pass
     scene bg music_room
     show monika 2m at t11 zorder 1
     "Monika suddenly stops playing and turns to face me."
