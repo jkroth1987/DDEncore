@@ -1010,7 +1010,7 @@ if poem_giver == "Natsuki":
     m 3q "Fine. I'll give you guys two minutes."
     mc "Thank you, Monika."
     show monika 1h
-    "Monika angirly stares at Natsuki for her to say the same, but she mantains her eye contact with the floor."
+    "Monika angrily stares at Natsuki for her to say the same, but she mantains her eye contact with the floor."
     show monika at thide
     hide monika
     show natsuki 1s at t11 zorder 1
@@ -1074,7 +1074,7 @@ if poem_giver == "Yuri":
     m 3q "Fine. I'll give you guys two minutes."
     mc "Thank you, Monika."
     show monika 1h
-    "Monika angirly stares at Yuri for her to say the same, but she seems to embarrassed to say much."
+    "Monika angrily stares at Yuri for her to say the same, but she seems to embarrassed to say much."
     show monika at thide
     hide monika
     show yuri 4c at t11 zorder 1
@@ -2728,7 +2728,7 @@ mc "Yuri-"
 y 3y7 "Go fuck yourself!"
 show y_cry1 as yuri at t11 zorder 1
 "Yuri's voice cracks again as she starts sobbing."
-show yuri at lhide
+show y_cry1 as yuri  at lhide
 hide yuri
 "Before I could even respond, Yuri runs back into the clubroom."
 
@@ -2853,7 +2853,7 @@ if encore_sayoriquestion_1 == True:
     mc "I..."
     show monika 1h
     show yuri 3r
-    "I can hardly muster a response as everyone angirly eyes me down."
+    "I can hardly muster a response as everyone angrily eyes me down."
     "I've royally screwed up..."
     m 1i "[player], step outside with me for a second."
     show monika 1h
@@ -3109,7 +3109,7 @@ show natsuki 1p
 mc "I..."
 show monika 1h
 show yuri 3r
-"I can hardly muster a response as everyone angirly eyes me down."
+"I can hardly muster a response as everyone angrily eyes me down."
 "I've royally screwed up..."
 m 1i "[player], step outside with me for a second."
 show monika 1h
@@ -3166,7 +3166,7 @@ n 2p "You've been seeing Monika this entire fucking time?!?!"
 n 1p "What the hell is wrong with you?!?"
 show natsuki 1o
 mc "I..."
-"I can hardly muster a response as everyone angirly eyes me down."
+"I can hardly muster a response as everyone angrily eyes me down."
 "I've royally screwed up..."
 m 1i "[player], step outside with me for a second."
 show monika 1h
@@ -3221,7 +3221,7 @@ n 2p "You've been seeing Yuri this entire fucking time?!?!"
 n 1p "What the hell is wrong with you?!?"
 show natsuki 1o
 mc "I..."
-"I can hardly muster a response as everyone angirly eyes me down."
+"I can hardly muster a response as everyone angrily eyes me down."
 "I've royally screwed up..."
 m 1i "[player], step outside with me for a second."
 show monika 1h
@@ -3265,16 +3265,17 @@ show natsuki 12f
 s 2g "N-{w=0.38}Natsuki?"
 "Sayori attempts to place her hand on Natsuki."
 show sayori 1w
+show n_cry2 as natsuki at t42 zorder 2
 play sound "sfx/slap.ogg"
 "However, Natsuki slaps it away as hard as she can, making Sayori howl in pain."
 show monika 1d at h43 zorder 3
 show yuri 3p at h44 zorder 4
-show n_cry1 as natsuki at t11 zorder 1
+show n_cry1 as natsuki at t42 zorder 2
 n "DON'T FUCKING TOUCH ME!"
 n "DON'T EVEN TRY TO ACT ALL BUDDY-BUDDY WITH ME, YOU WHORE!"
 
 if encore_sayoriquestion_1 == True:
-    show n_cry2 as natsuki at t11 zorder 1
+    show n_cry2 as natsuki at t42 zorder 2
     n "YOU FUCKING KEPT HIM ALL TO YOURSELF AND YOU HAVE THE AUDACITY TO ACT LIKE YOU CARE ABOUT ME?!?!?"
 
 if encore_sayoriquestion_1 == False:
@@ -3282,7 +3283,7 @@ if encore_sayoriquestion_1 == False:
     if hangout1 == "Sayori":
         if hangout2 == "Sayori":
             if hangout3 == "Sayori":
-                show n_cry2 as natsuki at t11 zorder 1
+                show n_cry2 as natsuki at t42 zorder 2
                 n "YOU FUCKING KEPT HIM ALL TO YOURSELF AND YOU HAVE THE AUDACITY TO ACT LIKE YOU CARE ABOUT ME?!?!?"
                 jump n_breakdown
 
@@ -3290,7 +3291,7 @@ if encore_sayoriquestion_1 == False:
     if hangout1 != "Sayori":
         if hangout2 == "Sayori":
             if hangout3 == "Sayori":
-                show n_cry2 as natsuki at t11 zorder 1
+                show n_cry2 as natsuki at t42 zorder 2
                 n "YOU'RE THE ONE THAT MADE HIM FALL FOR YOU AND NOT ME!"
                 n "YOU TOOK HIM AWAY FROM ME!"
                 n "SO DON'T PRETEND LIKE YOU CARE ABOUT ANYONE BUT YOURSELF!"
@@ -3300,7 +3301,7 @@ if encore_sayoriquestion_1 == False:
     if hangout1 == "Sayori":
         if hangout2 != "Sayori":
             if hangout3 == "Sayori":
-                show n_cry2 as natsuki at t11 zorder 1
+                show n_cry2 as natsuki at t42 zorder 2
                 n "YOU'RE THE ONE THAT MADE HIM FALL FOR YOU AND NOT ME!"
                 n "YOU TOOK HIM AWAY FROM ME!"
                 n "SO DON'T PRETEND LIKE YOU CARE ABOUT ANYONE BUT YOURSELF!"
@@ -3310,7 +3311,7 @@ if encore_sayoriquestion_1 == False:
     if hangout1 == "Sayori":
         if hangout2 == "Sayori":
             if hangout3 != "Sayori":
-                show n_cry2 as natsuki at t11 zorder 1
+                show n_cry2 as natsuki at t42 zorder 2
                 n "YOU'RE THE ONE THAT MADE HIM FALL FOR YOU AND NOT ME!"
                 n "YOU TOOK HIM AWAY FROM ME!"
                 n "SO DON'T PRETEND LIKE YOU CARE ABOUT ANYONE BUT YOURSELF!"
@@ -3320,7 +3321,7 @@ if encore_sayoriquestion_1 == False:
     if hangout1 != "Sayori":
         if hangout2 != "Sayori":
             if hangout3 == "Sayori":
-                show n_cry2 as natsuki at t11 zorder 1
+                show n_cry2 as natsuki at t42 zorder 2
                 n "I DON'T WANT YOUR FUCKING HELP!"
                 n "YOU JUST WANT HIM FOR YOURSELF!"
                 jump n_breakdown
@@ -3328,7 +3329,7 @@ if encore_sayoriquestion_1 == False:
     if hangout1 == "Sayori":
         if hangout2 != "Sayori":
             if hangout3 != "Sayori":
-                show n_cry2 as natsuki at t11 zorder 1
+                show n_cry2 as natsuki at t42 zorder 2
                 n "I DON'T WANT YOUR FUCKING HELP!"
                 n "YOU JUST WANT HIM FOR YOURSELF!"
                 jump n_breakdown
@@ -3336,7 +3337,7 @@ if encore_sayoriquestion_1 == False:
     if hangout1 != "Sayori":
         if hangout2 == "Sayori":
             if hangout3 != "Sayori":
-                show n_cry2 as natsuki at t11 zorder 1
+                show n_cry2 as natsuki at t42 zorder 2
                 n "I DON'T WANT YOUR FUCKING HELP!"
                 n "YOU JUST WANT HIM FOR YOURSELF!"
                 jump n_breakdown
@@ -3345,7 +3346,7 @@ if encore_sayoriquestion_1 == False:
     if hangout1 != "Sayori":
         if hangout2 != "Sayori":
             if hangout3 != "Sayori":
-                show n_cry2 as natsuki at t11 zorder 1
+                show n_cry2 as natsuki at t42 zorder 2
                 n "I KNOW YOU JUST WANT HIM ALL TO YOURSELF!"
                 n "YOU ACTING NICE IS JUST FOR SHOW, AND WE ALL KNOW IT !"
                 jump n_breakdown
@@ -3359,11 +3360,12 @@ n "PISS OFF!"
 show sayori 1k
 "The room becomes dead quiet as Natsuki finishes her insult."
 "Yuri looks as if she's about to have a full-on panic attack, Monika still looks completely bewildered."
-"Sayori looks as if she's about to break down and cry as Natsuki angirly stears her down.."
+"Sayori looks as if she's about to break down and cry as Natsuki angrily stears her down.."
 s 1l "O-{w=0.38}okay..."
 s 1k "If you want to be like that..."
 show sayori at thide
 hide sayori
+show n_cry2 as natsuki at t31 zorder 1
 show monika 1d at t32 zorder 2
 show yuri 3o at t33 zorder 3
 "Sayori promptly walks back to her original seat and tries her hardest to fight back tears of her own."
@@ -3432,7 +3434,7 @@ if encore_sayoriquestion_1 == True:
     show natsuki 1o
     mc "I..."
     show monika 1h
-    "I can hardly muster a response as everyone angirly eyes me down."
+    "I can hardly muster a response as everyone angrily eyes me down."
     "I've royally screwed up..."
     m 1i "[player], step outside with me for a second."
     show monika 1h
@@ -3683,7 +3685,7 @@ y 1r "What the hell are you trying to pull with us?!?"
 show natsuki 1o
 mc "I..."
 show monika 1h
-"I can hardly muster a response as everyone angirly eyes me down."
+"I can hardly muster a response as everyone angrily eyes me down."
 "I've royally screwed up..."
 m 1i "[player], step outside with me for a second."
 show monika 1h
@@ -3738,7 +3740,7 @@ y 3r "Do you mind explaining to me your relationship with Monika?!?"
 y 1r "What the hell are you trying to pull with us?!?"
 show natsuki 1o
 mc "I..."
-"I can hardly muster a response as everyone angirly eyes me down."
+"I can hardly muster a response as everyone angrily eyes me down."
 "I've royally screwed up..."
 m 1i "[player], step outside with me for a second."
 show monika 1h
@@ -3793,7 +3795,7 @@ y 3r "Do you mind explaining to me your relationship with Monika?!?"
 y 1r "What the hell are you trying to pull with us?!?"
 show natsuki 1o
 mc "I..."
-"I can hardly muster a response as everyone angirly eyes me down."
+"I can hardly muster a response as everyone angrily eyes me down."
 "I've royally screwed up..."
 m 1i "[player], step outside with me for a second."
 show monika 1h
@@ -3922,9 +3924,9 @@ show y_cry6 as yuri at t42 zorder 2
 y "GO AWAY, AND RUIN SOMEONE ELSE'S DAY, SAYORI!"
 show sayori 1k
 show y_cry4 as yuri at t42 zorder 2
-"The room becomes dead quiet as Natsuki finishes her insult."
+"The room becomes dead quiet as Yuri finishes her insult."
 "Natsuki is in total shock, Monika still looks completely bewildered."
-"Sayori looks as if she's about to break down and cry as Natsuki angirly stears her down.."
+"Sayori looks as if she's about to break down and cry as Natsuki angrily stears her down.."
 s 1l "O-{w=0.38}okay..."
 s 1k "If you want to be like that..."
 show sayori at thide
@@ -4099,9 +4101,6 @@ if n_love == True:
                 m "You need to sort out things with Natsuki and Yuri..."
 
 
-
-
-        if encore_sayoriquestion_1 == False:
 
     if hangout1 == "Sayori" and hangout2 == "Sayori" and hangout3 == "Sayori":
         m "You need to sort out things with Natsuki and Sayori..."
@@ -4297,11 +4296,6 @@ if n_love == False:
 
 
 
-label day4_fight_n:
-
-
-
-
 
 label y_merge:
 
@@ -4433,8 +4427,6 @@ if y_love == True:
 
 
 
-        if encore_sayoriquestion_1 == False:
-
     if hangout1 == "Sayori" and hangout2 == "Sayori" and hangout3 == "Sayori":
         m "You need to sort out things with Yuri and Sayori..."
 
@@ -4476,51 +4468,104 @@ if y_love == False:
     "Monika nervously grimaces as she tries to asses the situation."
     show monika 1n
 
-        if hangout1 == "Monika" and hangout2 == "Monika" and hangout3 == "Monika":
+    if hangout1 == "Monika" and hangout2 == "Monika" and hangout3 == "Monika":
 
 
-            if encore_sayoriquestion_1 == True:
-                m "Well, I'm glad you made the right decision for Sayori's sake..."
-                show monika 1e
-                m "I'm sure Sayori will appreciate you trying to stay loyal to her..."
-                show monika 1f
-                mc "It's not like I've been doing a good job of doing that anyway..."
-                m 1m "Well even then, it shows you're committed to trying to make things work between you two..."
-                mc "I guess I can't say the same for Yuri's sake..."
-                mc "Do I really wanna know how she started all this?"
-                m 3p "She pretty much barged in, starting screaming and cursing at all of us, then she just broke down crying in her desk..."
-                mc "Wow..."
-                m 2o "She's never like that..."
-                "Oh great..."
-                "Looks like Sayori's not going to be the only one needing thearpy after all this..."
-                jump day4_fight_y
-
-
-
-            if encore_sayoriquestion_1 == False:
-                m "Well, I'm sure we can sort things out with her..."
-                show monika 1n
-                m "She just needs a little time to cool off..."
-                show monika 1g
-                mc "Well, with how she reacted, I dobut it's going to be anytime soon..."
-                m 3p "Yeah, you're probably right. She starting screaming and cursing at me the moment she came back from talking to you..."
-                mc "Wow..."
-                m 2o "I've never seen her act like that..."
-                m 1p "It's concerning to say the least..."
-                show monika 1f
-                mc "I'm really sorry I brought you into this Monika..."
-                mc "I didn't even bring you up or anything!"
-                mc "It was all her!"
-                m 1l "I'm not mad at you, [player]! Don't worry!"
-                m 1n "It's clear that Yuri's had this pent up for a while now..."
-                m 1m "And I'm sure she'll get over and come to respect our relationship..."
-                m 1e "Whatever we decide to make of it."
-                "A grin forces its way onto my face as Monika says that."
-                jump day4_fight_y
+        if encore_sayoriquestion_1 == True:
+            m "Well, I'm glad you made the right decision for Sayori's sake..."
+            show monika 1e
+            m "I'm sure Sayori will appreciate you trying to stay loyal to her..."
+            show monika 1f
+            mc "It's not like I've been doing a good job of doing that anyway..."
+            m 1m "Well even then, it shows you're committed to trying to make things work between you two..."
+            mc "I guess I can't say the same for Yuri's sake..."
+            mc "Do I really wanna know how she started all this?"
+            m 3p "She pretty much barged in, starting screaming and cursing at all of us, then she just broke down crying in her desk..."
+            mc "Wow..."
+            m 2o "She's never like that..."
+            "Oh great..."
+            "Looks like Sayori's not going to be the only one needing thearpy after all this..."
+            jump day4_fight_y
 
 
 
-        if hangout1 == "Yuri" and hangout2 == "Yuri" and hangout3 == "Monika" or hangout3 == "Sayori" or hangout3 == "Natsuki":
+        if encore_sayoriquestion_1 == False:
+            m "Well, I'm sure we can sort things out with her..."
+            show monika 1n
+            m "She just needs a little time to cool off..."
+            show monika 1g
+            mc "Well, with how she reacted, I dobut it's going to be anytime soon..."
+            m 3p "Yeah, you're probably right. She starting screaming and cursing at me the moment she came back from talking to you..."
+            mc "Wow..."
+            m 2o "I've never seen her act like that..."
+            m 1p "It's concerning to say the least..."
+            show monika 1f
+            mc "I'm really sorry I brought you into this Monika..."
+            mc "I didn't even bring you up or anything!"
+            mc "It was all her!"
+            m 1l "I'm not mad at you, [player]! Don't worry!"
+            m 1n "It's clear that Yuri's had this pent up for a while now..."
+            m 1m "And I'm sure she'll get over and come to respect our relationship..."
+            m 1e "Whatever we decide to make of it."
+            "A grin forces its way onto my face as Monika says that."
+            jump day4_fight_y
+
+
+
+    if hangout1 == "Yuri" and hangout2 == "Yuri" and hangout3 == "Monika" or hangout3 == "Sayori" or hangout3 == "Natsuki":
+        m "Well, I'm glad you made the right decision for Sayori's sake..."
+        show monika 1e
+        m "I'm sure Sayori will appreciate you trying to stay loyal to her..."
+        show monika 1f
+        mc "It's not like I've been doing a good job of doing that anyway..."
+        m 1m "Well even then, it shows you're committed to trying to make things work between you two..."
+        mc "I guess I can't say the same for Yuri's sake..."
+        mc "Do I really wanna know how she started all this?"
+        m 3p "She pretty much barged in, starting screaming and cursing at all of us, then she just broke down crying in her desk..."
+        mc "Wow..."
+        m 2o "Yeah, she's never been mad like this..."
+        "Oh great..."
+        "Looks like Sayori's not going to be the only one needing thearpy after all this..."
+        jump day4_fight_y
+
+
+
+
+    if hangout1 == "Sayori" and hangout2 == "Sayori" and hangout3 == "Sayori":
+
+
+        if encore_sayoriquestion_1 == True:
+            m "Well, I'm glad you made the right decision for Sayori's sake..."
+            show monika 1e
+            m "I'm sure Sayori will appreciate you trying to stay loyal to her..."
+
+
+
+        if encore_sayoriquestion_1 == False:
+            m "Well, I'm glad you made the right decision for Sayori's sake..."
+            show monika 1e
+            m "I'm sure Sayori will appreciate you trying to make things right..."
+
+
+        show monika 1m
+        mc "I've just tried to be the best I can around her..."
+        show monika 1f
+        mc "Wish I could say the same for Yuri though..."
+        m 3n "We'll get everything sorted out with her, don't you worry..."
+        m 3m "She just needs a chance to cool down..."
+        mc "Do I really wanna know how she started all this?"
+        m 3p "Well, she pretty much barged in, starting screaming and cursing at Sayori, then she just broke down crying in her desk..."
+        mc "Wow..."
+        m 2o "Yeah, she's never been mad like this..."
+        "Oh great..."
+        "Looks like Sayori's not going to be the only one needing thearpy after all this..."
+        jump day4_fight_y
+
+
+    if hangout1 == "Natsuki" and hangout2 == "Natsuki" and hangout3 == "Natsuki":
+
+
+        if encore_sayoriquestion_1 == True:
             m "Well, I'm glad you made the right decision for Sayori's sake..."
             show monika 1e
             m "I'm sure Sayori will appreciate you trying to stay loyal to her..."
@@ -4534,27 +4579,13 @@ if y_love == False:
             m 2o "Yeah, she's never been mad like this..."
             "Oh great..."
             "Looks like Sayori's not going to be the only one needing thearpy after all this..."
-            jump day4_fight_y
+            "And I can only imagine how Natsuki's going to handle all this..."
 
 
-
-
-        if hangout1 == "Sayori" and hangout2 == "Sayori" and hangout3 == "Sayori":
-
-
-            if encore_sayoriquestion_1 == True:
-                m "Well, I'm glad you made the right decision for Sayori's sake..."
-                show monika 1e
-                m "I'm sure Sayori will appreciate you trying to stay loyal to her..."
-
-
-
-            if encore_sayoriquestion_1 == False:
-                m "Well, I'm glad you made the right decision for Sayori's sake..."
-                show monika 1e
-                m "I'm sure Sayori will appreciate you trying to make things right..."
-
-
+        if encore_sayoriquestion_1 == False:
+            m "Well, I'm glad you made the right decision for Natsuki's sake..."
+            show monika 1e
+            m "I'm sure Natsuki will appreciate you trying to stay loyal to her..."
             show monika 1m
             mc "I've just tried to be the best I can around her..."
             show monika 1f
@@ -4562,62 +4593,966 @@ if y_love == False:
             m 3n "We'll get everything sorted out with her, don't you worry..."
             m 3m "She just needs a chance to cool down..."
             mc "Do I really wanna know how she started all this?"
-            m 3p "Well, she pretty much barged in, starting screaming and cursing at Sayori, then she just broke down crying in her desk..."
+            m 3p "Well, she pretty much barged in, starting screaming and cursing at Natsuki, then she just broke down crying in her desk..."
             mc "Wow..."
             m 2o "Yeah, she's never been mad like this..."
             "Oh great..."
-            "Looks like Sayori's not going to be the only one needing thearpy after all this..."
+            "I can only imagine how Natsuki's going to deal with this..."
             jump day4_fight_y
 
 
-        if hangout1 == "Natsuki" and hangout2 == "Natsuki" and hangout3 == "Natsuki":
 
-
-            if encore_sayoriquestion_1 == True:
-                m "Well, I'm glad you made the right decision for Sayori's sake..."
-                show monika 1e
-                m "I'm sure Sayori will appreciate you trying to stay loyal to her..."
-                show monika 1f
-                mc "It's not like I've been doing a good job of doing that anyway..."
-                m 1m "Well even then, it shows you're committed to trying to make things work between you two..."
-                mc "I guess I can't say the same for Yuri's sake..."
-                mc "Do I really wanna know how she started all this?"
-                m 3p "She pretty much barged in, starting screaming and cursing at all of us, then she just broke down crying in her desk..."
-                mc "Wow..."
-                m 2o "Yeah, she's never been mad like this..."
-                "Oh great..."
-                "Looks like Sayori's not going to be the only one needing thearpy after all this..."
-                "And I can only imagine how Natsuki's going to handle all this..."
-
-
-            if encore_sayoriquestion_1 == False:
-                m "Well, I'm glad you made the right decision for Natsuki's sake..."
-                show monika 1e
-                m "I'm sure Natsuki will appreciate you trying to stay loyal to her..."
-                show monika 1m
-                mc "I've just tried to be the best I can around her..."
-                show monika 1f
-                mc "Wish I could say the same for Yuri though..."
-                m 3n "We'll get everything sorted out with her, don't you worry..."
-                m 3m "She just needs a chance to cool down..."
-                mc "Do I really wanna know how she started all this?"
-                m 3p "Well, she pretty much barged in, starting screaming and cursing at Natsuki, then she just broke down crying in her desk..."
-                mc "Wow..."
-                m 2o "Yeah, she's never been mad like this..."
-                "Oh great..."
-                "I can only imagine how Natsuki's going to deal with this..."
-                jump day4_fight_y
+    else:
+        m "Well I'm glad you didn't make any rash decisions..."
+        mc "What do you mean by 'rash decisions'?"
+        m 3n "Ah, don't worry about it..."
+        m 1e "Let's just focus on sorting things out with Natsuki..."
+        show monika 1m
+        mc "Well, I've got alot of explaining to do to everyone anyways..."
+        jump day4_fight_y
 
 
 
-        else:
-            m "Well I'm glad you didn't make any rash decisions..."
-            mc "What do you mean by 'rash decisions'?"
-            m 3n "Ah, don't worry about it..."
-            m 1e "Let's just focus on sorting things out with Natsuki..."
-            show monika 1m
-            mc "Well, I've got alot of explaining to do to everyone anyways..."
-            jump day4_fight_y
+label day4_fight_n:
+
+show monika 1o
+"Monika begrudgingly looks at the door, where we can still make out the screaming from the others."
+m 1p "Well, so much for getting Natsuki to calm down..."
+show monika 2f
+mc "What are we going to do?"
+m 1p "I'll try talking to her one-on-one, see if that does anything."
+
+if hangout1 == "Monika" and hangout2 == "Monika" and hangout3 == "Monika":
+    m 1q "I'm the one she has a problem with anyways..."
+
+else:
+    m 1q "It's my responsbility to calm her down anyways..."
+
+m 1d "Just try not to say anything to her, okay?"
+show monika 1c
+mc "Alright..."
+m 2p "Well, here goes nothing..."
+show monika 1m
+"Monika nervously smiles as she swings open the door..."
+scene bg club_day
+with wipeleft_scene
+play sound "sfx/fall2.ogg"
+"As soon as she does however, we're forced to duck as a textbook almost immediately flies over our heads."
+show yuri 2j at t21 zorder 1
+show natsuki 1o at t22 zorder 2
+y "Wow, Natsuki..."
+y 2i "Great throw...{w=0.38}for a dwarf."
+"Natsuki clenches her fists as she lets out an angrily grunt."
+n 1p "Take back what you said right now...{w=0.38}you cutting-obsessed whore!"
+show natsuki 1o
+y 1r "Only after you take back your accusation of me of being a member of a satanic cult, you flat-chested dumpster diver!"
+show natsuki 1v at h21 zorder 1
+n "Flat chested?!?!? THAT’S IT!"
+show natsuki 1o
+"Natsuki threatingly raises her fist at Yuri."
+"Somehow, everything is even in worse shape..."
+show yuri 1r at t31 zorder 1
+show monika 1h at t32 zorder 2
+show natsuki 1o at t33 zorder 3
+"Fortunately, Monika steps in between Yuri and Natsuki and pushes them away from each other."
+m 1i "Enough you two!"
+m 3h "There's going to be no more fighting here today, understand?"
+show natsuki 5r
+show yuri 3h
+"Natsuki and Yuri avert their eyes away from Monika and mumble something that I can't make out."
+m 3r "Yuri, go sit down. I'm going to have a word with Natsuki first."
+y 3q "I think it's going to take more than a 'word' to straighten her out, Monika..."
+y 2h "If I may..."
+m 1h "Just go."
+show yuri 3y7
+"Yuri and Monika coldly stare each other down."
+"Yuri's never been one for confrontation..."
+"I can tell Monika seems rather surprised to, but she seems to be standing her ground for now."
+show monika 2h
+"Yuri continues to coldly stare down Monika with a look I've never seen before from her..."
+"It's as if it's filled with malice..."
+show natsuki at thide
+hide natsuki
+show monika at thide
+hide monika
+show yuri at thide
+hide yuri
+"My attention is briefly broken as I hear a sniffle come from the otherside of the room."
+show sayori 1k at t11 zorder 1
+"I look over to see Sayori still sitting in the same spot, almost motionless."
+"I dont't even think she saw us come in..."
+"I carefully walk over to Sayori and kneel down next to her."
+mc "Sayori...{w=0.38}are you okay?"
+"She doesn’t respond or even acknowledge me."
+"Not knowing what to do, I take the seat next to Sayori and bring her into my arms."
+"What did they do to you?"
+"I'm barley able to make out the arguing in the background as I try my best to comfort Sayori."
+"After about a minute, she eventually speaks up."
+s "[player]..."
+"I hear her sniffle again."
+mc "It’s okay Sayori, I’m here for you now."
+"Sayori finally looks at me, tears already streaming down her face."
+s 1u "I’m{w=0.38}...I’m sorry{w=0.38}...for a-{w=0.38}all of this..."
+mc "It’s not your fault, Sayori. This is all on me..."
+mc "It's going to be okay..."
+y "I hate to kill the mood between you two over there..."
+show sayori 1k at t31 zorder 1
+show yuri 3r at t32 zorder 2
+show monika 1d at t33 zorder 3
+y "But, it’s not going to be okay."
+y 1h "This needs to be resolved. Now."
+show yuri 1g
+show sayori 1g
+"Everyone in the room is taken aback by Yuri’s assertiveness."
+"Yuri has never been this vocal or aggressive before..."
+show sayori at thide
+hide sayori
+show yuri 3r at t21 zorder 1
+show monika 2m at t22 zorder 2
+"Monika breaks out of her shock and attempts to regain control of the situation."
+m 3g "Um, Yuri, I don’t think that’s the best idea right now..."
+show yuri 3y7
+"Yuri gives Monika the same angry, cold stare from earlier, but Monika does her best to continues on."
+m 3r "Everyone’s not in a good mood right now, so let me talk to Natsuki in private and go home."
+m 1i "Club’s over for you today."
+y "No."
+show monika 1g
+"Yuri's icy tone causes Monika to take a step back."
+show monika 1h
+"Everyone else in the room watches in uncomfortable silence as Monika faces down Yuri again."
+m 2h "What do you mean 'no', Yuri?"
+m 2i "We’re not going to get anything done today if you're at everyone's throats."
+m 3h "It’s better for you to leave while I talk to Natsuki."
+y 1r "You're not solving anything by doing that, Monika..."
+y 1r "I'm not going to let you exclude me from this!"
+y "Do you just want to get [player] all alone to yourself?"
+y "Is that what you're trying to accomplish?"
+"Monika scowls at Yuri's accusation."
+m 2i "Don't be hysterical, Yuri..."
+m 2h "I don't know what's gotten into you, but you're not in the best state of mind to have a civil discussion..."
+y 3r "Don't lie to me!"
+m 2p "You're being hysterical again..."
+y 1r "And you're being manipulative!"
+m 1h "What the hell are you talking about?"
+m 3i "I'm sending you home because you're creating more problems rather than solving them."
+m 1h "And I'm not putting up with anymore drama today!"
+y 3h "A real Club President would actually hear all sides of the story first, without any pre-mediated motives..."
+y 1r "So you're either taking Natsuki's side without hearing what I have to say, or you're going trying to keep [player] here all to yourself!"
+y "You didn't seem to care that your club was tearing itself apart as you were off with him in the hallway doing who knows what!"
+"My jaw drops as Yuri continues to level her accusation."
+"What's gotten into her?"
+"Why does she think Monika wants to be with me?"
+m 1i "Cooler heads will prevail, Yuri."
+m 3h "With just a little bit of time, we’ll all get over this 'incident' today and move on."
+show monika 1h
+y 1r "Are you going to 'move on' from me too, Monika?"
+"Yuri slowly starts walking towards Monika."
+show pen at t21 zorder 1
+y 2r "Is that what you really want?"
+show yuri 2r at t42 zorder 2
+show pen at t42 zorder 2
+"Yuri proceeds to threatingly tap Monika on the chest with a very familiar looking pen."
+y "Do you want all your club members to hate each other and turn this club into a cesspool?"
+play sound fall
+show yuri 3y7 at t21 zorder 1
+show pen at thide
+hide pen
+"Monika pushes Yuri back away from her personal space, causing Yuri to drop the pen."
+m 3i "Yes, Yuri. I’d very much like to ‘move on’ from the drama you and Natsuki bring into this club on a daily basis!"
+show yuri 3y7 at t31 zorder 1
+show monika 1h at t32 zorder 2
+show natsuki 4f at t33 zorder 3
+"Natsuki promptly stands up, clearly not letting Monika’s attack on her go unanswered."
+n 4e "Hold on...{w=0.38}‘the drama I bring in’?"
+n 4g "Are you that full of yourself, Monika?"
+
+
+if n_love == True:
+    m 5b "You’re one to talk considering you came in here acting all entitled to him!"
+
+if n_love == False:
+    m 5b "You’re one to talk considering you came in here crying your eyes out because [player] turned you down!"
+
+
+"Monika really should not have said that..."
+show sayori 1g at t41 zorder 1
+show yuri 3y7 at t42 zorder 2
+show monika 5b at t43 zorder 3
+show natsuki 4f at t44 zorder 4
+"I wince and look at Sayori, but she’s now turned her attention to the drama at the front of the room."
+n 4e "Ohhh, and you wouldn’t have done the same?"
+"Why is everyone accusing Monika of being into me?"
+
+if hangout1 == "Monika":
+    if hangout2 == "Monika":
+        if hangout3 == "Monika":
+            "I mean, what reason do they have to suspect?"
+            "We've hung out as friends..."
+            "Even despite us having our moments..."
+
+
+if hangout1 != "Monika":
+    if hangout2 == "Monika":
+        if hangout3 == "Monika":
+            "We've spent some time together, sure, but I don't see how that really warrants such suspicion..."
+            "Do they know something that I don't?"
+
+if hangout1 == "Monika":
+    if hangout2 != "Monika":
+        if hangout3 == "Monika":
+            "We've spent some time together, sure, but I don't see how that really warrants such suspicion..."
+            "Do they know something that I don't?"
+
+if hangout1 == "Monika":
+    if hangout2 == "Monika":
+        if hangout3 != "Monika":
+            "We've spent some time together, sure, but I don't see how that really warrants such suspicion..."
+            "Do they know something that I don't?"
+
+if hangout1 != "Monika":
+    if hangout2 != "Monika":
+        if hangout3 == "Monika":
+            "It's not like we've really spent that much time together..."
+
+if hangout1 == "Monika":
+    if hangout2 != "Monika":
+        if hangout3 != "Monika":
+            "It's not like we've really spent that much time together..."
+
+if hangout1 != "Monika":
+    if hangout2 == "Monika":
+        if hangout3 != "Monika":
+            "It's not like we've really spent that much time together..."
+
+if hangout1 != "Monika":
+    if hangout2 != "Monika":
+        if hangout3 != "Monika":
+            "It's not like we've really spent time together..."
+
+
+"Monika’s eyes narrow on Natsuki as she slowly walks past Yuri and up to her."
+show sayori at thide
+hide sayori
+show yuri at thide
+hide yuri
+show monika 1h at t21 zorder 1
+show natsuki 1o at t22 zorder 2
+"They’re only a few inches apart from each other."
+"I’ve never seen Monika get this angry."
+"Seeing this side of her is unsettling to say the least..."
+n 1h "Admit it, Monika..."
+show natsuki 1g
+m 3i "Admit to what exactly?"
+show monika 1h
+"Both girls continue to stare each other down."
+"I stand helplessly by Sayori, unsure if I should step in."
+n 3e "Admit to [player] that you’re in love with him!"
+show natsuki 3f
+"WHAT?!?"
+n 5e "Do it in front of all of us."
+n 5f "Tell him about how you’re soooo head-over-heels over him!"
+show monika 1h
+"Monika only clenches her fists."
+"Her knuckles turn white as her flawless face start to give way to shades of crimson."
+n 3e "Yeah, that’s right."
+n "We know all about that."
+n "I heard you talking to your friends a few days ago about how you find [player] to be so ‘dreamy’, ‘adorable’ and ‘cute’."
+show monika 1i
+"Monika grits her teeth."
+n 3w "Oh, and you wanna know the real punchline Monika?"
+"Monika doesn't respond, only clenching her fists tighter in an effort to control herself."
+"I think it’s safe to say she’s no longer interested in helping Natsuki..."
+n 3y "After the festival, I heard you practicing that 'song of yours'. How it was all about you and [player]."
+"I guess that’s what's usually keeping Monika from coming to the club on time..."
+n 3t "What was it called again? Your Real-"
+"Monika finally snaps."
+m 5b "If you know what’s good for you, you’ll stop talking."
+m 5a "Didn’t your dad teach you that?"
+show natsuki 1p
+"Natsuki’s face drops as the room goes dead silent."
+"I turn to Sayori, who's clearly as shocked as me at this sudden bombshell."
+show natsuki 12g
+"Natsuki’s eyes well up with tears as her face twists in anger."
+show monika 1i
+show natsuki 12f
+m "{cps=20}I'm sick and tired of the dis-{nw}"
+show n_cry2 as natsuki at t22 zorder 2
+play sound "sfx/slap.ogg"
+show white zorder 4:
+    alpha 0.6
+    linear 0.25 alpha 0.0
+show monika shock as monika at t41 zorder 1
+"Natsuki forms a fist and takes a hard swing at Monika’s face."
+"Feeling the full force of Natsuki’s punch, Monika staggers right back into the desks behind her, barley able to catch herself to avoid falling face first onto the floor."
+show monika 3r
+"Monika clutches her face with one hand as she slowly stands right back up, wincing in pain."
+show monika 2a
+"Through the pain, she eerily grins at Natsuki."
+m "So that's where you wanna go with this, huh?"
+n 12 "You started this you-"
+show sayori 4w at h41 zorder 1
+show monika 1d at t42 zorder 2
+show yuri 3f at t43 zorder 3
+show natsuki 1c at t44 zorder 4
+s "Guys!!!"
+show sayori 4v
+"Sayori’s shout grabs the attention of the other three girls."
+s 1v "Come on! We're better than this!"
+s "Is this really who we are as a club?"
+s 1k "Just stop fighting...{w=0.38}Please..."
+show sayori 1k
+"Sayori, emotionally drained, promptly falls back into her seat."
+show natsuki 4o
+show monika 1h
+show yuri 3r
+"Unfortunately, it doesn’t look like Sayori's plea got through to anyone."
+y "So now you want to participate? Like you of all people deserve a say in the first place."
+"At this point I finally muster the courage to step in."
+mc "Yuri, that's enough. She’s had a rough day as is, and none of you guys are making it any easier on her with your constant bickering."
+y 3h "She just wants you all for herself, [player]! Haven’t you considered that maybe there are better people in this club who're interested in you as well?"
+show sayori 1v
+show yuri 3n
+"Everyone now focuses their attention to Yuri."
+"I turn to Sayori, who is on the verge of tears."
+y 3o "I-{w=0.38}I’m sorry, I said too much..."
+s "No, please keep going, Yuri..."
+s 4w "I already know I'm an awful person!"
+mc "Sayori!"
+show sayori 1v
+n 5q "I always knew you had a thing for [player], Yuri."
+n 5t "I guess that’s why you keep stealing his pens..."
+show natsuki 5o
+
+if encore_sayoriquestion_1 == True:
+    y 3r "At least I wasn’t stupid enough to spout my confession when he’s clearly with Sayori!"
+
+if encore_sayoriquestion_1 == False:
+    y 3r "At least I wasn’t stupid enough to spout my confession without making sure he liked me!"
+
+
+"My head starts spinning as Natsuki and Yuri continue their shouting at each other."
+"They all...{w=0.38}like me?"
+"I have absolutely no idea on what I should do at this point..."
+"Even if I try speaking up, I feel that I’m only going to make things worse between them."
+n 5w "At least I didn’t stuff my chest for two weeks to try to get [player]'s attention!"
+n 5x "Like honestly, how gross are you to think he’s that perverted?"
+"At this point I feel as if I should leave, the atmosphere has become unbearable."
+m 5b "You're the one whose called him gross, Natsuki!"
+show monika 1h
+show natsuki 5g
+s 1j "Maybe if you guys actually spent time with him, instead of acting like jerks, you’d figure out what he likes!"
+
+
+if encore_sayoriquestion_1 == True:
+    y 1r "Well we would’ve loved to, but you always kept him from us!"
+
+
+    if hangout1 == "Sayori":
+        if hangout2 == "Sayori":
+            if hangout3 == "Sayori":
+                y 1h "Hogging him every moment of everyday..."
+
+
+    if hangout1 != "Sayori":
+        if hangout2 == "Sayori":
+            if hangout3 == "Sayori":
+                y 1h "Especially these past two days..."
+
+
+    if hangout1 == "Sayori":
+        if hangout2 != "Sayori":
+            if hangout3 == "Sayori":
+                y 1h "You've hogged him all of last week and most of this week..."
+
+    if hangout1 == "Sayori":
+        if hangout2 == "Sayori":
+            if hangout3 != "Sayori":
+                y 1h "You've hogged him all of last week and most of this week..."
+
+
+    if hangout1 != "Sayori":
+        if hangout2 != "Sayori":
+            if hangout3 == "Sayori":
+                y 1h "You were hogged him yesterday!"
+
+
+    if hangout1 == "Sayori":
+        if hangout2 != "Sayori":
+            if hangout3 != "Sayori":
+                y 1h "It's a mircale you weren't hogging him so much this week..."
+
+
+    if hangout1 != "Sayori":
+        if hangout2 == "Sayori":
+            if hangout3 != "Sayori":
+                y 1h "It's a mircale you weren't hogging him so much this week..."
+
+
+    if hangout1 != "Sayori":
+        if hangout2 != "Sayori":
+            if hangout3 != "Sayori":
+                y 1h "It was hard enough to get to know him when you were hogging him last week!"
+
+if encore_sayoriquestion_1 == False:
+
+
+    if hangout1 == "Sayori":
+        if hangout2 == "Sayori":
+            if hangout3 == "Sayori":
+                y 1r "Well we would’ve loved to, but you always kept him from us!"
+                y 1h "You've hogged all week..."
+
+
+
+    if hangout1 != "Sayori":
+        if hangout2 == "Sayori":
+            if hangout3 == "Sayori":
+                y 1r "Well we would’ve loved to, but you've been keeping him from us!"
+                y 1h "You've hogged him these past two days..."
+
+
+    if hangout1 == "Sayori":
+        if hangout2 != "Sayori":
+            if hangout3 == "Sayori":
+                y 1r "Well we would’ve loved to, but you've been keeping him from us!"
+                y 1h "You've hogged him for most of this week..."
+
+    if hangout1 == "Sayori":
+        if hangout2 == "Sayori":
+            if hangout3 != "Sayori":
+                y 1r "Well we would’ve loved to, but you've been keeping him from us!"
+                y 1h "You've hogged him for most of this week..."
+
+
+    if hangout1 != "Sayori":
+        if hangout2 != "Sayori":
+            if hangout3 == "Sayori":
+                y 1r "You're the one that sees him the most outside of the club!"
+                y 1h "It's not like we get the same opportunities as you..."
+
+    if hangout1 == "Sayori":
+        if hangout2 != "Sayori":
+            if hangout3 != "Sayori":
+                y 1r "You're the one that sees him the most outside of the club!"
+                y 1h "It's not like we get the same opportunities as you..."
+
+    if hangout1 != "Sayori":
+        if hangout2 == "Sayori":
+            if hangout3 != "Sayori":
+                y 1r "You're the one that sees him the most outside of the club!"
+                y 1h "It's not like we get the same opportunities as you..."
+
+
+    if hangout1 != "Sayori":
+        if hangout2 != "Sayori":
+            if hangout3 != "Sayori":
+                y 1r "That's hard to do when we need to compete with you for his attention!"
+                y 1h "You see him the most out of all of us..."
+
+
+show yuri 1r
+s 1v "I..{w=0.38}I-I’m sorry, I-{w=0.38}I didn’t mean too..."
+s 1k "I never really considered that..."
+show monika 1d
+show natsuki 1c
+show sayori 1u
+y 1y4 "Have you ever considered killing yourself?"
+y 1y7 "It would be beneficial to society seeing as you’re completely useless and get in the way of everyone!"
+show sayori 4w
+"Sayori finally breaks down crying and slams her face down into her desk."
+show sayori at thide
+hide sayori
+show monika 1h at t31 zorder 1
+show yuri 3g at t32 zorder 2
+show natsuki 1o at t33 zorder 3
+n 1p "What the hell, Yuri!?!"
+show natsuki 1o
+y 3r "You're one to talk considering you called her a basketcase and accused me of cutting myself just five minutes ago!"
+m 1i "That's no excuse, Yuri! You don't say that to people!"
+y 1r "Oh yeah, keep talking, Monika! You lost the high ground when you brought up Natsuki's dad!"
+"My blood starts to boil as I clench my fists."
+"I've had enough of this crap."
+mc "Okay."
+"I raise my voice loud enough so everyone can hear me."
+show natsuki 1c
+show monika 1d
+show yuri 3e
+mc "If you're all going to continue to act like this...{w=0.38}like total monsters...{w=0.38}then I don't want to be apart of this club until you sort yourselves out."
+mc "In my eyes, you're all guilty."
+"I grab my bag and proceed to exit the room, letting the door slam shut behind me before anyone has the chance to stop me."
+show natsuki at thide
+hide natsuki
+show monika at thide
+hide monika
+show yuri at thide
+hide yuri
+scene bg bedroom
+with wipeleft_scene
+
+
+
 
 
 label day4_fight_y:
+
+show monika 1o
+"Monika begrudgingly looks at the door, where we can still make out the screaming from the others."
+m 1p "Well, so much for getting Yuri to calm down..."
+show monika 2f
+mc "What are we going to do?"
+m 1p "I'll try talking to her one-on-one, see if that does anything."
+
+if hangout1 == "Monika" and hangout2 == "Monika" and hangout3 == "Monika":
+    m 1q "I'm the one she has a problem with anyways..."
+
+else:
+    m 1q "It's my responsbility to calm her down anyways..."
+
+m 1d "Just try not to say anything to her, okay?"
+show monika 1c
+mc "Alright..."
+m 2p "Well, here goes nothing..."
+show monika 1m
+"Monika nervously smiles as she swings open the door..."
+scene bg club_day
+with wipeleft_scene
+"As soon as we enter back into the clubroom, we're greeted by the the sound of Yuri and Natsuki still screaming at each other."
+show natsuki 1o at t21 zorder 1
+show yuri 2j at t22 zorder 2
+y "Wow, Natsuki..."
+y 2r "It seems like you can't come up with an original insult other than accusing me of cutting myself!"
+"Natsuki clenches her fists as she lets out an angrily grunt."
+n 1p "You literally called me a trap, you whore!"
+show natsuki 1o
+y 1r "And you accused me of being a member of a satanic cult!"
+y 3h "Isn't it time for you to scrounge under the vending machines again?"
+show natsuki 1v at h21  zorder 1
+n "THAT’S IT!!!"
+show natsuki 1o
+"Natsuki threatingly raises her fist at Yuri."
+"Somehow, everything is even in worse shape..."
+show natsuki 1o at t31 zorder 1
+show monika 1h at t32 zorder 2
+show yuri 1r at t33 zorder 3
+"Fortunately, Monika steps in between Yuri and Natsuki and pushes them away from each other."
+m 1i "Enough you two!"
+m 3h "There's going to be no more fighting here today, understand?"
+show natsuki 5r
+show yuri 3h
+"Natsuki and Yuri avert their eyes away from Monika and mumble something that I can't make out."
+m 3r "Natsuki, go sit down. I'm going to have a word with Yuri first."
+n 2f "Come on, Monika! Are you really going to let her get away with saying that to me?!?"
+n 1w "I've had it with her and her attitude! I'll be more than happy to -"
+show natsuki 1o
+m 1h "Just go."
+"Natsuki and Monika coldly stare each other down."
+"Natsuki's certainly had her moments, but she's never acted this way towards Monika before..."
+show natsuki at thide
+hide natsuki
+show monika at thide
+hide monika
+show yuri at thide
+hide yuri
+"My attention is briefly broken as I hear a sniffle come from the otherside of the room."
+show sayori 1k at t11 zorder 1
+"I look over to see Sayori still sitting in the same spot, almost motionless."
+"I dont't even think she saw us come in..."
+"I carefully walk over to Sayori and kneel down next to her."
+mc "Sayori...{w=0.38}are you okay?"
+"She doesn’t respond or even acknowledge me."
+"Not knowing what to do, I take the seat next to Sayori and bring her into my arms."
+"What did they do to you?"
+"I'm barley able to make out the arguing in the background as I try my best to comfort Sayori."
+"After about a minute, she eventually speaks up."
+s "[player]..."
+"I hear her sniffle again."
+mc "It’s okay Sayori, I’m here for you now."
+"Sayori finally looks at me, tears already streaming down her face."
+s 1u "I’m{w=0.38}...I’m sorry{w=0.38}...for a-{w=0.38}all of this..."
+mc "It’s not your fault, Sayori. This is all on me..."
+mc "It's going to be okay..."
+n "I hate to but in over there..."
+show sayori 1k at t31 zorder 1
+show natsuki 5g at t32 zorder 2
+show monika 1d at t33 zorder 3
+n 5e "But none of this is going to be okay until we fix this..."
+show natsuki 5g
+show sayori 1g
+"Everyone in the room is taken aback by Natsuki's assertiveness."
+"She's usually the one starting problems, not trying to fix them..."
+show sayori at thide
+hide sayori
+show natsuki 5g at t21 zorder 1
+show monika 1d at t22 zorder 2
+"Monika breaks out of her shock and attempts to regain control of the situation."
+m 3g "Um, Natsuki, I don’t think that’s the best idea right now..."
+"Natsuki gives Monika her usual angry stare, but Monika does her best to continues on."
+m 3r "Everyone’s not in a good mood right now, so let me talk to Yuri in private and go home."
+m 1i "Club’s over for you today."
+n 5g "No."
+show monika 1g
+"Natsuki's icy tone causes Monika to take a step back."
+show monika 1h
+"Everyone else in the room watches in uncomfortable silence as Monika faces down Natsuki again."
+m 2h "What do you mean 'no', Natsuki?"
+m 2i "We’re not going to get anything done today if you're at everyone's throats."
+m 3h "It’s better for you to leave while I talk to Yuri."
+n 5e "I'm not leaving until that bitch apologizes for everything she's done and said to me!"
+n 3f "I'm done being walked over by her!"
+n 1o "And fat chance am I leaving [player] alone with you!"
+"Monika scowls at Natsuki's insinuation."
+m 2i "Don't be hysterical, Natsuki..."
+m 2h "I don't know what's gotten into you, but you're not in the best state of mind to have a civil discussion..."
+n 5g "Oh, shut up!"
+m 2p "There you go again with your toxic attitude..."
+n 2f "And there you again trying to maipulate the situation!"
+m 1h "What the hell are you talking about?"
+m 3i "I'm sending you home because you're creating more problems rather than solving them."
+m 1h "And I'm not putting up with anymore drama today!"
+n 2h "I don't buy that!"
+n 2f "You didn't come rushing in as Yuri was leveling all kinds of threats against me, you were off with [player] in the hallway doing who knows what!"
+n 2x "So you're either taking Yuri's side without hearing what I have to say, or you want me away from [player] so it'd be easier for you to have him!"
+"My jaw drops as Natsuki continues to level her accusation."
+"What's gotten into her?"
+"Why does she think Monika wants to keep me all to herself?"
+m 1i "Cooler heads will prevail, Natsuki."
+m 3h "With just a little bit of time, we’ll all get over this 'incident' today and move on."
+show monika 1h
+n 1f "I'm done with 'moving on' from this crap!"
+"Natsuki slowly starts walking towards Monika."
+n 1g "And I'm done with being ordered around by you!"
+show natsuki 1f at t32 zorder 1
+n 1f "Are you just trying to turn this club into cesspool?"
+"Natsuki is aggressively up in Monika's face."
+show monika
+play sound fall
+show natsuki 1o at t21 zorder 1
+"Monika pushes Natsuki back away from her personal space."
+m 3i "Yes, Natsuki. I’d very much like to ‘move on’ from the drama you and Yuri bring into this club on a daily basis!"
+show natsuki 4f at t31 zorder 1
+show monika 1h at t32 zorder 2
+show yuri 3r at t33 zorder 3
+"Yuri promptly stands up, clearly not letting Monika’s attack on her go unanswered."
+y "Excuse me?!?!"
+y 1r "Monika, are you that blind?!? She's the one always causing problems!"
+m 5b "I beg to differ."
+
+if n_love == True:
+    m 5b "And you’re one to talk considering you came in here acting all entitled to him!"
+
+if n_love == False:
+    m 5b "And you’re one to talk considering you came in here crying your eyes out because [player] turned you down!"
+
+"Monika really should not have said that..."
+
+show sayori 1g at t41 zorder 1
+show natsuki 4f at t42 zorder 2
+show monika 5b at t43 zorder 3
+show yuri 1r at t44 zorder 4
+"I wince and look at Sayori, but she’s now turned her attention to the drama at the front of the room."
+y 3r "Don't pretend you would've done the same, Monika!"
+
+"Why is everyone accusing Monika of being into me?"
+
+if hangout1 == "Monika":
+    if hangout2 == "Monika":
+        if hangout3 == "Monika":
+            "I mean, what reason do they have to suspect?"
+            "We've hung out as friends..."
+            "Even despite us having our moments..."
+
+
+if hangout1 != "Monika":
+    if hangout2 == "Monika":
+        if hangout3 == "Monika":
+            "We've spent some time together, sure, but I don't see how that really warrants such suspicion..."
+            "Do they know something that I don't?"
+
+if hangout1 == "Monika":
+    if hangout2 != "Monika":
+        if hangout3 == "Monika":
+            "We've spent some time together, sure, but I don't see how that really warrants such suspicion..."
+            "Do they know something that I don't?"
+
+if hangout1 == "Monika":
+    if hangout2 == "Monika":
+        if hangout3 != "Monika":
+            "We've spent some time together, sure, but I don't see how that really warrants such suspicion..."
+            "Do they know something that I don't?"
+
+if hangout1 != "Monika":
+    if hangout2 != "Monika":
+        if hangout3 == "Monika":
+            "It's not like we've really spent that much time together..."
+
+if hangout1 == "Monika":
+    if hangout2 != "Monika":
+        if hangout3 != "Monika":
+            "It's not like we've really spent that much time together..."
+
+if hangout1 != "Monika":
+    if hangout2 == "Monika":
+        if hangout3 != "Monika":
+            "It's not like we've really spent that much time together..."
+
+if hangout1 != "Monika":
+    if hangout2 != "Monika":
+        if hangout3 != "Monika":
+            "It's not like we've really spent time together..."
+
+"Monika’s eyes narrow on Yuri as she slowly turns away from Natsuki and walks up to her."
+show sayori at thide
+hide sayori
+show natsuki at thide
+hide natsuki
+show monika 1h at t21 zorder 1
+show yuri 3r at t22 zorder 2
+"They’re only a few inches apart from each other."
+"I’ve never seen Monika get this angry."
+"Seeing this side of her is unsettling to say the least..."
+y 1r "Just admit it, Monika."
+m 3i "Admit to what exactly?"
+show monika 1h
+"Both girls continue to stare each other down."
+"I stand helplessly by Sayori, unsure if I should step in."
+y 3h "Admit to [player] that you’re in love with him!"
+show yuri 3g
+"WHAT?!?"
+y 1r "Spill it! In front of all of us!"
+y "Confess to us your deepest, darkest secert!"
+show monika 1h
+"Monika only clenches her fists."
+"Her knuckles turn white as her flawless face start to give way to shades of crimson."
+y 3h "That's right, we know. It was obvious from the start."
+y 3q "Not to mention you're not exactly the most quiet person when you're with your other friends..."
+y 3m "I overheard quite a lot to put it mildly..."
+show monika 1i
+"Monika grits her teeth."
+y 3j "But that wasn't the only give away either..."
+"Monika doesn't respond, only clenching her fists tighter in an effort to control herself."
+"I think it’s safe to say she’s no longer interested in helping Yuri..."
+y 3r "When I was walking around after the festival, I heard you practicing that 'song of yours'. I heard you talking to yourself about how it was all about you and [player]."
+"I guess that’s what's usually keeping Monika from coming to the club on time..."
+y 3h "Might I suggest you pick a different title name, Your Re-"
+"Monika finally snaps."
+m 5b "You're one to talk about 'deep, dark secerts', Yuri!"
+m 5a "I think some of your's cut a little deeper than mine~"
+show yuri 4c
+"Yuri's face immediately goes red as the room goes dead silent."
+"I turn to Sayori, who's clearly as shocked as me at this sudden bombshell."
+show y_cry1 as yuri at t22 zorder 2
+"Tears start streaming down Yuri's face."
+show monika 1i
+m "{cps=20}Maybe you should us your sle-{nw}"
+show yuri 2y7
+play sound "sfx/slap.ogg"
+show white zorder 4:
+    alpha 0.6
+    linear 0.25 alpha 0.0
+show monika shock as monika at t41 zorder 1
+"Yuri wipes the tear from herself and proceeds to slap Monika across the face."
+"Feeling the full force of Yuri's slap, Monika staggers right back into the desks behind her, barley able to catch herself to avoid falling face first onto the floor."
+show monika 3r
+"Monika clutches her face with one hand as she slowly stands right back up, wincing in pain."
+show monika 2a
+"Through the pain, she eerily grins at Yuri."
+m "So that's where you wanna go with this, huh?"
+y 2y4 "Keep talking and I'm going to add another 'deep, dark secert' to my collection, you-"
+show sayori 4w at h41 zorder 1
+show monika 1d at t42 zorder 2
+show natsuki 1c at t43 zorder 3
+show yuri 3f at t44 zorder 4
+s "Guys!!!"
+show sayori 4v
+"Sayori’s shout grabs the attention of the other three girls."
+s 1v "Come on! We're better than this!"
+s "Is this really who we are as a club?"
+s 1k "Just stop fighting...{w=0.38}Please..."
+show sayori 1k
+"Sayori, emotionally drained, promptly falls back into her seat."
+show natsuki 4o
+show monika 1h
+show yuri 3r
+"Unfortunately, it doesn’t look like Sayori's plea got through to anyone."
+n 1e "Oh, look at you acting like the peacemaker! You want him just as much as we do!"
+"At this point I finally muster the courage to step in."
+show natsuki 1o
+show yuri 1o
+mc "Natsuki, that's enough. She’s had a rough day as is, and none of you guys are making it any easier on her with your constant bickering."
+n 2e "She just wants you all for herself, [player]! And the fact is you deserve better than these losers!"
+show sayori 1v
+show yuri 1r
+"Everyone now focuses their attention to Natsuki."
+"I turn to Sayori, who is on the verge of tears."
+n 5q "Well, maybe I shouldn't have said it like that-"
+s "No, please keep going, Natsuki..."
+s 4w "I already know I'm an awful person!"
+mc "Sayori!"
+show sayori 1v
+y 2h "I'm not surprised you had feelings for [player], Natsuki."
+y 2l "You were never that great at hiding it."
+show natsuki 5o
+
+if encore_sayoriquestion_1 == True:
+    n "I'm not the one who tried to steal him from Sayori!"
+
+if encore_sayoriquestion_1 == False:
+    n "At least I didn't fail as badly as you did!"
+
+"My head starts spinning as Natsuki and Yuri continue their shouting at each other."
+"They all...{w=0.38}like me?"
+"I have absolutely no idea on what I should do at this point..."
+"Even if I try speaking up, I feel that I’m only going to make things worse between them."
+y 3h "At least I treated him like an actual human being!"
+y 3r "I was as never off-putting as you!"
+"At this point I feel as if I should leave, the atmosphere has become unbearable."
+m 5b "If he only knew what you wrote about him, you sick freak!"
+show monika 1h
+show natsuki 5g
+show yuri 3r
+s 1j "Maybe if you guys actually spent time with him, instead of acting like jerks, you’d figure out what he likes!"
+
+if encore_sayoriquestion_1 == True:
+    n 2e "How can we do that when you've kept him from us?!?"
+
+
+    if hangout1 == "Sayori":
+        if hangout2 == "Sayori":
+            if hangout3 == "Sayori":
+                n 5g "You're always with him!"
+
+
+    if hangout1 != "Sayori":
+        if hangout2 == "Sayori":
+            if hangout3 == "Sayori":
+                n 5g "Especially these past two days..."
+
+
+    if hangout1 == "Sayori":
+        if hangout2 != "Sayori":
+            if hangout3 == "Sayori":
+                n 5g "You've been with him all last week and most of this week..."
+
+    if hangout1 == "Sayori":
+        if hangout2 == "Sayori":
+            if hangout3 != "Sayori":
+                n 5g "You've been with him all last week and most of this week..."
+
+
+    if hangout1 != "Sayori":
+        if hangout2 != "Sayori":
+            if hangout3 == "Sayori":
+                n 5g "You went off with him all day yesterday!"
+
+
+    if hangout1 == "Sayori":
+        if hangout2 != "Sayori":
+            if hangout3 != "Sayori":
+                n 5g  "It's a mircale you haven't kept him all to yourself this week..."
+
+
+    if hangout1 != "Sayori":
+        if hangout2 == "Sayori":
+            if hangout3 != "Sayori":
+                n 5g  "It's a mircale you haven't kept him all to yourself this week..."
+
+
+    if hangout1 != "Sayori":
+        if hangout2 != "Sayori":
+            if hangout3 != "Sayori":
+                n 5g "It's a miracle that you haven't kept him yourself this week..."
+
+if encore_sayoriquestion_1 == False:
+
+
+    if hangout1 == "Sayori":
+        if hangout2 == "Sayori":
+            if hangout3 == "Sayori":
+                n 5g "You're always with him!"
+                n "How're we supposed to do that when you're always in the way?!?"
+
+
+
+    if hangout1 != "Sayori":
+        if hangout2 == "Sayori":
+            if hangout3 == "Sayori":
+                n 5g "You're always with him!"
+                n "How're we supposed to do that when you've kept him to yourself the last two days?!?"
+
+
+    if hangout1 == "Sayori":
+        if hangout2 != "Sayori":
+            if hangout3 == "Sayori":
+                n 5g "You're always with him!"
+                n "How're we supposed to do that when you've been in the way for most of this week?!?"
+
+    if hangout1 == "Sayori":
+        if hangout2 == "Sayori":
+            if hangout3 != "Sayori":
+                n 5g "You're always with him!"
+                n "How're we supposed to do that when you've been in the way for most of this week?!?"
+
+
+    if hangout1 != "Sayori":
+        if hangout2 != "Sayori":
+            if hangout3 == "Sayori":
+                n 5g "You're the one that sees him the most outside of the club!"
+                n "It's not like we get the same chance as you..."
+
+    if hangout1 == "Sayori":
+        if hangout2 != "Sayori":
+            if hangout3 != "Sayori":
+                n 5g "You're the one that sees him the most outside of the club!"
+                n "It's not like we get the same chance as you..."
+
+    if hangout1 != "Sayori":
+        if hangout2 == "Sayori":
+            if hangout3 != "Sayori":
+                n 5g "You're the one that sees him the most outside of the club!"
+                n "It's not like we get the same chance as you..."
+
+    if hangout1 != "Sayori":
+        if hangout2 != "Sayori":
+            if hangout3 != "Sayori":
+                n 5g "That's hard to do when we need to compete with you for his attention!"
+                n "You see him the most out of all of us..."
+
+show natsuki 5f
+s 1v "I..{w=0.38}I-I’m sorry, I-{w=0.38}I didn’t mean too..."
+s 1k "I never really considered that..."
+show monika 1d
+show yuri 1e
+show sayori 1u
+n 2v "Well consider this!"
+n "Just go away and never come back!"
+n 5o "We don't want you in the way!!!"
+show sayori 4w
+"Sayori finally breaks down crying and slams her face down into her desk."
+show sayori at thide
+hide sayori
+show monika 1h at t31 zorder 1
+show natsuki 1p at t32 zorder 2
+show yuri 3r at t33 zorder 3
+y "What the hell is your problem, Natsuki?!?"
+show natsuki 1o
+n "What's my problem? You're the one who accused me of looking under the vending machines and called her a fake!"
+m 1i "That's no excuse, Natsuki! You don't say that to people!"
+n 2e "You have no room to talk either, Monika! You accused Yuri of cutting herself too!"
+"My blood starts to boil as I clench my fists."
+"I've had enough of this crap."
+mc "Okay."
+"I raise my voice loud enough so everyone can hear me."
+show natsuki 1c
+show monika 1d
+show yuri 3e
+mc "If you're all going to continue to act like this...{w=0.38}like total monsters...{w=0.38}then I don't want to be apart of this club until you sort yourselves out."
+mc "In my eyes, you're all guilty."
+"I grab my bag and proceed to exit the room, letting the door slam shut behind me before anyone has the chance to stop me."
+show natsuki at thide
+hide natsuki
+show monika at thide
+hide monika
+show yuri at thide
+hide yuri
+scene bg bedroom
+with wipeleft_scene

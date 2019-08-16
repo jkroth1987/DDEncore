@@ -152,6 +152,8 @@ by yagamirai10 [[Community Asset Folder]
 
 \"Train Bg's/" From: https://k-after.at.webry.info/200806/article_27.html
 
+\"Pen/ From AFewSecondsToLive
+
 \"Void Door/": https://icouldcrybutidonthavetime.files.wordpress.com/2014/10/doors.jpg"""
 
     # 8
@@ -258,7 +260,7 @@ Air Pods by Reenaki
 Silhouetted Sprites by POBAW
 Yandere and Angry Sayori by LeoDeCraprio
 \"y_mad\" by AjTheYandere
-Crying Yuri Sprites from Doki Doki: Exit Music 
+Crying Yuri Sprites from Doki Doki: Exit Music
 Casual Monika Sprites by Cyrke on https://imgur.com/gallery/keKxUoB
 Original Monika Shrugging Sprite on https://knowyourmeme.com/photos/1337212-doki-doki-literature-club
 Other Unique Sprites by Agent Gold"""
