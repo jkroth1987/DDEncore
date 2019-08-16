@@ -5121,67 +5121,67 @@ if encore_sayoriquestion_2 == False:
 
 #Sayori
 
-if hangout1 == "Sayori" and hangout2 == "Sayori" and hangout3 == "Sayori" or hangout3 == "Natsuki" or hangout3 == "Monika" or hangout3 == "Yuri":
-    jump s_offer
+    if hangout1 == "Sayori" and hangout2 == "Sayori" and hangout3 == "Sayori" or hangout3 == "Natsuki" or hangout3 == "Monika" or hangout3 == "Yuri":
+        jump s_offer
 
-if hangout1 == "Sayori" and hangout2 == "Sayori" or hangout2 == "Natsuki" or hangout2 == "Monika" or hangout2 == "Yuri" and hangout3 == "Sayori":
-    jump s_offer
+    if hangout1 == "Sayori" and hangout2 == "Sayori" or hangout2 == "Natsuki" or hangout2 == "Monika" or hangout2 == "Yuri" and hangout3 == "Sayori":
+        jump s_offer
 
-if hangout1 == "Sayori" or hangout1 == "Natsuki" or hangout1 == "Monika" or hangout1 == "Yuri" and hangout2 == "Sayori" and hangout3 == "Sayori":
-    jump s_offer
+    if hangout1 == "Sayori" or hangout1 == "Natsuki" or hangout1 == "Monika" or hangout1 == "Yuri" and hangout2 == "Sayori" and hangout3 == "Sayori":
+        jump s_offer
 
 
 #Natsuki
 
-if hangout1 == "Natsuki" and hangout2 == "Natsuki" and hangout3 == "Natsuki" or hangout3 == "Sayori" or hangout3 == "Monika" or hangout3 == "Yuri":
-    jump n_offer
+    if hangout1 == "Natsuki" and hangout2 == "Natsuki" and hangout3 == "Natsuki" or hangout3 == "Sayori" or hangout3 == "Monika" or hangout3 == "Yuri":
+        jump n_offer
 
-if hangout1 == "Natsuki" and hangout2 == "Natsuki" or hangout2 == "Sayori" or hangout2 == "Monika" or hangout2 == "Yuri" and hangout3 == "Natsuki":
-    jump n_offer
+    if hangout1 == "Natsuki" and hangout2 == "Natsuki" or hangout2 == "Sayori" or hangout2 == "Monika" or hangout2 == "Yuri" and hangout3 == "Natsuki":
+        jump n_offer
 
-if hangout1 == "Natsuki" or hangout1 == "Sayori" or hangout1 == "Monika" or hangout1 == "Yuri" and hangout2 == "Natsuki" and hangout3 == "Natsuki":
-    jump n_offer
+    if hangout1 == "Natsuki" or hangout1 == "Sayori" or hangout1 == "Monika" or hangout1 == "Yuri" and hangout2 == "Natsuki" and hangout3 == "Natsuki":
+        jump n_offer
 
 
 #Monika
 
-if hangout1 == "Monika" and hangout2 == "Monika" and hangout3 == "Monika" or hangout3 == "Sayori" or hangout3 == "Natsuki" or hangout3 == "Yuri":
-    jump m_offer
+    if hangout1 == "Monika" and hangout2 == "Monika" and hangout3 == "Monika" or hangout3 == "Sayori" or hangout3 == "Natsuki" or hangout3 == "Yuri":
+        jump m_offer
 
-if hangout1 == "Monika" and hangout2 == "Monika" or hangout2 == "Sayori" or hangout2 == "Natsuki" or hangout2 == "Yuri" and hangout3 == "Monika":
-    jump m_offer
+    if hangout1 == "Monika" and hangout2 == "Monika" or hangout2 == "Sayori" or hangout2 == "Natsuki" or hangout2 == "Yuri" and hangout3 == "Monika":
+        jump m_offer
 
-if hangout1 == "Monika" or hangout1 == "Sayori" or hangout1 == "Natsuki" or hangout1 == "Yuri" and hangout2 == "Monika" and hangout3 == "Monika":
-    jump m_offer
+    if hangout1 == "Monika" or hangout1 == "Sayori" or hangout1 == "Natsuki" or hangout1 == "Yuri" and hangout2 == "Monika" and hangout3 == "Monika":
+        jump m_offer
 
 
 #Yuri
 
-if hangout1 == "Yuri" and hangout2 == "Yuri" and hangout3 == "Yuri" or hangout3 == "Sayori" or hangout3 == "Monika" or hangout3 == "Natsuki":
-    jump y_offer
+    if hangout1 == "Yuri" and hangout2 == "Yuri" and hangout3 == "Yuri" or hangout3 == "Sayori" or hangout3 == "Monika" or hangout3 == "Natsuki":
+        jump y_offer
 
-if hangout1 == "Yuri" and hangout2 == "Yuri" or hangout2 == "Sayori" or hangout2 == "Monika" or hangout2 == "Natsuki" and hangout3 == "Yuri":
-    jump y_offer
+    if hangout1 == "Yuri" and hangout2 == "Yuri" or hangout2 == "Sayori" or hangout2 == "Monika" or hangout2 == "Natsuki" and hangout3 == "Yuri":
+        jump y_offer
 
-if hangout1 == "Yuri" or hangout1 == "Sayori" or hangout1 == "Monika" or hangout1 == "Natsuki" and hangout2 == "Yuri" and hangout3 == "Yuri":
-    jump y_offer
+    if hangout1 == "Yuri" or hangout1 == "Sayori" or hangout1 == "Monika" or hangout1 == "Natsuki" and hangout2 == "Yuri" and hangout3 == "Yuri":
+        jump y_offer
 
 
 #Mixed Case
 
-else:
+    else:
 
-    if hangout3 == "Sayori":
-        jump s_offer
+        if hangout3 == "Sayori":
+            jump s_offer
 
-    if hangout3 == "Natsuki":
-        jump n_offer
+        if hangout3 == "Natsuki":
+            jump n_offer
 
-    if hangout3 == "Monika":
-        jump m_offer
+        if hangout3 == "Monika":
+            jump m_offer
 
-    if hangout3 == "Yuri":
-        jump y_offer
+        if hangout3 == "Yuri":
+            jump y_offer
 
 
 
@@ -5684,67 +5684,67 @@ if encore_sayoriquestion_2 == False:
 
 #Sayori
 
-if hangout1 == "Sayori" and hangout2 == "Sayori" and hangout3 == "Sayori" or hangout3 == "Natsuki" or hangout3 == "Monika" or hangout3 == "Yuri":
-    jump s_offer
+    if hangout1 == "Sayori" and hangout2 == "Sayori" and hangout3 == "Sayori" or hangout3 == "Natsuki" or hangout3 == "Monika" or hangout3 == "Yuri":
+        jump s_offer
 
-if hangout1 == "Sayori" and hangout2 == "Sayori" or hangout2 == "Natsuki" or hangout2 == "Monika" or hangout2 == "Yuri" and hangout3 == "Sayori":
-    jump s_offer
+    if hangout1 == "Sayori" and hangout2 == "Sayori" or hangout2 == "Natsuki" or hangout2 == "Monika" or hangout2 == "Yuri" and hangout3 == "Sayori":
+        jump s_offer
 
-if hangout1 == "Sayori" or hangout1 == "Natsuki" or hangout1 == "Monika" or hangout1 == "Yuri" and hangout2 == "Sayori" and hangout3 == "Sayori":
-    jump s_offer
+    if hangout1 == "Sayori" or hangout1 == "Natsuki" or hangout1 == "Monika" or hangout1 == "Yuri" and hangout2 == "Sayori" and hangout3 == "Sayori":
+        jump s_offer
 
 
 #Natsuki
 
-if hangout1 == "Natsuki" and hangout2 == "Natsuki" and hangout3 == "Natsuki" or hangout3 == "Sayori" or hangout3 == "Monika" or hangout3 == "Yuri":
-    jump n_offer
+    if hangout1 == "Natsuki" and hangout2 == "Natsuki" and hangout3 == "Natsuki" or hangout3 == "Sayori" or hangout3 == "Monika" or hangout3 == "Yuri":
+        jump n_offer
 
-if hangout1 == "Natsuki" and hangout2 == "Natsuki" or hangout2 == "Sayori" or hangout2 == "Monika" or hangout2 == "Yuri" and hangout3 == "Natsuki":
-    jump n_offer
+    if hangout1 == "Natsuki" and hangout2 == "Natsuki" or hangout2 == "Sayori" or hangout2 == "Monika" or hangout2 == "Yuri" and hangout3 == "Natsuki":
+        jump n_offer
 
-if hangout1 == "Natsuki" or hangout1 == "Sayori" or hangout1 == "Monika" or hangout1 == "Yuri" and hangout2 == "Natsuki" and hangout3 == "Natsuki":
-    jump n_offer
+    if hangout1 == "Natsuki" or hangout1 == "Sayori" or hangout1 == "Monika" or hangout1 == "Yuri" and hangout2 == "Natsuki" and hangout3 == "Natsuki":
+        jump n_offer
 
 
 #Monika
 
-if hangout1 == "Monika" and hangout2 == "Monika" and hangout3 == "Monika" or hangout3 == "Sayori" or hangout3 == "Natsuki" or hangout3 == "Yuri":
-    jump m_offer
+    if hangout1 == "Monika" and hangout2 == "Monika" and hangout3 == "Monika" or hangout3 == "Sayori" or hangout3 == "Natsuki" or hangout3 == "Yuri":
+        jump m_offer
 
-if hangout1 == "Monika" and hangout2 == "Monika" or hangout2 == "Sayori" or hangout2 == "Natsuki" or hangout2 == "Yuri" and hangout3 == "Monika":
-    jump m_offer
+    if hangout1 == "Monika" and hangout2 == "Monika" or hangout2 == "Sayori" or hangout2 == "Natsuki" or hangout2 == "Yuri" and hangout3 == "Monika":
+        jump m_offer
 
-if hangout1 == "Monika" or hangout1 == "Sayori" or hangout1 == "Natsuki" or hangout1 == "Yuri" and hangout2 == "Monika" and hangout3 == "Monika":
-    jump m_offer
+    if hangout1 == "Monika" or hangout1 == "Sayori" or hangout1 == "Natsuki" or hangout1 == "Yuri" and hangout2 == "Monika" and hangout3 == "Monika":
+        jump m_offer
 
 
 #Yuri
 
-if hangout1 == "Yuri" and hangout2 == "Yuri" and hangout3 == "Yuri" or hangout3 == "Sayori" or hangout3 == "Monika" or hangout3 == "Natsuki":
-    jump y_offer
+    if hangout1 == "Yuri" and hangout2 == "Yuri" and hangout3 == "Yuri" or hangout3 == "Sayori" or hangout3 == "Monika" or hangout3 == "Natsuki":
+        jump y_offer
 
-if hangout1 == "Yuri" and hangout2 == "Yuri" or hangout2 == "Sayori" or hangout2 == "Monika" or hangout2 == "Natsuki" and hangout3 == "Yuri":
-    jump y_offer
+    if hangout1 == "Yuri" and hangout2 == "Yuri" or hangout2 == "Sayori" or hangout2 == "Monika" or hangout2 == "Natsuki" and hangout3 == "Yuri":
+        jump y_offer
 
-if hangout1 == "Yuri" or hangout1 == "Sayori" or hangout1 == "Monika" or hangout1 == "Natsuki" and hangout2 == "Yuri" and hangout3 == "Yuri":
-    jump y_offer
+    if hangout1 == "Yuri" or hangout1 == "Sayori" or hangout1 == "Monika" or hangout1 == "Natsuki" and hangout2 == "Yuri" and hangout3 == "Yuri":
+        jump y_offer
 
 
 #Mixed Case
 
-else:
+    else:
 
-    if hangout3 == "Sayori":
-        jump s_offer
+        if hangout3 == "Sayori":
+            jump s_offer
 
-    if hangout3 == "Natsuki":
-        jump n_offer
+        if hangout3 == "Natsuki":
+            jump n_offer
 
-    if hangout3 == "Monika":
-        jump m_offer
+        if hangout3 == "Monika":
+            jump m_offer
 
-    if hangout3 == "Yuri":
-        jump y_offer
+        if hangout3 == "Yuri":
+            jump y_offer
 
 
 
