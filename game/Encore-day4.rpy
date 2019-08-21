@@ -5613,7 +5613,7 @@ if encore_sayoriquestion_1 == False:
                 n "You see him the most out of all of us..."
 
 show natsuki 5f
-s 1v "I..{w=0.38}I-I’m sorry, I-{w=0.38}I didn’t mean too..."
+s 1v "I...{w=0.38}I-I’m sorry, I-{w=0.38}I didn’t mean too..."
 s 1k "I never really considered that..."
 show monika 1d
 show yuri 1e
@@ -5753,18 +5753,155 @@ label s_offer:
 
 "It's from Sayori."
 s "Can we please talk about today? Face-to-face?"
+"I contemplate my response."
+
+if encore_sayoriquestion_1 == True:
+
+    if n_love == True or y_love == True:
+        "I want to make sure she's okay, but I know how this is going to end..."
+        "There's no way I can salvage our relationship..."
+        "But...{w=0.38}maybe there is a way..."
+        "Or I'll just keep being an idiot and make this worse..."
+
+    if n_love == False or y_love == False:
+        "For one, she really didn't do anything to instigate the fight..."
+        "Hell, she was one of the biggest victims..."
+        "But I know if she comes over, she's just going to blame herself for everything, and I'm particularly sure if I'm for dealing with that, or anything else..."
+
+if encore_sayoriquestion_1 == False:
+
+    if n_love == True or y_love == True:
+        "I know how this is going to end..."
+        "There's no way I can salvage our friendship..."
+        "But...{w=0.38}maybe there is a way..."
+        "Or I'll just keep being an idiot and make this worse..."
+
+    if n_love == False or y_love == False:
+        "For one, she really didn't do anything to instigate the fight..."
+        "Hell, she was one of the biggest victims..."
+        "But I know if she comes over, she's just going to blame herself for everything, and I'm not particularly sure if I want tp deal with that, or anything else..."
+
+
+menu:
+    "Should I let Sayori come over?"
+    "Yes.":
+        $ s_makeup = True:
+        jump s_makeup
+    "No.":
+        $ s_makeup = False:
+        jump s_nomakeup
 
 label n_offer:
 
 "It's from Natsuki."
 n "I want to talk about what happened earlier, in person."
+"I contemplate my response."
+
+if y_love == True:
+    "There's probably only one way this ends..."
+    "And I know it's not good for me..."
+    "I tarnished her hard earned trust, and I'm not really in the mood to be yelled at..."
+    "But if I still love her, I have an obligation to try to explain myself to her, don't I?"
+    "I'm not entirely sure if I can love someone who said something as awful as she did, and to Sayori no less..."
+    "Will she even apologize for that?"
+
+if y_love == False:
+    "I'm not entirely sure if I want to be around her, or anyone right now..."
+    "What she said to Sayori crossed more than one line with me, even if she doesn't know about Sayori's depression..."
+    "But, maybe she wants to apologize for acting that way..."
+    "It was a tense situation all around, and I guess in more than one way, we're both partly responsible for esclating things..."
+    "I want to make things right with her, but she's still rather stubborn..."
+    "Something which I'm in no mood to put up with..."
+
+menu:
+    "Should I let Natsuki come over?"
+    "Yes.":
+        $ s_makeup = True:
+        jump n_makeup
+    "No.":
+        $ n_makeup = False:
+        jump n_nomakeup
 
 label m_offer:
 
 "It's from Monika."
 m "If you're free, I want to talk to you about what happened. In person."
+"I contemplate my response."
+
+if encore_sayoriquestion_1 == True:
+
+
+    if n_love == True or y_love == True:
+        "She's probably going to scold me for suddenly trashing my relationship with Sayori, considering some of the things she said earlier..."
+        "Monika's almost been like an older sister to Sayori ever since they met..."
+        "Whatever wrath Sayori would give me, I'm pretty sure Monika would give me it ten times worse..."
+        "But, if I want to be with her, if I want to make things work between us..."
+        "Maybe that's what I need..."
+        "And I think I should see her to make sure she's okay after getting hit like that..."
+
+
+    if n_love == False or y_love == False:
+        "She did say some pretty harsh things earlier..."
+        "It's a side of Monika that actually almost scares me..."
+        "She was almost a completely different person..."
+        "And I don't think I have a desire to be around them or anyone else for that matter..."
+        "But, I probably should check on her considering she got hit pretty badly..."
+
+
+if encore_sayoriquestion_1 == False:
+
+    if n_love == True or y_love == True:
+        "I don't know if it's even a good idea to face down Monika now..."
+        "My chances of getting with her are effectively over, and I highly dobut we'll be friends after this..."
+        "But if I really care about Monika, shouldn't I try to make this work?"
+        "Though, considering some of the things she said earlier, I don't think she's really in a forgiving mood..."
+        "She was almost a completely different person..."
+        "Still, maybe I should see her just to make sure she's okay..."
+
+    if n_love == False or y_love == False:
+        "Considering how Monika behaved earlier, I'm not sure if I want to be around her right now..."
+        "She acted like a comeptlelty different person...{w=0.38}it was kind of terrifying..."
+        "But, maybe she just wants to apologize for her behavior..."
+        "And maybe I should see her just to make sure she's doing okay..."
+
+menu:
+    "Should I let Monika come over?"
+    "Yes.":
+        $ m_makeup = True:
+        jump m_makeup
+    "No.":
+        $ m_makeup = False:
+        jump m_nomakeup
 
 label y_offer:
 
 "It's from Yuri."
 y "I'd like for us to discuss what happened earlier in person, if you have the time..."
+"I contemplate my response."
+
+if n_love == True:
+    "There's probably only one way this ends..."
+    "And I know it's not good for me..."
+    "I tarnished her hard earned trust, and I don't know if I can afford to see Yuri in shambles right now..."
+    "But if I still love her, I have an obligation to try to explain myself to her, don't I?"
+    "I'm not really sure if I really want to see her anyway, considering what she said to Sayori..."
+    "But, maybe she just wants to apologize for it in person?"
+    "That is something she'd do..."
+    "But I thought I knew her well enough before she said those awful things to Sayori, so I do even know her anymore>"
+
+if n_love == False:
+    "I'm not entirely sure if I want to be around her, or anyone right now..."
+    "And what she said to Sayori crossed more than one line with me, even if she doesn't know about Sayori's depression..."
+    "But, maybe she wants to apologize for acting that way..."
+    "It was a tense situation all around, and I guess in more than one way, we're both partly responsible for esclating things..."
+    "I want to make things right with her, but is it even worth it at this point?"
+    "Everything that I thought I knew about her is completelty out the window now..."
+
+menu:
+    "Should I let Yuri come over?"
+    "Yes.":
+        $ y_makeup = True:
+        jump y_makeup
+    "No.":
+        $ y_makeup = False:
+        jump y_nomakeup

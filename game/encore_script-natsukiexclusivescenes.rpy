@@ -3615,3 +3615,22 @@ hide natsuki
 "I pick up the bag containing her manga and enter my house."
 stop music fadeout 2.0
 jump day3_night
+
+label n_makeup:
+
+label n_nomakeup:
+
+"I don't want to be around her right now..."
+"I start texting back."
+mc "We can talk about what happened another time."
+mc "I want some time to myself after all this..."
+"Natsuki responds after a few minutes."
+n "Okay. I just wanted to say that I'm sorry for how I acted. I shouldn't have said that to Sayori and I'm sorry I acted like a total bitch. I just wanted to say that in person so you know that I mean it..."
+mc "I apprecaite it."
+"I put my phone down and lay back on my bed."
+"Hopefully everything will have calmed down by tomorrow..."
+"Heck, I still don't know if I even want to go back to the club tomorrow..."
+"But, given it's the last day we'll meet before the photoshoot, it's probably best I get working on laminating the poems for Monika..."
+"I'd hate to make this situation even worse..."
+"I walk over to my desk, pull the poems out from one of the drawers and begin organzing them for laminating."
+jump day4_night

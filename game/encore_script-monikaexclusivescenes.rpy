@@ -2212,3 +2212,31 @@ if encore_sayoriquestion_1 == False:
 scene black
 with close_eyes
 jump day3_night
+
+
+
+label m_makeup:
+
+label m_nomakeup:
+
+"It's best to stay away for now..."
+"I start texting back."
+mc "I appreciate the offer, but I wanna cool off after everything. We can talk about it another time."
+
+if n_love == True or n_love == False:
+    mc "Hope you're feeling okay though, it looked like Natsuki hit you pretty hard..."
+
+if y_love == True or y_love == False:
+    mc "Hope you're feeling okay though, it looked like Yuri slapped you pretty hard..."
+
+"Monika quickly replies."
+m "I'm okay now, don't worry about me. I just wanted to check in on you, that's all."
+m "I'll talk to you tomorrow?"
+mc "Sure."
+"I put my phone down and lay back on my bed."
+"Hopefully everything will have calmed down by tomorrow..."
+"Heck, I still don't know if I even want to go back to the club tomorrow..."
+"But, given it's the last day we'll meet before the photoshoot, it's probably best I get working on laminating the poems for Monika..."
+"I'd hate to make this situation even worse..."
+"I walk over to my desk, pull the poems out from one of the drawers and begin organzing them for laminating."
+jump day4_night 
