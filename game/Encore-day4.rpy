@@ -5116,74 +5116,7 @@ if n_love == False:
 "I suddenly feel my phone vibrate."
 "I reach over to my phone to see who messaged me."
 
-if encore_sayoriquestion_1 == True:
-    jump s_offer
-
-if encore_sayoriquestion_2 == False:
-
-#Sayori
-
-    if hangout1 == "Sayori" and hangout2 == "Sayori" and hangout3 == "Sayori" or hangout3 == "Natsuki" or hangout3 == "Monika" or hangout3 == "Yuri":
-        jump s_offer
-
-    if hangout1 == "Sayori" and hangout2 == "Sayori" or hangout2 == "Natsuki" or hangout2 == "Monika" or hangout2 == "Yuri" and hangout3 == "Sayori":
-        jump s_offer
-
-    if hangout1 == "Sayori" or hangout1 == "Natsuki" or hangout1 == "Monika" or hangout1 == "Yuri" and hangout2 == "Sayori" and hangout3 == "Sayori":
-        jump s_offer
-
-
-#Natsuki
-
-    if hangout1 == "Natsuki" and hangout2 == "Natsuki" and hangout3 == "Natsuki" or hangout3 == "Sayori" or hangout3 == "Monika" or hangout3 == "Yuri":
-        jump n_offer
-
-    if hangout1 == "Natsuki" and hangout2 == "Natsuki" or hangout2 == "Sayori" or hangout2 == "Monika" or hangout2 == "Yuri" and hangout3 == "Natsuki":
-        jump n_offer
-
-    if hangout1 == "Natsuki" or hangout1 == "Sayori" or hangout1 == "Monika" or hangout1 == "Yuri" and hangout2 == "Natsuki" and hangout3 == "Natsuki":
-        jump n_offer
-
-
-#Monika
-
-    if hangout1 == "Monika" and hangout2 == "Monika" and hangout3 == "Monika" or hangout3 == "Sayori" or hangout3 == "Natsuki" or hangout3 == "Yuri":
-        jump m_offer
-
-    if hangout1 == "Monika" and hangout2 == "Monika" or hangout2 == "Sayori" or hangout2 == "Natsuki" or hangout2 == "Yuri" and hangout3 == "Monika":
-        jump m_offer
-
-    if hangout1 == "Monika" or hangout1 == "Sayori" or hangout1 == "Natsuki" or hangout1 == "Yuri" and hangout2 == "Monika" and hangout3 == "Monika":
-        jump m_offer
-
-
-#Yuri
-
-    if hangout1 == "Yuri" and hangout2 == "Yuri" and hangout3 == "Yuri" or hangout3 == "Sayori" or hangout3 == "Monika" or hangout3 == "Natsuki":
-        jump y_offer
-
-    if hangout1 == "Yuri" and hangout2 == "Yuri" or hangout2 == "Sayori" or hangout2 == "Monika" or hangout2 == "Natsuki" and hangout3 == "Yuri":
-        jump y_offer
-
-    if hangout1 == "Yuri" or hangout1 == "Sayori" or hangout1 == "Monika" or hangout1 == "Natsuki" and hangout2 == "Yuri" and hangout3 == "Yuri":
-        jump y_offer
-
-
-#Mixed Case
-
-    else:
-
-        if hangout3 == "Sayori":
-            jump s_offer
-
-        if hangout3 == "Natsuki":
-            jump n_offer
-
-        if hangout3 == "Monika":
-            jump m_offer
-
-        if hangout3 == "Yuri":
-            jump y_offer
+jump determine_offer
 
 
 
@@ -5679,77 +5612,105 @@ if y_love == False:
 "I hear my phone vibrate."
 "I reach over to my phone to see who messaged me."
 
-if encore_sayoriquestion_1 == True:
-    jump s_offer
-
-if encore_sayoriquestion_2 == False:
-
-#Sayori
-
-    if hangout1 == "Sayori" and hangout2 == "Sayori" and hangout3 == "Sayori" or hangout3 == "Natsuki" or hangout3 == "Monika" or hangout3 == "Yuri":
+label determine_offer:
+    $ offer_reason = "Processing..."
+    
+    if encore_sayoriquestion_1 == True:
+        $ offer_reason = "Sayori confessed to me."
         jump s_offer
 
-    if hangout1 == "Sayori" and hangout2 == "Sayori" or hangout2 == "Natsuki" or hangout2 == "Monika" or hangout2 == "Yuri" and hangout3 == "Sayori":
+    #Sayori
+        
+    # Spent two days with Sayori?
+    if (hangout1 == "Sayori" and hangout2 == "Sayori") or (hangout1 == "Sayori" and hangout3 == "Sayori") or (hangout2 == "Sayori" and hangout3 == "Sayori"):
+        $ offer_reason = "I hung out with Sayori twice."
         jump s_offer
-
-    if hangout1 == "Sayori" or hangout1 == "Natsuki" or hangout1 == "Monika" or hangout1 == "Yuri" and hangout2 == "Sayori" and hangout3 == "Sayori":
-        jump s_offer
-
-
-#Natsuki
-
-    if hangout1 == "Natsuki" and hangout2 == "Natsuki" and hangout3 == "Natsuki" or hangout3 == "Sayori" or hangout3 == "Monika" or hangout3 == "Yuri":
-        jump n_offer
-
-    if hangout1 == "Natsuki" and hangout2 == "Natsuki" or hangout2 == "Sayori" or hangout2 == "Monika" or hangout2 == "Yuri" and hangout3 == "Natsuki":
-        jump n_offer
-
-    if hangout1 == "Natsuki" or hangout1 == "Sayori" or hangout1 == "Monika" or hangout1 == "Yuri" and hangout2 == "Natsuki" and hangout3 == "Natsuki":
-        jump n_offer
-
-
-#Monika
-
-    if hangout1 == "Monika" and hangout2 == "Monika" and hangout3 == "Monika" or hangout3 == "Sayori" or hangout3 == "Natsuki" or hangout3 == "Yuri":
+    
+    #Monika
+    # Spent two days with Monika?
+    if (hangout1 == "Monika" and hangout2 == "Monika") or (hangout1 == "Monika" and hangout3 == "Monika") or (hangout2 == "Monika" and hangout3 == "Monika"):
+        $ offer_reason = "I hung out with Monika twice."
         jump m_offer
 
-    if hangout1 == "Monika" and hangout2 == "Monika" or hangout2 == "Sayori" or hangout2 == "Natsuki" or hangout2 == "Yuri" and hangout3 == "Monika":
-        jump m_offer
+    #Natsuki
+        
+    # First question! Spent two days with Natsuki?
+    if (hangout1 == "Natsuki" and hangout2 == "Natsuki") or (hangout1 == "Natsuki" and hangout3 == "Natsuki") or (hangout2 == "Natsuki" and hangout3 == "Natsuki"):
+        # Did Natsuki confess earlier?
+        if poem_giver == "Natsuki":
+            # Who did we hang out with other than Natsuki?
+            $ real_choice = "Natsuki"
+            if hangout1 != "Natsuki":
+                $ real_choice = hangout1
+            elif hangout2 != "Natsuki":
+                $ real_choice = hangout2
+            else:
+                $ real_choice = hangout3
+            
+            $ offer_reason = "I hung out with Natsuki twice, but she confessed. Choosing " + real_choice + "."
+            if real_choice == "Sayori":
+                jump s_offer
+            elif real_choice == "Monika":
+                jump m_offer
+            elif real_choice == "Yuri":
+                jump y_offer
+        
+        # Either Natsuki didn't confess, or we somehow got here after hanging out with Natsuki for 3 days
+        $ offer_reason = "I hung out with Natsuki twice."
+        jump n_offer
 
-    if hangout1 == "Monika" or hangout1 == "Sayori" or hangout1 == "Natsuki" or hangout1 == "Yuri" and hangout2 == "Monika" and hangout3 == "Monika":
-        jump m_offer
+    #Yuri
 
-
-#Yuri
-
-    if hangout1 == "Yuri" and hangout2 == "Yuri" and hangout3 == "Yuri" or hangout3 == "Sayori" or hangout3 == "Monika" or hangout3 == "Natsuki":
+    # First question! Spent two days with Yuri?
+    if (hangout1 == "Yuri" and hangout2 == "Yuri") or (hangout1 == "Yuri" and hangout3 == "Yuri") or (hangout2 == "Yuri" and hangout3 == "Yuri"):
+        # Did Yuri confess earlier?
+        if poem_giver == "Yuri":
+            # Who did we hang out with other than Yuri?
+            $ real_choice = "Yuri"
+            if hangout1 != "Yuri":
+                $ real_choice = hangout1
+            elif hangout2 != "Yuri":
+                $ real_choice = hangout2
+            else:
+                $ real_choice = hangout3
+                
+            $ offer_reason = "I hung out with Yuri twice, but she confessed. Choosing " + real_choice + "."                
+            if real_choice == "Sayori":
+                jump s_offer
+            elif real_choice == "Monika":
+                jump m_offer
+            elif real_choice == "Natsuki":
+                jump n_offer
+        
+        # Either Yuri didn't confess, or we somehow got here after hanging out with Yuri for 3 days
+        $ offer_reason = "I hung out with Yuri twice."
         jump y_offer
 
-    if hangout1 == "Yuri" and hangout2 == "Yuri" or hangout2 == "Sayori" or hangout2 == "Monika" or hangout2 == "Natsuki" and hangout3 == "Yuri":
-        jump y_offer
 
-    if hangout1 == "Yuri" or hangout1 == "Sayori" or hangout1 == "Monika" or hangout1 == "Natsuki" and hangout2 == "Yuri" and hangout3 == "Yuri":
-        jump y_offer
-
-
-#Mixed Case
+    #Mixed Case
 
     else:
+        
+        $ offer_reason = "Mix of three, choose day 3: " + hangout3 + "."
+        $ girl_to_check = hangout3
+        if girl_to_check == poem_giver:
+            $ girl_to_check = hangout2
+            $ offer_reason = "Mix of three, day 3 confessed, choose day 2: " + hangout2 + "."
 
-        if hangout3 == "Sayori":
+        if girl_to_check == "Sayori":
             jump s_offer
 
-        if hangout3 == "Natsuki":
+        if girl_to_check == "Natsuki":
             jump n_offer
 
-        if hangout3 == "Monika":
+        if girl_to_check == "Monika":
             jump m_offer
 
-        if hangout3 == "Yuri":
+        if girl_to_check == "Yuri":
             jump y_offer
 
 
-
+$ offer_reason = "I did not hit any logical conclusion--the code is falling through to Sayori."
 
 label s_offer:
 
@@ -5787,10 +5748,10 @@ if encore_sayoriquestion_1 == False:
 menu:
     "Should I let Sayori come over?"
     "Yes.":
-        $ s_makeup = True:
+        $ s_makeup = True
         jump s_makeup
     "No.":
-        $ s_makeup = False:
+        $ s_makeup = False
         jump s_nomakeup
 
 label n_offer:
@@ -5818,10 +5779,10 @@ if y_love == False:
 menu:
     "Should I let Natsuki come over?"
     "Yes.":
-        $ s_makeup = True:
+        $ s_makeup = True
         jump n_makeup
     "No.":
-        $ n_makeup = False:
+        $ n_makeup = False
         jump n_nomakeup
 
 label m_offer:
@@ -5869,10 +5830,10 @@ if encore_sayoriquestion_1 == False:
 menu:
     "Should I let Monika come over?"
     "Yes.":
-        $ m_makeup = True:
+        $ m_makeup = True
         jump m_makeup
     "No.":
-        $ m_makeup = False:
+        $ m_makeup = False
         jump m_nomakeup
 
 label y_offer:
@@ -5902,8 +5863,8 @@ if n_love == False:
 menu:
     "Should I let Yuri come over?"
     "Yes.":
-        $ y_makeup = True:
+        $ y_makeup = True
         jump y_makeup
     "No.":
-        $ y_makeup = False:
+        $ y_makeup = False
         jump y_nomakeup
