@@ -1004,7 +1004,7 @@ if poem_giver == "Natsuki":
     show natsuki 1c at h22 zorder 2
     "I raise my hands calmly in an attempt to diffuse the argument."
     show natsuki 1s at t22 zorder 2
-    mc "We'll be right outside, it'll be just a few minutes. Just get us when we're about to start, okay?"
+    mc "We'll be right outside, it'll be just a few minutes. Just get us when you're about to start, okay?"
     show monika 1r at t21 zorder 1
     "Monika lets out a defeated sigh."
     m 3q "Fine. I'll give you guys two minutes."
@@ -1019,7 +1019,7 @@ if poem_giver == "Natsuki":
     "Natsuki mutters as she opens the door and walk out into the hallway."
     show natsuki at thide
     hide natsuki
-    jump day4_confession
+    #jump day4_confession
 
 
 
@@ -1068,13 +1068,13 @@ if poem_giver == "Yuri":
     show yuri 3n at h22 zorder 2
     "I raise my hands calmly in an attempt to diffuse the argument."
     show yuri 4c at t22 zorder 2
-    mc "We'll be right outside, it'll be just a few minutes. Just get us when we're about to start, okay?"
+    mc "We'll be right outside, it'll be just a few minutes. Just get us when you're about to start, okay?"
     show monika 1r at t21 zorder 1
     "Monika lets out a defeated sigh."
     m 3q "Fine. I'll give you guys two minutes."
     mc "Thank you, Monika."
     show monika 1h
-    "Monika angrily stares at Yuri for her to say the same, but she seems to embarrassed to say much."
+    "Monika angrily stares at Yuri for her to say the same, but she seems too embarrassed to say much."
     show monika at thide
     hide monika
     show yuri 4c at t11 zorder 1
@@ -1083,10 +1083,12 @@ if poem_giver == "Yuri":
     "Yuri mutters as she opens the door and walk out into the hallway."
     show yuri at thide
     hide yuri
-    jump day4_confession
+    #jump day4_confession
 
 
-
+return
+#End of Updated Demo
+##################
 label day4_confession:
 scene bg corridor
 with wipeleft_scene
