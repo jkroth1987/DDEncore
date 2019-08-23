@@ -1572,7 +1572,7 @@ play music t9 fadein 3.0
 y 1t "I'm glad you've given me a chance..."
 "I hear Yuri's voice break as she says that, but she continues to press on, sounding like she's trying to fight back tears."
 y 1v "Truth is, I haven't had a real friend in years..."
-y "I've usally just spent all my time by myself reading..."
+y "I've usually just spent all my time by myself reading..."
 y 2q "And not since middle school has anyone treated me positively..."
 y 2w "I've honestly almost forgotten what it was like to enjoy being with someone with similar interests..."
 "I feel my heart sink into my chest as she says that."
@@ -3689,3 +3689,25 @@ if encore_sayoriquestion_1 == False:
 "I have had a lot to think about recently, no use in trying to overexert my mind."
 "I finally reach my house and turn the key to enter."
 jump day3_night
+
+
+label y_makeup:
+
+label y_nomakeup:
+
+"I don't want to be around her right now..."
+"I start texting back."
+mc "I don't want to talk about it right now."
+mc "I need some time to myself..."
+"Yuri responds after a few minutes."
+y "I would've perfered to have said this in person, but..."
+y "I want to let you know that I'm truly sorry for how I acted in the club earlier. I went too far, and I know it. I don't expect for you to forgive me and if you wish to never talk to me again, I understand."
+mc "I'm glad you acknowledge what you said was wrong. I'll probably talk to you tomorrow."
+"Yuri reads the message. I see that she's trying to type something but after a few minutes she gives up."
+"I put my phone down and lay back on my bed."
+"Hopefully everything will have calmed down by tomorrow..."
+"Heck, I still don't know if I even want to go back to the club tomorrow..."
+"But, given it's the last day we'll meet before the photoshoot, it's probably best I get working on laminating the poems for Monika..."
+"I'd hate to make this situation even worse..."
+"I walk over to my desk, pull the poems out from one of the drawers and begin organzing them for laminating."
+jump day4_night

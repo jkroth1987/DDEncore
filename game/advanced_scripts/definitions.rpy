@@ -114,6 +114,7 @@ define audio.stab = "mod_assets/audio/Stab.ogg"
 define audio.drop = "mod_assets/audio/Metal_Drop.ogg"
 define audio.belly = "mod_assets/audio/Stomach-Growl.ogg"
 define audio.sample = "mod_assets/audio/Your_Reality_Sample.ogg" #Sample Music
+define audio.preview = "mod_assets/audio/Your_Reality_Preview.ogg"
 define audio.doorbell = "mod_assets/audio/Doorbell.ogg"
 define audio.gust = "mod_assets/audio/Gust.ogg" #Wind Gust
 define audio.train = "mod_assets/audio/Train.ogg"
@@ -122,6 +123,8 @@ define audio.drop2 = "mod_assets/audio/drop2.ogg"
 define audio.sheath1 = "mod_assets/audio/sheath1.ogg"
 define audio.sheath2 = "mod_assets/audio/sheath2.ogg"
 define audio.scare= "mod_assets/audio/scare.ogg"
+define audio.groan= "mod_assets/audio/groan.ogg"
+define audio.run= "mod_assets/audio/run.ogg"
 #--Encore's New Music
 define audio.e1 = "<loop 0>mod_assets/audio/void1.ogg" #The Void (First Void Scene Music)
 define audio.f1 = "<loop 0>mod_assets/audio/mainmenu.ogg" #Doki Doki Forever (Main Menu Music, Doki Doki!~)
@@ -142,6 +145,8 @@ define audio.e15 = "<loop 0>mod_assets/audio/Ohayou_Sayori.ogg" #Alternate Sayor
 define audio.e16 = "<loop 0>mod_assets/audio/Ohayou_Yuri.ogg" #Alternate Yuri Theme MBS
 define audio.e17 = "<loop 0>mod_assets/audio/iPhone_Ring.ogg" #iPhone
 define audio.e18 = "<loop 0>mod_assets/audio/Hypothetical Romance.ogg" #Monika Day 3 Unique OST
+define audio.e19 = "<loop 0>mod_assets/audio/Natsuki_Confession.ogg" #Natsuki Confession Music
+define audio.e20 = "<loop 0>mod_assets/audio/Yuri_Confession.ogg" #Yuri Confession Music
 
 
 # Backgrounds
@@ -221,6 +226,7 @@ image bg kitchen_light = "mod_assets/bgs/kitchen_light.png"
 image bg livingroom_dark = "mod_assets/bgs/livingroom_dark.png"
 image bg natsuki_house = "mod_assets/bgs/natsuki_house.png"
 image bg natsuki_room = "mod_assets/bgs/natsuki_room.png"
+image bg bedroom_dawn = "mod_assets/bgs/bedroom_dawn.png"
 
 # Space room code, ported from script-ch30
 image mask_test = AnimatedMask("#ff6000", "mask_mask", "maskb", 0.10, 32)
@@ -1002,7 +1008,7 @@ image n_encore_rects_ghost3:
     alpha 0.0
     4.0
     easeout 8.0 alpha 1.0
-    
+
 image n_encore_rects_ghost1 large:
     RectCluster(Solid("#000"), 4, 30, 10).sm
     pos (664, 289)
@@ -1020,7 +1026,7 @@ image n_encore_rects_ghost3 large:
     pos (599,385)
     size (50, 30)
     alpha 1.0
-    
+
 image natsuki encore_ghost_base:
     "natsuki 1ba"
 image natsuki encore_ghost1:       #Eyes begin to fade
@@ -1039,7 +1045,7 @@ init python:
 
             for i in range(self.numRects):
                 self.add(self.displayable)
-           
+
         def add(self, d):
             s = self.sm.create(d)
             s.x = (random.random() - 0.5) * self.areaWidth * 2
@@ -1047,7 +1053,7 @@ init python:
             s.width = random.random() * self.areaWidth / 2
             s.height = random.random() * self.areaHeight / 2
             self.rects.append(s)
-            
+
         def update(self, st):
             for s in self.rects:
                 s.x = (random.random() - 0.5) * self.areaWidth * 2
@@ -1575,6 +1581,9 @@ default sayori_hangout = True #Do you get food with Sayori on Day 3?
 default natsuki_hangout = True #Do you hangout with Natsuki outside of school on Day 3?
 default monika_hangout = True #Do you hangout with Monika outside of school on Day 3?
 default yuri_hangout = True #Do you hangout with Yuri outside of school on Day 3?
+default n_love = False #Do you accept Natsuki's confession on Day 4?
+default y_love = False #Do you accept Yuri's confession on Day 4?
+define day3_skip = False #Updated Demo Only
 
 # Instantiating variables for poem appeal. This is how much each character likes the poem for each day.
 # -1 = Dislike, 0 = Neutral, 1 = Like
@@ -1661,7 +1670,11 @@ image cg door 2 = "mod_assets/cgs/The_Door_Opens.png"
 image cg n_day3cg_1 = "mod_assets/cgs/n_day3cg_1.png"
 image cg n_day3cg_2 = "mod_assets/cgs/n_day3cg_2.png"
 image cg n_day3cg_3 = "mod_assets/cgs/n_day3cg_3.png"
-
+image cg piano_cg = "mod_assets/cgs/piano_cg.png"
+image cg piano_cg_alt = "mod_assets/cgs/piano_cgalt.png"
+image cg n_day3_h2 = "mod_assets/cgs/n_day3_h2.png"
+image cg city_cg_monika = "mod_assets/cgs/city_cg_monika.png"
+image cg city_cg_monika2 = "mod_assets/cgs/city_cg_monika2.png"
 
 #Encore's New Sprites
 image monika s = "mod_assets/sprites/ms.png"
@@ -1789,6 +1802,9 @@ image natsuki_rip = "mod_assets/sprites/n_kill.png"
 image natsuki_sweet = "mod_assets/sprites/n_sweet.png"
 image natsuki_bliss = "mod_assets/sprites/n_bliss.png"
 image n_bscream = "mod_assets/sprites/n_bscream.png"
+image n_cry1 = "mod_assets/sprites/n_cry1.png"
+image n_cry2 = "mod_assets/sprites/n_cry2.png"
+
 #image natsuki xu2131 = im.Composite((960, 960), (0, 0), "mod_assets/character_images/natsuki/1_xrossed_arms/1_body/u.png", (18, 22), "mod_assets/character_images/natsuki/2_face_def/base.png", (18, 22), "mod_assets/character_images/natsuki/2_face_def/1_mouth/2.png", (18, 22), "mod_assets/character_images/natsuki/2_face_def/2_nose/1.png", (18, 22), "mod_assets/character_images/natsuki/2_face_def/3_eyes/3.png", (18, 22), "mod_assets/character_images/natsuki/2_face_def/4_eyebrows/1.png")
 #image natsuki xu2143 = im.Composite((960, 960), (0, 0), "mod_assets/character_images/natsuki/1_xrossed_arms/1_body/u.png", (18, 22), "mod_assets/character_images/natsuki/2_face_def/base.png", (18, 22), "mod_assets/character_images/natsuki/2_face_def/1_mouth/2.png", (18, 22), "mod_assets/character_images/natsuki/2_face_def/2_nose/1.png", (18, 22), "mod_assets/character_images/natsuki/2_face_def/3_eyes/4.png", (18, 22), "mod_assets/character_images/natsuki/2_face_def/4_eyebrows/3.png")
 #image natsuki xu1146 = im.Composite((960, 960), (0, 0), "mod_assets/character_images/natsuki/1_xrossed_arms/1_body/u.png", (18, 22), "mod_assets/character_images/natsuki/2_face_def/base.png", (18, 22), "mod_assets/character_images/natsuki/2_face_def/1_mouth/1.png", (18, 22), "mod_assets/character_images/natsuki/2_face_def/2_nose/1.png", (18, 22), "mod_assets/character_images/natsuki/2_face_def/3_eyes/4.png", (18, 22), "mod_assets/character_images/natsuki/2_face_def/4_eyebrows/6.png")
@@ -1807,6 +1823,35 @@ image sayori_think = "mod_assets/sprites/sayori_think.png"
 image sayori_surprised = "mod_assets/sprites/sayori_surprised.png"
 image sayori_struggle = "mod_assets/sprites/sayori_struggle.png"
 image sayori_dead = "mod_assets/sprites/sayori_dead.png"
+image s_1pu  = "mod_assets/sprites/s_1pu.png"
+image s_1pk  = "mod_assets/sprites/s_1pk.png"
+image s_1pg  = "mod_assets/sprites/s_1pg.png"
+image s_1pl  = "mod_assets/sprites/s_1pl.png"
+image s_1pt  = "mod_assets/sprites/s_1pt.png"
+image s_2pv  = "mod_assets/sprites/s_2pv.png"
+image s_2pq  = "mod_assets/sprites/s_2pq.png"
+image s_4pj  = "mod_assets/sprites/s_4pj.png"
+image s_4pi  = "mod_assets/sprites/s_4pi.png"
+image s_4pv  = "mod_assets/sprites/s_4pv.png"
+image s_4pw  = "mod_assets/sprites/s_4pw.png"
+image s_4pu  = "mod_assets/sprites/s_4pu.png"
+image s_3pv  = "mod_assets/sprites/s_3pv.png"
+image s_1py  = "mod_assets/sprites/s_1py.png"
+image s_4pr  = "mod_assets/sprites/s_4pr.png"
+image s_1pr  = "mod_assets/sprites/s_1pr.png"
+image s_1pq  = "mod_assets/sprites/s_1pq.png"
+image s_4pq  = "mod_assets/sprites/s_4pq.png"
+image s_mad1  = "mod_assets/sprites/s_mad1.png"
+image s_mad11  = "mod_assets/sprites/s_mad11.png"
+image s_mad12  = "mod_assets/sprites/s_mad12.png"
+image s_mad13  = "mod_assets/sprites/s_mad13.png"
+image s_mad14  = "mod_assets/sprites/s_mad14.png"
+image s_mad2  = "mod_assets/sprites/s_mad2.png"
+image s_mad4  = "mod_assets/sprites/s_mad4.png"
+image s_mad42  = "mod_assets/sprites/s_mad42.png"
+image s_mad43  = "mod_assets/sprites/s_mad43.png"
+image s_mad44  = "mod_assets/sprites/s_mad44.png"
+image s_mad45  = "mod_assets/sprites/s_mad45.png"
 #image sayori u114152 = im.Composite((960, 960), (0, 0), "mod_assets/character_images/sayori/1_uniform/1_body_left/1.png", (0, 0), "mod_assets/character_images/sayori/1_uniform/2_body_right/1.png", (0, 0), "mod_assets/character_images/sayori/2_face/base.png", (0, 0), "mod_assets/character_images/sayori/2_face/1_mouth/4.png", (0, 0), "mod_assets/character_images/sayori/2_face/2_nose/1.png", (0, 0), "mod_assets/character_images/sayori/2_face/3_eyes/5.png", (0, 0), "mod_assets/character_images/sayori/2_face/4_eyebrows/2.png")
 #image sayori u115313 = im.Composite((960, 960), (0, 0), "mod_assets/character_images/sayori/1_uniform/1_body_left/1.png", (0, 0), "mod_assets/character_images/sayori/1_uniform/2_body_right/1.png", (0, 0), "mod_assets/character_images/sayori/2_face/base.png", (0, 0), "mod_assets/character_images/sayori/2_face/1_mouth/5.png", (0, 0), "mod_assets/character_images/sayori/2_face/2_nose/3.png", (0, 0), "mod_assets/character_images/sayori/2_face/3_eyes/1.png", (0, 0), "mod_assets/character_images/sayori/2_face/4_eyebrows/3.png")
 #image sayori u112313 = im.Composite((960, 960), (0, 0), "mod_assets/character_images/sayori/1_uniform/1_body_left/1.png", (0, 0), "mod_assets/character_images/sayori/1_uniform/2_body_right/1.png", (0, 0), "mod_assets/character_images/sayori/2_face/base.png", (0, 0), "mod_assets/character_images/sayori/2_face/1_mouth/2.png", (0, 0), "mod_assets/character_images/sayori/2_face/2_nose/3.png", (0, 0), "mod_assets/character_images/sayori/2_face/3_eyes/1.png", (0, 0), "mod_assets/character_images/sayori/2_face/4_eyebrows/3.png")
@@ -1853,6 +1898,13 @@ image yuri_knife3 = "mod_assets/sprites/yuri_knife3.png"
 image yuri_knife4 = "mod_assets/sprites/yuri_knife4.png"
 image yuri_knife5 = "mod_assets/sprites/yuri_knife5.png"
 image yuri_knife6 = "mod_assets/sprites/yuri_knife6.png"
+image y_cry1 = "mod_assets/sprites/y_cry1.png"
+image y_cry2 = "mod_assets/sprites/y_cry2.png"
+image y_cry3 = "mod_assets/sprites/y_cry3.png"
+image y_cry4 = "mod_assets/sprites/y_cry4.png"
+image y_cry5 = "mod_assets/sprites/y_cry5.png"
+image y_cry6 = "mod_assets/sprites/y_cry6.png"
+image pen = "mod_assets/sprites/pen.png"
 #image yuri u122218 = im.Composite((960, 960), (0, 0), "mod_assets/character_images/yuri/1_uniform/1_body_left/1.png", (0, 0), "mod_assets/character_images/yuri/1_uniform/2_body_right/2.png", (0, 0), "mod_assets/character_images/yuri/2_face/base.png", (0, 0), "mod_assets/character_images/yuri/2_face/1_mouth/2.png", (0, 0), "mod_assets/character_images/yuri/2_face/2_nose/2.png", (0, 0), "mod_assets/character_images/yuri/2_face/3_eyes/1.png", (0, 0), "mod_assets/character_images/yuri/2_face/4_eyebrows/8.png")
 #image yuri u114221 = im.Composite((960, 960), (0, 0), "mod_assets/character_images/yuri/1_uniform/1_body_left/1.png", (0, 0), "mod_assets/character_images/yuri/1_uniform/2_body_right/1.png", (0, 0), "mod_assets/character_images/yuri/2_face/base.png", (0, 0), "mod_assets/character_images/yuri/2_face/1_mouth/4.png", (0, 0), "mod_assets/character_images/yuri/2_face/2_nose/2.png", (0, 0), "mod_assets/character_images/yuri/2_face/3_eyes/2.png", (0, 0), "mod_assets/character_images/yuri/2_face/4_eyebrows/1.png")
 #image yuri u125111 = im.Composite((960, 960), (0, 0), "mod_assets/character_images/yuri/1_uniform/1_body_left/1.png", (0, 0), "mod_assets/character_images/yuri/1_uniform/2_body_right/2.png", (0, 0), "mod_assets/character_images/yuri/2_face/base.png", (0, 0), "mod_assets/character_images/yuri/2_face/1_mouth/5.png", (0, 0), "mod_assets/character_images/yuri/2_face/2_nose/1.png", (0, 0), "mod_assets/character_images/yuri/2_face/3_eyes/1.png", (0, 0), "mod_assets/character_images/yuri/2_face/4_eyebrows/1.png")

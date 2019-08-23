@@ -16,8 +16,9 @@ init python:
     c_text_1 = """Created and Directed By: Andrew J. Striedl
 Writers: Agent Gold, Bug, Nick (Canad1an),
 Ploxmaster708, Rudy, Andrew J. Striedl
-Artists: 3Monika4 (Monika), Elaina Sasso, Kiiori
- @reenaki_m (Instagram)
+Editor: LeoHughes02
+Artists: 3Monika4 (Monika), Elaina Sasso, Kiiori,
+ @reenaki_m (Instagram), Tat-bunny (https://www.deviantart.com/tat-bunny)
 Music: Daniel Kruyer (Angelic Beast)"""
 
     # 2
@@ -43,7 +44,7 @@ The MC as [player]""" # This will be re-defined lower down--if adjustments are n
     # 6 lines, +250 pixels
     c_text_4 = """Special Thanks: Afrozer0 & Monika, Agent Gold, American Eagle, Astranova,
 Blaze Bringer, BronzeBrawn, Bug, huser Entertainment,
-Jacob Smallman, Kuudere Ghost, Lucy CN, POBAW, Noa_AT, Orber,
+Jacob Smallman, Kuudere Ghost, LeoHughes02, MrZeratheMant, Lucy CN, POBAW, Noa_AT, Orber,
 Ploxmaster708, SaturnGamer72, Ronald McOnePuch, SlightlySimple,
 Spaghetto, Sir Swampert
 
@@ -84,6 +85,8 @@ by Alex [[ORG]#9077(Discord) [[Community Asset Folder]
 by yagamirai10 [[Community Asset Folder]
 
 \"encoretextbox.png\" by TheD0ct0r#8275(Discord)
+
+\"bedroom_dawn/" by Gorosona#8350
 
 \"closet_dark/" by POBAW
 
@@ -148,6 +151,8 @@ by yagamirai10 [[Community Asset Folder]
 \"train_station_bg/" by LeoDeCraprio#4239 in the Community Assets Folder
 
 \"Train Bg's/" From: https://k-after.at.webry.info/200806/article_27.html
+
+\"Pen/ From AFewSecondsToLive
 
 \"Void Door/": https://icouldcrybutidonthavetime.files.wordpress.com/2014/10/doors.jpg"""
 
@@ -227,6 +232,9 @@ audio.knife_sheaths: By SOUND and IMAGE FX on YouTube
 audio.scare: By SoundEffectsFactory on YouTube
 (converted to .ogg by Andrew)
 
+audio.groan: From Five Nights At Freddy's
+(converted to .ogg by Andrew)
+
 audio.gust: https://www.youtube.com/channel/UCTdyXszrxhMP-pbhy85Pa-g
 (converted to .ogg by Andrew)"""
 
@@ -250,8 +258,9 @@ Air Pods by Reenaki
 \"n_kill\" by TheD0ctor with assets from Doki Doki: Exit Music
 \"n_sweet\" by r/user/TacticalCupcakes
 Silhouetted Sprites by POBAW
-Yandere Sayori by Agent Gold
+Yandere and Angry Sayori by LeoDeCraprio
 \"y_mad\" by AjTheYandere
+Crying Yuri Sprites from Doki Doki: Exit Music
 Casual Monika Sprites by Cyrke on https://imgur.com/gallery/keKxUoB
 Original Monika Shrugging Sprite on https://knowyourmeme.com/photos/1337212-doki-doki-literature-club
 Other Unique Sprites by Agent Gold"""

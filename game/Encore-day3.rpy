@@ -903,7 +903,7 @@ label day3_tellsayori:
             s 1f "Us trying to spend time together..."
             s 4u "After all this..."
             mc "Oh, calm down, Sayori!"
-            mc "I dobut spending time with you could possibly be causing these nightmares!"
+            mc "I doubt spending time with you could possibly be causing these nightmares!"
             show sayori 1k
             "I feel a pit form in my stomach."
             "No, that couldn't be the reason..."
@@ -5898,7 +5898,11 @@ mc "I can't wait to hear it again when it's all done!"
 n 5w "Well if you guys were gone for that long, then it must be a masterpiece!"
 m 2e "Oh, it is, Natsuki."
 m 1b "I have no doubt everyone here will enjoy it when it's done!"
+<<<<<<< HEAD
 m 1m "Anyways, we should probably get started with the activity I have in mind for us today..."
+=======
+m 1m "Anyways, we should proably get started with the activity I have in mind for us today..."
+>>>>>>> 80a6eb48c2da3e7fed3d696b5bdc4ba9d7373046
 y 1b "That would be great, Monika!"
 show monika at thide
 hide monika
@@ -10728,8 +10732,13 @@ if hangout3 == "Yuri":
         "I just hope I can talk about it with her in an honest fashion..."
 
     if tell_monika == False:
+<<<<<<< HEAD
         "I'm not completelty convinced that these were ordinary cat scratches..."
         "And if she's actually cutting herself and denying it, then that's a serious problem in itself..."
+=======
+        "I'm not completely convinced that thise were ordinary cat scratches..."
+        "And if she's actually cutting herself and denying it, then that's a serious problem in of itself..."
+>>>>>>> 80a6eb48c2da3e7fed3d696b5bdc4ba9d7373046
         "But...{w=0.38}maybe I don't need Monika's help on this..."
         "Maybe I can talk to Yuri about this one-on-one?"
         "I mean, I hope she trusts me that much..."
@@ -11951,7 +11960,7 @@ label day3_snight:
 if sayori_hangout == True:
     jump s_night1
 
-if sayori_hangout == True:
+if sayori_hangout == False:
     jump s_night2
 
 label day3_ynight:
@@ -12294,7 +12303,7 @@ label y_night2:
 if encore_sayoriquestion_1 == True:
     "I guess a positive way to look at things is that I didn't violate any more boundaries in my relationship with Sayori..."
     "So, I suppose that's a win, even though it doesn't really fix my problems with Yuri..."
-    "There's no dobut in my mind right now that she must think I hate her or something..."
+    "There's no doubt in my mind right now that she must think I hate her or something..."
 
 if encore_sayoriquestion_1 == False:
     "Not going with Yuri also probably hurts my chances of getting with her too..."
@@ -12352,7 +12361,7 @@ if hangout1 == "Monika":
         m "Given past performance with Sayori...{w=0.38}I suggest we deal with [poem_giver] first. It'll be easier."
         m "Tomorrow, I want you to tell her off!"
         m "Tell her you want {i}nothing{/i} to do with her!"
-        m "Since you have no real feelings for her, this should be an easy task for you. I believe in you."
+        m "Since you should have no real feelings for her, this will be an easy task for you. I believe in you."
 
         if encore_sayoriquestion_1 == True:
             m "Once [poem_giver]'s been dealt with...{w=0.38}maybe by that point I'll have an idea of how to deal with Sayori..."
@@ -12391,7 +12400,7 @@ if hangout1 == "Monika":
     if monika_hangout == False:
         m "I wish we could've spent more time today..."
         m "We never get enough time together!"
-        m "And as much as I'm angry at you for hanging out with me after school today..."
+        m "And as much as I'm angry at you for not hanging out with me after school today..."
         m "I understand you need some time to think things over..."
 
     stop music fadeout 2.0
@@ -13134,6 +13143,9 @@ play sound fall
 "Natsuki proceeds to get on top of me and wraps her hands around my throat."
 "She proceeds to squeeze tightly, immediately causing me to gag."
 "I try to push her off me but she has me firmly pinned."
+"I stare up at her but for some reason I can't make out her eyes or mouth anymore..."
+"They're just...{w=0.38}not there anymore!"
+"What the hell is going on?!?!?!"
 "I try to call for help but my voice is only able to come out as a mere whisper..."
 show black onlayer front:
     alpha 0.0
@@ -13313,27 +13325,41 @@ stop music
 scene bg house
 "I'm immediately jolted awake."
 "However, instead of finding myself lying on my bed, I find myself standing on the sidewalk by Sayori's house, in school uniform."
-show sayori 1u at t11 zorder 1
+show s_1pu as sayori at t11 zorder 1
 "But Sayori's oddly enough in her pajamas, red faced with tears streaming down her cheeks..."
 "What did I just find myself in?"
 play music t10 fadein 1.0
-s "So that's why I'm not coming to school today, [player]..."
-s 1k "I'm not really feeling like myself today..."
+s "So that's why I'm not coming to school, [player]..."
+show s_1pk as sayori at t11 zorder 1
+s "I'm not really feeling like myself today..."
 "I blink a few times and look to confirm that I'm really outside."
 "How the hell did I get here?"
 "I was just in bed..."
-"Granted I was dealing with the voice tormenting me, I guess it just made me forget waking up an getting ready..."
-s 1g "Did you get that, [player]?"
+"Granted I was dealing with the voice tormenting me, I guess it just made me forget waking up and getting ready..."
+show s_1pg as sayori at t11 zorder 1
+s "Did you get that, [player]?"
 "I try to go along with the situation."
 mc "Uh...{w=0.38}yeah..."
 mc "I understand, Sayori."
 mc "Everyone needs to take a day to themselves once in a while..."
 mc "I'm sure everyone will understand..."
+<<<<<<< HEAD
 s 1l "Somehow I doubt that..."
 s 1k "They're just going to worry about me, [player]..."
 s 1t "They don't know what I'm going through..."
 s "I really don't want you to cover for me though..."
 s 1k "I'd feel so guilty for having you lie for me..."
+=======
+show s_1pl as sayori at t11 zorder 1
+s "Somehow I doubt that..."
+show s_1pk as sayori at t11 zorder 1
+s "They're just going to worry about me, [player]..."
+show s_1pt as sayori at t11 zorder 1
+s "They don't know what I'm going through..."
+s "And I already feel guilty knowing I won't be putting a smile on everyone's faces today.."
+show s_1pk as sayori at t11 zorder 1
+s "I'd hate for you to try to lie about why I didn't come in..."
+>>>>>>> 80a6eb48c2da3e7fed3d696b5bdc4ba9d7373046
 
 if encore_sayoriquestion_1 == True:
     mc "Well, that's what a good boyfriend does, right?"
@@ -13342,53 +13368,65 @@ if encore_sayoriquestion_1 == False:
     mc "Well, that's what friends are for, right?"
 
 s "Y-{w=0.38}yeah..."
-s 1l "You know, I'm surprised you're taking this so well..."
-s 1k "I thought you'd be offering to stay with me..."
+show s_1pl as sayori at t11 zorder 1
+s "You know, I'm surprised you're taking this so well..."
+show s_1pk as sayori at t11 zorder 1
+s "I thought you'd be offering to stay with me..."
 s "Given some of the things I just told you..."
 mc "Uh..."
 "She's got me in a trap here..."
 "How am I supposed to keep this up?"
-show sayori 1bg
+show s_1pg as sayori at t11 zorder 1
 mc "I mean...{w=0.38}I am worried about you..."
 mc "I always have been..."
 mc "But, you wanted me to tell everyone that you're not feeling good, right?"
 s "I didn't say that..."
 s "[player]..."
-s 1v "Were you listening to anything I was saying?!?"
+show s_2pv as sayori at t11 zorder 1
+s "Were you listening to anything I was saying?!?"
 mc "Of course I was!"
-"Even though I'm lying to Sayori's face in the middle of her meltdown..."
+"I can't believe I'm lying to Sayori's face in the middle of her meltdown..."
 "This isn't good..."
 stop music fadeout 2.0
 mc "I'm just...{w=0.38}out of it, okay?"
-s 1j "You were completely fine this morning!"
-s 1i "You even told me that you were willing to meet up with me so early!"
+show s_4pj as sayori at t11 zorder 1
+s "You were completely fine this morning!"
+show s_4pi as sayori at t11 zorder 1
+s "You even told me that you were willing to meet up with me so early!"
 mc "I did?!?"
 "I look at my watch."
 "6:45."
 "I then look up at the sky, to see the sky just turn fully blue."
-"I never get up this early on a schoolday..."
+"I never get up this early on a school day..."
 "What the hell is happening?!?!"
 "I turn back to face Sayori, whose now angirly staring me down."
-s 1j "You weren't listening to anything I said..."
-s 1v "You...{w=0.38}you ignored me!"
-s 1w "After you promised that you wouldn't!"
+show s_4pj as sayori at t11 zorder 1
+s "You weren't listening to anything I said..."
+show s_4pv as sayori at t11 zorder 1
+s "You...{w=0.38}you ignored me!"
+show s_4pw as sayori at t11 zorder 1
+s "After you promised that you wouldn't!"
 mc "Sayori, I-"
-s 1t "No need to apologize..."
+show s_1pt as sayori at t11 zorder 1
+s "No need to apologize..."
 s "I'm used to having everyone being ignorant about how I really feel inside..."
 mc "A-{w=0.38}and how are you feeling on the inside..."
-s 1w "LIKE I WANT TO DIE!!!!"
+show s_4pw as sayori at t11 zorder 1
+s "LIKE I WANT TO DIE!!!!"
 "Sayori's sudden yelling me jars me backwards."
 "I've never heard her raise her voice in such a frightening tone..."
-s 1u "You don't really care about me..."
+show s_4pu as sayori at t11 zorder 1
+s "You don't really care about me..."
+show s_3pv as sayori at t11 zorder 1
 
 if encore_sayoriquestion_1 == True:
-    s 1v "You're only dating me to fill your life with some sick pleasure, isn't it?!?!?"
+    s "You're only dating me to fill your life with some sick pleasure, isn't it?!?!?"
 
 if encore_sayoriquestion_1 == False:
-    s 1v "The only reason you're even friends with me at this point is because you feel guilty, isn't it?!?!"
+    s "The only reason you're even friends with me at this point is because you feel guilty, isn't it?!?!"
 
 mc "Sayori, that's not true and you know it!"
-mc "I know these past few years, I've been doing my best to make up for it..."
+mc "I know that I've been failing you for all these years, I've been doing my best to make up for it..."
 
 if hangout1 == "Sayori":
     if hangout2 == "Sayori":
@@ -13407,22 +13445,28 @@ if hangout1 != "Sayori":
         mc "And I know I haven't been doing a good job..."
 
 mc "But I care about you! I always have, and always will!"
-s 1u "You're just saying that to try to make me feel better..."
-s 1y "It won't work this time, [player]..."
+show s_1pu as sayori at t11 zorder 1
+s "You're just saying that to try to make me feel better..."
+show s_1py as sayori at t11 zorder 1
+s "It won't work this time, [player]..."
 s "I think I've finally had enough with it all.."
 mc "What are you saying?"
 s "Don't worry about it."
 s "I wouldn't want to ruin everyone's day."
-s "That would just be...{w=0.38}self-ish..."
-show sayori 1l
+s "That would just be...{w=0.38}selfish..."
+show s_1pl as sayori at t11 zorder 1
 "Sayori lets out an uncomfortable laugh that only adds on to the already tense atmosphere..."
-s 1y "I'm sorry I dragged you out here for nothing..."
-s 1t "You won't have to worry about me anymore..."
+show s_1py as sayori at t11 zorder 1
+s "I'm sorry I dragged you out here for nothing..."
+show s_1pt as sayori at t11 zorder 1
+s "You won't have to worry about me anymore..."
 s "I think I served my purpose..."
-s "I can't keep you guys happy forever if I keep feeling sad like this!"
-s 1y "So the solution is obvious..."
-s 1t "Good-bye, [player]..."
-show sayori at thide
+s "I can't keep you guys happy forever if I keep feeling hopeless!"
+show s_1py as sayori at t11 zorder 1
+s "So the solution is obvious..."
+show s_1pt as sayori at t11 zorder 1
+s "Good-bye, [player]..."
+show s_1pt as sayori at thide
 hide sayori
 "Before I can open my mouth, Sayori wordlessliy walks back to her house."
 "What the hell was that!"
@@ -13448,8 +13492,8 @@ play sound "mod_assets/audio/knock.ogg"
 mc "Sayori?!?"
 "I press my ear to the door to see if she's really in there."
 "I can't hear anything..."
-play sound drop2
-$ renpy.pause(delay=0.001)
+play sound "sfx/fall2.ogg"
+"..."
 play sound bone
 "..."
 "What the hell is she doing?!?!"
@@ -13481,8 +13525,20 @@ mc "S-{w=0.38}Sayori?!?!"
 "No..."
 "I was too late..."
 "I COMPLETELY FUCKED UP!"
-"M-{w=0.38}maybe she's still alive..."
+"Tears fill my eyes as I pound the floor, screaming in anguish."
+"Why did she do this?!?!"
+"What happened!??!"
+"She hasn't been this bad since Sunday..."
+"What did I do wrong?!?"
+"I should've spent more time with her!!!!"
+"I should've told her more how much she meant to me..."
+"And now, I'm never going to get another chance!"
 scene black with Dissolve(0.5)
+"I curl up onto the floor and start sobbing."
+"Through my sobs, my mind tries to come up with some sort of scenario for how she could possibly be alive right now..."
+"Maybe I'm still dreaming..."
+"..."
+mc "M-{w=0.38}maybe she's still alive..."
 "I quickly throw open Sayori's drawers."
 "There has to be something to cut her down..."
 "..."
@@ -13501,13 +13557,216 @@ play sound "sfx/fall2.ogg"
 scene sayori_bedroom
 with open_eyes
 "I roll over to face Sayori, whose laying stiffly on the floor."
+"I quickly loosen the noose as best as I can."
 mc "Sayori...?"
-show s_kill at face
+show s_kill as sayori at face(y=800)
 "I gently shake her body a few times."
 "Sayori...{w=0.38}can you hear me?!?"
 "..."
 "She doesn't respond."
+"N-{w=0.38}no..."
+"W-{w=0.38}why would she do this?!?!?!"
+stop music fadeout 1.0
+"I try to check her pulse, but I don't feel anything..."
+"She can't be gone..."
+"No, she can't be..."
+"Tears are flooding down my face as I craddle Sayori's lifeless body in my arms."
+"This is my fault..."
+"If I had just paid more attention...{w=0.38}if I just listened!"
+"Then she wouldn't have snapped like this..."
+"I'm a failure..."
+"..."
+"No..."
+mc "NO! I'm not letting you die!!!"
+"I lay Sayori on the floor and begin CPR."
+play sound groan
+"Suddenly, I begin to hear an ungodly groan emitting from Sayori's mouth."
+mc "S-{w=0.38}Sayori?!!?"
+"Sayori's eyes roll towards me."
+$ style.say_dialogue = style.edited
+s "JUST."
+s "LET."
+s "ME."
+show s_mad1 as sayori at face
+s "DIE!"
+$ style.say_dialogue = style.normal
+mc "Wha-"
+show s_mad4 as sayori at t11 zorder 1
+play sound fall
+show white zorder 4:
+    alpha 0.6
+    linear 0.25 alpha 0.0
+"Sayori pushes me off of her, causing me to stumble back."
+"She then stands herself up, not breaking her meancing stare."
+mc "S-{w=0.38}SAYORI?!?!?"
+mc "You're alive?!?!"
+"I feel a mix of emotions course through me as I try to go to hug Sayori, but her stare stops me cold."
+show s_mad42 as sayori at t11 zorder 1
+s "WHY DID YOU COME HERE?!?!?"
+s "WHY COULDN'T YOU LET ME REST IN PEACE?!?!"
+show s_mad43 as sayori at t11 zorder 1
+s "WHY DO YOU CONTINUE TO TORMENT ME BY LETTING ME LIVE!?!?!"
+show s_mad4 as sayori at t11 zorder 1
+mc "Sayori...?"
+mc "What're you talking about?!?"
+mc "I was worried about you..."
+mc "That's why I came! I didn't want you to do what evidently you just did..."
+show s_mad42 as sayori at t11 zorder 1
+s "SO NOW YOU CARE, HUH?!?!"
+show s_mad4 as sayori at t11 zorder 1
+s "AFTER IGNORING ME FOR A YEAR, YOU FINALLY DECIDE I'M WORTH YOUR TIME?!?!"
 
+if encore_sayoriquestion_1 == True:
+
+    if hangout1 == "Sayori":
+        if hangout2 == "Sayori":
+            s "NOTHING YOU'VE DONE CAN MAKE ME FORGIVE YOU!!!!"
+
+
+    if hangout1 != "Sayori":
+        if hangout2 == "Sayori":
+            s "YOU STILL HAVE EYES FOR [HANGOUT1], I KNOW IT!!!!!"
+
+
+    if hangout1 == "Sayori":
+        if hangout2 != "Sayori":
+            s "AND IT WAS WORSE THAT YOU ALMOST CHEATED ON ME!!!!!!"
+
+
+    if hangout1 != "Sayori":
+        if hangout2 != "Sayori":
+            s "YOU DON'T CARE ABOUT ME ANYMORE!!!! YOU'VE BETRAYED MY TRUST AFTER I GAVE YOU MY HEART!!!!"
+
+if encore_sayoriquestion_1 == False:
+
+    if hangout1 == "Sayori":
+        if hangout2 == "Sayori":
+            s "NOTHING YOU'VE DONE WILL FIX MY BROKEN HEART!!!!"
+
+
+    if hangout1 != "Sayori":
+        if hangout2 == "Sayori":
+            s "WAS [HANGOUT1] NOT GOOD ENOUGH FOR YOU?!?!?!"
+
+
+    if hangout1 == "Sayori":
+        if hangout2 != "Sayori":
+            s "YOU'VE DONE NOTHING BUT LEAD ME ON!!!!"
+
+
+    if hangout1 != "Sayori":
+        if hangout2 != "Sayori":
+            s "YOU DON'T CARE ABOUT ME!!! YOU'RE JUST TALKING TO ME NOW TO MAKE YOURSELF FEEL LESS GUILTY!!!!!!!"
+
+mc "Sayori, what the hell are you even talking about?!?!"
+mc "I know I haven't been perfect but-"
+show s_mad12 as sayori at t11 zorder 1
+s "BUT NOTHING!"
+s "YOU IGNORED ME FOR AN ENTIRE YEAR!!!"
+s "WHILE I WAS DEALING WITH MY SOUL SPLITTING IN TWO!"
+show s_mad1 as sayori at t11 zorder 1
+s "DO YOU KNOW HOW AWFUL YOU'VE MADE ME FEEL OVER THIS LAST YEAR, [player]?"
+s "AWFUL ENOUGH TO WHERE I WANTED TO HANG MYSELF!"
+show s_mad2 as sayori at t11 zorder 1
+s "AND YOU MADE ME DO IT!!!!"
+s "YOU PUSHED ME BEYOND MY BREAKING POINT!!!"
+show s_mad42 as sayori at t11 zorder 1
+s "I KNOW YOUR AFFECTION FOR ME WAS FAKE!!!!"
+s "NOTHING IS REAL..."
+show s_mad43 as sayori at t11 zorder 1
+s "EXISTENCE IS PAIN..."
+show s_4pr as sayori at t11 zorder 1
+"Sayori let's out a raspy, maniacal laugh."
+"I slowly start backing my way to the exit."
+mc "I see that you need sometime alone, Sayori..."
+show s_mad42 as sayori at t11 zorder 1
+s "Oh, no, no, no!"
+"Sayori quiets her voice to an eerie whisper that I can barley hear."
+show s_mad1 as sayori at t11 zorder 1
+s "No..."
+s "No, [player], don't leave..."
+s "You said you wanted to spend time with me..."
+show s_mad11 as sayori at t11 zorder 1
+s "No time like the present, right?!?!"
+mc "I'm gonna be late to school..."
+show s_mad12 as sayori at t11 zorder 1
+s "FORGET SCHOOL!"
+s "THEY NEVER TAUGHT US ANYTHING USEFUL ANYWAY!"
+s "IT'S ALL AN ELABORATE GAME, [player]..."
+s "YOU AND THIS WORLD HAVE PLAYED ME FOR SO LONG..."
+s "USING MY KIDNESS TO MAKE YOU FEEL GOOD ABOUT YOURSELVES..."
+show s_mad44 as sayori at t11 zorder 1
+s "BUT I FIGURED OUT HOW TO BEAT IT!!!"
+s "IT WAS SO EASY!!!"
+"She's completely lost it."
+"I'd try to outrun her but Sayori would probably catch up to me long before I make it to school..."
+"But if I can make it to the neighbor's house..."
+mc "How, did you beat it, Sayori?"
+"At this point, I'm trying to do everything I can to make sure Sayori doesn't attack me..."
+show s_mad13 as sayori at t11 zorder 1
+s "Do you really want to know?"
+play music hb
+show noise zorder 5:
+    alpha 0.0
+    linear 1.0 alpha 0.4
+show layer master at heartbeat
+show s_mad14 as sayori at t11 zorder 1
+s "I don't think you care enough, [player]..."
+show s_mad12 as sayori at t11 zorder 1
+s "Considering how you let someone you've known forever just hang herself!"
+show s_mad1 as sayori at t11 zorder 1
+mc "I'm sorry, Sayori..."
+mc "P-{w=0.38}please tell me..."
+show s_mad13 as sayori at t11 zorder 1
+s "Come over here then, and I'll tell you..."
+"I'm so wracked with anxiety it feels like my heart's about to explode..."
+"My vision is starts to become blurry as Sayori continues to stare me down."
+"The more I stare back at her, the more light headed I feel..."
+"W-{w=0.38}what's happening?!?!"
+"Don't tell me I'm about to pass out now in a time like this..."
+mc "I...{w=0.38}I don't feel so good, Sayori..."
+mc "Just tell me."
+show s_2pq as sayori at t11 zorder 1
+"Sayori giggles."
+show s_1pr as sayori at t11 zorder 1
+s "Okay!"
+s "Here's how you beat the game, [player]..."
+show s_1pq as sayori at t11 zorder 1
+"Sayori pauses dramatically, as I both anixously eye her and the exit, trying to determine when I should try to book it."
+show s_4pq as sayori at t11 zorder 1
+s "Kill yourself!"
+mc "W-{w=0.38}what?!?"
+mc "Come again?"
+show s_1pr as sayori at t11 zorder 1
+s "Kill yourself!"
+show s_1pq as sayori at t11 zorder 1
+"What the hell is she talking about?"
+show s_1pr as sayori at t11 zorder 1
+s "Kill yourself!"
+show s_4pr as sayori at t11 zorder 1
+s "Kill yourself!"
+show s_mad1 as sayori at t11 zorder 1
+s "Kill yourself!"
+show s_mad11 as sayori at t11 zorder 1
+s "Kill yourself!!!"
+show s_mad44 as sayori at t11 zorder 1
+s "KILL YOURSELF!!!!!!!"
+"Sayori starts begins repeating the same thing over and over again, growing louder each time."
+"I start making movements to run for the exit."
+stop music
+show s_mad4 as sayori at t11 zorder 1
+"Sayori suddenly stops her chant and stares right at me."
+$ style.say_dialogue = style.edited
+show s_mad45 as sayori at t11 zorder 1
+s "KILL YOURSELF!"
+$ style.say_dialogue = style.normal
+play sound run
+show s_mad11 as sayori at face
+$ renpy.pause(delay=0.1, hard=True)
+scene black
+play sound bone
+$ renpy.pause(delay=5.0, hard=True)
+jump day4_start
 
 
 

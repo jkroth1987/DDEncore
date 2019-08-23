@@ -5734,7 +5734,7 @@ if encore_sayoriquestion_1 == False:
             "But I don't know if I should act on it..."
 
     if hangout1 == "Sayori":
-        if hangout2 != "Sayori":
+        if hangout2  "Sayori":
             "And I think I may be starting to feel the same way back..."
             "But I don't know if this is just another come-and-go feeling..."
 
@@ -5840,3 +5840,92 @@ show sayori at thide
 hide sayori
 "I watch Sayori disappear from sight as I turn they key to open the door and head upstairs to my bedroom."
 jump day3_night
+
+label s_makeup:
+
+label s_nomakeup:
+
+if encore_sayoriquestion_1 == True:
+
+
+    if n_love == True or y_love == True:
+        "I can't face her..."
+        "I start texting back."
+        mc "I need sometime to digest what happened, I'm still kind of in shock. Can we talk about it tomorrow?"
+        mc "I hope you're feeling better after all that though..."
+        "I wait for a few minutes for Sayori to respond."
+        s "I'm getting there, and I'd rather talk about what you did right now."
+        mc "I'm not ready..."
+        s "Are you ever going to be?"
+        "I turn off my phone as Sayori sends a barrage of texts which I dread to read."
+        "I throw my hands over my face as the realization hits me that I'm a total a coward..."
+        "I didn't even have the guts to face her and talk honestly about our relationship..."
+        "How did I screw this up so badly?!?"
+        "My only chance now is to hope this blows over by somehow, but it's probably not going to anytime soon..."
+        "Heck, I still don't know if I should come back to the club tomorrow..."
+        "But, given it's the last day we'll meet before the photoshoot, it's probably best I get working on laminating the poems for Monika..."
+        "I'd hate to let someone else down after this..."
+        "I walk over to my desk, pull the poems out from one of the drawers and begin organzing them for laminating."
+        jump day4_night
+
+    if n_love == False or y_love == False:
+        "I'm not in the mood for dealing with more drama..."
+        mc "I need sometime to digest what happened, I'm still kind of in shock. Can we talk about it tomorrow?"
+        mc "I hope you're feeling better after all that though..."
+        "I wait for a few minutes for Sayori to respond."
+        s "I'm getting there..."
+        s "I'm sorry for everything that happened..."
+        mc "It's not your fault. It's mine."
+        mc "I'll explain it tomorrow, just get some rest for now, okay?"
+        s "Alright, I'll see you tomorrow."
+        "We solemnly text each other goodbye as I put my phone on the nightstand."
+        "This is just insane..."
+        "Hopefully everything will have calmed down by tomorrow..."
+        "Heck, I still don't know if I even want to go back to the club tomorrow..."
+        "But, given it's the last day we'll meet before the photoshoot, it's probably best I get working on laminating the poems for Monika..."
+        "I'd hate to make this situation even worse..."
+        "I walk over to my desk, pull the poems out from one of the drawers and begin organzing them for laminating."
+        jump day4_night
+
+
+if encore_sayoriquestion_1 == False:
+
+    if n_love == True or y_love == True:
+        "I can't face her..."
+        "I start texting back."
+        mc "I need sometime to digest what happened, I'm still kind of in shock. Can we talk about it tomorrow?"
+        mc "I hope you're feeling better after all that though..."
+        "I wait for a few minutes for Sayori to respond."
+        s "I'm getting there, but I really want to talk about us..."
+        mc "I'm not ready..."
+        s "Are you ever going to be?!?"
+        "I turn off my phone as Sayori sends a barrage of texts which I dread to read."
+        "I throw my hands over my face as the realization hits me that I'm a total a coward..."
+        "I led her on and I somehow managed to crush her yet again!"
+        "What the hell is wrong with me?!? Why am I such a bad person?!?"
+        "Maybe this will all blow over, but my friendship with Sayori is probably over now..."
+        "Heck, I still don't know if I should come back to the club tomorrow..."
+        "But, given it's the last day we'll meet before the photoshoot, it's probably best I get working on laminating the poems for Monika..."
+        "I'd hate to let someone else down after this..."
+        "I walk over to my desk, pull the poems out from one of the drawers and begin organzing them for laminating."
+        jump day4_night
+
+
+    if n_love == False or y_love == False:
+        "I'm not in the mood for dealing with more drama..."
+        mc "I need sometime to digest what happened, I'm still kind of in shock. Can we talk about it tomorrow?"
+        mc "I hope you're feeling better after all that though..."
+        "I wait for a few minutes for Sayori to respond."
+        s "I'm getting there..."
+        s "I'm sorry for everything that happened..."
+        mc "It's not your fault. It's mine."
+        mc "I'll explain it tomorrow, just get some rest for now, okay?"
+        s "Alright, I'll see you tomorrow."
+        "We solemnly text each other goodbye as I put my phone on the nightstand."
+        "This is just insane..."
+        "Hopefully everything will have calmed down by tomorrow..."
+        "Heck, I still don't know if I even want to go back to the club tomorrow..."
+        "But, given it's the last day we'll meet before the photoshoot, it's probably best I get working on laminating the poems for Monika..."
+        "I'd hate to make this situation even worse..."
+        "I walk over to my desk, pull the poems out from one of the drawers and begin organzing them for laminating."
+        jump day4_night

@@ -65,7 +65,7 @@ label mencore_1:
     mc "You seemed to have had a rough day..."
     show monika u114311
     "Monika suddenly realises how excitable she's become and recomposes herself."
-    m 2n "Oh...{w=0.38} yeah...{w=0.38} sorry, I got kind of carried away there, didn't I?"
+    m 2n "Oh...{w=0.38} yeah...{w=0.38} sorry, I got kind of got carried away there, didn't I?"
     m 2l "Sorry, [player]! Just seeing you seems to have put me in better spirits~"
     mc "Well, hey! Glad I could help!"
     show monika 1j
@@ -637,6 +637,7 @@ label mencore_3:
     m 1a "Yep! Right now it's just going to be a piano solo."
     mc "Alright..."
     "Monika hits the play button on her ipod."
+    window hide
     play audio sample
     $ renpy.pause(delay=10.00, hard=True)
     show monika 1j
@@ -710,6 +711,16 @@ label mencore_3:
     show monika 1m
     "We both turn to face the piano."
     m 1n "Well...{w=0.38}here I go."
+
+    $ skip_song = False
+
+    if config.developer == True:
+        call screen confirm("You are about to lose control in developer mode.\nSkip ahead instead?", Return(True), Return(False))
+        if _return:
+            $ skip_song = True
+        else:
+            pass
+
     show monika 1m
     "She quietly makes her way towards the piano and sits down."
     "I pull up a chair and sit right across from Monika."
@@ -719,22 +730,46 @@ label mencore_3:
     m 1l "Thanks, [player]!"
     show monika 1r
     "Monika cracks her knuckles, letting out one more breath before positioning her fingers above the keys."
-    play music "<to 50.88>bgm/credits.ogg" noloop
-    "A split second later, she begins playing."
-    "I can’t help but notice how elegantly her fingers grace the keys."
-    "The melody is calm, but purposeful. Every action with intent, and care...{w=0.38}it's almost hypnotizing!"
-    "Unexpectedly, Monika starts to sing."
-    m "Every day, I imagine a future where I can be with you..."
-    m "In my hand, is a pen that will write a poem for me and you..."
-    "Not even ten seconds in and I’m already blown away..."
-    "Her voice is almost angelic as her emerald green eyes light up with a fiery passion I've never seen before..."
-    m "The ink flows down into a dark puddle...{w=0.38}just move your hand..."
-    m "Write the way into his heart!"
-    "Monika takes a brief look over at me, smiling before she goes back to focusing on the piano."
-    m "But in this world of infinite choices...what would it take just to find that special day?"
-    m "What will it take...{w=0.38}just to find...{w=0.38}that special day!"
+
+    if skip_song == True:
+        jump post_monika_song
+
+    show screen disable_control
+    $ renpy.choice_for_skipping()
+    $ quick_menu = False
+    $ m.what_prefix = ''
+    $ m.what_suffix = ''
+    scene black
+    play music preview noloop
+    "{cps=34}A split second later, she begins playing.{/cps}{w=3.0}{nw}"
+    "{cps=34}I can’t help but notice how elegantly her fingers grace the keys.{/cps}{w=3.0}{nw}"
+    "{cps=34}The melody is calm, but purposeful. Every action with intent, and care...{/cps}{w=0.38}{cps=34}it's almost hypnotizing!{/cps}{w=3.0}{nw}"
+    "{cps=34}Unexpectedly, Monika starts to sing.{/cps}{w=1.5}{nw}"
+    show cg piano_cg_alt with dissolve_cg
+    m "{cps=34}\"Every day, {/cps}{w=1.25}{cps=30}I imagine a future where {/cps}{w=1.20}{cps=30}I can be with you...\"{/cps}{w=3.0}{nw}"
+    m "{cps=34}\"In my hand, {/cps}{w=1.45}{cps=34}is a pen that will write a poem {/cps}{w=1.4}{cps=34}of me and you...\"{/cps}{w=3.0}{nw}"
+    "{cps=34}Not even ten seconds in and I’m already blown away...{/cps}{w=3.0}{nw}"
+    "{cps=34}Her voice is almost angelic as her emerald green eyes light up with a fiery passion that I've never seen before...{/cps}{w=3.1}{nw}"
+    m "{cps=34}\"The ink flows down {/cps}{w=1.31}{cps=34}into a dark puddle...{/cps}{w=2.01}{cps=34}just move your hand...\"{/cps}{w=0.45}{nw}"
+    m "{cps=30}\"Write the way into his heart!\"{/cps}{w=1.80}{nw}"
+    #show cg piano_cg with dissolve_cg
+    show cg piano_cg as cg2 at cgfade
+    "{cps=34}Monika takes a brief look over at me, smiling before she goes back to focusing on the piano.{/cps}{w=6.5}{nw}"
+    hide cg2
+    #show cg piano_cg_alt with dissolve_cg
+    m "{cps=34}\"But in this world of infinite choices...{/cps}{w=3.48}{cps=34}what will it take just to find that special day?\"{/cps}{w=2.93}{nw}"
+    m "{cps=24}\"What will it take...{/cps}{w=0.684}{cps=24}just to find...{/cps}{w=1.36}{cps=24}that special day!\"{/cps}{w=4.0}{nw}"
+
+    $ m.what_prefix = '"'
+    $ m.what_suffix = '"'
+    $ quick_menu = True
+    hide screen disable_control
+
+    label post_monika_song:
+        pass
+    scene bg music_room
+    show monika 2m at t11 zorder 1
     "Monika suddenly stops playing and turns to face me."
-    show monika 2m
     m "Well...{w=0.38}that’s about all I have right now..."
     "I can barely contain my enjoyment as I stand up and applaud as loudly as humanly possible."
     mc "Encore! Encore!"
@@ -1983,7 +2018,7 @@ show monika 1bm  at t11 zorder 1
 "I've lived in this area my whole life, but I don't think I've ever really had an appreciation for it until now..."
 "Being up here to look down at everything really helps calm my nerves."
 "Everything's just so...{w=0.38}peaceful..."
-#Monika Cg?
+show cg city_cg_monika
 "I turn to my right to see Monika elegantly looking out onto the horizon."
 "Even when she's spacing out, she manages to look her best..."
 "The way her emerald eyes glisten in the moonlight..."
@@ -1995,7 +2030,9 @@ show monika 1bm  at t11 zorder 1
 "But, can I be with her?"
 "..."
 "At least in this moment...{w=0.38}I really want to..."
+show cg city_cg_monika2
 "Monika then turns to me, notcing my stare."
+show cg city_cg_monika
 "She immediately blushes as she looks back out onto the cityscape."
 m "You know, seeing everything so small just reminds me in retrospect of how insignificant all our problems are..."
 mc "How so?"
@@ -2010,8 +2047,10 @@ m "Most people don't realize just how small they are in retrospect to the univer
 m "They don't think to question what really is determining their lives..."
 m "They'll never know what's really out there..."
 mc "Well, what do you think is out there, Monika?"
+show cg city_cg_monika2
 m "The truth."
 m "The truth that there's more to life then what most people see it as..."
+show cg city_cg_monika
 m "They're short-sighted because they can't see past their own little realities..."
 m "Reality can be a multi-layered dimension for all we know!"
 m "Even now, sitting here above everything we've come to know, whose to say that there isn't something else looking down on us with the ability to control what we say, what we do, how we act, everything!"
@@ -2032,8 +2071,9 @@ m "But what is 'real', [player]?"
 m "How do we know we aren't being controlled to believe that this is just life as we know it..."
 m "I don't know, all this kind of reminds me of that book I mentioned earlier today."
 "Monika turns to face me fully."
-#End CG
-show monika 1bm  at t11 zorder 1
+scene bg city_overlook
+with dissolve_cg
+show monika 1bm at t11 zorder 1
 m "About how two people know the truth about their world..."
 m "How they struggle to accept it..."
 mc "It does sound like a pretty great read!"
@@ -2172,3 +2212,31 @@ if encore_sayoriquestion_1 == False:
 scene black
 with close_eyes
 jump day3_night
+
+
+
+label m_makeup:
+
+label m_nomakeup:
+
+"It's best to stay away for now..."
+"I start texting back."
+mc "I appreciate the offer, but I wanna cool off after everything. We can talk about it another time."
+
+if n_love == True or n_love == False:
+    mc "Hope you're feeling okay though, it looked like Natsuki hit you pretty hard..."
+
+if y_love == True or y_love == False:
+    mc "Hope you're feeling okay though, it looked like Yuri slapped you pretty hard..."
+
+"Monika quickly replies."
+m "I'm okay now, don't worry about me. I just wanted to check in on you, that's all."
+m "I'll talk to you tomorrow?"
+mc "Sure."
+"I put my phone down and lay back on my bed."
+"Hopefully everything will have calmed down by tomorrow..."
+"Heck, I still don't know if I even want to go back to the club tomorrow..."
+"But, given it's the last day we'll meet before the photoshoot, it's probably best I get working on laminating the poems for Monika..."
+"I'd hate to make this situation even worse..."
+"I walk over to my desk, pull the poems out from one of the drawers and begin organzing them for laminating."
+jump day4_night 
