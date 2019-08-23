@@ -261,6 +261,7 @@ Silhouetted Sprites by POBAW
 Yandere and Angry Sayori by LeoDeCraprio
 \"y_mad\" by AjTheYandere
 Crying Yuri Sprites from Doki Doki: Exit Music
+Crying Monika Sprites from Doki Doki: Exit Music
 Casual Monika Sprites by Cyrke on https://imgur.com/gallery/keKxUoB
 Original Monika Shrugging Sprite on https://knowyourmeme.com/photos/1337212-doki-doki-literature-club
 Other Unique Sprites by Agent Gold"""

@@ -1584,6 +1584,10 @@ default yuri_hangout = True #Do you hangout with Yuri outside of school on Day 3
 default n_love = False #Do you accept Natsuki's confession on Day 4?
 default y_love = False #Do you accept Yuri's confession on Day 4?
 define day3_skip = False #Updated Demo Only
+define s_makeup = True  #Make up with Sayori?
+define n_makeup = True #Make up with Natsuki?
+define m_makeup = True #Make up with Monika?
+define y_makeup = True #Make up with Yuri?
 
 # Instantiating variables for poem appeal. This is how much each character likes the poem for each day.
 # -1 = Dislike, 0 = Neutral, 1 = Like
@@ -1740,6 +1744,10 @@ image mbe_talking = "mod_assets/sprites/mbe_talking.png"
 image mbe_talking2 = "mod_assets/sprites/mbe_talking2.png"
 image mbe_talking3 = "mod_assets/sprites/mbe_talking3.png"
 image monika_shrug = "mod_assets/sprites/monika_shrug.png"
+image m_cry1 = "mod_assets/sprites/m_cry1.png"
+image m_cry2 = "mod_assets/sprites/m_cry2.png"
+image m_cry3 = "mod_assets/sprites/m_cry3.png"
+
 
 #--uniform, hands down, slight frown, blush, closed eyes, concerned eyebrows
 #image monika u113342 = im.Composite((960, 960), (0, 0), "mod_assets/character_images/monika/1_uniform/1_body_left/1.png", (0, 0), "mod_assets/character_images/monika/1_uniform/2_body_right/1.png", (0, 0), "mod_assets/character_images/monika/2_face/base.png", (0, 0), "mod_assets/character_images/monika/2_face/1_mouth/3.png", (0, 0), "mod_assets/character_images/monika/2_face/2_nose/3.png", (0, 0), "mod_assets/character_images/monika/2_face/3_eyes/4.png", (0, 0), "mod_assets/character_images/monika/2_face/4_eyebrows/2.png")
