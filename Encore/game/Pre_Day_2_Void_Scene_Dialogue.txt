@@ -1,0 +1,221 @@
+Pre-Day 2 Void Scene Dialgoue (Dialogue right before The Void Scenes take place)
+
+#Remember, Monika is hidden in these
+
+Void Scenes
+
+
+#If You Hung Out With Sayori On Day 1 and Natsuki on Day 2
+
+
+m "You wouldn't have been in this situation if you just avoided them!"
+"Oh no... not this again..."
+m "You never listen do you?"
+m "When I told you to stay away from Sayori..."
+m "I didn't mean switch to Natsuki!"
+m "And you still somehow ended up making things worse for us by still sticking by with Sayori."
+m "Well... at least you managed to damage some of her trust in you."
+m "But thanks to your bumbling efforts, you have more or less restored that trust! You need to stay away from her like you did today!"
+m "You really are making this needlessly difficult for us, aren't you?"
+m "Let me help clarify something for you, [player]."
+"Suddenly I see a silhouette approach me."
+"The figure comes into my view... it's Natsuki."
+m "Natsuki can never love you the same way I do."
+
+#Trigger Natsuki's Day 2 Void Scene From Here
+
+---------------------------------------------------------
+
+
+#If You Hung Out With Sayori On Day 1 and Yuri on Day 2
+
+
+m "You wouldn't have been in this situation if you just avoided them!"
+"Oh no... not this again..."
+m "You never listen do you?"
+m "When I told you to stay away from Sayori..."
+m "I didn't mean switch to Yuri!"
+m "You really are making this needlessly difficult for us, aren't you?"
+m "Let me help clarify something for you, [player]."
+"Suddenly I see a silhouette approach me."
+"The figure comes into my view... it's Yuri"
+m "Yuri can never love you the same way I do."
+
+#Trigger Yuri's Day 2 Void Scene From Here
+
+----------------------------------------------
+
+#If You Hung Out With Sayori On Day 1 and Monika on Day 2
+
+#If you accepted Sayori's Confession and haven't interacted with Natsuki and Yuri at all
+
+#If the player spent time with Natsuki over the weekend, the exisiting exlcusive dialogue for Monika's day 2 void scene works fine
+#If the player spent time with Yuri over the weekend, replace the following line
+
+"m "Well, everything besides that damn toothpick's little love letter..."
+
+with
+
+m "Well everything besides that cut slut's little love letter..."
+
+Proceed as Monika's Day 2 Void Scene
+
+
+#End of Scene
+__________________________________________________________________
+
+#If You Hung Out With Natsuki On Day 1 and Sayori on Day 2
+
+m "You wouldn't have been in this situation if you just avoided them!"
+"Oh no... not this again..."
+m "You never listen do you?"
+m "When I told you to stay away from Natsuki..."
+m "I didn't mean switch to Sayori!"
+m "You really are making this needlessly difficult for us, aren't you?"
+m "Let me help clarify something for you, [player]."
+"Suddenly I see a silhouette approach me."
+"The figure comes into my view... it's Sayori."
+m "Sayori can never love you the same way I do."
+
+#Trigger Sayori's Day 2 Void Scene From Here
+
+-----------------------------------------------------
+
+
+#If You Hung Out With Natsuki On Day 1 and Yuri on Day 2
+
+m "You wouldn't have been in this situation if you just avoided them!"
+"Oh no... not this again..."
+m "You never listen do you?"
+m "When I told you to stay away from Natsuki..."
+m "I didn't mean switch to Yuri!"
+m "And I don't appreciate you getting close to Sayori like that!"
+m "Well... at least you managed to damage some of Natsuki's trust in you."
+m "But you really are making this needlessly difficult for us, aren't you?"
+m "Let me help clarify something for you, [player]."
+"Suddenly I see a silhouette approach me."
+"The figure comes into my view... it's Yuri ."
+m "Yuri can never love you the same way I do."
+
+#Trigger Yuri's Day 2 Void Scene From Here
+
+---------------------------------------------------------
+
+
+#If You Hung Out With Natsuki On Day 1 and Monika on Day 2
+
+#Monika's Day 2 Void Scene Works Fine here
+
+__________________________________________________________________
+
+#If You Hung Out With Yuri On Day 1 and Sayori on Day 2
+
+m "You wouldn't have been in this situation if you just avoided them!"
+"Oh no... not this again..."
+m "You never listen do you?"
+m "When I told you to stay away from Yuri..."
+m "I didn't mean switch to Sayori!"
+m "You really are making this needlessly difficult for us, aren't you?"
+m "Let me help clarify something for you, [player]."
+"Suddenly I see a silhouette approach me."
+"The figure comes into my view... it's Sayori."
+m "Sayori can never love you the same way I do."
+
+#Trigger Sayori's Day 2 Void Scene From Here
+
+------------------------------------------------------------------
+
+
+#If You Hung Out With Yuri On Day 1 and Natsuki on Day 2
+
+m "You wouldn't have been in this situation if you just avoided them!"
+"Oh no... not this again..."
+m "You never listen do you?"
+m "When I told you to stay away from Yuri..."
+m "I didn't mean switch to Natsuki!"
+m "And I don't appreciate you getting close to Sayori like that!"
+m "You really are making this needlessly difficult for us, aren't you?"
+m "Let me help clarify something for you, [player]."
+"Suddenly I see a silhouette approach me."
+"The figure comes into my view... it's Natsuki."
+m "Natsuki can never love you the same way I do."
+
+#Trigger Natsuki's Day 2 Void Scene From Here
+
+-----------------------------------------------------------------
+
+#If You Hung Out With Yuri On Day 1 and Monika on Day 2
+
+
+m "This is great!"
+m "Everything is coming along well so far."
+m "Well everything besides that cut slut's little love letter..."
+m "And I don't appreciate you getting so close to that walking clutz either!"
+m "Honestly, if she could disappear, that'd be great. She's useless!"
+m "But I know you aren't stupid enough to mess up all our progress for those losers."
+m "Hahaha..."
+m "Ahem."
+m "Sorry I just lose myself in my..."
+m "Excitement."
+m "Mmmmh... I can't wait for tomorrow."
+m "Just keep spending time with me and I'll be all yours in no time."
+m "Until next time...."
+m "....My love...."
+
+__________________________________________________________________
+
+
+
+#If You Hung Out With Monika On Day 1 and Sayori on Day 2
+
+m "You wouldn't have been in this situation if you just avoided them!"
+"Oh no... not this again..."
+m "WHAT ARE YOU DOING?!?"
+m "Just when I thought everything was going right..."
+m "You switch to Sayori!"
+m "Why are making this needlessly difficult for us?"
+m "Let me help clarify something for you, [player]."
+"Suddenly I see a silhouette approach me."
+"The figure comes into my view... it's Sayori."
+m "Sayori can never love you the same way I do."
+
+#Trigger Sayori's Day 2 Void Scene From Here
+
+----------------------------------------------------------
+
+
+#If You Hung Out With Monika On Day 1 and Natsuki on Day 2
+
+
+m "You wouldn't have been in this situation if you just avoided them!"
+"Oh no... not this again..."
+m "WHAT ARE YOU DOING?!?"
+m "Just when I thought everything was going right..."
+m "You switch to Natsuki!"
+m "Why are making this needlessly difficult for us?"
+m "Let me help clarify something for you, [player]."
+"Suddenly I see a silhouette approach me."
+"The figure comes into my view... it's Natsuki."
+m "Natsuki can never love you the same way I do."
+
+#Trigger Natsuki's Day 2 Void Scene From Here
+
+-------------------------------------------------------
+
+
+#If You Hung Out With Monika On Day 1 and Yuri on Day 2
+
+
+m "You wouldn't have been in this situation if you just avoided them!"
+"Oh no... not this again..."
+m "WHAT ARE YOU DOING???"
+m "Just when I thought everything was going right..."
+m "You switch to Yuri!"
+m "Why are making this needlessly difficult for us?"
+m "Let me help clarify something for you, [player]."
+"Suddenly I see a silhouette approach me."
+"The figure comes into my view... it's Yuri."
+m "Yuri can never love you the same way I do."
+
+#Trigger Yuri's Day 2 Void Scene From Here
+

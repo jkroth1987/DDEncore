@@ -1,0 +1,8 @@
+*.rpyc
+*.bak
+firstrun
+errors.txt
+log.txt
+traceback.txt
+game/cache
+*.rpa

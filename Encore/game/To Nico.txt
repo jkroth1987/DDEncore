@@ -1,0 +1,18 @@
+Bug Update Oct.3rd, 2018
+-In the advanced_scripts folder is ‘autoforward.rpy’ this is a script which makes the dokis move to f<postion> without us having to set it constantly. You can take a look at the file to get the gist of how it works. Just remember to ‘call groupClear()’ when you no longer want it in effect.
+
+-The sound files are in here still, though I could not implement them, so have fun~
+
+-Monika Sprites were added
+
+-The ‘mod_assets’ folder have some semblance of organization now though, it still needs to have a few things fixed about them. (Make sure to keep it clean)
+
+-the ‘menu_bg’ has been changed to a temp one (this was due to it not quite working so well with the loops effect. Feel free to change the definition back.)
+
+-in ‘definitions’ is the basis of the appeal system, which has a brief explanation in ‘script.rpy’
+
+-the ‘exclusive_scenes’ rpy files for all the dokis has been laid out. Use them for after school scenes and club hangout scenes
+
+-in ‘script.rpy’ is the appeal system’s outlines, use what’s there to get an idea of how to work with it
+
+-in ‘mod_assets’ there is a file called ‘character_images’ which is the basis for the Advanced Pose Tool (created by Agent Gold, make sure to list him down in credits). Included in the folder is the tutorial for the tool. Have fun trying to learn it yourself :3

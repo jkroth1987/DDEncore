@@ -1,4 +1,4 @@
-screen main_menu() tag menu:
+screen main_menu():
 
 
 
