@@ -279,19 +279,20 @@ if encore_sayoriquestion_1 == True:
     "I suddenly feel a sharp pain in my forehead."
     show sayori 1o at face
     "Sayori immediately takes notice."
-    s "[player], you okay?"
+    s "[player], what's wrong?"
     show sayori 1g at face
     mc "I-{w=0.38}it's nothing, I'm-"
     "The pain gets worse just as I say that."
-    show sayori 1g at h11 zorder 1
+    show sayori 1g at t11 zorder 1
     "I end up having to take a step back from Sayori as I clutch my forehead tighter."
     mc "Just...{w=0.38}give me a second."
     show sayori 1e
     "After a few moments the pain subsides."
-    s "[player], what's wrong?"
+    s "Are you okay, [player]?"
     mc "Ah, it's just a headache, don't worry about it."
     show sayori 1h
     s "Was it really just a headache though? You looked like you were in a lot of pain..."
+    show sayori 1g
     mc "Yeah, but it's gone now. No need to raise a fuss over it, right?"
     show sayori 1k
     s "I mean, I worry about you, [player]..."
@@ -377,14 +378,14 @@ label day3_tellsayori:
 
     if hangout2 == "Sayori":
         mc "I watched you die..."
-        mc "I couldn't save you."
-        mc "All I could do was watch you, struggling to breathe..."
+        mc "I couldn't do anything to save you..."
+        mc "All I could do was watch..."
         s 1k "..."
         mc "I know it was just a dream, but it felt too close to reality for some reason..."
-        mc "The way you frantically clawed at the rope..."
+        mc "It felt so real...{w=0.38}The way you frantically clawed at the rope..."
         stop music
         s u115232 "Rope...?"
-        mc "You were hung in front of me..."
+        mc "Someone hung you right in front of me..."
         show sayori 2g
         mc "It was...{w=0.38}hard to watch..."
         mc "I felt like I actually lost you..."
@@ -430,7 +431,7 @@ label day3_tellsayori:
         s "I would never do something like that..."
         show sayori 1k
         s "I couldn't..."
-        "I don't exactly feel reassured by the way she's saying that..."
+        "I don't exactly feel reassured by the way she said that..."
 
         if encore_sayoriquestion_1 == True:
             "Especially since she's said some rather concerning things to me lately..."
@@ -494,6 +495,7 @@ label day3_tellsayori:
         show sayori 1k
         s "Can we just go?"
         s 1h "Please?"
+        show sayori 1g
         "I'm surprised by Sayori's sudden change of heart, but nevertheless, I choose to oblige."
         mc "Yeah...{w=0.38}let's just go."
         mc "It was just a stupid dream anyways, right?"
@@ -1041,13 +1043,13 @@ jump day3_sayo2
 
 label day3_sayo1:
 show sayori 1k at t11 zorder 2
-"I turn to Sayori, trying to smile hopefully at her, but she's just looking blankly down the road ahead of us, as we walk in unison down the sidewalk."
+"I turn to Sayori, smiling warmly at her. However, she maintains her blank stare down the road ahead of us as we continue on our walk."
 "I let out a small sigh."
-"I guess she's just not in a talkative mood..."
-"And she did sound rather disturbed by what I told her too."
+"I guess she's just not in a talkative mood anymore..."
+"Well, she did sound rather disturbed by what I told her..."
 "Sayori's never been one to stomach horror very well, not that I blame her."
 "Hopefully she'll get over this soon."
-"However, I quickly realize that I have another problem brewing..."
+"As our walk continues, it hits me that I have another problem brewing..."
 "[poem_giver]'s letter..."
 "I haven't really thought about how I'm really going to handle that..."
 "As I was thinking earlier, telling Monika about the situation seems like my best course of action."
@@ -1059,14 +1061,14 @@ show sayori 1g
 "What if someone else gives me another confession letter?"
 show sayori 1h
 s "[player]?"
-"Sayori takes me out of my train of thought."
 show sayori 1g
+"Sayori takes me out of my train of thought."
 mc "Y-{w=0.38}yeah?"
 show sayori 1h
-s "You okay? You just suddenly stopped there for a second."
-mc "I did?"
+s "You okay? You just stopped walking..."
+mc "Eh?"
 show sayori 2g
-"Realizing that Sayori is more than a few steps ahead of me, I quickly run up to catch up to her."
+"Realizing that Sayori is more than a few steps ahead of me, I jog to catch up to her."
 jump day3_var1
 
 label day3_sayo2:
@@ -1088,14 +1090,14 @@ show sayori 1g
 "What if someone else gives me another confession letter?"
 show sayori 1h
 s "[player]?"
-"Sayori takes me out of my train of thought."
 show sayori 1g
+"Sayori takes me out of my train of thought."
 mc "Y-{w=0.38}yeah?"
 show sayori 1h
-s "You okay? You just suddenly stopped there for a second."
+s "You okay? You just stopped walking..."
 mc "I did?"
 show sayori 2g
-"Realizing that Sayori is more than a few steps ahead of me, I quickly run up to catch up to her."
+"Realizing that Sayori is more than a few steps ahead of me, I jog to catch up to her."
 jump day3_var1
 
 
@@ -1104,11 +1106,11 @@ label day3_var1:
 
 if tell_s == True:
     s 1l "Are you really sure you're okay?"
-    s 1g "You've really been acting strange..."
+    s 1g "You've been acting strange today..."
     mc "I'll be fine..."
     mc "I've gone through worse."
     s 1h "Maybe you should stay home from school today."
-    s 1k "I wouldn't want you to feel any worse..."
+    s 1k "I wouldn't want you to get any worse..."
     show sayori 1f
     mc "I'll be fine, besides, I really need to talk to Monika."
     s 2h "M-{w=0.38}Monika?"
@@ -1122,11 +1124,11 @@ if tell_s == True:
     s 1i "But if you feel sick, you text me right away, okay?"
     mc "You have my word, emergency contact."
     show sayori 1y
-    "I see Sayori blush slightly."
+    "Sayori blushes."
 
 if tell_s == False:
     s 1l "Are you really sure you're okay?"
-    s 1g "You've really been acting strange..."
+    s 1g "You've been acting strange today..."
     mc "I guess I just have a lot on my mind."
     s 1k "I see..."
 
@@ -1168,12 +1170,13 @@ play music t3 fadein 2.0
 play audio school
 "We were able to make it school just in time for the morning bell."
 show sayori 3b at t11 zorder 2
-"Though I wouldn't be able to walk with Sayori to her class like usual, thanks to the time."
+"Though I won't be able to walk with Sayori to her class like usual, thanks to the time."
 s 3c "So, I'll see you after your class, [player]."
 mc "Alright, sounds good to me."
 
 if tell_s == True:
     if encore_sayoriquestion_1 == True:
+        show sayori 1k
         "Sayori glances around the corridor to make sure we're alone."
         s 3g "Just...{w=0.38}please let me know if you feel worse or anything, okay?"
         mc "I will, Sayori. Don't worry."
@@ -1217,6 +1220,7 @@ if tell_s == True:
 
 if tell_s == True:
     if encore_sayoriquestion_1 == False:
+        show sayori 1k
         "Sayori glances around the corridor to make sure we're alone."
         s 3g "Just...{w=0.38}let me know if something happens with you, okay?"
         mc "I will, Sayori. Don't worry."
@@ -1225,8 +1229,8 @@ if tell_s == True:
         mc "Earlier you looked like you just saw a ghost."
         mc "I just hope I didn't scare you with any of the details..."
         show sayori 3k
-        s "I-{w=0.38}it's not that [player], really."
-        s 1h "I'm just more worried about you..."
+        s "I-{w=0.38}it's not that [player], really..."
+        s 1h "I'm just worried that something's going to happen to you..."
 
 
         if hangout1 == "Sayori" or hangout1 == "Natsuki" or hangout1 == "Yuri" or hangout1 == "Monika":
@@ -1249,7 +1253,7 @@ if tell_s == True:
         mc "Laters."
         show sayori at thide
         hide sayori
-        "Sayori walks off towards her classroom, while I head off in the opposite direction towards mine."
+        "Sayori walks off to her classroom, while I head off in the opposite direction towards mine."
         jump day3_class
 
 
@@ -1365,12 +1369,12 @@ with wipeleft_scene
 "I start walking to the center of the cafeteria."
 show bg cafeteria
 with wipeleft_scene
-"Sure enough, it didn't take me long to spot Monika sitting at one tables at the center of the room."
+"Sure enough, I quickly spot Monika sitting at one tables at the center of the cafeteria."
 show monika 2k at t11 zorder 2
 "As I expected, she seems to be chatting away with some of her friends."
-"This might be harder than I thought."
-"Well, I'm not going to get another chance to talk to her until the club, so it's now or never."
-"I carefully approach Monika's table."
+"Pulling her away might be a little harder than I thought..."
+"Well, it's not I'm going to get another chance to talk to her until the club, so it's now or never."
+"Taking a deep breath, I carefully approach Monika's table."
 show monika at thide
 hide monika
 show bg cafeteria
@@ -1393,7 +1397,7 @@ r "And not always fighting with each other over petty crap..."
 a "Yeah, that's when the club was in it's prime..."
 m 1f "It's a real shame she transferred though..."
 r "I know right?!? She was so nice!"
-a "Yeah, but it sucks that we got suckered into voting for her brother to replace her..."
+a "I still can't believe she suckered us into voting for her brother for President..."
 a "Todd's nice to me but he's a total -"
 mc "Um...{w=0.38}hey, Monika..."
 show monika 1d at h11
@@ -1415,6 +1419,7 @@ m 3e "I always have time for you."
 "I feel my face heat up with slight embarassment."
 mc "Th-{w=0.38}thank you, Monika! I really appreciate it!"
 m 1b "We'll be right back girls!"
+show monika 1a
 r "Have fun you two!"
 show monika at thide
 hide monika
@@ -1424,7 +1429,7 @@ r "That's Monika for you."
 show bg school_rooftop
 with wipeleft_scene
 stop music fadeout 3.0
-"I lead Monika up to the rooftop of the school, where there's hardly anyone around that can hear us."
+"I end up leading Monika up to the school's rooftop, where there's hardly anyone around that can hear us."
 show monika 2d at t11 zorder 2
 m "So, what's on your mind, [player]?"
 mc "I think I'll just show you..."
@@ -3238,7 +3243,7 @@ m 2e "Yeah."
 "Monika takes a look at her watch."
 m 1b "We still have some time before lunch period ends..."
 m 1e "Would you care to join me?"
-mc "Sure! Stressing all over this has worked up quite the appetite..."
+mc "Sure! Stressing over this does work up quite the appetite..."
 m 1l "I'm sure it has, [player]."
 m 1a "Come on, let's head back."
 stop music fadeout 3.0
@@ -3473,7 +3478,7 @@ show monika 1a at t11 zorder 1
 "I turn to her, our eyes meeting."
 mc "You know you didn't really have to walk me back..."
 m 1g "Well I just want to make sure you're holding up okay..."
-m 1m "A lot of people would tend to break down in these kinds of situations..."
+m 1m "A lot of people tend to break down in these kinds of situations..."
 show monika 1e
 mc "Yeah...{w=0.38}but I'll be fine...{w=0.38}I think."
 m 1b "Well you can always count on me if you need anything, [player]."
@@ -5086,8 +5091,9 @@ with wipeleft_scene
 show monika 1b at t21 zorder 1
 show sayori 1a at t22 zorder 2
 m "Hey guys!"
+show monika 1a
 s "Hey, Monika!"
-m "How're you two?"
+m 1e "How're you two?"
 s 1x "I'm doing pretty well! Looking forward to another great day with you guys!"
 m 2m "Awww, Sayori..."
 mc "She's always a charmer."
@@ -5814,7 +5820,7 @@ if encore_sayoriquestion_1 == True:
     if hangout1 == "Sayori" or hangout1 == "Natsuki" or hangout1 == "Yuri":
         if hangout2 == "Sayori" or hangout2 == "Natsuki" or hangout2 == "Yuri":
             "I'm starting to think that maybe what I always thought to be impossible, might actually be possible..."
-            "Monika...might actually like me back!"
+            "Monika...{w=0.38}might actually like me back!"
             show monika 2j
             "Even though we just started talking regularly, the more time I spend around her..."
             "The more comfortable I become in her presence..."
@@ -5883,6 +5889,7 @@ show sayori 1g
 show monika 1d
 n 4h "Where were you two?"
 n 5w "We thought you ditched us!"
+show natsuki 5x
 m 3l "What? Don't be silly!"
 m 1a "I was just showing [player] the song I was working on!"
 y 1b "Oh, that's right! I almost forgot you played the piano!"
@@ -5896,13 +5903,10 @@ show monika 1j
 mc "Y-{w=0.38}yeah! It was great, Monika!"
 mc "I can't wait to hear it again when it's all done!"
 n 5w "Well if you guys were gone for that long, then it must be a masterpiece!"
+show natsuki 5x
 m 2e "Oh, it is, Natsuki."
 m 1b "I have no doubt everyone here will enjoy it when it's done!"
-<<<<<<< HEAD
 m 1m "Anyways, we should probably get started with the activity I have in mind for us today..."
-=======
-m 1m "Anyways, we should proably get started with the activity I have in mind for us today..."
->>>>>>> 80a6eb48c2da3e7fed3d696b5bdc4ba9d7373046
 y 1b "That would be great, Monika!"
 show monika at thide
 hide monika
@@ -6852,7 +6856,7 @@ show natsuki 5a at t41 zorder 1
 show sayori 1a at t42 zorder 2
 show monika 1b at t43 zorder 3
 show yuri 1a at t44 zorder 4
-m "Alright, I've been meaning to put this idea forward for a while now!"
+m "Alright, I've been meaning to bring this up for a while now!"
 m 4b "After we finish the photoshoot on Monday, we're going to be reading a piece of literature of our choosing!"
 show natsuki 5w at s41
 show sayori 4r at h42
@@ -6885,6 +6889,7 @@ y 3h "Just keep in mind, it has to be something we'd all be willing to read, Nat
 y 3f "And I hope you'd be willing to read something of my perferred tastes as well..."
 show natsuki 3q
 n "I guess that seems to fair to me."
+show natsuki 3n
 show yuri 3d
 y "Good!"
 show sayori 1c
@@ -6896,17 +6901,17 @@ m 2b "I just got started on it, but so far it's been a pretty good read!"
 show monika 2a
 show sayori 4n
 "Sayori's eyes widen."
-s 4x "Oooh! I've heard good things about that! What's it about?"
+s 4x "Oooh! I've heard good things about that one! What's it about?"
 m 1b "It's about this girl who realizes that she's living in a fake reality. But she finds someone else who knows this truth too."
-m 2m "And the story is supposedly about their struggle to accept their circumstances and their attempts to return to the real world."
-m 2e "It's technically a romance novel with some sci-fi and horror elements mixed in."
+m 2m "The story is about their struggle to accept their circumstances and their attempt to return to the real world."
+m 2e "It's technically a romance novel, but it has some sci-fi and horror elements mixed in."
 s 1h "How can a book be both horror and romance?"
 s 1g "That doesn't make a lot of sense to me..."
 m 2m "I haven't gotten that far into it so I can't answer that..."
 m 2j "Besides, that'd probably be spoiling!"
 show monika 2a
 s 1l "Yeah, I guess it would..."
-y 1b "I mean...{w=0.38}there are quite a few romance novels that mix some horror into their story."
+y 1b "I mean...{w=0.38}there are quite a few romance novels that mix horror into their story."
 y 1d "Like this book for instance!"
 show yuri 3c
 "Yuri digs into her bag and holds up a book with a faded violet cover called {i}Outcast's Dilemma{/i}."
@@ -6919,6 +6924,7 @@ show sayori 1k
 "Well, I guess that means Yuri has a pretty high tolerance for horror..."
 "Natsuki and Sayori both look off uneasily."
 y 3b "I know you two aren't really into horror, but trust me, most of this book is romance."
+show yuri 3a
 s 1h "So what're the scary parts?"
 n 4m "And what exactly is it all about?"
 show sayori 1g
@@ -6994,42 +7000,53 @@ show yuri 1a
 m 1j "Alright then!"
 m 4b "We still have some time before the club ends, so you guys are free to hang around!"
 
+
 if hangout3 == "Natsuki":
-    m 1a "Oh, and make sure you hand in your poems to [player] if you haven't already!"
-    mc "I think I just need your's and Natsuki's."
-    m 1b "Alright, let me get mine!"
-    show monika at thide
-    hide monika
-    show yuri at thide
-    hide yuri
-    show natsuki at thide
-    hide natsuki
-    show sayori at thide
-    hide sayori
-    "Monika walks back to the front of the room while everyone gets up and goes back to their respective areas."
-    show monika 1a at t11 zorder 1
-    "After a few moments, Monika returns to me with her poems in hand."
-    m 1b "Here you are, [player]!"
-    show monika 1j
-    "Monika smiles as she hands me her poems."
-    m 1b "I can promise you that there's nothing...{w=0.38}unexpected in there."
-    show monika u111151
-    "Monika slyly winks at me."
-    mc "Well...{w=0.38}that's a relief!"
-    show monika 1l
-    "We both share a small laugh before the silence settles again."
-    show monika 2n
-    m "So...{w=0.38}I guess I'll leave you be and let you get Natsuki's poems."
-    show monika 2e
-    mc "Yeah, I'll talk to you later Monika!"
-    m 1j "Laters!"
-    show monika at thide
-    hide monika
-    "I head toward the closet where Natsuki seems to be shuffling through her belongings."
+    jump n_aftermath
+
+if hangout3 == "Monika":
+    jump m_aftermath
+
+if hangout3 == "Sayori":
+    jump s_aftermath
+
+if hangout3 == "Yuri":
+    jump y_aftermath
 
 
-label problem:
+label n_aftermath:
 
+m 1a "Oh, and make sure you hand in your poems to [player] if you haven't already!"
+mc "I think I just need your's and Natsuki's."
+m 1b "Alright, let me get mine!"
+show monika at thide
+hide monika
+show yuri at thide
+hide yuri
+show natsuki at thide
+hide natsuki
+show sayori at thide
+hide sayori
+"Monika walks back to the front of the room while everyone gets up and goes back to their respective areas."
+show monika 1a at t11 zorder 1
+"After a few moments, Monika returns to me with her poems in hand."
+m 1b "Here you are, [player]!"
+show monika 1j
+"Monika smiles as she hands me her poems."
+m 1b "I can promise you that there's nothing...{w=0.38}unexpected in there."
+show monika u111151
+"Monika slyly winks at me."
+mc "Well...{w=0.38}that's a relief!"
+show monika 1l
+"We both share a small laugh before the silence settles again."
+show monika 2n
+m "So...{w=0.38}I guess I'll leave you be and let you get Natsuki's poems."
+show monika 2e
+mc "Yeah, I'll talk to you later Monika!"
+m 1j "Laters!"
+show monika at thide
+hide monika
+"I head toward the closet where Natsuki seems to be shuffling through her belongings."
 scene bg closet
 with wipeleft_scene
 show natsuki 3u at t11 zorder 1
@@ -7489,327 +7506,329 @@ jump day3_walkhome
 
 
 
-if hangout3 == "Sayori":
-    m 1a "[player], I believe you have everyone's poems?"
-    mc "I do."
-    m 1j "Awesome!"
-    m 2e "Well, let us know if you need anything else!"
-    mc "I'll be sure to!"
-    show monika at thide
-    hide monika
-    show yuri at thide
-    hide yuri
-    show natsuki at thide
-    hide natsuki
-    show sayori at thide
-    hide sayori
-    "Everyone gets up and goes back to their respective areas."
-    "I notice Sayori starting to pack up her things, so assuming she'll want to leave soon, I start walking over to join her."
-    "However, I feel a tap on my shoulder as I'm walking over."
+label s_aftermath:
 
-    if poem_giver == "Natsuki":
+m 1a "[player], I believe you have everyone's poems?"
+mc "I do."
+m 1j "Awesome!"
+m 2e "Well, let us know if you need anything else!"
+mc "I'll be sure to!"
+show monika at thide
+hide monika
+show yuri at thide
+hide yuri
+show natsuki at thide
+hide natsuki
+show sayori at thide
+hide sayori
+"Everyone gets up and goes back to their respective areas."
+"I notice Sayori starting to pack up her things, so assuming she'll want to leave soon, I start walking over to join her."
+"However, I feel a tap on my shoulder as I'm walking over."
 
-        if sayori_ice == True:
-            show natsuki 5u at t11 zorder 1
-            "I turn around to see Natsuki standing right behind me."
-            "My heart immediately starts pounding against my chest as anxiety builds up inside of me."
-            mc "Oh! Hey, Natsuki! What's up?"
-            "I try to steady my voice as best as I can."
-            "Fortunately, Natsuki doesn't really seem to notice, as she seems rather unerved as well."
-            show natsuki 5q
-            "She lets out a sigh before looking up at me."
-            n 12b "Look...{w=0.38}I'm sorry for how I acted earlier..."
-            n 12a "I didn't mean to brush you off without giving a chance to explain what happened..."
-            n 12b "I've just been having a bad day today..."
-            show natsuki 12a
-            mc "It's fine, Natsuki, really..."
+if poem_giver == "Natsuki":
+
+    if sayori_ice == True:
+        show natsuki 5u at t11 zorder 1
+        "I turn around to see Natsuki standing right behind me."
+        "My heart immediately starts pounding against my chest as anxiety builds up inside of me."
+        mc "Oh! Hey, Natsuki! What's up?"
+        "I try to steady my voice as best as I can."
+        "Fortunately, Natsuki doesn't really seem to notice, as she seems rather unerved as well."
+        show natsuki 5q
+        "She lets out a sigh before looking up at me."
+        n 12b "Look...{w=0.38}I'm sorry for how I acted earlier..."
+        n 12a "I didn't mean to brush you off without giving a chance to explain what happened..."
+        n 12b "I've just been having a bad day today..."
+        show natsuki 12a
+        mc "It's fine, Natsuki, really..."
+        show natsuki 5n
+        mc "I'm just glad we can put that behind us."
+        show natsuki_sweet as natsuki at t11 zorder 1
+        "Natsuki smiles as we stand in the middle of the room awkwardly."
+        mc "So, what's got you down?"
+
+        if hangout2 == "Natsuki":
+            n 5m "I think I might've lost the manga we were reading yesterday..."
             show natsuki 5n
-            mc "I'm just glad we can put that behind us."
-            show natsuki_sweet as natsuki at t11 zorder 1
-            "Natsuki smiles as we stand in the middle of the room awkwardly."
-            mc "So, what's got you down?"
-
-            if hangout2 == "Natsuki":
-                n 5m "I think I might've lost the manga we were reading yesterday..."
-                show natsuki 5n
-                mc "You mean the special edition one?"
-                "Natsuki somberly shakes her head."
+            mc "You mean the special edition one?"
+            "Natsuki somberly shakes her head."
 
 
 
-            if hangout2 == "Sayori" or hangout2 == "Yuri" or hangout2 == "Monika":
-                n 5m "I think I might've lost one of my manga..."
-                n 1m "It was a special edition copy and it was super expensive!"
+        if hangout2 == "Sayori" or hangout2 == "Yuri" or hangout2 == "Monika":
+            n 5m "I think I might've lost one of my manga..."
+            n 1m "It was a special edition copy and it was super expensive!"
 
 
-            mc "Ah, jeez...{w=0.38}do you know where you might've left it?"
-            n 5q "I think I have an idea where it might be..."
-            n 3m "I might've left it in my last class."
-            show natsuki 3n
-            mc "Well, I hope you find it!"
-            n 3m "You're not sticking around?"
-            mc "Well I think Sayori's about to leave, so I'm gonna head home with her..."
-            stop music fadeout 2.0
-            n 3w "Why do you always do that?"
-            mc "Do what? What do you mean?"
-            n 5r "It's like you're always following her around like a lost puppy!"
-            n 5x "I don't know how she constantly puts up with it..."
-            n 1o "Why is it that almost everything you do has to revolve around Sayori?"
-            mc "Natsuki that's not really true..."
-            n 1x "Forget it! I have manga to find!"
-            show natsuki at thide
-            hide natsuki
-            "Without another word spoken, Natsuki angrily walks out of the clubroom."
-            "Though it doesn't appear that anybody's noticed the incident that just took place between us."
-            "I let out as a sigh as I walk over to Sayori, who seems to have just finished packing her things."
-            show sayori 1a at t11 zorder 1
-            s "Hey, [player]! Ready to go?"
-            "I weakly smile at Sayori."
-            mc "Yeah, sure...{w=0.38}let's get going..."
-            show sayori 2g
-            "Sayori picks up on my agitated tone."
-            s 2h "You okay, [player]?"
-            s 1g "You look upset..."
-            mc "It's nothing...{w=0.38}let's just head home."
-            s 1k "Okay then..."
-            "Sayori and I wave good-bye to Monika and Yuri as we head out to start our commute home."
-            jump day3_walkhome
+        mc "Ah, jeez...{w=0.38}do you know where you might've left it?"
+        n 5q "I think I have an idea where it might be..."
+        n 3m "I might've left it in my last class."
+        show natsuki 3n
+        mc "Well, I hope you find it!"
+        n 3m "You're not sticking around?"
+        mc "Well I think Sayori's about to leave, so I'm gonna head home with her..."
+        stop music fadeout 2.0
+        n 3w "Why do you always do that?"
+        mc "Do what? What do you mean?"
+        n 5r "It's like you're always following her around like a lost puppy!"
+        n 5x "I don't know how she constantly puts up with it..."
+        n 1o "Why is it that almost everything you do has to revolve around Sayori?"
+        mc "Natsuki that's not really true..."
+        n 1x "Forget it! I have manga to find!"
+        show natsuki at thide
+        hide natsuki
+        "Without another word spoken, Natsuki angrily walks out of the clubroom."
+        "Though it doesn't appear that anybody's noticed the incident that just took place between us."
+        "I let out as a sigh as I walk over to Sayori, who seems to have just finished packing her things."
+        show sayori 1a at t11 zorder 1
+        s "Hey, [player]! Ready to go?"
+        "I weakly smile at Sayori."
+        mc "Yeah, sure...{w=0.38}let's get going..."
+        show sayori 2g
+        "Sayori picks up on my agitated tone."
+        s 2h "You okay, [player]?"
+        s 1g "You look upset..."
+        mc "It's nothing...{w=0.38}let's just head home."
+        s 1k "Okay then..."
+        "Sayori and I wave good-bye to Monika and Yuri as we head out to start our commute home."
+        jump day3_walkhome
 
 
-        if sayori_ice == False:
-            show natsuki 5n at t11 zorder 1
-            "I turn around to see Natsuki standing right behind me."
-            "My heart immediately starts pounding against my chest as anxiety builds up inside of me."
-            mc "Oh! Hey, Natsuki! What's up?"
-            "I try to steady my voice as best as I can."
-            "Fortunately, Natsuki doesn't really seem to notice, as she seems rather unerved as well."
-            n 5m "H-{w=0.38}hey, I wanted to ask you something real quick..."
+    if sayori_ice == False:
+        show natsuki 5n at t11 zorder 1
+        "I turn around to see Natsuki standing right behind me."
+        "My heart immediately starts pounding against my chest as anxiety builds up inside of me."
+        mc "Oh! Hey, Natsuki! What's up?"
+        "I try to steady my voice as best as I can."
+        "Fortunately, Natsuki doesn't really seem to notice, as she seems rather unerved as well."
+        n 5m "H-{w=0.38}hey, I wanted to ask you something real quick..."
+        show natsuki 5n
+        "Sweat starts trickling down the back of my neck."
+        mc "Y-{w=0.38}yeah?"
+
+        if hangout2 == "Natsuki":
+            n 5m "I think I might've lost the manga we were reading yesterday..."
             show natsuki 5n
-            "Sweat starts trickling down the back of my neck."
-            mc "Y-{w=0.38}yeah?"
+            mc "You mean the special edition one?"
+            "Natsuki somberly shakes her head."
 
-            if hangout2 == "Natsuki":
-                n 5m "I think I might've lost the manga we were reading yesterday..."
-                show natsuki 5n
-                mc "You mean the special edition one?"
-                "Natsuki somberly shakes her head."
+        if hangout2 == "Sayori" or hangout2 == "Yuri" or hangout2 == "Monika":
+            show natsuki 5m
+            n 5m "I think I might've lost one of my manga..."
+            n 1m "It was a special edition copy and it was super expensive!"
 
-            if hangout2 == "Sayori" or hangout2 == "Yuri" or hangout2 == "Monika":
-                show natsuki 5m
-                n 5m "I think I might've lost one of my manga..."
-                n 1m "It was a special edition copy and it was super expensive!"
-
-            n 1q "I was wondering if you'd seen it."
-            "If it weren't for Natsuki's predicament, I might've let out the world's biggest sigh of relief."
-            "She probably thinks I haven't read her poem yet..."
-            show natsuki 1n
-            mc "No...{w=0.38}I can't say I have. I'm really sorry, Natsuki..."
-            n 5q "Great..."
-            mc "Have you tried re-tracing your steps?"
-            n 5q "I'm about to go do that..."
-            n 3m "I might've left it in my last class."
-            show natsuki 3n
-            mc "Well, hey, I hope you find it!"
-            n 3m "You're not sticking around?"
-            mc "Well I think Sayori's about to leave, so I'm gonna head home with her..."
-            stop music fadeout 2.0
-            n 3w "Well that's typical..."
-            mc "What do you mean?"
-            n 5r "Why do you always follow her around like a lost puppy?!?"
-            n 5x "I don't know how she constantly puts up with it..."
-            n 1o "Why is it that almost everything you do has to revolve around Sayori?"
-            mc "Natsuki that's not really true..."
-            n 1x "Forget it! I have manga to find!"
-            show natsuki at thide
-            hide natsuki
-            "Without another word spoken, Natsuki angrily walks out of the clubroom."
-            "Though it doesn't appear that anybody's noticed the incident that just took place between us."
-            "I let out as a sigh as I walk over to Sayori, who seems to have just finished packing her things."
-            show sayori 1a at t11 zorder 1
-            s "Hey, [player]! Ready to go?"
-            "I weakly smile at Sayori."
-            mc "Yeah, sure...{w=0.38}let's get going..."
-            show sayori 2g
-            "Sayori picks up on my agitated tone."
-            s 2h "You okay, [player]?"
-            s 1g "You look upset..."
-            mc "It's nothing...{w=0.38}let's just head home."
-            s 1k "Okay then..."
-            "Sayori and I wave good-bye to Monika and Yuri as we head out to start our commute home."
-            jump day3_walkhome
+        n 1q "I was wondering if you'd seen it."
+        "If it weren't for Natsuki's predicament, I might've let out the world's biggest sigh of relief."
+        "She probably thinks I haven't read her poem yet..."
+        show natsuki 1n
+        mc "No...{w=0.38}I can't say I have. I'm really sorry, Natsuki..."
+        n 5q "Great..."
+        mc "Have you tried re-tracing your steps?"
+        n 5q "I'm about to go do that..."
+        n 3m "I might've left it in my last class."
+        show natsuki 3n
+        mc "Well, hey, I hope you find it!"
+        n 3m "You're not sticking around?"
+        mc "Well I think Sayori's about to leave, so I'm gonna head home with her..."
+        stop music fadeout 2.0
+        n 3w "Well that's typical..."
+        mc "What do you mean?"
+        n 5r "Why do you always follow her around like a lost puppy?!?"
+        n 5x "I don't know how she constantly puts up with it..."
+        n 1o "Why is it that almost everything you do has to revolve around Sayori?"
+        mc "Natsuki that's not really true..."
+        n 1x "Forget it! I have manga to find!"
+        show natsuki at thide
+        hide natsuki
+        "Without another word spoken, Natsuki angrily walks out of the clubroom."
+        "Though it doesn't appear that anybody's noticed the incident that just took place between us."
+        "I let out as a sigh as I walk over to Sayori, who seems to have just finished packing her things."
+        show sayori 1a at t11 zorder 1
+        s "Hey, [player]! Ready to go?"
+        "I weakly smile at Sayori."
+        mc "Yeah, sure...{w=0.38}let's get going..."
+        show sayori 2g
+        "Sayori picks up on my agitated tone."
+        s 2h "You okay, [player]?"
+        s 1g "You look upset..."
+        mc "It's nothing...{w=0.38}let's just head home."
+        s 1k "Okay then..."
+        "Sayori and I wave good-bye to Monika and Yuri as we head out to start our commute home."
+        jump day3_walkhome
 
 
 
 
-    if poem_giver == "Yuri":
+if poem_giver == "Yuri":
 
-        if sayori_ice == True:
-            show yuri 2q at t11 zorder 1
-            "My heart immediately starts pounding against my chest as anxiety builds up inside of me."
-            mc "Oh! Hey, Yuri! What's up?"
-            "I try to steady my voice as best as I can."
-            "Fortunately, Yuri seems to be just as on edge as I am."
-            y 2q "H-{w=0.38}hey, [player]..."
-            y "I just wanted to apologize for my...{w=0.38}reaction to earlier..."
-            y 2n "I should've given you the chance to explain yourself and not act disinterested in you at all!"
-            y 3v "I hope you're not angry with me..."
-            "I feel my muscles relax as soon Yuri finishes talking."
-            "It seems like she hasn't expected me to read her poem yet..."
-            show yuri 3t
-            mc "It's fine, Yuri...{w=0.38}really!"
-            mc "If anything...{w=0.38}I should be apologizing..."
-            mc "So, I'm glad we got that out of the way..."
-            y 3q "Y-{w=0.38}yes, indeed..."
-            "Yuri nervously smiles as we stand in the middle of the room awkwardly."
-            show yuri 3e
-            mc "So, you sticking around?"
-            y 3b "Yes, I'm going to get some reading done."
+    if sayori_ice == True:
+        show yuri 2q at t11 zorder 1
+        "My heart immediately starts pounding against my chest as anxiety builds up inside of me."
+        mc "Oh! Hey, Yuri! What's up?"
+        "I try to steady my voice as best as I can."
+        "Fortunately, Yuri seems to be just as on edge as I am."
+        y 2q "H-{w=0.38}hey, [player]..."
+        y "I just wanted to apologize for my...{w=0.38}reaction to earlier..."
+        y 2n "I should've given you the chance to explain yourself and not act disinterested in you at all!"
+        y 3v "I hope you're not angry with me..."
+        "I feel my muscles relax as soon Yuri finishes talking."
+        "It seems like she hasn't expected me to read her poem yet..."
+        show yuri 3t
+        mc "It's fine, Yuri...{w=0.38}really!"
+        mc "If anything...{w=0.38}I should be apologizing..."
+        mc "So, I'm glad we got that out of the way..."
+        y 3q "Y-{w=0.38}yes, indeed..."
+        "Yuri nervously smiles as we stand in the middle of the room awkwardly."
+        show yuri 3e
+        mc "So, you sticking around?"
+        y 3b "Yes, I'm going to get some reading done."
 
-            if hangout2 == "Yuri":
-                y 3q "I wouldn't mind it if you joined me..."
-
-
-            if hangout2 == "Sayori" or hangout2 == "Natsuki" or hangout2 == "Monika":
-                y 3q "You're more than welcome to join me if you wish..."
-
-            show yuri 3s at t11 zorder 1
-            "Yuri looks at me with hopeful eyes, as if she's counting on me to say yes."
-            "Though given what I know, I probably shouldn't risk spending time with Yuri until I've absolutely made up my mind..."
-            show yuri 3t
-            mc "Ah, Yuri...{w=0.38}I appreciate the offer, but I'm probably about to leave with Sayori right now..."
-            stop music fadeout 2.0
-            y 3h "Pardon me, [player]...{w=0.38}but you don't need to always leave when Sayori does..."
-            y 3f "I mean...{w=0.38}there's nothing wrong with staying a little while longer, is there?"
-            "I almost can't believe this is coming from Yuri!"
-            "But I guess this is just her way of trying to get me to stay."
-            y 3q "I mean it's not like you and Sayori are together or something, correct?"
-            mc "Yuri...{w=0.38}I really appreciate the offer but I do need to head home..."
-            "Yuri lets out a sigh of defeat."
-            mc "I have...{w=0.38}things to do..."
-            show yuri 3w
-            y "Fine...{w=0.38}spend time around Sayori..."
-            y 3v "I'm sorry that I'm not worth your time..."
-            mc "Yuri, it's not that I-"
-            show yuri at thide
-            hide yuri
-            "Before I can finish my sentence, Yuri walks back to hear seat and resumes reading her book."
-            "Fortunately, it doesn't appear that anybody's noticed the incident that just took place between us."
-            "I let out as a sigh as I walk over to Sayori, who seems to have just finished packing her things."
-            show sayori 1a at t11 zorder 1
-            s "Hey, [player]! Ready to go?"
-            "I weakly smile at Sayori."
-            mc "Yeah, sure...{w=0.38}let's get going..."
-            show sayori 2g
-            "Sayori picks up on my agitated tone."
-            s 2h "You okay, [player]?"
-            s 1g "You look upset..."
-            mc "It's nothing...{w=0.38}let's just head home."
-            s 1k "Okay then..."
-            "Sayori and I wave good-bye to Monika and Yuri as we head out to start our commute home."
-            jump day3_walkhome
+        if hangout2 == "Yuri":
+            y 3q "I wouldn't mind it if you joined me..."
 
 
+        if hangout2 == "Sayori" or hangout2 == "Natsuki" or hangout2 == "Monika":
+            y 3q "You're more than welcome to join me if you wish..."
 
-
-        if sayori_ice == False:
-            show yuri 1a at t11 zorder 1
-            "My heart immediately starts pounding against my chest as anxiety builds up inside of me."
-            mc "Oh! Hey, Yuri! What's up?"
-            "I try to steady my voice as best as I can."
-            "Fortunately, Yuri doesn't seem to notice."
-            y 2b "Hello, [player]! How're you doing this afternoon?"
-            mc "Oh...{w=0.38}I'm doing alright, what about you?"
-            y 2c "I'm doing great, thank you! I was just getting some more reading done..."
-            y 3q "And I was just curious to see if you'd like to join me."
-
-            if hangout2 == "Yuri":
-                y 3q "We did make some good progress yesterday..."
-
-
-            if hangout2 == "Sayori" or hangout2 == "Natsuki" or hangout2 == "Monika":
-                y 3q "I wouldn't mind the company..."
-
-
-            show yuri 3s at t11 zorder 1
-            "Yuri looks at me with hopeful eyes, as if she's counting on me to say yes."
-            "Though given that she doesn't seem to have expected me to have read her poem, I really don't want to risk slipping up..."
-            show yuri 3t
-            mc "Ah, Yuri...{w=0.38}I appreciate the offer, but I'm probably about to leave with Sayori right now..."
-            stop music fadeout 2.0
-            y 3h "Pardon me, [player]...{w=0.38}but you don't need to always leave when Sayori does..."
-            y 3f "I mean...{w=0.38}there's nothing wrong with staying a little while longer, is there?"
-            "I almost can't believe this is coming from Yuri!"
-            "But I guess this is just her way of trying to get me to stay."
-            y 3q "I mean it's not like you and Sayori are together or something, correct?"
-            mc "Yuri...{w=0.38}I really appreciate the offer but I do need to head home..."
-            mc "I have...{w=0.38}things to do..."
-            "Yuri lets out a sigh of defeat."
-            show yuri 3w
-            y "Fine...{w=0.38}spend time around Sayori..."
-            y 3v "I'm sorry that I'm not worth your time..."
-            mc "Yuri, it's not that I-"
-            show yuri at thide
-            hide yuri
-            "Before I can finish my sentence, Yuri walks back to hear seat and resumes reading her book."
-            "Fortunately, it doesn't appear that anybody's noticed the incident that just took place between us."
-            "I let out as a sigh as I walk over to Sayori, who seems to have just finished packing her things."
-            show sayori 1a at t11 zorder 1
-            s "Hey, [player]! Ready to go?"
-            "I weakly smile at Sayori."
-            mc "Yeah, sure...{w=0.38}let's get going..."
-            show sayori 2g
-            "Sayori picks up on my agitated tone."
-            s 2h "You okay, [player]?"
-            s 1g "You look upset..."
-            mc "It's nothing...{w=0.38}let's just head home."
-            s 1k "Okay then..."
-            "Sayori and I wave good-bye to Monika and Yuri as we head out to start our commute home."
-            jump day3_walkhome
+        show yuri 3s at t11 zorder 1
+        "Yuri looks at me with hopeful eyes, as if she's counting on me to say yes."
+        "Though given what I know, I probably shouldn't risk spending time with Yuri until I've absolutely made up my mind..."
+        show yuri 3t
+        mc "Ah, Yuri...{w=0.38}I appreciate the offer, but I'm probably about to leave with Sayori right now..."
+        stop music fadeout 2.0
+        y 3h "Pardon me, [player]...{w=0.38}but you don't need to always leave when Sayori does..."
+        y 3f "I mean...{w=0.38}there's nothing wrong with staying a little while longer, is there?"
+        "I almost can't believe this is coming from Yuri!"
+        "But I guess this is just her way of trying to get me to stay."
+        y 3q "I mean it's not like you and Sayori are together or something, correct?"
+        mc "Yuri...{w=0.38}I really appreciate the offer but I do need to head home..."
+        "Yuri lets out a sigh of defeat."
+        mc "I have...{w=0.38}things to do..."
+        show yuri 3w
+        y "Fine...{w=0.38}spend time around Sayori..."
+        y 3v "I'm sorry that I'm not worth your time..."
+        mc "Yuri, it's not that I-"
+        show yuri at thide
+        hide yuri
+        "Before I can finish my sentence, Yuri walks back to hear seat and resumes reading her book."
+        "Fortunately, it doesn't appear that anybody's noticed the incident that just took place between us."
+        "I let out as a sigh as I walk over to Sayori, who seems to have just finished packing her things."
+        show sayori 1a at t11 zorder 1
+        s "Hey, [player]! Ready to go?"
+        "I weakly smile at Sayori."
+        mc "Yeah, sure...{w=0.38}let's get going..."
+        show sayori 2g
+        "Sayori picks up on my agitated tone."
+        s 2h "You okay, [player]?"
+        s 1g "You look upset..."
+        mc "It's nothing...{w=0.38}let's just head home."
+        s 1k "Okay then..."
+        "Sayori and I wave good-bye to Monika and Yuri as we head out to start our commute home."
+        jump day3_walkhome
 
 
 
-if hangout3 == "Yuri":
-    m 2e "Oh, and Yuri, can I talk to you for a second?"
-    y 3q "Uh...{w=0.38}sure, Monika..."
-    show monika at thide
-    hide monika
-    show yuri at thide
-    hide yuri
-    show natsuki at thide
-    hide natsuki
-    show sayori at thide
-    hide sayori
-    "Yuri gets up and follows Monika to the front of the room while everyone else gets up and goes back to their respective areas."
-    "Sighing to myself, my eyes eventually drift to Monika and Yuri, who seem in deep and serious conversation."
 
-    if tell_monika == True:
-        "I just hope Monika isn't asking Yuri about what I saw."
-        "Then again, I don't think I'd have much reason to worry about that."
+    if sayori_ice == False:
+        show yuri 1a at t11 zorder 1
+        "My heart immediately starts pounding against my chest as anxiety builds up inside of me."
+        mc "Oh! Hey, Yuri! What's up?"
+        "I try to steady my voice as best as I can."
+        "Fortunately, Yuri doesn't seem to notice."
+        y 2b "Hello, [player]! How're you doing this afternoon?"
+        mc "Oh...{w=0.38}I'm doing alright, what about you?"
+        y 2c "I'm doing great, thank you! I was just getting some more reading done..."
+        y 3q "And I was just curious to see if you'd like to join me."
 
-    if tell_monika == False:
-        "I just hope Monika isn't interrogating Yuri too hard about what happened..."
-        "But part of me still feels I should've told Monika what I saw..."
-        "I just hope Yuri was telling me the truth..."
+        if hangout2 == "Yuri":
+            y 3q "We did make some good progress yesterday..."
 
-    "I still can't shake what I saw though..."
-    "How could someone like Yuri possibly be doing that to herself?"
-    "Suddenly I feel a tap on my shoulder."
-    show natsuki 4a at t11 zorder 1
-    "I look behind me to see Natsuki standing right by the desk next to me."
-    mc "Oh! Hey, Natsuki! Didn't see you there!"
-    mc "What's up?"
-    n 2c "Not much, just wanted to check on you."
-    n 2m "Since you and Yuri came in here looking upset."
-    n 2q "And you kinda look down over it..."
-    show natsuki 2n
-    mc "Ah! It's nothing to worry about..."
-    mc "There was just a...{w=0.38}misunderstanding between us..."
-    n 5h "What kind of 'misunderstanding'?"
-    show natsuki 5n
-    mc "I don't really wanna get into it right now..."
-    n 5q "Yeah that's fair. I just hope she didn't do something to you..."
-    mc "Don't worry, she didn't..."
-    n 2c "Well, that's good."
+
+        if hangout2 == "Sayori" or hangout2 == "Natsuki" or hangout2 == "Monika":
+            y 3q "I wouldn't mind the company..."
+
+
+        show yuri 3s at t11 zorder 1
+        "Yuri looks at me with hopeful eyes, as if she's counting on me to say yes."
+        "Though given that she doesn't seem to have expected me to have read her poem, I really don't want to risk slipping up..."
+        show yuri 3t
+        mc "Ah, Yuri...{w=0.38}I appreciate the offer, but I'm probably about to leave with Sayori right now..."
+        stop music fadeout 2.0
+        y 3h "Pardon me, [player]...{w=0.38}but you don't need to always leave when Sayori does..."
+        y 3f "I mean...{w=0.38}there's nothing wrong with staying a little while longer, is there?"
+        "I almost can't believe this is coming from Yuri!"
+        "But I guess this is just her way of trying to get me to stay."
+        y 3q "I mean it's not like you and Sayori are together or something, correct?"
+        mc "Yuri...{w=0.38}I really appreciate the offer but I do need to head home..."
+        mc "I have...{w=0.38}things to do..."
+        "Yuri lets out a sigh of defeat."
+        show yuri 3w
+        y "Fine...{w=0.38}spend time around Sayori..."
+        y 3v "I'm sorry that I'm not worth your time..."
+        mc "Yuri, it's not that I-"
+        show yuri at thide
+        hide yuri
+        "Before I can finish my sentence, Yuri walks back to hear seat and resumes reading her book."
+        "Fortunately, it doesn't appear that anybody's noticed the incident that just took place between us."
+        "I let out as a sigh as I walk over to Sayori, who seems to have just finished packing her things."
+        show sayori 1a at t11 zorder 1
+        s "Hey, [player]! Ready to go?"
+        "I weakly smile at Sayori."
+        mc "Yeah, sure...{w=0.38}let's get going..."
+        show sayori 2g
+        "Sayori picks up on my agitated tone."
+        s 2h "You okay, [player]?"
+        s 1g "You look upset..."
+        mc "It's nothing...{w=0.38}let's just head home."
+        s 1k "Okay then..."
+        "Sayori and I wave good-bye to Monika and Yuri as we head out to start our commute home."
+        jump day3_walkhome
+
+
+
+label y_aftermath:
+
+m 2e "Oh, and Yuri, can I talk to you for a second?"
+y 3q "Uh...{w=0.38}sure, Monika..."
+show monika at thide
+hide monika
+show yuri at thide
+hide yuri
+show natsuki at thide
+hide natsuki
+show sayori at thide
+hide sayori
+"Yuri gets up and follows Monika to the front of the room while everyone else gets up and goes back to their respective areas."
+"Sighing to myself, my eyes eventually drift to Monika and Yuri, who seem in deep and serious conversation."
+
+if tell_monika == True:
+    "I just hope Monika isn't asking Yuri about what I saw."
+    "Then again, I don't think I'd have much reason to worry about that."
+
+if tell_monika == False:
+    "I just hope Monika isn't interrogating Yuri too hard about what happened..."
+    "But part of me still feels I should've told Monika what I saw..."
+    "I just hope Yuri was telling me the truth..."
+
+"I still can't shake what I saw though..."
+"How could someone like Yuri possibly be doing that to herself?"
+"Suddenly I feel a tap on my shoulder."
+show natsuki 4a at t11 zorder 1
+"I look behind me to see Natsuki standing right by the desk next to me."
+mc "Oh! Hey, Natsuki! Didn't see you there!"
+mc "What's up?"
+n 2c "Not much, just wanted to check on you."
+n 2m "Since you and Yuri came in here looking upset."
+n 2q "And you kinda look down over it..."
+show natsuki 2n
+mc "Ah! It's nothing to worry about..."
+mc "There was just a...{w=0.38}misunderstanding between us..."
+n 5h "What kind of 'misunderstanding'?"
+show natsuki 5n
+mc "I don't really wanna get into it right now..."
+n 5q "Yeah that's fair. I just hope she didn't do something to you..."
+mc "Don't worry, she didn't..."
+n 2c "Well, that's good."
 
 if hangout1 == "Yuri":
     if hangout2 == "Yuri":
@@ -8059,311 +8078,312 @@ s 1y "Well, I have to be my best for somebody..."
 jump day3_walkhome
 
 
-if hangout3 == "Monika":
-    m 1a "Oh, and [player]! I still need to give you my poems!"
+label m_aftermath:
 
-    if poem_giver == "Natsuki":
-        mc "Yeah I still need your's and Yuri's."
+m 1a "Oh, and [player]! I still need to give you my poems!"
 
-    if poem_giver == "Yuri":
-        mc "Yeah I still need your's and Natsuki's."
+if poem_giver == "Natsuki":
+    mc "Yeah I still need your's and Yuri's."
 
-    m 1b "Sure! Let me get mine!"
+if poem_giver == "Yuri":
+    mc "Yeah I still need your's and Natsuki's."
+
+m 1b "Sure! Let me get mine!"
+show monika at thide
+hide monika
+show yuri at thide
+hide yuri
+show natsuki at thide
+hide natsuki
+show sayori at thide
+hide sayori
+"Monika walks back to the front of the room while everyone gets up and goes back to their respective areas."
+show monika 1a at t11 zorder 1
+"After a few moments, Monika returns to me with her poems in hand."
+m 1b "Here you are, [player]!"
+show monika 1j
+"Monika smiles as she hands me her poems."
+m 1b "I can promise you that there's nothing...{w=0.38}unexpected in there."
+show monika u111151
+"Monika slyly winks at me."
+mc "Well...{w=0.38}that's a relief!"
+show monika 1l
+"We both share a small laugh before the silence settles again."
+m 3b "So, what do you think about our little reading list?"
+show monika 3a
+mc "Well like I said, I'm open to reading anything."
+mc "Though everything that was brought up earlier sounds interesting enough for me to read."
+m 4j "Well that's good!"
+m 1b "I'm glad you have an open mind, [player]."
+m 1n "Not everyone would be inclined to just read anything..."
+m 1m "Especially considering our list is a little diverse..."
+mc "Yeah, I get what you mean..."
+show monika 1a
+mc "Well hey, I have no problem with us reading something we normally wouldn't."
+show monika 1j
+mc "And with you leading the way, I'm sure it'll be fun!"
+m 1k "I'm glad you feel that way, [player]! It's going to be blast!"
+show monika 1j
+mc "I'm looking forward to it!"
+show monika 2n
+"There's a brief pause between us as we try to figure out what to say next to each other."
+
+if poem_giver == "Natsuki":
+    m "So...{w=0.38}I guess I'll leave you be and let you get Yuri's poems."
+    show monika 2e
+    mc "Yeah, I'll talk to you later Monika!"
+    m 1j "Laters!"
     show monika at thide
     hide monika
+    "I then walk over to Yuri, whose sitting by the windowsill."
+    scene bg club_day
+    with wipeleft_scene
+    show yuri 1g at t11 zorder 1
+    mc "Hey, Yuri..."
+    show yuri 1e
+    y "Hmmm?"
+    "Yuri puts down her book."
+    y 1d "Oh, hello, [player]! How’re you doing today?"
+    mc "Ah, I’m doing fine..."
+    mc "What about you?"
+    y 2c "I’m doing excellent! I'm just re-reading a little bit of Outcast's Dillemma!"
+    mc "How is it?"
+    y 2b "It's pretty good actually! Though I think Portrait of Markov is still better."
+    show yuri 2a
+    mc "You really like that book don't you?"
+    y 2q "Well I haven't come across as anything as thrilling and detailed as Portrait of Markov in years."
+    y 2c "You could say it's a breath of fresh air compared to what I've read recently."
+    mc "I see..."
+    y 2q "If you have the time, we could start reading this together..."
+    show yuri 1s
+    "Yuri shows me the cover of Outcast's Dillemma while looking on at me with hopeful, whimiscal eyes."
+
+    if encore_festivalquestion_2 == "Natsuki":
+        "I never really did get the chance to read with her..."
+
+    if encore_festivalquestion_2 == "Yuri":
+        "I haven't had the chance to read with her in a while..."
+
+    mc "Well to be honest, I did come over to get your poems..."
+    y 1h "Oh..."
+    y 2s "Well it’s a good thing you mentioned that."
+    show yuri 2c
+    "Yuri puts down the book and reaches into her bag to grab her poems."
+    y 2b "That should be everything."
+    mc "Great! Thank you so much!"
+    show yuri 1e
+    "I briefly look through Yuri’s poems just to make sure there are no unexpected surprises..."
+    y 1f "Is something the matter, [player]?"
+    mc "What? Oh no, no, I just...{w=0.38}wanted to admire your handwriting again!"
+    show yuri 2d
+    "Yuri chuckles to herself."
+    y 3b "Well that’s certainly thoughtful of you, [player]..."
+    y 3q "Though I don’t believe I gave you anything by mistake..."
+    mc "That’s...{w=0.38}good to know..."
+    y 3j "I mean it’s not like Natsuki accidentally gave you something, right?"
+    mc "Well..."
+    show yuri 3e
+    "I forgot that Yuri was a pretty quick thinker."
+    mc "I guess you could say that..."
+    show yuri 3g
+    "Yuri briefly looks toward the closet where Natsuki is organizing her manga."
+    y 3h "I see..."
+    mc "Yuri?"
+    y 1q "Ah, it’s nothing..."
+    y 1o "I think I should really get back to my book now..."
+    mc "Alright..."
+    "I sigh to myself as I'm forced to walk away from her."
     show yuri at thide
     hide yuri
+    "Great..."
+    "Knowing Yuri, she's already asking herself a million questions..."
+    "Well, it's probably time to head home to think things over anyways."
+    "I already spot Sayori starting to pack her things."
+    show natsuki 5n at t11 zorder 1
+    "However, as I'm walking back to my seat, I'm stopped by Natsuki."
+    "My heart immediately starts pounding against my chest as anxiety builds up inside of me."
+    "I was not perpared for her to pull me aside like this..."
+    mc "Oh! Hey, Natsuki! What's up?"
+    "I try to steady my voice as best as I can."
+    "Fortunately, Natsuki doesn't really seem to notice, as she seems rather unerved as well."
+    n 5m "H-{w=0.38}hey, I wanted to ask you something real quick..."
+    show natsuki 5n
+    "Sweat starts trickling down the back of my neck."
+    mc "Y-{w=0.38}yeah?"
+
+    if hangout2 == "Natsuki":
+        n 5m "I think I might've lost the manga we were reading yesterday..."
+        show natsuki 5n
+        mc "You mean the special edition one?"
+        "Natsuki somberly shakes her head."
+
+    if hangout2 == "Sayori" or hangout2 == "Yuri" or hangout2 == "Monika":
+        show natsuki 5m
+        n 5m "I think I might've lost one of my manga..."
+        n 1m "It was a special edition copy and it was super expensive!"
+
+    n 1q "I was wondering if you'd seen it."
+    "If it weren't for Natsuki's predicament, I might've let out the world's biggest sigh of relief."
+    "She probably thinks I haven't read her poem yet..."
+    show natsuki 1n
+    mc "No...{w=0.38}I can't say I have. I'm really sorry, Natsuki..."
+    n 5q "Great..."
+    mc "Have you tried re-tracing your steps?"
+    n 5q "I'm about to go do that..."
+    n 3m "I might've left it in my last class."
+    show natsuki 3n
+    mc "Well, hey, I hope you find it!"
+    n 3m "You're not sticking around?"
+    mc "Well I think Sayori's about to leave, so I'm gonna head home with her..."
+    stop music fadeout 2.0
+    n 3w "Well that's typical..."
+    mc "What do you mean?"
+    n 5r "Why do you always follow her around like a lost puppy?!?"
+    n 5x "I don't know how she constantly puts up with it..."
+    n 1o "Why is it that almost everything you do has to revolve around Sayori?"
+    mc "Natsuki that's not really true..."
+    n 1x "Forget it! I have manga to find!"
     show natsuki at thide
     hide natsuki
+    "Without another word spoken, Natsuki angrily walks out of the clubroom."
+    "Though it doesn't appear that anybody's noticed the incident that just took place between us."
+    "I let out as a sigh as I walk over to Sayori, who seems to have just finished packing her things."
+    show sayori 1a at t11 zorder 1
+    s "Hey, [player]! Ready to go?"
+    "I weakly smile at Sayori."
+    mc "Yeah, sure...{w=0.38}let's get going..."
+    show sayori 2g
+    "Sayori picks up on my agitated tone."
+    s 2h "You okay, [player]?"
+    s 1g "You look upset..."
+    mc "It's nothing...{w=0.38}let's just head home."
+    s 1k "Okay then..."
+    "Sayori and I wave good-bye to Monika and Yuri as we head out to start our commute home."
+    jump day3_walkhome
+
+
+
+if poem_giver == "Yuri":
+    m "So...{w=0.38}I guess I'll leave you be and let you get Natsuki's poems."
+    show monika 2e
+    mc "Yeah, I'll talk to you later Monika!"
+    m 1j "Laters!"
+    show monika at thide
+    hide monika
+    "I head toward the closet where Natsuki seems to be shuffling through her belongings."
+    scene bg closet
+    with wipeleft_scene
+    show natsuki 3u at t11 zorder 1
+    "As I get closer, I notice Natsuki studying the cover of the manga that she mentioned earlier."
+    show natsuki 3c
+    "Though once she sees me hastily puts it back in her bag."
+    n 4k "Hey, what's up?"
+    mc "Ah, not much..."
+    mc "What about you?"
     show sayori at thide
     hide sayori
-    "Monika walks back to the front of the room while everyone gets up and goes back to their respective areas."
-    show monika 1a at t11 zorder 1
-    "After a few moments, Monika returns to me with her poems in hand."
-    m 1b "Here you are, [player]!"
-    show monika 1j
-    "Monika smiles as she hands me her poems."
-    m 1b "I can promise you that there's nothing...{w=0.38}unexpected in there."
-    show monika u111151
-    "Monika slyly winks at me."
-    mc "Well...{w=0.38}that's a relief!"
-    show monika 1l
-    "We both share a small laugh before the silence settles again."
-    m 3b "So, what do you think about our little reading list?"
-    show monika 3a
-    mc "Well like I said, I'm open to reading anything."
-    mc "Though everything that was brought up earlier sounds interesting enough for me to read."
-    m 4j "Well that's good!"
-    m 1b "I'm glad you have an open mind, [player]."
-    m 1n "Not everyone would be inclined to just read anything..."
-    m 1m "Especially considering our list is a little diverse..."
-    mc "Yeah, I get what you mean..."
-    show monika 1a
-    mc "Well hey, I have no problem with us reading something we normally would."
-    show monika 1j
-    mc "And with you leading the way, I'm sure it'll be fun!"
-    m 1k "I'm glad you feel that way, [player]! It's going to be blast!"
-    show monika 1j
-    mc "I'm looking forward to it!"
-    show monika 2n
-    "There's a brief pause between us as we try to figure out what to say next to each other."
+    show natsuki at t11 zorder 1
+    n 3k "Same here, just organzing my manga again like always..."
+    n 5x "I swear everytime I come here, everything's in a different spot!"
+    n 4m "Not to mention everything's always out of order..."
+    mc "That sucks..."
+    mc "Is someone reading else them?"
+    n 5w "Well, I don't know! I only thought the teacher used that closet!"
+    n 5y "At least who's ever reading it has good taste!"
+    n 5q "I still can't find this special edition of Parfait Girls that I have..."
+    show natsuki 5s
+    mc "It's probably in some pile somewhere, if not, I'd just re-trace your steps."
+    n 5m "Yeah, that's what probably I'm going to have to end up doing..."
+    n 4k "Anyways, did you need something?"
+    mc "Yeah...{w=0.38}I need to get your poems."
+    n 1c "Oh, yeah! Hold on a second..."
+    show natsuki 1a
+    "Natsuki reaches into her bag and grabs her poems."
+    n 1d "Here you go!"
+    mc "Thanks, Natsuki!"
+    show natsuki 1m
+    "I briefly look through Natsuki's poems just to make sure there are no unexpected surprises..."
+    n 1k "Is something wrong?"
+    n 3l "Or are you finally coming to realize just how great my poems are?"
+    mc "Uh sure...{w=0.38}you could say that..."
+    show natsuki 3z
+    "Natsuki cheerfully smiles to herself."
+    n 3y "I'd knew you felt that way!"
+    n 1c "But let me know if anything's missing or if I accidentally gave you something."
+    mc "I'll...{w=0.38}be sure to..."
+    n 2l "What did Yuri give you something?"
+    mc "Well..."
+    "I shouldn't have done this in front of Natsuki..."
+    mc "I guess you could say that..."
+    show natsuki 1s
+    "Natsuki briefly looks toward the front of the room where Yuri is reading."
+    n 5q "So it ain't so..."
+    mc "Natsuki?"
+    n 1o "It's nothing!"
+    n 5w "I need to finish organzing my manga so..."
+    mc "Okay..."
+    "I sigh to myself as I'm forced to walk away from her."
+    show natsuki at thide
+    hide natsuki
+    "Great..."
+    "Knowing Natsuki, she's already asking getting the wrong idea in her head..."
+    "Well, it's probably time to head home to think things over anyways."
+    "I already spot Sayori starting to pack her things."
+    show yuri 1a at t11 zorder 1
+    "However, as I'm walking back to my seat, I'm stopped by Yuri."
+    "My heart immediately starts pounding against my chest as anxiety builds up inside of me."
+    "I was not prepared for her to pull me aside like this..."
+    mc "Oh! Hey, Yuri! What's up?"
+    "I try to steady my voice as best as I can."
+    "Fortunately, Yuri doesn't seem to notice."
+    y 2b "Hello, [player]! How're you doing this afternoon?"
+    mc "Oh...{w=0.38}I'm doing alright, what about you?"
+    y 2c "I'm doing great, thank you! I was just getting some more reading done..."
+    y 3q "And I was just curious to see if you'd like to join me."
 
-    if poem_giver == "Natsuki":
-        m "So...{w=0.38}I guess I'll leave you be and let you get Yuri's poems."
-        show monika 2e
-        mc "Yeah, I'll talk to you later Monika!"
-        m 1j "Laters!"
-        show monika at thide
-        hide monika
-        "I then walk over to Yuri, whose sitting by the windowsill."
-        scene bg club_day
-        with wipeleft_scene
-        show yuri 1g at t11 zorder 1
-        mc "Hey, Yuri..."
-        show yuri 1e
-        y "Hmmm?"
-        "Yuri puts down her book."
-        y 1d "Oh, hello, [player]! How’re you doing today?"
-        mc "Ah, I’m doing fine..."
-        mc "What about you?"
-        y 2c "I’m doing excellent! I'm just re-reading a little bit of Outcast's Dillemma!"
-        mc "How is it?"
-        y 2b "It's pretty good actually! Though I think Portrait of Markov is still better."
-        show yuri 2a
-        mc "You really like that book don't you?"
-        y 2q "Well I haven't come across as anything as thrilling and detailed as Portrait of Markov in years."
-        y 2c "You could say it's a breath of fresh air compared to what I've read over the last few years."
-        mc "I see..."
-        y 2q "If you have the time, we could start reading this together..."
-        show yuri 1s
-        "Yuri shows me the cover of Outcast's Dillemma while looking on at me with hopeful, whimiscal eyes."
-
-        if encore_festivalquestion_2 == "Natsuki":
-            "I never really did get the chance to read with her..."
-
-        if encore_festivalquestion_2 == "Yuri":
-            "I haven't had the chance to read with her in a while..."
-
-        mc "Well to be honest, I did come over to get your poems..."
-        y 1h "Oh..."
-        y 2s "Well it’s a good thing you mentioned that."
-        show yuri 2c
-        "Yuri puts down the book and reaches into her bag to grab her poems."
-        y 2b "That should be everything."
-        mc "Great! Thank you so much!"
-        show yuri 1e
-        "I briefly look through Yuri’s poems just to make sure there are no unexpected surprises..."
-        y 1f "Is something the matter, [player]?"
-        mc "What? Oh no, no, I just...{w=0.38}wanted to admire your handwriting again!"
-        show yuri 2d
-        "Yuri chuckles to herself."
-        y 3b "Well that’s certainly thoughtful of you, [player]..."
-        y 3q "Though I don’t believe I gave you anything by mistake..."
-        mc "That’s...{w=0.38}good to know..."
-        y 3j "I mean it’s not like Natsuki accidentally gave you something, right?"
-        mc "Well..."
-        show yuri 3e
-        "I forgot that Yuri was a pretty quick thinker."
-        mc "I guess you could say that..."
-        show yuri 3g
-        "Yuri briefly looks toward the closet where Natsuki is organizing her manga."
-        y 3h "I see..."
-        mc "Yuri?"
-        y 1q "Ah, it’s nothing..."
-        y 1o "I think I should really get back to my book now..."
-        mc "Alright..."
-        "I sigh to myself as I'm forced to walk away from her."
-        show yuri at thide
-        hide yuri
-        "Great..."
-        "Knowing Yuri, she's already asking herself a million questions..."
-        "Well, it's probably time to head home to think things over anyways."
-        "I already spot Sayori starting to pack her things."
-        show natsuki 5n at t11 zorder 1
-        "However, as I'm walking back to my seat, I'm stopped by Natsuki."
-        "My heart immediately starts pounding against my chest as anxiety builds up inside of me."
-        "I was not perpared for her to pull me aside like this..."
-        mc "Oh! Hey, Natsuki! What's up?"
-        "I try to steady my voice as best as I can."
-        "Fortunately, Natsuki doesn't really seem to notice, as she seems rather unerved as well."
-        n 5m "H-{w=0.38}hey, I wanted to ask you something real quick..."
-        show natsuki 5n
-        "Sweat starts trickling down the back of my neck."
-        mc "Y-{w=0.38}yeah?"
-
-        if hangout2 == "Natsuki":
-            n 5m "I think I might've lost the manga we were reading yesterday..."
-            show natsuki 5n
-            mc "You mean the special edition one?"
-            "Natsuki somberly shakes her head."
-
-        if hangout2 == "Sayori" or hangout2 == "Yuri" or hangout2 == "Monika":
-            show natsuki 5m
-            n 5m "I think I might've lost one of my manga..."
-            n 1m "It was a special edition copy and it was super expensive!"
-
-        n 1q "I was wondering if you'd seen it."
-        "If it weren't for Natsuki's predicament, I might've let out the world's biggest sigh of relief."
-        "She probably thinks I haven't read her poem yet..."
-        show natsuki 1n
-        mc "No...{w=0.38}I can't say I have. I'm really sorry, Natsuki..."
-        n 5q "Great..."
-        mc "Have you tried re-tracing your steps?"
-        n 5q "I'm about to go do that..."
-        n 3m "I might've left it in my last class."
-        show natsuki 3n
-        mc "Well, hey, I hope you find it!"
-        n 3m "You're not sticking around?"
-        mc "Well I think Sayori's about to leave, so I'm gonna head home with her..."
-        stop music fadeout 2.0
-        n 3w "Well that's typical..."
-        mc "What do you mean?"
-        n 5r "Why do you always follow her around like a lost puppy?!?"
-        n 5x "I don't know how she constantly puts up with it..."
-        n 1o "Why is it that almost everything you do has to revolve around Sayori?"
-        mc "Natsuki that's not really true..."
-        n 1x "Forget it! I have manga to find!"
-        show natsuki at thide
-        hide natsuki
-        "Without another word spoken, Natsuki angrily walks out of the clubroom."
-        "Though it doesn't appear that anybody's noticed the incident that just took place between us."
-        "I let out as a sigh as I walk over to Sayori, who seems to have just finished packing her things."
-        show sayori 1a at t11 zorder 1
-        s "Hey, [player]! Ready to go?"
-        "I weakly smile at Sayori."
-        mc "Yeah, sure...{w=0.38}let's get going..."
-        show sayori 2g
-        "Sayori picks up on my agitated tone."
-        s 2h "You okay, [player]?"
-        s 1g "You look upset..."
-        mc "It's nothing...{w=0.38}let's just head home."
-        s 1k "Okay then..."
-        "Sayori and I wave good-bye to Monika and Yuri as we head out to start our commute home."
-        jump day3_walkhome
+    if hangout2 == "Yuri":
+        y 3q "We did make some good progress yesterday..."
 
 
-
-    if poem_giver == "Yuri":
-        m "So...{w=0.38}I guess I'll leave you be and let you get Natsuki's poems."
-        show monika 2e
-        mc "Yeah, I'll talk to you later Monika!"
-        m 1j "Laters!"
-        show monika at thide
-        hide monika
-        "I head toward the closet where Natsuki seems to be shuffling through her belongings."
-        scene bg closet
-        with wipeleft_scene
-        show natsuki 3u at t11 zorder 1
-        "As I get closer, I notice Natsuki studying the cover of the manga that she mentioned earlier."
-        show natsuki 3c
-        "Though once she sees me hastily puts it back in her bag."
-        n 4k "Hey, what's up?"
-        mc "Ah, not much..."
-        mc "What about you?"
-        show sayori at thide
-        hide sayori
-        show natsuki at t11 zorder 1
-        n 3k "Same here, just organzing my manga again like always..."
-        n 5x "I swear everytime I come here, everything's in a different spot!"
-        n 4m "Not to mention everything's always out of order..."
-        mc "That sucks..."
-        mc "Is someone reading else them?"
-        n 5w "Well, I don't know! I only thought the teacher used that closet!"
-        n 5y "At least who's ever reading it has good taste!"
-        n 5q "I still can't find this special edition of Parfait Girls that I have..."
-        show natsuki 5s
-        mc "It's probably in some pile somewhere, if not, I'd just re-trace your steps."
-        n 5m "Yeah, that's what probably I'm going to have to end up doing..."
-        n 4k "Anyways, did you need something?"
-        mc "Yeah...{w=0.38}I need to get your poems."
-        n 1c "Oh, yeah! Hold on a second..."
-        show natsuki 1a
-        "Natsuki reaches into her bag and grabs her poems."
-        n 1d "Here you go!"
-        mc "Thanks, Natsuki!"
-        show natsuki 1m
-        "I briefly look through Natsuki's poems just to make sure there are no unexpected surprises..."
-        n 1k "Is something wrong?"
-        n 3l "Or are you finally coming to realize just how great my poems are?"
-        mc "Uh sure...{w=0.38}you could say that..."
-        show natsuki 3z
-        "Natsuki cheerfully smiles to herself."
-        n 3y "I'd knew you felt that way!"
-        n 1c "But let me know if anything's missing or if I accidentally gave you something."
-        mc "I'll...{w=0.38}be sure to..."
-        n 2l "What did Yuri give you something?"
-        mc "Well..."
-        "I shouldn't have done this in front of Natsuki..."
-        mc "I guess you could say that..."
-        show natsuki 1s
-        "Natsuki briefly looks toward the front of the room where Yuri is reading."
-        n 5q "So it ain't so..."
-        mc "Natsuki?"
-        n 1o "It's nothing!"
-        n 5w "I need to finish organzing my manga so..."
-        mc "Okay..."
-        "I sigh to myself as I'm forced to walk away from her."
-        show natsuki at thide
-        hide natsuki
-        "Great..."
-        "Knowing Natsuki, she's already asking getting the wrong idea in her head..."
-        "Well, it's probably time to head home to think things over anyways."
-        "I already spot Sayori starting to pack her things."
-        show yuri 1a at t11 zorder 1
-        "However, as I'm walking back to my seat, I'm stopped by Yuri."
-        "My heart immediately starts pounding against my chest as anxiety builds up inside of me."
-        "I was not prepared for her to pull me aside like this..."
-        mc "Oh! Hey, Yuri! What's up?"
-        "I try to steady my voice as best as I can."
-        "Fortunately, Yuri doesn't seem to notice."
-        y 2b "Hello, [player]! How're you doing this afternoon?"
-        mc "Oh...{w=0.38}I'm doing alright, what about you?"
-        y 2c "I'm doing great, thank you! I was just getting some more reading done..."
-        y 3q "And I was just curious to see if you'd like to join me."
-
-        if hangout2 == "Yuri":
-            y 3q "We did make some good progress yesterday..."
+    if hangout2 == "Sayori" or hangout2 == "Natsuki" or hangout2 == "Monika":
+        y 3q "I wouldn't mind the company..."
 
 
-        if hangout2 == "Sayori" or hangout2 == "Natsuki" or hangout2 == "Monika":
-            y 3q "I wouldn't mind the company..."
-
-
-        show yuri 3s at t11 zorder 1
-        "Yuri looks at me with hopeful eyes, as if she's counting on me to say yes."
-        "Though given that she doesn't seem to have expected me to have read her poem, I really don't want to risk slipping up..."
-        show yuri 3t
-        mc "Ah, Yuri...{w=0.38}I appreciate the offer, but I'm probably about to leave with Sayori right now..."
-        stop music fadeout 2.0
-        y 3h "Pardon me, [player]...{w=0.38}but you don't need to always leave when Sayori does..."
-        y 3f "I mean...{w=0.38}there's nothing wrong with staying a little while longer, is there?"
-        "I almost can't believe this is coming from Yuri!"
-        "But I guess this is just her way of trying to get me to stay."
-        y 3q "I mean it's not like you and Sayori are together or something, correct?"
-        mc "Yuri...{w=0.38}I really appreciate the offer but I do need to head home..."
-        mc "I have...{w=0.38}things to do..."
-        "Yuri lets out a sigh of defeat."
-        show yuri 3w
-        y "Fine...{w=0.38}spend time around Sayori..."
-        y 3v "I'm sorry that I'm not worth your time..."
-        mc "Yuri, it's not that I-"
-        show yuri at thide
-        hide yuri
-        "Before I can finish my sentence, Yuri walks back to hear seat and resumes reading her book."
-        "Fortunately, it doesn't appear that anybody's noticed the incident that just took place between us."
-        "I let out as a sigh as I walk over to Sayori, who seems to have just finished packing her things."
-        show sayori 1a at t11 zorder 1
-        s "Hey, [player]! Ready to go?"
-        "I weakly smile at Sayori."
-        mc "Yeah, sure...{w=0.38}let's get going..."
-        show sayori 2g
-        "Sayori picks up on my agitated tone."
-        s 2h "You okay, [player]?"
-        s 1g "You look upset..."
-        mc "It's nothing...{w=0.38}let's just head home."
-        s 1k "Okay then..."
-        "Sayori and I wave good-bye to Monika and Yuri as we head out to start our commute home."
-        jump day3_walkhome
+    show yuri 3s at t11 zorder 1
+    "Yuri looks at me with hopeful eyes, as if she's counting on me to say yes."
+    "Though given that she doesn't seem to have expected me to have read her poem, I really don't want to risk slipping up..."
+    show yuri 3t
+    mc "Ah, Yuri...{w=0.38}I appreciate the offer, but I'm probably about to leave with Sayori right now..."
+    stop music fadeout 2.0
+    y 3h "Pardon me, [player]...{w=0.38}but you don't need to always leave when Sayori does..."
+    y 3f "I mean...{w=0.38}there's nothing wrong with staying a little while longer, is there?"
+    "I almost can't believe this is coming from Yuri!"
+    "But I guess this is just her way of trying to get me to stay."
+    y 3q "I mean it's not like you and Sayori are together or something, correct?"
+    mc "Yuri...{w=0.38}I really appreciate the offer but I do need to head home..."
+    mc "I have...{w=0.38}things to do..."
+    "Yuri lets out a sigh of defeat."
+    show yuri 3w
+    y "Fine...{w=0.38}spend time around Sayori..."
+    y 3v "I'm sorry that I'm not worth your time..."
+    mc "Yuri, it's not that I-"
+    show yuri at thide
+    hide yuri
+    "Before I can finish my sentence, Yuri walks back to hear seat and resumes reading her book."
+    "Fortunately, it doesn't appear that anybody's noticed the incident that just took place between us."
+    "I let out as a sigh as I walk over to Sayori, who seems to have just finished packing her things."
+    show sayori 1a at t11 zorder 1
+    s "Hey, [player]! Ready to go?"
+    "I weakly smile at Sayori."
+    mc "Yeah, sure...{w=0.38}let's get going..."
+    show sayori 2g
+    "Sayori picks up on my agitated tone."
+    s 2h "You okay, [player]?"
+    s 1g "You look upset..."
+    mc "It's nothing...{w=0.38}let's just head home."
+    s 1k "Okay then..."
+    "Sayori and I wave good-bye to Monika and Yuri as we head out to start our commute home."
+    jump day3_walkhome
 
 
 label day3_walkhome:
@@ -8427,7 +8447,7 @@ if hangout3 == "Sayori":
 
 if hangout3 == "Monika" or hangout3 == "Natsuki" or hangout3 == "Yuri":
     show sayori 1k at t11 zorder 1
-    "The walk home with Sayori didn't really do to improve my mood after my run-in with [poem_giver]."
+    "The walk home with Sayori didn't really do much to improve my mood after my run-in with [poem_giver]."
     show sayori 1g
     "Sayori still asked me a few questions about why I was in such a grouchy mood earlier, but I just muttered out some answer and she seemed to have mostly bought it."
     show sayori 1k
@@ -8443,8 +8463,8 @@ if hangout3 == "Monika" or hangout3 == "Natsuki" or hangout3 == "Yuri":
 
     if encore_sayoriquestion_1 == True:
         if hangout1 == "Sayori":
-            if hangout2 == "Sayori:
-                "Still, I tried to not let my mood get the best of me, I tried to make some meaningful conversation about how her day went, but she largely just muttered out some usual answer to me."
+            if hangout2 == "Sayori":
+                "Still, I tried to not let my mood get the best of me. I tried to make some meaningful conversation about how her day went, but she largely just muttered out some answer to me."
                 show sayori 1g
                 "On occassion, I even saw Sayori flashing me a concerned look, which only made me feel worse about what I did earlier..."
                 "I know I promised to spend more time with her, but I didn't fall through..."
@@ -10732,13 +10752,8 @@ if hangout3 == "Yuri":
         "I just hope I can talk about it with her in an honest fashion..."
 
     if tell_monika == False:
-<<<<<<< HEAD
         "I'm not completelty convinced that these were ordinary cat scratches..."
         "And if she's actually cutting herself and denying it, then that's a serious problem in itself..."
-=======
-        "I'm not completely convinced that thise were ordinary cat scratches..."
-        "And if she's actually cutting herself and denying it, then that's a serious problem in of itself..."
->>>>>>> 80a6eb48c2da3e7fed3d696b5bdc4ba9d7373046
         "But...{w=0.38}maybe I don't need Monika's help on this..."
         "Maybe I can talk to Yuri about this one-on-one?"
         "I mean, I hope she trusts me that much..."
@@ -13343,23 +13358,15 @@ mc "Uh...{w=0.38}yeah..."
 mc "I understand, Sayori."
 mc "Everyone needs to take a day to themselves once in a while..."
 mc "I'm sure everyone will understand..."
-<<<<<<< HEAD
-s 1l "Somehow I doubt that..."
-s 1k "They're just going to worry about me, [player]..."
-s 1t "They don't know what I'm going through..."
-s "I really don't want you to cover for me though..."
-s 1k "I'd feel so guilty for having you lie for me..."
-=======
 show s_1pl as sayori at t11 zorder 1
 s "Somehow I doubt that..."
 show s_1pk as sayori at t11 zorder 1
 s "They're just going to worry about me, [player]..."
 show s_1pt as sayori at t11 zorder 1
 s "They don't know what I'm going through..."
-s "And I already feel guilty knowing I won't be putting a smile on everyone's faces today.."
+s "I really don't want you to cover for me..."
 show s_1pk as sayori at t11 zorder 1
-s "I'd hate for you to try to lie about why I didn't come in..."
->>>>>>> 80a6eb48c2da3e7fed3d696b5bdc4ba9d7373046
+s "I'd feel so guilty for having you lie for me..."
 
 if encore_sayoriquestion_1 == True:
     mc "Well, that's what a good boyfriend does, right?"
