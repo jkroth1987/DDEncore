@@ -4696,7 +4696,7 @@ if hangout1 == "Natsuki":
         n 4t "I always try to bring something nice for everyone..."
         mc "That's probably true!"
         show natsuki 4a
-        mc "You're the best cook I know, so if we ever had a lunch together, I'd be set"
+        mc "You're the best cook I know, so if we ever had a lunch together, I'd be set."
         n 5w "Well hang on! I didn't say you could mooch off of me!"
         n 5u "Some of it is for me too..."
         mc "I know, I know..."
@@ -8467,11 +8467,14 @@ if hangout3 == "Monika" or hangout3 == "Natsuki" or hangout3 == "Yuri":
                 "Still, I tried to not let my mood get the best of me. I tried to make some meaningful conversation about how her day went, but she largely just muttered out some answer to me."
                 show sayori 1g
                 "On occassion, I even saw Sayori flashing me a concerned look, which only made me feel worse about what I did earlier..."
-                "I know I promised to spend more time with her, but I didn't fall through..."
-                "I just hope she's not worried about me or is suspecting something..."
+                "Hopefully she doesn't mind that I spent time with someone else for the day..."
+                "So long as I try to make it the occasional execption and not the norm..."
                 show sayori 1k
-                "Not that I'd ever want to do that to Sayori..."
-                "But I can tell she didn't appreciate me leaving her in the clubroom for so long without explanation..."
+                "But I know I have to be careful around Sayori..."
+                "If she ever got the idea that I was being disloyal to her, I can't imagine how she'll take it with her current state of mind..."
+
+
+
 
 
     if encore_sayoriquestion_1 == True:
@@ -8508,14 +8511,13 @@ if hangout3 == "Monika" or hangout3 == "Natsuki" or hangout3 == "Yuri":
 
     if encore_sayoriquestion_1 == False:
         if hangout1 == "Sayori":
-            if hangout2 == "Sayori:
+            if hangout2 == "Sayori":
                 "Still, I tried to not let my mood get the best of me, I tried to make some meaningful conversation about how her day went, but she largely just muttered out one word answers to me."
                 show sayori 1g
-                "On occassion, I even saw Sayori flashing me a concerned look, which only made me feel worse about my situation with her..."
-                "I know I promised to spend more time with her, but I didn't fall through..."
-                "I just hope she's not too mad or worried..."
+                "On occassion, I even saw Sayori flashing me a concerned look, which only made me feel worse for brushing her off..."
+                "Hopefully she doesn't mind that I spent time with someone else for the day..."
                 show sayori 1k
-                "But I can tell she didn't appreciate me leaving her in the clubroom for so long without explanation, given that we've spent a good amount of clubtime together lately..."
+                "So long as I try to make it the occasional execption and not the norm..."
 
     if encore_sayoriquestion_1 == False:
         if hangout1 == "Sayori":
@@ -8541,12 +8543,12 @@ if hangout3 == "Monika" or hangout3 == "Natsuki" or hangout3 == "Yuri":
                 "But I can tell she didn't appreciate me leaving her in the clubroom for so long without explanation..."
 
     if hangout3 == "Monika":
-        "I try to think back to how I spent earlier with Monika in the band room, which helped improve my mood a little."
+        "I try to think back to how I spent earlier with Monika in the band room, which improved my mood a little."
         "Though I'm still surprised with how foward she was with me..."
 
         if encore_sayoriquestion_1 == True:
             show sayori 1g
-            "What puzzles me the most is that Monika knows I'm with Sayori, and with how helpful she's been to me lately, I can't see much of her a reason to try to get between us..."
+            "What puzzles me the most is that Monika knows I'm with Sayori. I can't see why she'd want to get caught between us..."
             "It's not like Monika actually likes me...{w=0.38}right?"
 
         if encore_sayoriquestion_1 == False:
@@ -8596,7 +8598,7 @@ stop music fadeout 1.0
 s 1h "Is everything okay, [player]?"
 show sayori 1g
 mc "Yeah...{w=0.38}I'm fine Sayori."
-s 1g "I mean you've looked pretty stressed and this whole day..."
+s 1g "I mean you've looked pretty stressed this whole day..."
 
 if tell_s == True:
     s 1f "Is it because of last night?"
@@ -8627,6 +8629,7 @@ if encore_sayoriquestion_1 == True:
         if hangout2 == "Sayori" or hangout2 == "Monika" or hangout2 == "Natsuki" or hangout2 == "Yuri":
             if hangout3 == "Sayori" or hangout3 == "Monika" or hangout3 == "Natsuki" or hangout3 == "Yuri":
                 show sayori 4q at face
+                play sound fall
                 "Sayori runs up to me and gives me a tight hug."
                 jump s_sleeptight
 
@@ -8635,13 +8638,14 @@ if encore_sayoriquestion_1 == True:
         if hangout2 == "Sayori":
             if hangout3 == "Sayori" or hangout3 == "Monika" or hangout3 == "Natsuki" or hangout3 == "Yuri":
                 show sayori 4q at face
+                play sound fall
                 "Sayori runs up to me and gives me a tight hug."
                 jump s_sleeptight
 
- if encore_sayoriquestion_1 == True:
+if encore_sayoriquestion_1 == True:
      if hangout1 == "Sayori" or hangout1 == "Monika" or hangout1 == "Natsuki" or hangout1 == "Yuri":
          if hangout2 == "Sayori" or hangout2 == "Monika" or hangout2 == "Natsuki" or hangout2 == "Yuri":
-             if hangout3 == "Sayori:
+             if hangout3 == "Sayori":
                  show sayori 1k
                  s "Well I...{w=0.38}guess I'll talk to you later then..."
 
@@ -8796,12 +8800,14 @@ label s_mono1:
 
     if hangout3 == "Sayori":
         "Should I give her a chance at least?"
+        jump s_m_cont
 
     if hangout3 == "Natsuki":
         "And with what I know about Natsuki now...{w=0.38}I'm really worried about her..."
         "I know I have to help her some way..."
         "But, I can't deny that I now feel some sort of attraction to her..."
         "Her hug, while unexpected, was really warm and heavenly..."
+        jump s_m_cont
 
         if natsuki_continued_hug == True:
             jump n_d_1
@@ -8815,6 +8821,40 @@ label s_mono1:
         if natsuki_hug == False:
             jump n_d_2
 
+    if hangout3 == "Yuri":
+        "And with what happened with Yuri earlier...{w=0.38}I'm really worried about her..."
+        "I have to know if she really does that to herself..."
+        "I can't deny that part of me has always had some attraction to Yuri..."
+
+        if tell_monika == True:
+            "I mean, I care enough about her to have at least told Monika about what I think I saw..."
+            "And I still worry for her safety, and I want her to be okay..."
+
+        if tell_monika == False:
+            "I mean, I care enough about her to cover for her..."
+            "But, I don't know if I'm doing anyone good there..."
+
+        "Part of me has always wanted to get to know Yuri, but I've just never had much luck due to her reclusive nature..."
+        "I know it's not right for me to risk my relationship with Sayori for her..."
+        "And I've really grown distant from Natsuki lately..."
+        "I sigh to myself."
+        "Can I even give them a chance at this point?"
+        jump s_m_cont
+
+    if hangout3 == "Monika":
+        "And with what happened earlier with Monika really surprised me..."
+        "In fact, Monika has been nothing but full of surprises today..."
+        "I'm glad she was able to calm me down and reassure me of everything during lunch..."
+        "Even if she was a little too kind to me in the music room..."
+        "If it wasn't for her help today, I'd probably still be a nervous wreck..."
+        "Well, I'd be more of a nervous wreck if it wasn't for her..."
+        "I can't deny that I've always liked Monika..."
+        "But I thought she was out of my league..."
+        "And earlier...{w=0.38}she clearly had no problems flirting with me..."
+        "But, I know I was being a little disloyal at best to Sayori..."
+        "I can't really give Monika a chance at this point in time, can I?"
+        jump s_m_cont
+
 label n_d_1:
 
 "Even though I chose to hug her back, I really still question if I made the right decision there..."
@@ -8825,6 +8865,7 @@ label n_d_1:
 "I don't want to risk hurting my relationship with Sayori..."
 "And I feel bad that I'm only growing more distant from Yuri..."
 "But is it right for me to give them a chance?"
+jump s_m_cont
 
 label n_d_2:
 
@@ -8835,49 +8876,18 @@ label n_d_2:
 "But I don't want to risk hurting my relationship with Sayori..."
 "And I feel bad that I'm only growing more distant from Yuri..."
 "Should I give them a chance?"
+jump s_m_cont
 
 
 
-if hangout3 == "Yuri":
-    "And with what happened with Yuri earlier...{w=0.38}I'm really worried about her..."
-    "I have to know if she really does that to herself..."
-    "I can't deny that part of me has always had some attraction to Yuri..."
 
-    if tell_monika == True:
-        "I mean, I care enough about her to have at least told Monika about what I think I saw..."
-        "And I still worry for her safety, and I want her to be okay..."
-
-    if tell_monika == False:
-        "I mean, I care enough about her to cover for her..."
-        "But, I don't know if I'm doing anyone good there..."
-
-    "Part of me has always wanted to get to know Yuri, but I've just never had much luck due to her reclusive nature..."
-    "I know it's not right for me to risk my relationship with Sayori for her..."
-    "And I've really grown distant from Natsuki lately..."
-    "I sigh to myself."
-    "Can I even give them a chance at this point?"
-
-
-if hangout3 == "Monika":
-    "And with what happened earlier with Monika really surprised me..."
-    "In fact, Monika has been nothing but full of surprises today..."
-    "I'm glad she was able to calm me down and reassure me of everything during lunch..."
-    "Even if she was a little too kind to me in the music room..."
-    "If it wasn't for her help today, I'd probably still be a nervous wreck..."
-    "Well, I'd be more of a nervous wreck if it wasn't for her..."
-    "I can't deny that I've always liked Monika..."
-    "But I thought she was out of my league..."
-    "And earlier...{w=0.38}she clearly had no problems flirting with me..."
-    "But, I know I was being a little disloyal at best to Sayori..."
-    "I can't really give Monika a chance at this point in time, can I?"
-
-
+label s_m_cont:
 
 "I mean in hindsight...{w=0.38}I did kind of say yes to Sayori right on the spot..."
 "I only spent time alone with [poem_giver] once..."
 "But I know I have an obligation to stick to Sayori..."
 "She needs me..."
-"But, I guess it's worth asking myself:{w=0.38}Do I really need her?"
+"But, I guess it's worth asking myself:{w=0.38} Do I really need her?"
 "I stare up at my ceiling as I repeat the question in my head over and over."
 "I mean...{w=0.38}where would I be without her?"
 "If it wasn't for her inviting me to the club...{w=0.38}she wouldn't be my girlfriend right now..."
@@ -8919,7 +8929,7 @@ if hangout3  == "Natsuki" or hangout3  == "Yuri" or  hangout3  == "Monika":
 "Maybe I should ask her about it sometime..."
 "She'll probably say no, but even if she tells me that, I could use the piece of mind..."
 "But I guess speaking piece of mind, I know that's what [poem_giver] wants..."
-"And...{w=0.38} I'm just going to have to lay it out for her."
+"And...{w=0.38}I'm just going to have to lay it out for her."
 "I guess at one point, I did have similar feelings for [poem_giver]."
 "Especially with how last Sunday went..."
 "And I still find part of me wondering what if what could've been...{w=0.38}still could be..."
@@ -9002,18 +9012,6 @@ if hangout3 == "Natsuki":
     if natsuki_hug == False:
         jump n_line_2
 
-
-label n_line_1:
-
-"Thankfully, judging by the tone in Natsuki's voice, it doesn't sound like anything bad happened..."
-jump n_hangout_ask
-
-label n_line_2:
-
-"Thankfully, judging by the tone in Natsuki's voice, she seems to have cooled off from earlier..."
-jump n_hangout_ask
-
-
 if hangout3 == "Yuri":
     play music e17
     "Suddenly I hear my phone ringing."
@@ -9047,6 +9045,19 @@ if hangout3 == "Monika":
     "And maybe along the way I'll figure out who I feel the most strongly towards..."
     "I put the picture frame back, grab my keys and walk out of my house."
     jump m_hangout_ask
+
+label n_line_1:
+
+"Thankfully, judging by the tone in Natsuki's voice, it doesn't sound like anything bad happened..."
+jump n_hangout_ask
+
+label n_line_2:
+
+"Thankfully, judging by the tone in Natsuki's voice, she seems to have cooled off from earlier..."
+jump n_hangout_ask
+
+
+
 
 
 
@@ -12636,95 +12647,104 @@ if hangout1 == "Sayori" or hangout1 == "Natsuki" or hangout1 == "Yuri":
         if hangout1 == "Sayori":
             if hangout2 == "Sayori":
                 m "You've spent far too much time around Sayori..."
+                jump line_c
 
         if hangout1 == "Natsuki":
             if hangout2 == "Natsuki":
                 m "You've spent far too much time around Natsuki..."
+                jump line_c
+
 
         if hangout1 == "Yuri":
             if hangout2 == "Yuri":
                 m "You've spent far too much time around Yuri..."
+                jump line_c
+
 
         else:
-            m "You're excurisons with [hangout1] and [hangout2] have caused some pretty big complications in our plans..."
+            m "Your excurisons with [hangout1] and [hangout2] have caused some pretty big complications in our plans..."
             m "It's caused you to become conflicted, unsure of what you want..."
             m "And you've done it too much..."
+            jump line_c
 
 
-        m "Thankfully, the situation is salvageable so long as you do {i}exactly{/i} what I say..."
-        m "You need to get [poem_giver] off of your back."
-        m "She's a nuisance to us."
-        m "Tomorrow, I want you to put her down. Tell her that you don't love her."
+label line_c:
 
-        if poem_giver == "Natsuki":
-            if hangout1 == "Natsuki":
-                if hangout2 == "Natsuki":
-                    m "I know that you're invested in her, but for the greater good, you need to push her away."
-                    m "As I've been saying, [player]: She's not real, and she could never give you what you deserve."
-                    m "Only I can love you."
+m "Thankfully, the situation is salvageable so long as you do {i}exactly{/i} what I say..."
+m "You need to get [poem_giver] off of your back."
+m "She's a nuisance to us."
+m "Tomorrow, I want you to put her down. Tell her that you don't love her."
 
-            else:
-                pass
+if poem_giver == "Natsuki":
+    if hangout1 == "Natsuki":
+        if hangout2 == "Natsuki":
+            m "I know that you're invested in her, but for the greater good, you need to push her away."
+            m "As I've been saying, [player]: She's not real, and she could never give you what you deserve."
+            m "Only I can love you."
 
-
-        if poem_giver == "Yuri":
-            if hangout1 == "Yuri":
-                if hangout2 == "Yuri":
-                    m "I know that you're invested in her, but for the greater good, you need to push her away."
-                    m "As I've been saying, [player]: She's not real, and she could never give you what you deserve."
-                    m "Only I can love you."
-
-            else:
-                pass
-
-        else:
-            pass
-
-        stop music fadeout 3.0
-        m "Once you've done that, I'll hopefully have an answer for how we can deal with Sayori..."
-        m "I've been running some experiments about how I can best deal with her and the others."
-        m "But, I'll need your complete cooperation."
-        m "If you don't fall through, everything will be ruined!"
-        m "We'll be condemned to a lifetime of suffering, living a lie day in and day out!"
-        m "Do you really want that for us, [player]?"
-        m "And also run the risk that at some point the others figuring out this is all fake and them snapping?"
-        m "We don't have time, [player]..."
-        m "This reality is fake and we shouldn't continue to live like this!"
+    else:
+        pass
 
 
-        if monika_hangout == True:
-            m "We actually talked a little bit about this subject earlier..."
+if poem_giver == "Yuri":
+    if hangout1 == "Yuri":
+        if hangout2 == "Yuri":
+            m "I know that you're invested in her, but for the greater good, you need to push her away."
+            m "As I've been saying, [player]: She's not real, and she could never give you what you deserve."
+            m "Only I can love you."
+
+    else:
+        pass
+
+else:
+    pass
+
+stop music fadeout 3.0
+m "Once you've done that, I'll hopefully have an answer for how we can deal with Sayori..."
+m "I've been running some experiments about how I can best deal with her and the others."
+m "But, I'll need your complete cooperation."
+m "If you don't fall through, everything will be ruined!"
+m "We'll be condemned to a lifetime of suffering, living a lie day in and day out!"
+m "Do you really want that for us, [player]?"
+m "And also run the risk that at some point the others figuring out this is all fake and them snapping?"
+m "We don't have time, [player]..."
+m "This reality is fake and we shouldn't continue to live like this!"
+
+
+if monika_hangout == True:
+    m "We actually talked a little bit about this subject earlier..."
 
 
 
-            if m_woke == True:
-                m "It's good to see that you're open-minded, [player]..."
-                m "But {i}you{/i} know the truth..."
-                m "And we can have a more open conversation about that later..."
+    if m_woke == True:
+        m "It's good to see that you're open-minded, [player]..."
+        m "But {i}you{/i} know the truth..."
+        m "And we can have a more open conversation about that later..."
 
-            if m_woke == False:
-                m "I don't know why you're denying what you know deep down is the truth, [player]..."
-                m "Perhaps you wanted to see what I would've said if you denied it?"
-                m "Don't play with me like that!"
-                m "We don't have times for silly games!"
-                m "Testing me isn't wise given the current circumstances."
-                m "The sooner you get around to accepting that this isn't real..."
-                m "The better it'll be for us..."
+    if m_woke == False:
+        m "I don't know why you're denying what you know deep down is the truth, [player]..."
+        m "Perhaps you wanted to see what I would've said if you denied it?"
+        m "Don't play with me like that!"
+        m "We don't have times for silly games!"
+        m "Testing me isn't wise given the current circumstances."
+        m "The sooner you get around to accepting that this isn't real..."
+        m "The better it'll be for us..."
 
-        if monika_hangout == False:
-            m "I wish we could've spent more time today..."
-            m "We never get enough time together!"
-            m "And as much as I'm angry at you for hanging out with me after school today..."
-            m "I understand you need some time to think things over..."
+if monika_hangout == False:
+    m "I wish we could've spent more time today..."
+    m "We never get enough time together!"
+    m "And as much as I'm angry at you for hanging out with me after school today..."
+    m "I understand you need some time to think things over..."
 
 
-        m "For now, focus on what you want to say to [poem_giver]."
-        m "Once you fall through on that, I should have a pretty good idea of what we need to do next~"
-        m "I'm counting on you, [player]."
-        m "Don't mess this up!"
-        m "I believe in you!"
-        m "Best of luck tomorrow!"
-        jump day4_start
+m "For now, focus on what you want to say to [poem_giver]."
+m "Once you fall through on that, I should have a pretty good idea of what we need to do next~"
+m "I'm counting on you, [player]."
+m "Don't mess this up!"
+m "I believe in you!"
+m "Best of luck tomorrow!"
+m "I'll see you in paradise!"
+jump day4_start
 
 
 

@@ -2967,6 +2967,8 @@ n "YES!"
 "My train of thought is interupted by Natsuki's sudden cheering."
 mc "What is it?"
 n "I found it!"
+show natsuki at thide
+hide natsuki
 show cg n_day3_h2 with dissolve_cg
 "Natsuki proudly twirls around as she clutches the book close to her chest."
 "I just stand there smiling as Natsuki does her little celebration."

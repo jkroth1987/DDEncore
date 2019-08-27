@@ -5604,7 +5604,8 @@ show sayori 1bg
 "Finally Sayori turns to me with a pained look in her eyes"
 play music t9 fadein 2.0
 s 1bh "I mean...{w=0.38}I have..."
-"I'm shocked as I hear this."
+show sayori 1bg
+"My inital shock quickly gives away to fustration."
 "She's been debating about whether to seek help for all these years?"
 "That doesn't make any sense! Why would she want to feel like crap all the time?!?"
 mc "Well, why haven't you gone to anyone yet?"

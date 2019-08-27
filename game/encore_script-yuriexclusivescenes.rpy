@@ -2496,7 +2496,7 @@ if hangout1 == "Yuri":
             "Not to mention she was much more engaging than I first remembered, being sure to point out what she thought was important or funny moments in the story."
 
         if encore_festivalquestion_2 == "Natsuki":
-            "Yuri was also surpsingly engaging while we read, making sure to point out what she thought was important or funny moments in the story."
+            "Yuri was also surprisingly engaging while we read, making sure to point out what she thought was important or funny moments in the story."
 
 
 else:

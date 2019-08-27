@@ -593,7 +593,7 @@ label mencore_3:
     "She quickly looks up at me, popping out one of her AirPods."
     show airpod left at t11 zorder 1
     m 1b "Oh, hey [player]!"
-    m "I take it you wanted to see what I was working on?"
+    m "I take it you want to listen what I've been working on?"
     show monika u111151
     "Monika flashes her usual wink."
     mc "I mean, hey, if you think it’d help..."
@@ -602,12 +602,12 @@ label mencore_3:
     "Monika smiles bashfully."
     m 1n "Well, it’s not finished yet..."
     m 1m "I’ve been listening to these samples all day trying to figure out how to make the next verse..."
-    m 1n "Chord progressions are more complicated then you would expect."
+    m 1n "Chord progressions are more complicated than you would expect."
     mc "So you’re working on your own song then?"
     m 1k "Yep!"
     m 1b "It’s the reason I started playing the piano, I’ve always wanted to make my own song since I was really young."
     m 1m "Though lately, I haven’t had much time to work on it..."
-    m 1n "Things just kept coming up recently..."
+    m 1n "A lot of things have been coming up recently..."
     mc "I take it was that ‘surprise’ you had for someone..."
     show monika 1j
     "Monika nods."
@@ -977,9 +977,10 @@ label mencore_3:
     m 1j "Ha..."
     m 1l "Hahaha..."
     m 2k "Hahahahaha!"
-    "I’ve never seen Monka laughing so genuinely before."
+    "I’ve never heard Monka laughing so hysterically before..."
     "Looks like this day wasn't so bad after all..."
-    m 2b "Oh [player], I really needed that!"
+    m 2b "Thanks [player], I really needed that!"
+    show monika 2a
     mc "Glad I could help!"
     show monika 1a
     "Without another word between us, Monika and I exit the music room and begin our walk back to the literature club."
@@ -1049,7 +1050,7 @@ show monika 5ba at t11 zorder 1
 m "Awww~"
 m "Are you worried about me, [player]?"
 mc "I-{w=0.38}I mean..."
-"I'm completely tongue twisted as Monika continues to grin at my expense."
+"I'm completely tongue-tied as Monika continues to grin at my expense."
 
 if encore_sayoriquestion_1 == True:
     "How can I word this in a way that's not too flirty..."
@@ -1073,7 +1074,7 @@ show mb_embarassed as monika at t11 zorder 1
 mc "I mean, I'm sure she'd do fine..."
 mc "It just wouldn't be the same without you, you know?"
 show mbe_talking2 as monika at t11 zorder 1
-mc "You're kinda of ireplaceable..."
+mc "You're kinda of irreplaceable..."
 show mbe_talking3 as monika at t11 zorder 1
 m "Aren't you such a gentlemen?"
 show monika 5ba at t11 zorder 1
@@ -1341,7 +1342,7 @@ m "But that relationship was just a sham for him to try to get close to me."
 show monika 1bf  at t11 zorder 1
 m "He used me to boost his status around the school, [player]..."
 show monika 1bp  at t11 zorder 1
-m "An that wasn't the only thing he wanted from me..."
+m "And that wasn't the only thing he wanted from me..."
 m "He was always pushing me to take our relationship to the next level..."
 show monika 1br  at t11 zorder 1
 m "It took longer than I liked for me to see him for what he was, but thankfully I cut him off before we got too far."
@@ -1531,7 +1532,7 @@ if encore_sayoriquestion_1 == True:
     else:
         show monika 1bd at t11 zorder 1
         mc "I wasn't uncomfortable though, that's the thing!"
-        mc "Being with you earlier today and yesterday felt...{w=0.38}right..."
+        mc "Being with you earlier today felt...{w=0.38}right..."
         m "Even though I wasn't expecting it..."
         mc "But so was spending yesterday with [hangout2]..."
 
@@ -1558,7 +1559,7 @@ if encore_sayoriquestion_1 == True:
     "I scoff at Monika's comment."
     show monika 2bf  at t11 zorder 1
     mc "No...{w=0.38}I haven't..."
-    mc "I didn't spend that much time around her on Monday when she was having her 'rainclouds'..."
+    mc "I don't even know if I've helped as much as I should've..."
 
     if hangout2 == "Monika":
         mc "She caught us yesterday..."
@@ -1825,10 +1826,10 @@ else:
     mc "But so was spending yesterday with [hangout2]..."
 
 
-mc "I don't know...{w=0.38}part of me still has feelings for [poem_giver]..."
-mc "And I want to give her a chance...{w=0.38}even if we haven't spent as much time together lately..."
-mc "But I want to make things worth with Sayori..."
-mc "I have a responsbility to try..."
+mc "I don't know...{w=0.38}and part of me still has feelings for [poem_giver]..."
+mc "I kind of want to give her a chance...{w=0.38}even if we haven't spent as much time together lately..."
+mc "But I want to stick with Sayori too..."
+
 
 if hangout1 == "Monika":
     if hangout2 == "Monika":
@@ -1858,7 +1859,7 @@ if hangout1 == "Yuri":
 if hangout1 == "Sayori":
     if hangout2 == "Sayori":
         show monika 1bf  at t11 zorder 1
-        mc "And I'm happy with Sayori..."
+        mc "And I'm happy with her..."
         mc "But, I just still feel that temptation to see who else is out there..."
         mc "It could be anybody..."
 
@@ -2018,7 +2019,9 @@ show monika 1bm  at t11 zorder 1
 "I've lived in this area my whole life, but I don't think I've ever really had an appreciation for it until now..."
 "Being up here to look down at everything really helps calm my nerves."
 "Everything's just so...{w=0.38}peaceful..."
-show cg city_cg_monika
+show monika at thide
+hide monika
+show cg city_cg_monika with dissolve_cg
 "I turn to my right to see Monika elegantly looking out onto the horizon."
 "Even when she's spacing out, she manages to look her best..."
 "The way her emerald eyes glisten in the moonlight..."
@@ -2099,15 +2102,8 @@ show monika 3bn  at t11 zorder 1
 m "A-{w=0.38}alright..."
 show monika 1bd at t11 zorder 1
 m "I know what I was saying earlier does sound far-fetched at best..."
-mc "I mean...{w=0.38}you've clearly put a lot of thought into it..."
-mc "I just don't know if there really is a way to prove what you're saying is true though..."
-show monika 2bc  at t11 zorder 1
-mc "I mean it'd be hard for me to accept that none of this is real or was something pre-determined..."
-mc "That being here with you in this moment isn't real...{w=0.38}this all seems real to me..."
-show monika 1bg  at t11 zorder 1
-m "That is what I kind of wanted to ask you about..."
 show monika 3bd  at t11 zorder 1
-m "Let's just say if you were ever shown evidence that your life was faked..."
+m "But, let's just say if you were ever shown evidence that your life was faked..."
 show monika 3bf  at t11 zorder 1
 m "That everything you've ever known was part of some pre-determined simulation..."
 show monika 2bd  at t11 zorder 1
@@ -2316,8 +2312,15 @@ mc "Yeah...{w=0.38}no problem..."
 "We sit for the next few moments in silence."
 
 if n_love == True and y_love == True:
-    "I feel a resurging wave of guilt crash over me again as I come to terms that I broke Monika's heart."
-    "How could've I been so stupid to blow my one and only chance with her..."
+    jump m_talk1
+
+if n_love == False and y_love == False:
+    jump m_talk2
+
+label m_talk1:
+
+"I feel a resurging wave of guilt crash over me again as I come to terms that I broke Monika's heart."
+"How could've I been so stupid to blow my one and only chance with her..."
 
 if hangout1 == "Monika":
     if hangout2 == "Monika":
@@ -2337,10 +2340,12 @@ if hangout1 != "Monika":
     if hangout2 == "Monika":
         if hangout3 == "Monika":
             m 1o "You know, I always wondered if we'd ever get the chance to really know each other..."
-            m 1p "I was always worried that you found me unapproachable, or something of that nature..."
+            m 1p "I was always worried that you found me unapproachable, or something like that..."
             m 1o "And I understand that..."
             m 1g "But when we started really talking, you just blew away all my expectations..."
             m 2o "Talking to you just felt so...{w=0.38}right..."
+            m 1e "Even though you were shy around me, the more time we spent together, I understood why Sayori was your friend."
+            m 1m "You were kind, funny, and you always tried your best. I admire that in people."
             m 1q "I thought I finally met a boy wouldn't try to use me for his own personal gain..."
             m "I guess I was wrong..."
 
@@ -2348,15 +2353,17 @@ if hangout1 == "Monika":
     if hangout2 != "Monika":
         if hangout3 == "Monika":
             m 1o "You know, I was always holding out hope that maybe we could get to know each other and be more than just friends..."
-            m 1p "I was always worried that you found me unapproachable, or something of that nature..."
+            m 1p "I was always worried that you found me unapproachable, or something like that..."
             m 1o "And I understand that..."
             m 1g "But when we started really talking, you just blew away all my expectations..."
             m 2o "Talking to you just felt so...{w=0.38}right..."
+            m 1e "Even though you were shy around me, the more time we spent together, I understood why Sayori was your friend."
+            m 1m "You were kind, funny, and you always tried your best. I admire that in people."
             m 1g "I was starting to trust you, [player]."
-            m 1q "But on Tuesday, something told me that I was too trusting of you..."
+            m 1q "But on Tuesday, something told me that I was too trusting..."
             m 1r "The way you were with [hangout2] didn't sit well with me, but I did my best to ignore it."
             m 1q "And after we hungout yesterday, I've pretty much had forgotten about what happened..."
-            m "But now, I see that I shouldn't have."
+            m "But now, I see that I shouldn't have forgotten or have trusted you so much."
 
 
 if hangout1 == "Monika":
@@ -2378,14 +2385,13 @@ if hangout1 != "Monika":
     if hangout2 != "Monika":
         if hangout3 == "Monika":
             m 1o "You know, I always wondered if we'd ever get the chance to really know each other..."
-            m 1p "I was always worried that you found me unapproachable, or something of that nature..."
+            m 1p "I was always worried that you found me unapproachable, or something like that..."
             m 1o "And I understand that..."
             m 1m "The others were never as intimidating as I was..."
             m 1q "They didn't have the kind of reputation I did."
             m 1o "But I began to worry that if I ever wanted to talk to you, I'd always have to initate it every single time."
             m 1f "Yesterday was different, you actually came to me..."
             m "And spending some time with you was really nice..."
-            m 1g "But when we started really talking, you just blew away all my expectations..."
 
             if monika_hangout == True:
                 m 1g "But afterwards, when we started really talking during our walk, you just blew away all my expectations..."
@@ -2449,7 +2455,7 @@ mc "I forgive you, Monika."
 
 
 
-if y_love == True
+if y_love == True:
     mc "So long as you never bring up Yuri's cutting like that again..."
     mc "Even if she doesn't do it, you shouldn't have brought it up like that."
     m 2p "I know..."
@@ -2462,7 +2468,7 @@ if y_love == True
     m 1f "No..."
 
 
-if n_love == True
+if n_love == True:
     mc "So long as never bring up Natsuki's home life like that again..."
     mc "In fact, how do you even know about that?"
     m 2p "It's a hunch..."
@@ -2507,37 +2513,59 @@ jump day4_night
 
 
 
-if n_love == False and y_love == False:
-    "I sit there frozen in shock as I attempt to process the situation."
-    "I guess my chances of getting with Monika were better than I thought all along..."
-    "But with how she acted out today, I'm a little shaky on everything..."
+label m_talk2:
+
+"I sit there frozen in shock as I attempt to process the situation."
+"I guess my chances of getting with Monika were better than I thought all along..."
+"But with how she acted out today, I'm a little shaky on everything..."
 
 
 if hangout1 == "Monika":
     if hangout2 == "Monika":
         if hangout3 == "Monika":
-            m 1o "For a while, I thought that maybe we could've had something special..."
-            m 1p "After we spent so much time together, I thought I knew you..."
-            m 1g "I was starting to trust you, [player]."
-            m 1o "You weren't like all the other guys I've dealt with at school..."
+            m 1p "I've been thinking about what we could be for a while now, [player]..."
+            m 1g "Ever since we've started talking, I've never felt better!"
+            m 2m "You haven't failed to put a smile on my face or make me laugh once!"
+            m 1m "I can truly be myself around you. I don't have to act all formal around you..."
+            m 1e "And I know you just don't want me to boost your ego or status around the school..."
+            m 1n "You're definitely not like most guys I've had to put up with..."
+            m 1f "And you've been a fantastic member of the literature club!"
+            m 1p "I guess what I'm trying to say is..."
+            m 1f "I've really enjoyed having you in my club...{w=0.38}and I wouldn't want to lose you!"
 
 if hangout1 != "Monika":
     if hangout2 == "Monika":
         if hangout3 == "Monika":
             m 1o "You know, I always wondered if we'd ever get the chance to really know each other..."
-            m 1p "I was always worried that you found me unapproachable, or something of that nature..."
+            m 1p "I was always worried that you found me unapproachable, or something like that..."
             m 1o "And I understand that..."
             m 1g "But when we started really talking, you just blew away all my expectations..."
             m 2o "Talking to you just felt so...{w=0.38}right..."
+            m 1e "Even though you were shy around me, the more time we spent together, I understood why Sayori was your friend."
+            m 1m "You were kind, funny, and you always tried your best. I admire that in people."
+            m 1q "I thought I finally met a boy wouldn't try to use me for his own personal gain..."
+            m 1f "I know you don't want to hurt any of us. You're not like that!"
+            m 1g "I just hope that we can resolve all this so you can stay in the club..."
+            m 1f "I really enjoy having you there everyday, and I don't know how I'd feel if I knew that we drove you away..."
+
 
 if hangout1 == "Monika":
     if hangout2 != "Monika":
         if hangout3 == "Monika":
             m 1o "You know, I was always holding out hope that maybe we could get to know each other and be more than just friends..."
-            m 1p "I was always worried that you found me unapproachable, or something of that nature..."
+            m 1p "I was always worried that you found me unapproachable, or something like that..."
             m 1o "And I understand that..."
             m 1g "But when we started really talking, you just blew away all my expectations..."
             m 2o "Talking to you just felt so...{w=0.38}right..."
+            m 1e "Even though you were shy around me, the more time we spent together, I understood why Sayori was your friend."
+            m 1m "You were kind, funny, and you always tried your best. I admire that in people."
+            m 1g "I was starting to trust you, [player]."
+            m 1q "But on Tuesday, I started to worry if I was too trusting..."
+            m 1r "The way you were with [hangout2] didn't sit well with me, but I did my best to ignore it."
+            m 1q "And after we hungout yesterday, I've pretty much had forgotten about what happened..."
+            m 1g "Now, I'm just so worried that I won't just lose you as club member..."
+            m 1f "But also as a friend..."
+            m 2f "You've been such a good friend to all of us, and I honestly don't know I'd handle losing you..."
 
 if hangout1 == "Monika":
     if hangout2 == "Monika":
@@ -2547,18 +2575,28 @@ if hangout1 == "Monika":
             m 1g "I was starting to trust you, [player]."
             m 1o "You weren't like all the other guys I've dealt with at school..."
             m 2o "Talking to you just felt so...{w=0.38}right..."
+            m 1g "I was starting to trust you, [player]."
+            m 1r "But when you ran off with [hangout3] yesterday, I thought that something was off..."
+            m "You two were gone for far too long if you were just friends."
+            m 1q "Though at the time, I just tried to ignore it. I told myself I was overeacting."
+            m 3n "And I guess that side of me peeked through earlier as well..."
+            m 1g "I'm not trying to be possessive or anything like that!"
+            m 2p "I just...{w=0.38}really enjoy your company..."
+            m 1f "Truthfully, I've had fun getting to know you. You've been so sweet, kind and relaxed, that I can really feel like myself around you..."
+            m "And you've been a fantastic member of the club. I'd truly hate to lose you..."
 
 
 if hangout1 != "Monika":
     if hangout2 != "Monika":
         if hangout3 == "Monika":
             m 1o "You know, I always wondered if we'd ever get the chance to really know each other..."
-            m 1p "I was always worried that you found me unapproachable, or something of that nature..."
+            m 1p "I was always worried that you found me unapproachable, or something like that..."
             m 1o "And I understand that..."
             m 1m "The others were never as intimidating as I was..."
             m 1q "They didn't have the kind of reputation I did."
             m 1o "But I began to worry that if I ever wanted to talk to you, I'd always have to initate it every single time."
             m 1f "Yesterday was different, you actually came to me..."
+            m "And spending some time with you was really nice..."
 
             if monika_hangout == True:
                 m 1g "But afterwards, when we started really talking during our walk, you just blew away all my expectations..."
@@ -2566,11 +2604,67 @@ if hangout1 != "Monika":
             else:
                 pass
 
+            m 1q "I thought I finally met a boy wouldn't try to use me for his own personal gain..."
+            m 1g "I've been wanting to spend time with you forever now, and now that we did, I want more..."
+            m 1f "I know you don't want to hurt any of us..."
+            m 1g "You aren't like that at all!"
+            m 1g "I just hope that we can resolve all this so you can stay in the club..."
+            m 1f "I really enjoy having you there everyday, and I don't know how I'd feel if I knew that we drove you away..."
 
 
-
-
-
+"My face is flushed with embrassment as Monika finishes her speech."
+"I never expected to have that kind of impact on Monika in such a short time..."
+"I try fumble out some sort of answer."
+show monika 1e
+mc "Well Monika, I...{w=0.38}really appreciate everything you said there..."
+mc "And I don't want to leave the club at all! I love it there, and I love talking to you too!"
+show monika 1f
+mc "But you crossed the line with what you said to [poem_giver]."
+mc "It's not something I'd ever expect to hear coming from someone like you."
+mc "You're better than that."
+m 2p "I know..."
+m 1r "I know I went too far with what I said."
+m 1o "Just something in me...{w=0.38}snapped..."
+show monika 1g
+mc "Well in any case, I really think you two should apologize to each other."
+m 1m "I hope we will..."
+m 1n "I'm holding out hope that everything will be resolved tomorrow."
+show monika 1m
+mc "Are you sure that we can move past all this that soon?"
+mc "I don't think we've ever had a fight this bad..."
+m 1e "Just trust me on this one, okay?"
+mc "I'll try."
+m 1g "So, are you coming back to the club tomorrow?"
+show monika 1f
+"I briefly pause to think it over."
+"Well, if Monika plans to apologize to [poem_giver], I should probably be there to smooth things over with everyone else..."
+show monika 1e
+mc "I'll do it. I should probably apologize to [poem_giver] as well. Getting rejected isn't easy and I led her on when I shouldn't have."
+mc "I should talk to the others to make sure there's no make sure there's no other misunderstandings."
+m 1m "That sounds like a plan."
+m 1g "So..{w=0.38}are we cool?"
+mc "As long promise not to act that way again, and you go through on your promise to apologize, then yes."
+m 1e "That's fair."
+m "Thank you for giving me this chance to talk to you."
+mc "After everything, it's the least that I can do."
+mc "Hope you feel better too!"
+m 2m "Ah, thanks, [player]. I appreciate it."
+show monika 1a
+"I offer Monika a handshake, she outstreches her hand and gently wraps her fingers around mine."
+show monika 1m
+"We awkardley shake hands for a few seconds before we decide that it was a little too formal for us."
+m 2e "Well, I'll see you tomorrow, [player]! Rest up!"
+mc "Thanks, you too!"
+show monika at thide
+hide monika
+"I lead Monika out the door and gently close it behind her."
+"I watch out the window as Monika gracefully walks off to the horizon into the direction of school."
+mc "That wasn't too bad..."
+"I mumble to myself."
+"I'm still a little surprised Monika went out of her way to make sure everything was alright with me."
+"Even though she was awful during that fight, I'm glad that she recongized her mistakes."
+"I just hope everything goes smoothly tomorrow..."
+jump day4_night
 
 
 

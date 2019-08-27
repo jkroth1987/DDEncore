@@ -75,7 +75,7 @@ label day4_start:
             "But I think I've pretty much decided on my feelings for Monika..."
 
             if encore_sayoriquestion_1 == True:
-                "Even if I'm still shaky on the prospect of breaking up with Sayori..."
+                "Though I still don't know if I'd want to end things with Sayori without talking to her first..."
 
             if encore_sayoriquestion_1 == False:
                 pass
@@ -216,8 +216,7 @@ label day4_start:
     if tell_s == True:
         s "Did you have another bad dream last night?"
         "I simply nod my head in disappointment."
-        mc "It was the worst one yet..."
-        mc "It felt so real and-"
+        mc "I don't really want to talk about it right now..."
         show sayori 1g
         s "[player]..."
         show sayori 4g at face
@@ -232,8 +231,8 @@ label day4_start:
         "Sayori and I break our embrace, her warmth quickly being brushed off by the cool morning breeze."
         mc "I have considered seeing my doctor about this."
         mc "Maybe there's a medical explanation for it..."
-        s 2g "Well you need to do whatever you can to make it, [player]."
-        s 4g "I'll support whatever you want to do."
+        s 2g "Well, just do whatever you need to, [player]."
+        s 4g "I'll support you."
         "Well, I guess now would be a good time to bring up my idea for Sayori..."
         mc "I'd like for you to come with me."
         "Sayori eyes me suspiciously."
@@ -244,25 +243,55 @@ label day4_start:
         show sayori 1e
         mc "It's about your rainclouds..."
 
-        if sayori_hangout == True:
-            mc "Remember the idea that I brought up with you last night?"
-            s "Y-{w=0.38}yeah?"
-            mc "It would mean alot to me if we both tried to solve our problems together..."
-            mc "I know you want me to get better, and well..."
-            show sayori 1k
-            mc "I'd like to be able to return the favor somehow..."
-            "Sayori uncomfortably gazes off into the distance."
-            s "I'm...{w=0.38}still thinking it over, [player]..."
-            "I still don't quite understand Sayori's reluctance to getting help, but given that this is a pretty big deal for her, I need to try to be as patient as possible."
-            mc "It's okay, it's not like I'm heading there after school or anything..."
-            mc "Don't feel rushed."
-            show sayori 1d
-            "Sayori flashes me a weak smile."
-            mc "Come on, let's get going."
-            "Without another word said, Sayori and I begin our daily commute to school."
-            jump day4_school
+        if hangout3 == "Sayori":
 
-        if sayori_hangout == False:
+            if sayori_hangout == True:
+                mc "Remember the idea that I brought up with you last night?"
+                s "Y-{w=0.38}yeah?"
+                mc "It would mean alot to me if we both tried to solve our problems together..."
+                mc "I know you want me to get better, and well..."
+                show sayori 1k
+                mc "I'd like to be able to return the favor somehow..."
+                "Sayori uncomfortably gazes off into the distance."
+                s "I'm...{w=0.38}still thinking it over, [player]..."
+                "I still don't quite understand Sayori's reluctance to getting help, but given that this is a pretty big deal for her, I need to try to be as patient as possible."
+                mc "It's okay, it's not like I'm heading there after school or anything..."
+                mc "Don't feel rushed."
+                show sayori 1d
+                "Sayori flashes me a weak smile."
+                mc "Come on, let's get going."
+                "Without another word said, Sayori and I begin our daily commute to school."
+                jump day4_school
+
+            if sayori_hangout == False:
+                s "What about them?"
+                mc "Look...{w=0.38}have you ever thought about seeing someone about your depression?"
+                show sayori 1k
+                "There's a long, uncomfortable pause between us."
+                "Sayori lets out a sigh."
+                s 1f "It's crossed my mind a few times over the years..."
+                s 1g "Why are you asking me this?"
+                mc "Well..."
+                mc "I don't think just me being around you is going to make your rainclouds go away..."
+                mc "There needs to be a long term solution to this..."
+                mc "So, I'm going to head to the doctors this weekened..."
+                mc "Why don't you come with me?"
+                show sayori 1k
+                "Sayori uncomfortably gazes off into the distance."
+                s "Well..."
+                s "I'll think about it, okay?"
+                "I don't understand Sayori's reluctance to getting help..."
+                "But if she's thought about it before and still hasn't gone, there has to be some sort of reason..."
+                "I'll ask her about it later, the least I can do right now is be patient with her."
+                mc "It's okay, it's not like I'm heading there after school or anything..."
+                mc "Don't feel rushed."
+                show sayori 1d
+                "Sayori flashes me a weak smile."
+                mc "Come on, let's get going."
+                "Without another word said, Sayori and I begin our daily commute to school."
+                jump day4_school
+
+        if hangout3 != "Sayori":
             s "What about them?"
             mc "Look...{w=0.38}have you ever thought about seeing someone about your depression?"
             show sayori 1k
@@ -5614,18 +5643,18 @@ if y_love == False:
 
 label determine_offer:
     $ offer_reason = "Processing..."
-    
+
     if encore_sayoriquestion_1 == True:
         $ offer_reason = "Sayori confessed to me."
         jump s_offer
 
     #Sayori
-        
+
     # Spent two days with Sayori?
     if (hangout1 == "Sayori" and hangout2 == "Sayori") or (hangout1 == "Sayori" and hangout3 == "Sayori") or (hangout2 == "Sayori" and hangout3 == "Sayori"):
         $ offer_reason = "I hung out with Sayori twice."
         jump s_offer
-    
+
     #Monika
     # Spent two days with Monika?
     if (hangout1 == "Monika" and hangout2 == "Monika") or (hangout1 == "Monika" and hangout3 == "Monika") or (hangout2 == "Monika" and hangout3 == "Monika"):
@@ -5633,7 +5662,7 @@ label determine_offer:
         jump m_offer
 
     #Natsuki
-        
+
     # First question! Spent two days with Natsuki?
     if (hangout1 == "Natsuki" and hangout2 == "Natsuki") or (hangout1 == "Natsuki" and hangout3 == "Natsuki") or (hangout2 == "Natsuki" and hangout3 == "Natsuki"):
         # Did Natsuki confess earlier?
@@ -5646,7 +5675,7 @@ label determine_offer:
                 $ real_choice = hangout2
             else:
                 $ real_choice = hangout3
-            
+
             $ offer_reason = "I hung out with Natsuki twice, but she confessed. Choosing " + real_choice + "."
             if real_choice == "Sayori":
                 jump s_offer
@@ -5654,7 +5683,7 @@ label determine_offer:
                 jump m_offer
             elif real_choice == "Yuri":
                 jump y_offer
-        
+
         # Either Natsuki didn't confess, or we somehow got here after hanging out with Natsuki for 3 days
         $ offer_reason = "I hung out with Natsuki twice."
         jump n_offer
@@ -5673,15 +5702,15 @@ label determine_offer:
                 $ real_choice = hangout2
             else:
                 $ real_choice = hangout3
-                
-            $ offer_reason = "I hung out with Yuri twice, but she confessed. Choosing " + real_choice + "."                
+
+            $ offer_reason = "I hung out with Yuri twice, but she confessed. Choosing " + real_choice + "."
             if real_choice == "Sayori":
                 jump s_offer
             elif real_choice == "Monika":
                 jump m_offer
             elif real_choice == "Natsuki":
                 jump n_offer
-        
+
         # Either Yuri didn't confess, or we somehow got here after hanging out with Yuri for 3 days
         $ offer_reason = "I hung out with Yuri twice."
         jump y_offer
@@ -5690,7 +5719,7 @@ label determine_offer:
     #Mixed Case
 
     else:
-        
+
         $ offer_reason = "Mix of three, choose day 3: " + hangout3 + "."
         $ girl_to_check = hangout3
         if girl_to_check == poem_giver:
