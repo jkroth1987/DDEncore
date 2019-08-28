@@ -826,28 +826,7 @@ if sayori_hangout == True:
     mc "Not on important things, no."
     show sayori 1e
 
-if sayori_hangout == False:
-    mc "How come you didn't tell me this last night?"
-    mc "I would've came over and helped..."
-    s 1l "Well you wanted some space to yourself, so I didn't want to get in the way..."
-    "I once again shake my head in disappointment."
-    show sayori 1e
-    mc "Sayori, I would've happily held off on what I was doing to help you."
-
-    if encore_sayoriquestion_1 == True:
-        mc "I love you that much..."
-
-    if encore_sayoriquestion_1 == False:
-        mc "I care about you that much..."
-
-    s 1l "I mean, don't you think I can handle things by myself?"
-    stop music
-    mc "Not really, no."
-    show sayori 1e
-
-
-
-if natsuki_hangout == True or monika_hangout == True or yuri_hangout == True:
+elif natsuki_hangout == True or monika_hangout == True or yuri_hangout == True:
     show sayori 1e
     mc "How come you didn't study last night?"
     mc "I would've helped..."
@@ -858,10 +837,10 @@ if natsuki_hangout == True or monika_hangout == True or yuri_hangout == True:
     if natsuki_hangout == True:
         mc "Natsuki and I went to the bookstore to pick up the latest edition of Parafit girls..."
 
-    if monika_hangout == True:
+    elif monika_hangout == True:
         mc "Monika and I just took a walk together..."
 
-    if yuri_hangout == True:
+    elif yuri_hangout == True:
         mc "Yuri and I went to check out this new nature perserve that just opened..."
 
     s 1d "I believe you..."
@@ -879,20 +858,7 @@ if natsuki_hangout == True or monika_hangout == True or yuri_hangout == True:
             s 1l "Don't you think I can handle important things like this on my own?"
             stop music
             mc "Not really, no."
-
-
-    if hangout1 != "Sayori":
-        if hangout2 == "Sayori":
-            mc "If you told me you had a test, I would've happily helped out..."
-            s "Then I would've kept you from spending time around [hangout3]..."
-            mc "It doesn't matter, Sayori."
-            s 1l "Don't you think I can handle important things like this on my own?"
-            stop music
-            mc "Not really, no."
-
-
-    if hangout1 == "Sayori":
-        if hangout2 != "Sayori":
+        else: # hangout1 == "Sayori", hangout 2 != "Sayori"
             s 1l "Well these past 2 days I've certainly felt like one..."
             s 1g "You really haven't been around to help me..."
             mc "I know, and I'm sorry..."
@@ -902,8 +868,15 @@ if natsuki_hangout == True or monika_hangout == True or yuri_hangout == True:
             mc "Not really, no."
 
 
-    if hangout1 != "Sayori":
-        if hangout2 != "Sayori":
+    else: # hangout1 != "Sayori"
+        if hangout2 == "Sayori":
+            mc "If you told me you had a test, I would've happily helped out..."
+            s "Then I would've kept you from spending time around [hangout3]..."
+            mc "It doesn't matter, Sayori."
+            s 1l "Don't you think I can handle important things like this on my own?"
+            stop music
+            mc "Not really, no."
+        else: # Didn't hang out with Sayori on day 1 or 2
             s 1l "I'm having a hard time believing that, [player]..."
             s 1g "It's not like you've been around me all that much lately..."
             mc "I know..."
@@ -911,6 +884,25 @@ if natsuki_hangout == True or monika_hangout == True or yuri_hangout == True:
             s "Don't you think I can handle things by myself?"
             stop music
             mc "Not really, no."
+
+else: # No hangout variable was true
+    mc "How come you didn't tell me this last night?"
+    mc "I would've came over and helped..."
+    s 1l "Well you wanted some space to yourself, so I didn't want to get in the way..."
+    "I once again shake my head in disappointment."
+    show sayori 1e
+    mc "Sayori, I would've happily held off on what I was doing to help you."
+
+    if encore_sayoriquestion_1 == True:
+        mc "I love you that much..."
+
+    if encore_sayoriquestion_1 == False:
+        mc "I care about you that much..."
+
+    s 1l "I mean, don't you think I can handle things by myself?"
+    stop music
+    mc "Not really, no."
+    show sayori 1e
 
 
 
