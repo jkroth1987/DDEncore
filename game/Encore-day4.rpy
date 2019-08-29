@@ -828,7 +828,69 @@ if sayori_hangout == True:
     mc "Not on important things, no."
     show sayori 1e
 
-if sayori_hangout == False:
+elif natsuki_hangout == True or monika_hangout == True or yuri_hangout == True:
+    show sayori 1e
+    mc "How come you didn't study last night?"
+    mc "I would've helped..."
+    s 1l "I saw you walk off with [hangout3] and I didn't want to disturb you guys..."
+    "I feel my body nearly tremble with horror as I quickly become afraid at the prospect that Sayori might be getting the completely wrong idea here..."
+    mc "We just hungout, Sayori..."
+
+    if natsuki_hangout == True:
+        mc "Natsuki and I went to the bookstore to pick up the latest edition of Parafit girls..."
+
+    elif monika_hangout == True:
+        mc "Monika and I just took a walk together..."
+
+    elif yuri_hangout == True:
+        mc "Yuri and I went to check out this new nature perserve that just opened..."
+
+    s 1d "I believe you..."
+    mc "You would've been welcome tag along, we wouldn't have mind..."
+    s 1y "I wouldn't have wanted to get in the way of you two..."
+    mc "Sayori, you wouldn't have and you know it..."
+    mc "You're not a burden."
+
+    if hangout1 == "Sayori":
+        if hangout2 == "Sayori":
+            mc "Had I known you had a test coming up, I would've been willing to drop what I was doing and help you..."
+            s "Then you wouldn't have been able to spend time with [hangout3]..."
+            mc "It doesn't matter, Sayori."
+            mc "There's always another time."
+            s 1l "Don't you think I can handle important things like this on my own?"
+            stop music
+            mc "Not really, no."
+        else: # hangout1 == "Sayori", hangout 2 != "Sayori"
+            s 1l "Well these past 2 days I've certainly felt like one..."
+            s 1g "You really haven't been around to help me..."
+            mc "I know, and I'm sorry..."
+            s 1l "So I have a hard time believing that you would want to willingly help me with something important now."
+            s "Don't you think I can handle things by myself?"
+            stop music
+            mc "Not really, no."
+
+
+    else: # hangout1 != "Sayori"
+        if hangout2 == "Sayori":
+            mc "If you told me you had a test, I would've happily helped out..."
+            s "Then I would've kept you from spending time around [hangout3]..."
+            mc "It doesn't matter, Sayori."
+            s 1l "Don't you think I can handle important things like this on my own?"
+            stop music
+            mc "Not really, no."
+        else: # Didn't hang out with Sayori on day 1 or 2
+            s 1l "I'm having a hard time believing that, [player]..."
+            s 1g "It's not like you've been around me all that much lately..."
+            mc "I know..."
+            s 1l "So I kind of have a hard time believing that you would want to willingly help out now..."
+            s "Don't you think I can handle things by myself?"
+            stop music
+            mc "Not really, no."
+
+<<<<<<< HEAD
+############################################################
+=======
+else: # No hangout variable was true
     mc "How come you didn't tell me this last night?"
     mc "I would've came over and helped..."
     s 1l "Well you wanted some space to yourself, so I didn't want to get in the way..."
@@ -848,73 +910,7 @@ if sayori_hangout == False:
     show sayori 1e
 
 
-
-if natsuki_hangout == True or monika_hangout == True or yuri_hangout == True:
-    show sayori 1e
-    mc "How come you didn't study last night?"
-    mc "I would've helped..."
-    s 1l "I saw you walk off with [hangout3] and I didn't want to disturb you guys..."
-    "I feel my body nearly tremble with horror as I quickly become afraid at the prospect that Sayori might be getting the completely wrong idea here..."
-    mc "We just hungout, Sayori..."
-
-    if natsuki_hangout == True:
-        mc "Natsuki and I went to the bookstore to pick up the latest edition of Parafit girls..."
-
-    if monika_hangout == True:
-        mc "Monika and I just took a walk together..."
-
-    if yuri_hangout == True:
-        mc "Yuri and I went to check out this new nature perserve that just opened..."
-
-    s 1d "I believe you..."
-    mc "You would've been welcome tag along, we wouldn't have mind..."
-    s 1y "I wouldn't have wanted to get in the way of you two..."
-    mc "Sayori, you wouldn't have and you know it..."
-    mc "You're not a burden."
-
-    if hangout1 == "Sayori":
-        if hangout2 == "Sayori":
-            mc "Had I known you had a test coming up, I would've been willing to drop what I was doing and help you..."
-            s "Then you wouldn't have been able to spend time with [hangout3]..."
-            mc "It doesn't matter, Sayori."
-            mc "There's always another time."
-            s 1l "Don't you think I can handle important things like this on my own?"
-            stop music
-            mc "Not really, no."
-
-
-    if hangout1 != "Sayori":
-        if hangout2 == "Sayori":
-            mc "If you told me you had a test, I would've happily helped out..."
-            s "Then I would've kept you from spending time around [hangout3]..."
-            mc "It doesn't matter, Sayori."
-            s 1l "Don't you think I can handle important things like this on my own?"
-            stop music
-            mc "Not really, no."
-
-
-    if hangout1 == "Sayori":
-        if hangout2 != "Sayori":
-            s 1l "Well these past 2 days I've certainly felt like one..."
-            s 1g "You really haven't been around to help me..."
-            mc "I know, and I'm sorry..."
-            s 1l "So I have a hard time believing that you would want to willingly help me with something important now."
-            s "Don't you think I can handle things by myself?"
-            stop music
-            mc "Not really, no."
-
-
-    if hangout1 != "Sayori":
-        if hangout2 != "Sayori":
-            s 1l "I'm having a hard time believing that, [player]..."
-            s 1g "It's not like you've been around me all that much lately..."
-            mc "I know..."
-            s 1l "So I kind of have a hard time believing that you would want to willingly help out now..."
-            s "Don't you think I can handle things by myself?"
-            stop music
-            mc "Not really, no."
-
-############################################################
+>>>>>>> 64e42c16920cb5e08f9e3e708f7b163d6be2f8eb
 
 show sayori 1e
 "Sayori stares at me as the air between us suddenly becomes unusally heavy."
