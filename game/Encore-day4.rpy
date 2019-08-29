@@ -119,7 +119,7 @@ label day4_start:
     if hangout3 == "Sayori":
 
         if sayori_hangout == True:
-            "I think I've settled on my feelingd for Sayori at this point..."
+            "I think I've settled on my feelings for Sayori at this point..."
 
             if encore_sayoriquestion_1 == True:
                 "And I don't see a reason to break up with her..."
@@ -128,7 +128,7 @@ label day4_start:
                 "I do think that I could at least try to give her a chance, if she's still willing..."
 
         if sayori_hangout == False:
-            "I think I've settled on my feelingd for Sayori at this point..."
+            "I think I've settled on my feelings for Sayori at this point..."
 
             if encore_sayoriquestion_1 == True:
                 "And I don't see a reason to break up with her..."
@@ -806,6 +806,8 @@ show sayori 5a
 s "I...{w=0.38}forgot we had one until last night..."
 "I facepalm."
 
+#Problem: Ren'Py not executing command
+####################################
 if sayori_hangout == True:
     show sayori 1e
     mc "How come you didn't tell me this last night?"
@@ -912,7 +914,7 @@ if natsuki_hangout == True or monika_hangout == True or yuri_hangout == True:
             stop music
             mc "Not really, no."
 
-
+############################################################
 
 show sayori 1e
 "Sayori stares at me as the air between us suddenly becomes unusally heavy."
@@ -1006,7 +1008,7 @@ if poem_giver == "Natsuki":
     "I recluctantly start walking towards the door with Natsuki as my mind begins racing with all sorts of possibilities for why she wants to talk to me."
     show monika 1c at t21 zorder 1
     show natsuki 1g at t22 zorder 2
-    "However, were stopped right at the doorway by Monika, who looks on at us with a curious expression."
+    "However, we're stopped right at the doorway by Monika, who looks on at us with a curious expression."
     m 2d "Where are you two going?"
     n 5f "It's not important, Monika! Move!"
     m 2g "Excuse me?"
@@ -1066,10 +1068,9 @@ if poem_giver == "Yuri":
     y 3q "I'd rather that our discussion have some privacy."
     mc "Alright..."
     "I recluctantly start walking towards the door with Yuri as my mind begins racing with all sorts of possibilities for why she wants to talk to me."
-
     show monika 1c at t21 zorder 1
     show yuri 1f at t22 zorder 2
-    "However, were stopped right at the doorway by Monika, who looks on at us with a curious expression."
+    "However, we're stopped right at the doorway by Monika, who looks on at us with a curious expression."
     m 2d "Where are you two off to?"
     y 1h "Not now, Monika..."
     m 2g "Excuse me?"

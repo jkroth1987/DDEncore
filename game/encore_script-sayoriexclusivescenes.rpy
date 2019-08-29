@@ -5298,7 +5298,7 @@ show sayori 2bq
 "I try to look away from Sayori's mouth as I take in my next bite."
 "I'm still surprised with how well the taste of the anchovies mixes in with the curst and sauce!"
 "It all mixes together for a surpsingly satisfying flavour! Who knew anchoives mixed in with bread and sauce could be so tasty?!?"
-"I'm defintley going to have to get this again at some point..."
+"I'm definitely going to have to get this again at some point..."
 "I continue to pick away at the pizza while Sayori seems to gobble down slices left and right."
 "Even as a kid, Sayori's always managed to consume the craziest amount of food in the shortest amount of time."
 "Hopefully there'll be some pizza left for me to eat before I decide to tap out..."
@@ -5313,7 +5313,7 @@ show sayori 1bq
 "Eventually, Sayori finishes the last slice of pizza, leaning back in her chair with satisfaction."
 mc "So...{w=0.38}I take it you enjoyed it!"
 s 1bx "Yeah! It was really good!"
-s 1bd "You seemed like you enjoyed the piza too!"
+s 1bd "You seemed like you enjoyed the pizza too!"
 mc "Well hey, we both know Gomaya's has the best pizza in town!"
 s 4br "And the best ice cream!"
 
@@ -5807,7 +5807,7 @@ if encore_sayoriquestion_1 == True:
 if encore_sayoriquestion_1 == False:
     "This is probably the closest I've felt to being a couple with her..."
 
-"Though eventually Sayoru is forced to let go as we stop at our houses."
+"Though eventually Sayori is forced to let go as we stop at our houses."
 show sayori 1by at t11 zorder 1
 s "I'll...{w=0.38}see you tomorrow, [player]..."
 "I can still tell she's flustered over the walk back."

@@ -2201,7 +2201,7 @@ label day3_arrival:
     "After searching the entire bin, I wasn’t able to find Natsuki’s manga."
     "I call out to Natsuki."
     mc "Any luck in the closet?"
-    show natsuki 42bb at t11 zorder 1
+    show natsuki 42b at t11 zorder 1
     "Natsuki emerges from the closet with a dejected look."
     n 42c "No..."
     n 42a "How about you?"

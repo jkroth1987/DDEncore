@@ -7710,7 +7710,7 @@ if poem_giver == "Yuri":
         mc "Yuri, it's not that I-"
         show yuri at thide
         hide yuri
-        "Before I can finish my sentence, Yuri walks back to hear seat and resumes reading her book."
+        "Before I can finish my sentence, Yuri walks back to her seat and resumes reading her book."
         "Fortunately, it doesn't appear that anybody's noticed the incident that just took place between us."
         "I let out as a sigh as I walk over to Sayori, who seems to have just finished packing her things."
         show sayori 1a at t11 zorder 1
@@ -7768,7 +7768,7 @@ if poem_giver == "Yuri":
         mc "Yuri, it's not that I-"
         show yuri at thide
         hide yuri
-        "Before I can finish my sentence, Yuri walks back to hear seat and resumes reading her book."
+        "Before I can finish my sentence, Yuri walks back to her seat and resumes reading her book."
         "Fortunately, it doesn't appear that anybody's noticed the incident that just took place between us."
         "I let out as a sigh as I walk over to Sayori, who seems to have just finished packing her things."
         show sayori 1a at t11 zorder 1
@@ -8369,7 +8369,7 @@ if poem_giver == "Yuri":
     mc "Yuri, it's not that I-"
     show yuri at thide
     hide yuri
-    "Before I can finish my sentence, Yuri walks back to hear seat and resumes reading her book."
+    "Before I can finish my sentence, Yuri walks back to her seat and resumes reading her book."
     "Fortunately, it doesn't appear that anybody's noticed the incident that just took place between us."
     "I let out as a sigh as I walk over to Sayori, who seems to have just finished packing her things."
     show sayori 1a at t11 zorder 1
@@ -10431,7 +10431,7 @@ show monika 1bb at t11 zorder 1
 m "I mean, you might be walking and just have a new idea just dawn on you!"
 show monika 1bj at t11 zorder 1
 m "It's happened to me plenty of times!"
-mc "Well, if it's worked for you, it'll defintley work for me..."
+mc "Well, if it's worked for you, it'll definitely work for me..."
 show monika 2be  at t11 zorder 1
 "There's a brief pause between us as another breeze gently blows past us."
 "Seeing Monika's hair flow in the wind manages to mesmerize me."
@@ -12989,7 +12989,7 @@ mc "H-{w=0.38}hello?!?!"
 play sound "sfx/closet-open.ogg"
 scene black
 with wipeleft_scene
-"Yeah...{w=0.38}I'm defintley screwed now..."
+"Yeah...{w=0.38}I'm definitely screwed now..."
 "This pretty much qualifies as trespassing."
 "I reclutantly call out again."
 mc "Hello?!?"
@@ -13067,7 +13067,7 @@ mc "..."
 "How I apparently sleep walked to her house and now this..."
 
 if tell_s == True:
-    "Once Sayori hears about this, she's defintley going to make me see someone about this..."
+    "Once Sayori hears about this, she's definitely going to make me see someone about this..."
 
 if tell_s == False:
     "I can't keep this from Sayori, she needs to know about this, and all these weird dreams I've been having..."

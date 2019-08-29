@@ -3017,7 +3017,7 @@ mc "I mean, Sayori and I live pretty close to school, so we always walk there."
 
 if encore_festivalquestion_2 == "Yuri":
     y 3ba "Yes, I do remember your house!"
-    y 3bj "I was actually pretty surprise with how close you were to school!"
+    y 3bj "I was actually pretty surprised with how close you were to school!"
     mc "I take it you took the train to get all the way out here."
     show yuri 1bc at t11 zorder 1
     "Yuri simply nods her head."
@@ -3062,7 +3062,7 @@ y 2bf "Yes, why?"
 mc "Well...{w=0.38}I figured this would be a pretty good time to read some more!"
 mc "I imagine we could knock out a few chapters before we get there."
 y 2bb "That's actually a great idea, [player]!"
-y 2ba "We'll defintley have time to finish the next chapter at the very least!"
+y 2ba "We'll definitely have time to finish the next chapter at the very least!"
 mc "Sounds good to me!"
 show yuri 3bc
 "Yuri joyfully opens her bag and pulls out the copy of Portrait of Markov and puts the book between us, much like how we did earlier."
@@ -3076,9 +3076,9 @@ with wipeleft_scene
 "After about an hour's worth of reading, we finally reach our stop and disembark from the train."
 "Yuri and I end up having to walk a dozen blocks to get to the entrance of the nature perserve, but considering that it was a nice day, it wasn't too much of an issue for us."
 "We mostly spent the duration of the walk talking about the events of the few chapters we managed to read."
-"I'm still surprised that we're almost getting close to the end of the book! It's defintley been one of the better books I've read over the last few years."
+"I'm still surprised that we're almost getting close to the end of the book! It's definitely been one of the better books I've read over the last few years."
 "After a good twenty minutes of walking, we finally reach the entrance to the perserve."
-"I offered to pay the entry fee, but it turned out that Yuri had gotten the tickets in advance, so were able to walk right in."
+"I offered to pay the entry fee, but it turned out that Yuri had gotten the tickets in advance, so we were able to walk right in."
 "I was immediately blown away with just how massive the perserve was, and it was all open space!"
 "Yuri and I opted to travel this one trail that deviated from the main path and took us deep into the perserve."
 "As we we're walking, I was sure to take in all my surroundings."
@@ -3091,7 +3091,7 @@ mc "This is everything you said it'd be and more!"
 y 3bd "That's great to hear! I'm glad you're enjoying this experience!"
 
 if encore_sayoriquestion_1 == True:
-    mc "Well hey...{w=0.38}being here with you defintley makes this much more enjoyable..."
+    mc "Well hey...{w=0.38}being here with you definitely makes this much more enjoyable..."
     show yuri 4be
     "Yuri immediately blushes, though I can't tell if it's out of shock or flattery."
     "Part of me immediately regrets the way I worded that as well..."
@@ -3176,7 +3176,7 @@ if encore_festivalquestion_2 == "Natsuki":
             "Her long, violet hair flowing in the wind..."
             "The sound of her giggling echoing through the air..."
             "And how rosy her cheeks are right now..."
-            "If this the care-free side of Yuri...{w=0.38}I could defintley get used to this!"
+            "If this the care-free side of Yuri...{w=0.38}I could definitely get used to this!"
 
 
     if hangout1 == "Yuri":
@@ -3200,7 +3200,7 @@ if encore_festivalquestion_2 == "Natsuki":
             "Her long, violet hair flowing in the wind..."
             "The sound of her giggling echoing through the air..."
             "And how rosy her cheeks are right now..."
-            "If this is what Yuri's always been like, I should defintley spend more time with her..."
+            "If this is what Yuri's always been like, I should definitely spend more time with her..."
 
 
 
@@ -3255,7 +3255,7 @@ if encore_festivalquestion_2 == "Yuri":
             "Her long, violet hair flowing in the wind..."
             "The sound of her giggling echoing through the air..."
             "And how rosy her cheeks are right now..."
-            "I should defintley spend more time with her..."
+            "I should definitely spend more time with her..."
 
 
 
@@ -3270,9 +3270,9 @@ show yuri 3bu
 "But the butterfly ends up flying away into the treeline, leaving Yuri brightly blushing."
 mc "I guess you were right about the butterflies!"
 y 3bs "That was truly one of the best experiences I've ever had with them!"
-y 3bd "I felt like I was a little girl on then, playing in our backyard chasing and playing with them!"
+y 3bd "It really brought back some of my childhood memories of when I used to play in my old backyard!"
 show yuri 1ba
-mc "Well, I'm glad you enjoyed yourself Yuri!"
+mc "Well, I'm glad you enjoyed yourself, Yuri!"
 y 3bq "Sorry that I couldn't really share the experience with you..."
 mc "Ah, don't worry about it! I'm sure we'll run into more along the way!"
 mc "Besides, I didn't want to disturb the moment with how cute you two looked!"
@@ -3484,7 +3484,7 @@ if encore_sayoriquestion_1 == True:
 
 
 if encore_sayoriquestion_1 == False:
-    "I defintley don't feel ready to confess my feelings for her..."
+    "I definitely don't feel ready to confess my feelings for her..."
     "Especially since I got Natsuki to deal with..."
 
 "I decide to answer indirectly, figuring that it'd be my best bet."
@@ -3662,7 +3662,7 @@ hide yuri
 "I simply lean back in my seat, still dazed over the experience I've had with her today."
 "I'm still baffled about how I managed to turn today around and ended on a postive note with her!"
 "There really isn't anyone like Yuri..."
-"And I can defintley say she likes me..."
+"And I can definitely say she likes me..."
 "I know I like her back..."
 "But do I have the will to act on it?"
 "These thoughts continue to swirl in my head as the train starts up again."
