@@ -3283,32 +3283,32 @@ label s_share:
                     if poem_giver == "Natsuki":
                         "Especially since Natsuki's been on my mind..."
                         "And now that I know she likes me back, I just don't know what to do..."
+                        jump s_converge2
 
                 if hangout2 == "Natsuki":
                     if poem_giver == "Yuri":
                         "Especially since Natsuki's been on my mind..."
                         "And now that I know Yuri likes me back, I just don't know what to do..."
+                        jump s_converge2
 
                 if hangout2 == "Yuri":
                     if poem_giver == "Natsuki":
                         "Especially since Yuri's been on my mind..."
-                        "And now that I know Natsuki ikes me back, I just don't know what to do..."
+                        "And now that I know Natsuki likes me back, I just don't know what to do..."
+                        jump s_converge2
 
                 if hangout2 == "Yuri":
                     if poem_giver == "Yuri":
                         "Especially since Yuri's been on my mind..."
                         "And now that I know she likes me back, I just don't know what to do..."
+                        jump s_converge2
 
                 if hangout2 == "Monika":
                     if poem_giver == "Yuri" or poem_giver == "Natsuki":
                         "Especially since Monika's been on my mind..."
                         "Not to mention I know now that [poem_giver] likes me..."
+                        jump s_converge2
 
-                mc "I guess we just need to see what the future holds, Sayori..."
-                mc "Not everything is set in stone..."
-                s 1h "What do you mean?"
-                mc "I mean that-"
-                jump day3_sconverge
 
 
         if hangout1 == "Natsuki" or hangout1 == "Yuri" or hangout1 == "Monika":
@@ -3319,32 +3319,33 @@ label s_share:
                     if poem_giver == "Natsuki":
                         "Especially since Natsuki's been on my mind..."
                         "And now that I know she likes me back, I just don't know what to do..."
+                        jump s_converge2
 
                 if hangout1 == "Natsuki":
                     if poem_giver == "Yuri":
                         "Especially since Natsuki's been on my mind..."
                         "And now that I know Yuri likes me back, I just don't know what to do..."
+                        jump s_converge2
 
                 if hangout1 == "Yuri":
                     if poem_giver == "Natsuki":
                         "Especially since Yuri's been on my mind..."
-                        "And now that I know Natsuki ikes me back, I just don't know what to do..."
+                        "And now that I know Natsuki likes me back, I just don't know what to do..."
+                        jump s_converge2
 
                 if hangout1 == "Yuri":
                     if poem_giver == "Yuri":
                         "Especially since Yuri's been on my mind..."
                         "And now that I know she likes me back, I just don't know what to do..."
+                        jump s_converge2
 
                 if hangout1 == "Monika":
                     if poem_giver == "Yuri" or poem_giver == "Natsuki":
                         "Especially since Monika's been on my mind..."
                         "Not to mention I know now that [poem_giver] likes me..."
+                        jump s_converge2
 
-                mc "I guess we just need to see what the future holds, Sayori..."
-                mc "Not everything is set in stone..."
-                s 1h "What do you mean?"
-                mc "I mean that-"
-                jump day3_sconverge
+
 
             if hangout1 == "Natsuki" or hangout1 == "Yuri" or hangout1 == "Monika":
                 if hangout2 == "Natsuki" or hangout2 == "Yuri" or hangout2 == "Monika":
@@ -3354,57 +3355,69 @@ label s_share:
                         if poem_giver == "Natsuki":
                             "Especially since Natsuki's been on my mind..."
                             "And now that I know she likes me back, I just don't know what to do..."
+                            jump s_converge2
 
                     if hangout1 == "Natsuki":
                         if poem_giver == "Yuri":
                             "Especially since Natsuki's been on my mind..."
                             "And now that I know Yuri likes me back, I just don't know what to do..."
+                            jump s_converge2
 
                     if hangout1 == "Yuri":
                         if poem_giver == "Natsuki":
                             "Especially since Yuri's been on my mind..."
-                            "And now that I know Natsuki ikes me back, I just don't know what to do..."
+                            "And now that I know Natsuki likes me back, I just don't know what to do..."
+                            jump s_converge2
 
                     if hangout1 == "Yuri":
                         if poem_giver == "Yuri":
                             "Especially since Yuri's been on my mind..."
                             "And now that I know she likes me back, I just don't know what to do..."
+                            jump s_converge2
 
                     if hangout1 == "Monika":
                         if poem_giver == "Yuri" or poem_giver == "Natsuki":
                             "Especially since Monika's been on my mind..."
                             "Not to mention I know now that [poem_giver] likes me..."
+                            jump s_converge2
 
                     if hangout2 == "Natsuki":
                         if poem_giver == "Natsuki":
                             "Especially since Natsuki's been on my mind..."
                             "And now that I know she likes me back, I just don't know what to do..."
+                            jump s_converge2
 
                     if hangout2 == "Natsuki":
                         if poem_giver == "Yuri":
                             "Especially since Natsuki's been on my mind..."
                             "And now that I know Yuri likes me back, I just don't know what to do..."
+                            jump s_converge2
 
                     if hangout2 == "Yuri":
                         if poem_giver == "Natsuki":
                             "Especially since Yuri's been on my mind..."
-                            "And now that I know Natsuki ikes me back, I just don't know what to do..."
+                            "And now that I know Natsuki likes me back, I just don't know what to do..."
+                            jump s_converge2
 
                     if hangout2 == "Yuri":
                         if poem_giver == "Yuri":
                             "Especially since Yuri's been on my mind..."
                             "And now that I know she likes me back, I just don't know what to do..."
+                            jump s_converge2
 
                     if hangout2 == "Monika":
                         if poem_giver == "Yuri" or poem_giver == "Natsuki":
                             "Especially since Monika's been on my mind..."
                             "Not to mention I know now that [poem_giver] likes me..."
+                            jump s_converge2
 
-                    mc "I guess we just need to see what the future holds, Sayori..."
-                    mc "Not everything is set in stone..."
-                    s 1h "What do you mean?"
-                    mc "I mean that-"
-                    jump day3_sconverge
+label s_converge2:
+
+mc "I guess we just need to see what the future holds, Sayori..."
+mc "Not everything is set in stone..."
+s 1h "What do you mean?"
+mc "I mean that-"
+jump day3_sconverge
 
 
 
@@ -4548,7 +4561,7 @@ label day3_sconverge:
         s 2g "I mean, I don’t exactly want to scream out to the world that we’re together."
         mc "Aww, you don’t want to show me off?"
         s 1y "N{w=0.38}-no it’s not that..."
-        s 1l "It’s just that all my friends who’re in relationships are going to overwhelm with me advice and congratulations..."
+        s 1l "It’s just that all my friends who are in relationships are going to overwhelm with me advice and congratulations..."
         s 1g "And I don’t know if I’m prepared to deal with all that right now..."
         mc "We’d definitely be the talk of the school for a good week at least..."
         s 1y "Yeah..."
@@ -4590,7 +4603,7 @@ label day3_sconverge:
         s "Y-{w=0.38}yeah..."
         s 1d "I was just talking about how I think [player] is a good friend!"
         m 4b "Well that's very nice of you to do, Sayori!"
-        m 2b "You guys should be lucky to have such a great friendship!"
+        m 2b "You two are lucky to have such a great friendship!"
         mc "Y-{w=0.38}yeah...{w=0.38}I guess we should be..."
         show sayori 1k
         "Sayori looks off, trying to hide her pained expression."
@@ -4754,7 +4767,7 @@ if encore_sayoriquestion_1 == True:
             show sayori 4bq at face
             "I gleefully take Sayori into my arms."
             "Feeling her embrace once again seems to melt away all the stress and worrying I experienced just a few minutes ago."
-            "I only hold her tighter as I continue to relif my stress."
+            "I only hold her tighter as I continue to release my stress."
             "Fortunately, Sayori doesn't seem to mind, as she only blushes brighter as my embrace tightens."
             "I don't know why, but everytime I find myself in Sayori's arms...{w=0.38}it just feels like I'm in heaven..."
             "She's always given great hugs, sure..."
@@ -4836,7 +4849,7 @@ s 4bx "Let's get going!"
 mc "After you!"
 stop music fadeout 2.0
 show sayori 4bq
-"I lock the gate behind us as Sayori and I begin our journey to the resturant."
+"I lock the gate behind us as Sayori and I begin our journey to the restaurant."
 jump s_citywalk
 
 if encore_sayoriquestion_1 == False:
@@ -4942,7 +4955,7 @@ s 4bx "Yep! Let's get going!"
 mc "Lead the way!"
 stop music fadeout 2.0
 show sayori 4bq
-"I lock the gate behind us as Sayori and I begin our journey to the resturant."
+"I lock the gate behind us as Sayori and I begin our journey to the restaurant."
 jump s_citywalk
 
 label s_citywalk:
@@ -4986,16 +4999,16 @@ if encore_sayoriquestion_1 == False:
 
 mc "We're way too old to go on it..."
 mc "I'm pretty sure they set the age limit at 12..."
-mc "I dobut the staff would let us anywhere near it..."
+mc "I doubt the staff would let us anywhere near it..."
 s 1bi "Well that's no fair!"
 mc "Sayori, we're not kids anymore."
 mc "I don't even think we'd fit between the bars to be honest with you..."
 s 1bq "Not me! I'm pretty sure I can fit!"
 mc "Yeah, right!"
 mc "You'd get stuck between the bars and then we'd have to call someone to cut you out!"
-mc "Remember the 'Swingset Incident' back in the fourth grade..."
+mc "Remember the 'Swing set Incident' back in the fourth grade..."
 s 1bj "Hey! It wasn't my fault!"
-s 1bl "That swingset was just realy old..."
+s 1bl "That swing set was just realy old..."
 mc "I don't think it's age was the problem, Sayori..."
 mc "It was meant for toddlers..."
 mc "Matter of fact, I was surprised you still managed to squeeze in..."
@@ -5022,14 +5035,14 @@ if encore_sayoriquestion_1 == False:
 s 2bx "But you would've never been able to pull it off!"
 mc "Eh? What do you mean?"
 s 2bl "Let's just face it, [player]..."
-s 1bx "You would've gotten stuck worse than me, or you wouldn't have been able to fit in that swingset at all!"
+s 1bx "You would've gotten stuck worse than me, or you wouldn't have been able to fit in that swing set at all!"
 mc "*pfft*!"
 mc "I could've if I tried hard enough!"
 mc "I just didn't feel like it that day..."
 s 1br "[player], your belly was too big back then to fit!"
 s 1bs "And It's still kinda big now!"
 show sayori 1bq
-"Sayori jokingly rubs my belly for emphaisis."
+"Sayori jokingly rubs my belly for emphasis."
 mc "Hey! Cut it out!"
 show sayori 1br
 "I playfully swat her hand away from me as she continues laughing."
@@ -5066,7 +5079,7 @@ hide sayori
 scene bg fastfood
 with wipeleft_scene
 "After a few more minutes of walking, we turn the corner to find our old childhood favorite resturant still standing in all its glory."
-"Sayori and I almost rush into the building to see if everything was still the same as remembered it."
+"Sayori and I almost rush into the building to see if everything was still the same as we remembered it."
 "Despite a few apparent changes, everything was still the same!"
 show sayori 1bn at t11 zorder 1
 "Sayori seems to be completely lost in thought as she stares around at everything."
@@ -5086,7 +5099,7 @@ s 1by "Y{w=0.38}-yeah..."
 "Looks like I got my revenge for earlier."
 "Though I decide to be merciful and end Sayori's embrassement by quickly finding a table for us to sit at."
 show sayori 1bn
-"Sayori and I immediately crack open the menus to see what's avalible."
+"Sayori and I immediately crack open the menus to see what's available."
 show sayori 1bo
 "I'm able to quickly pick out what I want while Sayori furrows her as she continues to pour over the menu."
 "If I had all the money in the world, there's no question Sayori would find a way to convince me to get her one of everything..."
@@ -5297,7 +5310,7 @@ s "It's shoo good!"
 show sayori 2bq
 "I try to look away from Sayori's mouth as I take in my next bite."
 "I'm still surprised with how well the taste of the anchovies mixes in with the curst and sauce!"
-"It all mixes together for a surpsingly satisfying flavour! Who knew anchoives mixed in with bread and sauce could be so tasty?!?"
+"It all mixes together for a surpassingly satisfying flavor! Who knew anchovies mixed in with bread and sauce could be so tasty?!?"
 "I'm definitely going to have to get this again at some point..."
 "I continue to pick away at the pizza while Sayori seems to gobble down slices left and right."
 "Even as a kid, Sayori's always managed to consume the craziest amount of food in the shortest amount of time."
@@ -5605,14 +5618,14 @@ show sayori 1bg
 play music t9 fadein 2.0
 s 1bh "I mean...{w=0.38}I have..."
 show sayori 1bg
-"My inital shock quickly gives away to fustration."
+"My initial shock quickly gives away to frustration."
 "She's been debating about whether to seek help for all these years?"
 "That doesn't make any sense! Why would she want to feel like crap all the time?!?"
 mc "Well, why haven't you gone to anyone yet?"
 "I say in my most level voice possible."
 show sayori 1be
 "Though Sayori seems to pick up on the hint of fustration in my voice."
-mc "I mean, surley your whole philsophy that 'you're meant to feel this way' doesn't apply to seeking professional help?"
+mc "I mean, surely your whole philosophy that 'you're meant to feel this way' doesn't apply to seeking professional help?"
 s 1bl "Well, not exactly..."
 s 1bh "It's something else..."
 mc "Well, what is it?"
@@ -5637,7 +5650,7 @@ s 1bu "I just couldn't do that to you..."
 s 4bu "I'd only be recieving your kidness, and I could never return it!"
 s 1bk "At least with how I am now, I can..."
 s 2bt "And since you know the truth, I can be honest with how I feel, especially around you..."
-"I completelty stop in my tracks as I look at Sayori the same way a deer would look at headlights."
+"I completely stop in my tracks as I look at Sayori the same way a deer would look at headlights."
 "I can't believe what I'm hearing!"
 "She'd rather put up with all this rather than take the chance at getting better?"
 "Oh God, what do I even say here..."
@@ -5786,7 +5799,7 @@ if encore_sayoriquestion_1 == False:
 
 #show cg
 "With Sayori secured, we begin walking back on the path we came, illuminated by the lightpoles scattered along the path and the stars above us."
-"Walking back, I notice several small animals scurrying around in the shadows, persumably looking for food."
+"Walking back, I notice several small animals scurrying around in the shadows, presumably looking for food."
 "I'm able to make out a few squirrels and rabbits, but it's hard to make out exact details with it being so dark by this point."
 "Strangely enough, Sayori doesn't really seem to notice them."
 "I turn to her, and she's simply starting ahead with the biggest grin on her face, enjoying latching on to my arm."
@@ -5829,7 +5842,7 @@ show sayori 4bq at t11 zorder 1
 
 if encore_sayoriquestion_1 == True:
     show sayori 4bs at t11 zorder 1
-    "I decde to throw in a peck on the cheek for good measure, which she seemed to enjoy as she giggled."
+    "I decide to throw in a peck on the cheek for good measure, which she seemed to enjoy as she giggled."
 
 if encore_sayoriquestion_1 == False:
     "Even though I think I may be overdoing it, I still feel like this is what I should be doing, regardless of how I feel about [poem_giver] or anyone else."

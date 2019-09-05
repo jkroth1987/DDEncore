@@ -2269,7 +2269,7 @@ label day3_arrival:
     stop music
     play sound "sfx/fall.ogg"
     show natsuki_bliss as natsuki at face
-    "Without warning suddenly Natsuki embraces me."
+    "Without warning Natsuki suddenly embraces me."
 
 if hangout1 == "Natsuki":
     if hangout2 == "Natsuki":
@@ -2323,10 +2323,10 @@ if hangout1 == "Natsuki":
         "Natsuki's not exactly one to go out of her way to hug people..."
 
         if encore_festivalquestion_2 == "Natsuki":
-            "In fact, I've barley gotten close to her at all, except that one time lat Sunday..."
+            "In fact, I've barely gotten close to her at all, except that one time lat Sunday..."
 
         if encore_festivalquestion_2 == "Yuri":
-            "In fact, I've barley gotten close to her at all, knowing how she'll freak out and call me gross..."
+            "In fact, I've barely gotten close to her at all, knowing how she'll freak out and call me gross..."
 
         "Not to mention, she didn't like seeing me getting close to [hangout2] yesterday..."
         "So I'd be risking her calling me out on that..."
@@ -2346,10 +2346,10 @@ else:
     "In fact, Natsuki specfically said she didn't even want to hug me..."
 
     if encore_festivalquestion_2 == "Natsuki":
-        "In fact, I've barley gotten close to her at all, except that one time last Sunday..."
+        "In fact, I've barely gotten close to her at all, except that one time last Sunday..."
 
     if encore_festivalquestion_2 == "Yuri":
-        "In fact, I've barley gotten close to her at all, knowing how she'll freak out and call me gross..."
+        "In fact, I've barely gotten close to her at all, knowing how she'll freak out and call me gross..."
 
     "Not to mention, she didn't like seeing me getting close to [hangout2] yesterday..."
     "So I'd be risking her calling me out on that..."
@@ -2636,7 +2636,7 @@ mc "I'm pretty sure we're almost there..."
 n 1bm "We still got two more blocks to go, [player]..."
 n 1bq "I'm just worried it'll be sold out by the time we get there..."
 show natsuki 1bn
-mc "I'm sure there's bound to at least a few copies left..."
+mc "I'm sure there's bound to be at least a few copies left..."
 mc "You think they would've planned for this sort of thing..."
 n 1bq "I hope so..."
 n 1bn "I don't think I'd have time to walk to the other store and make it back in time before my dad gets home..."
@@ -2687,9 +2687,11 @@ if encore_sayoriquestion_1 == False:
         mc "Ah, forget that..."
         "Maybe I just heard some random conversation..."
         mc "Anyways..."
+        jump n_converge
 
     else:
         pass
+        jump n_converge
 
 
 if encore_sayoriquestion_1 == True:
@@ -2720,9 +2722,11 @@ if encore_sayoriquestion_1 == True:
         mc "Ah, forget that..."
         "Maybe I just heard some random conversation..."
         mc "Anyways..."
+        jump n_converge
 
     else:
         pass
+        jump n_converge
 
 label n_d_4:
 
@@ -2754,9 +2758,11 @@ if encore_sayoriquestion_1 == False:
         mc "Ah, forget that..."
         "Maybe I just heard some random conversation..."
         mc "Anyways..."
+        jump n_converge
 
     else:
         pass
+        jump n_converge
 
 if encore_sayoriquestion_1 == True:
     "I'm not entirley sure why Natsuki doesn't keep her manga at home like most people would..."
@@ -2788,12 +2794,15 @@ if encore_sayoriquestion_1 == True:
         mc "Ah, forget that..."
         "Maybe I just heard some random conversation..."
         mc "Anyways..."
+        jump n_converge
 
     else:
         pass
+        jump n_converge
 
 
 
+label n_converge:
 
 mc "I'm sure that all the bookstores in town have the new copy on them..."
 n 1bm "Well it's usually avalible first at the one we're going to..."
@@ -2805,7 +2814,7 @@ mc "It's not like I have any plans for tonight..."
 n 1bm "You don't have to do that for me, [player], really..."
 mc "I insist..."
 show natsuki 5bu
-"Natsuki pauses for a momemnt to think over my offer."
+"Natsuki pauses for a moment to think over my offer."
 show natsuki 5bw
 "Eventually she lets out a defeated sigh."
 n 5bq "Well...{w=0.38}let's just see if they have it first..."
@@ -2912,7 +2921,7 @@ if encore_sayoriquestion_1 == True:
 
 
 mc "Anyways, I think we're here."
-"We promptly stop right by the entrance t0 the bookstore."
+"We promptly stop right by the entrance to the bookstore."
 n 1bc "Yep! This is the place!"
 mc "I knew this looked familiar..."
 n 3bk "You've been here before?"
@@ -2925,7 +2934,7 @@ mc "I'll let you lead the way, ladies first after all..."
 "I gesture for Natsuki to enter the store."
 n 5by "Wow! What a gentleman!"
 "She says sarcastically."
-mc "So you dobut me?"
+mc "So you doubt me?"
 "I walk over and hold the door open for Natsuki."
 show natsuki 5bz
 "She lets out a small laugh before eventually composing herself."
@@ -3025,8 +3034,8 @@ show natsuki
 n 5bq "[player]..."
 play music t9
 n 5bm "I don't think I can afford it..."
-n 5bu "It was a lot more than I thoguht it'd be..."
-mc "Well how short are you?"
+n 5bu "It was a lot more than I thought it'd be..."
+mc "How short are you?"
 n 12ba "300 yen..."
 mc "Oh..."
 "Yikes."
@@ -3034,7 +3043,7 @@ mc "Oh..."
 n 12bb "This is my fault...{w=0.38}I should've known it would've been that expensive..."
 n 12ba "Even though I've been saving up for months now..."
 show natsuki 12bd
-"Natsuki clenchs the manga tightly in an effort to compose herself."
+"Natsuki clenches the manga tightly in an effort to compose herself."
 "I decide to look down my wallet."
 "Well, if we pool our money together, we could afford it..."
 "Though I wouldn't be able to buy the copy I wanted..."
@@ -3403,7 +3412,7 @@ mc "I wouldn't mind..."
 n 4bd "Great!"
 "I'm not sure what her motivation is here, but I'll roll with it."
 show natsuki 1bj
-"We start walking back to my place, with Natsuki noticably walking closer to me than normal."
+"We start walking back to my place, with Natsuki noticeably walking closer to me than normal."
 stop music fadeout 2.0
 scene bg residential_day
 with wipeleft_scene
@@ -3415,7 +3424,7 @@ show natsuki 1bu at t11 zorder 1
 mc "So...{w=0.38}this is where I live..."
 
 if encore_festivalquestion_2 == "Natsuki":
-    mc "Well, of course you'd recongize the place..."
+    mc "Well, of course you'd recognize the place..."
     show natsuki 1bu
     n "Yeah...{w=0.38}I remember..."
     "Natsuki somberly scans up at my house."
@@ -3619,6 +3628,693 @@ stop music fadeout 2.0
 jump day3_night
 
 label n_makeup:
+
+"I should work things out with Natsuki."
+"I start texting back."
+mc "Yeah, if you want you can come over to my place."
+"Natsuki quickly replies back."
+m "Alright, I'm going there now. I'll be there in a few minutes."
+
+if encore_festivalquestion_2 == "Natsuki":
+    pass
+
+if encore_festivalquestion_2 == "Yuri":
+    "After I text Natsuki my address, I put my phone down and stare back at my celling."
+
+"Man...{w=0.38}what am I even going to say to her..."
+"This day has been a complete catastrophe..."
+"I don't even know what I'm going to say to Natsuki, let alone know what she's going to say to me..."
+"Maybe she just wants to apologize for what she said earlier..."
+"I mean, I haven't known her to be a nasty person, but today, all my expectations went out the window."
+"I can't believe anyone would've said that to someone as kind as Sayori..."
+"It's enough to make my blood boil..."
+"..."
+"*sighs*"
+"Maybe cleaning up the living room for Natsuki's arrival would be a better use of my time..."
+"I can get angry at her later..."
+"I get off of my bed and head downstairs to start cleaning up the living room."
+scene bg living_room
+with wipeleft
+play sound doorbell
+"Just as I about finish cleaning the living room, I hear the doorbell ring."
+mc "Coming, coming!"
+"I take a deep breath before walking over and opening the door."
+scene bg house
+with wipeleft
+show natsuski 1n
+"As expected, I find Natsuki waiting on my porch."
+"She looks up at me through a guilty and pained expression."
+"I simply sigh and wordlessly invite her in."
+show natsuki at thide
+hide natsuki
+scene bg living_room
+with wipeleft
+show natsuki 5u at t11 zorder 1
+"After closing the door behind us, I lead Natsuki to the living room. We both take our seats on the couch, unable to make consistent eye contact with one another."
+"I bow my head as I try to figure out something to break the tension."
+"I'm not even sure where to begin..."
+show natsuki 5n
+"There's absolutely no excuse for what she said."
+"Even if she doesn't know about Sayori's depression, it's just one of the things you don't just say to people."
+"But, I think at least owe Natsuki a chance to explain herself..."
+show natsuki 5o
+"We wait for several minutes in painfully awkward silence before she speaks up."
+n 5q "I messed up..."
+show natsuki 5u
+mc "Clearly, you did."
+n 1m "I know you're angry with me..."
+n 1q "You have every right to be..."
+n 1m "And I'm sure she's pissed at me too..."
+n 1q "Hell, I'd completely understand if you guys never want to talk to me again..."
+n 1m "Just everything about this day has just sucked..."
+show natsuki 1n
+mc "Well, you're not wrong there..."
+show natsuki 12b
+mc "But how could you even say that to Sayori?"
+mc "Look, in the time I've known you, I've gotten to understand that you're a passionate and direct person..."
+mc "And there's nothing inherently wrong with that. I like people who're up-front..."
+mc "I know you and Yuri can get a little heated, but this goes beyond anything I've ever seen from you..."
+mc "So I guess I just want to know why acted out..."
+play music t9 fadein 1.0
+show natsuki 12c
+"Natsuki lets out a shaky sigh."
+show natsuki 12a
+n "I let my emotions get the better of me again."
+n 12b "After I tried to calm down Yuri, she clearly wasn't having it, and so we got into a big fight over it."
+n 12d "It got hurtful for us pretty quick..."
+n 12e "We said a bunch of things to each other that I'm not going to ever repeat..."
+n 12d "And I guess along the way, something inside me snapped."
+n 12f "I was doing being talked down to."
+n 12g "I was done being pushed around."
+n 12f "I dealt with it enough at home, and I'm not going to suffer through it school too."
+n 12h "So I lashed out at everyone."
+n 12f "I had so much pent-up anger over my life that I just exploded."
+n 12i "I really, really, didn't mean to hurt anyone."
+n "I know I can't take back what I said, but I just wanted to let you know just how sorry I am for everything..."
+n 12h "Nothing can explain the immense pain and guilt I feel right now..."
+
+if y_love == True:
+    n "And now that you and Yuri are a thing...{w=0.38}it just hurts..."
+    n 12i "After everything we've been through...{w=0.38}it hurts to know that I wasn't good enough for you..."
+    n 12f "And how I acted earlier only proves that..."
+    n "I'm sorry..."
+    "Natsuki starts sobbing as I sit frozen in shock."
+    "I know Natsuki's had it bad outside of school..."
+    "And while there's certainly no way she can undo the hurt she's caused Sayori, I'm glad to at least to hear from her that she knows she's in the wrong..."
+    "But, I have to come to terms that I'm a pretty big reason she blew up in the first place..."
+    "I helped make her lash out..."
+
+if y_love == False:
+    n "I know you didn't mean to hurt Yuri..."
+    n 12i "In all honesty, as much as we fight, I do want to be her friend..."
+    n 12f "But, I understand if everyone hates me..."
+    n "I just piss off everyone that's close to me..."
+    "Natsuki starts sobbing as I sit frozen in shock."
+    "I know Natsuki's had it bad outside of school..."
+    "And while there's certainly no way she can undo the hurt she's caused Sayori, I'm glad to at least to hear from her that she knows she's in the wrong..."
+
+
+"I hand Natsuki my tissue box. She gently plucks a tissue from the box and uses it to wipe her tears away."
+n 12b "T-{w=0.38}thanks, [player]..."
+mc "Yeah...{w=0.38}no problem..."
+"We sit for the next few moments in silence."
+
+if y_love == True:
+    jump n_talk1
+
+if y_love == False:
+    jump n_talk2
+
+label n_talk1:
+
+"I wait for Natsuki to collect herself before I say anything."
+show natsuki 1n
+mc "I think I owe you an apology as well, Natsuki..."
+mc "I messed up too, and I see now that I'm a pretty big reason this all happened."
+mc "So, I shouldn't be as mad as I should at you."
+show natsuki 5n
+mc "This really is all my fault..."
+mc "I led you on and I hurt you..."
+n 5m "You did."
+
+
+if encore_festivalquestion_2 == "Natsuki":
+
+    if hangout1 == "Natsuki":
+        if hangout2 == "Natsuki":
+            if hangout3 == "Natsuki":
+                n 5q "I thought that after everything we've been through, that you might've liked me more than just as friends..."
+                n 1m "Even though we haven't been talking for very long, I thought I was able to tell that you really weren't like most boys..."
+                n 2t "You actually took me seriously..."
+                n "You were kind, funny..."
+                n 2y "A bit of a mediocre taste in manga..."
+                n 5q "But, you actually cared about how I felt and what I was going through..."
+                n 5m "I thought you weren't going to try to play me because I looked like an easy girl to get or something..."
+                n 12b "But, maybe I was wrong again..."
+                jump n_converge1
+
+
+    if hangout1 != "Natsuki":
+        if hangout2 == "Natsuki":
+            if hangout3 == "Natsuki":
+                n 5q "To be honest, I was wondering what would be next for us after the festival..."
+                n 1m "Ever since you joined, I've had a lot of fun spending time around you."
+                n 2t "Whether it was reading manga, or doing stuff at the festival..."
+                n 2q "It just felt so right being around you..."
+                n 2s "I did worry for a time if you were going to come back to me..."
+                n 2m "But, you did!"
+                n 5q "The more I got to know you, the more I felt like you actually cared about me..."
+                m 5m "I thought you weren't doing it for show, but..."
+                n 12b "Maybe I was wrong again..."
+                jump n_converge1
+
+
+    if hangout1 == "Natsuki":
+        if hangout2 != "Natsuki":
+            if hangout3 == "Natsuki":
+                n 5q "After we spent all that time together at the festival, I was wondering what would be next for us..."
+                n 1m "I really enjoyed spending time around you, [player]..."
+                n 2t "You always went out of your way to make sure I was having the best day as possible..."
+                n 5q "Nobody has ever really done that for me before..."
+                n 5s "But, when I saw you with [hangout2] the other day, I started to have dobuts about where you wanted to take our relationship..."
+                n 5m "And when you came to see me yesterday, my worries went away for a little while..."
+                n 12b "Now I see that I was right to be suspicious of you..."
+                jump n_converge1
+
+
+
+    if hangout1 == "Natsuki":
+        if hangout2 == "Natsuki":
+            if hangout3 != "Natsuki":
+                n 5q "Ever since we started talking, I always wondered what you were trying to get out of me."
+                n 1m "I didn't want to be pushed around or taken advantage of..."
+                n "I was used to it..."
+                n 2t "But, for a time, you proved me wrong..."
+                n "You actually took me seriously..."
+                n "You were kind, funny..."
+                n 2y "A bit of a mediocre taste in manga..."
+                n 5q "But, you actually cared about how I felt and what I was going through..."
+                n 5m "I thought you weren't going to try to play me because I looked like an easy girl to get or something..."
+                n 5s "But, when you went off with [hangout3] the other day, I started to get suspicious of what you were up to."
+                n "In my experience, when people stop talking to me all of a sudden, it's either because I messed up or they lost interest in me..."
+                n 12b "I see now that it's both..."
+                jump n_converge1
+
+
+
+
+    if hangout1 != "Natsuki":
+        if hangout2 != "Natsuki":
+            if hangout3 == "Natsuki":
+                n 5q "After we spent all that time together, I started to wonder where our relationship was going to go next..."
+                n 1m "I really enjoyed spending time with you..."
+                n 1n "And I wanted more..."
+                n 2t "You actually took me seriously..."
+                n "You were kind, funny..."
+                n 2y "A bit of a mediocre taste in manga..."
+                n 5q "But, you actually cared about how I felt and what I was going through..."
+                n 5m "I thought you weren't going to try to play me because I looked like an easy girl to get or something..."
+                n 5n "But this week, you practically ignored me until yesterday!"
+                n 5q "I wasn't sure what your reason was, but I wanted to try to get back to where we were..."
+
+
+                if natsuki_hangout == True:
+                    n 5l "And I'm really glad you wanted to spend more time with me after school..."
+                    n 5t "I really had a great time picking up Parfait Girls with you..."
+                    n 5s "And for a while, I hoped that we were on the right track to being more than just friends..."
+
+
+
+                else:
+                    pass
+
+
+                n 12b "But now, it seems like it's too late..."
+                jump n_converge1
+
+
+
+
+if encore_festivalquestion_2 == "Yuri":
+
+    if hangout1 == "Natsuki":
+        if hangout2 == "Natsuki":
+            if hangout3 == "Natsuki":
+                n 5q "I thought that after everything we've been through, that you might've liked me more than just as friends..."
+                n 1m "Even though we haven't been talking for very long, I thought I was able to tell that you really weren't like most boys..."
+                n 2t "You actually took me seriously..."
+                n "You were kind, funny..."
+                n 2y "A bit of a mediocre taste in manga..."
+                n 5q "But, you actually cared about how I felt and what I was going through..."
+                n 5m "I thought you weren't going to try to play me because I looked like an easy girl to get or something..."
+                n 12b "But, maybe I was wrong again..."
+                jump n_converge1
+
+
+    if hangout1 != "Natsuki":
+        if hangout2 == "Natsuki":
+            if hangout3 == "Natsuki":
+                n 5q "To be honest, I always wondered if I'd ever get to know you..."
+                n 1m "Ever since you joined, I always had to watch you spend time with everyone else!"
+                n 5q "Even though I was suspicious of you, I didn't want to scare you away or anything like that..."
+                n 5m "And I was so happy when you finally came over to me and started talking on Tuesday..."
+                n 5q "Once we started reading together, I started feeling so much more comfortable around you..."
+                n 5n "I didn't know if that was just going to be a one time thing or something...."
+                n 2m "But, you came back to me yesterday too!"
+                n 5q "Even though we've only been talking for two days now, I really thought you cared about me..."
+                m 5m "I thought you weren't doing it for show, but..."
+                n 12b "Maybe I was wrong again..."
+                jump n_converge1
+
+
+    if hangout1 == "Natsuki":
+        if hangout2 != "Natsuki":
+            if hangout3 == "Natsuki":
+                n 5q "To be honest, I always wondered if I'd ever get to know you..."
+                n 1m "Ever since you joined, I always had to watch you spend time with everyone else!"
+                n 5q "Even though I was suspicious of you, I didn't want to scare you away or anything like that..."
+                n 5m "And I was so happy when you finally came over to me and started talking on Monday..."
+                n 5q "Even if we didn't get to read together like we wanted to, I appreciated the gesture, and I figured maybe we'd get the chance to hangout again..."
+                n 5s "But, when I saw you with [hangout2] the other day, I started to have dobuts..."
+                n 5m "But then you came back to me..."
+                n 12b "Now I'm just so confused and hurt..."
+                jump n_converge1
+
+
+    if hangout1 == "Natsuki":
+        if hangout2 == "Natsuki":
+            if hangout3 != "Natsuki":
+                n 5q "Ever since we started talking, I always wondered what you were trying to get out of me."
+                n 1m "I didn't want to be pushed around or taken advantage of..."
+                n "I was used to it..."
+                n 2t "But, for a time, you proved me wrong..."
+                n "You actually took me seriously..."
+                n "You were kind, funny..."
+                n 2y "A bit of a mediocre taste in manga..."
+                n 5q "But, you actually cared about how I felt and what I was going through..."
+                n 5m "I thought you weren't going to try to play me because I looked like an easy girl to get or something..."
+                n 5s "But, when you went off with [hangout3] the other day, I started to get suspicious of what you were up to."
+                n "In my experience, when people stop talking to me all of a sudden, it's either because I messed up or they lost interest in me..."
+                n 12b "I see now that it's both..."
+                jump n_converge1
+
+
+    if hangout1 != "Natsuki":
+        if hangout2 != "Natsuki":
+            if hangout3 == "Natsuki":
+                n 5q "To be honest, I always wondered if I'd ever get to know you..."
+                n 1m "Ever since you joined, I always had to watch you spend time with everyone else!"
+                n 5q "Even though I was suspicious of you, I didn't want to scare you away or anything like that..."
+                n 5m "I was actually kind of glad to see you when you finally came over to me and started talking on yesterday..."
+                n 5t "Surprisingly, you weren't too bad..."
+                n 2t "You actually took me seriously..."
+                n "You were kind, funny..."
+                n 2y "A bit of a mediocre taste in manga..."
+                n 5q "But, you actually cared about how I felt and listened to what I was going through..."
+
+                if natsuki_hangout == True:
+                    n 5l "And I'm really glad you wanted to spend more time with me after school..."
+                    n 5t "I really had a great time picking up Parfait Girls with you..."
+                    n 5s "And for a while, I hoped that we were on the right track to being friends..."
+                    jump n_converge1
+
+
+                else:
+                    pass
+
+
+                n 12b "At least, that's what I thought..."
+                jump n_converge1
+
+
+
+label n_converge1:
+
+"I bow my head in guilt as Natsuki finishes her speech."
+"It's hard to come to terms with how much my mistake hurt her..."
+"I never meant to drive her or anyone to this point..."
+"But, we're both in the wrong, and we should fix things now before it gets worse..."
+"I finally muster up the willpower to speak up again."
+show natsuki 12a
+mc "I'm sorry, Natsuki..."
+show natsuki 1n
+mc "It was never my intention to hurt you or anyone else..."
+mc "Truthfully, my emotions are all over the place right now too."
+mc "I know it's not an excuse for what I did to you, but I'm in just as much turmoil over this as you are..."
+n 1m "Are you and Yuri...{w=0.38}together now?"
+show natsuki 1n
+mc "I don't know..."
+mc "I didn't really expect everything to hit the fan at once..."
+mc "So, right now I just want to fix make sure that there's no more misunderstandings between us."
+n 1q "I get what you mean..."
+n 1m "I'll talk to Sayori tomorrow when I get the chance..."
+n 1n "How is she?"
+mc "I haven't had the chance to check up on her yet, but I'll text her later."
+n 1q "Okay..."
+n 1u "Well, I'll try to forgive you for what happened earlier. I just can't deal with it right this second..."
+mc "I understand."
+stop music fadeout 3.0
+"We sit for the next few minutes in silence before Natsuki speaks up again."
+n 1m "Do you think the club's ever going to be the same?"
+show natsuki 1n
+mc "I don't know..."
+mc "Hopefully, we can all put aside our differences in time for Monday at least, but after that, who knows."
+n 1m "I don't want the club to disband, [player]!"
+n 1n "It's really the only place I can call home!"
+mc "I know..."
+mc "I'd hate to see the club break apart too..."
+mc "I have no idea what's going to happen with Monika and Yuri. There's no telling if there'll even be a meeting tomorrow."
+n 1m "Sayori would try to come, wouldn't she?"
+show natsuki 1n
+mc "Knowing her, probably. She's not one to hold onto grudges."
+mc "But, hopefully we can all apologize to each other go back to being friends..."
+n 1q "Yeah..."
+n 1m "Well, I'm glad you let me come over to hear me out..."
+show natsuki 1n
+mc "I suppose it's the least we could do."
+mc "I trust that you'll stay to your word and work things out with Sayori at least..."
+n 1t "Well, I think I owe everyone an apology at this point..."
+mc "I do too..."
+"We both let out an awkward chuckle before the room returns to silence."
+show natsuki 1u
+"At least Natsuki and I smoothed things over for the most part."
+"Let's just hope it goes just as well for tomorrow..."
+n 1m "So, I guess I'll see you tomorrow at the club then?"
+mc "I'll be there."
+mc "Just let me know if you see Monika or Yuri around."
+n 1m "I will."
+n 5m "And let me know how Sayori is doing..."
+show natsuki 5n
+mc "I'll be sure to."
+n 1q "Well, I'll get going now..."
+n 1m "If I stay any longer, I'll miss the bus."
+show natsuki 1n
+mc "It's alright, thank you for everything, Natsuki."
+mc "I just hope in the next few days we can get back to being friends again..."
+n 1m "Me too."
+n 1t "Later, [player]!"
+mc "See you tomorrow!"
+show natsuki at thide
+hide natsuki
+"I lead Natsuki out the door and gently close it behind her."
+"I watch out the window as Natsuki walks off to the horizon in the direction of the nearest bus stop."
+mc "That wasn't too bad..."
+"I mumble to myself."
+"I'm still a little surprised Natsuki went out of her way to directly apologize to me..."
+"Even though she was awful during that fight, I'm glad that she recognized her mistakes."
+"It's going to take time for Natsuki and I to move past what happened, but maybe we can get back to where we were soon..."
+"I just hope everything goes smoothly tomorrow..."
+jump day4_night
+
+
+
+
+label n_talk2:
+
+"I sit there frozen in shock as I attempt to process the situation."
+"I've never seen Natsuki come so clean about her mistakes..."
+"Maybe I shouldn't be so mad at her..."
+"I wait for Natsuki to collect herself before I say anything."
+show natsuki 1n
+mc "Well, I'm glad that you've come to recognize what you said back there was wrong..."
+mc "But, I'm a pretty big reason for what happened as well, so I'm really sorry that all had to happen..."
+mc "So, I shouldn't be as mad as I should at you."
+show natsuki 5n
+mc "This really is all my fault..."
+mc "I led on Yuri and hurt her..."
+mc "And who knows who else I've hurt in the process..."
+mc "I'm just so confused about everything right now..."
+n 5m "I know what you mean..."
+
+
+
+if encore_festivalquestion_2 == "Natsuki":
+
+    if hangout1 == "Natsuki":
+        if hangout2 == "Natsuki":
+            if hangout3 == "Natsuki":
+                n 5q "You know, after everything we've been through, I thought that you might've liked me more than just as friends..."
+                n 1m "Even though we haven't been talking for very long, I thought I was able to tell that you really weren't like most boys..."
+                n 2t "You actually took me seriously..."
+                n "You were kind, funny..."
+                n 2y "A bit of a mediocre taste in manga..."
+                n 5q "But, you actually cared about how I felt and what I was going through..."
+                n 5m "I thought you weren't going to try to play me because I looked like an easy girl to get or something..."
+                n 12b "But, I messed up by showing just how awful I am..."
+                jump n_converge2
+
+
+    if hangout1 != "Natsuki":
+        if hangout2 == "Natsuki":
+            if hangout3 == "Natsuki":
+                n 5q "To be honest, I was wondering what would be next for us after the festival..."
+                n 1m "Ever since you joined, I've had a lot of fun spending time around you."
+                n 2t "Whether it was reading manga, or doing stuff at the festival..."
+                n 2q "It just felt so right being around you..."
+                n 2s "I did worry for a time if you were going to come back to me..."
+                n 2m "But, you did!"
+                n 5q "The more I got to know you, the more I felt like you actually cared about me..."
+                m 5m "I knew you weren't doing it for show, but..."
+                n 12b "I don't expect you to like me after this..."
+                jump n_converge2
+
+
+    if hangout1 == "Natsuki":
+        if hangout2 != "Natsuki":
+            if hangout3 == "Natsuki":
+                n 5q "After we spent all that time together at the festival, I was wondering what would be next for us..."
+                n 1m "I really enjoyed spending time around you, [player]..."
+                n 2t "You always went out of your way to make sure I was having the best day as possible..."
+                n 5q "Nobody has ever really done that for me before..."
+                n 5s "But, when I saw you with [hangout2] the other day, I started to have dobuts about where you wanted to take our relationship..."
+                n 5m "And when you came to see me yesterday, my worries went away for a little while..."
+                n 12b "But now I dobut you want to be with me after I showed what an awful person I am..."
+                jump n_converge2
+
+
+
+    if hangout1 == "Natsuki":
+        if hangout2 == "Natsuki":
+            if hangout3 != "Natsuki":
+                n 5q "Ever since we started talking, I always wondered what you were trying to get out of me."
+                n 1m "I didn't want to be pushed around or taken advantage of..."
+                n "I was used to it..."
+                n 2t "But, for a time, you proved me wrong..."
+                n "You actually took me seriously..."
+                n "You were kind, funny..."
+                n 2y "A bit of a mediocre taste in manga..."
+                n 5q "But, you actually cared about how I felt and what I was going through..."
+                n 5m "I thought you weren't going to try to play me because I looked like an easy girl to get or something..."
+                n 5s "But, when you went off with [hangout3] the other day, I started to get suspicious of what you were up to."
+                n "In my experience, when people stop talking to me all of a sudden, it's either because I messed up or they lost interest in me..."
+                n 12b "And after today, it's probably both..."
+                jump n_converge2
+
+
+
+
+    if hangout1 != "Natsuki":
+        if hangout2 != "Natsuki":
+            if hangout3 == "Natsuki":
+                n 5q "After we spent all that time together, I started to wonder where our relationship was going to go next..."
+                n 1m "I really enjoyed spending time with you..."
+                n 1n "And I wanted more..."
+                n 2t "You actually took me seriously..."
+                n "You were kind, funny..."
+                n 2y "A bit of a mediocre taste in manga..."
+                n 5q "But, you actually cared about how I felt and what I was going through..."
+                n 5m "I thought you weren't going to try to play me because I looked like an easy girl to get or something..."
+                n 5n "But this week, you practically ignored me until yesterday!"
+                n 5q "I wasn't sure what your reason was, but I wanted to try to get back to where we were..."
+
+
+                if natsuki_hangout == True:
+                    n 5l "And I'm really glad you wanted to spend more time with me after school..."
+                    n 5t "I really had a great time picking up Parfait Girls with you..."
+                    n 5s "And for a while, I hoped that we were on the right track to being more than just friends..."
+
+
+
+                else:
+                    pass
+
+
+                n 12b "But now, it's probably too late..."
+                jump n_converge2
+
+
+
+
+if encore_festivalquestion_2 == "Yuri":
+
+    if hangout1 == "Natsuki":
+        if hangout2 == "Natsuki":
+            if hangout3 == "Natsuki":
+                n 5q "I thought that after everything we've been through, that you might've liked me more than just as friends..."
+                n 1m "Even though we haven't been talking for very long, I thought I was able to tell that you really weren't like most boys..."
+                n 2t "You actually took me seriously..."
+                n "You were kind, funny..."
+                n 2y "A bit of a mediocre taste in manga..."
+                n 5q "But, you actually cared about how I felt and what I was going through..."
+                n 5m "I thought you weren't going to try to play me because I looked like an easy girl to get or something..."
+                n 12b "But, I messed up by showing just how awful I am..."
+                jump n_converge2
+
+
+    if hangout1 != "Natsuki":
+        if hangout2 == "Natsuki":
+            if hangout3 == "Natsuki":
+                n 5q "To be honest, I always wondered if I'd ever get to know you..."
+                n 1m "Ever since you joined, I always had to watch you spend time with everyone else!"
+                n 5q "Even though I was suspicious of you, I didn't want to scare you away or anything like that..."
+                n 5m "And I was so happy when you finally came over to me and started talking on Tuesday..."
+                n 5q "Once we started reading together, I started feeling so much more comfortable around you..."
+                n 5n "I didn't know if that was just going to be a one time thing or something...."
+                n 2m "But, you came back to me yesterday too!"
+                n 5q "Even though we've only been talking for two days now, I really thought you cared about me..."
+                m 5m "I knew you weren't doing it for show, but..."
+                n 12b "I don't expect you to like me after this..."
+                jump n_converge2
+
+    if hangout1 == "Natsuki":
+        if hangout2 != "Natsuki":
+            if hangout3 == "Natsuki":
+                n 5q "To be honest, I always wondered if I'd ever get to know you..."
+                n 1m "Ever since you joined, I always had to watch you spend time with everyone else!"
+                n 5q "Even though I was suspicious of you, I didn't want to scare you away or anything like that..."
+                n 5m "And I was so happy when you finally came over to me and started talking on Monday..."
+                n 5q "Even if we didn't get to read together like we wanted to, I appreciated the gesture, and I figured maybe we'd get the chance to hangout again..."
+                n 5s "But, when I saw you with [hangout2] the other day, I started to have dobuts..."
+                n 5m "But then you came back to me..."
+                n 12b "And now, I dobut you want to be with me after I showed what an awful person I am..."
+                jump n_converge2
+
+
+    if hangout1 == "Natsuki":
+        if hangout2 == "Natsuki":
+            if hangout3 != "Natsuki":
+                n 5q "Ever since we started talking, I always wondered what you were trying to get out of me."
+                n 1m "I didn't want to be pushed around or taken advantage of..."
+                n "I was used to it..."
+                n 2t "But, for a time, you proved me wrong..."
+                n "You actually took me seriously..."
+                n "You were kind, funny..."
+                n 2y "A bit of a mediocre taste in manga..."
+                n 5q "But, you actually cared about how I felt and what I was going through..."
+                n 5m "I thought you weren't going to try to play me because I looked like an easy girl to get or something..."
+                n 5s "But, when you went off with [hangout3] the other day, I started to get suspicious of what you were up to."
+                n "In my experience, when people stop talking to me all of a sudden, it's either because I messed up or they lost interest in me..."
+                n 12b "And after today, it's probably both..."
+                jump n_converge2
+
+
+    if hangout1 != "Natsuki":
+        if hangout2 != "Natsuki":
+            if hangout3 == "Natsuki":
+                n 5q "To be honest, I always wondered if I'd ever get to know you..."
+                n 1m "Ever since you joined, I always had to watch you spend time with everyone else!"
+                n 5q "Even though I was suspicious of you, I didn't want to scare you away or anything like that..."
+                n 5m "I was actually kind of glad to see you when you finally came over to me and started talking on yesterday..."
+                n 5t "Surprisingly, you weren't too bad..."
+                n 2t "You actually took me seriously..."
+                n "You were kind, funny..."
+                n 2y "A bit of a mediocre taste in manga..."
+                n 5q "But, you actually cared about how I felt and listened to what I was going through..."
+
+                if natsuki_hangout == True:
+                    n 5l "And I'm really glad you wanted to spend more time with me after school..."
+                    n 5t "I really had a great time picking up Parfait Girls with you..."
+                    n 5s "And for a while, I hoped that we were on the right track to being friends..."
+                    jump n_converge2
+
+
+                else:
+                    pass
+
+
+                n 12b "But now, you probably hate me..."
+                jump n_converge2
+
+
+label n_converge2:
+
+"My face is flushed with embrassment as Natsuki finishes her speech."
+"I never expected to have that kind of impact on Natsuki in such a short time..."
+"I try fumble out some sort of answer."
+show natsuki 1n
+mc "Well Natsuki, I...{w=0.38}really appreciate everything you said there..."
+mc "I don't hate you because of what happened earlier..."
+mc "In fact, I don't hate you at all!"
+mc "I'm glad you recognized what you said was wrong and that you're willing to make things right with Sayori..."
+n 5q "I think I owe everyone an apology at this rate..."
+mc "Well, I think I do too..."
+show natsuki 1t
+"We both let out an awkward chuckle before the room returns to silence."
+n 1m "So, how's Sayori?"
+show natsuki 1n
+mc "I haven't had the chance to check up on her yet, but I'll text her later."
+n 1q "Okay..."
+n 1u "Well, I'll try to forgive you for what happened earlier. I just can't deal with it right this second..."
+mc "I understand."
+stop music fadeout 3.0
+"We sit for the next few minutes in silence before Natsuki speaks up again."
+n 1m "Do you think the club's ever going to be the same?"
+show natsuki 1n
+mc "I don't know..."
+mc "Hopefully, we can all put aside our differences in time for Monday at least, but after that, who knows."
+n 1m "I don't want the club to disband, [player]!"
+n 1n "It's really the only place I can call home!"
+mc "I know..."
+mc "I'd hate to see the club break apart too..."
+mc "I have no idea what's going to happen with Monika and Yuri. There's no telling if there'll even be a meeting tomorrow."
+n 1m "Sayori would try to come, wouldn't she?"
+show natsuki 1n
+mc "Knowing her, probably. She's not one to hold onto grudges."
+mc "But, hopefully we can all apologize to each other go back to being friends..."
+n 1q "Yeah..."
+n 1m "Well, I'm glad you let me come over to hear me out..."
+show natsuki 1n
+mc "I suppose it's the least we could do."
+mc "I trust that you'll stay to your word and work things out with Sayori at least..."
+n 1m "I will."
+n 1q "And hopefully I can make things right with Monika and Yuri too..."
+show natsuki 1u
+mc "I'm sure we'll be able to put this behind us."
+n 1q "Yeah..."
+show natsuki 1u
+"Natsuki nervously glances down at the floor."
+"It's going to be tough to get things back to the way they were..."
+"But, at least Natsuki and I smoothed things over for the most part."
+"Let's just hope it goes just as well for tomorrow..."
+n 1m "So, I guess I'll see you tomorrow at the club then?"
+mc "I'll be there."
+mc "Just let me know if you see Monika or Yuri around."
+n 1m "I will."
+n 5m "And let me know how Sayori is doing..."
+show natsuki 5n
+mc "I'll be sure to."
+n 1q "Well, I'll get going now..."
+n 1m "If I stay any longer, I'll miss the bus."
+show natsuki 1n
+mc "It's alright, thank you for everything, Natsuki."
+mc "I'm gladd we worked things out..."
+n 1m "Yeah, me too."
+n 1t "Well, later, [player]!"
+mc "See you tomorrow!"
+show natsuki at thide
+hide natsuki
+"I lead Natsuki out the door and gently close it behind her."
+"I watch out the window as Natsuki walks off to the horizon in the direction of the nearest bus stop."
+mc "That wasn't too bad..."
+"I mumble to myself."
+"I'm still a little surprised Natsuki went out of her way to directly apologize to me..."
+"Even though she was awful during that fight, I'm glad that she recognized her mistakes."
+"It's going to take time for Natsuki and I to move past what happened, but I don't think it changed my feelings for her that much..."
+"I guess I'll find out for sure tomorrow..."
+jump day4_night
+
+
+
 
 label n_nomakeup:
 

@@ -335,21 +335,21 @@ init python:
         targetpos = [640, 345]
         if currentpos[1] < targetpos[1]:
             renpy.display.draw.set_mouse_pos((currentpos[0] * 9 + targetpos[0]) / 10.0, (currentpos[1] * 9 + targetpos[1]) / 10.0)
-    
+
     def EncoreRigMouse():
         global rigged_y_pos
         currentpos = renpy.get_mouse_pos()
         targetpos = [640, rigged_y_pos]
         if currentpos[0] != targetpos[0] or currentpos[1] != targetpos[1]:
             renpy.display.draw.set_mouse_pos((currentpos[0] * 9 + targetpos[0]) / 10.0, (currentpos[1] * 9 + targetpos[1]) / 10.0)
-    
+
     def show_rigged_choice(who, what, items, y_pos = 250):
         global rigged_y_pos
         rigged_y_pos = y_pos
-        
+
         if what != None:
             renpy.say(who, what, interact=False)
-        
+
         return renpy.display_menu(items, screen="encore_rigged_choice")
 
 screen rigged_choice(items):

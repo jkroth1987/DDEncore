@@ -2111,7 +2111,7 @@ if hangout1 == "Yuri":
         if encore_festivalquestion_2 == "Yuri":
             mc "Well, I hope you're not too far in for me to catch up!"
 
-        "I enthusatically smile at Yuri."
+        "I enthusiastically smile at Yuri."
         show yuri 1g
         "Though oddly enough, Yuri doesn't seem to share my level of enthusiasm."
         y 1h "[player], can I ask you something?"
@@ -2186,7 +2186,7 @@ if hangout1 == "Yuri":
                 y 2d "Fortunately, I've been meaning to re-read some of the earlier chapters anyways!"
                 y 2b "It always fun to do a little revisiting..."
                 show yuri 2e
-                mc "I mean, I wouldn't want to hold back your progres..."
+                mc "I mean, I wouldn't want to hold back your progress..."
                 y 2a "It's alright, [player], really..."
                 y 2b "I don't mind re-reading some of the begining with you!"
                 y 3c "I really like how emotional chapter three is!"
@@ -2209,7 +2209,7 @@ else:
 
 
     if encore_festivalquestion_2 == "Natsuki":
-        "I'm quickly able to recongize the cover of the book she's reading."
+        "I'm quickly able to recognize the cover of the book she's reading."
         "I think that's the same book she gave me a while ago when I first joined..."
         "Well, if she's still reading it after all this time, it should be a somewhat decent read..."
 
@@ -2228,7 +2228,7 @@ else:
     mc "What's up?"
     y "Ah! Not much, just reading some more Portrait of Markov..."
     mc "Well, I hope you're not too far in for me to catch up!"
-    "I enthusatically smile at Yuri."
+    "I enthusiastically smile at Yuri."
     show yuri 1g
     "Though oddly enough, Yuri doesn't seem to share my level of enthusiasm."
     y 1h "[player], can I ask you something?"
@@ -2289,7 +2289,7 @@ else:
     y 2d "Fortunately, I've been meaning to re-read some of the earlier chapters anyways!"
     y 2b "It always fun to do a little revisiting..."
     show yuri 2e
-    mc "I mean, I wouldn't want to hold back your progres..."
+    mc "I mean, I wouldn't want to hold back your progress..."
     y 2a "It's alright, [player], really..."
     y 2b "I don't mind re-reading some of the begining with you!"
     y 3c "I really like how they describe the action sequences in chapter two!"
@@ -2413,7 +2413,7 @@ label day3_ymain:
 
         show yuri 2n
         "I'm so used to Yuri being such a quiet and go-along person, I almost forgot she had an assertive side..."
-        "It's a side of her I rarley see..."
+        "It's a side of her I rarely see..."
 
         if hangout1 == "Monika" or hangout2 == "Monika":
             show yuri 3y3
@@ -2537,7 +2537,7 @@ if hangout1 == "Sayori" or hangout1 == "Monika" or hangout1 == "Natsuki":
         show yuri 2s
         y "Thank you, [player]..."
         mc "No problem..."
-        "I'm barley able to contain my blushing as Yuri reciprocates the gesture."
+        "I'm barely able to contain my blushing as Yuri reciprocates the gesture."
 
 
 if hangout1 == "Yuri":
@@ -2546,14 +2546,14 @@ if hangout1 == "Yuri":
         y "How classy of you, [player]..."
         mc "Ah, well..."
         mc "Just trying to lend a hand..."
-        "I'm barley able to contain my blushing as Yuri reciprocates the gesture."
+        "I'm barely able to contain my blushing as Yuri reciprocates the gesture."
 
 
 else:
 
     y 2s "Aren't you a gentleman?"
     mc "I try my best..."
-    "I'm barley able to contain my blushing as Yuri reciprocates the gesture."
+    "I'm barely able to contain my blushing as Yuri reciprocates the gesture."
 
 
 stop music fadeout 1.0
@@ -2839,7 +2839,7 @@ play sound train
 "Suddenly, we're greeted by the sound of a train whistling by us as it slowly grinds to a halt at the station."
 "The sound is sudden enough to make us both jump a little out of our seats as we really weren't looking out for our train."
 show yuri 4bc
-"Yuri's face is bright red with embrassment as she scavenges through her bag for the tickets."
+"Yuri's face is bright red with embarrassment as she scavenges through her bag for the tickets."
 "Without making eye contact, she hands me my ticket."
 mc "I assume that's our train..."
 y 3bq "Y-{w=0.38}yeah it is..."
@@ -3112,7 +3112,7 @@ mc "You're not boring or dull or any of that!"
 mc "And sure you can get carried away from time to time, but who doesn't? It happens to all of us!"
 mc "I guess what I'm trying to say is: I'm glad we're here....{w=0.38}together..."
 y "I-{w=0.38}I see..."
-"Yuri is barley able to compose herself for several minutes, so we end up walking in silence as we head deeper into the nature perseve."
+"Yuri is barely able to compose herself for several minutes, so we end up walking in silence as we head deeper into the nature perseve."
 show yuri 4ba
 stop music fadeout 4.0
 "During this period, I can't help but notice Yuri sneaking several glances in my direction."
@@ -3282,12 +3282,11 @@ y "Y-{w=0.38}you thought I looked cute?"
 mc "You always do..."
 mc "I guess that moment just happened to remind me of that fact..."
 y 3bs "[player]..."
-"We stand in silence for a few moments, simply gazing into each other's eyes."
-"Her violet eyes seem to hypontize me, as if they were telling me to come foward."
-"We end up both slowly shuffling closer to each other until out faces are only just a few inches apart."
+"We stand in silence for a few moments, though we begin to zone out and gaze into each other's eyes."
+"My desire to bring her into my arms only grows stronger the longer we stare at each other..."
 show yuri 4be
-"Yuri continues to blush a new shade of crimison with every passing second."
-"With nobody around and nothing stopping us...{w=0.38}this might be my chance to really make something happen with Yuri..."
+"I begin to notice Yuri blushing a new shade of crimson with every passing second."
+"With nobody around and nothing stopping us...{w=0.38}this might be my chance to really make something happen with her..."
 stop music fadeout 3.0
 "As much as the cicrumstances say to go for it, my conscious is telling me not to..."
 
@@ -3308,7 +3307,7 @@ mc "I-{w=0.38}it's fine..."
 "I manage to stammer out."
 "We're both completely flustered for a few seconds until Yuri manages to muster up enough courage to talk."
 y "Well...{w=0.38}we can just keep walking if you'd like..."
-y "I'm plenty there's much more to see..."
+y "I'm sure there's plenty more to see..."
 mc "Y-{w=0.38}yeah...{w=0.38}that works!"
 "Yuri and I then silently proceed to continue our walk down the path, hardly being able to make eye contact with each other."
 scene bg garden_dusk with dissolve_cg
@@ -3326,7 +3325,7 @@ show yuri 1bg
 "I decide to carefully ask her mood in a roundabout way, hoping to avoid another episode like earlier today."
 mc "We've had quite the day together, haven't we?"
 show yuri 1be
-"Yuri quizically looks up."
+"Yuri quizzically looks up."
 mc "I mean, if you told me earlier after our argument that we would've spent all afternoon together, I thought you would've been joking!"
 y 1bv "Yes...{w=0.38}I do suppose this day had it's unexpected twists and turns..."
 show yuri 3bu
@@ -3392,7 +3391,7 @@ if hangout1 == "Monika" or hangout2 == "Monika":
 
 y 3bu "I've never really gotten the opportunity to share my interests with another boy..."
 y 3bs "Not until you came into my life..."
-y "You've showed me nothing but kidness, patience and respect towards me lately..."
+y "You've showed me nothing but kindness, patience and respect towards me lately..."
 
 
 if encore_festivalquestion_2 == "Natsuki":
@@ -3476,7 +3475,7 @@ y 1bq "Alright..."
 y 3bt "Did you...{w=0.38}want us to kiss earlier?"
 y 3bu "After the butterfly flew away..."
 mc "Oh! Well, uh..."
-"I'm completely tounge tied here!"
+"I'm completely tongue tied here!"
 
 if encore_sayoriquestion_1 == True:
     "I really can't answer truthfully without it considered being cheating..."
@@ -3521,8 +3520,8 @@ y 1bh "Let me see..."
 "Yuri digs through her bag and pulls out two chocolate bars."
 y 3bb "Here you are!"
 show yuri 2bc
-"Yuri hands me one of the chocolate bars and we immediately being stuffing our faces."
-"I quickly realize that Yuri gave me dark chocolate, which isn't something I've had in a while..."
+"Yuri hands me one of the chocolate bars and we immediately begin digging in."
+"As I take my first bite, I quickly realize that Yuri gave me dark chocolate, which isn't something I've had in a while..."
 show yuri 2be
 mc "Hey, this is actually pretty good, Yuri!"
 mc "I haven't had dark chocolate in a while..."
@@ -3609,7 +3608,7 @@ if encore_sayoriquestion_1 == False:
 mc "I guess the only answer I can really give is that I discovered anime and video games and it just pulled me in..."
 mc "And we stopped hanging out together as often, and eventually we stopped hanging out all together."
 mc "Our freshman year, we hardly talked to each other..."
-mc "And she oversleeping around that time as well, so the opportunites to talk to each other were rather scarce."
+mc "She started oversleeping around that time as well, so the opportunites to talk to each other became rather scarce."
 mc "Looking back on it, I was a terrible friend during that time to her, and I should've been there."
 "I wish I could tell Yuri more about Sayori and her depression, but that's not for me to reveal."
 y 1bh "I suppose I can relate to this on some level."
@@ -3648,7 +3647,7 @@ play sound "sfx/fall.ogg"
 "I bring Yuri into my arms and hug her tightly."
 "Almost instantly, the stress and worries of the last two days instantly melt away."
 "I'm surprised with how tightly Yuri is holding onto to me as well, as if she too has been waiting to do this."
-"Her jasmine-scented pefume fills my nostrils with every breath I take as I continue to hold her tightly."
+"Her jasmine-scented perfume fills my nostrils with every breath I take as I continue to embrace her."
 "Even though there might be a few bystanders looking on at us, I couldn't really care less if there was."
 "Just having in her arms is the best thing I've ever felt...{w=0.38}it's hard for me to even put it into words!"
 "I really hate to see her go..."
@@ -3660,7 +3659,7 @@ show yuri at lhide
 hide yuri
 "Yuri hurries off of the train right before the doors close."
 "I simply lean back in my seat, still dazed over the experience I've had with her today."
-"I'm still baffled about how I managed to turn today around and ended on a postive note with her!"
+"I'm still baffled about how I managed to turn today around!"
 "There really isn't anyone like Yuri..."
 "And I can definitely say she likes me..."
 "I know I like her back..."

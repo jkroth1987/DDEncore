@@ -685,7 +685,7 @@ label mencore_3:
     stop music fadeout 3.0
     m 1b "Well, here we are!"
     show monika 1a
-    "Monka stops in front of the band room."
+    "Monika stops in front of the band room."
     mc "Huh, so this is the band room?"
     m 1d "You’ve never been inside before?"
     mc "Can’t say I have."
@@ -977,7 +977,7 @@ label mencore_3:
     m 1j "Ha..."
     m 1l "Hahaha..."
     m 2k "Hahahahaha!"
-    "I’ve never heard Monka laughing so hysterically before..."
+    "I’ve never heard Monika laughing so hysterically before..."
     "Looks like this day wasn't so bad after all..."
     m 2b "Thanks [player], I really needed that!"
     show monika 2a
@@ -1029,7 +1029,7 @@ mc "Well...{w=0.38}that's good I guess..."
 show monika 2bg  at t11 zorder 1
 "Monika raises an eyebrow at me."
 show monika 2bf  at t11 zorder 1
-m "You're not scared of heighs, are you, [player]?"
+m "You're not scared of heights, are you, [player]?"
 mc "No, I can manage..."
 mc "I've just never walked that far out before..."
 show monika 2bd  at t11 zorder 1
@@ -1187,7 +1187,7 @@ hide monika
 scene bg monika_walk2
 with wipeleft_scene
 "As we turn the corner, we stare down at a long, winding path way filled with trees and bushes crowding against each other along the walls."
-"I look up at the street sign to see that the alleyway has already convenientley been named 'Garden Alley'."
+"I look up at the street sign to see that the alleyway has already conveniently been named 'Garden Alley'."
 show monika 1ba at t11 zorder 1
 "I turn to Monika as she gleams with excitment."
 show monika 3bb  at t11 zorder 1
@@ -1290,7 +1290,7 @@ stop music fadeout 3.0
 "This feels...{w=0.38}perfect..."
 "She's perfect..."
 "Her smile, her laugh, her personality...{w=0.38}she's everything I've ever wanted!"
-"And everything points too her liking me back..."
+"And everything points to her liking me back..."
 "Man...{w=0.38}how the hell did this happpen?"
 "Monika and I shuffle a little closer to each other."
 show mb_flustered as monika at t11 zorder 1
@@ -1326,7 +1326,7 @@ show monika 1bm  at t11 zorder 1
 mc "What do you mean by that?"
 mc "Did something happen?"
 show monika 1bf  at t11 zorder 1
-"Monika stotically nods."
+"Monika stoically nods."
 mc "If I may ask...{w=0.38}what happened?"
 mc "I thought that you were dating that one transfer student..."
 mc "But when you brought up last week that you don't have a boyfriend, I just assumed you guys must've ended it over the summer."
@@ -1431,7 +1431,7 @@ m "But I'm afraid the sun's going to set before that..."
 "She's not seriously thinking about racing me to the top, is she?"
 m "Race to the top?"
 "Damn it!"
-"I look up to the sky to see that the sun's begining it's decsent on the horizon."
+"I look up to the sky to see that the sun's begining it's descent on the horizon."
 "The sky is now a pure orange and seems to be getting darker by the second."
 "Well if I'm going to do something that'll probably embrass myself in front of Monika, I can't not ask for some sort of stakes..."
 mc "What do I win if i beat you?"
@@ -1456,7 +1456,7 @@ mc "There's nothing-"
 play music t7
 mc "HEY! NO FAIR!"
 "I call out to her."
-m "You made your look!"
+m "Made your look!"
 "Looks like she's been spending time around Sayori lately..."
 "I smirk as I start running up the steps to try to catch Monika."
 "No way am I going to let her beat me because of this!"
@@ -1465,7 +1465,7 @@ scene black with dissolve_scene
 "We ended up having to take a break about midway up the stairs."
 "But for all intents and purposes...{w=0.38}we agreed that Monika beat me..."
 "Thankfully there was a rest stop along the path, which allowed us to catch our breath and get some water before we started walking up the stairs again."
-"After what felt like another hour of walking up the stairs, we finally reached our desination."
+"After what felt like another hour of walking up the stairs, we finally reached our destination."
 scene bg city_overlook
 with wipeleft_scene
 play music e18 fadein 2.0
@@ -1486,7 +1486,7 @@ mc "This is...{w=0.38}beautiful!"
 show monika 4bb  at t11 zorder 1
 m "I'd thought you'd like it, [player]..."
 show monika 1ba at t11 zorder 1
-m "Whenever I feel overwhelemed or stressed out, I usually go here around sundown."
+m "Whenever I feel overwhelmed or stressed out, I usually go here around sundown."
 show monika 1bb at t11 zorder 1
 m "Seeing the city lit up under the stars really melts away all my troubles and worries..."
 show monika 1bn  at t11 zorder 1
@@ -1501,7 +1501,7 @@ m "It's been a pretty hectic week for me..."
 show monika 1bn  at t11 zorder 1
 m "With the festival prep, the actual festival, my surprise, and-"
 show monika 1bp  at t11 zorder 1
-"Monka cuts herself off."
+"Monika cuts herself off."
 mc "It's fine if you don't wanna tell me."
 mc "I mean, it's not like I can really share with you my thought process right now anyways..."
 mc "I don't even know what I want..."
@@ -1577,7 +1577,7 @@ if encore_sayoriquestion_1 == True:
         mc "And I don't think I can make it up to her..."
         mc "She hardly has any faith left in me, I just know it!"
         show monika 2bg  at t11 zorder 1
-        m "You need to stop dobuting yourself..."
+        m "You need to stop doubting yourself..."
         show monika 2bf  at t11 zorder 1
         m "You've at least given her piece of mind that you'll still be there for her..."
         show monika 2bp  at t11 zorder 1
@@ -2026,15 +2026,15 @@ show cg city_cg_monika with dissolve_cg
 "Even when she's spacing out, she manages to look her best..."
 "The way her emerald eyes glisten in the moonlight..."
 "How her hair flows in the wind everytime a breeze passes us..."
-"And her flawless skin seems to glow in the darknes..."
+"And her flawless skin seems to glow in the darkness..."
 "..."
 "I'll say it..."
-"She's defintley perfect..."
+"She's definitely perfect..."
 "But, can I be with her?"
 "..."
 "At least in this moment...{w=0.38}I really want to..."
 show cg city_cg_monika2
-"Monika then turns to me, notcing my stare."
+"Monika then turns to me, noticing my stare."
 show cg city_cg_monika
 "She immediately blushes as she looks back out onto the cityscape."
 m "You know, seeing everything so small just reminds me in retrospect of how insignificant all our problems are..."
@@ -2043,7 +2043,7 @@ m "I mean look at it, [player], everyone we know is down there, living out their
 m "Being happy, being sad..."
 m "Thinking about how tomorrow is going to play out for them..."
 m "Thinking that they're a hundred percent in control of their destiny..."
-m "And then they just go out and do it! Not really questioning if they consciousnessly made that choice or if a higher power already pre-determined it for them..."
+m "And then they just go out and do it! Not really questioning if they manually made that choice or if a higher power already pre-determined it for them..."
 m "Because they're all so small...{w=0.38}they can be controlled..."
 m "And they would never think to ask themselves about it because they just can't see the bigger picture!"
 m "Most people don't realize just how small they are in retrospect to the universe..."
@@ -2065,7 +2065,7 @@ m "And only a select few who learn how to see above everything, could come to re
 m "And most people can't handle it, because it goes against everything they've ever come to accept."
 m "It's tragic, and that's why I say all our problems are so insignificant in retrospect..."
 m "Because its so superficial..."
-mc "Wow Monika, thats-"
+mc "Wow Monika, that's-"
 "Do I have a crush on a conspiracy theorist right now?"
 "I know she's a deep thinker, but this is something else..."
 "Still, she's clearly put a lot of time and thought into this, and she's not ranting about it like a complete lunatic..."
@@ -2080,7 +2080,7 @@ show monika 1bm at t11 zorder 1
 m "About how two people know the truth about their world..."
 m "How they struggle to accept it..."
 mc "It does sound like a pretty great read!"
-mc "I'd defintley love to read it with you sometime..."
+mc "I'd definitely love to read it with you sometime..."
 show monika 1bo  at t11 zorder 1
 "Instead of Monika happily accepting my offer like I thought she would, she just...{w=0.38}frowns and looks off to the side..."
 mc "Is something wrong, Monika?"
@@ -2116,7 +2116,7 @@ m "Well, would you at least consider the evidence?"
 mc "Well..."
 "Jeez, why is Monika making me answer this?"
 "Is this a pop-quiz to see if I'm worth her time?"
-"Does she have a hobby for disucssing philsophy and conspiracy?"
+"Does she have a hobby for discussing philsophy and conspiracy?"
 "Well, she was in the debate club..."
 "But come to think of it, how would I react if I was shown evidence that this wasn't real?"
 
@@ -2188,7 +2188,7 @@ hide monika
 scene bg residential_night
 with wipeleft_scene
 "Monika and I both decided early on that'd probably be a bad idea to try to walk all the way back at night, so we just made our way to the closest bus stop, with me getting off at a stop not too far from my house."
-"It was a prety silent trip back, with us being too exhausted from the entire trip."
+"It was a pretty silent trip back, with us being too exhausted to say anything."
 "Monika ended up resting on my shoulder on the way back, which really made me surprised, but I went along with it, being the gentlemen I am."
 
 if encore_sayoriquestion_1 == True:
@@ -2253,9 +2253,11 @@ show monika at thide
 hide monika
 scene bg living_room
 with wipeleft
+play sound "sfx/closet-close.ogg"
 show monika 1o at t11 zorder 1
-"We awkardley sit down on the couch, unable to make consistent eye contact with one another."
-"I'm not even sure where to begin with her..."
+"After closing the door behind us, I lead Monika to the living room. We both take our seats on the couch, unable to make consistent eye contact with one another."
+"I bow my head as I try to figure out something to break the tension."
+"I'm not even sure where to begin..."
 "She really didn't need to esclate things with [poem_giver] like that..."
 "But, I'm pretty much the reason this whole thing started to begin with, so I'm probably the one to blame for all this..."
 "And that's fine with me."
@@ -2500,7 +2502,7 @@ mc "Thanks, you too!"
 show monika at thide
 hide monika
 "I lead Monika out the door and gently close it behind her."
-"I watch out the window as Monika gracefully walks off to the horizon into the direction of school."
+"I watch out the window as Monika gracefully walks off to the horizon in the direction of school."
 mc "That almost went perfectly..."
 "I mumble to myself."
 "I'm a little surprised Monika was so forgiving..."
@@ -2658,11 +2660,11 @@ mc "Thanks, you too!"
 show monika at thide
 hide monika
 "I lead Monika out the door and gently close it behind her."
-"I watch out the window as Monika gracefully walks off to the horizon into the direction of school."
+"I watch out the window as Monika gracefully walks off to the horizon in the direction of school."
 mc "That wasn't too bad..."
 "I mumble to myself."
 "I'm still a little surprised Monika went out of her way to make sure everything was alright with me."
-"Even though she was awful during that fight, I'm glad that she recongized her mistakes."
+"Even though she was awful during that fight, I'm glad that she recognized her mistakes."
 "I just hope everything goes smoothly tomorrow..."
 jump day4_night
 
