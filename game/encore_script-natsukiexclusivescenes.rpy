@@ -3633,7 +3633,7 @@ label n_makeup:
 "I start texting back."
 mc "Yeah, if you want you can come over to my place."
 "Natsuki quickly replies back."
-m "Alright, I'm going there now. I'll be there in a few minutes."
+n "Alright, I'm going there now. I'll be there in a few minutes."
 
 if encore_festivalquestion_2 == "Natsuki":
     pass
@@ -3661,7 +3661,7 @@ mc "Coming, coming!"
 "I take a deep breath before walking over and opening the door."
 scene bg house
 with wipeleft
-show natsuski 1n
+show natsuski 1n at t11 zorder 1
 "As expected, I find Natsuki waiting on my porch."
 "She looks up at me through a guilty and pained expression."
 "I simply sigh and wordlessly invite her in."

@@ -220,7 +220,7 @@ Ohayou_Sayori by Monika Before Story
 
 Ohayou_Yuri by Monika Before Story
 
-*\"Knocking On Door-SoundBible.com-84643603.mp3\" from
+\"Knocking On Door-SoundBible.com-84643603.mp3\" from
 http://soundbible.com/1196-Knocking-On-Door.html
 (converted to .ogg by Bug)
 
@@ -531,9 +531,9 @@ The MC as """ + player
     show credits_text c_text_10 at e_credits_text_scroll_middle(y = 1420, t = 28.25, end = -700) as credits_text_2
 
     pause 19.25
-    
+
     show credits_header c_text_11 at e_credits_text_scroll_middle(y = 920, t = 7.5, end = 360) as credits_text_1
-    
+
     pause 9.5
 
     scene black with Dissolve(1.0)
