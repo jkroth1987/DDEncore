@@ -10,6 +10,7 @@ init python:
     # Add 50 pixels per line after the first.
     #
     # Ex: 1620 / 75 = 21.6 seconds, rounded to 21.5
+    # Each line also adds 25 to 920 for the start position and -200 for the end position.
 
     # 1
     # 6 lines, +250 pixels
@@ -21,7 +22,7 @@ Artists: 3Monika4 (Monika), Elaina Sasso, Kiiori,
 Music: Daniel Kruyer (Angelic Beast)"""
 
     # 2
-    # 6 lines, +250 pixels
+    # 8 lines, +350 pixels
     c_text_2 = """Coders: Agent Gold, Bug, Nico, Andrew J. Striedl
 Art Contributors: Kent Stone, SkynnarahSerenity49, vayar2000
 Coding Contributor: POBAW
@@ -51,7 +52,8 @@ Spaghetto, Sir Swampert
 Life Saver: Agent Gold"""
 
     # 5
-    # 6 lines, +250 pixels
+    # 29 lines, +1400 pixels
+    # 1620, -900, 33.6
     c_text_5 = """Playtesters:
 
 DatBlackScientist
@@ -95,14 +97,15 @@ Doki Doki: Monika After Story
 Doki Doki: Literature Club"""
 
     # 6
-    # 7 lines, +150 pixels
+    # 4 lines, +150 pixels
     c_text_7 = """Assets Used
 
 Ren'py Scripts: \"Script to make the dokies lean
 forward then they talk\" by TSS~Danny#2610 (Discord)"""
 
     # 7
-    # 29 lines, +1400 pixels
+    # 85 lines, +4200 pixels
+    # 3020, -2300, 70.9
     c_text_8 = """Backgrounds Used
 
 \"MC_Living_room_afternoon by Nuxill#7870.png\"
@@ -119,78 +122,79 @@ by yagamirai10 [[Community Asset Folder]
 
 \"encoretextbox.png\" by TheD0ct0r#8275(Discord)
 
-\"bedroom_dawn/" by Gorosona#8350
+\"bedroom_dawn\" by Gorosona#8350
 
-\"closet_dark/" by POBAW
+\"closet_dark\" by POBAW
 
-\"club_nothing/" by The Monika Before Story Team
+\"club_nothing\" by The Monika Before Story Team
 
-\"closet_dark/" by Agent Gold
+\"closet_dark\" by Agent Gold
 
-\"city_sidewalk/" From: https://k-after.at.webry.info/200905/article_1.html
+\"city_sidewalk\" From: https://k-after.at.webry.info/200905/article_1.html
 
-\"city_sidewalk2/" Original background from https://k-after.at.webry.info/ and edited by yagamirai10#7046
+\"city_sidewalk2\" Original background from https://k-after.at.webry.info/ and edited by yagamirai10#7046
 
-\"fast_food/" by yagamirai10#7046 in the Community Assets Folder
+\"fast_food\" by yagamirai10#7046 in the Community Assets Folder
 
-\"fountain_bg/" edited by POBAW, original image by Night Wolf23 on https://backgrounddownload.com/anime-visual-novel-background-8/
+\"fountain_bg\" edited by POBAW, original image by Night Wolf23 on https://backgrounddownload.com/anime-visual-novel-background-8/
 
-\"library_bg/" From: https://k-after.at.webry.info/201012/article_1.html
+\"library_bg\" From: https://k-after.at.webry.info/201012/article_1.html
 
-\"livingroom_dark/" From Nuxill#7870 in the Community Assets Folder
+\"livingroom_dark\" From Nuxill#7870 in the Community Assets Folder
 
-\"kitchen_dark/" From Nuxill#7870 in the Community Assets Folder
+\"kitchen_dark\" From Nuxill#7870 in the Community Assets Folder
 
-\"kitchen_light/" From noah.rpy#1267 in the Community Assets Folder
+\"kitchen_light\" From noah.rpy#1267 in the Community Assets Folder
 
-\"manga_section/": https://www.pinterest.com/pin/652529433479832795/
+\"manga_section\": https://www.pinterest.com/pin/652529433479832795/
 
-\"monika_walk2/" edited by POBAW, original image on https://www.pinterest.com/pin/492933121699797858/?lp=true
+\"monika_walk2\" edited by POBAW, original image on https://www.pinterest.com/pin/492933121699797858/?lp=true
 
-\"monika_walk3/" edited by POBAW, original image on https://www.pinterest.com/pin/147070744053778151/
+\"monika_walk3\" edited by POBAW, original image on https://www.pinterest.com/pin/147070744053778151/
 
-\"music_room/" by Cyrke, used in Doki Doki: Relapse
+\"music_room\" by Cyrke, used in Doki Doki: Relapse
 
-\"Mod Logo/" by Monika
+\"Mod Logo\" by Monika
 
-\"natsuki_house/" From Kimagure After
+\"natsuki_house\" From Kimagure After
 
-\"natsuki_room/" by Rez#6478 in the Community Assets Folder
+\"natsuki_room\" by Rez#6478 in the Community Assets Folder
 
-\"n_void_1/" by Agent Gold
+\"n_void_1\" by Agent Gold
 
-\"park_dusk/" Original Image on https://lemmasoft.renai.us/forums/viewtopic.php?t=17302
+\"park_dusk\" Original Image on https://lemmasoft.renai.us/forums/viewtopic.php?t=17302
 
-\"residential_dark/" by Alex[ORG]#9077 in the Community Assests Folder
+\"residential_dark\" by Alex[[ORG]#9077 in the Community Assests Folder
 
-\"residential_dusk/" by SovietSpartan
+\"residential_dusk\" by SovietSpartan
 
-\"school_bg/" by yagamirai10#7046 in the Community Assets Folder
+\"school_bg\" by yagamirai10#7046 in the Community Assets Folder
 
-\"space_room/" by yagamirai10#7046 in the Community Assets Folder
+\"space_room\" by yagamirai10#7046 in the Community Assets Folder
 
-\"cafeteria/" Image Saved By Alania Frank on Pintrest https://i.pinimg.com/originals/ac/32/ab/ac32ab03f90d8d08ef88cfafe788bddf.jpg
+\"cafeteria\" Image Saved By Alania Frank on Pintrest https://i.pinimg.com/originals/ac/32/ab/ac32ab03f90d8d08ef88cfafe788bddf.jpg
 
-\"city_overlook/" From: https://archive.nyafuu.org/w/thread/1906906/
+\"city_overlook\" From: https://archive.nyafuu.org/w/thread/1906906/
 
-\"bg void/": www.videoblocks.com
+\"bg void\": www.videoblocks.com
 
-\"bg void_2/" by Kent Stone
+\"bg void_2\" by Kent Stone
 
-\"Garden Bg's/" From: https://k-after.at.webry.info/upload/detail/134747125007113227040_BG10b_80.jpg.html
+\"Garden Bg's\" From: https://k-after.at.webry.info/upload/detail/134747125007113227040_BG10b_80.jpg.html
 
-\"residential_2_bg/" From: https://k-after.at.webry.info/201101/article_1.html
+\"residential_2_bg\" From: https://k-after.at.webry.info/201101/article_1.html
 
-\"train_station_bg/" by LeoDeCraprio#4239 in the Community Assets Folder
+\"train_station_bg\" by LeoDeCraprio#4239 in the Community Assets Folder
 
-\"Train Bg's/" From: https://k-after.at.webry.info/200806/article_27.html
+\"Train Bg's\" From: https://k-after.at.webry.info/200806/article_27.html
 
-\"Pen/ From AFewSecondsToLive
+\"Pen\" From AFewSecondsToLive
 
-\"Void Door/": https://icouldcrybutidonthavetime.files.wordpress.com/2014/10/doors.jpg"""
+\"Void Door\": https://icouldcrybutidonthavetime.files.wordpress.com/2014/10/doors.jpg"""
 
     # 8
-    # 41 lines, +2000 pixels
+    # 79 lines, +3900 pixels
+    # 2870, -2150, 66.9
     c_text_9 = """Audio Used
 
 Main Menu Theme \"Doki Doki Forever\"
@@ -272,18 +276,19 @@ audio.gust: https://www.youtube.com/channel/UCTdyXszrxhMP-pbhy85Pa-g
 (converted to .ogg by Andrew)"""
 
     # 9
-    # 5 lines, +200 pixels
+    # 21 lines, +1000 pixels
+    # 1420, -700, 28.26
     c_text_10 = """Sprites Used
 
 
 Air Pods by Reenaki
 \"Breaking_Neck\" by TheD0ctor
 \"Monika_Cute\" by radioactive64
-\"Monika_Smirk\" by r/user/LanceAkira in "It's A Doki Doki Life!"
+\"Monika_Smirk\" by r/user/LanceAkira in \"It's A Doki Doki Life!\"
 \"Monika_Shock\" by r/user/Lunatic_Rabbit
-\"Monika_Surprised\" by r/user/LanceAkira in "It's A Doki Doki Life!"
+\"Monika_Surprised\" by r/user/LanceAkira in \"It's A Doki Doki Life!\"
 \"Monika_Tease\" by by r/user/Lunatic_Rabbit
-\"n_bliss\" by r/user/LanceAkira in "It's A Doki Doki Life!"
+\"n_bliss\" by r/user/LanceAkira in \"It's A Doki Doki Life!\"
 \"n_kill\" by TheD0ctor with assets from Doki Doki: Exit Music
 \"n_sweet\" by r/user/TacticalCupcakes
 Silhouetted Sprites by POBAW
@@ -373,6 +378,7 @@ image credits_text = ParameterizedText(style="credits_text", ypos=40)
 image monika_credits_text = ParameterizedText(style="monika_credits_text", xalign=0.5)
 
 #These are the animations applied to the make the credits and images scroll
+#The default values are for a single line, 50 pixels tall. For each additional line, add 25 to the 'y' and 'end' values, then calculate the time.
 transform e_credits_text_scroll(y = 920, t = 15, end = -200):
     anchor (0.5, 0.5) subpixel True
     yoffset y
@@ -492,9 +498,10 @@ The MC as """ + player
 
     pause 2.0
 
-    show credits_text c_text_5 at e_credits_text_scroll_middle(y = 1170, t = 21.5, end = -450) as credits_text_1
+    # 1620, -900, 33.6
+    show credits_text c_text_5 at e_credits_text_scroll_middle(y = 1620, t = 33.5, end = -900) as credits_text_1
 
-    pause 12.5
+    pause 24.5
 
     show e_credits_cg6 at e_credits_scroll_middle as credits_image_2
 
@@ -502,24 +509,31 @@ The MC as """ + player
 
     show credits_text c_text_6 at e_credits_text_scroll_middle(y = 1070, t = 19.0, end = -350) as credits_text_2
 
+    pause 11.0
+
+    show credits_text c_text_7 at e_credits_text_scroll_middle(y = 1045, t = 18.0, end = -325) as credits_text_1
+
     pause 9.0
-
-    show credits_text c_text_7 at e_credits_text_scroll_middle(y = 1570, t = 32.0, end = -850) as credits_text_1
-
-    pause 17.0
     hide credits_image_1
     hide credits_image_2
 
-    show credits_text c_text_8 at e_credits_text_scroll_middle(y = 2180, t = 48.0, end = -1450) as credits_text_2
+    # 3020, -2300, 70.9
+    show credits_text c_text_8 at e_credits_text_scroll_middle(y = 3020, t = 71.0, end = -2300) as credits_text_2
 
-    pause 30.0
+    pause 52.0
 
-    show credits_text c_text_9 at e_credits_text_scroll_middle(y = 1120, t = 20.5, end = -400) as credits_text_1
+    # 2870, -2150, 66.9
+    show credits_text c_text_9 at e_credits_text_scroll_middle(y = 2870, t = 67, end = -2150) as credits_text_1
 
-    pause 11.5
+    pause 54.0
 
-    show credits_header c_text_10 at e_credits_text_scroll_middle(y = 920, t = 7.5, end = 360) as credits_text_2
+    # 1420, -700, 28.26
+    show credits_text c_text_10 at e_credits_text_scroll_middle(y = 1420, t = 28.25, end = -700) as credits_text_2
 
+    pause 19.25
+    
+    show credits_header c_text_11 at e_credits_text_scroll_middle(y = 920, t = 7.5, end = 360) as credits_text_1
+    
     pause 9.5
 
     scene black with Dissolve(1.0)

@@ -86,7 +86,7 @@ label start:
         "Yes.":
             $ day3_skip = True
         "No.":
-            $ day3_skip = False
+            jump no_skip_beginning
 
 
 #    "Have you played any other DDLC mods before this?"
@@ -223,7 +223,7 @@ else: # We didn't accept Sayori's confession
 "Every good story needs an encore!"
 jump day3_start
 
-if day3_skip == False:
+label no_skip_beginning:
     "Shall we begin, [player]?"
     "Every good story needs an encore!"
     jump encorestart
