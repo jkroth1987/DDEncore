@@ -22,7 +22,7 @@ Music: Daniel Kruyer (Angelic Beast)"""
 
     # 2
     # 6 lines, +250 pixels
-    c_text_2 = """Coders: Agent Gold, Bug, Nico, Andrew J. Striedl\n
+    c_text_2 = """Coders: Agent Gold, Bug, Nico, Andrew J. Striedl
 Art Contributors: Kent Stone, SkynnarahSerenity49, vayar2000
 Coding Contributor: POBAW
 General Contributions: Nep, Rezzy
@@ -52,7 +52,41 @@ Life Saver: Agent Gold"""
 
     # 5
     # 6 lines, +250 pixels
-    c_text_5 = """Inspired By: Dan Salvato
+    c_text_5 = """Playtesters:
+
+DatBlackScientist
+Boris Johnson
+Shouka
+Sub-Leader of the K.O.B.
+LordOfTheWeebs
+PVRS_2019
+il giocatore di luca
+Shadow30
+Pina
+XenoRoss
+ThinkAwesome
+Autumn
+newt
+Kaia But Its FatYoshi
+Tidals
+Cpl. Corgi
+lucempeR349^
+Redworm7
+Pixelbit#0266
+xXNovaStorm1698Xx
+RaFaReAcH
+gabe#1086
+hmm#1049
+GGamer
+Iuwb#7392
+Travesty
+Drifty"""
+
+
+
+    # 6
+    # 7 lines, +250 pixels
+    c_text_6 = """Inspired By: Dan Salvato
 
 Inspired By:
 Doki Doki: The Festival
@@ -61,15 +95,15 @@ Doki Doki: Monika After Story
 Doki Doki: Literature Club"""
 
     # 6
-    # 4 lines, +150 pixels
-    c_text_6 = """Assets Used
+    # 7 lines, +150 pixels
+    c_text_7 = """Assets Used
 
 Ren'py Scripts: \"Script to make the dokies lean
 forward then they talk\" by TSS~Danny#2610 (Discord)"""
 
     # 7
     # 29 lines, +1400 pixels
-    c_text_7 = """Backgrounds Used
+    c_text_8 = """Backgrounds Used
 
 \"MC_Living_room_afternoon by Nuxill#7870.png\"
 by Nuxill#7870(Discord) [[Community Asset Folder]
@@ -157,7 +191,7 @@ by yagamirai10 [[Community Asset Folder]
 
     # 8
     # 41 lines, +2000 pixels
-    c_text_8 = """Audio Used
+    c_text_9 = """Audio Used
 
 Main Menu Theme \"Doki Doki Forever\"
 sung by OR3O ft. rachie, Chi-chi, Kathy-chan★
@@ -237,13 +271,9 @@ audio.groan: From Five Nights At Freddy's
 audio.gust: https://www.youtube.com/channel/UCTdyXszrxhMP-pbhy85Pa-g
 (converted to .ogg by Andrew)"""
 
-
-
-
-
     # 9
     # 5 lines, +200 pixels
-    c_text_9 = """Sprites Used
+    c_text_10 = """Sprites Used
 
 
 Air Pods by Reenaki
@@ -267,7 +297,7 @@ Other Unique Sprites by Agent Gold"""
 
     # 10
     # 1 line, no extra pixels!
-    c_text_10 = "Thanks For Playing!"
+    c_text_11 = "Thanks For Playing!"
 
 #This defines the CGs that disappear after a few seconds
 #These are the colored CGs used for scene cgs
@@ -297,7 +327,6 @@ image e_credits_cg6:
     "mod_assets/cgs/credits/6.png"
     size(640, 360)
 
-image e_end_letter = "mod_assets/cgs/end_letter.jpg"
 
 #DDLC Logo
 image encore_credits_logo:
@@ -495,9 +524,6 @@ The MC as """ + player
 
     scene black with Dissolve(1.0)
 
-    play sound page_turn
-    show e_end_letter with Dissolve(1)
-    $ pause()
 
     call screen dialog(message="Restart required.\nThe game will now exit.", ok_action=Quit(confirm=False))
 #    hide e_end_letter with Dissolve(1)

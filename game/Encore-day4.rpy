@@ -1137,7 +1137,7 @@ if poem_giver == "Yuri":
     #jump day4_confession
 
 
-return
+call encore_credits
 #End of Updated Demo
 ##################
 label day4_confession:
