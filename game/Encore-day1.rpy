@@ -1428,7 +1428,7 @@ if encore_sayoriquestion_1 == False:
             "I always did find it adorable whenever she gets flustered and doesn't know what to say or do next."
             show yuri 4e at t11
             "Not to mention she's breathtakingly beautiful and elegant..."
-            "I often find myself getting lost in those beautiful dark purple eyes of her's...."
+            "I often find myself getting lost in those beautiful dark purple eyes of hers...."
             "If things can always be like this, I could die happy..."
             show yuri at thide
             hide yuri
@@ -1597,7 +1597,7 @@ if encore_sayoriquestion_1 == True:
             "I always did find it adorable whenever she gets flustered and doesn't know what to say or do next."
             show yuri 4e at t11
             "Not to mention she's breathtakingly beautiful and elegant..."
-            "I often find myself getting lost in those beautiful dark purple eyes of her's...."
+            "I often find myself getting lost in those beautiful dark purple eyes of hers...."
             "Still, I need to figure out how to best tell her about me and Sayori..."
             show yuri at thide
             hide yuri

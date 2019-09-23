@@ -2099,7 +2099,7 @@ if hangout1 == "Yuri":
         "I clear my voice to alert her of my presence."
         mc "Hey..."
         show yuri 1f
-        "Yuri looks over to see me standing next by the desk next to her's."
+        "Yuri looks over to see me standing next to her desk."
         show yuri 2q
         y "Oh! Hey, [player]..."
         mc "What's up?"
@@ -2222,7 +2222,7 @@ else:
     "I clear my voice to alert her of my presence."
     mc "Hey..."
     show yuri 1f at h11 zorder 1
-    "Yuri looks over to see me standing next by the desk next to her's."
+    "Yuri looks over to see me standing next to her desk."
     show yuri 2q
     y "Oh! Hey, [player]..."
     mc "What's up?"
@@ -2352,7 +2352,7 @@ label day3_ymain:
     mc "Honestly, same here. I can barely hear myself think."
     mc "Maybe we can read somewhere else?"
     y 3r "Honestly, anywhere is better than here right now!"
-    "Yuri says this louder than her usual tone in what I can only assume is an effort to get Natsukis attention."
+    "Yuri says this louder than her usual tone in what I can only assume is an effort to get Natsuki's attention."
     "Though Natsuki doesn’t seem to have heard or just chose to ignore to her."
     "Yuri lets out another sigh."
     y 3h "Come on, let’s go."
@@ -2803,7 +2803,7 @@ y "Thank you for agreeing to accompany me..."
 mc "Ah, it's no problem!"
 show yuri 4ba
 mc "I actually didn't know they were opening a new nature perserve!"
-y 3bq "Yeah, I've been following it's construction for the last few years now..."
+y 3bq "Yeah, I've been following its construction for the last few years now..."
 y 1bq "So as soon as I found out it was finished and it was going to be open to the public, I knew I had to go!"
 show yuri 1be
 mc "Is it the grand opening or something?"
@@ -3142,7 +3142,7 @@ y "It's really no wonder why many authors throughout history have used them as s
 y 3bi "I always did enjoy chasing after them when I was much younger."
 show yuri 1be
 "Sure enough, right as Yuri finished talking, we see a butterfly flutter down from a nearby tree and right into our path."
-"It's your usual orange and black pattern, though the pattern on it's wings is something I haven't really ever seen before on butterflies."
+"It's your usual orange and black pattern, though the pattern on its wings is something I haven't really ever seen before on butterflies."
 "I guess they could've been introduced to the perserve..."
 y 1bs "My, aren't you beauitful?"
 show yuri 2bu
@@ -3261,7 +3261,7 @@ if encore_festivalquestion_2 == "Yuri":
 
 "I actually debate if I want to sneak a picture of her enjoying the company of her butterfly, but I didn't want to ruin the moment."
 "Instead, I simply stand by her as the butterfly continues to hop between Yuri's arms, crawling up and down before staying still for a few moments only to flutter over and repeat the same process again."
-"Yuri simply giggles and smiles as she watches it's movements."
+"Yuri simply giggles and smiles as she watches its movements."
 #End Yuri CG
 show yuri 2be at t11 zorder 1
 "After a few minutes, the butterfly lands on Yuri's nose."
@@ -3320,14 +3320,14 @@ y 1bh "Yes, I suppose it is indeed that time..."
 show yuri 1bg
 "I can tell Yuri isn't exactly keen on the idea of leaving, considering how much fun we've had with each other today."
 "We start walking back to the main trail as it would be the most direct path back to the entrance."
-"After several minutes, I've noticed that Yuri's maintained a rather conflicted epression on her face since we've decided to leave."
+"After several minutes, I've noticed that Yuri's maintained a rather conflicted expression on her face since we've decided to leave."
 "I assumed it was because she didn't want to leave, but something was telling me it was more than that..."
 "I decide to carefully ask her mood in a roundabout way, hoping to avoid another episode like earlier today."
 mc "We've had quite the day together, haven't we?"
 show yuri 1be
 "Yuri quizzically looks up."
 mc "I mean, if you told me earlier after our argument that we would've spent all afternoon together, I thought you would've been joking!"
-y 1bv "Yes...{w=0.38}I do suppose this day had it's unexpected twists and turns..."
+y 1bv "Yes...{w=0.38}I do suppose this day had its unexpected twists and turns..."
 show yuri 3bu
 "Yuri manages a smile as she looks off, but I can easily tell it's not genuine."
 "I let out a sigh as we keep on walking."
@@ -3632,9 +3632,9 @@ stop music fadeout 1.0
 mc "In what way?"
 y 1bh "Like they were always hiding something..."
 play sound train
-"Suddenly, we hear the horn of the train, starting it's slow grind to a halt."
+"Suddenly, we hear the horn of the train, starting its slow grind to a halt."
 show yuri 3bw
-"Yuri let's out a sigh."
+"Yuri lets out a sigh."
 mc "I take this is your stop?"
 y 1bl "Sadly, yes..."
 y 1bq "I'm really sorry that I can't stay on with you for your journey home..."
@@ -3728,7 +3728,7 @@ with wipeleft
 show yuri 1o at t11 zorder 1
 "As expected, I find Yuri waiting on my porch."
 show yuri 1n
-"She looks up at me through a worried and paniced expression."
+"She looks up at me through a worried and panicked expression."
 "Rather than having her stumble through words right here and now, I simply sigh and wordlessly invite her in."
 show yuri at thide
 hide yuri
@@ -3850,6 +3850,8 @@ show yuri 2u
 mc "This really is all my fault..."
 mc "I led you on and I hurt you..."
 y 2q "Well, I'm glad that we can see we're both to blame for this..."
+y 1v "I'm really sorry that it had to come to this..."
+mc "Yeah...{w=0.38}I am as well..."
 
 
 if encore_festivalquestion_2 == "Yuri":
@@ -3857,42 +3859,62 @@ if encore_festivalquestion_2 == "Yuri":
     if hangout1 == "Yuri":
         if hangout2 == "Yuri":
             if hangout3 == "Yuri":
-                n 5q "I thought that after everything we've been through, that you might've liked me more than just as friends..."
-                n 1m "Even though we haven't been talking for very long, I thought I was able to tell that you really weren't like most boys..."
-                n 2t "You actually took me seriously..."
-                n "You were kind, funny..."
-                n 2y "A bit of a mediocre taste in manga..."
-                n 5q "But, you actually cared about how I felt and what I was going through..."
-                n 5m "I thought you weren't going to try to play me because I looked like an easy girl to get or something..."
-                n 12b "But, maybe I was wrong again..."
+                y 1w "We've spent so much time together..."
+                y "So much to the point that maybe there was a possibility that we could be more than simply friends..."
+                y 3t "You've been so patient and understanding with me..."
+                y 3u "Truthfully, ever since the day you joined, I walked in looking foward to spending time together..."
+                y "It's the highlight of my day..."
+                y 3t "And you helped me feel better about myself..."
+                y "I thought that because of you, I could finally feel love and companionship again..."
+                y 3u "I had no reason to believe that you were trying to mislead me..."
+                y 3w "But, I shouldn't be surprised that as soon as I open myself up, I find myself getting hurt again..."
+                y "It's happened so many times before..."
+                y 1o "Why was I such a fool to let it happen again?"
                 jump y_converge1
 
 
     if hangout1 != "Yuri":
         if hangout2 == "Yuri":
             if hangout3 == "Yuri":
-                n 5q "To be honest, I was wondering what would be next for us after the festival..."
-                n 1m "Ever since you joined, I've had a lot of fun spending time around you."
-                n 2t "Whether it was reading manga, or doing stuff at the festival..."
-                n 2q "It just felt so right being around you..."
-                n 2s "I did worry for a time if you were going to come back to me..."
-                n 2m "But, you did!"
-                n 5q "The more I got to know you, the more I felt like you actually cared about me..."
-                m 5m "I thought you weren't doing it for show, but..."
-                n 12b "Maybe I was wrong again..."
+                y 1w "I'll be honest, [player]..."
+                y "I've done alot of refelection this past week over our relationship with each other..."
+                y 3t "With how much time we've spent together, and how well we've interacted..."
+                y 3u "I thought maybe there was a chance that we'd get to be more than just friends..."
+                y 3u "Truthfully, ever since the day you joined, I walked in looking foward to spending time together..."
+                y "It's the highlight of my day..."
+                y 3t "And you helped me feel better about myself..."
+                y "I thought that because of you, I could finally feel love and companionship again..."
+                y 3v "I was a little worried that you weren't going to come back to me after I saw you hanging around [hangout1]..."
+                y 3u "I just told myself I was overeacting, and that you'd come back."
+                y 3s "Which you did."
+                y 3u "I had no reason to believe that you were trying to mislead me..."
+                y 3w "But, I shouldn't be surprised that as soon as I open myself up, I find myself getting hurt again..."
+                y "It's happened so many times before..."
+                y 1o "Why was I such a fool to let it happen again?"
                 jump y_converge1
+
 
 
     if hangout1 == "Yuri":
         if hangout2 != "Yuri":
             if hangout3 == "Yuri":
-                n 5q "After we spent all that time together at the festival, I was wondering what would be next for us..."
-                n 1m "I really enjoyed spending time around you, [player]..."
-                n 2t "You always went out of your way to make sure I was having the best day as possible..."
-                n 5q "Nobody has ever really done that for me before..."
-                n 5s "But, when I saw you with [hangout2] the other day, I started to have dobuts about where you wanted to take our relationship..."
-                n 5m "And when you came to see me yesterday, my worries went away for a little while..."
-                n 12b "Now I see that I was right to be suspicious of you..."
+                y 1w "To be honest with you, [player]..."
+                y "I've done some thinking over this week about relationship with each other..."
+                y 3t "With how much time we've spent together, and how well we've interacted..."
+                y 3u "I thought maybe there was a chance that we'd get to be more than just friends..."
+                y 3u "Truthfully, ever since the day you joined, I walked in looking foward to spending time together..."
+                y "It's the highlight of my day..."
+                y 3t "And you helped me feel better about myself..."
+                y "I thought that because of you, I could finally feel love and companionship again..."
+                y 3q "But, I started to question that once I saw you hugging [hangout2] in that way..."
+                y 3o "I...{w=0.38}really wasn't sure how to take it at the time..."
+                y "I was a little hurt to see that happen..."
+                y 3u "I tried to tell myself that I was overeacting, and that maybe it wasn't what it looked like..."
+                y 3s "And I'm glad we were able to smooth that over yesterday."
+                y 3u "I trusted you and I believed that you weren't trying to mislead me..."
+                y 3w "But, I shouldn't be surprised that as soon as I open myself up, I find myself getting hurt again..."
+                y "It's happened so many times before..."
+                y 1o "And with the signs right in front of me, I should've known that continuing to persue you would only result in more pain..."
                 jump y_converge1
 
 
@@ -3900,18 +3922,16 @@ if encore_festivalquestion_2 == "Yuri":
     if hangout1 == "Yuri":
         if hangout2 == "Yuri":
             if hangout3 != "Yuri":
-                n 5q "Ever since we started talking, I always wondered what you were trying to get out of me."
-                n 1m "I didn't want to be pushed around or taken advantage of..."
-                n "I was used to it..."
-                n 2t "But, for a time, you proved me wrong..."
-                n "You actually took me seriously..."
-                n "You were kind, funny..."
-                n 2y "A bit of a mediocre taste in manga..."
-                n 5q "But, you actually cared about how I felt and what I was going through..."
-                n 5m "I thought you weren't going to try to play me because I looked like an easy girl to get or something..."
-                n 5s "But, when you went off with [hangout3] the other day, I started to get suspicious of what you were up to."
-                n "In my experience, when people stop talking to me all of a sudden, it's either because I messed up or they lost interest in me..."
-                n 12b "I see now that it's both..."
+                y 1w "I really thought we had something good between us, [player]..."
+                y 3t "With how fast we've grown together in such a short amount of time..."
+                y 3u "I thought maybe there was a chance that we'd get to be more than just friends..."
+                y 3u "Truthfully, ever since the day you joined, I walked in looking foward to spending time together..."
+                y "It's the highlight of my day..."
+                y 3t "And you helped me feel better about myself..."
+                y "I thought that because of you, I could finally feel love and companionship again..."
+                y 3q "Though I did begin to question that after you disappeared with [hangout3] yesterday..."
+                y 3v "I was initally assuming the worst but I tried telling myself that I was overeacting and that you still liked me...."
+                y 1o "But, I guess the worst case is pretty much what happened here..."
                 jump y_converge1
 
 
@@ -3920,32 +3940,31 @@ if encore_festivalquestion_2 == "Yuri":
     if hangout1 != "Yuri":
         if hangout2 != "Yuri":
             if hangout3 == "Yuri":
-                n 5q "After we spent all that time together, I started to wonder where our relationship was going to go next..."
-                n 1m "I really enjoyed spending time with you..."
-                n 1n "And I wanted more..."
-                n 2t "You actually took me seriously..."
-                n "You were kind, funny..."
-                n 2y "A bit of a mediocre taste in manga..."
-                n 5q "But, you actually cared about how I felt and what I was going through..."
-                n 5m "I thought you weren't going to try to play me because I looked like an easy girl to get or something..."
-                n 5n "But this week, you practically ignored me until yesterday!"
-                n 5q "I wasn't sure what your reason was, but I wanted to try to get back to where we were..."
-
+                y 1w "For a while, I thought we had a pretty good relationship with each other, [player]."
+                y 3t "I thought that we could really expand upon it to where we could be even more than just friends..."
+                y 3u "Truthfully, ever since the day you joined, I walked in looking foward to spending time together..."
+                y "It's the highlight of my day..."
+                y 3t "And you helped me feel better about myself..."
+                y "I thought that because of you, I could finally feel love and companionship again..."
+                y 3u "But, lately, I've been questioning that."
+                y "You hadn't come to read with me until yesterday."
+                y "You were off enjoying yourself with the others, leaving me behind."
+                y 3v "I was really hurt by this..."
+                y 3u "But, I tried telling myself that I was overeacting, and that maybe you just wanted to check-up on the others..."
+                y 3s "I was really relieved when you came to see me yesterday."
+                y 3t "I'm glad we got to put some of the misunderstandings behind us..."
+                y 3q "It might have been wishful thinking on my part, but I was hoping we could get back to where we were..."
 
                 if Yuri_hangout == True:
-                    n 5l "And I'm really glad you wanted to spend more time with me after school..."
-                    n 5t "I really had a great time picking up Parfait Girls with you..."
-                    n 5s "And for a while, I hoped that we were on the right track to being more than just friends..."
-
-
+                    y 3u "Us going to the nature perserve yesterday really had be feeling optimistic about our future prospects..."
+                    y "I thought that maybe at the least, we could resume our friendship with each other..."
 
                 else:
                     pass
 
 
-                n 12b "But now, it seems like it's too late..."
+                y 3o "But, maybe it's too late now..."
                 jump y_converge1
-
 
 
 
@@ -3954,82 +3973,111 @@ if encore_festivalquestion_2 == "Natsuki":
     if hangout1 == "Yuri":
         if hangout2 == "Yuri":
             if hangout3 == "Yuri":
-                n 5q "I thought that after everything we've been through, that you might've liked me more than just as friends..."
-                n 1m "Even though we haven't been talking for very long, I thought I was able to tell that you really weren't like most boys..."
-                n 2t "You actually took me seriously..."
-                n "You were kind, funny..."
-                n 2y "A bit of a mediocre taste in manga..."
-                n 5q "But, you actually cared about how I felt and what I was going through..."
-                n 5m "I thought you weren't going to try to play me because I looked like an easy girl to get or something..."
-                n 12b "But, maybe I was wrong again..."
+                y 1w "We've spent so much time together this week..."
+                y "I thought we had the chance to be really good friends, maybe even something more down the road..."
+                y 3t "You've been so patient and understanding with me..."
+                y 3u "Truthfully, ever since the day you joined, I walked in hoping to spend time together..."
+                y 3w "And after waiting for so long, it finally happened!"
+                y "Spending time around you has been the highlight of my day..."
+                y 3t "You helped me feel better about myself..."
+                y "I thought that because of you, I might finally feel love and companionship again..."
+                y 3u "I had no real reason to believe that you were trying to mislead me..."
+                y 3w "But, I shouldn't be surprised that as soon as I open myself up, I find myself getting hurt again..."
+                y "It's happened so many times before..."
+                y 1o "Why was I such a fool to let it happen again?"
                 jump y_converge1
+
 
 
     if hangout1 != "Yuri":
         if hangout2 == "Yuri":
             if hangout3 == "Yuri":
-                n 5q "To be honest, I always wondered if I'd ever get to know you..."
-                n 1m "Ever since you joined, I always had to watch you spend time with everyone else!"
-                n 5q "Even though I was suspicious of you, I didn't want to scare you away or anything like that..."
-                n 5m "And I was so happy when you finally came over to me and started talking on Tuesday..."
-                n 5q "Once we started reading together, I started feeling so much more comfortable around you..."
-                n 5n "I didn't know if that was just going to be a one time thing or something...."
-                n 2m "But, you came back to me yesterday too!"
-                n 5q "Even though we've only been talking for two days now, I really thought you cared about me..."
-                m 5m "I thought you weren't doing it for show, but..."
-                n 12b "Maybe I was wrong again..."
+                y 1w "I never really expected us to grow this close to each other..."
+                y "We may have only started getting to really know each other recently, but..."
+                y 3t "I've really enjoyed spending so much time with you..."
+                y 3u "Maybe it was just my wishful thinking, but I thought that there could be a chance that we'd get to be more than just friends..."
+                y "Give in time..."
+                y 3u "Ever since the day you joined, I walked in hoping to spend time together..."
+                y 3t "And this week, we've finally got that chance!"
+                y "It's been the highlight of the school year for me at this point..."
+                y 3t "You helped me feel better about myself..."
+                y "I thought that because of you, I could finally feel love and companionship again..."
+                y 3v "I was a little worried that you weren't going to come back to me after I saw you hanging around [hangout1]..."
+                y 3u "I just told myself I was overeacting, and that you'd come back."
+                y 3s "Which you did."
+                y 3u "I had no reason to believe that you were trying to mislead me..."
+                y 3w "But, I shouldn't be surprised that as soon as I open myself up, I find myself getting hurt again..."
+                y "It's happened so many times before..."
+                y 1o "Why was I such a fool to let it happen again?"
                 jump y_converge1
+
+
 
 
     if hangout1 == "Yuri":
         if hangout2 != "Yuri":
             if hangout3 == "Yuri":
-                n 5q "To be honest, I always wondered if I'd ever get to know you..."
-                n 1m "Ever since you joined, I always had to watch you spend time with everyone else!"
-                n 5q "Even though I was suspicious of you, I didn't want to scare you away or anything like that..."
-                n 5m "And I was so happy when you finally came over to me and started talking on Monday..."
-                n 5q "Even if we didn't get to read together like we wanted to, I appreciated the gesture, and I figured maybe we'd get the chance to hangout again..."
-                n 5s "But, when I saw you with [hangout2] the other day, I started to have dobuts..."
-                n 5m "But then you came back to me..."
-                n 12b "Now I'm just so confused and hurt..."
+                y 1w "Truthfully, [player], I wasn't sure if we'd ever become that close..."
+                y "We may have only started getting to really know each other recently, but..."
+                y 3t "I've really enjoyed spending so much time with you..."
+                y 3u "Maybe it was just my wishful thinking, but I thought that there could be a chance that we'd get to be more than just friends..."
+                y 3u "I've always hoped that we'd get to know each other better..."
+                y 3t "And this week, we've finally got that chance!"
+                y "It's been the highlight of the school year for me at this point..."
+                y 3t "You helped me feel better about myself..."
+                y "I thought that because of you, I could finally feel love and companionship again..."
+                y 3q "But, I started to question how realistic that was once I saw you hugging [hangout2].."
+                y 3o "I...{w=0.38}really wasn't sure how to take it at the time..."
+                y "I was a little hurt to see that happen..."
+                y 3u "I tried to tell myself that I was overeacting, and that maybe it wasn't what it looked like..."
+                y 3s "And I'm glad we were able to smooth that over yesterday."
+                y 3u "I trusted you and I believed that you weren't trying to mislead me..."
+                y 3w "But, I shouldn't be surprised that as soon as I open myself up to someone new, I find myself getting hurt again..."
+                y "It's happened so many times before..."
+                y 1o "And with the signs right in front of me, I should've known that continuing to persue you would only result in more pain..."
                 jump y_converge1
+
+
+
+
 
 
     if hangout1 == "Yuri":
         if hangout2 == "Yuri":
             if hangout3 != "Yuri":
-                n 5q "Ever since we started talking, I always wondered what you were trying to get out of me."
-                n 1m "I didn't want to be pushed around or taken advantage of..."
-                n "I was used to it..."
-                n 2t "But, for a time, you proved me wrong..."
-                n "You actually took me seriously..."
-                n "You were kind, funny..."
-                n 2y "A bit of a mediocre taste in manga..."
-                n 5q "But, you actually cared about how I felt and what I was going through..."
-                n 5m "I thought you weren't going to try to play me because I looked like an easy girl to get or something..."
-                n 5s "But, when you went off with [hangout3] the other day, I started to get suspicious of what you were up to."
-                n "In my experience, when people stop talking to me all of a sudden, it's either because I messed up or they lost interest in me..."
-                n 12b "I see now that it's both..."
+                y 1w "Honestly, I never really expected us to become this close..."
+                y "Especially in such a short amount of time..."
+                y 3t "But, I've really enjoyed spending so much time with you..."
+                y 3u "I've always hoped that we'd get to know each other better..."
+                y 3t "And this week, we've finally got that chance!"
+                y "It's been the highlight of the school year for me at this point..."
+                y 3t "You helped me feel better about myself..."
+                y "I thought that because of you, I could finally feel love and companionship again..."
+                y 3q "Though I started asking myself if that was really possible after you disappeared with [hangout3] yesterday..."
+                y 3v "I was initally assuming the worst but I tried telling myself that I was overeacting and that we still might have a chance..."
+                y 1o "But, I guess the worst case is pretty much what happened here..."
                 jump y_converge1
+
+
 
 
     if hangout1 != "Yuri":
         if hangout2 != "Yuri":
             if hangout3 == "Yuri":
-                n 5q "To be honest, I always wondered if I'd ever get to know you..."
-                n 1m "Ever since you joined, I always had to watch you spend time with everyone else!"
-                n 5q "Even though I was suspicious of you, I didn't want to scare you away or anything like that..."
-                n 5m "I was actually kind of glad to see you when you finally came over to me and started talking on yesterday..."
-                n 5t "Surprisingly, you weren't too bad..."
-                n 2t "You actually took me seriously..."
-                n "You were kind, funny..."
-                n 2y "A bit of a mediocre taste in manga..."
-                n 5q "But, you actually cared about how I felt and listened to what I was going through..."
+                y 1w "I never really even ever thought that we'd get to know each other that well, [player]..."
+                y "You were always off with the others, who were always more open and less fustrating to deal with..."
+                y 3t "But, deep down, I hoped that you'd still somehow give me a chance..."
+                y 3u "And you did..."
+                y "You actually came over to me..."
+                y 3t "And I had so much fun reading with you..."
+                y 3w "Despite that...{w=0.38}incident..."
+                y "But, I held onto hope that we'd still continue to talk afterwards..."
+
 
                 if Yuri_hangout == True:
-                    n 5l "And I'm really glad you wanted to spend more time with me after school..."
-                    n 5t "I really had a great time picking up Parfait Girls with you..."
-                    n 5s "And for a while, I hoped that we were on the right track to being friends..."
+                    y 3s "I was really relieved to see that the earlier incident didn't hamper things between us..."
+                    y 3u "And, I had alot of fun with you at the nature perserve..."
+                    y "I was hoping that maybe that could be the moment things between us started to blossom..."
                     jump y_converge1
 
 
@@ -4037,88 +4085,407 @@ if encore_festivalquestion_2 == "Natsuki":
                     pass
 
 
-                n 12b "At least, that's what I thought..."
+
+                y 3o "But, maybe it's too late now..."
                 jump y_converge1
 
 
 
 label y_converge1:
 
-"I bow my head in guilt as Natsuki finishes her speech."
+"I bow my head in guilt as Yuri finishes her speech."
 "It's hard to come to terms with how much my mistake hurt her..."
 "I never meant to drive her or anyone to this point..."
 "But, we're both in the wrong, and we should fix things now before it gets worse..."
 "I finally muster up the willpower to speak up again."
-show natsuki 12a
-mc "I'm sorry, Natsuki..."
-show natsuki 1n
+show yuri 4b
+mc "I'm sorry, Yuri..."
+show yuri 4a
 mc "It was never my intention to hurt you or anyone else..."
 mc "Truthfully, my emotions are all over the place right now too."
 mc "I know it's not an excuse for what I did to you, but I'm in just as much turmoil over this as you are..."
-n 1m "Are you and Yuri...{w=0.38}together now?"
-show natsuki 1n
+y "Are things between you and Natsuki...{w=0.38}offical now?"
 mc "I don't know..."
-mc "I didn't really expect everything to hit the fan at once..."
-mc "So, right now I just want to fix make sure that there's no more misunderstandings between us."
-n 1q "I get what you mean..."
-n 1m "I'll talk to Sayori tomorrow when I get the chance..."
-n 1n "How is she?"
+mc "I didn't really expect everything to happen all at once..."
+mc "I just wanted to fix things between us first..."
+y 3u "I understand..."
+y 1h "I'll try to talk to Sayori tomorrow..."
+y 1v "I have to correct my mistake as soon as possible."
+y 1f "How is she?"
+show yuri 1e
 mc "I haven't had the chance to check up on her yet, but I'll text her later."
-n 1q "Okay..."
-n 1u "Well, I'll try to forgive you for what happened earlier. I just can't deal with it right this second..."
-mc "I understand."
+y 1q "Alright..."
+y "Well, as far as things betwene us are concerned, I believe I should afford you the chance to try to forgive you for earlier as well."
+mc "That would be appreciated."
 stop music fadeout 3.0
-"We sit for the next few minutes in silence before Natsuki speaks up again."
-n 1m "Do you think the club's ever going to be the same?"
-show natsuki 1n
+"We sit for the next few minutes in silence before Yuri speaks up again."
+y 1h "Do you think the club's ever going to be the same?"
+show yuri 1e
 mc "I don't know..."
 mc "Hopefully, we can all put aside our differences in time for Monday at least, but after that, who knows."
-n 1m "I don't want the club to disband, [player]!"
-n 1n "It's really the only place I can call home!"
+y 1q "Well, let's try to be optimistic..."
+y 1h "We've lasted this long as a group, and I don't really think any of us meant what we said to each other earlier..."
 mc "I know..."
-mc "I'd hate to see the club break apart too..."
-mc "I have no idea what's going to happen with Monika and Yuri. There's no telling if there'll even be a meeting tomorrow."
-n 1m "Sayori would try to come, wouldn't she?"
-show natsuki 1n
-mc "Knowing her, probably. She's not one to hold onto grudges."
+mc "I don't know what I'd do if the club broke up..."
+show yuri 1e
+mc "And there's no telling if there'll even be a meeting tomorrow, given what happened with Monika and Natsuki..."
+y 1f "Wouldn't Sayori try to attend at least?"
+show yuri 1e
+mc "I'd hope so. In all the times I've known her, she's always tried to overlook personal differences and disagreements."
 mc "But, hopefully we can all apologize to each other go back to being friends..."
-n 1q "Yeah..."
-n 1m "Well, I'm glad you let me come over to hear me out..."
-show natsuki 1n
+y 1q "I agree..."
+y 1s "Well, I'm afraid I have to get going. We should rest up for tomorrow's meeting."
+y 1t "I'm really thankful for you allowing me to come over."
 mc "I suppose it's the least we could do."
 mc "I trust that you'll stay to your word and work things out with Sayori at least..."
-n 1t "Well, I think I owe everyone an apology at this point..."
-mc "I do too..."
+y 1s "I intend to make things right with everyone..."
+y 1w "For the good of the club, we need to ensure there's no lingering animosity between any of us."
+mc "Well I suppose that puts us in the same boat, huh?"
+show yuri 1q
 "We both let out an awkward chuckle before the room returns to silence."
-show natsuki 1u
-"At least Natsuki and I smoothed things over for the most part."
-"Let's just hope it goes just as well for tomorrow..."
-n 1m "So, I guess I'll see you tomorrow at the club then?"
+"At least Yuri and I smoothed things over for the most part."
+"Let's just hope it goes just as well for tomorrow with eveyone else..."
+y 1f "So, I'll see you tomorrow at the club then?"
+show yuri 1e
 mc "I'll be there."
-mc "Just let me know if you see Monika or Yuri around."
-n 1m "I will."
-n 5m "And let me know how Sayori is doing..."
-show natsuki 5n
+mc "Just let me know if you see Monika or Natsuki around too."
+y 1a "I'll keep my eyes open."
+y 1s "And check on Sayori for me, would you?"
 mc "I'll be sure to."
-n 1q "Well, I'll get going now..."
-n 1m "If I stay any longer, I'll miss the bus."
-show natsuki 1n
-mc "It's alright, thank you for everything, Natsuki."
-mc "I just hope in the next few days we can get back to being friends again..."
-n 1m "Me too."
-n 1t "Later, [player]!"
+y 1q "Well, I'll be on my way now..."
+y "I'd hate to get into trouble with my parents for staying out too late..."
+mc "I understand. Thanks for coming to me, Yuri."
+mc "Let's just hope all this craziness blows over soon..."
+y 1b "I couldn't agree more."
+y 1c "Goodbye, [player]!"
 mc "See you tomorrow!"
-show natsuki at thide
-hide natsuki
-"I lead Natsuki out the door and gently close it behind her."
-"I watch out the window as Natsuki walks off to the horizon in the direction of the nearest bus stop."
+show yuri at thide
+hide yuri
+"I lead Yuri out the door and gently close it behind her."
+"I watch out the window as Yuri walks off to the horizon in the direction of the nearest bus stop."
 mc "That wasn't too bad..."
 "I mumble to myself."
-"I'm still a little surprised Natsuki went out of her way to directly apologize to me..."
+"I'm still a little surprised Yuri went out of her way to directly apologize to me..."
 "Even though she was awful during that fight, I'm glad that she recognized her mistakes."
-"It's going to take time for Natsuki and I to move past what happened, but maybe we can get back to where we were soon..."
+"It's going to take time for Yuri and I to move past what happened, but maybe we can get back to where we were soon..."
 "I just hope everything goes smoothly tomorrow..."
 jump day4_night
+
+
+label y_talk2:
+
+"I sit there frozen in shock as I attempt to process the situation."
+"I've seen Yuri overwhelmed by her emotions before and lashing out..."
+"But, it's only because she's forced into these uncomfortable situations and doesn't really know how to handle herself..."
+"Maybe I shouldn't be so mad at her..."
+"I wait for her to collect herself before I say anything."
+show yuri 4b
+mc "Well, I'm glad that you've come to recognize what you said back there was wrong..."
+mc "But, I'm a pretty big reason for what happened as well, so I'm really sorry that all had to happen..."
+mc "So, I shouldn't be as mad as I should at you."
+show yur 4a
+mc "This really is all my fault..."
+mc "I led on Natsuki and hurt her..."
+mc "And who knows who else I've hurt in the process..."
+mc "I'm just so confused about everything right now..."
+y 2q "I know where you're coming from, [player]..."
+y 1q "It's been an emotionally confusing time for us both..."
+
+
+
+if encore_festivalquestion_2 == "Yuri":
+
+    if hangout1 == "Yuri":
+        if hangout2 == "Yuri":
+            if hangout3 == "Yuri":
+                y 1w "We've spent so much time together..."
+                y "So much to the point that maybe there was a possibility that we could be more than simply friends..."
+                y 3t "You've been so patient and understanding with me..."
+                y 3u "Truthfully, ever since the day you joined, I walked in looking foward to spending time together..."
+                y "It's the highlight of my day..."
+                y 3t "And you helped me feel better about myself..."
+                y "I thought that because of you, I could finally feel love and companionship again..."
+                y 1w "But I've probably ruined things thanks to my behavior today..."
+                y 4c "You saw my worst possible side and I don't expect you to get over that anytime soon, if ever..."
+                jump y_converge2
+
+
+    if hangout1 != "Yuri":
+        if hangout2 == "Yuri":
+            if hangout3 == "Yuri":
+                y 1w "I'll be honest, [player]..."
+                y "I've done alot of refelection this past week over our relationship with each other..."
+                y 3t "With how much time we've spent together, and how well we've interacted..."
+                y 3u "I thought maybe there was a chance that we'd get to be more than just friends..."
+                y 3u "Truthfully, ever since the day you joined, I walked in looking foward to spending time together..."
+                y "It's the highlight of my day..."
+                y 3t "And you helped me feel better about myself..."
+                y "I thought that because of you, I could finally feel love and companionship again..."
+                y 3v "I was a little worried that you weren't going to come back to me after I saw you hanging around [hangout1]..."
+                y 3u "I just told myself I was overeacting, and that you'd come back."
+                y 3s "Which you did."
+                y 3u "I had no reason to believe that you were trying to mislead me..."
+                y 1u "After hearing you out just now, I don't believe you were ever trying to hurt me..."
+                y 1w "But, things are probably ruined now thanks to how I acted out today..."
+                y 4c "Why would you bother to look at me after I said something so horrible?"
+                jump y_converge2
+
+
+
+
+    if hangout1 == "Yuri":
+        if hangout2 != "Yuri":
+            if hangout3 == "Yuri":
+                y 1w "To be honest with you, [player]..."
+                y "I've done some thinking over this week about relationship with each other..."
+                y 3t "With how much time we've spent together, and how well we've interacted..."
+                y 3u "I thought maybe there was a chance that we'd get to be more than just friends..."
+                y 3u "Truthfully, ever since the day you joined, I walked in looking foward to spending time together..."
+                y "It's the highlight of my day..."
+                y 3t "And you helped me feel better about myself..."
+                y "I thought that because of you, I could finally feel love and companionship again..."
+                y 3q "But, I started to question that once I saw you hugging [hangout2] in that way..."
+                y 3o "I...{w=0.38}really wasn't sure how to take it at the time..."
+                y "I was a little hurt to see that happen..."
+                y 3u "I tried to tell myself that I was overeacting, and that maybe it wasn't what it looked like..."
+                y 3s "And I'm glad we were able to smooth that over yesterday."
+                y 3u "I trusted you and I believed that you weren't trying to mislead me..."
+                y 1u "After hearing you out just now, I trust you that was the case..."
+                y 1w "But, things are probably ruined thanks to how I acted out today..."
+                y 4c "Why would you bother to like someone like me after I said something so horrible?"
+                jump y_converge2
+
+
+
+
+    if hangout1 == "Yuri":
+        if hangout2 == "Yuri":
+            if hangout3 != "Yuri":
+                y 1w "I really thought we had something good between us, [player]..."
+                y 3t "With how fast we've grown together in such a short amount of time..."
+                y 3u "I thought maybe there was a chance that we'd get to be more than just friends..."
+                y 3u "Truthfully, ever since the day you joined, I walked in looking foward to spending time together..."
+                y "It's the highlight of my day..."
+                y 3t "And you helped me feel better about myself..."
+                y "I thought that because of you, I could finally feel love and companionship again..."
+                y 3q "Though I did begin to question that after you disappeared with [hangout3] yesterday..."
+                y 3v "I was initally assuming the worst but I tried telling myself that I was overeacting and that you still liked me...."
+                y 1u "After hearing you out just now, I trust you that was the case..."
+                y 1t "And maybe there was a chance that the worst case scenario that I had feared wouldn't happen..."
+                y 4c "But, I guess it was unavoidable all along..."
+                jump y_converge2
+
+
+
+
+
+    if hangout1 != "Yuri":
+        if hangout2 != "Yuri":
+            if hangout3 == "Yuri":
+                y 1w "For a while, I thought we had a pretty good relationship with each other, [player]."
+                y 3t "I thought that we could really expand upon it to where we could be even more than just friends..."
+                y 3u "Truthfully, ever since the day you joined, I walked in looking foward to spending time together..."
+                y "It's the highlight of my day..."
+                y 3t "And you helped me feel better about myself..."
+                y "I thought that because of you, I could finally feel love and companionship again..."
+                y 3u "But, lately, I've been questioning that."
+                y "You hadn't come to read with me until yesterday."
+                y "You were off enjoying yourself with the others, leaving me behind."
+                y 3v "I was really hurt by this..."
+                y 3u "But, I tried telling myself that I was overeacting, and that maybe you just wanted to check-up on the others..."
+                y 3s "I was really relieved when you came to see me yesterday."
+                y 3t "I'm glad we got to put some of the misunderstandings behind us..."
+                y 3q "It might have been wishful thinking on my part, but I was hoping we could get back to where we were..."
+
+
+                if yuri_hangout == True:
+                    y 3u "Us going to the nature perserve yesterday really had be feeling optimistic about our future prospects..."
+                    y "I thought that maybe at the least, we could resume our friendship with each other..."
+
+
+
+
+                else:
+                    pass
+
+
+if encore_festivalquestion_2 == "Natsuki":
+
+    if hangout1 == "Yuri":
+        if hangout2 == "Yuri":
+            if hangout3 == "Yuri":
+                y 1w "We've spent so much time together this week..."
+                y "I thought we had the chance to be really good friends, maybe even something more down the road..."
+                y 3t "You've been so patient and understanding with me..."
+                y 3u "Truthfully, ever since the day you joined, I walked in hoping to spend time together..."
+                y 3w "And after waiting for so long, it finally happened!"
+                y "Spending time around you has been the highlight of my day..."
+                y 3t "You helped me feel better about myself..."
+                y "I thought that because of you, I might finally feel love and companionship again..."
+                y 1w "But I've probably ruined things thanks to my behavior today..."
+                y 4c "You saw my worst possible side and I don't expect you to get over that anytime soon, if ever..."
+                jump y_converge2
+
+
+    if hangout1 != "Yuri":
+        if hangout2 == "Yuri":
+            if hangout3 == "Yuri":
+                y 1w "I never really expected us to grow this close to each other..."
+                y "We may have only started getting to really know each other recently, but..."
+                y 3t "I've really enjoyed spending so much time with you..."
+                y 3u "Maybe it was just my wishful thinking, but I thought that there could be a chance that we'd get to be more than just friends..."
+                y "Give in time..."
+                y 3u "Ever since the day you joined, I walked in hoping to spend time together..."
+                y 3t "And this week, we've finally got that chance!"
+                y "It's been the highlight of the school year for me at this point..."
+                y 3t "You helped me feel better about myself..."
+                y "I thought that because of you, I could finally feel love and companionship again..."
+                y 3v "I was a little worried that you weren't going to come back to me after I saw you hanging around [hangout1]..."
+                y 3u "I just told myself I was overeacting, and that you'd come back."
+                y 3s "Which you did."
+                y 3u "I had no reason to believe that you were trying to mislead me..."
+                y 1u "After hearing you out just now, I don't believe you were ever trying to hurt me..."
+                y 1w "But, things are probably ruined now thanks to how I acted out today..."
+                y 4c "Why would you bother to look at me after I said something so horrible?"
+                jump y_converge2
+
+
+    if hangout1 == "Yuri":
+        if hangout2 != "Yuri":
+            if hangout3 == "Yuri":
+                y 1w "Truthfully, [player], I wasn't sure if we'd ever become that close..."
+                y "We may have only started getting to really know each other recently, but..."
+                y 3t "I've really enjoyed spending so much time with you..."
+                y 3u "Maybe it was just my wishful thinking, but I thought that there could be a chance that we'd get to be more than just friends..."
+                y 3u "I've always hoped that we'd get to know each other better..."
+                y 3t "And this week, we've finally got that chance!"
+                y "It's been the highlight of the school year for me at this point..."
+                y 3t "You helped me feel better about myself..."
+                y "I thought that because of you, I could finally feel love and companionship again..."
+                y 3q "But, I started to question how realistic that was once I saw you hugging [hangout2].."
+                y 3o "I...{w=0.38}really wasn't sure how to take it at the time..."
+                y "I was a little hurt to see that happen..."
+                y 3u "I tried to tell myself that I was overeacting, and that maybe it wasn't what it looked like..."
+                y 3s "And I'm glad we were able to smooth that over yesterday."
+                y 3u "I trusted you and I believed that you weren't trying to mislead me..."
+                y 1u "After hearing you out just now, I trust you that was the case..."
+                y 1w "But, things are probably ruined thanks to how I acted out today..."
+                y 4c "Why would you bother to like someone like me after I said something so horrible?"
+                jump y_converge2
+
+
+    if hangout1 == "Yuri":
+        if hangout2 == "Yuri":
+            if hangout3 != "Yuri":
+                y 1w "Honestly, I never really expected us to become this close..."
+                y "Especially in such a short amount of time..."
+                y 3t "But, I've really enjoyed spending so much time with you..."
+                y 3u "I've always hoped that we'd get to know each other better..."
+                y 3t "And this week, we've finally got that chance!"
+                y "It's been the highlight of the school year for me at this point..."
+                y 3t "You helped me feel better about myself..."
+                y "I thought that because of you, I could finally feel love and companionship again..."
+                y 3q "Though I started asking myself if that was really possible after you disappeared with [hangout3] yesterday..."
+                y 3v "I was initally assuming the worst but I tried telling myself that I was overeacting and that we still might have a chance..."
+                y 1u "After hearing you out just now, I trust you that was the case..."
+                y 1t "And maybe there was a chance that the worst case scenario that I had feared wouldn't happen..."
+                y 4c "But, I guess it was unavoidable all along..."
+                jump y_converge2
+
+
+
+
+    if hangout1 != "Yuri":
+        if hangout2 != "Yuri":
+            if hangout3 == "Yuri":
+                y 1w "I never really even ever thought that we'd get to know each other that well, [player]..."
+                y "You were always off with the others, who were always more open and less fustrating to deal with..."
+                y 3t "But, deep down, I hoped that you'd still somehow give me a chance..."
+                y 3u "And you did..."
+                y "You actually came over to me..."
+                y 3t "And I had so much fun reading with you..."
+                y 3w "Despite that...{w=0.38}incident..."
+                y "But, I held onto hope that we'd still continue to talk afterwards..."
+
+                if yuri_hangout == True:
+                    y 3s "I was really relieved to see that the earlier incident didn't hamper things between us..."
+                    y 3u "And, I had alot of fun with you at the nature perserve..."
+                    y "I was hoping that maybe that could be the moment things between us started to blossom..."
+                    jump y_converge2
+
+
+                else:
+                    pass
+
+
+                y 3o "I just hope that's still possible..."
+                jump y_converge2
+
+
+
+
+label y_converge2:
+
+"My face is flushed with embrassment as Yuri finishes her speech."
+"I never expected to have that kind of impact on her in such a short time..."
+"I try fumble out some sort of answer."
+show yuri 4a
+mc "Well Yuri, I...{w=0.38}really appreciate everything you said there..."
+mc "I don't hate you because of what happened earlier..."
+mc "In fact, I don't hate you at all!"
+mc "I'm glad you recognized what you said was wrong and that you're willing to make things right with Sayori..."
+y 1s "I intend to make things right with everyone..."
+y 1w "For the good of the club, we need to ensure there's no lingering animosity between any of us."
+mc "Well I guess that puts us in the same boat, huh?"
+show yuri 1q
+"We both let out an awkward chuckle before the room returns to silence."
+"At least Yuri and I smoothed things over for the most part."
+"Let's just hope it goes just as well for tomorrow with eveyone else..."
+y 1f "So...{w=0.38}is Sayori okay?"
+show yuri 1e
+mc "Well, I haven't really had the chance to check up on her since all this happened, but I'll be sure to stop by her place soon."
+y 1q "Okay, good..."
+y 1w "I just want to make sure she's okay..."
+mc "I'm sure she'll be alright."
+mc "I've never known Sayori to hold grudges."
+mc "I mean if you can settle things with Natsuki, I'm sure you can settle things with her."
+y 1q "Y-{w=0.38}yeah, I hope so..."
+y "I just don't know how I'll be able to forgive myself..."
+mc "Well, I'm sure that in time, we'll move past it."
+show yuri 1v
+mc "I'm not really mad at you for this."
+y "Yeah, and I think with in time, I'll be able to sort out my feelings."
+y 1q "And hopefully, there'll be a club to go back to tomorrow..."
+mc "We can only hope for the best, Yuri."
+mc "I'd think Monika would want everyone back to talk about everything."
+mc "She does care for the club's being..."
+mc "But, I think we made an important step in smoothing things over."
+show yuri 1v
+mc "I'm glad you reached out."
+y 1q "It was the right thing to do, [player]..."
+y 3u "I'm confident you would've done the same thing in my position."
+"I weakly smile at Yuri as a new wave of silence washes over us."
+"After about a half a minute, Yuri checks her watch and abruptly stands up."
+y 1q "Well, I have to go now..."
+y "I'd hate to get into trouble with my parents for staying out too late..."
+mc "I understand. Thanks for coming to me, Yuri."
+mc "Let's just hope all this craziness blows over soon..."
+y 1b "I couldn't agree more."
+y 1c "Goodbye, [player]!"
+mc "See you tomorrow!"
+show yuri at thide
+hide yuri
+"I lead Yuri out the door and gently close it behind her."
+"I watch out the window as Yuri walks off to the horizon in the direction of the nearest bus stop."
+mc "That wasn't too bad..."
+"I mumble to myself."
+"I'm still a little surprised Yuri went out of her way to directly apologize to me..."
+"Even though she was awful during that fight, I'm glad that she recognized her mistakes."
+"It's going to take time for Yuri and I to move past what happened, but I don't think it changed my feelings for her that much..."
+"Hopefully, everything will be normal again tomorrow..."
+jump day4_night
+
+
 
 
 

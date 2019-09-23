@@ -5857,10 +5857,427 @@ jump day3_night
 
 label s_makeup:
 
-label s_nomakeup:
+"I should work things out with Sayori."
+"I start texting back."
+mc "Yeah, you can come over."
+"Sayori quickly replies back."
+s "Okay. I'll be over in a bit."
+"I lay my phone down next to me."
 
 if encore_sayoriquestion_1 == True:
 
+    if n_love == True or y_love == True:
+        "Man...{w=0.38}what am I even going to say to her..."
+        "This day has been a complete catastrophe..."
+        "I don't even know what I'm going to say to Sayori, let alone know what she's going to say to me..."
+        "I fully expect her to break up with me..."
+        "It's what I deserve..."
+
+    if n_love == False or y_love == False:
+        "Man...{w=0.38}what am I even going to say to her..."
+        "There's no telling what kind of state she's in now after that fight..."
+        "I've seen her bad before, but she look totally crushed..."
+        "I'm going to have to say something to make this all right..."
+        "It's my resposnbility to her..."
+
+
+
+if encore_sayoriquestion_1 == False:
+
+    if n_love == True or y_love == True:
+        "Man...{w=0.38}what am I even going to say to her..."
+        "This day has been a complete catastrophe..."
+        "I don't even know what I'm going to say to Sayori, let alone know what she's going to say to me..."
+        "I fully expect her to tell me off and that she never wants to talk to me ever again..."
+        "It's what I deserve..."
+
+    if n_love == False or y_love == False:
+        "Man...{w=0.38}what am I even going to say to her..."
+        "There's no telling what kind of state she's in now after that fight..."
+        "I've seen her bad before, but she look totally crushed..."
+        "I'm going to have to say something to make this all right..."
+        "I owe that to her..."
+
+
+
+"*sighs*"
+"Maybe cleaning up the living room for Sayori's arrival would be a better use of my time..."
+"I can deal with all these emotions when she gets here..."
+"I get off of my bed and head downstairs to start cleaning up the living room."
+scene bg living_room
+with wipeleft
+play sound doorbell
+"Just as I about finish cleaning the living room, I hear the doorbell ring."
+mc "Coming, coming!"
+"I take a deep breath before walking over and opening the door."
+scene bg house
+with wipeleft
+show sayori 1k at t11 zorder 1
+"As expected, I find Sayori waiting on my porch."
+show sayori 1u
+"She looks at me through a pained expression as tears begin to build in her eyes."
+"I wordlessly invite her in, bracing for the impending emotional breakdown."
+show sayori at thide
+hide sayori
+scene bg living_room
+with wipeleft
+show sayori 1k at t11 zorder 1
+"After closing the door behind us, I lead Sayori to the living room. We both take our seats on the couch, unable to make consistent eye contact with one another."
+"I bow my head as I try to figure out something to break the tension."
+"I'm not even sure where to begin..."
+
+if n_love == True or y_love == True:
+    "I know I messed up badly..."
+
+if n_love == False or y_love == False:
+    "Is there really anything I can say to make her feel better?"
+
+"I let out a sigh and start talking."
+mc "Sayori, I-"
+play music t9 fadein 1.0
+s "I'm fine, [player]."
+s 4v "I'll...{w=0.38}be fine. I promise."
+"Sayori's voice breaks as tears start trickling down her cheeks."
+mc "Sayori..."
+show sayori 3v
+"I gently take her hand."
+
+if n_love == True or y_love == True:
+    show sayori 1i
+    "However, Sayori yanks her hand away, breaking my grip and scoots a good few inches away from me."
+    s 1j "You have some explaining to do, [player]!"
+    show sayori 1i
+    mc "I know."
+    "I simply bow my head in shame as I brace for Sayori's tongue-lashing."
+    s "What happened with you and [poem_giver]?"
+    s 2v "I-{w=0.38}is it true what happened?"
+
+    if encore_sayoriquestion_1 == True:
+        s 4w "D-{w=0.38}did you really say yes to her?!?!"
+        show sayori 4v
+        "I simply nod my head."
+        s 1w "How could you, [player]?!?"
+        s 1v "After everything we've been through..."
+        s 1k "You...{w=0.38}you just decide end things like that?!?"
+        show sayori 1u
+        mc "Sayori...{w=0.38}I know I messed up..."
+        mc "I don't really expect you to forgive me for what happened earlier either..."
+        mc "But, I want to apologize for this and everything!"
+        show sayori 1k
+        mc "I haven't been the best boyfriend to you recently, I admit that..."
+        mc "I really don't know what I was thinking and why I said yes to her..."
+        mc "It was a rash decision and it was the wrong choice for me to to make."
+        mc "I don't know why I did it..."
+        mc "But I do know this:{w=0.38} I really do want to make our relationship work, if you're still willing..."
+        mc "I don't know what I can say or do to make this up to you, but I want to try, Sayori."
+        mc "I still love you..."
+        "Sayori stares out my window in silence."
+        "I avert my eyes away, silently praying for her to make me up on my offer."
+        show sayori 1g
+        "After several minutes of painful silence, she lets out a sigh before looking back to me."
+        show sayori 1h
+
+        if hangout1 == "Sayori":
+            if hangout2 == "Sayori":
+                if hangout3 == "Sayori":
+                    s "It really hurt what you did, [player]..."
+                    s 1h "I thought things were going so well for us!"
+                    show sayori 1g
+                    mc "I know..."
+                    mc "And I don't expect you to forgive me or even give me a second chance."
+                    mc "But, I wanted to let you know how truly sorry I am for everything."
+                    s 1k "Do you...{w=0.38}love [poem_giver], [player]?"
+                    show sayori 1g
+                    mc "I like her as a friend."
+                    mc "And that's what I should've told her, but I guess I was so overwhelmed that I went against my better judgement."
+                    mc "I ended up hurting everyone because of it."
+                    jump s_converge3
+
+
+
+        if hangout1 != "Sayori":
+            if hangout2 == "Sayori":
+                if hangout3 == "Sayori":
+                    s "I want to believe you, [player]..."
+                    s 1k "But what you did was completely wrong..."
+                    s 1h "I thought things were going great for us..."
+                    show sayori 1g
+                    mc "And now I've ruined it."
+                    mc "I don't expect us to get back to where we were before all this..."
+                    mc "But...{w=0.38}I want the chance to try to have us move on..."
+                    s 1k "Do you...{w=0.38}love [poem_giver], [player]?"
+                    show sayori 1g
+                    mc "I just want to be friends with her."
+                    mc "I went against my better judgement and made a knee-jerk reaction..."
+                    mc "And well, I ended up hurting everyone because I didn't think things through..."
+                    jump s_converge3
+
+
+
+        if hangout1 == "Sayori":
+            if hangout2 != "Sayori":
+                if hangout3 == "Sayori":
+                    s "I want to believe you, [player]..."
+                    s 1k "But this isn't the first time you've crossed the line..."
+                    s 1h "I thought things were going well for us up until then..."
+                    show sayori 1g
+                    mc "I know..."
+                    mc "I don't expect us to get back to where we were before all this..."
+                    mc "But...{w=0.38}I want the chance to try to have us move on..."
+                    s 1k "Do you...{w=0.38}love [poem_giver], [player]?"
+                    show sayori 1g
+                    mc "I just want to be friends with her."
+                    mc "I went against my better judgement and made a knee-jerk reaction..."
+                    mc "And well, I ended up hurting everyone because I didn't think things through..."
+                    jump s_converge3
+
+
+        if hangout1 == "Sayori":
+            if hangout2 == "Sayori":
+                if hangout3 != "Sayori":
+                    s "I want to believe you, [player]..."
+                    s 1k "I never really found a reason to start dobuting you until yesterday..."
+                    s 1h "But even then, I thought things were going well for us..."
+                    show sayori 1g
+                    mc "I know, and I messed it all up..."
+                    mc "I don't expect us to get back to where we were before all this..."
+                    mc "But...{w=0.38}I want the chance to try to have us move on..."
+                    s 1k "Do you...{w=0.38}love [poem_giver], [player]?"
+                    show sayori 1g
+                    mc "I just want to be friends with her."
+                    mc "I went against my better judgement and made a knee-jerk reaction..."
+                    mc "And well, I ended up hurting everyone because I didn't think things through..."
+                    jump s_converge3
+
+
+        if hangout1 != "Sayori":
+            if hangout2 != "Sayori":
+                if hangout3 == "Sayori":
+                    s "I don't know, [player]..."
+                    s 1k "Lately, I haven't felt like I can trust you."
+                    s 1g "I hoped you'd stay true to your word to spend more time with me, but..."
+                    s 1h "You really stabbed me in the back here..."
+                    show sayori 1g
+                    mc "I know, and I'm sorry..."
+                    mc "I know I don't deserve a second chance or your forgiveness..."
+                    mc "But, I love you and I really want to find a way to make this still work between us..."
+                    s 1k "Do you...{w=0.38}love [poem_giver], [player]?"
+                    show sayori 1g
+                    mc "I just want to try to be her friend..."
+                    mc "I didn't think things through and I just rushed in and made a decision..."
+                    mc "And well, I made the wrong call..."
+                    jump s_converge3
+
+
+        if hangout1 != "Sayori":
+            if hangout2 = "Sayori":
+                if hangout3 != "Sayori":
+                    s "I don't know, [player]..."
+                    s 1k "Lately, I haven't felt like I can trust you."
+                    s 1g "I hoped you'd stay true to your word to spend more time with me, but..."
+                    s 1h "You really stabbed me in the back here..."
+                    show sayori 1g
+                    mc "I know, and I'm sorry..."
+                    mc "I know I don't deserve a second chance or your forgiveness..."
+                    mc "But, I love you and I really want to find a way to make this still work between us..."
+                    s 1k "Do you...{w=0.38}love [poem_giver], [player]?"
+                    show sayori 1g
+                    mc "I just want to try to be her friend..."
+                    mc "I didn't think things through and I just rushed in and made a decision..."
+                    mc "And well, I made the wrong call..."
+                    jump s_converge3
+
+
+        if hangout1 == "Sayori":
+            if hangout2 != "Sayori":
+                if hangout3 != "Sayori":
+                    s "I don't know, [player]..."
+                    s 1k "Lately, I haven't felt like I can trust you."
+                    s 1g "I hoped you'd stay true to your word to spend more time with me, but..."
+                    s 1h "You really stabbed me in the back here..."
+                    show sayori 1g
+                    mc "I know, and I'm sorry..."
+                    mc "I know I don't deserve a second chance or your forgiveness..."
+                    mc "But, I love you and I really want to find a way to make this still work between us..."
+                    s 1k "Do you...{w=0.38}love [poem_giver], [player]?"
+                    show sayori 1g
+                    mc "I just want to try to be her friend..."
+                    mc "I didn't think things through and I just rushed in and made a decision..."
+                    mc "And well, I made the wrong call..."
+                    jump s_converge3
+
+
+        if hangout1 != "Sayori":
+            if hangout2 != "Sayori":
+                if hangout3 != "Sayori":
+                    s "I don't know how I'm supposed to believe any of that, [player]."
+                    s 1k "You've done nothing but betray and hurt me all week..."
+                    s 1h "I honestly don't know how I'm supposed to deal with this..."
+                    show sayori 1g
+                    mc "I'm really sorry, Sayori..."
+                    mc "I don't expect you to believe me, give me a second chance, or even trust me ever again..."
+                    mc "But, all I want is just a chance for me to fix everything..."
+                    mc "I still love you..."
+                    s 1k "Do you...{w=0.38}love [poem_giver], [player]?"
+                    show sayori 1g
+                    mc "I just want to try to be her friend..."
+                    mc "I didn't think things through and I shouldn't have said yes to her..."
+                    mc "I know I made the wrong decision, and I never wanted to hurt you or anyone..."
+                    jump s_converge3
+
+
+
+
+
+    if encore_sayoriquestion_1 == False:
+        s 1u "That you...{w=0.38}said yes to her?"
+        "I simply nod my head."
+
+        if hangout1 == "Sayori":
+            if hangout2 == "Sayori":
+                if hangout3 == "Sayori":
+                    s 1k "It really hurt what you did, [player]..."
+                    s 1h "I know we decided to just be friends, but..."
+                    s 1k "I thought maybe...{w=0.38}that there was still a chance..."
+                    show sayori 1g
+                    mc "I know..."
+                    mc "And I'm sorry that I was leading you on...."
+                    mc "But, I want to make things right between us. You're my friend Sayori and I..."
+                    show sayori 1k
+                    mc "I really care about you..."
+                    s "So are you and [poem_giver]...{w=0.38}offically together now?"
+                    show sayori 1g
+                    mc "I don't know..."
+                    mc "I had a gut reaction and I rushed into everything..."
+                    mc "And everyone's hurting now thanks to me..."
+                    jump s_converge3
+
+
+
+        if hangout1 != "Sayori":
+            if hangout2 == "Sayori":
+                if hangout3 == "Sayori":
+                    s 1k "As much as I want to respect your decision, [player]..."
+                    s 1h "What you did still hurt..."
+                    s "I know we decided to just be friends, but..."
+                    s 1k "I thought maybe...{w=0.38}that there was still a chance..."
+                    show sayori 1g
+                    mc "I know..."
+                    mc "And I'm sorry that I was leading you on...."
+                    mc "But, I want to make things right between us. You're my friend Sayori and I..."
+                    show sayori 1k
+                    mc "Just want to look after you in the best way that I can..."
+                    mc "I...{w=0.38}I care about you that much..."
+                    s "So are you and [poem_giver]...{w=0.38}together now?"
+                    show sayori 1g
+                    mc "I don't really know..."
+                    mc "I had a gut reaction and I rushed into everything..."
+                    mc "And everyone's hurting now thanks to me..."
+                    jump s_converge3
+
+
+
+        if hangout1 == "Sayori":
+            if hangout2 != "Sayori":
+                if hangout3 == "Sayori":
+                    s 1k "As much as I want to respect your decision, [player]..."
+                    s 1h "What you did still hurt..."
+                    s 1k "I guess I should've seen it coming though..."
+                    s "I don't know why I still thought that I still had a chance..."
+                    show sayori 1g
+                    mc "I'm really sorry I made you feel that way, Sayori..."
+                    mc "I'm just trying to make things right between us..."
+                    mc "I wasn't trying to hurt you or lead you on..."
+                    show sayori 1k
+                    mc "You're my friend, Sayori! I care about you..."
+                    s "So are you and [poem_giver]...{w=0.38}together now?"
+                    show sayori 1g
+                    mc "I don't really know..."
+                    mc "I had a gut reaction and I rushed into everything..."
+                    mc "And everyone's hurting now thanks to me..."
+                    jump s_converge3
+
+
+
+
+        if hangout1 == "Sayori":
+            if hangout2 == "Sayori":
+                if hangout3 != "Sayori":
+                    s 1k "As much as I want to respect your decision, [player]..."
+                    s 1h "What you did still hurt..."
+                    s 1k "I guess I saw it a little too late again..."
+                    s "I don't know why I still thought that I still had a chance..."
+                    show sayori 1g
+                    mc "I'm really sorry I made you feel that way, Sayori..."
+                    mc "I'm just trying to make things right between us..."
+                    mc "I wasn't trying to hurt you or lead you on..."
+                    show sayori 1k
+                    mc "You're my friend, Sayori! I care about you..."
+                    s "So are you and [poem_giver]...{w=0.38}together now?"
+                    show sayori 1g
+                    mc "I don't really know..."
+                    mc "I had a gut reaction and I rushed into everything..."
+                    mc "And everyone's hurting now thanks to me..."
+                    jump s_converge3
+
+
+
+
+
+        if hangout1 != "Sayori":
+            if hangout2 != "Sayori":
+                if hangout3 == "Sayori":
+                    s 1k "I guess I should've seen it coming then..."
+                    s 1l "I don't know why but after we hung out yesterday, I thought we might of had the chance to be more than just friends again..."
+                    s 1k "But I should've known better, I was never the one you were interested in..."
+                    mc "Sayori, that's not the point..."
+                    mc "You're my friend! I never wanted to hurt you or make things worse..."
+                    mc "But, it looks like I ended up doing it anyway..."
+                    s "So are you and [poem_giver]...{w=0.38}together now?"
+                    show sayori 1g
+                    mc "I don't really know..."
+                    mc "I had a gut reaction and I rushed into everything..."
+                    mc "And everyone's hurting now thanks to me..."
+                    jump s_converge3
+
+
+
+
+label s_converge3:
+
+s 1h "Did you know that she liked you before?"
+show sayori 1g
+mc "Yes..."
+"I reach into my pocket and take out the now crumpled up note that [poem_giver] gave to me."
+mc "She gave me this on Tuesday."
+show sayori 2k
+play sound "sfx/pageflip.ogg"
+"Sayori takes the page from my hand and begins to read over it."
+
+
+
+
+
+
+
+
+
+
+if n_love == False or y_love == False:
+    show sayori 4v at face
+    play sound fall
+    "Sayori ends up throwing herself at me, loudly sobbing into my shoulder."
+    "I simply pat her back as she lets out her tears and stress on me."
+
+
+
+
+
+
+
+label s_nomakeup:
+
+if encore_sayoriquestion_1 == True:
 
     if n_love == True or y_love == True:
         "I can't face her..."

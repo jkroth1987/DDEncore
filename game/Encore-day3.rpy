@@ -309,7 +309,7 @@ if encore_sayoriquestion_1 == True:
 
 if encore_sayoriquestion_1 == False:
     show sayori 2x
-    s "Come on, [player]! You know Friday's are the best!"
+    s "Come on, [player]! You know Fridays are the best!"
     show sayori 1y
     s "It's the best time to spend time with those you care about the most, without having to worry about school and other things..."
     "I can't help but smile a little at her as she says that."
@@ -7209,17 +7209,12 @@ show natsuki 3c
 
 
 
-if natsuki_continued_hug == True:
+if natsuki_continued_hug or natsuki_hug == True:
     jump n_end1
 
-if natsuki_continued_hug == False:
+if natsuki_continued_hug or natsuki_hug == False:
     jump n_end2
 
-if natsuki_hug == True:
-    jump n_end1
-
-if natsuki_hug == False:
-    jump n_end2
 
 label n_end1:
 
@@ -8199,7 +8194,7 @@ if tell_monika == False:
 
 
 show monika 1c
-m "I'll be sure to, Monika..."
+mc "I'll be sure to, Monika..."
 m 2e "But, [player], I think everything will be fine tomorrow."
 m 2n "Just focus on what you want to say to Natsuki."
 show monika 2m
@@ -8433,9 +8428,6 @@ if poem_giver == "Yuri":
     n 4k "Hey, what's up?"
     mc "Ah, not much..."
     mc "What about you?"
-    show sayori at thide
-    hide sayori
-    show natsuki at t11 zorder 1
     n 3k "Same here, just organzing my manga again like always..."
     n 5x "I swear everytime I come here, everything's in a different spot!"
     n 4m "Not to mention everything's always out of order..."
@@ -8464,7 +8456,7 @@ if poem_giver == "Yuri":
     n 3y "I'd knew you felt that way!"
     n 1c "But let me know if anything's missing or if I accidentally gave you something."
     mc "I'll...{w=0.38}be sure to..."
-    n 2l "What did Yuri give you something?"
+    n 2l "What, did Yuri give you something?"
     mc "Well..."
     "I shouldn't have done this in front of Natsuki..."
     mc "I guess you could say that..."
@@ -9997,7 +9989,7 @@ n "I know..."
 mc "Well, I don't want to keep you waiting or anything..."
 mc "I imagine there's a pretty big line for it."
 n "Yeah...{w=0.38}probably..."
-n "I'll ket you know if I find it."
+n "I'll let you know if I find it."
 mc "Alright, talk to you later."
 "Natsuki promptly disconnects the call."
 "I sigh as I lay back on my bed and throw my hands over my face."
@@ -11142,7 +11134,7 @@ mc "I just have a lot on my plate right now..."
 "A long, uncomfortable pause quickly follows from Yuri's line."
 "Knowing her, she's probably jumping to the worst case scenario as to why I wouldn't want to be around her..."
 "Although, I guess from her point of view, it really isn't that far-fetched..."
-mc "As I said:{w=0.38}I'm not mad at you for what happened earlier..."
+mc "As I said:{w=0.38} I'm not mad at you for what happened earlier..."
 y "I know, [player]..."
 y "I believe you."
 "There's another pause between us."

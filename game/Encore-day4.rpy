@@ -806,6 +806,7 @@ show sayori 5a
 s "I...{w=0.38}forgot we had one until last night..."
 "I facepalm."
 
+#This bit can be screwy
 
 if sayori_hangout == True:
     jump s_screw1
