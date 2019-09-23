@@ -6253,7 +6253,10 @@ mc "She gave me this on Tuesday."
 show sayori 2k
 play sound "sfx/pageflip.ogg"
 "Sayori takes the page from my hand and begins to read over it."
-
+show sayori 2u
+"She begins to tear up again as she looks back and forth between me and the letter."
+s 1v "W-{w=0.38}why did you keep this from me?"
+mc "I wanted "
 
 
 

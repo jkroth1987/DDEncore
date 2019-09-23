@@ -149,6 +149,19 @@ define audio.e19 = "<loop 0>mod_assets/audio/Natsuki_Confession.ogg" #Natsuki Co
 define audio.e20 = "<loop 0>mod_assets/audio/Yuri_Confession.ogg" #Yuri Confession Music
 
 
+
+#BannedUsers
+
+#Litandus
+#NatsukiGoldenHeart
+#Stuart98
+#Littlemanmike
+#Average_Owain
+#JustMonika
+#LanceAkira
+#AgentJohn20
+#Element60
+
 # Backgrounds
 image black = "#000000"
 image dark = "#000000e4"
