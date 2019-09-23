@@ -694,11 +694,16 @@ screen game_menu(title, scroll=None):
 
     if not main_menu and persistent.playthrough == 2 and not persistent.menu_bg_m and renpy.random.randint(0, 49) == 0:
         on "show" action Show("game_menu_m")
+    
+    if main_menu:        
+        textbutton _("Return"):
+            style "return_button"
+            action [Hide("preferences"), Hide("load")]
+    else:
+        textbutton _("Return"):
+            style "return_button"
 
-    textbutton _("Return"):
-        style "return_button"
-
-        action Return()
+            action Return()
 
     label title
 
