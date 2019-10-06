@@ -1072,7 +1072,7 @@ if poem_giver == "Natsuki":
     "Natsuki mutters as she opens the door and walk out into the hallway."
     show natsuki at thide
     hide natsuki
-    #jump day4_confession
+
 
 
 
@@ -1135,12 +1135,7 @@ if poem_giver == "Yuri":
     "Yuri mutters as she opens the door and walk out into the hallway."
     show yuri at thide
     hide yuri
-    #jump day4_confession
 
-
-call encore_credits
-#End of Updated Demo
-##################
 label day4_confession:
 scene bg corridor
 with wipeleft_scene
@@ -1879,7 +1874,7 @@ hide natsuki
 if encore_sayoriquestion_1 == True:
     "I hate that it had to play out like that..."
     "But...{w=0.38}I think I made the right decision for my relationship with Sayori..."
-    "It might not exactly be 100% perfect..."
+    "It might not exactly be 100\% perfect..."
     "But, I owe it to her to give her everything I got..."
     "I promised her as much..."
 
@@ -5920,3 +5915,289 @@ menu:
     "No.":
         $ y_makeup = False
         jump y_nomakeup
+
+
+
+#Monika
+
+label day4_night_m1:
+
+scene bg bedroom_night
+with wipeleft
+"After finishing my nightly routine, I finally collapse on my bed, letting its comforting feeling take me with open arms."
+"As I slowly drift off to sleep, I begin to reflect on my talk with Monika earlier."
+"I'm glad that we were able to work things out and come to an understanding..."
+"But, I still have my work cut out for me..."
+"Things are going to be a mess with [poem_giver]..."
+"And I'm probably going to have to start from square one again with Sayori..."
+"..."
+"Ah, damn it! I forgot to text her!"
+"She's probably asleep by now..."
+"And why would she want to talk to me now anyways?"
+"Keeping my distance for the day was probably for the best..."
+"Well, tomorrow's going to be so much fun..."
+"It's best to try not think about it too much and just save up my energy..."
+"It's going to be eventful and stressful no matter how it goes down..."
+"Hopefully there's no more stupid nightmares too..."
+"With my prayer complete, I finally drift off to sleep."
+jump day4_nightmare
+
+
+label day4_night_m2:
+scene bg bedroom_night
+with wipeleft
+"I crash onto my bed as soon as I finish laminating."
+"Even though it wasn't exactly the most time consuming process, I defintley dragged it out by re-reading Monika's poems at least a hundred times..."
+"Even if I never really understood them, I understand why they meant so much to her..."
+"It allowed her be expressive and creative with whatever she was feeling..."
+"And now, I put all that into jeaporady by destroying the club..."
+"How can I possibly come to forgive myself now?"
+"Will she even forgive me?"
+"I should've taken her up on her offer to talk things through..."
+"I dobut she or anyone else at the club will want to be around me now..."
+"I'm a coward..."
+"Is it even worth showing up to the club tomorrow?"
+"..."
+"*sighs*"
+"This happened because of me..."
+"I have a responsbility to at least try to fix this..."
+"If I make things worse, I'll never show my face there again..."
+"But, if I can set things right between Monika and I, and somehow restore basic civility to the club, I'll take that as a win."
+"Regardless of how everything plays out tomorrow, it's certainly going to be stressful..."
+"It's best to try not think about it too much and just save up my energy..."
+"Hopefully there's no more stupid nightmares too..."
+"With my prayer complete, I finally drift off to sleep."
+jump day4_nightmare
+
+#Natsuki
+
+label day4_night_n1:
+scene bg bedroom_night
+with wipeleft
+"After finishing my nightly routine, I finally collapse on my bed, letting its comforting feeling take me with open arms."
+"As I slowly drift off to sleep, I begin to reflect on my talk with Natsuki earlier."
+"I'm glad that we were able to work things out and come to an understanding..."
+"But, I still have my work cut out for me..."
+"I have no idea how we're going to make peace with Yuri..."
+"And it's going to be interesting to see how Natsuki apologizes to Sayori..."
+"..."
+"Ah, damn it! I forgot to text her!"
+"She's probably asleep by now..."
+"And why would she want to talk to me now anyways?"
+"Knowing her, she's convinced herself that she'll just mess up everything for me..."
+"Not to mention, I feel like I could've made a suggestion to Natsuki to get everyone on the same page..."
+"That if she told everyone about her issues at home, maybe the others would start treating her nicer..."
+"Ah, like she'd agree to that..."
+"Maybe I can still pitch it to her tomorrow..."
+"That's going to be so much fun..."
+"It's best to try not think about it too much and just save up my energy..."
+"It's going to be eventful and stressful no matter how it goes down..."
+"Hopefully there's no more stupid nightmares too..."
+"With my prayer complete, I finally drift off to sleep."
+jump day4_nightmare
+
+label day4_night_n2:
+scene bg bedroom_night
+with wipeleft
+"I crash onto my bed as soon as I finish laminating."
+"Even though it wasn't exactly the most time consuming process, I defintley dragged it out by re-reading Natsuki's poems at least a hundred times..."
+"My heart would sink everyime I'd finish one of her poems..."
+"Knowing how happy I made her and how I put all that into jeaporady..."
+"How can I possibly come to forgive myself now?"
+"I know she's not going to forgive me easily..."
+"I should've taken her up on her offer to talk things through..."
+"I dobut she or anyone else at the club will want to be around me now..."
+"I probably look like a coward..."
+"Is it even worth showing up to the club tomorrow?"
+"..."
+"*sighs*"
+"This happened because of me..."
+"I have a responsbility to at least try to fix this..."
+"If I make things worse, I'll never show my face there again..."
+"But, if I can set things right between Natsuki and I, and restore at least basic civility to the club, I'll take that as a win."
+"Regardless of how everything plays out tomorrow, it's certainly going to be stressful..."
+"It's best to try not think about it too much and just save up my energy..."
+"Hopefully there's no more stupid nightmares too..."
+"With my prayer complete, I finally drift off to sleep."
+jump day4_nightmare
+
+
+#Sayori
+
+label day4_night_s1:
+scene bg bedroom_night
+with wipeleft
+"After finishing my nightly routine, I finally collapse on my bed, letting its comforting feeling take me with open arms."
+"As I slowly drift off to sleep, I begin to reflect on my talk with Sayori earlier."
+"I'm glad that we were now on the same page with everything..."
+"But, it's not over yet..."
+"I have no idea how I'm going to bring myself to forgive [poem_giver]..."
+"Let alone how exactly I'm going to convince Sayori to get on board with my idea..."
+"Heck, how am I going to convince everyone to accept my relationship with Sayori?"
+"Oh well, I can't do anything about it right now..."
+"Regardless of how everything plays out tomorrow, it's certainly going to be stressful..."
+"It's best to try not think about it too much and just save up my energy..."
+"Hopefully there's no more stupid nightmares too..."
+"With my prayer complete, I finally drift off to sleep."
+jump day4_nightmare
+
+
+label day4_night_s2:
+scene bg bedroom_night
+with wipeleft
+"I crash onto my bed as soon as I finish laminating."
+"Even though it wasn't exactly the most time consuming process, I defintley dragged it out by re-reading Sayori's poems at least a hundred times..."
+"My heart would sink everyime I'd finish one of her poems..."
+"Knowing how I happy it made her and how I put all that into jeaporady..."
+"How can I possibly come to forgive myself now?"
+"How is she even going to forgive me this time?"
+"I should've taken her up on her offer to talk things through..."
+"I dobut she or anyone else at the club will want to be around me now..."
+"I probably like a coward..."
+"Is it even worth showing up to the club tomorrow?"
+"..."
+"*sighs*"
+"This happened because of me..."
+"I have a responsbility to at least try to fix this..."
+"If I make things worse, I'll never show my face there again..."
+"But, if I can set things right between Sayori and I, and restore at least basic civility to the club, I'll take that as a win."
+"Regardless of how everything plays out tomorrow, it's certainly going to be stressful..."
+"It's best to try not think about it too much and just save up my energy..."
+"Hopefully there's no more stupid nightmares too..."
+"With my prayer complete, I finally drift off to sleep."
+jump day4_nightmare
+
+
+
+#Yuri
+
+label day4_night_y1:
+scene bg bedroom_night
+with wipeleft
+"After finishing my nightly routine, I finally collapse on my bed, letting its comforting feeling take me with open arms."
+"As I slowly drift off to sleep, I begin to reflect on my talk with Yuri earlier."
+"I'm glad that we were able to work things out and come to an understanding..."
+"But, I still have my work cut out for me..."
+"I have no idea how we're going to make peace with Natsuki..."
+"Assuming we even can..."
+"At least Yuri should be able to make up with Sayori..."
+"..."
+"Ah, damn it! I forgot to text her!"
+"She's probably asleep by now..."
+"And why would she want to talk to me now anyways?"
+"Knowing her, she's convinced herself that she'll just make things worse between us..."
+"Not to mention, I still don't know for sure if Yuri's cutting herself..."
+"Asking her about it earlier liekly wouldn't have gone very well..."
+"And well, I suppose I should really be solving one problem at a time..."
+"Tomorrow's going to be so much fun..."
+"It's best to try not think about it too much and just save up my energy..."
+"It's going to be eventful and stressful no matter how it goes down..."
+"Hopefully there's no more stupid nightmares too..."
+"With my prayer complete, I finally drift off to sleep."
+jump day4_nightmare
+
+label day4_night_y2:
+scene bg bedroom_night
+with wipeleft
+"I crash onto my bed as soon as I finish laminating."
+"Even though it wasn't exactly the most time consuming process, I defintley dragged it out by re-reading Yuri's poems at least a hundred times..."
+"My heart would sink everyime I'd finish one of her poems..."
+"Knowing how I helped express herself and how I put all that into jeaporady..."
+"How can I possibly come to forgive myself now?"
+"I don't even expect her to forgive me..."
+"I should've taken her up on her offer to talk things through..."
+"I dobut she or anyone else at the club will want to be around me now..."
+"I probably like a coward..."
+"Is it even worth showing up to the club tomorrow?"
+"..."
+"*sighs*"
+"This happened because of me..."
+"I have a responsbility to at least try to fix this..."
+"If I make things worse, I'll never show my face there again..."
+"But, if I can set things right between Yuri and I, and restore at least basic civility to the club, I'll take that as a win."
+"Regardless of how everything plays out tomorrow, it's certainly going to be stressful..."
+"It's best to try not think about it too much and just save up my energy..."
+"Hopefully there's no more stupid nightmares too..."
+"With my prayer complete, I finally drift off to sleep."
+jump day4_nightmare
+
+
+label day4_nightmare:
+
+scene black
+with close_eyes
+$ m_name = "???"
+
+m "I can't fail now!"
+m "Not while I'm so close..."
+m "While things could be going better on my end, I should have everything ready tomorrow..."
+m "As for you..."
+
+if hangout3 == "Monika":
+
+    if m_makeup == True:
+        m "You've played your part beauitfully, my love..."
+        m "We'll be together very soon, I just need to tiddy up a few things..."
+        jump day5_intro
+
+    if m_makeup == False:
+        m "You've done well, my love..."
+        m "I wish we could've spent some time to smooth things over and help you digest what happened earlier..."
+        m "Maybe I could've even explained a thing or two as well..."
+        m "But in the end, I don't think it'll matter..."
+        jump day5_intro
+
+if hangout3 == "Sayori":
+
+    if s_makeup == True:
+        m "I seriously wish you didn't try to make ammends with Sayori, but that hopefully won't matter much to my calculations..."
+        jump day5_intro
+
+    if s_makeup == False:
+
+        if n_love == True or y_love == True:
+            m "You did amazing today, by the way!"
+            m "Breaking off your rleationship with Sayori is the most important step for us being together..."
+            m "And now that it's actually happening...{w=0.38}gosh, I'm so excited!"
+            jump day5_intro
+
+        else:
+            m "You did well by avoiding Sayori today..."
+            m "The less time you spend around her, the better..."
+            m "We're so close to being together!"
+            jump day5_intro
+
+if hangout3 == "Natsuki":
+
+    if n_makeup == True:
+        m "I seriously wish you didn't try to make ammends with Natsuki, but that hopefully won't matter much to my calculations..."
+        jump day5_intro
+
+    if n_makeup == False:
+        m "You did well by avoiding Natsuki today..."
+        m "The less time you spend around her, the better..."
+        m "We're so close to being together!"
+        jump day5_intro
+
+if hangout3 == "Yuri":
+
+    if y_makeup == True:
+        m "I seriously wish you didn't try to make ammends with Yuri, but that hopefully won't matter much to my calculations..."
+
+    if y_makeup == False:
+        m "You did well by avoiding Yuri today..."
+        m "The less time you spend around her, the better..."
+        m "We're so close to being together!"
+        jump day5_intro
+
+
+label day5_intro:
+
+m "Just stick to the script tomorrow, and whatever you do, don't help them!"
+m "Just let everything play out naturally..."
+m "And when the time comes..."
+m "You'll help me untie their knots..."
+m "Tomorrow will be the day..."
+m "Tomorrow, I will be free..."
+m "And there'll be nothing keeping us apart..."
+jump day5_start

@@ -3685,7 +3685,7 @@ mc "Coming, coming!"
 "I take a deep breath before walking over and opening the door."
 scene bg house
 with wipeleft
-show natsuski 1n at t11 zorder 1
+show natsuki 1n at t11 zorder 1
 "As expected, I find Natsuki waiting on my porch."
 "She looks up at me through a guilty and pained expression."
 "I simply sigh and wordlessly invite her in."
@@ -3701,7 +3701,7 @@ show natsuki 5n
 "There's absolutely no excuse for what she said."
 "Even if she doesn't know about Sayori's depression, it's just one of the things you don't just say to people."
 "But, I think at least owe Natsuki a chance to explain herself..."
-show natsuki 5o
+show natsuki 5s
 "We wait for several minutes in painfully awkward silence before she speaks up."
 n 5q "I messed up..."
 show natsuki 5u
@@ -4048,7 +4048,7 @@ mc "That wasn't too bad..."
 "Even though she was awful during that fight, I'm glad that she recognized her mistakes."
 "It's going to take time for Natsuki and I to move past what happened, but maybe we can get back to where we were soon..."
 "I just hope everything goes smoothly tomorrow..."
-jump day4_night
+jump day4_night_n1
 
 
 
@@ -4335,7 +4335,7 @@ mc "That wasn't too bad..."
 "Even though she was awful during that fight, I'm glad that she recognized her mistakes."
 "It's going to take time for Natsuki and I to move past what happened, but I don't think it changed my feelings for her that much..."
 "I guess I'll find out for sure tomorrow..."
-jump day4_night
+jump day4_night_n1
 
 
 
@@ -4355,4 +4355,4 @@ mc "I apprecaite it."
 "But, given it's the last day we'll meet before the photoshoot, it's probably best I get working on laminating the poems for Monika..."
 "I'd hate to make this situation even worse..."
 "I walk over to my desk, pull the poems out from one of the drawers and begin organzing them for laminating."
-jump day4_night
+jump day4_night_n2

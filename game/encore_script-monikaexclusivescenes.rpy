@@ -2511,7 +2511,7 @@ mc "That almost went perfectly..."
 "Strong, determined, passionate and humble..."
 "I don't think I deserve her after this, but if she likes me..."
 "How can I say no to her now?"
-jump day4_night
+jump day4_night_m1
 
 
 
@@ -2666,7 +2666,7 @@ mc "That wasn't too bad..."
 "I'm still a little surprised Monika went out of her way to make sure everything was alright with me."
 "Even though she was awful during that fight, I'm glad that she recognized her mistakes."
 "I just hope everything goes smoothly tomorrow..."
-jump day4_night
+jump day4_night_m1
 
 
 
@@ -2692,4 +2692,4 @@ mc "Sure."
 "But, given it's the last day we'll meet before the photoshoot, it's probably best I get working on laminating the poems for Monika..."
 "I'd hate to make this situation even worse..."
 "I walk over to my desk, pull the poems out from one of the drawers and begin organzing them for laminating."
-jump day4_night
+jump day4_night_m2

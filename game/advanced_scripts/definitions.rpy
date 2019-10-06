@@ -1596,11 +1596,12 @@ default monika_hangout = False #Do you hangout with Monika outside of school on 
 default yuri_hangout = False #Do you hangout with Yuri outside of school on Day 3?
 default n_love = False #Do you accept Natsuki's confession on Day 4?
 default y_love = False #Do you accept Yuri's confession on Day 4?
-define day3_skip = False #Updated Demo Only
+define day4_skip = False #Updated Demo Only
 define s_makeup = True  #Make up with Sayori?
 define n_makeup = True #Make up with Natsuki?
 define m_makeup = True #Make up with Monika?
 define y_makeup = True #Make up with Yuri?
+
 
 # Instantiating variables for poem appeal. This is how much each character likes the poem for each day.
 # -1 = Dislike, 0 = Neutral, 1 = Like
@@ -1692,6 +1693,7 @@ image cg piano_cg_alt = "mod_assets/cgs/piano_cgalt.png"
 image cg n_day3_h2 = "mod_assets/cgs/n_day3_h2.png"
 image cg city_cg_monika = "mod_assets/cgs/city_cg_monika.png"
 image cg city_cg_monika2 = "mod_assets/cgs/city_cg_monika2.png"
+image cg yuri_butterfly = "mod_assets/cgs/yuri_butterfly.png"
 
 #Encore's New Sprites
 image monika s = "mod_assets/sprites/ms.png"

@@ -3132,7 +3132,7 @@ show yuri 3bm at t11 zorder 1
 mc "You don't seem to mind all the bugs, Yuri."
 y 3bb "They're harmless creatures, [player], they're not going to harm you!"
 y 3bj "Though, I'll admit I don't care for the big insects flying near me."
-y 3bc "However, I do exceptions for butterflies..."
+y 3bc "However, I do have an exception for butterflies..."
 mc "Butterflies, huh?"
 mc "How come?"
 y 3ba "They're quite elegant creatures, [player]! Butterflies are very friendly to humans!"
@@ -3142,7 +3142,7 @@ y "It's really no wonder why many authors throughout history have used them as s
 y 3bi "I always did enjoy chasing after them when I was much younger."
 show yuri 1be
 "Sure enough, right as Yuri finished talking, we see a butterfly flutter down from a nearby tree and right into our path."
-"It's your usual orange and black pattern, though the pattern on its wings is something I haven't really ever seen before on butterflies."
+"It's in an unusual blue and black pattern, something I haven't really ever seen before for butterflies."
 "I guess they could've been introduced to the perserve..."
 y 1bs "My, aren't you beauitful?"
 show yuri 2bu
@@ -3151,7 +3151,9 @@ show yuri 2bu
 "After a few seconds, the butterfly then flutters over to Yuri's other hand, crawling down to her wrist."
 show yuri 2bc
 "Yuri smiles bashfully as her newfound friend explores her arm."
-#Yuri CG
+show yuri at thide
+hide yuri
+show cg yuri_butterfly with dissolve_cg
 
 
 if encore_festivalquestion_2 == "Natsuki":
@@ -3262,7 +3264,7 @@ if encore_festivalquestion_2 == "Yuri":
 "I actually debate if I want to sneak a picture of her enjoying the company of her butterfly, but I didn't want to ruin the moment."
 "Instead, I simply stand by her as the butterfly continues to hop between Yuri's arms, crawling up and down before staying still for a few moments only to flutter over and repeat the same process again."
 "Yuri simply giggles and smiles as she watches its movements."
-#End Yuri CG
+hide cg with dissolve_cg
 show yuri 2be at t11 zorder 1
 "After a few minutes, the butterfly lands on Yuri's nose."
 "For a moment, she's completelty still, not wanting to scare off the butterfly."
@@ -4169,7 +4171,7 @@ mc "That wasn't too bad..."
 "Even though she was awful during that fight, I'm glad that she recognized her mistakes."
 "It's going to take time for Yuri and I to move past what happened, but maybe we can get back to where we were soon..."
 "I just hope everything goes smoothly tomorrow..."
-jump day4_night
+jump day4_night_y1
 
 
 label y_talk2:
@@ -4483,7 +4485,7 @@ mc "That wasn't too bad..."
 "Even though she was awful during that fight, I'm glad that she recognized her mistakes."
 "It's going to take time for Yuri and I to move past what happened, but I don't think it changed my feelings for her that much..."
 "Hopefully, everything will be normal again tomorrow..."
-jump day4_night
+jump day4_night_y1
 
 
 
@@ -4507,4 +4509,4 @@ mc "I'm glad you acknowledge what you said was wrong. I'll probably talk to you 
 "But, given it's the last day we'll meet before the photoshoot, it's probably best I get working on laminating the poems for Monika..."
 "I'd hate to make this situation even worse..."
 "I walk over to my desk, pull the poems out from one of the drawers and begin organzing them for laminating."
-jump day4_night
+jump day4_night_y2
