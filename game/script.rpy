@@ -23,6 +23,11 @@ label start:
     $ e_name = "Extra"
 
     $ PLAYER = player.upper()
+    
+    $ sayori_hangout = False
+    $ natsuki_hangout = False
+    $ monika_hangout = False
+    $ yuri_hangout = False
 
 
     $ quick_menu = True
