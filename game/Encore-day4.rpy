@@ -413,7 +413,7 @@ s 1q "Good."
 if hangout1 != "Sayori":
     if hangout2 != "Sayori":
         if hangout3 != "Sayori":
-            "It's been a while since we've goten to enjoy each other's company..."
+            "It's been a while since we've gotten to enjoy each other's company..."
             "I wish I could make up for all the lost time this week..."
             "I've made so many mistakes, and yet here she is, still trying to give it her all..."
 
@@ -605,7 +605,7 @@ if hangout1 != "Natsuki":
         "If I want to get closer to Natsuki, I should take ths opportunity..."
 
 mc "Yeah sure! I'd love to read it with you!"
-n "That's awesome! I'll tell you: you're really going to like it!"
+n "That's awesome! I'm telling you: you're really going to like it!"
 mc "Looking forward to it!"
 n "You know where to find me when you get to the club!"
 mc "I'll head straight to the closet as soon as I get in!"
@@ -1545,23 +1545,30 @@ if encore_sayoriquestion_1 == False:
     if hangout1 == "Sayori" and hangout2 == "Sayori":
         "What would Sayori say after I've spent so much time around her?"
         "I'd hate to break her heart again..."
+        jump dialogue_cont1
 
     if hangout1 == "Natsuki" and hangout2 == "Natsuki":
         "I've spent so much time around Natsuki..."
         "Isn't this what I've always wanted?"
+        jump dialogue_cont1
 
     if hangout1 == "Monika" and hangout2 == "Monika":
         "What would Monika say after I've spent so much time around her?"
         "She was always the girl I thought I could never get, and I have a really good chance of geting with her now..."
+        jump dialogue_cont1
 
     if hangout1 == "Yuri" and hangout2 == "Yuri":
         "What would Yuri say after I've spent so much time around her?"
         "She'd likely never trust me or any other guy ever again..."
+        jump dialogue_cont1
 
     else:
         "I've been feeling divded between [hangout1] and [hangout2] lately..."
         "Even now more so since I spent yesterday with [hangout3]..."
+        jump dialogue_cont1
 
+
+label dialogue_cont1:
 
 "There's so many different reasonings..."
 "And either way, I'm kicking up some sort of storm regardless of how I answer this..."
@@ -2180,7 +2187,7 @@ if encore_sayoriquestion_1 == True:
             y 4c "Seeing you with the others...{w=0.38}especially with [hangout2] on Tuesday, felt like the norm in the literature club was returning..."
             y 3r "And I didn't want that!"
             y 1v "As much as I've generally isolated myself in the club, I began to realize how it was affecting my chances of finding someone..."
-            y 1t "And very few have showed me the same level of kidness have you did..."
+            y 1t "And very few have showed me the same level of kidness you have given me..."
             y 4c "I didn't want what we experienced on that Sunday and during the fesitval to just be another fleeting moment in my life..."
             y "So, I turned to poetry to help map out my feelings and try to decide what I should do next."
             y 3u "It was from there that I realized that I had serious feelings for you..."
@@ -2285,7 +2292,7 @@ if encore_sayoriquestion_1 == False:
                 y 4c "Seeing you with the others...{w=0.38}especially with [hangout2] on Tuesday, it felt like the norm in the literature club..."
                 y 3r "And I didn't want it anymore!"
                 y 1v "As much as I've generally isolated myself in the club, I began to realize how it was affecting my chances of finding someone..."
-                y 1t "And very few have showed me the same level of kidness have you did, even if it was brief..."
+                y 1t "And very few have showed me the same level of kidness you have given me, even if it was brief..."
                 y 4e "To be totally honest with you, I've had my eye on you since we first joined..."
                 y "How you've brought a smile to all our faces..."
                 y "Always being kind..."
@@ -2461,23 +2468,30 @@ if encore_sayoriquestion_1 == False:
     if hangout1 == "Sayori" and hangout2 == "Sayori":
             "What would Sayori say after I've spent so much time around her?"
             "I'd hate to break her heart again..."
+            jump dialogue_cont2
 
     if hangout1 == "Natsuki" and hangout2 == "Natsuki":
             "What would Yuri say after I've spent so much time around her?"
             "She'd probably kill me..."
+            jump dialogue_cont2
 
     if hangout1 == "Monika" and hangout2 == "Monika":
             "What would Monika say after I've spent so much time around her?"
             "She was always the girl I thought I could never get, and I have a really good chance of geting with her now..."
+            jump dialogue_cont2
 
     if hangout1 == "Yuri" and hangout2 == "Yuri":
             "I've spent so much time around Yuri..."
             "Isn't this what I've always wanted?"
+            jump dialogue_cont2
 
     else:
         "I've been feeling divded between [hangout1] and [hangout2] lately..."
         "Even now more so since I spent yesterday with [hangout3]..."
+        jump dialogue_cont2
 
+
+label dialogue_cont2:
 
 "There's so many different reasonings..."
 "And either way, I'm kicking up some sort of storm regardless of how I answer this..."
