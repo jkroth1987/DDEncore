@@ -2798,7 +2798,7 @@ hide yuri
 if encore_sayoriquestion_1 == True:
     "I hate that it had to play out like that..."
     "But...{w=0.38}I think I made the right decision for my relationship with Sayori..."
-    "It might not exactly be 100% perfect..."
+    "It might not exactly be 100\% perfect..."
     "But, I owe it to her to give her everything I got..."
     "I promised her as much..."
 
