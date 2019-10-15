@@ -118,7 +118,7 @@ if encore_festivalquestion_2 == "Natsuki":
         show yuri 4e
         "Yuri continues to blush even harder."
         y "Oh...{w=0.38}well I'm glad you think I did well..."
-        y "It means alot..."
+        y "It means a lot..."
         "I guess Yuri has a hard time processing compliments."
         "Well, better than how Natsuki handles most of my compliments anyway..."
         "I quickly try to change the subject to avoid someone seeing us like this."
@@ -328,7 +328,7 @@ if encore_sayoriquestion_1 == False:
             mc "Hey, Natsuki."
             "Natsuki turns to me, her face red and eyes glossy as if she was fighting back tears."
             n 5h "Y-{w=0.38}yeah?"
-            mc "I'm sure you'll find it sooner or later. I know it means alot to you that you find that copy."
+            mc "I'm sure you'll find it sooner or later. I know it means a lot to you that you find that copy."
             mc "Trust me, I'd be pissed too if I lost something that was important to me."
             show natsuki 12b
             "Natsuki struggles to maintain eye contact with me for longer than a few seconds."
@@ -474,7 +474,7 @@ if encore_sayoriquestion_1 == True:
             mc "Hey, Natsuki."
             "Natsuki turns to me, her face red and eyes glossy as if she was fighting back tears."
             n 5h "Y-{w=0.38}yeah?"
-            mc "I'm sure you'll find it sooner or later. I know it means alot to you that you find that copy."
+            mc "I'm sure you'll find it sooner or later. I know it means a lot to you that you find that copy."
             mc "Trust me, I'd be pissed too if I lost something that was important to me."
             show natsuki 12b
             "Natsuki struggles to maintain eye contact with me for longer than a few seconds."
@@ -634,7 +634,7 @@ if encore_sayoriquestion_1 == False:
             mc "Hey, Natsuki."
             "Natsuki turns to me, her face red and eyes glossy as if she was fighting back tears."
             n 5h "Y-yeah?"
-            mc "I'm sure you'll find it sooner or later. I know it means alot to you that you find that copy."
+            mc "I'm sure you'll find it sooner or later. I know it means a lot to you that you find that copy."
             mc "Trust me, I'd be pissed too if I lost something that was important to me."
             show natsuki 12b
             "Natsuki struggles to maintain eye contact with me for longer than a few seconds."
@@ -781,7 +781,7 @@ if encore_sayoriquestion_1 == True:
             mc "Hey, Natsuki."
             "Natsuki turns to me, her face red and eyes glossy as if she was fighting back tears."
             n 5h "Y-{w=0.38}yeah?"
-            mc "I'm sure you'll find it sooner or later. I know it means alot to you that you find that copy."
+            mc "I'm sure you'll find it sooner or later. I know it means a lot to you that you find that copy."
             mc "Trust me, I'd be pissed too if I lost something that was important to me."
             show natsuki 12b
             "Natsuki struggles to maintain eye contact with me for longer than a few seconds."
@@ -3722,7 +3722,7 @@ if encore_festivalquestion_2 == "Yuri":
 scene bg living_room
 with wipeleft
 play sound doorbell
-"Just as I about finish cleaning the living room, I hear the doorbell ring."
+"Just as I finish cleaning the living room, I hear the doorbell ring."
 mc "Coming, coming!"
 "I take a deep breath before walking over and opening the door."
 scene bg house
@@ -3743,7 +3743,7 @@ show yuri 1q at t11 zorder 1
 show yuri 2o
 "There's absolutely no excuse for what she said."
 "Even if she doesn't know about Sayori's depression, it's just one of the things you don't just say to people."
-"But, I think at least owe Natsuki a chance to explain herself..."
+"But, I think I at least owe Yuri a chance to explain herself..."
 show yuri 3w
 "We wait for several minutes in painfully awkward silence before she speaks up."
 y 3v "What have I done?"
@@ -3790,7 +3790,7 @@ y 4e "But you made me feel comfortable around you..."
 y "You're the first person in a long time that I can truly talk to on a deeply personal level..."
 y "I...{w=0.38}started to develop an attraction to you."
 y 4c "And it's not something I'm prepared to lose..."
-y "So, I felt threatned that I was going to lose the bond that we've worked so hard for..."
+y "So, I felt threatened that I was going to lose the bond that we've worked so hard for..."
 show y_cry1 as yuri at t11 zorder 1
 y "It certainly didn't help that Natsuki and I spewed some incredibly distasteful insults at each other..."
 y "I really don't want to get into that..."
@@ -3802,7 +3802,7 @@ y "So I unfairly lashed out at Sayori because I was pushed to my limit."
 y "I just...{w=0.38}hope you can forgive me...{w=0.38}[player]..."
 show y_cry3 as yuri at t11 zorder 1
 y "I-{w=0.38}I never meant to hurt her or anyone..."
-y "I'm so ashamed that you had to me in that state..."
+y "I'm so ashamed that you had to see me in that state..."
 show y_cry1 as yuri at t11 zorder 1
 
 if n_love == True:
@@ -3847,7 +3847,7 @@ label y_talk1:
 show yuri 1e
 mc "I think I owe you an apology as well, Yuri..."
 mc "I messed up too, and I see now that I'm a pretty big reason this all happened."
-mc "So, I shouldn't be as mad as I should at you."
+mc "So, I shouldn't be as mad at you as I should be."
 show yuri 2u
 mc "This really is all my fault..."
 mc "I led you on and I hurt you..."
@@ -3879,7 +3879,7 @@ if encore_festivalquestion_2 == "Yuri":
         if hangout2 == "Yuri":
             if hangout3 == "Yuri":
                 y 1w "I'll be honest, [player]..."
-                y "I've done alot of refelection this past week over our relationship with each other..."
+                y "I've done a lot of refelection this past week over our relationship with each other..."
                 y 3t "With how much time we've spent together, and how well we've interacted..."
                 y 3u "I thought maybe there was a chance that we'd get to be more than just friends..."
                 y 3u "Truthfully, ever since the day you joined, I walked in looking foward to spending time together..."
@@ -4078,7 +4078,7 @@ if encore_festivalquestion_2 == "Natsuki":
 
                 if Yuri_hangout == True:
                     y 3s "I was really relieved to see that the earlier incident didn't hamper things between us..."
-                    y 3u "And, I had alot of fun with you at the nature perserve..."
+                    y 3u "And, I had a lot of fun with you at the nature perserve..."
                     y "I was hoping that maybe that could be the moment things between us started to blossom..."
                     jump y_converge1
 
@@ -4184,8 +4184,8 @@ label y_talk2:
 show yuri 4b
 mc "Well, I'm glad that you've come to recognize what you said back there was wrong..."
 mc "But, I'm a pretty big reason for what happened as well, so I'm really sorry that all had to happen..."
-mc "So, I shouldn't be as mad as I should at you."
-show yur 4a
+mc "So, I shouldn't be as mad as you as I should be."
+show yuri 4a
 mc "This really is all my fault..."
 mc "I led on Natsuki and hurt her..."
 mc "And who knows who else I've hurt in the process..."
@@ -4216,7 +4216,7 @@ if encore_festivalquestion_2 == "Yuri":
         if hangout2 == "Yuri":
             if hangout3 == "Yuri":
                 y 1w "I'll be honest, [player]..."
-                y "I've done alot of refelection this past week over our relationship with each other..."
+                y "I've done a lot of refelection this past week over our relationship with each other..."
                 y 3t "With how much time we've spent together, and how well we've interacted..."
                 y 3u "I thought maybe there was a chance that we'd get to be more than just friends..."
                 y 3u "Truthfully, ever since the day you joined, I walked in looking foward to spending time together..."
@@ -4411,7 +4411,7 @@ if encore_festivalquestion_2 == "Natsuki":
 
                 if yuri_hangout == True:
                     y 3s "I was really relieved to see that the earlier incident didn't hamper things between us..."
-                    y 3u "And, I had alot of fun with you at the nature perserve..."
+                    y 3u "And, I had a lot of fun with you at the nature perserve..."
                     y "I was hoping that maybe that could be the moment things between us started to blossom..."
                     jump y_converge2
 
@@ -4428,7 +4428,7 @@ if encore_festivalquestion_2 == "Natsuki":
 
 label y_converge2:
 
-"My face is flushed with embrassment as Yuri finishes her speech."
+"My face is flushed with embarrassment as Yuri finishes her speech."
 "I never expected to have that kind of impact on her in such a short time..."
 "I try fumble out some sort of answer."
 show yuri 4a

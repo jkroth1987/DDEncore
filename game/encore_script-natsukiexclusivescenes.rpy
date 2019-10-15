@@ -3700,7 +3700,7 @@ show natsuki 5u at t11 zorder 1
 show natsuki 5n
 "There's absolutely no excuse for what she said."
 "Even if she doesn't know about Sayori's depression, it's just one of the things you don't just say to people."
-"But, I think at least owe Natsuki a chance to explain herself..."
+"But, I think I at least owe Natsuki a chance to explain herself..."
 show natsuki 5s
 "We wait for several minutes in painfully awkward silence before she speaks up."
 n 5q "I messed up..."
@@ -3730,7 +3730,7 @@ n 12e "We said a bunch of things to each other that I'm not going to ever repeat
 n 12d "And I guess along the way, something inside me snapped."
 n 12f "I was doing being talked down to."
 n 12g "I was done being pushed around."
-n 12f "I dealt with it enough at home, and I'm not going to suffer through it school too."
+n 12f "I dealt with it enough at home, and I'm not going to suffer through it in school too."
 n 12h "So I lashed out at everyone."
 n 12f "I had so much pent-up anger over my life that I just exploded."
 n 12i "I really, really, didn't mean to hurt anyone."
@@ -4321,7 +4321,7 @@ n 1q "Well, I'll get going now..."
 n 1m "If I stay any longer, I'll miss the bus."
 show natsuki 1n
 mc "It's alright, thank you for everything, Natsuki."
-mc "I'm gladd we worked things out..."
+mc "I'm glad we worked things out..."
 n 1m "Yeah, me too."
 n 1t "Well, later, [player]!"
 mc "See you tomorrow!"

@@ -5907,7 +5907,7 @@ if encore_sayoriquestion_1 == False:
 scene bg living_room
 with wipeleft
 play sound doorbell
-"Just as I about finish cleaning the living room, I hear the doorbell ring."
+"Just as I finish cleaning the living room, I hear the doorbell ring."
 mc "Coming, coming!"
 "I take a deep breath before walking over and opening the door."
 scene bg house
@@ -6316,12 +6316,12 @@ s 1k "Sure, what happened today was awful and shouldn't happen again, but I'm no
 s 1h "I believe in second chances, [player]..."
 show sayori 1g
 mc "I know you do..."
-mc "Well, if you're going, then I'll come to."
+mc "Well, if you're going, then I'll come too."
 s 1d "I'm glad to hear that..."
 show sayori 1k
 stop music fadeout 2.0
 "We sit for the next few minutes in silence."
-"I have to admit...{w=0.38}I have to respect Sayori's willingness to give people second chances..."
+"I have to admit...{w=0.38}I respect Sayori's willingness to give people second chances..."
 "And I should be incredibly grateful that she's giving me another chance too..."
 "But, can the club even move past this?"
 "Well...{w=0.38}there might be one way..."
@@ -6343,7 +6343,7 @@ if encore_sayoriquestion_1 == False:
 show sayori 1k
 "Sayori gazes off in deep thought."
 "If this is my one chance to make things right again with Sayori..."
-"The least I could do is help her get a better handiling of herself."
+"The least I could do is help her get a better handling of herself."
 s 1l "I see where you're coming from with that, [player], but..."
 s 1k "I don't know if that's really the right time or place for that..."
 show sayori 1i
@@ -6360,7 +6360,7 @@ mc "I promise."
 show sayori 1d
 "Sayori and I share a smile with each other before she checks her watch."
 s 1y "Well, I need to head out now, [player]..."
-s 1k "I have alot to do..."
+s 1k "I have a lot to do..."
 mc "I don't blame you."
 s 1d "I'll see you tomorrow..."
 mc "You too..."
@@ -6739,12 +6739,12 @@ s 1h "I believe in second chances, [player]..."
 s 1l "So...{w=0.38}I'm going to try my hardest..."
 show sayori 1g
 mc "I know you will..."
-mc "Well, if you're going, then I'll come to."
+mc "Well, if you're going, then I'll come too."
 s 1d "I'm glad to hear that..."
 show sayori 1k
 stop music fadeout 2.0
 "We sit for the next few minutes in silence."
-"I have to admit...{w=0.38}I have to respect Sayori's willingness to give people second chances..."
+"I have to admit...{w=0.38}I respect Sayori's willingness to give people second chances..."
 "And I should be incredibly grateful that she's giving me another chance too..."
 "But, I'm not sure if I can see myself doing the same"
 "Unless..."
@@ -6767,7 +6767,7 @@ if encore_sayoriquestion_1 == False:
 show sayori 1k
 "Sayori gazes off in deep thought."
 "If this is my one chance to make things right again with Sayori..."
-"The least I could do is help her get a better handiling of herself."
+"The least I could do is help her get a better handling of herself."
 s 1l "I see where you're coming from with that, [player], but..."
 s 1k "I don't know if that's really the right time or place for that..."
 show sayori 1i
@@ -6784,7 +6784,7 @@ mc "I promise."
 show sayori 1d
 "Sayori and I share a smile with each other before she checks her watch."
 s 1y "Well, I need to head out now, [player]..."
-s 1k "I have alot to do..."
+s 1k "I have a lot to do..."
 mc "I don't blame you."
 s 1d "I'll see you tomorrow..."
 mc "You too..."
@@ -6794,7 +6794,7 @@ hide sayori
 "I then peek out the window as she walks off back to her place."
 mc "That wasn't too bad..."
 "I mumble to myself."
-"Sayori's handling this alot better than I thought she would..."
+"Sayori's handling this a lot better than I thought she would..."
 
 if encore_sayoriquestion_1 == True:
     "I'm glad I stayed true to our relationship, otherwise things might've panned out far worse..."

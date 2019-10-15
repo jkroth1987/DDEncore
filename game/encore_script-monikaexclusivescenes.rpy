@@ -2239,7 +2239,7 @@ m "Sounds good."
 scene bg living_room
 with wipeleft
 play sound doorbell
-"Just as I about finish cleaning the living room, I hear the doorbell ring."
+"Just as I finish cleaning the living room, I hear the doorbell ring."
 mc "Coming, coming!"
 "I take a deep breath before walking over and opening the door."
 scene bg house
@@ -2268,7 +2268,7 @@ mc "Who knew [poem_giver] can hit so hard, huh?"
 show monika 1n
 "Monika and I share a nervous laugh that quickly fades after a few seconds."
 m 3m "Well, she's stronger than she looks, that's for certain..."
-m 1n "In hindsight, we did learn alot about everybody today..."
+m 1n "In hindsight, we did learn a lot about everybody today..."
 show monika 1f
 mc "That's one way of putting it..."
 mc "I just wish it didn't have to come to this..."
