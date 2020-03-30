@@ -124,6 +124,8 @@ by yagamirai10 [[Community Asset Folder]
 
 \"bedroom_dawn\" by Gorosona#8350
 
+\"class_rain\" by koppien#6341
+
 \"closet_dark\" by POBAW
 
 \"club_nothing\" by The Monika Before Story Team
@@ -189,6 +191,8 @@ by yagamirai10 [[Community Asset Folder]
 \"Train Bg's\" From: https://k-after.at.webry.info/200806/article_27.html
 
 \"Pen\" From AFewSecondsToLive
+
+\"empty_classroom\" From Yuro Foxclaw#2777
 
 \"Void Door\": https://icouldcrybutidonthavetime.files.wordpress.com/2014/10/doors.jpg"""
 
@@ -273,6 +277,12 @@ audio.groan: From Five Nights At Freddy's
 (converted to .ogg by Andrew)
 
 audio.gust: https://www.youtube.com/channel/UCTdyXszrxhMP-pbhy85Pa-g
+(converted to .ogg by Andrew)
+
+audio.scary_scream: https://www.youtube.com/watch?v=8015a4uD284
+(converted to .ogg by Andrew)
+
+audio.thunder: https://www.youtube.com/watch?v=s-TVNWOGsho
 (converted to .ogg by Andrew)"""
 
     # 9
@@ -283,15 +293,19 @@ audio.gust: https://www.youtube.com/channel/UCTdyXszrxhMP-pbhy85Pa-g
 
 Air Pods by Reenaki
 \"Breaking_Neck\" by TheD0ctor
+\"Monika_Broken\" by dracodraco100#8616
 \"Monika_Cute\" by radioactive64
+\"Monika_Evil\" by LeoDeCraprio
 \"Monika_Smirk\" by r/user/LanceAkira in \"It's A Doki Doki Life!\"
 \"Monika_Shock\" by r/user/Lunatic_Rabbit
 \"Monika_Surprised\" by r/user/LanceAkira in \"It's A Doki Doki Life!\"
 \"Monika_Tease\" by by r/user/Lunatic_Rabbit
 \"n_bliss\" by r/user/LanceAkira in \"It's A Doki Doki Life!\"
 \"n_kill\" by TheD0ctor with assets from Doki Doki: Exit Music
+\"n_shock\" by Agent Gold
 \"n_sweet\" by r/user/TacticalCupcakes
 Silhouetted Sprites by POBAW
+\"s_4qc\" by Agent Gold
 Yandere and Angry Sayori by LeoDeCraprio
 \"y_mad\" by AjTheYandere
 Crying Yuri Sprites from Doki Doki: Exit Music
