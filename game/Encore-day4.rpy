@@ -5239,14 +5239,14 @@ y 3r "You're one to talk considering you called her a basketcase and accused me 
 m 1i "That's no excuse, Yuri! You don't say that to people!"
 y 1r "Oh yeah, keep talking, Monika! You lost the high ground when you brought up Natsuki's dad!"
 "My blood starts to boil as I clench my fists."
-"I've had enough of this crap."
-mc "Okay."
+"I've had enough of this crap!"
+mc "Okay!"
 "I raise my voice loud enough so everyone can hear me."
 show natsuki 1c
 show monika 1d
 show yuri 3e
-mc "If you're all going to continue to act like this...{w=0.38}like total monsters...{w=0.38}then I don't want to be apart of this club until you sort yourselves out."
-mc "In my eyes, you're all guilty."
+mc "If you're all going to continue to act like this...{w=0.38}like total monsters...{w=0.38}then I don't want to be apart of this club until you sort yourselves out!"
+mc "In my eyes, you're all guilty!"
 "I grab my bag and proceed to exit the room, letting the door slam shut behind me before anyone has the chance to stop me."
 show natsuki at thide
 hide natsuki
