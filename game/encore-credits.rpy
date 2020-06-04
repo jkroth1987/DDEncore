@@ -1,6 +1,5 @@
 ﻿#This is a copy of credits.rpy from DDLC.
 #Use this as a starting point if you would like to override with your own.
-
 #Import the datetime library for using time
 init python:
     import datetime
@@ -30,7 +29,8 @@ General Contributions: Nep, Rezzy
 Image Editing: POBAW, TheD0ctor,
 Agent Gold, Andrew J. Striedl
 Image Editing Contributor: AjTheYandere
-Writing Contributors: Lucy CN, Jacob Smallman, Rose"""
+Sound Contributor: Singularity
+Writing Contributors: Lucy CN, Jacob Smallman"""
 
     # 3
     # 5 lines, +200 pixels
@@ -56,7 +56,6 @@ Life Saver: Agent Gold"""
     # 1620, -900, 33.6
     c_text_5 = """Playtesters:
 
-DatBlackScientist
 Boris Johnson
 Shouka
 Sub-Leader of the K.O.B.
@@ -283,7 +282,9 @@ audio.scary_scream: https://www.youtube.com/watch?v=8015a4uD284
 (converted to .ogg by Andrew)
 
 audio.thunder: https://www.youtube.com/watch?v=s-TVNWOGsho
-(converted to .ogg by Andrew)"""
+(converted to .ogg by Andrew)
+
+audio.monistab: Made by DeNomaly"""
 
     # 9
     # 21 lines, +1000 pixels

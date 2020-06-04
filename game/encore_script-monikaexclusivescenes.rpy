@@ -2501,6 +2501,7 @@ m 2e "Well, I'll see you tomorrow, [player]! Rest up!"
 mc "Thanks, you too!"
 show monika at thide
 hide monika
+stop music fadeout 1.0
 "I lead Monika out the door and gently close it behind her."
 "I watch out the window as Monika gracefully walks off to the horizon in the direction of school."
 mc "That almost went perfectly..."
@@ -2659,6 +2660,7 @@ m 2e "Well, I'll see you tomorrow, [player]! Rest up!"
 mc "Thanks, you too!"
 show monika at thide
 hide monika
+stop music fadeout 1.0
 "I lead Monika out the door and gently close it behind her."
 "I watch out the window as Monika gracefully walks off to the horizon in the direction of school."
 mc "That wasn't too bad..."

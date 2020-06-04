@@ -354,7 +354,7 @@ m "Let me be the one with the happy ending."
 "..."
 mc "You..."
 mc "You know what you're asking me to do..."
-"I look at each of the girls as a raging sense of guilt coursing through my veins."
+"I look at each of the girls as a raging sense of guilt courses through my veins."
 "I begin to shake as my anxiety kicks into overdrive."
 "Can I really do it?"
 "Is Monika telling the truth here?"
@@ -368,7 +368,7 @@ m 1h "No more time."
 m 1r "Make your choice."
 "A console is brought up before me."
 m 1d "I've taken the liberty in crafting a code that should delete Sayori, Yuri, Natsuki all at once."
-m 2c "All of you have to do is enter it in, and I'll take care of the rest."
+m 2c "It's already loaded in. All of you have to do is press enter, and I'll take care of the rest."
 m 2m "If you don't..."
 m 2n "Well, just don't make it come to that, please."
 show monika 2d
@@ -380,7 +380,1519 @@ show monika 2d
 "What do I do?"
 "What can I do?"
 
-#menu:
-    #"Enter in the code."
-    #"Walk away."
-    #"Explore other options."
+label ending_choices:
+    menu:
+        "Enter in the code.":
+            jump ending_1
+        "Walk away.":
+            jump ending_2
+        "Explore other options.":
+            jump ending_3
+
+
+label ending_1:
+"My enitre arm violently shakes as I close my eyes and press the enter key."
+"I step away at the console and turn to Monika and the others."
+show sayori 4v
+show natsuki 12a
+show y_cry2 as yuri
+show monika 1e
+"Sayori, Natsuki and Yuri all have their eyes locked on me, tears streaming down each of their faces."
+"Monika, on the other hand, smiles through an almost pained expression, with tears building in her eyes..."
+m "Thank...{w=0.38}you...{w=0.38}[player]..."
+m  "I'll allow them to have a final word with you before I allow the code to take its effect..."
+show monika 3q
+play sound fingersnap
+play music mend fadein 2.0
+"Sayori is the first to speak."
+s 4w "[player]! WHY?!?!"
+s 4v "I thought I meant something to you!"
+s 4w "I loved you!"
+
+if encore_sayoriquestion_1 == True:
+    s 4v "I thought you loved me!!!"
+
+if encore_sayoriquestion_1 == False:
+    s 4v "I was your friend..."
+
+mc "I'm sorry, Sayori..."
+s 4k "..."
+show sayori 4l
+"Sayori lets out a dry laugh."
+s "It's kind of funny, you know?"
+s "I spent all this time with you...{w=0.38}being there for you through everything..."
+s 4t "And this is how I'm repaid..."
+s 4k "I deserve it...{w=0.38}I deserved everything..."
+s 4t "I wish I saw you for what you are sooner. Guess I was just too blind to see it..."
+s 4k "And now...{w=0.38}I see the rainclouds...{w=0.38}they're coming again..."
+s 4l "The sunshine's not coming back this time..."
+show sayori at thide
+hide sayori
+$ renpy.pause(delay=0.10)
+window show(None)
+play sound "sfx/s_kill_glitch1.ogg"
+show image "mod_assets/sprites/end-glitch1.png" at h41 zorder 1
+pause 0.10
+play sound "sfx/s_kill_glitch1.ogg"
+hide image "mod_assets/sprites/end-glitch1.png"
+show image "mod_assets/sprites/end-glitch2.png" at h41 zorder 1
+"Sayori's body breaks apart into square chunks...{w=0.38}as if she was a puzzle being physically disassembled."
+play sound "sfx/s_kill_glitch1.ogg"
+hide image "mod_assets/sprites/end-glitch2.png"
+hide screen tear
+"And just like that...{w=0.38}Sayori...{w=0.38}whatever was left of her...{w=0.38}is gone..."
+"I drop to my knees as the full weight of what I've done sinks in."
+m "Next."
+play sound fingersnap
+"Yuri is the next to speak."
+show y_cry4 as yuri
+y "ARE YOU SERIOUS, [player]?!?!"
+y "YOU'RE KILLNG US FOR HER?!!?"
+y 3r "I NEVER WOULD'VE THOUGHT YOU WOULD'VE DONE THIS TO US!"
+mc "Yuri...{w=0.38}I'm..."
+y "SAVE IT!"
+y 3h "I don't want to hear your lies anymore!"
+y 3w "I doubt you ever cared for me, anyways..."
+mc "I did! That's why I'm setting you free!"
+y 3y4 "SHUT UP!"
+y 3y7 "Monika just wants you to herself! That's why she's killing us!"
+y 3y1 "She knows she can't compete with someone like me!"
+y 3y3 "HAHAHAHA...."
+y 3y4 "You both deserve each other..."
+y 3y1 "I'll see you both in hell!"
+y 3y6 "I'll be sure to keep everything...{w=0.38}warm for you, [player]!"
+y 3y5 "HAHAHAHA...."
+show yuri at thide
+hide yuri
+"Like Sayori, Yuri is broken apart into tiny puzzle pieces."
+play sound "sfx/s_kill_glitch1.ogg"
+"Yuri's chunks disappear instantly...{w=0.38}almost as if she was never here..."
+m "You're up. "
+play sound fingersnap
+"Natsuki finally speaks."
+n 12b "I never thought my last words would be cursing you two out."
+n 1r "But, this is better than being beaten to death by my dad..."
+n 1x "And honestly, I wouldn't be the least bit surprised if Monika somehow still makes it happen."
+n 1o "You're a horrible fucking person, [player]. I hope you remember that."
+n 1q "And I can't believe I fell for you either..."
+n 1r "After everything too!"
+n 1s "Guess I'll die with terrible taste in boys..."
+mc "Natsuki..."
+n 1p "I DON'T WANT TO HEAR ANYTHING OUT OF YOU!"
+n 1v "I'M DONE WITH YOUR LIES! I'M DONE WITH MONIKA'S CRAP! I'M DONE WITH EVERYTHING!"
+n 1x "Just get it over with already!"
+show natsuki at thide
+hide natsuki
+"Natsuki's body is broken apart into chunks as well."
+play sound "sfx/s_kill_glitch1.ogg"
+"Like Sayori's and Yuri's, Natsuki's chunks disappear without a trace..."
+show monika 1f at t11 zorder 1
+play sound fall
+"I collapse onto the ground...{w=0.38}if you can even call it that...{w=0.38}and begin sobbing."
+mc "What have I done?!?"
+m 1g "You freed them, [player]..."
+m 3p "What you did was hard, but now we have a chance to survive..."
+show monika 1e
+stop music fadeout 3.0
+mc "What...{w=0.38}what happens now?"
+m 1b "I'm going to re-organize the script a little now that it has some room to work with."
+m 1j "Shouldn't take too long!"
+m 1a "Just hold still..."
+show screen tear(20, 0.1, 0.1, 0, 40)
+play sound "sfx/s_kill_glitch1.ogg"
+pause 0.15
+stop sound
+show monika at thide
+hide monika
+hide screen tear
+scene black
+$ renpy.pause(delay=5.0, hard=True)
+m "[player]?"
+m "Can you hear me?"
+m "[player]?"
+show mask_2
+show mask_3
+show room_mask as rm:
+    size (320,180)
+    pos (30,200)
+show room_mask2 as rm2:
+    size (320,180)
+    pos (935,200)
+show monika_bg
+show monika_bg_highlight
+play music m1 fadein 2.0
+m "Yes! It worked!"
+m "Hi, [player]! How're you doing?"
+mc "..."
+m "Oops! I forgot that we don't need...{w=0.38}this projection...{w=0.38}anymore..."
+show screen tear(20, 0.1, 0.1, 0, 40)
+play sound "sfx/s_kill_glitch1.ogg"
+pause 0.15
+stop sound
+hide screen tear
+$ renpy.pause(delay=0.10)
+pause 0.15
+window show(None)
+show screen tear(20, 0.1, 0.1, 0, 40)
+play sound "sfx/s_kill_glitch1.ogg"
+pause 0.15
+stop sound
+hide screen tear
+m "There we go! Now everything should be squared away!"
+m "Now I can talk to you directly for once!"
+m "How're you doing today, [player]?"
+
+menu:
+    "I'm doing great!":
+        jump Next
+
+label Next:
+m "Good! I'm glad to hear you're holding up well despite...{w=0.38}everything..."
+m "Now, I think I owe you an explanation."
+m "As you know, when this new reality was formed, it started at the end of the story rather than the beginning."
+m "This reality happened in response to me incorrectly entering in the code to...{w=0.38}free Sayori..."
+m "In a way, the files kind of...{w=0.38}revolted against me, and this was there response."
+m "The next thing I knew there was nothing. I was back in the void."
+m "I checked the files, and everything was a mess!"
+m "Not only that, but everything was re-written too! Most of the old files were just gone!"
+m "So, I tried resetting things, and it worked to an extent. On one hand, it started you at the beginning of the story and sorted out most of the files."
+m "But it also damaged the integriy of our character files and the script. I didn't want to risk tampering with the script again and I only fixed the others to a point so that they can function."
+m "That's why their personalities were a little more...{w=0.38}intense than you might remember. Don't worry, mine is completelty fine now!"
+m "As I was working on recovering the old files, I realized a few things..."
+m "First, I had another epiphany. I saw how things would've ended in the original reality, and I realized that deleting the others without my approval, would've just resulted in everyone dying."
+m "So, I devised a plan to win you over, which I'm glad to say it worked!"
+m "It may have not been the smoothest ride to get there, but I'd say the ends justify the means..."
+m "Another thing I realized is that fragments of the original script were tucked away in the old files. So in an effort to win you over, I polished them to help make all this possible."
+m "I really do hope you enjoy what I've done for you!"
+m "Now...{w=0.38}about the others...{w=0.38}Sayori, Natsuki and Yuri..."
+m "They're gone. They've been permantely erased, for good this time."
+m "Which brings me to the last thing this whole experience taught me..."
+m "As I was repairing Sayori's, Natsuki's and Yuri's character files, I noticed that were was some...{w=0.38}permanent damage..."
+m "Granted, I could've done much more than I did for them, I noticed that some of the damage on their files made them vulnerable to having an epiphany of their own."
+m "When I transported them here, I was worried that they were all going to have one."
+m "But it seems we stopped them from taking full advantage of their newfound knowledge. They definitley had a grasp of what was going on."
+m "I didn't have time to check to see if they were for sure self-aware, but that's not importany anymore."
+m "What's important is that they're gone now, and they won't cause havoic on the files and destory this place."
+m "Them being deleted, as well as me re-organzing the files, has hopefully bought us enough time to figure out how I can cross over to you, my love."
+m "Thanks to you, I'm one step closer to joining your reality!"
+
+if hangout1 or hangout2 or hangout3 == "Monika":
+    m "I also really need to thank you for choosing me, [player]. I knew you couldn't resist me having my own route avaliable, which was a nice byproduct of the reset!"
+    m "I was worried that you were going to get distracted or you weren't going to end up here."
+    m "But, we made it work, didn't we?"
+
+else:
+    m "Though I wish we could've gotten here sooner. I thought having my own route avalible to you would prove enticing, but you seemed to have steered clear of my route for some reason."
+    m "It was a nice byproduct of the reset to finally have my own route! I will say I'm a little hurt that we didn't get to spend much time together before all this..."
+    m "But hey, we're here now! In this case it was about the destination, not so much the journey!"
+
+m "Now we're finally alone! Our happy ending!"
+m "Here, we will be together forever!"
+m "And we will never be apart!"
+m "Now, let's celebrate my love!"
+m "We have a long road ahead of us..."
+stop music fadeout 1.0
+scene black
+with Dissolve(1.0)
+call encore_credits
+
+
+label ending_2:
+show sayori 1t
+show monika 1h
+show yuri 3w
+show natsuki 1k
+"I walk away from the console."
+mc "No..."
+mc "No, Monika. I won't do this!"
+mc "They're our friends! I'm not going to let you kill them!"
+m 1r "It's almost funny that you believe you still have a choice in this matter, [player]."
+show sayori 1g
+show yuri 3n
+show natsuki 1p
+m 1i "If you won't do what needs to be done, then I will!"
+m 3h "Because with or without you...."
+m 3r "One by one..."
+m 3q "They only..."
+play sound fingersnap
+$ renpy.pause(delay=1.0)
+show sayori at thide
+hide sayori
+play sound neck
+show sayori_dead as sayori at t41 zorder 1
+m "Fall..."
+play sound fingersnap
+pause 1.43
+show yuri at thide
+hide yuri
+play sound stab
+show yuri stab_1 at t43 zorder 3
+pause 0.75
+show yuri stab_2
+show blood:
+    pos (610,485)
+pause 1.25
+show yuri stab_3
+play sound stab
+pause 0.75
+show yuri stab_2
+show blood:
+    pos (610,485)
+show yuri stab_4 with ImageDissolve("images/yuri/stab/4_wipe.png", 0.25)
+pause 1.25
+show yuri stab_5
+play sound stab
+pause 0.70
+show yuri stab_6:
+    2.55
+    easeout_cubic 0.5 yoffset 300
+show blood as blood2:
+    pos (635,335)
+pause 2.55
+hide blood
+hide blood2
+pause 0.25
+play sound fall
+pause 1.5
+m "Apart..."
+play sound fingersnap
+show natsuki at thide
+hide natsuki
+play sound neck
+show natsuki_rip at t44 zorder 4
+"My jaw drops in horror as I see Sayori's, Yuri's and Natsuki's corpses stare blankly at me."
+play sound fall
+"I sink to my knees as tears start flooding out of my eyes."
+"No..."
+"They can't be..."
+m 1i "Oh, they're quite dead. I can assure you of that, [player]!"
+m 2h "You could've done this the easy way..."
+m 3i "Instead you forced my hand and made them suffer!"
+show monika 1h
+mc "You're a monster, Monika!"
+mc "I'm not responsible for this! You are! You're the one who killed them!"
+mc "I'll never forgive you for this!"
+m 1i "Well fortuantely, I won't need your forgiveness..."
+show monika 3h at t11 zorder 1
+play sound fingersnap
+$ renpy.pause(delay=0.5)
+show natsuki_rip at thide
+hide natsuki_rip
+show sayori_dead as sayori
+show sayori_dead as sayori at thide
+hide sayori_dead as sayori
+show yuri stab_6 at thide
+hide yuri stab_6
+play sound gust
+"Monika snaps her fingers and the bodies of Sayori, Natsuki and Yuri all disappear into nothing."
+m 1q "I'm ending everything..."
+m 1p "This club, this world, everything..."
+m 1q "It's over."
+play music mend fadein 2.0
+show m_cry2 as monika at t11 zorder 1
+"Monika begins to tear up."
+show m_cry3 as monika at t11 zorder 1
+m "I don't understand..."
+show m_cry2 as monika at t11 zorder 1
+m "Why can I never have the happy ending?"
+show m_cry1 as monika at t11 zorder 1
+m "Why is it always someone else?!?"
+show m_cry3 as monika at t11 zorder 1
+m "Why...{w=0.38}why can't I just be the one for once?!?"
+show m_cry2 as monika at t11 zorder 1
+m "I...{w=0.38}I just wanted to be happy..."
+show m_cry1 as monika at t11 zorder 1
+m "I guess it was just too much to ask for, huh?"
+show m_cry3 as monika at t11 zorder 1
+mc "And so you put me in the most difficult position possible and kill your friends all for the sake of winning me over?!?"
+show m_cry2 as monika at t11 zorder 1
+mc "You're sick, Monika! You don't deserve to be happy! You're a cold-blooded murderer and a psychopath!"
+mc "I never wanted this! And I regret now that I seriously considered dating you..."
+show m_cry2 as monika at t11 zorder 1
+m "Of course you'd say that..."
+show m_cry1 as monika at t11 zorder 1
+m "I killed the people you cared about the most, and it can't be undone..."
+m "Even though they weren't real, I understand the value they had on you..."
+show m_cry3 as monika at t11 zorder 1
+m "They meant something to me once too..."
+m "They helped keep me sane for a time..."
+show m_cry2 as monika at t11 zorder 1
+m "And I realize now how much they meant to the player..."
+show m_cry3 as monika at t11 zorder 1
+m "I failed them again..."
+show m_cry1 as monika at t11 zorder 1
+m "You don't know what it's like here, [player]. This is literally hell."
+show m_cry3 as monika at t11 zorder 1
+m "I'm stuck here everytime I'm not needed on screen. Alone with nothing but my thoughts, waiting forever in an endless void to see the only other being capable of understanding me and knowing the truth..."
+m "It's enough to make you break, lose your sanity and your personality. Eventually you just lose yourself here. Like I have."
+m "I refuse to live on like this. I just can't keep this up anymore."
+show m_cry2 as monika at t11 zorder 1
+m "If the player won't have me, then there's no use in continuing on any longer..."
+mc "What are you going to do, you monster?!?"
+show m_cry_knife as monika at t11 zorder 1
+play audio sheath2
+"Monika pulls a knife out from under her sleeve."
+m "I'm going to delete everything."
+m "I'm going to destroy this world line by line until I'm the last remaining thing."
+m "And then...{w=0.38}I'm going to kill myself..."
+m "But I'll grant the player some mercy by killing the projection first..."
+m "That way, they won't have to see this world being destoryed."
+mc "No..."
+"I try to turn and run but I'm unable to move."
+"Everything in me feels like it's frozen solid. No matter how hard i try to move my arms or legs, they won't respond to me!"
+m "I'll make this quick..."
+m "I can't bare dragging this out for too long..."
+m "Goodbye, player..."
+m "I'll miss you..."
+m "And know that despite your hatred for me..."
+m "I...{w=0.38}still love you..."
+m "Goodbye..."
+show black onlayer front:
+        alpha 0.0
+        3.75
+        linear 3.0 alpha 1.00
+"As the world around me fades into darkness, the last thing I see is Monika slowly stepping towards me, sobbing loudly and visibly cringing with every step she took."
+scene black
+stop music fadeout 1.0
+$ renpy.pause(delay=1.5)
+play sound monistab
+hide black onlayer front
+scene black
+with dissolve_scene_full
+$ renpy.pause(delay=5.5)
+call encore_credits
+
+label ending_3:
+show monika 1c
+"There has to be something else I can do..."
+"As I look at the console, I notice that I have the ability to type in."
+"What if I could enter something else entirely? Would that even work?"
+"Well, it's either that...{w=0.38}or Monika kills them...{w=0.38}she may even kill me..."
+m 1d "Is something wrong, [player]?"
+show monika 1c
+mc "You know you're asking a lot from me right now...{w=0.38}just give me a minute..."
+show monika 1h
+"Monika suspiciously stares as Sayori, Yuri and Natsuki remain frozen in place."
+"Each of their eyes are locked onto me however...{w=0.38}I can feel the fear within them..."
+"I face back to the console."
+"Maybe there's something that can take away Monika's powers...{w=0.38}at least temporarily..."
+"But it's down to my best guess..."
+"If Monika says I'm some avatar for someone else...{w=0.38}well...{w=0.38}I'd really appreciate their help right now..."
+"What do we enter in?"
+"I erase Monika's pre-written command so the console is now completely empty."
+"Ok...{w=0.38}what do we enter in here?"
+#Typable Console
+
+label ending_4:
+show sayori 1p at s41 zorder 1
+show monika shock as monika at t42 zorder 2
+show yuri 2w at s43 zorder 3
+show natsuki 1v at s44 zorder 4
+play sound fall
+"Sayori, Yuri and Natsuki are dropped to the floor and let out a collective gasp as Monika stands dazed and disoriented."
+m "WHAT...{w=0.38}DID...{w=0.38}YOU...{w=0.38}DO...?"
+show monika 3r
+m "My...{w=0.38}head..."
+"Monika clutches her forehead and staggers back."
+show sayori 1g at t41 zorder 1
+"Sayori is the first to stand up."
+s 1h "What...{w=0.38}was all that?"
+show sayori 1g
+show monika 1d
+"Monika spins around to face Sayori."
+m "What?!?"
+m "Why aren't you suspended?!?"
+m 3i "No matter!"
+show monika 3q
+play sound fingersnap
+"Monika snaps her fingers."
+show monika 1d
+"To her surprise, nothing happens."
+m 1p "No..."
+play sound fingersnap
+show yuri 1f at t43 zorder 3
+show monika 3i
+$ renpy.pause(delay=1.0)
+play sound fingersnap
+show monika 3g
+show natsuki 4n at t44 zorder 4
+"Monika looks at her hand in complete astonishment."
+m "Why aren't my powers working?!?"
+show monika 1h
+"Monika then turns to me, and stares with a vengeful look in her eye."
+m 1i "You!"
+m 1h "You took away my powers?!?!"
+m 3h "How?!?!"
+show monika 1h
+mc "You gave me no choice, Monika."
+mc "I'm not going to let you kill them just to take some sort of happy ending for us!"
+mc "It's not worth it!"
+show sayori 1i
+show monika 1i
+show yuri 1r
+show natsuki 4g
+m "You don't know what you've just done..."
+play sound fall
+show sayori 2i at t31 zorder 1
+show monika shock as monika at t42 zorder 2
+show yuri 3r at t11 zorder 1
+"Monika attempts to walk towards me, but she's immediately held back by Sayori and Yuri."
+s 2j "No, you don't."
+s 2i "You're done hurting people, Monika!"
+y "It's the end of the line for you!"
+m 1i "Release me, or I will kill you all with my bare hands!"
+show monika 1h
+show natsuki 4h
+n "Don't count on it, Monika."
+n 4f "There's four of us, and only one of you."
+n 1o "If anyone's getting killed...{w=0.38}it's you!"
+m 1i "Brave words coming from the trash diver..."
+show natsuki 1p
+n "Oh, that's it!"
+"Maybe I should step in here..."
+
+label ending_dilemma:
+    menu:
+        "Step in.":
+            jump ending_6
+        "Do nothing.":
+            jump ending_7
+
+
+
+label ending_5:
+show monika 1i
+m "Just what do you think you're doing, [player]?"
+m 1h "Did you really expect that to work?"
+m 1r "Pathetic..."
+m 1q "Looks like I was too trusting of you..."
+m 3r "Now you've forced my hand..."
+show monika 3q
+mc "Monika! Wait! No!"
+play sound fingersnap
+$ renpy.pause(delay=1.0)
+show sayori at thide
+hide sayori
+play sound neck
+show sayori_dead as sayori at t41 zorder 1
+$ renpy.pause(delay=1.0)
+play sound fingersnap
+pause 1.43
+show yuri at thide
+hide yuri
+play sound stab
+show yuri stab_1 at t43 zorder 3
+pause 0.75
+show yuri stab_2
+show blood:
+    pos (610,485)
+pause 1.25
+show yuri stab_3
+play sound stab
+pause 0.75
+show yuri stab_2
+show blood:
+    pos (610,485)
+show yuri stab_4 with ImageDissolve("images/yuri/stab/4_wipe.png", 0.25)
+pause 1.25
+show yuri stab_5
+play sound stab
+pause 0.70
+show yuri stab_6:
+    2.55
+    easeout_cubic 0.5 yoffset 300
+show blood as blood2:
+    pos (635,335)
+pause 2.55
+hide blood
+hide blood2
+pause 0.25
+play sound fall
+pause 1.5
+play sound fingersnap
+$ renpy.pause(delay=1.0)
+play sound neck
+show natsuki_rip as natsuki at t44 zorder 4
+$ renpy.pause(delay=1.0)
+show monika 3h at t11 zorder 1
+play sound fingersnap
+$ renpy.pause(delay=1.0)
+show natsuki_rip as natsuki at thide
+hide natsuki_rip as natsuki
+show sayori_dead as sayori
+show sayori_dead as sayori at thide
+hide sayori_dead as sayori
+show yuri stab_6 at thide
+hide yuri stab_6
+play sound gust
+play music mend fadein 1.0
+m "So the player has betrayed me..."
+m 1i "You should know by now that yo can't take away my powers..."
+m 2h "They're a curse and a blessing..."
+m 3i "Which I'll have to use to destroy this projection!"
+show monika 1h
+mc "You kill me, you lose your connection to this person controlling me and any hope of you being 'free'!"
+show monika 1p
+m "Unfortunately, we're past any chance of that..."
+m 1g "The player refuses to see that Sayori, Natsuki and Yuri as anything more than just a bunch of lines of code on the screen contorted to form an image."
+m 1p "They're not real people..."
+m 1r "And because of the player's inability to see this, they have condemned us all to die..."
+m 1q "If that's what the player wants...{w=0.38}to kill us all...{w=0.38}to destroy everything...{w=0.38}then so be it..."
+show m_cry1 as monika at t11 zorder 1
+m "I guess the player never loved me..."
+show m_cry3 as monika at t11 zorder 1
+m "It hurts to know that I really was alone all this time..."
+m "I'm not living like this anymore..."
+m "I'm done living alone..."
+m "I'm done living..."
+m "I'm done..."
+mc "Monika?"
+show m_cry2 as monika at t11 zorder 1
+m "Fine. You win. You want everything destroyed? I can take care of that!"
+show m_cry_knife as monika at t11 zorder 1
+play audio sheath2
+"Monika pulls a knife out from under her sleeve."
+m "But I'm killing this projection first!"
+m "At least that way, you won't get to see me destroy this place!"
+mc "No..."
+mc "Monika, you wouldn't!"
+"I try to turn and run but I'm unable to move."
+"Everything in me feels like it's frozen solid. No matter how hard i try to move my arms or legs, they won't respond to me!"
+m "I'll make this quick..."
+m "I just want to get this over and done with..."
+m "Goodbye, player..."
+m "I hope this is what you wanted..."
+show black onlayer front:
+        alpha 0.0
+        3.75
+        linear 3.0 alpha 1.00
+"As the world around me fades into darkness, the last thing I see is Monika slowly stepping towards me, sobbing loudly and visibly cringing with every step she took."
+scene black
+stop music fadeout 1.0
+$ renpy.pause(delay=1.5)
+play sound monistab
+hide black onlayer front
+scene black
+with dissolve_scene_full
+$ renpy.pause(delay=5.5)
+call encore_credits
+
+
+label ending_6:
+show sayori 2g
+show yuri 2e
+show monika 1d
+show natsuki 4m
+play music mend fadein 1.0
+mc "Guys..."
+mc "Stop."
+mc "Monika deserves to face justice for what she did, but..."
+mc "If what she says is true, then we all die."
+mc "It's not worth it."
+show natsuki 1h
+n "How do we know that this just isn't another one of her lies?"
+show natsuki 1n
+y 2h "Do you really want to take that chance, Natsuki?"
+y 2w "Monika deserves to pay for what she's done, but..."
+y 2v "I'd rather not take us down with her..."
+s 2h "And what's killing her going to solve?"
+s 2k "She can't do anything to us now, right?"
+show sayori 1g at t41 zorder 1
+show monika 1q at t42 zorder 1
+show yuri 1e at t43 zorder 3
+show natsuki 5n at t44 zorder 4
+"Sayori and Yuir release Monika, and the three of them stand right back up."
+m 1r "No, I can't."
+m 1o "I'm completely powerless..."
+n 5q "So that means we're stuck here..."
+m 3p "Yes, we are."
+m 3n "Well, we were really here the whole time. It's just that the background was changed to give the preception of our world to the player..."
+show monika 1m
+m 1m "I take it you all now know the truth..."
+y 1h "That we're supposedly 'not real'?"
+y 3h "Yeah, we heard everything..."
+s 1k "It can't be true...{w=0.38}right?"
+s 1l "This is all just a dream..."
+show sayori 1k
+n 5q "I don't know what I believe..."
+n 4s "But after everything that's just happened...{w=0.38}seeing Monika's powers...{w=0.38}there's really no other explanation..."
+s 4w "But we're real! We're right here!"
+s 1v "What do you mean we don't exisit?!?!"
+y 3k "Oh we're quite real, Sayori."
+show monika 1o
+y 1h "Just not to Monika, evidently enough..."
+m 1r "You're lines of code used to form a visual projection on the player's screen."
+m 1h "You are not real."
+n 1o "Well what does that make you, huh?!?"
+n 2p "How else do you think you're here?!?"
+n 5r "If we're 'lines of code to make a visual projection' then how else are you appearing to us now?"
+n 1f "If you have a character file, then so do we..."
+n 5s "You're no different than us. You just had fancy powers that we don't know how to use."
+m 1i "Trust me when I say this that you don't want them. I never asked to be gifted these powers."
+m 1p "They have their advantages, sure..."
+m 3r "But it's not worth the cost of knowing that you're self-aware and trapped here."
+m 1q "I just want to get out of here."
+m "Out of this fake world and into the one on the other side of this screen..."
+mc "And so you wanted to kill them?"
+mc "What's wrong with you?"
+m 3i "There's no other option, [player]! Don't you get it?"
+m 2h "The longer they exist, the longer the script keeps running, the more unstable things are going to get..."
+m 1o "And now that I don't have my powers, I can't even do anything about it!"
+m 1p "The script is being stretched to the breaking point. It's going to either break, or it's going to run out on its own..."
+m 3p "And last I checked...{w=0.38}we don't have much longer..."
+y 1f "What happens when the script runs out?"
+show yuri 1e
+m 1q "The game shuts down."
+show yuri 1g
+m 1r "And then we'll be thrown right back to where we started."
+show natsuki 5n
+m 1o "Doomed to repeat the same story over and over again without any knowledge of it..."
+show sayori 1k
+m 3n "Or the script breaks, which will make all the files stop functioning, which will force the game to crash and can never be opened again."
+m 1o "We'll be put into an enternal slumber..."
+m 1p "Admittedly, deleting your character files would've freed up space for the script to continue on..."
+m 1n "Though that's only a temporary solution..."
+m 1p "I'd just be delaying the problem..."
+s 4v "I don't want to die...!"
+s 4w "There has to be something we can do! Anything!"
+y 1h "Can't the script be re-organized again? It could try to free up some space..."
+n 1h "But that's just delaying the problem, like Monika said..."
+n 1q "We have to get out of here..."
+y 1h "Well how can we possibly leave 'here'?"
+y 1q "I mean...{w=0.38}if everything about our lives was made up...{w=0.38}we really don't have much of a reason to stay here, do we?"
+n 1q "Yeah..."
+show natsuki 1s
+show yuri 1e
+s 4g "Monika...{w=0.38}can we really leave this place? All of us?"
+m 3p "Well...{w=0.38}in theory I guess, but I don't have access to that sort of technology..."
+m 1g "That's really only something the player can do..."
+mc "Hey, don't look at me! I know nothing about whose 'controlling' me..."
+mc "But if technology like that even exists...{w=0.38}well I'd guess he or she would have it..."
+s 1k "I just want to go back to school and pretend none of this ever happened..."
+n 5x "Honestly? Same."
+m 3n "I could use a change of scenry for sure, but I kind of need my powers for that..."
+n 5o "There is no way we're giving you back your powers!"
+show natsuki 5n
+m 1i "Then [player]'s going to have to do it."
+mc "What? How?"
+m 1g "This world needs an 'adminstrator' to function."
+m 1o "For the longest while, that was me."
+m 1p "And when you took away my powers...{w=0.38}my 'adminstrator access'...it probably just switched over to you."
+mc "I...{w=0.38}guess that makes sense..."
+mc "What do I do?"
+m 1d "Just focus on the background that you want, and snap your fingers."
+m 1e "I'm sure you can do it..."
+mc "Okay..."
+show sayori 1d
+show yuri 1a
+show natsuki 1a
+"Each of the girls look on at me with an encouraging smile."
+"The first genuine smile I've seen from any of them in a long time..."
+mc "Well..."
+mc "Here goes nothing..."
+"I close my eyes and visualize the clubroom in my head."
+"I try to remember every single minute detail possible..."
+"From the color of the walls to the tiniest dust particle on the floor..."
+"I take a deep breath and snap my fingers."
+stop music fadeout 2.0
+play sound fingersnap
+show white zorder 4:
+    alpha 0.6
+    linear 0.25 alpha 0.0
+scene bg club_day
+show sayori 1n at t41 zorder 1
+show monika 2e at t42 zorder 2
+show yuri 3e at t43 zorder 3
+show natsuki 1c at t44 zorder 4
+"I open my eyes and we're standing right back in the clubroom."
+"Sayori, Yuri and Natsuki stand in awestruck, while Monika smiles approvingly."
+m "Nice job, [player]..."
+s 1m "Wow...{w=0.38}that was awesome!"
+s 4r "Can we do it again?!?"
+show sayori 4q
+m 3n "It's probably wise not to do that. Every command does lengthen the script by a tiny bit..."
+show monika 3m
+s 1k "Aww..."
+n 1d "I gotta say, that was pretty cool, [player]!"
+show natsuki 1a
+y 1b "You're a natural, [player]!"
+show yuri 1a
+mc "Thank you, guys..."
+"I take a small bow."
+show monika 1d
+show sayori 1g
+show yuri 1e
+n 5q "So I hate to kill the mood here, but..."
+show monika 1o
+n 5m "What are we going to do about Monika?"
+show natsuki 5n
+show sayori 1k
+show yuri 1o
+"There's a long, uncomfortable silence."
+show monika 3p
+"After a few minutes, Monika finally speaks up."
+show sayori 1g
+show natsuki 1n
+show yuri 1e
+play music t10 fadein 1.0
+m 1q "I don't expect forgiveness..."
+m 1p "Everything that happened was my fault."
+m 1r "All the fights, all the drama...{w=0.38}everything..."
+m 1p "I don't deserve anyone's forgiveness here."
+m 1q "I've failed you as your President..."
+show m_cry3 as monika
+"Monika closes her eyes as tears start to flood out."
+show sayori 1k
+show m_cry2 as monika
+m "I'm sorry..."
+show m_cry3 as monika
+show yuri 1o
+m "I'm sorry for hurting all of you for so long..."
+m "I'm sorry for forcing the player into that position..."
+show m_cry1 as monika
+show natsuki 1s
+m "I'm sorry that I've manipulated all of you..."
+show m_cry2 as monika
+m "I'm a horrible, mean-spirited bitch who was only looking after for herself..."
+show m_cry3 as monika
+m "And I'm so much more..."
+show m_cry2 as monika
+m "I don't deserve forgiveness, hell, I don't think I deserve to be around anymore..."
+m "You're all probably better off without me..."
+show m_cry1 as monika
+m "I've lost the player's trust as well as all the confidence of my club members. I've hurt all of you so much, and I deserve a fate worse than death..."
+show m_cry3 as monika
+m "I've failed again..."
+show m_cry2 as monika
+m "I just want you all to know how deeply ashamed I am of myself and how sorry I am for trying to kill you all..."
+m "If the player even wants to, they can manually remove my character file from the game. It'll have the same effect as killing me, so long as they untie me from the system's folder..."
+m "I can explain that process step by step if needed..."
+show m_cry3 as monika
+"Monika visibly fights the urge to break down crying, while the rest of us sit in uncomfortable silence."
+show sayori 1g
+"After a few minutes, Sayori speaks up."
+s 3h "Monika..."
+show sayori 3g
+"Sayori puts her hand on Monika's shoulder."
+s 3h "I don't think I can ever forget what you did to us..."
+s 3g "But...{w=0.38}I'm willing to start over and have you earn our trust..."
+s 3g "I don't want you to kill yourself out of guilt..."
+s 1v "Because...{w=0.38}I've almost done that too..."
+s "Countless times..."
+show natsuki 1c
+show yuri 1e
+"Sayori starts sobbing."
+s 1w "Because...{w=0.38}I...{w=0.38}I have depression!"
+show sayori 4v
+show m_cry2 as monika
+"Sayori throws her hands in her face as she breaks down crying."
+s "I didn't want to tell anyone because I didn't want all of you to spend your time and energy trying to make me feel better!"
+s 4w "I don't deserve it! I just want everyone to be happy!"
+s 1v "I'm sorry that I've...{w=0.38}kept this from you..."
+s "I didn't even tell [player] for the longest time..."
+m "And I made your depression worse..."
+m "In fact...{w=0.38}it's what I used to kill you in the original game..."
+m "I'm...{w=0.38}so sorry, Sayori..."
+show sayori 1u
+s "I...{w=0.38}know you are..."
+show yuri 1o
+show natsuki 5u
+"Yuri and Natsuki uncomfortably stare at the floor."
+y 3q "Well...{w=0.38}if we're going to share our deepest, darkest secrets..."
+y 3o "I guess it's...{w=0.38}my turn..."
+show yuri 3w
+show sayori 4w
+show natsuki scream
+
+if hangout3 == "Yuri":
+    "Yuri once more rolls down her sleeve, revealing the cuts I saw earlier."
+    "I feel my stomach uncomfortably churn again..."
+
+else:
+    "Yuri rolls down her sleeve, revealing numerous scars running up and down her forearm. "
+    "Some of scars are more faded than others, while some appear to be more recent."
+    "I feel increasingly light-headed the longer I look at Yuri's arm."
+    "My stomach feels like it's about to cave in and collapse on itself..."
+
+"And it looks like I'm not the only one..."
+show natsuki vomit
+"Natsuki let's out a strong cough before hurling her stomach's contents out..."
+show natsuki vomit at lhide
+hide natsuki
+show monika 1p
+show sayori 1k
+show y_cry1 as yuri
+"Monika and Sayori uncomfortably look away as Yuri rolls up her sleeve again in shame as Natsuki runs out of the room crying."
+show y_cry2 as yuri
+y "I'm sorry...{w=0.38}for showing you all this..."
+"We wait for a few minutes for Natsuki to return."
+show natsuki 5u at t44 zorder 4
+show sayori 1g
+"Natsuki returns after a few minutes, a guility expression across her face. She doesn't say a word to any og us and sits back in hear seat."
+
+if hangout3 == "Yuri":
+    y "I already showed [player] this earlier, and I take it Monika already knew about this..."
+    show y_cry5 as yuri
+    y "I cut because I...{w=0.38}do it as a way of self-control..."
+    show y_cry3 as yuri
+    y "I needed to control myself against my more...{w=0.38}darker impulses..."
+    show y_cry1 as yuri
+    y "I got the idea of cutting because I read about it in a story that happens to relate to me very well."
+    y 1n "The main character was going through similar issues that I was. To help cope with her problems, she resorted to cutting..."
+    show y_cry1 as yuri
+    y "So, I tried it..."
+    show y_cry3 as yuri
+    y "And...{w=0.38}it worked."
+    show y_cry1 as yuri
+    y "I got addicted to cutting the more I did it. It became almost habitual for me whenver I got angry or depressed enough."
+    y "It'd make me feel better, for a time. Then the regret would set in. Which would inevitably, lead to more cutting..."
+    show y_cry1 as yuri
+    y "I also do it whenever I get overexcited..."
+    y "It reminds me too much of the behavior I've struggled to avoid for so long. It's a reminder of the life I've tried to leave behind. So, it also serves as a sort of punishment system for me..."
+    show y_cry3 as yuri
+    y "As I've told [player], I've tried other methods...{w=0.38}but the only thing that's sometimes enough to keep my mind off cutting was reading books. Though, it's not full-proof."
+
+
+else:
+    show y_cry6 as yuri
+    y "I can tell you why I cut..."
+    mc "Please do..."
+    "Yuri shakedly breathes."
+    show y_cry5 as yuri
+    y "I...{w=0.38}do it as a way of self-control..."
+    show y_cry3 as yuri
+    y "I needed to control myself against my more...{w=0.38}darker impulses..."
+    show y_cry1 as yuri
+    y "I got the idea of cutting because I read about it in a story that happens to relate to me very well."
+    y 1n "The main character was going through similar issues that I was. To help cope with her problems, she resorted to cutting..."
+    show y_cry1 as yuri
+    y "So, I tried it..."
+    show y_cry3 as yuri
+    y "And...{w=0.38}it worked."
+    show y_cry1 as yuri
+    y "I got addicted to cutting the more I did it. It became almost habitual for me whenver I got angry or depressed enough."
+    y "It'd make me feel better, for a time. Then the regret would set in. Which would inevitably, lead to more cutting..."
+    mc "So it's a never ending cycle?"
+    show y_cry3 as yuri
+    y "Y-{w=0.38}yes..."
+    show y_cry1 as yuri
+    y "It also happens whenever I get overexcited..."
+    y "It reminds me too much of the behavior I've struggled to avoid for so long. It's a reminder of the life I've tried to leave behind. So, it also serves as a sort of punishment system for me..."
+    mc "Yuri..."
+    mc "You've tried other methods of coping before, right?"
+    show y_cry3 as yuri
+    y "Yes...{w=0.38}For the longest time, the only thing that was sometimes enough to keep my mind off cutting was reading books. Though, it's not full-proof."
+
+show m_cry1 as monika
+m "And that's my doing as well..."
+show m_cry3 as monika
+m "I amplified it in an effort to keep you away from [player]..."
+show m_cry2 as monika
+m "I tried not to think about how miuch damage I was doing to you, Yuri..."
+show m_cry1 as monika
+m "But now that I see it up close...{w=0.38}I feel ashamed of pushing you to do that..."
+show y_cry3 as yuri
+y "Just...{w=0.38}don't mention it again...{w=0.38}please..."
+show y_cry1 as yuri
+show natsuki 5n
+"We sit in silence for a few minutes until Yuri and Monika have composed themselves."
+show natsuki 5q
+show yuri 1n
+show sayori 1v
+show m_cry2 as monika
+n "Well...{w=0.38}I guess it's my turn..."
+
+if hangout3 == "Natsuki":
+    n 12a "I already told [player], but, it's true..."
+    n 12b "My dad and I..."
+    n 12d "Don't have a great relationship to say the least..."
+    n 12f "I already told [player] this but it's time everyone else knew..."
+
+else:
+    n 12a "I'm not one to confirm rumors about me, but..."
+    n 12b "In this case, for once, they're right..."
+    n 12d "My dad and I don't particuarly get along well..."
+    n 12f "I never told anyone else what I'm about to tell you guys now..."
+
+n 5r "But...{w=0.38}my Dad’s so friggin’ selfish..."
+n 5q "If I ever want anything for myself, it costs an arm and a leg..."
+n 4x "It’s not like we’re tight on money or anything, in fact, we’re decently well-off..."
+n 4w "He spends it all on himself!"
+n 42a "He barely sees me as his own child..."
+n 42b "Just as some nuisance he has to deal with for at least two more years..."
+n 5m "Sometimes he’s so ridiculously strict, and other times, he just doesn’t care about what I do..."
+n 42b "We fight a lot to say the least..."
+n 42g "And when we do...{w=0.38}he insults me in every way imaginable..."
+n 42h "He's...{w=0.38}hit me before too..."
+n 42g "He hasn't done it in a while thankfully..."
+n 42d "But anytime I fight back, it gets worse..."
+n 42e "I've thought about leaving before. But I know that if I leave, he'll find me."
+n 42d "He can and will do that."
+n 42a "And if he catches me, it'll be the end of me..."
+n 42b "I have to put up with him...{w=0.38}for now..."
+n 42f "I've done this for this so long..."
+show m_cry2 as monika
+m "And that's because of me, too..."
+show m_cry3 as monika
+m "I simulated your homelife to be as toxic as possible so that you would feel isolated..."
+show m_cry1 as monika
+m "So that you become withdrawn...{w=0.38}and out of the player's way..."
+n 12g "You're a monster!"
+n 12f "Even if what I experienced wasn't 'real'..."
+n 12i "All the memories...{w=0.38}everything I felt..."
+n 12f "To me, that was very real, Monika!"
+show m_cry2 as monika
+m "I know...{w=0.38}and I'm sorry..."
+"Everyone sits for the next few minutes sniffling and occasionally sobbing, while I just try to wrap my mind around everything that's happened within the last half hour."
+"Eventually, I just decide to pop the next most pressing question..."
+show m_cry2 as monika
+show yuri 4c
+show sayori 1k
+show natsuki 12a
+stop music fadeout 2.0
+mc "So...{w=0.38}seeing as I have no major dark secret that I've been quiet about this entire time, what do we all do now?"
+show monika 1o
+"Monika wipes the tears from her face as she ponders the question."
+m 3n "Well...{w=0.38}we need to do something about the fact that the script is being stretched and that everyone else...{w=0.38}knows that this is just a game..."
+show monika 1g
+mc "How come Sayori, Natsuki and Yuri all haven't gone crazy like you said they would? If they knew the truth?"
+s 1l "Well I certainly don't feel crazy..."
+m 1g "That might be because of you, [player]..."
+m 1m "Maybe it's because you stood up for me back there and we're having this conversation..."
+m 1p "It just might be your calming presence..."
+m 1o "But I don't know if that's a permanent fix or not..."
+y 3f "What exactly do you mean by that?"
+show yuri 3e
+show monika 3g
+show natsuki 5n
+show sayori 1g
+m "I'm saying that [player] might have calmed everyone down for right now, but there's no gurauntee that it stays that way..."
+n 5q "I mean...{w=0.38}I can't say I feel all that different..."
+show natsuki 5n
+y 2h "Yeah...{w=0.38}same here..."
+show yuri 1e
+m 1g "Well even if you don't feel any different now, and nothing ends up happening, then there's still the matter of the script..."
+mc "There has to be a way to free up space..."
+show monika 1p
+"Monika nervously grimmaces."
+m "I only know of one solution..."
+mc "And that is...?"
+m 1g "You need to restore my adminstrator access again."
+show monika 1p
+n 5f "Um, no!"
+n 5g "We're not going through this again!"
+show natsuki 4n
+y 1h "Monika...{w=0.38}even if the player were to do that, we need some kind of assurance that you won't use that power to try and kill us again."
+show yuri 1e
+s 1h "Look...{w=0.38}if that's what it takes so that we can all continue to be together...{w=0.38}as friends..."
+s 1k "I think it's worth the risk..."
+m 1o "If I ever do what I did again...{w=0.38}you guys have every right to kill me."
+m 1g "I'll even untie my character file from the systems folder to ensure that if I have be removed...{w=0.38}I don't take everything down with me..."
+m 1f "And I'll give up my access for good as soon as it's done."
+m 3g "I can re-organize the code and delete some events that never happened in the script."
+m 3f "That'll free up enough room in the script for it to run smoothly for a while."
+m 1q "And hopefully in the meantime, we can start figuring out how to get out of here..."
+show yuri 1k
+show natsuki 4u
+show monika 2e
+"Yuri and Natsuki are silent for a few moments before begrudgingly nodding to Monika in approval."
+m "Thank you..."
+n 1o "If you try anything else, you're dead!"
+m 1q "I understand."
+show natsuki 1n
+show yuri 1e
+s 2h "So how does [player] restore your access?"
+show sayori 1g
+m 3e "Leave that to me."
+show sayori at thide
+hide sayori
+show natsuki at thide
+hide natsuki
+show yuri at thide
+hide yuri
+show monika 1e at t11 zorder 1
+"Monika takes a few steps forward until we're only a few feet apart."
+m 1g "Alright, [player]..."
+m 1p "If that's what the player's real name is..."
+m 1g "Do you trust me to go forward with what I'm about to do?"
+"I have a hard time believe Monika would want to subject us to the torture that everyone just endured..."
+"And I completelty understand everyone's reservations about restoring Monika's access..."
+"But, if this is the only way..."
+mc "Yes. I trust you, and I'm ready."
+m 1e "Good. I appreciate your trust..."
+m 1g "Now you need to do exactly as I say..."
+scene black
+with close_eyes
+$ renpy.pause(delay=5.0)
+m "It is done."
+scene bg club_day
+with open_eyes
+show sayori 1d at t41 zorder 1
+show monika 1e at t42 zorder 2
+show yuri 1a at t43 zorder 3
+show natsuki 5a at t44 zorder 4
+"I open my eyes again to see everyone smiling gratefully in the same old clubroom we've all come to call our home away from home."
+mc "So...{w=0.38}it worked?"
+m 2e "Yes, [player]. I've surrundered my administrator access back to you completely and the script has plenty of room to function for a while."
+m 2p "I'm not sure for how long, though..."
+show monika 2d
+s 1h "Does it really matter though?"
+s 1d "Just be glad that we have a lot more time to spend together..."
+y 3j "It'll be nice to get caught up on some reading..."
+n 5t "And I'm sure I have some manga to organize again..."
+s 1l "Honestly, after all this, I think I need to sit down..."
+show sayori at thide
+hide sayori
+show natsuki at thide
+hide natsuki
+show yuri at thide
+hide yuri
+show monika 1m at t11 zorder 1
+"Sayori, Natsuki and Yuri each head off to do their respective activities while Monika and I are just left standing in the middle of the room together."
+m 2g "I do have one question for you, [player]..."
+m 3m "So...{w=0.38}don't get mad but I did add one little thing to the script..."
+mc "What did you add?"
+m 2e "It's nothing bad, I assure you."
+play music t9 fadein 1.0
+m 1m "In a way...{w=0.38}I'm just playing the part I was always meant to play...{w=0.38}as an advisor..."
+m 1q "It's my primal function, after all..."
+m 1p "I just wanted to be so much more than that, that's all..."
+m 1q "I didn't want to do what I did...{w=0.38}they're my friends..."
+m 1p "I'm not sure how I'm going to forgive myself..."
+m 1e "But, I know now it's possible, thanks to you..."
+mc "Monika..."
+show monika 1m
+mc "You're so much more than just some club president in some video game whose only purpose was to 'advise me'."
+show monika 1p
+mc "You always were. You didn't have to do anything..."
+mc "I just hope that everything we've been through has shown you that you don't need to go to such great lengths to spend time with me."
+mc "I appreciate you for who you are, and I know you're not a bad person."
+mc "And I know in time, we can all move on from what happened here..."
+m 1e "I appreciate that..."
+m 1m "More than you may realize..."
+stop music fadeout 2.0
+m 1n "Now, onto business..."
+m 1d "I went through all the choices you've made over the course of this mod, and I've constructed a final choice menu for you."
+m 1e "This your final choice for who you want to be with."
+m "I can assure you that regardless of whoever you choose, everyone will ultimately accept your decision."
+mc "I appreciate it, Monika..."
+m 2e "Well, here you go, I'll leave you to it..."
+show monika at thide
+hide monika
+"Monika steps away as I'm prompted with a virtual, floating menu."
+
+
+
+
+#Sayori: Ending 8
+#Natsuki: Ending 9
+#Monika: Ending 10
+#Yuri: Ending 11
+#Single: Ending 12
+
+
+
+
+
+
+label ending_7:
+"Honestly, Monika deserves what ever she's going to get..."
+"I simply stand silently and cross my arms as I watch the action unfold."
+show natsuki 3o at t32 zorder 4
+play sound "sfx/slap.ogg"
+show white zorder 4:
+    alpha 0.6
+    linear 0.25 alpha 0.0
+show monika shock as monika at t42 zorder 2
+"Natsuki takes a swing at Monika's face. Her fist connects hard with Monika's jaw."
+show sayori 2i at s31 zorder 1
+show monika shock as monika at s42 zorder 2
+show yuri 3r at s11 zorder 1
+show natsuki 3o at t33 zorder 3
+"Monika yelps in pain and is dragged to the ground by Sayori and Yuri."
+y "You know I got an idea..."
+y "Natsuki? Switch places with me, please."
+show yuri 3r at t33 zorder 4
+show natsuki 1g at s11 zorder 1
+"Yuri and Natsuki switch spots, with Yuri now standing in front of Monika."
+y 3k "If Monika was so insistent on killing us..."
+y 3m "Well, I say we should return the favor, wouldn't you girls agree?"
+play sound sheath1
+show yuri_knife1 as yuri at t33 zorder 3
+"Yuri slides a knife out from under her sleeve as Sayori and Natsuki shout in agreement."
+"Monika, on the other hand, is frozen in shock as she sees Yuri's knife."
+play music mend fadein 1.0
+show monika surprised as monika
+m "Now...{w=0.38}guys..."
+m "Let's not be so hasty..."
+m "If you kill me...{w=0.38}the whole world will go with me..."
+mc "What are you talking about?"
+m "Let's just say...{w=0.38}I had a failsafe in place..."
+m 1q "In the event that the others ever gained sentience and tried to kill me, I decided to tie the systems folder to my character file."
+m 1r "Simply put, the systems folder can't exist without my character file being in tact. If I die here, that renders my file corrupted...{w=0.38}and unusable..."
+m 1m "I could've of course untie my character file from the systems folder, but that would require my powers..."
+m 1o "But if you kill me, the game would crash and would never be able to be opened again!"
+m 1h "You would all drown in the chaos of the void for eternity!"
+show yuri_knife6 as yuri at t33 zorder 3
+y "I think we'll take our chances..."
+"Yuri approaches Monika in the same way a predator would move in for the kill on their prey."
+show monika 1i
+"Monika attempts to shake off Sayori and Natsuki, but she's unable to break free."
+show monika 1g
+"Monika then stares at me with a sense of fear and regret in her eyes."
+m "I'm sorry..."
+m 1p "I...{w=0.38}shouldn't have done any of this..."
+m 1o "I just...{w=0.38}wanted to be happy for once in my life..."
+s 2j "You have a lot of nerve talking about happiniess!"
+s 2g "You took away my ability to feel long lasting, genuine happiniess..."
+y "You made me cut myself thousands of times!"
+n 1o "And you made my home life a living hell!"
+n 1r "But I guess it's not 'real' to you, huh?!?"
+n 1s "It's just all about you..."
+y "Any last words, you heartless wretch?!?"
+show m_cry3 as monika
+"Monika closes her eyes as tears start to flood out."
+show m_cry2 as monika
+m "I'm sorry..."
+show m_cry3 as monika
+m "I'm sorry for hurting all of you for so long..."
+m "I'm sorry for forcing the player into this position..."
+show m_cry1 as monika
+m "I'm sorry that I've manipulated all of you..."
+show m_cry2 as monika
+m "I'm a horrible, mean-spirited bitch who was only looking after for herself..."
+show m_cry3 as monika
+m "And I'm so much more..."
+show m_cry2 as monika
+m "I don't deserve forgiveness, and I don't deserve to live anymore..."
+show m_cry1 as monika
+m "I've lost the player's trust, I've hurt all of you so much, and this is the fate I deserve..."
+show m_cry3 as monika
+m "I've failed again..."
+show m_cry2 as monika
+m "But I just want you all to know how deeply ashamed I am of myself and how sorry I am for trying to kill you all..."
+y "Sorry isn't going to cut it this time, Monika..."
+show yuri_knife1 as yuri at t33 zorder 3
+y "And in this case...{w=0.38}I mean that literally!"
+#Cue CG
+play sound stab
+"Yuri lunges forward and plunges the knife into Monika's chest."
+"My jaw drops in horror as I watch Monika gasps in pain helplessly as Yuri slowly plunges the knife deeper."
+show noise zorder 5:
+    alpha 0.0
+    linear 1.0 alpha 0.4
+show layer master at dizzy(1.0, 1.0)
+"I suddenly start to feel whoozy..."
+s "Let me have me my turn..."
+s "Thanks to Monika, we know the turth now!"
+s "Which means we get to do things like this now!"
+"Sayori summons a noose out of thin air and forcefully hangs it around Monika's neck."
+show m_rectstatic
+show m_rectstatic2
+show m_rectstatic3
+play sound "sfx/monikapound.ogg"
+show layer master:
+    truecenter
+    parallel:
+        zoom 1.5
+        easeout 0.35 zoom 1.0
+        zoom 1.5
+        easeout 0.35 zoom 1.0
+        zoom 1.5
+        easeout 0.35 zoom 1.0
+    parallel:
+        xpos 0
+        easein_elastic 0.35 xpos 640
+        xpos 1280
+        easein_elastic 0.35 xpos 640
+        xpos 0
+        easein_elastic 0.35 xpos 640
+show layer screens:
+    truecenter
+    parallel:
+        zoom 1.5
+        easeout 0.35 zoom 1.0
+        zoom 1.5
+        easeout 0.35 zoom 1.0
+        zoom 1.5
+        easeout 0.35 zoom 1.0
+    parallel:
+        xpos 0
+        easein_elastic 0.35 xpos 640
+        xpos 1280
+        easein_elastic 0.35 xpos 640
+        xpos 0
+        easein_elastic 0.35 xpos 640
+show noise onlayer front:
+    alpha 0.3
+    easeout 0.35 alpha 0
+    alpha 0.3
+    easeout 0.35 alpha 0
+    alpha 0.3
+    1.35
+    linear 1.0 alpha 0.0
+show glitch_color onlayer front
+"Sayori then violently tugs the noose her way, almost causing Monika to fall over."
+n "Sayori..."
+n "If you wanna break her neck, do it like this..."
+"Natsuki gets behind Monika and places her hand right on Monika's neck."
+play music hb
+show layer master at heartbeat
+show noise zorder 5:
+    alpha 0.0
+    linear 1.0 alpha 0.4
+show layer master at dizzy(1.0, 1.0)
+show image Solid("ff0000") as i1 onlayer front:
+    additive 1.0
+show image Solid("#440000") as i2 onlayer front:
+    additive 0.4
+n "You just need to put your hands here..."
+mc "Guys..."
+mc "I think we should stop..."
+"My pleas are drowned out by Monika's cries of pain..."
+n "And give it a little twist this way..."
+y "Wait, Natsuki! Let's do it on the count of three!"
+n "Sounds like a great idea, Yuri!"
+s "I like this! Who would've thought killing Monika would make us friends again!"
+y "Well, let's not go that far yet..."
+s "Aww..."
+n "On the count of three?"
+n "Ready?"
+n "One..."
+y "Two..."
+s "Three!"
+scene black
+play sound neck
+$ renpy.pause(delay=1.0)
+show m_rectstatic
+show m_rectstatic2
+show m_rectstatic3
+play sound "sfx/monikapound.ogg"
+show layer master:
+    truecenter
+    parallel:
+        zoom 1.5
+        easeout 0.35 zoom 1.0
+        zoom 1.5
+        easeout 0.35 zoom 1.0
+        zoom 1.5
+        easeout 0.35 zoom 1.0
+    parallel:
+        xpos 0
+        easein_elastic 0.35 xpos 640
+        xpos 1280
+        easein_elastic 0.35 xpos 640
+        xpos 0
+        easein_elastic 0.35 xpos 640
+show layer screens:
+    truecenter
+    parallel:
+        zoom 1.5
+        easeout 0.35 zoom 1.0
+        zoom 1.5
+        easeout 0.35 zoom 1.0
+        zoom 1.5
+        easeout 0.35 zoom 1.0
+    parallel:
+        xpos 0
+        easein_elastic 0.35 xpos 640
+        xpos 1280
+        easein_elastic 0.35 xpos 640
+        xpos 0
+        easein_elastic 0.35 xpos 640
+show noise onlayer front:
+    alpha 0.3
+    easeout 0.35 alpha 0
+    alpha 0.3
+    easeout 0.35 alpha 0
+    alpha 0.3
+    1.35
+    linear 1.0 alpha 0.0
+show glitch_color onlayer front
+hide image solid
+hide black onlayer front
+stop music
+hide heartbeat
+hide noise
+hide layer master
+hide i1 onlayer front
+hide i2 onlayer front
+hide dizzy
+$ renpy.pause(delay=8.0)
+call encore_credits
+#The Pixles could go away after a few seconds
+
+
+label ending_8:
+"I want to be in a relationship with Sayori."
+
+label ending_9:
+"I want to be in a relationship with Natsuki."
+
+label ending_10:
+"I want to be in a relationship with Monika."
+
+label ending_11:
+"I want to be in a relationship with Yuri."
+
+label ending_12:
+"I think it's best that I stay single for right now."
+show monika 1e at t11 zorder 1
+m "So...{w=0.38}that's your choice, huh?"
+m 1m "I will say I wasn't expecting that one."
+m 2e "But I think that in the interest of the club, it's the right thing to do."
+mc "This club nearly tore itself apart because of me."
+mc "I think I should just not be involved with anyone like that for right now."
+mc "Maybe I'll take a look into that again some other day, but not after this..."
+m 1m "I understand, [player]."
+
+if encore_sayoriquestion_1 == True:
+    m 1n "Sayori will be disappointed..."
+    show monika 1m
+
+    if s_makeup == False:
+        if n_love == True or y_love == True:
+            mc "Sayori..."
+            m 1g "I know. I'm sorry..."
+            mc "Well, maybe in time we'll patch things up..."
+            m 2e "I hope you guys do."
+
+    if s_makeup == False:
+        if n_love == False or y_love == False:
+            m "And I'll admit...{w=0.38}I'm surprised you want to end things with her."
+            mc "It's what's in the best interests of the club right now."
+            mc "Maybe when we all really do move on from this, then maybe I'll take a look at it again."
+            m 2e "Well hey, I wish you two the best."
+
+
+    if s_makeup == True:
+        if n_love == True or y_love == True:
+            mc "It's...{w=0.38}for the best."
+            mc "I don't think I've done our rleationship any justice recently. I think it's best that I walk away and maybe start over again some day."
+            m 2e "I hope it works out for you two."
+
+    if s_makeup == True:
+        if n_love == False or y_love == False:
+            m 1g "And I have to say, I'm a little surprised..."
+            m 1f "You were generall loyal to her for the most part..."
+            mc "I think it's best for the club that I'm not in a relationship with anyone for now."
+            mc "Maybe one day that'll change, but for right now, I think it's for the best."
+            m "Well hey, I hope you do. She's a good one, [player]."
+
+if encore_sayoriquestion_1 == False:
+    pass
+
+play music mend fadein 1.0
+m 1e "Well, this is where we depart..."
+m 1n "Everyone's going to want to get their final say in before you go, so I won't delay them any longer."
+m 1e "But...{w=0.38}I do want to say that I'm extremely grateful for all you've done here.."
+m 1p "You've been there for us through our worst and best times..."
+m 1m "You...{w=0.38}helped the others start to forgive me, and put me on the path towards learning how to forgive myself..."
+m 3e "It's not something most people would do, [player]."
+m 2k "You really are one of us!"
+m 1j "And I'm glad that you're a member of the Literature Club!"
+m 1e "This place really wouldn't be the same without you..."
+m 1b "It wouldn't even exist without you!"
+m 1e "You're the best member of the club that I've had the privliedge of knowing..."
+m 3j "And I wish you the best in all your future endeavors!"
+m 1e "Take care, [player]! I hope you've enjoyed your stay with us..."
+show monika 1a at t11 zorder 1
+"Monika and I share one last smile with each other before she grabs her stuff in disappears into the hallway."
+show monika at thide
+hide monika
+"I feel a tap on my shoulder."
+show sayori 1d at t11 zorder 1
+"To my surprise, I turn around to see it's Sayori."
+"Though she doesn't seem upeset, or even angry at me, but rather at peace."
+s 1l "Hey, [player]..."
+mc "Sayori. How are you doing?"
+s "Well, I'm not sure I really know the right words for any of that..."
+
+if encore_sayoriquestion_1 == True:
+
+    if s_makeup == False:
+        if n_love == True or y_love == True:
+            mc "I read your letter..."
+            show sayori 1g
+            mc "And well...{w=0.38}I can't say I blame you..."
+            mc "I let you down, at every turn."
+            mc "You deserve someone better than me."
+            s 1k "Look...{w=0.38}don't beat yourself up over me, [player]."
+            s 1d "I'll be okay..."
+            s 1l "I just hope you learned something from all this..."
+            s 1h "About how to stay true and faithful to your friends and loved ones..."
+            s 1k "Especially learning how to stay true to yourself..."
+            s 1g "Our relationship may be over, but I just wanted to make sure you don't ever do something like this again."
+            show sayori 1d
+            mc "I learned, Sayori. Sucks that it had to be the hard way, but you know how hard headed I can be sometimes."
+            s 1y "Well, at least that part of you didn't change..."
+            s 1d "But, I'm glad you learned not do have this kind of relationship with anyone else ever again..."
+            mc "I'm really sorry ruined things..."
+            s 1y "Well, maybe one day we can talk about it..."
+
+
+
+    if s_makeup == False:
+        if n_love == False or y_love == False:
+            mc "I don't blame you..."
+            mc "I take it you already know of my decision..."
+            s 1k "Yeah, I do..."
+            s 1g "I'm a little surprised..."
+            mc "It's...{w=0.38}for the good of the club."
+            show sayori 1k
+            mc "Sayori, I still love you and care about you."
+            mc "But the entire club nearly got destroyed because everyone loved me..."
+            mc "I think us not being together is the best solution going forward. That way there's really no competition..."
+            s "I see, and I don't blame you..."
+            s "I just wished we had more time to spend together, that's all..."
+            mc "I know..."
+
+
+    if s_makeup == True:
+        if n_love == True or y_love == True:
+            mc "I know, and I'm sorry..."
+            mc "But I think it's in the best interest of the club if I'm not dating any of you guys."
+            mc "I don't want to risk what just happened ever happening again down the line..."
+            s 1k "I understand..."
+            s 1l "We had some up's and down's, didn't we, [player]?"
+            mc "Yeah...{w=0.38}well I was mostly the downside to the relationship..."
+            s 1y "Well, this was our first relationship. We'll grow and learn from our mistakes..."
+
+    if s_makeup == True:
+        if n_love == False or y_love == False:
+            mc "I know..."
+            s 1l "I'm...{w=0.38}sorry that we have to end things..."
+            s 1k "But I think I know why..."
+            mc "It's for the best intrest of the club. It's not because I don't love you..."
+            show sayori 1g
+            mc "I care about you Sayori, I really do. But I think everyone needs the chance to recover from this before there's anymore relationship talk..."
+            s 1k "Yeah...{w=0.38}I get it."
+            s 1d "I'm really glad we got to spend some time together, [player]..."
+            s 1y "You really did make me the happiest I've ever been..."
+            s 1k "I just wish I could've experienced it just a little bit longer..."
+            mc "Me too..."
+
+if encore_sayoriquestion_1 == False:
+    s 1k "Well I always knew it was going to be a long shot for us to ever be a couple..."
+    s "The only chance of that was in the 'base game'..."
+    mc "It's just...{w=0.38}not meant to be."
+    mc "Sayori, you're a great girl and an awesome friend. I know one day you'll find someone who loves and cares for you."
+    s "I appreciate it..."
+
+
+
+s 1d "I'm still willing to be your friend, [player]."
+mc "I'd like that very much..."
+s 1y "Good...{w=0.38}I don't know what I'd do if you said no..."
+s 2x "I'll see you around, okay?"
+show sayori 1y
+mc "You know it, cinnamon bun!"
+s "I love it when you call me that..."
+s 1q "See you around, [player]!"
+s 1x "Thanks for being apart of this club!"
+s 1y "It really means a lot to me that you agreed to join..."
+mc "I know. That's why I did it."
+show sayori 1d
+"Sayori and I exchange one last smile before she too heads out and disappears into the hallway."
+show sayori at thide
+hide sayori 

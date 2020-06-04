@@ -127,6 +127,7 @@ define audio.groan= "mod_assets/audio/groan.ogg"
 define audio.run= "mod_assets/audio/run.ogg"
 define audio.thunder= "mod_assets/audio/thunder.ogg"
 define audio.scary_scream= "mod_assets/audio/scary_scream.ogg"
+define audio.monistab= "mod_assets/audio/MoniStab.ogg"
 #--Encore's New Music
 define audio.e1 = "<loop 0>mod_assets/audio/void1.ogg" #The Void (First Void Scene Music)
 define audio.f1 = "<loop 0>mod_assets/audio/mainmenu.ogg" #Doki Doki Forever (Main Menu Music, Doki Doki!~)
@@ -149,20 +150,11 @@ define audio.e17 = "<loop 0>mod_assets/audio/iPhone_Ring.ogg" #iPhone
 define audio.e18 = "<loop 0>mod_assets/audio/Hypothetical Romance.ogg" #Monika Day 3 Unique OST
 define audio.e19 = "<loop 0>mod_assets/audio/Natsuki_Confession.ogg" #Natsuki Confession Music
 define audio.e20 = "<loop 0>mod_assets/audio/Yuri_Confession.ogg" #Yuri Confession Music
+define audio.e21 = "<loop 0>mod_assets/audio/Poems Are Forever.ogg" #Monika Ending Music (Good)
+define audio.e22 = "<loop 0>mod_assets/audio/Doki Doki Pound.ogg" #Natsuki Ending Music
 
 
 
-#BannedUsers
-
-#Litandus
-#NatsukiGoldenHeart
-#Stuart98
-#Littlemanmike
-#Average_Owain
-#JustMonika
-#LanceAkira
-#AgentJohn20
-#Element60
 
 # Backgrounds
 image black = "#000000"

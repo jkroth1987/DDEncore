@@ -32,6 +32,7 @@ init python:
         "1273 down the Rockefeller street!",
         "The Fitnessgram Pacer test...",
         "Karen took the kids so I made this mod.",
+        "Carole Baskin killed her husband",
         "Why are you trying to find more splash messages? Just play the mod, man!"
     ]
 
