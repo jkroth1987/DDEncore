@@ -1636,10 +1636,10 @@ show m_nightmare1 as monika at face
 play audio scary_scream
 #Monika Strobe effect goes here
 #Monika Glowing Eyes Sprite
-show monika 1a at t11 zorder 1
+show m_unleashed1 as monika at t11 zorder 1
 "I immediately fall backwards and scurry away from Monika."
-show sayori 4w  at t21 zorder 1
-show monika 1a at t22 zorder 2
+show sayori 4w at t21 zorder 1
+show m_unleashed1 as monika at t22 zorder 2
 "I look up at Monika to see her eyes glow an emerald green as she stands before us, motionless."
 "Sayori cries out for help as loud as she can."
 $ style.say_dialogue = style.edited
@@ -1650,14 +1650,14 @@ play sound "sfx/s_kill_glitch1.ogg"
 pause 0.15
 stop sound
 hide screen tear
-show monika 3a at t43 zorder 1
+show m_unleashed2 as monika at t32 zorder 1
 show sayori 2w at t42 zorder 2
 $ style.say_dialogue = style.normal
 scene bg empty_classroom
-show monika 3a at t43 zorder 1
+show m_unleashed2 as monika at t32 zorder 1
 show sayori 2w at t42 zorder 2
 "Monika teleports right next to Sayori and tightly grabs her shoulder."
-show monika 3a at s43 zorder 1
+show m_unleashed2 as monika at s32 zorder 1
 show sayori 2w at s42 zorder 2
 play sound "sfx/fall.ogg"
 "Sayori again yells in pain as she forced to her knees by Monika."
@@ -1679,7 +1679,7 @@ pause 0.10
 play sound "sfx/s_kill_glitch1.ogg"
 hide image "mod_assets/sprites/end-glitch1.png"
 show image "mod_assets/sprites/end-glitch2.png" at t21 zorder 1
-show monika 1a at t22 zorder 2
+show m_unleashed2 as monika at t22 zorder 2
 "Without warning, Sayori's body is broken apart into little pieces that repeatedly revovle around themseleves mid-air."
 "I honestly can't believe what I'm seeing..."
 "This can't be real!"
@@ -1702,7 +1702,7 @@ show room_mask as rm:
 show room_mask2 as rm2:
     size (320,180)
     pos (935,200)
-show monika 1a at t11 zorder 1
+show m_unleashed1 as monika at t11 zorder 1
 "Sayori disappears into nothing, leaving Monika and I alone in the room together again."
 "Only that the room seems to have changed yet again..."
 "I'm now sitting in a chair facing Monika, who is still staring at me through her glowing eyes."
@@ -1734,8 +1734,9 @@ show image Solid("#440000") as i2 onlayer front:
 "I can't see straight...."
 "My breathing becomes ragged as I feel splitting pain in my head.."
 "I think there's blood in my eyes..."
-show monika 1a at face
+show m_unleashed1 as monika at face
 "Monika tower over me, the emerald light glowing in the place of her eyes."
+show m_unleashed2 as monika at face
 "She slowly outstretches her hand to me."
 mc "No! Stop! Get away from me!"
 mc "GET AWAY!"
@@ -1814,7 +1815,7 @@ show monika 1a at face
 mc "Uh...{w=0.38}Monika? What are you-"
 m "Just try to relax. This won't take long..."
 mc "{cps=20}What the hell are you-{nw}"
-#show monika's glowing green eyes
+show m_unleashed1 as monika at face
 play music hb
 show layer master at heartbeat
 show noise zorder 5:
@@ -2040,8 +2041,16 @@ n 12f "Why is it whenever I love someone, I'm the one that always gets hurt?!?"
 show natsuki 12e
 n "It's not fair!"
 show natsuki 12f
+n 12g "And that's not the worst part!"
+n 12i "My dad...{w=0.38}he..."
+n 42g "He insults me in every way imaginable..."
+n 42h "He's...{w=0.38}even hits me..."
+n 42d "And anytime I fight back, it gets worse..."
+n 12f "No matter what I do...{w=0.38}I just can't win!"
 "Natsuki breaks down again and resumes her sobbing."
-"She's clearly being hysterical, but I'm not sure if it's possible to reason with her right now..."
+"I take in a moment to absorb what Natsuki just said."
+"I can't ignore something like this..."
+"It doesn't help that she's being hysterical, but I'm not sure if it's possible to reason with her right now..."
 "I don't want to leave Natsuki unattended, but maybe she needs a moment to calm herself down..."
 "But, isn't it my job to be there for her in her time of need?"
 jump day5_choice2
@@ -2214,10 +2223,10 @@ show m_nightmare1 as monika at face
 play audio scary_scream
 #Monika Strobe effect goes here
 #Monika Glowing Eyes Sprite
-show monika 1a at t11 zorder 1
+show m_unleashed1 as monika at t11 zorder 1
 "I immediately fall backwards and scurry away from Monika."
 show natsuki scream at t21 zorder 1
-show monika 1a at t22 zorder 2
+show m_unleashed1 as monika at t22 zorder 2
 "I look up at Monika to see her eyes glow an emerald green as she stands before us, motionless."
 "Natsuki cries out for help as loud as she can."
 $ style.say_dialogue = style.edited
@@ -2228,14 +2237,14 @@ play sound "sfx/s_kill_glitch1.ogg"
 pause 0.15
 stop sound
 hide screen tear
-show monika 3a at t43 zorder 1
+show monika 3a at t32 zorder 1
 show natsuki scream at t42 zorder 2
 $ style.say_dialogue = style.normal
 scene bg empty_classroom
-show monika 3a at t43 zorder 1
+show m_unleashed2 as monika at t32 zorder 1
 show natsuki 1o  at t42 zorder 2
 "Monika teleports right next to Natsuki and tightly grabs the back of her head."
-show monika 3a at s43 zorder 1
+show m_unleashed2 as monika at s32 zorder 1
 show natsuki 1v at s42 zorder 2
 play sound "sfx/fall.ogg"
 "Natsuki again yells in pain as she forced to her knees by Monika."
@@ -2257,7 +2266,7 @@ pause 0.10
 play sound "sfx/s_kill_glitch1.ogg"
 hide image "mod_assets/sprites/end-glitch1.png"
 show image "mod_assets/sprites/end-glitch2.png" at t21 zorder 1
-show monika 1a at t22 zorder 2
+show m_unleashed2 as monika at t22 zorder 2
 "Without warning, Natsuki's body is broken apart into little pieces that repeatedly revovle around themseleves mid-air."
 "I honestly can't believe what I'm seeing..."
 "This can't be real!"
@@ -2280,7 +2289,7 @@ show room_mask as rm:
 show room_mask2 as rm2:
     size (320,180)
     pos (935,200)
-show monika 1a at t11 zorder 1
+show m_unleashed1 as monika at t11 zorder 1
 "Natsuki disappears into nothing, leaving Monika and I alone in the room together again."
 "Only that the room seems to have changed yet again..."
 "I'm now sitting in a chair facing Monika, who is still staring at me through her glowing eyes."
@@ -2312,8 +2321,9 @@ show image Solid("#440000") as i2 onlayer front:
 "I can't see straight...."
 "My breathing becomes ragged as I feel splitting pain in my head.."
 "I think there's blood in my eyes..."
-show monika 1a at face
+show m_unleashed1 as monika at face
 "Monika tower over me, the emerald light glowing in the place of her eyes."
+show m_unleashed2 as monika at face
 "She slowly outstretches her hand to me."
 mc "No! Stop! Get away from me!"
 mc "GET AWAY!"
@@ -2370,6 +2380,7 @@ with wipeleft_scene
 "I lean against the wall of lockers, asking myself if I just did the right thing."
 "I've know Natsuki...{w=0.38}I know when she needs me and when she needs alone time..."
 "But, maybe I've should've done more back there..."
+"Especially with some of the things she just told me..."
 $ m_name = "???"
 m "[player]?"
 show monika 1d at t11 zorder 1
@@ -2393,7 +2404,7 @@ show monika 1a at face
 mc "Uh...{w=0.38}Monika? What are you-"
 m "Just try to relax. This won't take long..."
 mc "{cps=20}What the hell are you-{nw}"
-#show monika's glowing green eyes
+show m_unleashed1 as monika at face
 play music hb
 show layer master at heartbeat
 show noise zorder 5:
@@ -2999,7 +3010,8 @@ show yuri 3w
 y 3v "I figured I was going to have to show you eventually..."
 y 3w "Either you accidentially see it, or I show you. At least this way it's on my own terms..."
 mc "Yuri...?"
-"With tears strolling down her face again, Yuri pulls up her sleeve, revealing numerous scars running up and down her forearm."
+show y_cut as yuri at t11 zorder 1
+"With tears strolling down her face again, Yuri stands up and pulls up her sleeve, revealing numerous scars running up and down her forearm."
 "Some of scars are more faded than others, while some appear to be more recent."
 "I feel increasingly light-headed the longer I look at Yuri's arm."
 "My stomach feels like it's about to cave in and collapse on itself..."
@@ -3261,10 +3273,10 @@ show m_nightmare1 as monika at face
 play audio scary_scream
 #Monika Strobe effect goes here
 #Monika Glowing Eyes Sprite
-show monika 1a at t11 zorder 1
+show m_unleashed1 as monika at t11 zorder 1
 "I immediately fall backwards and scurry away from Monika."
 show yuri 3p at t21 zorder 1
-show monika 1a at t22 zorder 2
+show m_unleashed1 as monika at t22 zorder 2
 "I look up at Monika to see her eyes glow an emerald green as she stands before us, motionless."
 "Yuri cries out for help as loud as she can."
 $ style.say_dialogue = style.edited
@@ -3275,14 +3287,14 @@ play sound "sfx/s_kill_glitch1.ogg"
 pause 0.15
 stop sound
 hide screen tear
-show monika 3a at t43 zorder 1
+show m_unleashed2 as monika at t32 zorder 1
 show yuri 3p at t42 zorder 2
 $ style.say_dialogue = style.normal
 scene bg empty_classroom
-show monika 3a at t43 zorder 1
-show yuri 1p  at t42 zorder 2
+show m_unleashed2 as monika at t32 zorder 1
+show yuri 1p at t42 zorder 2
 "Monika teleports right next to Yuri and tightly grabs her hair."
-show monika 3a at s43 zorder 1
+show m_unleashed2 as monika at s32 zorder 1
 show yuri 1p at s42 zorder 2
 play sound "sfx/fall.ogg"
 "Yuri again yells in pain as she forced to her knees by Monika's harsh pull."
@@ -3304,7 +3316,7 @@ pause 0.10
 play sound "sfx/s_kill_glitch1.ogg"
 hide image "mod_assets/sprites/end-glitch1.png"
 show image "mod_assets/sprites/end-glitch2.png" at t21 zorder 1
-show monika 1a at t22 zorder 2
+show m_unleashed2 as monika at t22 zorder 2
 "Without warning, Yuri's body is broken apart into little pieces that repeatedly revovle around themseleves mid-air."
 "I honestly can't believe what I'm seeing..."
 "This can't be real!"
@@ -3327,7 +3339,7 @@ show room_mask as rm:
 show room_mask2 as rm2:
     size (320,180)
     pos (935,200)
-show monika 1a at t11 zorder 1
+show m_unleashed1 as monika at t11 zorder 1
 "Yuri disappears into nothing, leaving Monika and I alone in the room together again."
 "Only that the room seems to have changed yet again..."
 "I'm now sitting in a chair facing Monika, who is still staring at me through her glowing eyes."
@@ -3359,8 +3371,9 @@ show image Solid("#440000") as i2 onlayer front:
 "I can't see straight...."
 "My breathing becomes ragged as I feel splitting pain in my head.."
 "I think there's blood in my eyes..."
-show monika 1a at face
+show m_unleashed1 as monika at face
 "Monika tower over me, the emerald light glowing in the place of her eyes."
+show m_unleashed2 as monika
 "She slowly outstretches her hand to me."
 mc "No! Stop! Get away from me!"
 mc "GET AWAY!"
@@ -3440,7 +3453,7 @@ show monika 1a at face
 mc "Uh...{w=0.38}Monika? What are you-"
 m "Just try to relax. This won't take long..."
 mc "{cps=20}What the hell are you-{nw}"
-#show monika's glowing green eyes
+show m_unleashed1 as monika at face
 play music hb
 show layer master at heartbeat
 show noise zorder 5:

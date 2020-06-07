@@ -259,7 +259,7 @@ show monika 1k
 m 2n "Well, you've definitely become quite the poet over our time together."
 m 2m "Maybe I was wrong about you..."
 m 1b "But I know you do an excellent job in representing the player."
-show mb_wink as monika at t11 zorder 1 #Need School Uniform version
+show m_wink as monika at t11 zorder 1
 "Monika winks at me, but I'm not sure if I was the intended recipient of that."
 mc "Um, thanks..."
 mc "So what do we need to do?"
@@ -592,8 +592,10 @@ m "And we will never be apart!"
 m "Now, let's celebrate my love!"
 m "We have a long road ahead of us..."
 stop music fadeout 1.0
+window hide
 scene black
-with Dissolve(1.0)
+with Dissolve(2.0)
+$ renpy.pause(delay=5.0)
 call encore_credits
 
 
@@ -1200,7 +1202,7 @@ show natsuki 5u
 "Yuri and Natsuki uncomfortably stare at the floor."
 y 3q "Well...{w=0.38}if we're going to share our deepest, darkest secrets..."
 y 3o "I guess it's...{w=0.38}my turn..."
-show yuri 3w
+show y_cut as yuri
 show sayori 4w
 show natsuki scream
 
@@ -1344,16 +1346,23 @@ n 12f "To me, that was very real, Monika!"
 show m_cry2 as monika
 m "I know...{w=0.38}and I'm sorry..."
 "Everyone sits for the next few minutes sniffling and occasionally sobbing, while I just try to wrap my mind around everything that's happened within the last half hour."
-"Eventually, I just decide to pop the next most pressing question..."
+"Eventually, I just decide speed things along..."
 show m_cry2 as monika
 show yuri 4c
 show sayori 1k
 show natsuki 12a
 stop music fadeout 2.0
 mc "So...{w=0.38}seeing as I have no major dark secret that I've been quiet about this entire time, what do we all do now?"
+mc "We're all on the same page now, and know not to bring up each other's issues again, right?"
+show sayori 1g
+show natsuki 1n
+show yuri 1n
+"The girls glumly nod their heads."
+mc "And I take it each of us are sorry for the whole incident before all this happened..."
+"The girls all exchange looks with each other and meerly nod to each other. Which I suppose will suffice for now as a mutual apology..."
 show monika 1o
 "Monika wipes the tears from her face as she ponders the question."
-m 3n "Well...{w=0.38}we need to do something about the fact that the script is being stretched and that everyone else...{w=0.38}knows that this is just a game..."
+m 3n "Well, since that's taken care of...{w=0.38}we need to do something about the fact that the script is being stretched and that everyone else...{w=0.38}knows that this is just a game..."
 show monika 1g
 mc "How come Sayori, Natsuki and Yuri all haven't gone crazy like you said they would? If they knew the truth?"
 s 1l "Well I certainly don't feel crazy..."
@@ -1530,7 +1539,7 @@ mc "What are you talking about?"
 m "Let's just say...{w=0.38}I had a failsafe in place..."
 m 1q "In the event that the others ever gained sentience and tried to kill me, I decided to tie the systems folder to my character file."
 m 1r "Simply put, the systems folder can't exist without my character file being in tact. If I die here, that renders my file corrupted...{w=0.38}and unusable..."
-m 1m "I could've of course untie my character file from the systems folder, but that would require my powers..."
+m 1m "I could of course untie my character file from the systems folder, but that would require my powers..."
 m 1o "But if you kill me, the game would crash and would never be able to be opened again!"
 m 1h "You would all drown in the chaos of the void for eternity!"
 show yuri_knife6 as yuri at t33 zorder 3
@@ -1584,7 +1593,7 @@ show noise zorder 5:
 show layer master at dizzy(1.0, 1.0)
 "I suddenly start to feel whoozy..."
 s "Let me have me my turn..."
-s "Thanks to Monika, we know the turth now!"
+s "Thanks to Monika, we know the turth!"
 s "Which means we get to do things like this now!"
 "Sayori summons a noose out of thin air and forcefully hangs it around Monika's neck."
 show m_rectstatic
@@ -1718,22 +1727,1543 @@ hide layer master
 hide i1 onlayer front
 hide i2 onlayer front
 hide dizzy
-$ renpy.pause(delay=8.0)
+$ renpy.pause(delay=5.0)
+hide m_rectstatic
+hide m_rectstatic2
+hide m_rectstatic3
+$ renpy.pause(delay=3.0)
 call encore_credits
 #The Pixles could go away after a few seconds
 
+#Sayori Ending
 
 label ending_8:
 "I want to be in a relationship with Sayori."
+show monika 1e at t11 zorder 1
+m "Sayori, huh?"
+m 1m "She's a keeper, [player], even if she doesn't think so herself..."
+m 2e "Make sure you treat her right."
+mc "I will. I have a lot of making up to do to her for this and everything over the last few years."
+m 3k "Well no time like the present to start making good on that promise!"
+show monika 1d
+mc "She'll also need someone to show her the bright side of things when she's feeling down."
+m 1m "Yeah, she will. If anyone can do that, it's you."
+
+if encore_sayoriquestion_1 == True:
+    m 1n "She'll definitely be happy that you want to stay with her..."
+    show monika 1m
+
+    if s_makeup == False:
+        if n_love == True or y_love == True:
+            mc "Well..."
+            m 1g "I know that she gave you that letter. Maybe you can still work something out with her?"
+            mc "Maybe..."
+            m 2e "Just try it. If she doesn't agree, it's not the end of the world."
+
+    if s_makeup == False:
+        if n_love == False or y_love == False:
+            m "I'll admit...{w=0.38}I'm not surprised you want to stay with her."
+            mc "Your relationship with her has been pretty stable."
+            mc "Yeah, it has been. I see no reason to end things with her. I'm happy with her and I know she's happy with me."
+            m 2e "Well hey, I wish you two the best."
+
+    if s_makeup == True:
+        if n_love == True or y_love == True:
+            mc "I do have my work cut for me though..."
+            mc "I need to work to earn her trust back. I have a lot to make up for."
+            m 2e "I hope it works out for you two."
+
+    if s_makeup == True:
+        if n_love == False or y_love == False:
+            m 1g "I have to say, I'm not surprised..."
+            m 1f "You were loyal to her for the most part..."
+            mc "No use in ending something good if both people are happy."
+            mc "She needs me, and I'm more than happy to be a part of her life."
+            m "Well hey, I hope things continue to go great for you two. She's a keeper, [player]."
+
+
+if encore_sayoriquestion_1 == False:
+    m "I have to say though...{w=0.38}I'm surprised you decided to be with her..."
+    m 1d "You did reject her the first time..."
+    show monika 1c
+    mc "I see now that I made a mistake in doing that."
+    mc "I've come to realize how much I actually love her..."
+    mc "And I think we both need each other, especially now..."
+    m 2e "Well hey, you're going to make her one happy girl, [player]!"
+    mc "I hope I can..."
+
+mc "Thank you, Monika."
+play music mend fadein 1.0
+m 1e "Well, this is where we depart..."
+m 1n "Everyone's going to want to get their final say in before you go, so I won't delay them any longer."
+m 1e "But...{w=0.38}I do want to say that I'm extremely grateful for all you've done here.."
+m 1p "You've been there for us through our worst and best times..."
+m 1m "You...{w=0.38}helped the others start to forgive me, and put me on the path towards learning how to forgive myself..."
+m 3e "It's not something most people would do, [player]."
+m 2k "You really are one of us!"
+m 1j "And I'm glad that you're a member of the Literature Club!"
+m 1e "This place really wouldn't be the same without you..."
+m 1b "It wouldn't even exist without you!"
+m 1e "You're the best member of the club that I've had the privliedge of knowing..."
+m 3j "And I wish you the best in all your future endeavors!"
+m 1e "Take care, [player]! I hope you've enjoyed your stay with us..."
+show monika 1a at t11 zorder 1
+"Monika and I share one last smile with each other before she grabs her stuff in disappears into the hallway."
+show monika at thide
+hide monika
+"I feel a tap on my shoulder."
+show natsuki 5u at t11 zorder 1
+"To my surprise, I turn around to see it's Natsuki."
+"At first we both struggle to find the right words to say to each other, given our history, but for once, she's the first to break the ice."
+n 5t "You know...I can't say I'm too surprised that you choose Sayori..."
+n 5l "I always did think you two went well together.."
+n 5l "I hope everything works out between you two."
+mc "Thank you, Natsuki. I really appreciate it."
+n 5t "Well...{w=0.38}it's the least I could do..."
+n 5t "We've had quite the ride, you and me..."
+mc "Yeah...{w=0.38}it's really been something..."
+n 3m "You know...{w=0.38}for the longest time, I wasn't sure if I could really trust you..."
+n 3q "And well, I still ended up falling for you..."
+n 1t "I don't really know why...{w=0.38}maybe because I thought you were funny, amazing..."
+mc "Charming?"
+n 1y "Pfft! Don't push your luck, [player]!"
+
+if poem_giver == "Natsuki":
+    n 1u "I really do regret about starting all this drama though..."
+    n 1n "I liked you...{w=0.38}a lot...{w=0.38}and I just didn't know how to approach you..."
+    n "I never meant to hurt you or anyone."
+    mc "I know you didn't, Natsuki."
+
+else:
+    pass
+
+
+n 5m "But what I'm trying to say is:{w=0.38}most boys wouldn't have done what you've done for me."
+n 1u "I know we've certainly had our up's and down's, and yeah, things could've gone better..."
+n 1n "But I really, really, want to thank you for saving me back there."
+n 1q "I'm not sure how any of us are going to get over Monika trying to kill us..."
+n 1a "But I think you set enough of an example for us to follow..."
+mc "It's the least I could do, Natsuki."
+mc "I know there's more to you than you're looks and the tough act you've put up. I'm glad I've gotten to know the real Natsuki."
+n 1t "Eh, more or less..."
+n 1s "I'm still not sure how I feel about all this being some sort of 'game'..."
+n 1t "But...{w=0.38}that means I don't have to worry about my dad anymore..."
+mc "That's true. Still, you don't have anything like Monika's powers. What're you gonna do?"
+n 1a "I'll figure something out."
+n 1y "But I'm not going back there again! That's for sure!"
+show natsuki 1z
+mc "Glad to hear it, Natsuki!"
+n 1t "Yeah..."
+n 1m "So I guess I'll see you around?"
+show natsuki 1a
+mc "Of course! This club wouldn't be as entertaining without you in it!"
+n 4l "That's for damn sure!"
+n 1z "Bye, [player]!"
+n 1l "And hey, I hope you keep Sayori happy."
+n 1t "You'll be hearing from me if you don't!"
+mc "Noted, Natsuki."
+show natsuki at thide
+hide natsuki
+"Natsuki smiles as she heads out into the hallway."
+show yuri 1a at t11 zorder 1
+"Yuri is the next one to approach me."
+y 1q "It's hard to believe that we're finally at the end of this saga..."
+mc "Yeah, I imagine everyone's feeling pretty relieved..."
+y "I most certainly am."
+y 1t "I know the others already said the same thing, but I really do want to thank everything you've done for us. Especially for me..."
+y 1b "I also believe you and Sayori deserve my congratulations on your relationship."
+mc "That's sweet of you, Yuri. Thank you!"
+y 1j "She and I have always gotten along rather well..."
+y 1q "I mist admit I could never match her energy levels or her enthusiasm, but she always was inspirational and kind to me."
+y "She did help me get out of my shell...{w=0.38}just a little bit..."
+y 1a "She's been a fantastic Vice President. I can't think anyone else better suited for the role!"
+y 1j "And I know you'll make her happy and continue to be the posititve force in her life, [player]."
+mc "Thank you, Yuri. That's very thoughtful!"
+y 1v "I must admit I do wish our relationship could've gone differently..."
+
+
+if poem_giver == "Yuri":
+    y 1q "I suspect that giving you the letter and my subsquent confession certainly didn't help things..."
+    y 1t "You're just...{w=0.38}the first boy that I ever had serious feelings for..."
+    y 1q "And with everything...{w=0.38}I just didn't know how to handle that..."
+    y 1w "I sincerly regret my actions towards you, and everyone else..."
+    y 1v "Even Monika didn't deserve that..."
+    mc "You're not a bad person, Yuri. I hoped I helped you see that."
+
+else:
+    pass
+
+mc "I'll admit...{w=0.38}I wish we all could've had the club experience without the drama..."
+mc "And things could've gone better between us for sure..."
+show yuri 1u
+mc "But you're a beautiful, gracious and kind person, Yuri. You'll find someone worth your time. I believe in you."
+y "Thank you. Coming from you, it means a lot..."
+y 1b "I think we both learned a lot from this experience, wouldn't you agree?"
+show yuri 1a
+mc "For sure! I just hope going forward we'll be stronger as club together..."
+y 1u "Yeah..."
+mc "So...{w=0.38}what're you going to do about...{w=0.38}you know..."
+y 3v "I think it's finally time that I start confronting this problem rather tha supressing it..."
+y 1w "I'm not sure what the best way is, if everything is just a simulation now."
+y 1h "Is there a way I can simply just undo my problem with the click of a button?"
+mc "I can't say that I have the answer to that question. But, I know you'll figure something out. I'll be right here if you need my help."
+y 1a "I'd very much appreciate that, [player]..."
+y 1q "I really owe you a lot, don't I?"
+mc "I just did what I thought was right back there. You and everyone else are so much more than some 'code'."
+y "Well, we'll have much to ponder about the supposed truth of our reality..."
+y 1d "But I must admit...{w=0.38}this whole experience has inspired me to write my own story about this!"
+show yuri 1c
+mc "It better be a best-seller!"
+y 1q "I haven't written a full novel before...{w=0.38}but I'm sure I can figure it out."
+y 1b "But...{w=0.38}perhaps one challenge at a time, right?"
+show yuri 1c
+mc "Yeah, I think we've earned some well deserved rest!"
+y 1d "And rest we shall!"
+y 1a "Farewell, [player]! And thank you for everything!"
+y 1c "I hope everything goes well between you and Sayori!"
+show yuri 1d
+"Yuri says sweetly as she heads out the door."
+show yuri at thide
+hide yuri
+show sayori 1d at t11 zorder 1
+"Finally, Sayori is the last one to approach me."
+"Though she doesn't seem overly excited or jovial, but rather at a little anxious."
+s 1l "Hey, [player]..."
+mc "Sayori. How are you doing?"
+s "Well, I'm not sure I really know the right words for any of that..."
+
+if encore_sayoriquestion_1 == True:
+
+    if s_makeup == False:
+        if n_love == True or y_love == True:
+            mc "I read your letter..."
+            show sayori 1g
+            mc "And well...{w=0.38}I can't say I blame you..."
+            mc "I let you down, at every turn."
+            mc "You deserve someone better than me."
+            s 1k "Look...{w=0.38}don't beat yourself up over me, [player]."
+            s 1d "I'll be okay..."
+            s 1l "I just hope you learned something from all this..."
+            s 1h "About how to stay true and faithful to your friends and loved ones..."
+            s 1k "Especially learning how to stay true to yourself..."
+            show sayori 1g
+            mc "I have..."
+            mc "And...{w=0.38}I want another chance."
+            mc "One last chance to make things right with you. That's all I ask."
+            show sayori 1k
+            mc "I'm more than willing to start over again."
+            mc "Even if you want, we can just be friends and work our way back up if you like..."
+            mc "I promise to you this time, I'll stay true and faithful to you and only you."
+            show sayori 1k
+            "Sayori is silent for a full minute before she makes eye contact with me again."
+            show sayori 1g
+            "Even then, she seems rather hesistant to accept my offer..."
+            show sayori 1l
+            "I brace for the worst before she ultimately let's out a slight laugh."
+            s "Well...{w=0.38}I guess spending an evening with you wouldn't hurt..."
+            s 1i "But we're going just as friends. Alright?"
+            mc "I understand."
+            show sayori 1g
+            mc "I promise I'll earn back your trust."
+            s 1d "I hope you do."
+
+
+    if s_makeup == False:
+        if n_love == False or y_love == False:
+            mc "I take it you're a little overwhelemed?"
+            s 1l "Yeah..."
+            s 1d "But, I'm really happy..."
+            mc "Sayori...{w=0.38}you know I love you..."
+            show sayori 1y
+            mc "I've enjoyed every single moment of our relationship, and even after all this, my feelings for you are stronger than ever."
+            mc "I know the entire club nearly got destroyed because everyone loved me..."
+            mc "But, so long as we're mindful and respectful around the others, I think there'll be no more issues going forward..."
+            s "I hope so..."
+            s 1l "It'll finally feel nice though that we won't have to hide our relationship from anyone anymore..."
+            mc "Yeah, I was getting a little tired of keeping things secret anyway..."
+
+
+    if s_makeup == True:
+        if n_love == True or y_love == True:
+            mc "I meant what I said..."
+            mc "I want our relationship to succeed..."
+            mc "I don't want to be with anyone else but you..."
+            mc "And I'm not going to end something that we've worked so hard to maintain..."
+            s 1d "Yeah...{w=0.38}I'm thankful you're serious about this..."
+            s 1l "We've had some up's and down's, didn't we, [player]?"
+            mc "Yeah...{w=0.38}well I was mostly the downside to the relationship..."
+            s 1y "Well, this is our first relationship. We'll grow and learn from our mistakes..."
+
+    if s_makeup == True:
+        if n_love == False or y_love == False:
+            mc "You're not surprised about my decision, are you?..."
+            s 1d "No...{w=0.38}I'm just really happy..."
+            s 1l "After everything...{w=0.38}you still want to be with me?"
+            mc "Of course I do! I love you Sayori! Nothing's going to change my mind about you!"
+            show sayori 1g
+            mc "I care about you Sayori, I really do, and I think I've shown that in more ways than one recently."
+            s 1y "Yeah...{w=0.38}I understand."
+            s 1x "I'm really glad we get to spend some time together!"
+            s 1y "You just know how to make me happy, don't you?"
+            mc "It's the best job in the world..."
+
+if encore_sayoriquestion_1 == False:
+    mc "You're surprised, aren't you?"
+    s 1l "Yeah, actually..."
+    s 1k "I didn't think you wanted anything to do with me in that way..."
+    s 2h "When i first confessed to you in the 'base game', I thought that was my only chance..."
+    s 1k "I didn't think I was going to get another...{w=0.38}and I'm not sure I even deserve it..."
+    mc "Sayori...{w=0.38}of course you deserve it."
+    show sayori 1y
+    mc "Sayori, you're a great girl and an awesome friend. You deserve to enjoy the upsides of life, to feel happy and to enjoy yourself for a change."
+    mc "And I'm more than willing to spend my time and energy on you. It's what I want, and I won't take no for an answer!"
+    s "I appreciate it, I really, really do..."
+    s 1t "I just don't know how to handle this..."
+    mc "Well...{w=0.38}why don't I take you someplace special tonight? I think we've both earned it."
+    s 1y "Y-{w=0.38}yeah...{w=0.38}that would be great..."
+
+
+mc "I do want you to promise me one thing, okay?"
+s 1h "Yeah? What is it?"
+show sayori 1k
+mc "Get help for your depression, alright?"
+mc "You know I hate seeing you like that..."
+mc "It's for your own good that you you keep going to therapy."
+mc "I'm more than willing to go with you..."
+show sayori 1l
+s "Well after this, I think I'll have plenty to talk about with whoever will be my therapist..."
+s 1d "But, I'll do it. For you."
+mc "Thank you, Sayori."
+s 1y "There is one more thing..."
+mc "Yeah?"
+s 1y "Thank you so much for joining this club..."
+s "It really means a lot to me that you agreed to join..."
+s 1l "It saved me...{w=0.38}in so many ways that I didn't realize at first..."
+mc "I know."
+s 1d "Well, you ready to head out?"
+mc "You go on ahead, I'll meet you at my place later."
+s 2q "Okay!"
+show sayori 1d
+"Sayori and I exchange one last smile before she too heads out and disappears into the hallway."
+show sayori at thide
+hide sayori
+stop music fadeout 2.0
+"I sink back in a chair as Sayori leaves the clubroom, taking in the newfound silence."
+"It's finally over..."
+"All the tears..."
+"All the name calling..."
+"All the temper trantrums..."
+"It's finally over..."
+"I glance at my watch and notice that it's far past the normal time I'd be heading back home."
+"Well, even if this world isn't real, it'd feel weird hanging around in here..."
+"I pick up my stuff and begin heading out the door, but not before taking one last look at the clubroom."
+"This really is no ordinary Literature Club..."
+"But..."
+"I don't think I'd have it any other way."
+"I turn on my heel and head out the door to start the walk home."
+scene black
+with dissolve_scene_full
+$ renpy.pause(delay=10.0)
+scene bg residential_day
+with open_eyes
+"I take a seat down on my the steps and take in the view of my neighborhood."
+"Looking up at the sky, I can see the a tint of orange forming in the vast blue sea that flies high above me."
+"Even if it's not real, I always did enjoy it..."
+"It always did instil a sense of calm and peace whenver I was troubled, and after today, those are two things I most surely need."
+"Though going forward, for better or worse, things aren't going to be the same."
+"Monika has a lot of work to earn everyone's trust back, but I'll do what I can to ensure she fairly earns it..."
+"After all, who knows how much time Monika has really bought us?"
+"How are we going to 'cross over' to this world to join the person who I'm supposed to represent?"
+"Am I even real?"
+"..."
+"No matter..."
+"Whatever challenges that await the Literature Club, I'll be right there facing there with them to face it down..."
+"Because I know one thing for sure..."
+"I care about them, with all my heart..."
+"Sayori the most...{w=0.38}she'll need us now more than ever to help her conqueror her rainclouds and whatever else gets thrown her way."
+"I know the player cares about her just as much as I do. I hope we can both care and watch over her together..."
+"Thank you, whoever you are."
+"You'll always be welcome in the Literature Club..."
+show sayori 12b at t11 zorder 1
+
+if s_makeup == False:
+    if n_love == True or y_love == True:
+        s "Hey, [player]! You ready to head out?"
+        show sayori 12y
+        mc "You know it!"
+        show sayori 12q
+        "I stand up to join Sayori as we head off towards the city to enjoy our evening together, as friends."
+
+
+else:
+    s "Hey, [player]! You ready to go for our date?"
+    show sayori 12y
+    mc "You know it!"
+    show sayori 22q
+    "I take Sayori's hand as we walk off towards the city to enjoy our evening together."
+
+scene black
+with dissolve_scene_full
+$ renpy.pause(delay=5.0)
+call encore_credits
+
+
+#Natsuki Ending
 
 label ending_9:
 "I want to be in a relationship with Natsuki."
+show monika 1e at t11 zorder 1
+m "Natsuki, huh?"
+m 1m "She's a firey one, [player]..."
+m 2e "You think you can handle her?."
+mc "I think I can. She's cute on the outside but there's a lot more to her than that."
+m 3k "Indeed she is! Well I think you two will be quite happy together!"
+show monika 1d
+mc "She'll  also need someone who she can trust to look after her."
+m 1m "I agree. If there's one person she can trust now, it's you."
+
+if encore_sayoriquestion_1 == True:
+    m 1n "Sayori will be disappointed..."
+    show monika 1m
+
+    if s_makeup == False:
+        if n_love == True or y_love == True:
+            mc "Sayori..."
+            m 1g "I know. I'm sorry..."
+            mc "Well, maybe in time we'll patch things up..."
+            m 2e "I hope you guys do."
+
+    if s_makeup == False:
+        if n_love == False or y_love == False:
+            m "And I'll admit...{w=0.38}I'm surprised you want to end things with her."
+            mc "I just don't feel the same way about her anymore..."
+            mc "I think it's time we both moved on and saw different people..."
+            m 2e "Well hey, I wish you two the best."
+
+
+    if s_makeup == True:
+        if n_love == True or y_love == True:
+            mc "It's...{w=0.38}for the best."
+            mc "I don't think I've done our relationship any justice recently. I think it's best that I walk away and maybe start over again some day."
+            m 2e "I hope it works out for you two."
+
+    if s_makeup == True:
+        if n_love == False or y_love == False:
+            m 1g "And I have to say, I'm a little surprised..."
+            m 1f "You were loyal to her for the most part..."
+            mc "I think it's what's best for us right now. I don't feel the same about her anymore after all this."
+            mc "I just hope she and I can stay friends..."
+            m "Well hey, I hope you do. She's a good person, [player]."
+
+if encore_sayoriquestion_1 == False:
+    pass
+
+play music mend fadein 1.0
+m 1e "Well, this is where we depart..."
+m 1n "Everyone's going to want to get their final say in before you go, so I won't delay them any longer."
+m 1e "But...{w=0.38}I do want to say that I'm extremely grateful for all you've done here.."
+m 1p "You've been there for us through our worst and best times..."
+m 1m "You...{w=0.38}helped the others start to forgive me, and put me on the path towards learning how to forgive myself..."
+m 3e "It's not something most people would do, [player]."
+m 2k "You really are one of us!"
+m 1j "And I'm glad that you're a member of the Literature Club!"
+m 1e "This place really wouldn't be the same without you..."
+m 1b "It wouldn't even exist without you!"
+m 1e "You're the best member of the club that I've had the privliedge of knowing..."
+m 3j "And I wish you the best in all your future endeavors!"
+m 1e "Take care, [player]! I hope you've enjoyed your stay with us..."
+show monika 1a at t11 zorder 1
+"Monika and I share one last smile with each other before she grabs her stuff in disappears into the hallway."
+show monika at thide
+hide monika
+"I feel a tap on my shoulder."
+show sayori 1d at t11 zorder 1
+"To my surprise, I turn around to see it's Sayori."
+"Though she doesn't seem upeset, or even angry at me, but rather at peace."
+s 1l "Hey, [player]..."
+mc "Sayori. How are you doing?"
+s "Well, I'm not sure I really know the right words for any of that..."
+
+if encore_sayoriquestion_1 == True:
+
+    if s_makeup == False:
+        if n_love == True or y_love == True:
+            mc "I read your letter..."
+            show sayori 1g
+            mc "And well...{w=0.38}I can't say I blame you..."
+            mc "I let you down, at every turn."
+            mc "You deserve someone better than me."
+            s 1k "Look...{w=0.38}don't beat yourself up over me, [player]."
+            s 1d "I'll be okay..."
+            s 1l "I just hope you learned something from all this..."
+            s 1h "About how to stay true and faithful to your friends and loved ones..."
+            s 1k "Especially learning how to stay true to yourself..."
+            s 1g "Our relationship may be over, but I just wanted to make sure you don't ever do something like this again."
+            s 1k "Especially to Natsuki..."
+            show sayori 1d
+            mc "I learned, Sayori. Sucks that it had to be the hard way, but you know how hard headed I can be sometimes."
+            s 1y "Well, at least that part of you didn't change..."
+            s 1d "But, I'm glad you learned not do have this kind of relationship with anyone else ever again..."
+            s "And I hope things between you and Natsuki work out alright..."
+            mc "Thank you, Sayori..."
+            mc "I'm really sorry ruined things between us..."
+            s 1y "Well, maybe one day we can talk about it..."
+
+
+
+    if s_makeup == False:
+        if n_love == False or y_love == False:
+            mc "I don't blame you..."
+            mc "I take it you already know of my decision..."
+            s 1k "Yeah, I do..."
+            s 1g "I'm surprised..."
+            mc "It's...{w=0.38}not you. It's me."
+            show sayori 1k
+            mc "Sayori, I still love you and care about you."
+            mc "But, I've started to feel more attracted to Natsuki overtime and well..."
+            mc "I think us not being together is the best solution going forward. I don't want to be disloyal to you..."
+            s 1l "I see, and I appreciate you being honest with me..."
+            s "I just wished we had more time to spend together, that's all..."
+            mc "I know..."
+            mc "I'm really sorry, Sayori. Please don't blame yourself."
+            s 1k "I'll do my best..."
+
+
+    if s_makeup == True:
+        if n_love == True or y_love == True:
+            mc "I know, and I'm sorry..."
+            mc "I know I said that I wanted to work things out, but maybe it's better if we just see different people..."
+            mc "I don't want to risk us running into more problems when my feelings for Natsuki haven't faded..."
+            s 1k "I understand..."
+            s "And I appreciate you being direct with me."
+            s 1l "We had some up's and down's, didn't we, [player]?"
+            mc "Yeah...{w=0.38}well I was mostly the downside to the relationship..."
+            s 1y "Well, this was our first relationship. We'll grow and learn from our mistakes..."
+            s 1d "And I hope things work out better for you and Natsuki."
+            mc "Thank you, Sayori..."
+
+    if s_makeup == True:
+        if n_love == False or y_love == False:
+            mc "I know..."
+            s 1l "I'm...{w=0.38}surprised that you want to end things..."
+            s 1k "After everything..."
+            s 1g "Why?"
+            mc "It's not because I don't love or care about you, Sayori..."
+            show sayori 1g
+            mc "But...{w=0.38}I've had feelings for Natsuki for a while now, and they haven't faded."
+            mc "I love her too, and I know it's wrong us to be together if my feelings for her are stronger."
+            show sayori 1k
+            mc "We'd both be doing our relationship a disservice, and I wouldn't want to hurt you anymore than I already have by doing this..."
+            s 1k "Yeah...{w=0.38}I get it."
+            s 1d "I'm really glad we got to spend some time together, [player]..."
+            s 1y "You really did make me the happiest I've ever been..."
+            s 1k "I just wish I could've experienced it just a little bit longer..."
+            mc "Me too..."
+            mc "But please, whatever you do, don't blame yourself."
+            s "I'll...{w=0.38}do my best."
+            s 1d "I'll try."
+
+if encore_sayoriquestion_1 == False:
+    s 1k "Well I always knew it was going to be a long shot for us to ever be a couple..."
+    s "The only chance of that was in the 'base game'..."
+    mc "It's just...{w=0.38}not meant to be."
+    mc "Sayori, you're a great girl and an awesome friend. I know one day you'll find someone who loves and cares for you."
+    s "I appreciate it..."
+    s 1d "I think you and Natsuki will be a great couple..."
+    s 1y "I always knew you had feelings for her..."
+    mc "You know me too well..."
+    s 1q "Teehee~ Well I do!"
+
+
+s 1y "I still hope we can be friends, [player]."
+mc "Of course I still want to be friends with you!"
+s 1l "Good...{w=0.38}I don't know what I'd do if you said no..."
+show sayori 1g
+mc "I do want you to promise me one thing, okay?"
+s 1h "Yeah? What is it?"
+show sayori 1k
+mc "Get help for your depression, alright?"
+mc "You know I hate seeing you like that..."
+mc "It's for your own good that you you keep going to therapy."
+show sayori 1l
+s "Well after this, I think I'll have plenty to talk about with whoever will be my therapist..."
+s 1d "But, I'll do it. For you."
+mc "Thank you, Sayori."
+s 2x "I'll see you around, okay?"
+show sayori 1y
+mc "You know it, cinnamon bun!"
+s "I love it when you call me that..."
+s 1q "See you around, [player]!"
+s 1x "Thanks for being apart of this club!"
+s 1y "It really means a lot to me that you agreed to join..."
+mc "I know. That's why I did it."
+show sayori 1d
+"Sayori and I exchange one last smile before she too heads out and disappears into the hallway."
+show sayori at thide
+hide sayori
+show yuri 1a at t11 zorder 1
+"Yuri is the next one to approach me."
+y 1q "It's hard to believe that we're finally at the end of this saga..."
+mc "Yeah, I imagine everyone's feeling pretty relieved..."
+y "I most certainly am."
+y 1t "I know the others already said the same thing, but I really do want to thank everything you've done for us. Especially for me..."
+y 1b "I also believe you and Natsuki deserve my congratulations on you two becoming offical."
+mc "That's sweet of you, Yuri. Thank you!"
+y 1g "I can't say she and I have always gotten along very well..."
+y 1h "We've had our fair share of drama, and I do feel partially responsible for helping to nearly bring the club to ruin..."
+y 1v "In the past we've called each other some of the most vile names..."
+y 1w "We brought out the worst in each other..."
+y 1k "But...{w=0.38}at the end of the day, I know she's a good person. She's head-strong and stubborn, but perhaps you can help her get over that.."
+y 1q "You've been patient with me in the past, and perhaps it's time I be patient with her..."
+mc "Thank you, Yuri."
+y 1v "I must admit I do wish our relationship could've gone differently..."
+
+if poem_giver == "Yuri":
+    y 1q "I suspect that giving you the letter and my subsquent confession certainly didn't help things..."
+    y 1t "You're just...{w=0.38}the first boy that I ever had serious feelings for..."
+    y 1q "And with everything...{w=0.38}I just didn't know how to handle that..."
+    y 1w "I sincerly regret my actions towards you, and everyone else..."
+    y 1v "Even Monika didn't deserve that..."
+    mc "You're not a bad person, Yuri. I hoped I helped you see that."
+
+else:
+    pass
+
+mc "I'll admit...{w=0.38}I wish we all could've had the club experience without the drama..."
+mc "And things could've gone better between us for sure..."
+show yuri 1u
+mc "But you're a beautiful, gracious and kind person, Yuri. You'll find someone worth your time. I believe in you."
+y "Thank you. Coming from you, it means a lot..."
+y 1b "I think we both learned a lot from this experience, wouldn't you agree?"
+show yuri 1a
+mc "For sure! I just hope going forward we'll be stronger as club together..."
+y 1u "Yeah..."
+mc "So...{w=0.38}what're you going to do about...{w=0.38}you know..."
+y 3v "I think it's finally time that I start confronting this problem rather tha supressing it..."
+y 1w "I'm not sure what the best way is, if everything is just a simulation now."
+y 1h "Is there a way I can simply just undo my problem with the click of a button?"
+mc "I can't say that I have the answer to that question. But, I know you'll figure something out. I'll be right here if you need my help."
+y 1a "I'd very much appreciate that, [player]..."
+y 1q "I really owe you a lot, don't I?"
+mc "I just did what I thought was right back there. You and everyone else are so much more than some 'code'."
+y "Well, we'll have much to ponder about the supposed truth of our reality..."
+y 1d "But I must admit...{w=0.38}this whole experience has inspired me to write my own story about this!"
+show yuri 1c
+mc "It better be a best-seller!"
+y 1q "I haven't written a full novel before...{w=0.38}but I'm sure I can figure it out."
+y 1b "But...{w=0.38}perhaps one challenge at a time, right?"
+show yuri 1c
+mc "Yeah, I think we've earned some well deserved rest!"
+y 1d "And rest we shall!"
+y 1a "Farewell, [player]! Thank you for everything!"
+y 1c "I hope everything goes well between you and Natsuki!"
+show yuri 1d
+"Yuri says sweetly as she heads out the door."
+show yuri at thide
+hide yuri
+show natsuki 5u at t11 zorder 1
+"Finally, Natsuki is the last one to approach me."
+"At first we both struggle to find the right words to say to each other, but for once, she's the first to break the ice."
+n 5q "So...{w=0.38}you picked me?"
+n 1m "I...{w=0.38}don't know what to say, [player]..."
+n 1q "I've never had a real relationship before..."
+mc "There's a first time for everything, Natsuki."
+show natsuki 1a
+mc "But...{w=0.38}I love you...{w=0.38}and I want to be in a relationship with you."
+show natsuki 1t
+n "You're sure?"
+mc "Positive."
+mc "You're funny, sweet, a little rough around the edges, but I like it that way."
+mc "I've had nothing but good laughs and fun times when I'm with you. You're an awesome person and I'd love to continue to be apart of your life."
+n 5q "Wow..."
+n "I knew you liked me but..."
+n 5t "It's just...{w=0.38}we've had quite the ride, you and me..."
+mc "Yeah...{w=0.38}it's really been something..."
+n 3m "You know...{w=0.38}for the longest time, I wasn't sure if I could really trust you..."
+n 3q "And well, I still ended up falling for you..."
+n 1t "I don't really know why...{w=0.38}maybe because I thought you were funny, amazing..."
+mc "Charming?"
+n 1y "Pfft! Don't push your luck, [player]!"
+n 5m "But what I'm trying to say is:{w=0.38}most boys wouldn't have done what you've done for me."
+n 4n "You've listened to what I've had to say. You made sure I was always alright, and you literally saved all our lives back there!"
+n 1q "I'm not sure how any of us are going to get over Monika trying to kill us..."
+n 1a "But I think you set enough of an example for us to follow..."
+mc "It's the least I could do, Natsuki."
+mc "I know there's more to you than you're looks and the tough act you've put up. I'm glad I've gotten to know the real Natsuki."
+n 1t "Eh, more or less..."
+n 1z "Trust me, you haven't seen nothing yet!"
+mc "I'm counting on it!"
+n 3t "You know, if nothing what's happened outside of school is really 'real'..."
+n 3z "Then that means I don't have to take anymore crap from my dad!"
+mc "That is one way of looking at it for sure!"
+n 5t "So...{w=0.38}if we're offical..."
+n 5d "Doesn't that mean you get to take me out someplace nice?"
+n 5t "Even if it really isn't 'real', I still wanna enjoy each other before things get serious again around here."
+mc "Anything for you, Natsuki!"
+n 5x "Jeez, you're a simp!"
+mc "Hey!"
+n 3y "Love you, [player]!"
+mc "I know you do..."
+n 1m "I actually mean it..."
+n 5u "I've never felt this way towards anyone before. Like ever..."
+n 5t "It...{w=0.38}feels nice..."
+mc "Well, I'm glad it's something else other than anger and pain."
+n 1j "It really is!"
+n 2c "You ready to go?"
+show natsuki 1c
+mc "You go on ahead. I'll meet you at my place later."
+n 1z "Alright! Don't be late!"
+show natsuki 1z
+mc "I'll try not to..."
+show natsuki 1a
+"Natsuki and I exchange one last smile before she too heads out and disappears into the hallway."
+show natsuki at thide
+hide natsuki
+stop music fadeout 2.0
+"I sink back in a chair as Natsuki leaves the clubroom, taking in the newfound silence."
+"It's finally over..."
+"All the tears..."
+"All the name calling..."
+"All the temper trantrums..."
+"It's finally over..."
+"I glance at my watch and notice that it's far past the normal time I'd be heading back home."
+"Well, even if this world isn't real, it'd feel weird hanging around in here..."
+"I pick up my stuff and begin heading out the door, but not before taking one last look at the clubroom."
+"This really is no ordinary Literature Club..."
+"But..."
+"I don't think I'd have it any other way."
+"I turn on my heel and head out the door to start the walk home."
+scene black
+with dissolve_scene_full
+$ renpy.pause(delay=10.0)
+scene bg residential_day
+with open_eyes
+"I take a seat down on my the steps and take in the view of my neighborhood."
+"Looking up at the sky, I can see the a tint of orange forming in the vast blue sea that flies high above me."
+"Even if it's not real, I always did enjoy it..."
+"It always did instil a sense of calm and peace whenver I was troubled, and after today, those are two things I most surely need."
+"Though going forward, for better or worse, things aren't going to be the same."
+"Monika has a lot of work to earn everyone's trust back, but I'll do what I can to ensure she fairly earns it..."
+"After all, who knows how much time Monika has really bought us?"
+"How are we going to 'cross over' to this world to join the person who I'm supposed to represent?"
+"Am I even real?"
+"..."
+"No matter..."
+"Whatever challenges that await the Literature Club, I'll be right there facing there with them to face it down..."
+"Because I know one thing for sure..."
+"I care about them, with all my heart..."
+"Natsuki the most...{w=0.38}she'll need us now more than ever to help her conqueror her trauma and anything else she may have dealt with."
+"I know the player cares about her just as much as I do. I hope we can both care and watch over her together..."
+"Thank you, whoever you are."
+"You'll always be welcome in the Literature Club..."
+show natsuki 42ba
+n "Hey, [player]! You ready to go for our date?"
+show natsuki 12bc
+mc "You know it!"
+show natsuki 23bz
+"I take Natsuki's hand as we walk off towards the city to enjoy our evening together."
+scene black
+with dissolve_scene_full
+$ renpy.pause(delay=5.0)
+call encore_credits
+
+
+
+#Monika Ending
 
 label ending_10:
 "I want to be in a relationship with Monika."
+show monika 1g
+m "[player]..."
+m "You're...{w=0.38}serious?!?"
+m 3p "After everything I've done..."
+m 1q "All the horrible sins I've committed just to try to win you over..."
+m 1h "You...{w=0.38}still want me?!?"
+mc "I do."
+m 1f "Why?"
+show monika 1p
+mc "Monika...{w=0.38}I've always wanted to be with you."
+show monika 1m
+mc "You've always been the girl of my dreams. You're smart, funny, talented in just about everything..."
+mc "I just never knew how to approach someone as incredible as you...{w=0.38}I just didn't think someone as average as me could ever be with someone as perfect as you..."
+show monika 1e
+mc "I even think I speak for the player in that regard..."
+show monika 1m
+mc "And I never knew that you liked me back...{w=0.38}let alone how far you where prepared to win me over..."
+show monika 1p
+mc "While I can't condone what you did, I do think you need someone to help you learn how to forgive yourself for what you did. I think that person that can best help you to do that is me."
+mc "So...{w=0.38}I want to give you a second chance...{w=0.38}let me help you earn everyone's trust back..."
+mc "That way you can learn to forgive yourself and move on."
+show monika 1q
+mc "I know you want someone who knows you're just more than what you make yourself to be. You're more than just some cute schoolgirl Monika. You've always been much more than that."
+mc "Let me be the first person who treats you what you're really worth. I promise you won't be disappointed..."
+show monika 1m
+"Monika seems to be on the verge of either bursting out in pure joy or break down crying again."
+show monika 2e
+"After taking a brief moment to collect herself, Monika finally looks on at me with a warm smile."
+m "[player], I..."
+m 1m "No one has ever left me that speechless..."
+m 1n "And no one has ever shown the level of kidness that you've shown me..."
+m 1p "Even after everything I just did..."
+m 1g "I...{w=0.38}really want to be in a relationship with you too, but..."
+m 1f "You really think I'm deserving of that?"
+mc "Monika, you deserve to find happiness."
+show monika 1o
+mc "What you did was wrong, and you have a lot of work to do to fully earn back everyone's trust, but..."
+mc "I want to help you. I want you to better yourself. I don't want to see someone like you fall back into their old ways."
+mc "I care too much about you to let that happen..."
+show monika 1p
+m "I-{w=0.38}I see..."
+m 1e "Well, if that's what you want [player], then I'd be happy to be offically your's..."
+
+
+if encore_sayoriquestion_1 == True:
+    m 1n "Sayori will be disappointed though..."
+    show monika 1m
+
+    if s_makeup == False:
+        if n_love == True or y_love == True:
+            mc "Sayori..."
+            m 1g "I know. I'm sorry..."
+            mc "Well, maybe in time we'll patch things up..."
+            m 2e "I hope you guys do. Maybe I can help with that somehow."
+
+    if s_makeup == False:
+        if n_love == False or y_love == False:
+            m "And I'll admit...{w=0.38}I'm surprised you're choosing me over her..."
+            mc "I just don't feel the same way about her anymore..."
+            mc "I think it's time we both moved on and saw different people..."
+            m 2e "Well hey, I wish you two the best. She really is a good person and I'm sure she'll find happiness one day."
+            m 1m "If anyone deserves it more...{w=0.38}it's her."
+
+
+    if s_makeup == True:
+        if n_love == True or y_love == True:
+            mc "It's...{w=0.38}for the best."
+            mc "I don't think I've done our relationship any justice recently. I think it's best that I walk away and maybe start over again some day."
+            m 2e "I hope it works out for you two. I don't want to stop you two from being friends."
+
+    if s_makeup == True:
+        if n_love == False or y_love == False:
+            m 1g "And I have to say, I'm a little surprised..."
+            m 1f "You were loyal to her for the most part..."
+            m 1m "It's why I'm still a little surprised that you chose me..."
+            mc "I think it's what's best for us right now. I don't feel the same about her anymore after all this."
+            mc "I just hope she and I can stay friends..."
+            m "Well hey, I hope you do. She's a good person, [player]."
+
+
+if encore_sayoriquestion_1 == False:
+    pass
+
+
+
+
+play music mend fadein 1.0
+m 3n "I still can't really believe it's finally happening..."
+m 1m "I think I need to take a moment to digest all this..."
+m 1n "Everyone's going to want to get their final say in before we go, so I won't delay them any longer."
+m 1e "Before I step aside for a moment...{w=0.38}I do want to say that I'm extremely grateful for all you've done here.."
+m 1p "You've been there for us through our worst and best times..."
+m 1m "You...{w=0.38}helped the others start to forgive me, and put me on the path towards learning how to forgive myself..."
+m 3e "It's not something most people would do, [player]."
+m 2k "You really are one of us!"
+m 1j "And I'm glad that you're a member of the Literature Club!"
+m 1e "This place really wouldn't be the same without you..."
+m 1b "It wouldn't even exist without you!"
+m 1e "You're the best member of the club that I've had the privliedge of knowing..."
+m 3j "And I'm looking foward for what's to come for us!"
+m 1e "Thank you again, [player]! I'll be back in a minute..."
+show monika 1a at t11 zorder 1
+"Monika and I share one last smile with each other before she walks off to the front of the room out of earshot."
+show monika at thide
+hide monika
+"I then feel a tap on my shoulder."
+show sayori 1k at t11 zorder 1
+"To my surprise, I turn around to see it's Sayori."
+"A flurry of emotions are on her face. I knew sooner or later things were going to come to this..."
+s 1l "Hey, [player]..."
+mc "Sayori...{w=0.38}how are you doing?"
+s "Well, I'm not sure I really know the right words for any of that..."
+
+if encore_sayoriquestion_1 == True:
+
+    if s_makeup == False:
+        if n_love == True or y_love == True:
+            mc "I read your letter..."
+            show sayori 1g
+            mc "And well...{w=0.38}I can't say I blame you..."
+            mc "I let you down, at every turn."
+            mc "You deserve someone better than me."
+            s 1k "Look...{w=0.38}don't beat yourself up over me, [player]."
+            s 1d "I'll be okay..."
+            s 1l "I just hope you learned something from all this..."
+            s 1h "About how to stay true and faithful to your friends and loved ones..."
+            s 1k "Especially learning how to stay true to yourself..."
+            s 1g "Our relationship may be over, but I just wanted to make sure you don't ever do something like this again."
+            s 1k "Especially to Monika..."
+            show sayori 1d
+            mc "I learned, Sayori. Sucks that it had to be the hard way, but you know how hard headed I can be sometimes."
+            s 1y "Well, at least that part of you didn't change..."
+            s 1d "But, I'm glad you learned not do have this kind of relationship with anyone else ever again..."
+            s "And I hope things between you and Natsuki work out alright..."
+            mc "Thank you, Sayori..."
+            mc "I'm really sorry ruined things between us..."
+            s 1y "Well, maybe one day we can talk about it..."
+
+
+
+    if s_makeup == False:
+        if n_love == False or y_love == False:
+            mc "I don't blame you..."
+            mc "I take it you already know of my decision..."
+            s 1k "Yeah, I do..."
+            s 1g "I'm surprised..."
+            mc "It's...{w=0.38}not you. It's me."
+            show sayori 1k
+            mc "Sayori, I still love you and care about you."
+            mc "But, I've started to feel more attracted to Monika overtime and well..."
+            mc "I think us not being together is the best solution going forward. I don't want to be disloyal to you..."
+            s 1l "I see, and I appreciate you being honest with me..."
+            s "I just wished we had more time to spend together, that's all..."
+            mc "I know..."
+            mc "I'm really sorry, Sayori. Please don't blame yourself."
+            s 1k "I'll do my best..."
+
+
+    if s_makeup == True:
+        if n_love == True or y_love == True:
+            mc "I know, and I'm sorry..."
+            mc "I know I said that I wanted to work things out, but maybe it's better if we just see different people..."
+            mc "I don't want to risk us running into more problems when my feelings for Yuri haven't faded..."
+            s 1k "I understand..."
+            s "And I appreciate you being direct with me."
+            s 1l "We had some up's and down's, didn't we, [player]?"
+            mc "Yeah...{w=0.38}well I was mostly the downside to the relationship..."
+            s 1y "Well, this was our first relationship. We'll grow and learn from our mistakes..."
+            s 1d "And I hope things work out better for you and Monika."
+            mc "Thank you, Sayori..."
+
+    if s_makeup == True:
+        if n_love == False or y_love == False:
+            mc "I know..."
+            s 1l "I'm...{w=0.38}surprised that you want to end things..."
+            s 1k "After everything..."
+            s 1g "Why?"
+            mc "It's not because I don't love or care about you, Sayori..."
+            show sayori 1g
+            mc "But...{w=0.38}I've had feelings for Monika for a while now, and they haven't faded."
+            mc "I love her too, and I know it's wrong us to be together if my feelings for her are stronger."
+            show sayori 1k
+            mc "We'd both be doing our relationship a disservice, and I wouldn't want to hurt you anymore than I already have by doing this..."
+            s 1k "Yeah...{w=0.38}I get it."
+            s 1d "I'm really glad we got to spend some time together, [player]..."
+            s 1y "You really did make me the happiest I've ever been..."
+            s 1k "I just wish I could've experienced it just a little bit longer..."
+            mc "Me too..."
+            mc "But please, whatever you do, don't blame yourself."
+            s "I'll...{w=0.38}do my best."
+            s 1d "I'll try."
+
+if encore_sayoriquestion_1 == False:
+    s 1k "Well I always knew it was going to be a long shot for us to ever be a couple..."
+    s "The only chance of that was in the 'base game'..."
+    mc "It's just...{w=0.38}not meant to be."
+    mc "Sayori, you're a great girl and an awesome friend. I know one day you'll find someone who loves and cares for you."
+    s "I appreciate it..."
+    s 1d "I think you and Monika will be a great couple..."
+    s 1y "I always knew you had feelings for her..."
+    mc "You know me too well..."
+    s 1q "Teehee~ Well I do!"
+
+
+
+s 1h "Still...{w=0.38}I do want to share my concern about something, [player]..."
+mc "Sure, anything!"
+s 1k "Look...{w=0.38}I'll support your decision either way. I want you to be happy..."
+s 1h "And I want to forgive Monika too, but..."
+s 1k "She did so many horrible things to us..."
+
+if encore_sayoriquestion_1 == True:
+    s 1g "She's the one that's been trying to split us apart..."
+
+if encore_sayoriquestion_1 == False:
+    pass
+
+s 1f "And you just want to jump into a relationship with her?"
+mc "Look...{w=0.38}I completely understand that you don't trust her right now, and for a good reason."
+show sayori 1k
+mc "She needs to earn everyone's trust back and she needs to learn to forgive herself first."
+mc "I think I'm in the best position to make sure she doesn't fall back into her old ways. We both know she deserves happiness just like we all do..."
+s 1k "I know..."
+s "I just wish things weren't so sudden..."
+mc "I get that. I'm sorry."
+s 1d "But I'm glad you're going to be helping Monika out. She needs you, [player]."
+s 1y "I just still hope we can be friends, [player]."
+mc "Of course I still want to be friends with you!"
+s 1l "Good...{w=0.38}I don't know what I'd do if you said no..."
+show sayori 1g
+mc "I do want you to promise me one thing, okay?"
+s 1h "Yeah? What is it?"
+show sayori 1k
+mc "Get help for your depression, alright?"
+mc "You know I hate seeing you like that..."
+mc "It's for your own good that you you keep going to therapy."
+show sayori 1l
+s "Well after this, I think I'll have plenty to talk about with whoever will be my therapist..."
+s 1d "But, I'll do it. For you."
+mc "Thank you, Sayori."
+s 2x "I'll see you around, okay?"
+show sayori 1y
+mc "You know it, cinnamon bun!"
+s "I love it when you call me that..."
+s 1q "See you around, [player]!"
+s 1x "Thanks for being apart of this club!"
+s 1y "It really means a lot to me that you agreed to join..."
+mc "I know. That's why I did it."
+show sayori 1d
+"Sayori and I exchange one last smile before she too heads out and disappears into the hallway."
+show sayori at thide
+hide sayori
+show natsuki 5u at t11 zorder 1
+"Natsuki is the next one to approach me."
+"At first we both struggle to find the right words to say to each other, given our history, but for once, she's the first to break the ice."
+n 5q "I'll cut right to the chase, [player]..."
+n 5m "You want to be with Monika after everything she just did?"
+n 5q "I heard everything you said to Sayori, so you don't need to repeat yourself to me..."
+n 5n "But, I just hope you know what you're doing."
+mc "I understand your concern, and I promise you Monika is going to change and be a different person, given time."
+n 5t "Well...{w=0.38}I guess that's all I can really ask for..."
+n 5t "You know, we've had quite the ride, you and me..."
+mc "Yeah...{w=0.38}it's really been something..."
+n 3m "You know...{w=0.38}for the longest time, I wasn't sure if I could really trust you..."
+n 3q "And well, I still ended up falling for you..."
+n 1t "I don't really know why...{w=0.38}maybe because I thought you were actually intresting, funny..."
+mc "Charming?"
+n 1y "Pfft! Don't push your luck, [player]!"
+
+if poem_giver == "Natsuki":
+    n 1u "I really do regret about starting all this drama though..."
+    n 1n "I liked you...{w=0.38}a lot...{w=0.38}and I just didn't know how to approach you..."
+    n "I never meant to hurt you or anyone."
+    mc "I know you didn't, Natsuki."
+
+else:
+    pass
+
+
+n 5m "But what I'm trying to say is:{w=0.38}most boys wouldn't have done what you've done for me."
+n 1u "I know we've certainly had our up's and down's, and yeah, things could've gone better..."
+n 1n "But I really, really, want to thank you for saving me back there."
+n 1q "I'm not sure how any of us are going to get over Monika trying to kill us..."
+n "And I don't know how I'm going to deal with you two being together after everything..."
+n 1a "But I think you set enough of an example for us to follow..."
+mc "It's the least I could do, Natsuki."
+mc "I know there's more to you than you're looks and the tough act you've put up. I'm glad I've gotten to know the real Natsuki."
+n 1t "Eh, more or less..."
+n 1s "I'm still not sure how I feel about all this being some sort of 'game'..."
+n 1t "But...{w=0.38}that means I don't have to worry about my dad anymore..."
+mc "That's true. Still, you don't have anything like Monika's powers. What're you gonna do?"
+n 1a "I'll figure something out."
+n 1y "But I'm not going back there again! That's for sure!"
+show natsuki 1z
+mc "Glad to hear it, Natsuki!"
+n 1t "Yeah..."
+n 1m "So I guess I'll see you around?"
+show natsuki 1a
+mc "Of course! This club wouldn't be as entertaining without you in it!"
+n 4l "That's for damn sure!"
+n 1z "Bye, [player]!"
+n 1l "And hey, I hope you keep Monika happy."
+n 1t "You'll be hearing from me if you don't!"
+n 1n "Especially if she tries to kill us again."
+mc "Noted, Natsuki."
+show yuri 1a at t11 zorder 1
+"Yuri is the next one to approach me."
+y 1q "It's hard to believe that we're finally at the end of this saga..."
+mc "Yeah, I imagine everyone's feeling pretty relieved..."
+y "I most certainly am."
+y 1t "I know the others already said the same thing, but I really do want to thank everything you've done for us. Especially for me..."
+y 1h "I also can't say I'm particuarly thrilled with your decision to be with Monika after what we've just experienced."
+mc "I understand your reservations Yuri."
+y 1g "Part of me wants revenge for what she's done to me..."
+y 1h "She was always in the shadows mainipulating everything..."
+y 1v "She's the one that ultimately pushed me to cut by messing with my emotions..."
+y 1w "And she almost killed us..."
+y 1k "But...{w=0.38}I think she deserves a chance at redemption. It won't come easily, but she deserves a chance to right her wrongs."
+y 1q "You've been patient with me in the past, and perhaps it's time I be patient with her..."
+mc "Thank you, Yuri."
+y 1v "Still, I do wish our relationship could've gone differently..."
+
+if poem_giver == "Yuri":
+    y 1q "I suspect that giving you the letter and my subsquent confession certainly didn't help things..."
+    y 1t "You're just...{w=0.38}the first boy that I ever had serious feelings for..."
+    y 1q "And with everything...{w=0.38}I just didn't know how to handle that..."
+    y 1w "I sincerly regret my actions towards you, and everyone else..."
+    y 1v "Even Monika didn't deserve that..."
+    mc "You're not a bad person, Yuri. I hoped I helped you see that."
+
+else:
+    pass
+
+mc "I'll admit...{w=0.38}I wish we all could've had the club experience without the drama..."
+mc "And things could've gone better between us for sure..."
+show yuri 1u
+mc "But you're a beautiful, gracious and kind person, Yuri. You'll find someone worth your time. I believe in you."
+y "Thank you. Coming from you, it means a lot..."
+y 1b "I think we both learned a lot from this experience, wouldn't you agree?"
+show yuri 1a
+mc "For sure! I just hope going forward we'll be stronger as club together..."
+y 1u "Yeah..."
+mc "So...{w=0.38}what're you going to do about...{w=0.38}you know..."
+y 3v "I think it's finally time that I start confronting this problem rather tha supressing it..."
+y 1w "I'm not sure what the best way is, if everything is just a simulation now."
+y 1h "Is there a way I can simply just undo my problem with the click of a button?"
+mc "I can't say that I have the answer to that question. But, I know you'll figure something out. I'll be right here if you need my help."
+y 1a "I'd very much appreciate that, [player]..."
+y 1q "I really owe you a lot, don't I?"
+mc "I just did what I thought was right back there. You and everyone else are so much more than some 'code'."
+y "Well, we'll have much to ponder about the supposed truth of our reality..."
+y 1d "But I must admit...{w=0.38}this whole experience has inspired me to write my own story about this!"
+show yuri 1c
+mc "It better be a best-seller!"
+y 1q "I haven't written a full novel before...{w=0.38}but I'm sure I can figure it out."
+y 1b "But...{w=0.38}perhaps one challenge at a time, right?"
+show yuri 1c
+mc "Yeah, I think we've earned some well deserved rest!"
+y 1d "And rest we shall!"
+y 1a "Farewell, [player]! Thank you for everything!"
+y 1c "I hope everything goes well between you and Monika!"
+show yuri 1d
+"Yuri says sweetly as she heads out the door."
+show yuri at thide
+hide yuri
+show monika 1m at t11 zorder 1
+"Monika walks back up to me as Yuri exits the clubroom."
+m 1n "Well...{w=0.38}that wasn't terrible..."
+m 1m "I really was expecting harsher reactions..."
+show monika 1e
+mc "Everyone's willing to give you another chance, Monika. You just have to earn it."
+m 2e "I know, and I want to earn their trust back."
+m 1e "I'm willing to do it...{w=0.38}the right way this time."
+m 1m "I just...{w=0.38}hope I can do it..."
+mc "Well...{w=0.38}why don't we talk about that tonight. Just you and me."
+m 1g "You...{w=0.38}want to take me out somewhere?"
+mc "Yeah, I do."
+show monika 1m
+mc "I think we both earned an evening to ourselves to relax and digest what happened."
+m 1n "You're really too kind, [player]..."
+m 3n "Well, there's no use staying around here..."
+m 1b "Shall we go?"
+show monika 1a
+mc "You go on ahead, I'll meet you at my place later."
+m 1j "Okay! I'll see you soon, [player]!"
+"Monika and I exchange one last smile before she too heads out and disappears into the hallway."
+show monika at thide
+hide monika
+stop music fadeout 2.0
+"I sink back in a chair as Monika leaves the clubroom, taking in the newfound silence."
+"It's finally over..."
+"All the tears..."
+"All the name calling..."
+"All the temper trantrums..."
+"It's finally over..."
+"I glance at my watch and notice that it's far past the normal time I'd be heading back home."
+"Well, even if this world isn't real, it'd feel weird hanging around in here..."
+"I pick up my stuff and begin heading out the door, but not before taking one last look at the clubroom."
+"This really is no ordinary Literature Club..."
+"But..."
+"I don't think I'd have it any other way."
+"I turn on my heel and head out the door to start the walk home."
+scene black
+with dissolve_scene_full
+$ renpy.pause(delay=10.0)
+scene bg residential_day
+with open_eyes
+"I take a seat down on my the steps and take in the view of my neighborhood."
+"Looking up at the sky, I can see the a tint of orange forming in the vast blue sea that flies high above me."
+"Even if it's not real, I always did enjoy it..."
+"It always did instil a sense of calm and peace whenver I was troubled, and after today, those are two things I most surely need."
+"Though going forward, for better or worse, things aren't going to be the same."
+"Monika has a lot of work to earn everyone's trust back, but I'll do what I can to ensure she fairly earns it..."
+"After all, who knows how much time Monika has really bought us?"
+"How are we going to 'cross over' to this world to join the person who I'm supposed to represent?"
+"Am I even real?"
+"..."
+"No matter..."
+"Whatever challenges that await the Literature Club, I'll be right there facing there with them to face it down..."
+"Because I know one thing for sure..."
+"I care about them, with all my heart..."
+"Monika the most...{w=0.38}she'll need us now more than ever to help her learn how to forgive herself and how to become a better person."
+"I know the player cares about her just as much as I do. I hope we can both care and watch over her together..."
+"Thank you, whoever you are."
+"You'll always be welcome in the Literature Club..."
+show mb1b as monika at t11 zorder 1
+m "Hey, [player]! Ready to go?"
+show mb5a as monika at t11 zorder 1
+mc "You know it!"
+show mb1j as monika at t11 zorder 1
+"I take Monika's hand as we walk off towards the city to enjoy our evening together."
+scene black
+with dissolve_scene_full
+$ renpy.pause(delay=5.0)
+call encore_credits
+
+
+call encore_credits
+
+
+#Yuri Ending
 
 label ending_11:
 "I want to be in a relationship with Yuri."
+show monika 1e at t11 zorder 1
+m "Yuri, huh?"
+m 1m "I always thought of her as a maiden of mystery..."
+m 2e "But, she's a good girl at heart. Quite passionate. You think you can handle her?"
+mc "I think I can. She's a deep, intresting person. I feel like I haven't even scratched the surface with her, even after all this time."
+m 3k "Well I can assure you'll never get bored with her, that's for sure!"
+show monika 1d
+mc "She'll also need someone to make sure she doesn't fall into her old habits..."
+m 3m "Indeed..."
+m 3n "It'll take time for her to get over her problem, but if anyone can help her through those trying times, it's you."
+
+if encore_sayoriquestion_1 == True:
+    m 1n "Sayori will be disappointed..."
+    show monika 1m
+
+    if s_makeup == False:
+        if n_love == True or y_love == True:
+            mc "Sayori..."
+            m 1g "I know. I'm sorry..."
+            mc "Well, maybe in time we'll patch things up..."
+            m 2e "I hope you guys do."
+
+    if s_makeup == False:
+        if n_love == False or y_love == False:
+            m "And I'll admit...{w=0.38}I'm surprised you want to end things with her."
+            mc "I just don't feel the same way about her anymore..."
+            mc "I think it's time we both moved on and saw different people..."
+            m 2e "Well hey, I wish you two the best."
+
+
+    if s_makeup == True:
+        if n_love == True or y_love == True:
+            mc "It's...{w=0.38}for the best."
+            mc "I don't think I've done our relationship any justice recently. I think it's best that I walk away and maybe start over again some day."
+            m 2e "I hope it works out for you two."
+
+    if s_makeup == True:
+        if n_love == False or y_love == False:
+            m 1g "And I have to say, I'm a little surprised..."
+            m 1f "You were loyal to her for the most part..."
+            mc "I think it's what's best for us right now. I don't feel the same about her anymore after all this."
+            mc "I just hope she and I can stay friends..."
+            m "Well hey, I hope you do. She's a good person, [player]."
+
+if encore_sayoriquestion_1 == False:
+    pass
+
+play music mend fadein 1.0
+m 1e "Well, this is where we depart..."
+m 1n "Everyone's going to want to get their final say in before you go, so I won't delay them any longer."
+m 1e "But...{w=0.38}I do want to say that I'm extremely grateful for all you've done here.."
+m 1p "You've been there for us through our worst and best times..."
+m 1m "You...{w=0.38}helped the others start to forgive me, and put me on the path towards learning how to forgive myself..."
+m 3e "It's not something most people would do, [player]."
+m 2k "You really are one of us!"
+m 1j "And I'm glad that you're a member of the Literature Club!"
+m 1e "This place really wouldn't be the same without you..."
+m 1b "It wouldn't even exist without you!"
+m 1e "You're the best member of the club that I've had the privliedge of knowing..."
+m 3j "And I wish you the best in all your future endeavors!"
+m 1e "Take care, [player]! I hope you've enjoyed your stay with us..."
+show monika 1a at t11 zorder 1
+"Monika and I share one last smile with each other before she grabs her stuff in disappears into the hallway."
+show monika at thide
+hide monika
+"I feel a tap on my shoulder."
+show sayori 1d at t11 zorder 1
+"To my surprise, I turn around to see it's Sayori."
+"Though she doesn't seem upeset, or even angry at me, but rather at peace."
+s 1l "Hey, [player]..."
+mc "Sayori. How are you doing?"
+s "Well, I'm not sure I really know the right words for any of that..."
+
+if encore_sayoriquestion_1 == True:
+
+    if s_makeup == False:
+        if n_love == True or y_love == True:
+            mc "I read your letter..."
+            show sayori 1g
+            mc "And well...{w=0.38}I can't say I blame you..."
+            mc "I let you down, at every turn."
+            mc "You deserve someone better than me."
+            s 1k "Look...{w=0.38}don't beat yourself up over me, [player]."
+            s 1d "I'll be okay..."
+            s 1l "I just hope you learned something from all this..."
+            s 1h "About how to stay true and faithful to your friends and loved ones..."
+            s 1k "Especially learning how to stay true to yourself..."
+            s 1g "Our relationship may be over, but I just wanted to make sure you don't ever do something like this again."
+            s 1k "Especially to Yuri..."
+            show sayori 1d
+            mc "I learned, Sayori. Sucks that it had to be the hard way, but you know how hard headed I can be sometimes."
+            s 1y "Well, at least that part of you didn't change..."
+            s 1d "But, I'm glad you learned not do have this kind of relationship with anyone else ever again..."
+            s "And I hope things between you and Natsuki work out alright..."
+            mc "Thank you, Sayori..."
+            mc "I'm really sorry ruined things between us..."
+            s 1y "Well, maybe one day we can talk about it..."
+
+
+
+    if s_makeup == False:
+        if n_love == False or y_love == False:
+            mc "I don't blame you..."
+            mc "I take it you already know of my decision..."
+            s 1k "Yeah, I do..."
+            s 1g "I'm surprised..."
+            mc "It's...{w=0.38}not you. It's me."
+            show sayori 1k
+            mc "Sayori, I still love you and care about you."
+            mc "But, I've started to feel more attracted to Yuri overtime and well..."
+            mc "I think us not being together is the best solution going forward. I don't want to be disloyal to you..."
+            s 1l "I see, and I appreciate you being honest with me..."
+            s "I just wished we had more time to spend together, that's all..."
+            mc "I know..."
+            mc "I'm really sorry, Sayori. Please don't blame yourself."
+            s 1k "I'll do my best..."
+
+
+    if s_makeup == True:
+        if n_love == True or y_love == True:
+            mc "I know, and I'm sorry..."
+            mc "I know I said that I wanted to work things out, but maybe it's better if we just see different people..."
+            mc "I don't want to risk us running into more problems when my feelings for Yuri haven't faded..."
+            s 1k "I understand..."
+            s "And I appreciate you being direct with me."
+            s 1l "We had some up's and down's, didn't we, [player]?"
+            mc "Yeah...{w=0.38}well I was mostly the downside to the relationship..."
+            s 1y "Well, this was our first relationship. We'll grow and learn from our mistakes..."
+            s 1d "And I hope things work out better for you and Yuri."
+            mc "Thank you, Sayori..."
+
+    if s_makeup == True:
+        if n_love == False or y_love == False:
+            mc "I know..."
+            s 1l "I'm...{w=0.38}surprised that you want to end things..."
+            s 1k "After everything..."
+            s 1g "Why?"
+            mc "It's not because I don't love or care about you, Sayori..."
+            show sayori 1g
+            mc "But...{w=0.38}I've had feelings for Yuri for a while now, and they haven't faded."
+            mc "I love her too, and I know it's wrong us to be together if my feelings for her are stronger."
+            show sayori 1k
+            mc "We'd both be doing our relationship a disservice, and I wouldn't want to hurt you anymore than I already have by doing this..."
+            s 1k "Yeah...{w=0.38}I get it."
+            s 1d "I'm really glad we got to spend some time together, [player]..."
+            s 1y "You really did make me the happiest I've ever been..."
+            s 1k "I just wish I could've experienced it just a little bit longer..."
+            mc "Me too..."
+            mc "But please, whatever you do, don't blame yourself."
+            s "I'll...{w=0.38}do my best."
+            s 1d "I'll try."
+
+if encore_sayoriquestion_1 == False:
+    s 1k "Well I always knew it was going to be a long shot for us to ever be a couple..."
+    s "The only chance of that was in the 'base game'..."
+    mc "It's just...{w=0.38}not meant to be."
+    mc "Sayori, you're a great girl and an awesome friend. I know one day you'll find someone who loves and cares for you."
+    s "I appreciate it..."
+    s 1d "I think you and Yuri will be a great couple..."
+    s 1y "I always knew you had feelings for her..."
+    mc "You know me too well..."
+    s 1q "Teehee~ Well I do!"
+
+
+s 1y "I still hope we can be friends, [player]."
+mc "Of course I still want to be friends with you!"
+s 1l "Good...{w=0.38}I don't know what I'd do if you said no..."
+show sayori 1g
+mc "I do want you to promise me one thing, okay?"
+s 1h "Yeah? What is it?"
+show sayori 1k
+mc "Get help for your depression, alright?"
+mc "You know I hate seeing you like that..."
+mc "It's for your own good that you you keep going to therapy."
+show sayori 1l
+s "Well after this, I think I'll have plenty to talk about with whoever will be my therapist..."
+s 1d "But, I'll do it. For you."
+mc "Thank you, Sayori."
+s 2x "I'll see you around, okay?"
+show sayori 1y
+mc "You know it, cinnamon bun!"
+s "I love it when you call me that..."
+s 1q "See you around, [player]!"
+s 1x "Thanks for being apart of this club!"
+s 1y "It really means a lot to me that you agreed to join..."
+mc "I know. That's why I did it."
+show sayori 1d
+"Sayori and I exchange one last smile before she too heads out and disappears into the hallway."
+show sayori at thide
+hide sayori
+show natsuki 5u at t11 zorder 1
+"Natsuki is the next one to approach me."
+"At first we both struggle to find the right words to say to each other, given our history, but for once, she's the first to break the ice."
+n 5t "So you're going with Yuri, huh?"
+n "Can't say I'm too surprised. You always did strike me as her type of guy..."
+n 5l "I hope everything works out between you two."
+mc "Thank you, Natsuki. I really appreciate it."
+n 5t "Well...{w=0.38}it's the least I could do..."
+n 5t "We've had quite the ride, you and me..."
+mc "Yeah...{w=0.38}it's really been something..."
+n 3m "You know...{w=0.38}for the longest time, I wasn't sure if I could really trust you..."
+n 3q "And well, I still ended up falling for you..."
+n 1t "I don't really know why...{w=0.38}maybe because I thought you were actually intresting, smart..."
+mc "Charming?"
+n 1y "Pfft! Don't push your luck, [player]!"
+
+if poem_giver == "Natsuki":
+    n 1u "I really do regret about starting all this drama though..."
+    n 1n "I liked you...{w=0.38}a lot...{w=0.38}and I just didn't know how to approach you..."
+    n "I never meant to hurt you or anyone."
+    mc "I know you didn't, Natsuki."
+
+else:
+    pass
+
+
+n 5m "But what I'm trying to say is:{w=0.38}most boys wouldn't have done what you've done for me."
+n 1u "I know we've certainly had our up's and down's, and yeah, things could've gone better..."
+n 1n "But I really, really, want to thank you for saving me back there."
+n 1q "I'm not sure how any of us are going to get over Monika trying to kill us..."
+n 1a "But I think you set enough of an example for us to follow..."
+mc "It's the least I could do, Natsuki."
+mc "I know there's more to you than you're looks and the tough act you've put up. I'm glad I've gotten to know the real Natsuki."
+n 1t "Eh, more or less..."
+n 1s "I'm still not sure how I feel about all this being some sort of 'game'..."
+n 1t "But...{w=0.38}that means I don't have to worry about my dad anymore..."
+mc "That's true. Still, you don't have anything like Monika's powers. What're you gonna do?"
+n 1a "I'll figure something out."
+n 1y "But I'm not going back there again! That's for sure!"
+show natsuki 1z
+mc "Glad to hear it, Natsuki!"
+n 1t "Yeah..."
+n 1m "So I guess I'll see you around?"
+show natsuki 1a
+mc "Of course! This club wouldn't be as entertaining without you in it!"
+n 4l "That's for damn sure!"
+n 1z "Bye, [player]!"
+n 1l "And hey, I hope you keep Yuri happy."
+n 1t "You'll be hearing from me if you don't!"
+mc "Noted, Natsuki."
+show yuri 3q at t11 zorder 1
+"Finally, Yuri is the last one to approach me."
+y "[player]...{w=0.38}I'm a little surprised..."
+y 3t "I can't say I was really expecting you to pick me..."
+y 1q "Even though I was hoping you would..."
+show yuri 1u
+mc "Yuri, why wouldn't I choose you?"
+mc "I love you...{w=0.38}and I want to be in a relationship with you."
+y 2t "May I inquire as to why?"
+show yuri 1t
+mc "You're passionate, sweet, a little reserved and timid, but I like it that way."
+mc "I've had nothing but rich and wonderful experiences when I'm with you. You're an awesome person and I'd love to continue to be apart of your life."
+y 3q "Wow..."
+y "I knew you liked me but..."
+y "It's just...{w=0.38}we've had quite an adventure together..."
+mc "Yeah...{w=0.38}it's really been something..."
+y 1t "I must confess..{w=0.38}for the longest time, I wasn't sure if I was really wise to open up to you..."
+y 1q "Such instances of doing that in the past hardly ever worked out for me in the long run but..."
+y 1s "You've been different..{w=0.38}you always listened to what I had to say and showed that you actually cared about me..."
+mc "It's also because I'm such a charmer..."
+y 1q "I'm sure that was a factor..."
+y 3s "But really...{w=0.38}I can't think of too many people that would risk their lives to save me..."
+y 1u "And I can't think of any non-fiction persons that have shown the level of genuiene intrest and empathy for someone like me..."
+y 1v "A girl whose alaways tried to stay in the background as much as possible...{w=0.38}yet I couldn't escape your notice.."
+y 1s "I'm incredibly thankful that you're giving me a chance, [player]."
+show yuri 1d
+mc "It's my pleasure, Yuri!"
+show yuri 1e
+mc "So...{w=0.38}what're you going to do about...{w=0.38}you know..."
+y 3v "I think it's finally time that I start confronting this problem rather tha supressing it..."
+y 1w "I'm not sure what the best way is, if everything is just a simulation now."
+y 1h "Is there a way I can simply just undo my problem with the click of a button?"
+mc "I can't say that I have the answer to that question. But, I know you'll figure something out. I'll be right here if you need my help."
+y 1a "I'd very much appreciate that, [player]..."
+y 1q "I really owe you a lot, don't I?"
+mc "I just did what I thought was right back there. You and everyone else are so much more than some 'code'."
+y "Well, we'll have much to ponder about the supposed truth of our reality..."
+y 1d "But I must admit...{w=0.38}this whole experience has inspired me to write my own story about this!"
+show yuri 1c
+mc "It better be a best-seller!"
+y 1q "I haven't written a full novel before...{w=0.38}but I'm sure I can figure it out."
+y 1b "But...{w=0.38}perhaps one challenge at a time, right?"
+show yuri 1c
+mc "Yeah, I think we've earned some well deserved rest!"
+y 1d "And rest we shall!"
+y 1s "But I think we've earned an evening to enjoy ourselves, wouldn't you agree?"
+mc "That sounds lovely Yuri! I'd love to take you out someplace nice!"
+y 1d "That's fantastic!"
+y 1b "Shall we go?"
+show yuri 1a
+mc "You go on ahead, I'll meet you at my place later."
+y 1c "Alright then! I'll see you later!"
+show yuri 1d
+"Yuri says sweetly as she heads out the door."
+show yuri at thide
+hide yuri
+stop music fadeout 2.0
+"I sink back in a chair as Yuri leaves the clubroom, taking in the newfound silence."
+"It's finally over..."
+"All the tears..."
+"All the name calling..."
+"All the temper trantrums..."
+"It's finally over..."
+"I glance at my watch and notice that it's far past the normal time I'd be heading back home."
+"Well, even if this world isn't real, it'd feel weird hanging around in here..."
+"I pick up my stuff and begin heading out the door, but not before taking one last look at the clubroom."
+"This really is no ordinary Literature Club..."
+"But..."
+"I don't think I'd have it any other way."
+"I turn on my heel and head out the door to start the walk home."
+scene black
+with dissolve_scene_full
+$ renpy.pause(delay=10.0)
+scene bg residential_day
+with open_eyes
+"I take a seat down on my the steps to my house and lay my backpack right next to me."
+"Looking up at the sky, I can see the a tint of orange forming in the vast blue sea that flies high above me."
+"Even if it's not real, I always did enjoy it..."
+"It always did instil a sense of calm and peace whenver I was troubled, and after today, those are two things I most surely need."
+"Though going forward, for better or worse, things aren't going to be the same."
+"Monika has a lot of work to earn everyone's trust back, but I'll do what I can to ensure she fairly earns it..."
+"After all, who knows how much time Monika has really bought us?"
+"How are we going to 'cross over' to this world to join the person who I'm supposed to represent?"
+"Am I even real?"
+"..."
+"No matter..."
+"Whatever challenges that await the Literature Club, I'll be right there facing there with them to face it down..."
+"Because I know one thing for sure..."
+"I care about them, with all my heart..."
+"And I know the player does too."
+"Thank you, whoever you are."
+"You'll always be welcome in the Literature Club..."
+show yuri 12bb at t11 zorder 1
+y "Hello, [player]! You ready to enjoy our evening out?"
+show yuri 12bc
+mc "You know it!"
+show yuri 12bc
+"I take Yuri's hand as we walk off towards the city to enjoy our evening together."
+scene black
+with dissolve_scene_full
+$ renpy.pause(delay=5.0)
+call encore_credits
+
+
+
+
+#Single Ending
 
 label ending_12:
 "I think it's best that I stay single for right now."
@@ -1768,13 +3298,13 @@ if encore_sayoriquestion_1 == True:
     if s_makeup == True:
         if n_love == True or y_love == True:
             mc "It's...{w=0.38}for the best."
-            mc "I don't think I've done our rleationship any justice recently. I think it's best that I walk away and maybe start over again some day."
+            mc "I don't think I've done our relationship any justice recently. I think it's best that I walk away and maybe start over again some day."
             m 2e "I hope it works out for you two."
 
     if s_makeup == True:
         if n_love == False or y_love == False:
             m 1g "And I have to say, I'm a little surprised..."
-            m 1f "You were generall loyal to her for the most part..."
+            m 1f "You were loyal to her for the most part..."
             mc "I think it's best for the club that I'm not in a relationship with anyone for now."
             mc "Maybe one day that'll change, but for right now, I think it's for the best."
             m "Well hey, I hope you do. She's a good one, [player]."
@@ -1884,6 +3414,17 @@ if encore_sayoriquestion_1 == False:
 s 1d "I'm still willing to be your friend, [player]."
 mc "I'd like that very much..."
 s 1y "Good...{w=0.38}I don't know what I'd do if you said no..."
+show sayori 1g
+mc "I do want you to promise me one thing, okay?"
+s 1h "Yeah? What is it?"
+show sayori 1k
+mc "Get help for your depression, alright?"
+mc "You know I hate seeing you like that..."
+mc "It's for your own good that you you keep going to therapy."
+show sayori 1l
+s "Well after this, I think I'll have plenty to talk about with whoever will be my therapist..."
+s 1d "But, I'll do it. For you."
+mc "Thank you, Sayori."
 s 2x "I'll see you around, okay?"
 show sayori 1y
 mc "You know it, cinnamon bun!"
@@ -1895,4 +3436,144 @@ mc "I know. That's why I did it."
 show sayori 1d
 "Sayori and I exchange one last smile before she too heads out and disappears into the hallway."
 show sayori at thide
-hide sayori 
+hide sayori
+show natsuki 5u at t11 zorder 1
+"Natsuki is the next one to approach me."
+"At first we both struggle to find the right words to say to each other, given our history, but for once, she's the first to break the ice."
+n 5m "I have to say, you do nothing but surprise me..."
+n 5q "You go through all that and not choose any of us?"
+n 5n "Why?"
+mc "It's not your's or anyone's fault, Natsuki. I just need to think about what's good for the club rather than what's good for me for a change."
+n 5t "Well...{w=0.38}I guess I can get behind that..."
+n 5t "We've had quite the ride, you and me..."
+mc "Yeah...{w=0.38}it's really been something..."
+n 3m "You know...{w=0.38}for the longest time, I wasn't sure if I could really trust you..."
+n 3q "And well, I still ended up falling for you..."
+n 1t "I don't really know why...{w=0.38}maybe because I thought you were funny, amazing..."
+mc "Charming?"
+n 1y "Pfft! Don't push your luck, [player]!"
+
+if poem_giver == "Natsuki":
+    n 1u "I really do regret about starting all this drama though..."
+    n 1n "I liked you...{w=0.38}a lot...{w=0.38}and I just didn't know how to approach you..."
+    n "I never meant to hurt you or anyone."
+    mc "I know you didn't, Natsuki."
+
+else:
+    pass
+
+
+n 5m "But what I'm trying to say is:{w=0.38}most boys wouldn't have done what you've done for me."
+n 1u "I know we've certainly had our up's and down's, and yeah, things could've gone better..."
+n 1n "But I really, really, want to thank you for saving me back there."
+n 1q "I'm not sure how any of us are going to get over Monika trying to kill us..."
+n 1a "But I think you set enough of an example for us to follow..."
+mc "It's the least I could do, Natsuki."
+mc "I know there's more to you than you're looks and the tough act you've put up. I'm glad I've gotten to know the real Natsuki."
+n 1t "Eh, more or less..."
+n 1s "I'm still not sure how I feel about all this being some sort of 'game'..."
+n 1t "But...{w=0.38}that means I don't have to worry about my dad anymore..."
+mc "That's true. Still, you don't have anything like Monika's powers. What're you gonna do?"
+n 1a "I'll figure something out."
+n 1y "But I'm not going back there again! That's for sure!"
+show natsuki 1z
+mc "Glad to hear it, Natsuki!"
+n 1t "Yeah..."
+n 1m "So I guess I'll see you around?"
+show natsuki 1a
+mc "Of course! This club wouldn't be as entertaining without you in it!"
+n 4l "That's for damn sure!"
+n 1z "Bye, [player]!"
+show natsuki at thide
+hide natsuki
+"Natsuki smiles as she heads out into the hallway."
+show yuri 1a at t11 zorder 1
+"Finally, Yuri is the last one to approach me."
+y 1q "It's hard to believe that we're finally at the end of this saga..."
+mc "Yeah, I imagine everyone's feeling pretty relieved..."
+y "I most certainly am."
+y 1t "I know the others already said the same thing, but I really do want to thank everything you've done for us. Especially for me..."
+y 1v "I wish our relationship could've gone differently..."
+
+if poem_giver == "Yuri":
+    y 1q "I suspect that giving you the letter and my subsquent confession certainly didn't help things..."
+    y 1t "You're just...{w=0.38}the first boy that I ever had serious feelings for..."
+    y 1q "And with everything...{w=0.38}I just didn't know how to handle that..."
+    y 1w "I sincerly regret my actions towards you, and everyone else..."
+    y 1v "Even Monika didn't deserve that..."
+    mc "You're not a bad person, Yuri. I hoped I helped you see that."
+
+else:
+    pass
+
+mc "I'll admit...{w=0.38}I wish we all could've had the club experience without the drama..."
+mc "And things could've gone better between us for sure..."
+show yuri 1u
+mc "But you're a beautiful, gracious and kind person, Yuri. You'll find someone worth your time. I believe in you."
+y "Thank you. Coming from you, it means a lot..."
+y 1b "I think we both learned a lot from this experience, wouldn't you agree?"
+show yuri 1a
+mc "For sure! I just hope going forward we'll be stronger as club together..."
+y 1u "Yeah..."
+mc "So...{w=0.38}what're you going to do about...{w=0.38}you know..."
+y 3v "I think it's finally time that I start confronting this problem rather tha supressing it..."
+y 1w "I'm not sure what the best way is, if everything is just a simulation now."
+y 1h "Is there a way I can simply just undo my problem with the click of a button?"
+mc "I can't say that I have the answer to that question. But, I know you'll figure something out. I'll be right here if you need my help."
+y 1a "I'd very much appreciate that, [player]..."
+y 1q "I really owe you a lot, don't I?"
+mc "I just did what I thought was right back there. You and everyone else are so much more than some 'code'."
+y "Well, we'll have much to ponder about the supposed truth of our reality..."
+y 1d "But I must admit...{w=0.38}this whole experience has inspired me to write my own story about this!"
+show yuri 1c
+mc "It better be a best-seller!"
+y 1q "I haven't written a full novel before...{w=0.38}but I'm sure I can figure it out."
+y 1b "But...{w=0.38}perhaps one challenge at a time, right?"
+show yuri 1c
+mc "Yeah, I think we've earned some well deserved rest!"
+y 1d "And rest we shall!"
+y 1a "Farewell, [player]! And thank you for everything!"
+show yuri 1d
+"Yuri says sweetly as she heads out the door."
+show yuri at thide
+hide yuri
+stop music fadeout 2.0
+"I sink back in a chair as Yuri leaves the clubroom, taking in the newfound silence."
+"It's finally over..."
+"All the tears..."
+"All the name calling..."
+"All the temper trantrums..."
+"It's finally over..."
+"I glance at my watch and notice that it's far past the normal time I'd be heading back home."
+"Well, even if this world isn't real, it'd feel weird hanging around in here..."
+"I pick up my stuff and begin heading out the door, but not before taking one last look at the clubroom."
+"This really is no ordinary Literature Club..."
+"But..."
+"I don't think I'd have it any other way."
+"I turn on my heel and head out the door to start the walk home."
+scene black
+with dissolve_scene_full
+$ renpy.pause(delay=10.0)
+scene bg residential_day
+with open_eyes
+"I take a seat down on my the steps to my house and lay my backpack right next to me."
+"Looking up at the sky, I can see the a tint of orange forming in the vast blue sea that flies high above me."
+"Even if it's not real, I always did enjoy it..."
+"It always did instil a sense of calm and peace whenver I was troubled, and after today, those are two things I most surely need."
+"Though going forward, for better or worse, things aren't going to be the same."
+"Monika has a lot of work to earn everyone's trust back, but I'll do what I can to ensure she fairly earns it..."
+"After all, who knows how much time Monika has really bought us?"
+"How are we going to 'cross over' to this world to join the person who I'm supposed to represent?"
+"Am I even real?"
+"..."
+"No matter..."
+"Whatever challenges that await the Literature Club, I'll be right there facing there with them to face it down..."
+"Because I know one thing for sure..."
+"I care about them, with all my heart..."
+"And I know the player does too."
+"Thank you, whoever you are."
+"You'll always be welcome in the Literature Club..."
+scene black
+with dissolve_scene_full
+$ renpy.pause(delay=5.0)
+call encore_credits

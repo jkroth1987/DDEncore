@@ -1763,7 +1763,9 @@ image m_cry_knife = "mod_assets/sprites/m_cry_knife.png"
 image m_nightmare1 = "mod_assets/sprites/m_nightmare1.png"
 image m_nightmare2 = "mod_assets/sprites/m_nightmare2.png"
 image m_demonic = "mod_assets/sprites/m_demonic.png"
-
+image m_wink = "mod_assets/sprites/m_wink.png"
+image m_unleashed1 = "mod_assets/sprites/m_unleashed1.png"
+image m_unleashed2 = "mod_assets/sprites/m_unleashed2.png"
 #--uniform, hands down, slight frown, blush, closed eyes, concerned eyebrows
 #image monika u113342 = im.Composite((960, 960), (0, 0), "mod_assets/character_images/monika/1_uniform/1_body_left/1.png", (0, 0), "mod_assets/character_images/monika/1_uniform/2_body_right/1.png", (0, 0), "mod_assets/character_images/monika/2_face/base.png", (0, 0), "mod_assets/character_images/monika/2_face/1_mouth/3.png", (0, 0), "mod_assets/character_images/monika/2_face/2_nose/3.png", (0, 0), "mod_assets/character_images/monika/2_face/3_eyes/4.png", (0, 0), "mod_assets/character_images/monika/2_face/4_eyebrows/2.png")
 #---uniform, hands down, slighty opened mouth, no blush, eyes forward, eyebrows lowered to stern
@@ -1930,6 +1932,7 @@ image y_cry4 = "mod_assets/sprites/y_cry4.png"
 image y_cry5 = "mod_assets/sprites/y_cry5.png"
 image y_cry6 = "mod_assets/sprites/y_cry6.png"
 image pen = "mod_assets/sprites/pen.png"
+image y_cut = "mod_assets/sprites/y_cut.png"
 #image yuri u122218 = im.Composite((960, 960), (0, 0), "mod_assets/character_images/yuri/1_uniform/1_body_left/1.png", (0, 0), "mod_assets/character_images/yuri/1_uniform/2_body_right/2.png", (0, 0), "mod_assets/character_images/yuri/2_face/base.png", (0, 0), "mod_assets/character_images/yuri/2_face/1_mouth/2.png", (0, 0), "mod_assets/character_images/yuri/2_face/2_nose/2.png", (0, 0), "mod_assets/character_images/yuri/2_face/3_eyes/1.png", (0, 0), "mod_assets/character_images/yuri/2_face/4_eyebrows/8.png")
 #image yuri u114221 = im.Composite((960, 960), (0, 0), "mod_assets/character_images/yuri/1_uniform/1_body_left/1.png", (0, 0), "mod_assets/character_images/yuri/1_uniform/2_body_right/1.png", (0, 0), "mod_assets/character_images/yuri/2_face/base.png", (0, 0), "mod_assets/character_images/yuri/2_face/1_mouth/4.png", (0, 0), "mod_assets/character_images/yuri/2_face/2_nose/2.png", (0, 0), "mod_assets/character_images/yuri/2_face/3_eyes/2.png", (0, 0), "mod_assets/character_images/yuri/2_face/4_eyebrows/1.png")
 #image yuri u125111 = im.Composite((960, 960), (0, 0), "mod_assets/character_images/yuri/1_uniform/1_body_left/1.png", (0, 0), "mod_assets/character_images/yuri/1_uniform/2_body_right/2.png", (0, 0), "mod_assets/character_images/yuri/2_face/base.png", (0, 0), "mod_assets/character_images/yuri/2_face/1_mouth/5.png", (0, 0), "mod_assets/character_images/yuri/2_face/2_nose/1.png", (0, 0), "mod_assets/character_images/yuri/2_face/3_eyes/1.png", (0, 0), "mod_assets/character_images/yuri/2_face/4_eyebrows/1.png")
