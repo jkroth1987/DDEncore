@@ -631,15 +631,15 @@ play sound stab
 show yuri stab_1 at t43 zorder 3
 pause 0.75
 show yuri stab_2
-show blood:
-    pos (610,485)
+show blood zorder 10:
+    pos (756,485)
 pause 1.25
 show yuri stab_3
 play sound stab
 pause 0.75
 show yuri stab_2
-show blood:
-    pos (610,485)
+show blood zorder 10:
+    pos (756,485)
 show yuri stab_4 with ImageDissolve("images/yuri/stab/4_wipe.png", 0.25)
 pause 1.25
 show yuri stab_5
@@ -648,8 +648,8 @@ pause 0.70
 show yuri stab_6:
     2.55
     easeout_cubic 0.5 yoffset 300
-show blood as blood2:
-    pos (635,335)
+show blood as blood2 zorder 10:
+    pos (781,335)
 pause 2.55
 hide blood
 hide blood2
@@ -886,15 +886,15 @@ play sound stab
 show yuri stab_1 at t43 zorder 3
 pause 0.75
 show yuri stab_2
-show blood:
-    pos (610,485)
+show blood zorder 10:
+    pos (756,485)
 pause 1.25
 show yuri stab_3
 play sound stab
 pause 0.75
 show yuri stab_2
-show blood:
-    pos (610,485)
+show blood zorder 10:
+    pos (756,485)
 show yuri stab_4 with ImageDissolve("images/yuri/stab/4_wipe.png", 0.25)
 pause 1.25
 show yuri stab_5
@@ -903,8 +903,8 @@ pause 0.70
 show yuri stab_6:
     2.55
     easeout_cubic 0.5 yoffset 300
-show blood as blood2:
-    pos (635,335)
+show blood as blood2 zorder 10:
+    pos (781,335)
 pause 2.55
 hide blood
 hide blood2
