@@ -152,6 +152,7 @@ define audio.e19 = "<loop 0>mod_assets/audio/Natsuki_Confession.ogg" #Natsuki Co
 define audio.e20 = "<loop 0>mod_assets/audio/Yuri_Confession.ogg" #Yuri Confession Music
 define audio.e21 = "<loop 0>mod_assets/audio/Poems Are Forever.ogg" #Monika Ending Music (Good)
 define audio.e22 = "<loop 0>mod_assets/audio/Doki Doki Pound.ogg" #Natsuki Ending Music
+define audio.e23 = "<loop 0>mod_assets/audio/Unleashed.ogg" #Monika Unleashed
 
 
 

@@ -18,7 +18,7 @@ Writers: Agent Gold, Bug, Nick (Canad1an),
 Ploxmaster708, Rudy, Andrew J. Striedl
 Artists: 3Monika4 (Monika), Elaina Sasso, Kiiori,
  @reenaki_m (Instagram), Tat-bunny (https://www.deviantart.com/tat-bunny)
-Music: Daniel Kruyer (Angelic Beast)"""
+Music: Daniel Kruyer (Angelic Beast) and DeNomaly"""
 
     # 2
     # 8 lines, +350 pixels
@@ -29,7 +29,7 @@ General Contributions: Nep, Rezzy
 Image Editing: POBAW, TheD0ctor,
 Agent Gold, Andrew J. Striedl
 Image Editing Contributor: AjTheYandere
-Sound Contributor: Singularity
+Sound Contributor: DeNomaly
 Writing Contributors: Lucy CN, Jacob Smallman"""
 
     # 3

@@ -1592,6 +1592,7 @@ show monika evil
 mc "Yeah...{w=0.38}why?"
 m 2n "Well, that's too bad."
 m 1r "I guess we're going to have to do this the hard way then..."
+play music e23 fadein 1.0
 show monika 1q
 show sayori 1g
 "Sayori and I stare at each other in confusion."
@@ -1634,8 +1635,6 @@ show monika 1q at t11 zorder 1
 "{cps=25}Moni-{nw}"
 show m_nightmare1 as monika at face
 play audio scary_scream
-#Monika Strobe effect goes here
-#Monika Glowing Eyes Sprite
 show m_unleashed1 as monika at t11 zorder 1
 "I immediately fall backwards and scurry away from Monika."
 show sayori 4w at t21 zorder 1
@@ -1668,7 +1667,6 @@ play sound "sfx/fall.ogg"
 $ style.say_dialogue = style.edited
 m "I've waited along time for this..."
 $ style.say_dialogue = style.normal
-#loop
 show sayori at thide
 hide sayori
 $ renpy.pause(delay=0.10)
@@ -1687,21 +1685,16 @@ show m_unleashed2 as monika at t22 zorder 2
 $ style.say_dialogue = style.edited
 s "H̵͗͜e̵͐̀l̷̐͛p̸͕̍ ̴͗̅m̵̩̆e̸̐̂ ̶̀̒M̵̌̚Ć̶͊"
 $ style.say_dialogue = style.normal
-window show(None)
 show screen tear(20, 0.1, 0.1, 0, 40)
-#bg transition not working
 play sound "sfx/s_kill_glitch1.ogg"
+pause 0.25
+stop sound
+hide screen tear
 hide image "mod_assets/sprites/end-glitch2.png"
 hide screen tear
 show bg space_room
 show mask_2
 show mask_3
-show room_mask as rm:
-    size (320,180)
-    pos (30,200)
-show room_mask2 as rm2:
-    size (320,180)
-    pos (935,200)
 show m_unleashed1 as monika at t11 zorder 1
 "Sayori disappears into nothing, leaving Monika and I alone in the room together again."
 "Only that the room seems to have changed yet again..."
@@ -1718,7 +1711,6 @@ mc "What the hell?"
 mc "This has to be some kind of joke..."
 "I try pushing the door open, but it won’t budge."
 mc "What the fuck is going on?"
-play music hb
 show layer master at heartbeat
 show noise zorder 5:
     alpha 0.0
@@ -1759,12 +1751,13 @@ show black onlayer front:
         alpha 0.0
         1.5
         linear 3.0 alpha 1.00
+
+stop music fadeout 2.0
 m "{cps=17}I'll see you soon. I just need to run a quick little errand...{nw}"
 hide image solid
 scene black
 with dissolve_scene_full
 hide black onlayer front
-stop music
 hide heartbeat
 hide noise
 hide layer master
@@ -1792,6 +1785,7 @@ with wipeleft_scene
 "I lean against the wall of lockers, asking myself if I just did the right thing."
 "I've known Sayori for years. I know when she needs me and when she needs alone time..."
 "But, maybe I've should've done more back there..."
+play music e23 fadein 1.0
 $ m_name = "???"
 m "[player]?"
 show monika 1d at t11 zorder 1
@@ -1816,7 +1810,6 @@ mc "Uh...{w=0.38}Monika? What are you-"
 m "Just try to relax. This won't take long..."
 mc "{cps=20}What the hell are you-{nw}"
 show m_unleashed1 as monika at face
-play music hb
 show layer master at heartbeat
 show noise zorder 5:
     alpha 0.0
@@ -1847,6 +1840,7 @@ show black onlayer front:
         1.5
         linear 3.0 alpha 1.00
 "..."
+stop music fadeout 2.0
 m "{cps=17}Thank you for making this easier on me...{nw}"
 hide image solid
 scene black
@@ -2178,6 +2172,7 @@ m "You guys are going to finally be a couple, huh?"
 show monika evil
 mc "Yeah...{w=0.38}why?"
 m 2n "Well, that's too bad."
+play music e23 fadein 1.0
 m 1r "I guess we're going to have to do this the hard way then..."
 show monika 1q
 show natsuki 5m
@@ -2255,7 +2250,6 @@ play sound "sfx/fall.ogg"
 $ style.say_dialogue = style.edited
 m "I've waited along time for this..."
 $ style.say_dialogue = style.normal
-#loop
 show natsuki at thide
 hide natsuki
 $ renpy.pause(delay=0.10)
@@ -2274,21 +2268,16 @@ show m_unleashed2 as monika at t22 zorder 2
 $ style.say_dialogue = style.edited
 n "H̵͗͜e̵͐̀l̷̐͛p̸͕̍ ̴͗̅m̵̩̆e̸̐̂ ̶̀̒M̵̌̚Ć̶͊"
 $ style.say_dialogue = style.normal
-window show(None)
 show screen tear(20, 0.1, 0.1, 0, 40)
-#bg transition not working
 play sound "sfx/s_kill_glitch1.ogg"
+pause 0.25
+stop sound
+hide screen tear
 hide image "mod_assets/sprites/end-glitch2.png"
 hide screen tear
 show bg space_room
 show mask_2
 show mask_3
-show room_mask as rm:
-    size (320,180)
-    pos (30,200)
-show room_mask2 as rm2:
-    size (320,180)
-    pos (935,200)
 show m_unleashed1 as monika at t11 zorder 1
 "Natsuki disappears into nothing, leaving Monika and I alone in the room together again."
 "Only that the room seems to have changed yet again..."
@@ -2305,7 +2294,6 @@ mc "What the hell?"
 mc "This has to be some kind of joke..."
 "I try pushing the door open, but it won’t budge."
 mc "What the fuck is going on?"
-play music hb
 show layer master at heartbeat
 show noise zorder 5:
     alpha 0.0
@@ -2346,6 +2334,8 @@ show black onlayer front:
         alpha 0.0
         1.5
         linear 3.0 alpha 1.00
+
+stop music fadeout 2.0
 m "{cps=17}I'll see you soon. I just need to run a quick little errand...{nw}"
 hide image solid
 scene black
@@ -2381,6 +2371,7 @@ with wipeleft_scene
 "I've know Natsuki...{w=0.38}I know when she needs me and when she needs alone time..."
 "But, maybe I've should've done more back there..."
 "Especially with some of the things she just told me..."
+play music e23 fadein 1.0
 $ m_name = "???"
 m "[player]?"
 show monika 1d at t11 zorder 1
@@ -2405,7 +2396,6 @@ mc "Uh...{w=0.38}Monika? What are you-"
 m "Just try to relax. This won't take long..."
 mc "{cps=20}What the hell are you-{nw}"
 show m_unleashed1 as monika at face
-play music hb
 show layer master at heartbeat
 show noise zorder 5:
     alpha 0.0
@@ -2436,6 +2426,7 @@ show black onlayer front:
         1.5
         linear 3.0 alpha 1.00
 "..."
+stop music fadeout 2.0
 m "{cps=17}Thank you for making this easier on me...{nw}"
 hide image solid
 scene black
@@ -2595,6 +2586,7 @@ mc "Where could she possibly be?"
 "I set off towards the stairwell to go up to the roof."
 show bg school_rooftop
 with wipeleft_scene
+play music t10 fadein 1.0
 "I push open the doors leading to the rooftop and begin looking around for Monika."
 "Sure enough, I spot a figure staring at the fenced railing."
 show monika 3q at t11 zorder 1
@@ -2676,12 +2668,14 @@ mc "This is our club...{w=0.38}you literally built it from the ground up..."
 mc "I don't want to see you throw it away..."
 show monika 1o
 mc "You may not believe it now, but you're a great club president and I believe in you."
+stop music fadeout 1.0
 show monika 1m
 mc "You just need to put your best foot forward, brave the storm, and just be the best that you can be."
 mc "If the others don't like it, well, that's on them. You did everything you could, but I don't think you should give up on them now."
 show monika 1f
 mc "Please...{w=0.38}stay and try to work things out."
 show monika 1o
+play music e23 fadein 1.0
 "Monika uneasily glances back at the stairwell I just came from."
 "For a moment, I'm not sure if I got through to her or not..."
 show monika 1m
@@ -2712,8 +2706,7 @@ show monika 1q
 mc "What?"
 m "We're not going back to the clubroom..."
 mc "{cps=20}What're you talking abou-{nw}"
-#show monika's glowing green eyes
-play music hb
+show m_unleashed1 as monika at face
 show layer master at heartbeat
 show noise zorder 5:
     alpha 0.0
@@ -2744,6 +2737,7 @@ show black onlayer front:
         1.5
         linear 3.0 alpha 1.00
 "..."
+stop music fadeout 2.0
 m "{cps=19}Don't worry, we'll still do things your way...{nw}"
 hide image solid
 scene black
@@ -2762,8 +2756,10 @@ jump day5_choiceleadup
 
 label day5_v6:
 show monika 1a
+stop music fadeout 1.0
 mc "Yeah...{w=0.38}I hate to say it Monika, but you're right."
 mc "I don't think they can be reasoned with right now..."
+play music e23 fadein 1.0
 m 2n "Well...{w=0.38}I'm glad we're on the same page now, [player]."
 show monika 2e
 mc "Yeah, me too..."
@@ -2787,8 +2783,7 @@ show monika 1q
 mc "What?"
 m "Besides, this isn't the way to my place either..."
 mc "{cps=20}What're you talking abou-{nw}"
-#show monika's glowing green eyes
-play music hb
+show m_unleashed1 as monika at face
 show layer master at heartbeat
 show noise zorder 5:
     alpha 0.0
@@ -2819,6 +2814,7 @@ show black onlayer front:
         1.5
         linear 3.0 alpha 1.00
 "..."
+stop music fadeout 2.0
 m "{cps=17}You're finally ready...{nw}"
 hide image solid
 scene black
@@ -3228,6 +3224,7 @@ m "You guys are going to finally be a couple, huh?"
 show monika evil
 mc "Yeah...{w=0.38}why?"
 m 2n "Well, that's too bad."
+play music e23 fadein 1.0
 m 1r "I guess we're going to have to do this the hard way then..."
 show monika 1q
 show yuri 1e
@@ -3305,7 +3302,6 @@ play sound "sfx/fall.ogg"
 $ style.say_dialogue = style.edited
 m "I've waited along time for this..."
 $ style.say_dialogue = style.normal
-#loop
 show yuri at thide
 hide yuri
 $ renpy.pause(delay=0.10)
@@ -3324,21 +3320,16 @@ show m_unleashed2 as monika at t22 zorder 2
 $ style.say_dialogue = style.edited
 y "H̵͗͜e̵͐̀l̷̐͛p̸͕̍ ̴͗̅m̵̩̆e̸̐̂ ̶̀̒M̵̌̚Ć̶͊"
 $ style.say_dialogue = style.normal
-window show(None)
 show screen tear(20, 0.1, 0.1, 0, 40)
-#bg transition not working
 play sound "sfx/s_kill_glitch1.ogg"
+pause 0.25
+stop sound
+hide screen tear
 hide image "mod_assets/sprites/end-glitch2.png"
 hide screen tear
 show bg space_room
 show mask_2
 show mask_3
-show room_mask as rm:
-    size (320,180)
-    pos (30,200)
-show room_mask2 as rm2:
-    size (320,180)
-    pos (935,200)
 show m_unleashed1 as monika at t11 zorder 1
 "Yuri disappears into nothing, leaving Monika and I alone in the room together again."
 "Only that the room seems to have changed yet again..."
@@ -3355,7 +3346,6 @@ mc "What the hell?"
 mc "This has to be some kind of joke..."
 "I try pushing the door open, but it won’t budge."
 mc "What the fuck is going on?"
-play music hb
 show layer master at heartbeat
 show noise zorder 5:
     alpha 0.0
@@ -3396,6 +3386,8 @@ show black onlayer front:
         alpha 0.0
         1.5
         linear 3.0 alpha 1.00
+
+stop music fadeout 2.0
 m "{cps=17}I'll see you soon. I just need to run a quick little errand...{nw}"
 hide image solid
 scene black
@@ -3430,6 +3422,7 @@ with wipeleft_scene
 "I lean against the wall of lockers, asking myself if I just did the right thing."
 "Yuri's not in the right state of mind..."
 "Should I really be leaving her alone right now?"
+play music e23 fadein 1.0
 $ m_name = "???"
 m "[player]?"
 show monika 1d at t11 zorder 1
@@ -3454,7 +3447,6 @@ mc "Uh...{w=0.38}Monika? What are you-"
 m "Just try to relax. This won't take long..."
 mc "{cps=20}What the hell are you-{nw}"
 show m_unleashed1 as monika at face
-play music hb
 show layer master at heartbeat
 show noise zorder 5:
     alpha 0.0
@@ -3485,6 +3477,8 @@ show black onlayer front:
         alpha 0.0
         1.5
         linear 3.0 alpha 1.00
+
+stop music fadeout 2.0
 m "{cps=15}Thank you for making this easier on me...{nw}"
 hide image solid
 scene black
