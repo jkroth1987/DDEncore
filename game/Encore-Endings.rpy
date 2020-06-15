@@ -631,15 +631,15 @@ play sound stab
 show yuri stab_1 at t43 zorder 3
 pause 0.75
 show yuri stab_2
-show blood:
-    pos (610,485)
+show blood zorder 10:
+    pos (756,485)
 pause 1.25
 show yuri stab_3
 play sound stab
 pause 0.75
 show yuri stab_2
-show blood:
-    pos (610,485)
+show blood zorder 10:
+    pos (756,485)
 show yuri stab_4 with ImageDissolve("images/yuri/stab/4_wipe.png", 0.25)
 pause 1.25
 show yuri stab_5
@@ -648,8 +648,8 @@ pause 0.70
 show yuri stab_6:
     2.55
     easeout_cubic 0.5 yoffset 300
-show blood as blood2:
-    pos (635,335)
+show blood as blood2 zorder 10:
+    pos (781,335)
 pause 2.55
 hide blood
 hide blood2
@@ -784,6 +784,20 @@ show monika 1h
 "I erase Monika's pre-written command so the console is now completely empty."
 "Ok...{w=0.38}what do we enter in here?"
 #Typable Console
+window hide
+$ console_choice = ""
+$renpy.call_screen("final_console", "Input your command", ok_action=Jump("process_console_message"))
+
+label process_console_message:
+    # Make the choice lowercase so we can ignore the case the player typed in.
+    $ console_choice = console_choice.lower()
+    
+    # This is the logic I remember us talking about.
+    # Update as needed! - Gold
+    if console_choice == "sayori" or console_choice == "yuri" or console_choice == "natsuki":
+        jump ending_4
+    else:
+        jump ending_5
 
 label ending_4:
 show sayori 1p at s41 zorder 1
@@ -886,15 +900,15 @@ play sound stab
 show yuri stab_1 at t43 zorder 3
 pause 0.75
 show yuri stab_2
-show blood:
-    pos (610,485)
+show blood zorder 10:
+    pos (756,485)
 pause 1.25
 show yuri stab_3
 play sound stab
 pause 0.75
 show yuri stab_2
-show blood:
-    pos (610,485)
+show blood zorder 10:
+    pos (756,485)
 show yuri stab_4 with ImageDissolve("images/yuri/stab/4_wipe.png", 0.25)
 pause 1.25
 show yuri stab_5
@@ -903,8 +917,8 @@ pause 0.70
 show yuri stab_6:
     2.55
     easeout_cubic 0.5 yoffset 300
-show blood as blood2:
-    pos (635,335)
+show blood as blood2 zorder 10:
+    pos (781,335)
 pause 2.55
 hide blood
 hide blood2

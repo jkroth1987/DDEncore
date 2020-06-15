@@ -1435,6 +1435,37 @@ screen name_input(message, ok_action):
 
                 textbutton _("OK") action ok_action
 
+screen final_console(message, ok_action, output_var="console_choice", characters="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz", len = 12):
+    ## Ensure other screens do not get input while this screen is displayed.
+    modal True
+
+    zorder 200
+
+    style_prefix "console"
+    
+    key "K_RETURN" action [Play("sound", gui.activate_sound), ok_action]
+
+    frame:
+
+        vbox:
+            xalign .5
+            yalign .5
+            spacing 30
+
+            label _(message):
+                style "console_prompt"
+                xalign 0.5
+            hbox:
+                label _(">"):
+                    style "console_prompt"
+                input default "" value VariableInputValue(output_var) length len allow characters font "mod_assets/gui/CourierNew.ttf" color "#0f0"
+            
+            hbox:
+                xalign 0.5
+                spacing 100
+
+                textbutton _("Confirm") action ok_action
+
 screen dialog(message, ok_action):
 
     ## Ensure other screens do not get input while this screen is displayed.
@@ -1507,14 +1538,28 @@ screen confirm(message, yes_action, no_action):
     #key "game_menu" action no_action
 
 
+# Since the console window functions the same as the name entry box,
+# I'm just piggybacking off the code which was already here to save time.
+# This is sort of a quick hack approach, but should work. - Gold
 style confirm_frame is gui_frame
+style console_frame is gui_frame
 style confirm_prompt is gui_prompt
+style console_prompt is gui_prompt
 style confirm_prompt_text is gui_prompt_text
+style console_prompt_text is gui_prompt_text
 style confirm_button is gui_medium_button
+style console_button is gui_medium_button
 style confirm_button_text is gui_medium_button_text
+style console_button_text is gui_medium_button_text
 
 style confirm_frame:
     background Frame([ "gui/confirm_frame.png", "gui/frame.png"], gui.confirm_frame_borders, tile=gui.frame_tile)
+    padding gui.confirm_frame_borders.padding
+    xalign .5
+    yalign .5
+
+style console_frame:
+    background Frame([ "gui/confirm_frame.png", "gui/console.png"], gui.confirm_frame_borders, tile=gui.frame_tile)
     padding gui.confirm_frame_borders.padding
     xalign .5
     yalign .5
@@ -1525,12 +1570,28 @@ style confirm_prompt_text:
     text_align 0.5
     layout "subtitle"
 
+style console_prompt_text:
+    font "mod_assets/gui/CourierNew.ttf"
+    color "#0f0"
+    outlines []
+    text_align 0.5
+    layout "subtitle"
+
 style confirm_button:
     properties gui.button_properties("confirm_button")
     hover_sound gui.hover_sound
     activate_sound gui.activate_sound
 
+style console_button:
+    properties gui.button_properties("confirm_button")
+    hover_sound gui.hover_sound
+    activate_sound gui.activate_sound
+
 style confirm_button_text is navigation_button_text:
+    properties gui.button_text_properties("confirm_button")
+
+style console_button_text is navigation_button_text:
+    font "mod_assets/gui/CourierNew.ttf"
     properties gui.button_text_properties("confirm_button")
 
 

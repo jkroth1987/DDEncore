@@ -1966,6 +1966,21 @@ image yuri strobe:
     # copied from yuri 3y3
     #im.Composite((960, 960), (0, 0), "yuri/2l.png", (0, 0), "yuri/2r.png", (0, 0))
 
+image monika strobe:
+    block:
+        "mod_assets/sprites/m_nightmare1.png" # First image
+        0.1 # Wait this many seconds
+        "mod_assets/sprites/m_nightmare2.png" # Second image
+        0.1 # Wait this many seconds
+        "mod_assets/sprites/m_nightmare3.png" # Third image
+        0.1 # Wait this many seconds
+        repeat
+    
+    # Uncomment these lines to end the effect automatically
+    #time 3.0 After this many seconds, stop flashing and show the next image
+    # copied from monika 1b
+    # im.Composite((960, 960), (0, 0), "monika/1l.png", (0, 0), "monika/1r.png", (0, 0), "monika/b.png")
+
 #This channel is used for times when secondary tracks are needed to be played aside music.
 #like if we needed m1 to play AND heartbeat to play
 init python:
