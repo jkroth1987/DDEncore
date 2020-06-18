@@ -694,8 +694,8 @@ screen game_menu(title, scroll=None):
 
     if not main_menu and persistent.playthrough == 2 and not persistent.menu_bg_m and renpy.random.randint(0, 49) == 0:
         on "show" action Show("game_menu_m")
-    
-    if main_menu:        
+
+    if main_menu:
         textbutton _("Return"):
             style "return_button"
             action [Hide("preferences"), Hide("load")]
@@ -1435,14 +1435,14 @@ screen name_input(message, ok_action):
 
                 textbutton _("OK") action ok_action
 
-screen final_console(message, ok_action, output_var="console_choice", characters="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz", len = 12):
+screen final_console(message, ok_action, output_var="console_choice", characters="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789", len = 12):
     ## Ensure other screens do not get input while this screen is displayed.
     modal True
 
     zorder 200
 
     style_prefix "console"
-    
+
     key "K_RETURN" action [Play("sound", gui.activate_sound), ok_action]
 
     frame:
@@ -1459,7 +1459,7 @@ screen final_console(message, ok_action, output_var="console_choice", characters
                 label _(">"):
                     style "console_prompt"
                 input default "" value VariableInputValue(output_var) length len allow characters font "mod_assets/gui/CourierNew.ttf" color "#0f0"
-            
+
             hbox:
                 xalign 0.5
                 spacing 100

@@ -153,9 +153,9 @@ define audio.e20 = "<loop 0>mod_assets/audio/Yuri_Confession.ogg" #Yuri Confessi
 define audio.e21 = "<loop 0>mod_assets/audio/Poems Are Forever.ogg" #Monika Ending Music (Good)
 define audio.e22 = "<loop 0>mod_assets/audio/Doki Doki Pound.ogg" #Natsuki Ending Music
 define audio.e23 = "<loop 0>mod_assets/audio/Unleashed.ogg" #Monika Unleashed
-
-
-
+define audio.e24 = "<loop 0>mod_assets/audio/The Purple Maiden.ogg" #Yuri Ending Music
+define audio.e25 = "<loop 0>mod_assets/audio/Clear Skies" #Sayori Ending Music
+define audio.e26 = "<loop 0>mod_assets/audio/The Decision" #Decision Making Music
 
 # Backgrounds
 image black = "#000000"
@@ -1598,6 +1598,9 @@ define s_makeup = True  #Make up with Sayori?
 define n_makeup = True #Make up with Natsuki?
 define m_makeup = True #Make up with Monika?
 define y_makeup = True #Make up with Yuri?
+define can_date_sayori = False #Player can date Sayori
+define can_date_natsuki = False #Player can date Natsuki
+define can_date_yuri = False #Player can date Yuri
 
 
 # Instantiating variables for poem appeal. This is how much each character likes the poem for each day.
@@ -1975,7 +1978,7 @@ image monika strobe:
         "mod_assets/sprites/m_nightmare3.png" # Third image
         0.1 # Wait this many seconds
         repeat
-    
+
     # Uncomment these lines to end the effect automatically
     #time 3.0 After this many seconds, stop flashing and show the next image
     # copied from monika 1b

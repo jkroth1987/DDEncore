@@ -1633,15 +1633,8 @@ hide sayori
 show monika 1q at t11 zorder 1
 "I put my hand on Monika's shoulder, she still doesn't respond."
 "{cps=25}Moni-{nw}"
-show m_nightmare1 as monika at face
 play audio scary_scream
-<<<<<<< HEAD
-show m_unleashed1 as monika at t11 zorder 1
-=======
-#Monika Strobe effect goes here
-#Monika Glowing Eyes Sprite
-show monika strobe as monika at t11 zorder 1
->>>>>>> cc18fb447829ad04c5c639cf8b80c44c1613209d
+show monika strobe as monika at face
 "I immediately fall backwards and scurry away from Monika."
 show sayori 4w at t21 zorder 1
 show m_unleashed1 as monika at t22 zorder 2
@@ -2220,11 +2213,8 @@ hide natsuki
 show monika 1q at t11 zorder 1
 "I put my hand on Monika's shoulder, she still doesn't respond."
 "{cps=25}Moni-{nw}"
-show m_nightmare1 as monika at face
 play audio scary_scream
-#Monika Strobe effect goes here
-#Monika Glowing Eyes Sprite
-show monika strobe as monika at t11 zorder 1
+show monika strobe as monika at face zorder 1
 "I immediately fall backwards and scurry away from Monika."
 show natsuki scream at t21 zorder 1
 show m_unleashed1 as monika at t22 zorder 2
@@ -3272,11 +3262,8 @@ hide yuri
 show monika 1q at t11 zorder 1
 "I put my hand on Monika's shoulder, she still doesn't respond."
 "{cps=25}Moni-{nw}"
-show m_nightmare1 as monika at face
 play audio scary_scream
-#Monika Strobe effect goes here
-#Monika Glowing Eyes Sprite
-show monika strobe as monika at t11 zorder 1
+show monika strobe as monika at face
 "I immediately fall backwards and scurry away from Monika."
 show yuri 3p at t21 zorder 1
 show m_unleashed1 as monika at t22 zorder 2

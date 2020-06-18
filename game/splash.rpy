@@ -16,10 +16,14 @@ init python:
         "Every good story deserves an encore!",
         "This game is an unofficial fan work, unaffiliated with Team Salvato.",
         "Please support Doki Doki Literature Club.",
+        "Please check out DDLCMods.Com!"
+        "Please check out goldencrabstudios.com!"
+        "12 Characters."
         "Monika is watching you code.",
         "Sayori sees your cookies.",
         "Natsuki wants your cupcakes.",
         "Yuri likes reading with you.",
+        "The last 4 messages will help you later on..."
         "Subscribe to Pewdiepie!",
         "Justice for Spartanboi.",
         "Your choices matter more than you think.",
@@ -32,7 +36,7 @@ init python:
         "1273 down the Rockefeller street!",
         "The Fitnessgram Pacer test...",
         "Karen took the kids so I made this mod.",
-        "Carole Baskin killed her husband",
+        "Carole Baskin killed her husband.",
         "Why are you trying to find more splash messages? Just play the mod, man!"
     ]
 

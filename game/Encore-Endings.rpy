@@ -372,6 +372,7 @@ m 2c "It's already loaded in. All of you have to do is press enter, and I'll tak
 m 2m "If you don't..."
 m 2n "Well, just don't make it come to that, please."
 show monika 2d
+play music e26 fadein 2.0
 "Monika looks on in anticipation as I slowly walk up and examine the console."
 "I let out shaky breath as I look at my options."
 "I can enter in the code..."
@@ -391,6 +392,7 @@ label ending_choices:
 
 
 label ending_1:
+stop music fadeout 2.0
 "My enitre arm violently shakes as I close my eyes and press the enter key."
 "I step away at the console and turn to Monika and the others."
 show sayori 4v
@@ -600,6 +602,7 @@ call encore_credits
 
 
 label ending_2:
+stop music fadeout 2.0
 show sayori 1t
 show monika 1h
 show yuri 3w
@@ -791,7 +794,7 @@ $renpy.call_screen("final_console", "Input your command", ok_action=Jump("proces
 label process_console_message:
     # Make the choice lowercase so we can ignore the case the player typed in.
     $ console_choice = console_choice.lower()
-    
+
     # This is the logic I remember us talking about.
     # Update as needed! - Gold
     if console_choice == "sayori" or console_choice == "yuri" or console_choice == "natsuki":
@@ -800,6 +803,7 @@ label process_console_message:
         jump ending_5
 
 label ending_4:
+stop music
 show sayori 1p at s41 zorder 1
 show monika shock as monika at t42 zorder 2
 show yuri 2w at s43 zorder 3
@@ -877,6 +881,7 @@ label ending_dilemma:
 
 
 label ending_5:
+stop music
 show monika 1i
 m "Just what do you think you're doing, [player]?"
 m 1h "Did you really expect that to work?"
@@ -1064,14 +1069,20 @@ m 1r "And then we'll be thrown right back to where we started."
 show natsuki 5n
 m 1o "Doomed to repeat the same story over and over again without any knowledge of it..."
 show sayori 1k
-m 3n "Or the script breaks, which will make all the files stop functioning, which will force the game to crash and can never be opened again."
+m 3r "I can't deny there's a chance that this world somehow continues to exist without a script to go on..."
+m 1p "Maybe we'll be finally free to do what we want without being forced to follow the script..."
+m 1q "But, I don't know if that'll happen for sure..."
+y 3f "What happens if the script breaks?"
+show yuri 1e
+m 3n "If the script breaks, all the files stop functioning, which will force the game to crash. The game can never be opened again."
 m 1o "We'll be put into an enternal slumber..."
 m 1p "Admittedly, deleting your character files would've freed up space for the script to continue on..."
 m 1n "Though that's only a temporary solution..."
 m 1p "I'd just be delaying the problem..."
 s 4v "I don't want to die...!"
 s 4w "There has to be something we can do! Anything!"
-y 1h "Can't the script be re-organized again? It could try to free up some space..."
+y 1h "Can't the script be re-organized again? That could free up some space..."
+show yuri 1e
 n 1h "But that's just delaying the problem, like Monika said..."
 n 1q "We have to get out of here..."
 y 1h "Well how can we possibly leave 'here'?"
@@ -1505,6 +1516,29 @@ hide monika
 "Monika steps away as I'm prompted with a virtual, floating menu."
 
 
+if hangout1 == "Sayori" or hangout2 == "Sayori" or hangout3 == "Sayori":
+    $ can_date_sayori = True
+
+if hangout1 == "Natsuki" or hangout2 == "Natsuki" or hangout3 == "Natsuki":
+    $ can_date_natsuki = True
+
+if hangout1 == "Yuri" or hangout2 == "Yuri" or hangout3 == "Yuri":
+    $ can_date_yuri = True
+
+
+menu:
+    "Who do I want to commit to?"
+
+    "Monika":
+        jump ending_10
+    "Sayori" if can_date_sayori:
+        jump ending_8
+    "Natsuki" if can_date_natsuki:
+        jump ending_9
+    "Yuri" if can_date_yuri:
+        jump ending_11
+    "...":
+        jump ending_12
 
 
 #Sayori: Ending 8
@@ -2098,22 +2132,22 @@ with open_eyes
 "I know the player cares about her just as much as I do. I hope we can both care and watch over her together..."
 "Thank you, whoever you are."
 "You'll always be welcome in the Literature Club..."
-show sayori 12b at t11 zorder 1
+show sayori 1bb at t11 zorder 1
 
 if s_makeup == False:
     if n_love == True or y_love == True:
         s "Hey, [player]! You ready to head out?"
-        show sayori 12y
+        show sayori 1by
         mc "You know it!"
-        show sayori 12q
+        show sayori 1bq
         "I stand up to join Sayori as we head off towards the city to enjoy our evening together, as friends."
 
 
 else:
     s "Hey, [player]! You ready to go for our date?"
-    show sayori 12y
+    show sayori 1by
     mc "You know it!"
-    show sayori 22q
+    show sayori 2bq
     "I take Sayori's hand as we walk off towards the city to enjoy our evening together."
 
 scene black
@@ -2470,11 +2504,11 @@ with open_eyes
 "I know the player cares about her just as much as I do. I hope we can both care and watch over her together..."
 "Thank you, whoever you are."
 "You'll always be welcome in the Literature Club..."
-show natsuki 42ba
+show natsuki 4bc at t11 zorder 1
 n "Hey, [player]! You ready to go for our date?"
-show natsuki 12bc
+show natsuki 2ba
 mc "You know it!"
-show natsuki 23bz
+show natsuki 2bz
 "I take Natsuki's hand as we walk off towards the city to enjoy our evening together."
 scene black
 with dissolve_scene_full
@@ -2487,14 +2521,23 @@ call encore_credits
 
 label ending_10:
 "I want to be in a relationship with Monika."
-show monika 1g
+show monika 1g at t11 zorder 1
 m "[player]..."
 m "You're...{w=0.38}serious?!?"
 m 3p "After everything I've done..."
 m 1q "All the horrible sins I've committed just to try to win you over..."
-m 1h "You...{w=0.38}still want me?!?"
+m 1g "You...{w=0.38}still want me?!?"
 mc "I do."
 m 1f "Why?"
+
+if hangout1!= "Monika" and hangout2!= "Monika" and hangout3!= "Monika":
+    m 1g "We never even spent anytime together..."
+    m 1n "Honestly I just put myself as an option as my last chance to try to be with you..."
+    m 1p "I didn't think you'd actually pick me..."
+
+else:
+    pass
+
 show monika 1p
 mc "Monika...{w=0.38}I've always wanted to be with you."
 show monika 1m
@@ -2792,6 +2835,8 @@ n 1l "And hey, I hope you keep Monika happy."
 n 1t "You'll be hearing from me if you don't!"
 n 1n "Especially if she tries to kill us again."
 mc "Noted, Natsuki."
+show natsuki at thide
+hide natsuki
 show yuri 1a at t11 zorder 1
 "Yuri is the next one to approach me."
 y 1q "It's hard to believe that we're finally at the end of this saga..."
@@ -2912,11 +2957,11 @@ with open_eyes
 "I know the player cares about her just as much as I do. I hope we can both care and watch over her together..."
 "Thank you, whoever you are."
 "You'll always be welcome in the Literature Club..."
-show mb1b as monika at t11 zorder 1
+show monika 1bb at t11 zorder 1
 m "Hey, [player]! Ready to go?"
-show mb5a as monika at t11 zorder 1
+show monika 5ba at t11 zorder 1
 mc "You know it!"
-show mb1j as monika at t11 zorder 1
+show monika 1bj at t11 zorder 1
 "I take Monika's hand as we walk off towards the city to enjoy our evening together."
 scene black
 with dissolve_scene_full
@@ -3171,6 +3216,8 @@ n 1z "Bye, [player]!"
 n 1l "And hey, I hope you keep Yuri happy."
 n 1t "You'll be hearing from me if you don't!"
 mc "Noted, Natsuki."
+show natsuki at thide
+hide natsuki
 show yuri 3q at t11 zorder 1
 "Finally, Yuri is the last one to approach me."
 y "[player]...{w=0.38}I'm a little surprised..."
@@ -3263,11 +3310,11 @@ with open_eyes
 "And I know the player does too."
 "Thank you, whoever you are."
 "You'll always be welcome in the Literature Club..."
-show yuri 12bb at t11 zorder 1
+show yuri 1bb at t11 zorder 1
 y "Hello, [player]! You ready to enjoy our evening out?"
-show yuri 12bc
+show yuri 1ba
 mc "You know it!"
-show yuri 12bc
+show yuri 1bc
 "I take Yuri's hand as we walk off towards the city to enjoy our evening together."
 scene black
 with dissolve_scene_full
@@ -3280,7 +3327,8 @@ call encore_credits
 #Single Ending
 
 label ending_12:
-"I think it's best that I stay single for right now."
+"..."
+"I think it's best that I stay single for right now..."
 show monika 1e at t11 zorder 1
 m "So...{w=0.38}that's your choice, huh?"
 m 1m "I will say I wasn't expecting that one."
