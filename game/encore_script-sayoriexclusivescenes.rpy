@@ -5797,7 +5797,7 @@ if encore_sayoriquestion_1 == False:
     hide sayori
 
 
-#show cg
+
 "With Sayori secured, we begin walking back on the path we came, illuminated by the lightpoles scattered along the path and the stars above us."
 "Walking back, I notice several small animals scurrying around in the shadows, presumably looking for food."
 "I'm able to make out a few squirrels and rabbits, but it's hard to make out exact details with it being so dark by this point."
@@ -5805,7 +5805,6 @@ if encore_sayoriquestion_1 == False:
 "I turn to her, and she's simply starting ahead with the biggest grin on her face, enjoying latching on to my arm."
 stop music fadeout 2.0
 "I simply smile to myself as we continue to make the journey home, with the sound of animals frolicking behind us."
-#Fadeout CG
 scene bg residential_night
 with open_eyes
 "It was a mostly silent walk back."

@@ -1,4 +1,5 @@
-﻿#This is a copy of credits.rpy from DDLC.
+
+#This is a copy of credits.rpy from DDLC.
 #Use this as a starting point if you would like to override with your own.
 #Import the datetime library for using time
 init python:
@@ -16,18 +17,17 @@ init python:
     c_text_1 = """Created and Directed By: Andrew J. Striedl
 Writers: Agent Gold, Bug, Nick (Canad1an),
 Ploxmaster708, Rudy, Andrew J. Striedl
-Artists: 3Monika4 (Monika), Elaina Sasso, Kiiori,
+Artists: 3Monika4 (Monika), Elaina Sasso, Kiiorim,
  @reenaki_m (Instagram), Tat-bunny (https://www.deviantart.com/tat-bunny)
 Music: Daniel Kruyer (Angelic Beast) and DeNomaly"""
 
     # 2
     # 8 lines, +350 pixels
     c_text_2 = """Coders: Agent Gold, Bug, Nico, Andrew J. Striedl
-Art Contributors: Kent Stone, SkynnarahSerenity49, vayar2000
+Art Contributors: Kent Stone, kyoryii, SkynnarahSerenity49, vayar2000
 Coding Contributor: POBAW
 General Contributions: Nep, Rezzy
-Image Editing: POBAW, TheD0ctor,
-Agent Gold, Andrew J. Striedl
+Image Editing: POBAW, TheD0ctor, Agent Gold, Andrew J. Striedl
 Image Editing Contributor: AjTheYandere
 Sound Contributor: DeNomaly
 Writing Contributors: Lucy CN, Jacob Smallman"""
@@ -93,7 +93,8 @@ Inspired By:
 Doki Doki: The Festival
 Doki Doki: Exit Music
 Doki Doki: Monika After Story
-Doki Doki: Literature Club"""
+Doki Doki: Literature Club
+Jedi Knight: Fallen Order (For Music)"""
 
     # 6
     # 4 lines, +150 pixels
@@ -313,6 +314,7 @@ Crying Yuri Sprites from Doki Doki: Exit Music
 Crying Monika Sprites from Doki Doki: Exit Music
 Casual Monika Sprites by Cyrke on https://imgur.com/gallery/keKxUoB
 Original Monika Shrugging Sprite on https://knowyourmeme.com/photos/1337212-doki-doki-literature-club
+Jumbled up Natsuki and Yuri Sprites by kyoryii
 Other Unique Sprites by Agent Gold"""
 
     # 10
@@ -469,7 +471,7 @@ The MC as """ + player
     scene black
     $ consolehistory = []
     #play music "<from 50.0>bgm/credits.ogg" noloop # Credits song
-    play music e6 noloop
+    play music credits_song noloop # <-- No need to set it anywhere in here
     $ starttime = datetime.datetime.now()
     pause 0.88
     show encore_credits_logo

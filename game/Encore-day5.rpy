@@ -2251,11 +2251,7 @@ hide natsuki
 $ renpy.pause(delay=0.10)
 window show(None)
 play sound "sfx/s_kill_glitch1.ogg"
-show image "mod_assets/sprites/end-glitch1.png" at t21 zorder 1
-pause 0.10
-play sound "sfx/s_kill_glitch1.ogg"
-hide image "mod_assets/sprites/end-glitch1.png"
-show image "mod_assets/sprites/end-glitch2.png" at t21 zorder 1
+show image "mod_assets/sprites/n_glitch.png" at t21 zorder 1
 show m_unleashed2 as monika at t22 zorder 2
 "Without warning, Natsuki's body is broken apart into little pieces that repeatedly revovle around themseleves mid-air."
 "I honestly can't believe what I'm seeing..."
@@ -2269,7 +2265,7 @@ play sound "sfx/s_kill_glitch1.ogg"
 pause 0.25
 stop sound
 hide screen tear
-hide image "mod_assets/sprites/end-glitch2.png"
+hide image "mod_assets/sprites/n_glitch.png"
 hide screen tear
 show bg space_room
 show mask_2
@@ -3300,11 +3296,7 @@ hide yuri
 $ renpy.pause(delay=0.10)
 window show(None)
 play sound "sfx/s_kill_glitch1.ogg"
-show image "mod_assets/sprites/end-glitch1.png" at t21 zorder 1
-pause 0.10
-play sound "sfx/s_kill_glitch1.ogg"
-hide image "mod_assets/sprites/end-glitch1.png"
-show image "mod_assets/sprites/end-glitch2.png" at t21 zorder 1
+show image "mod_assets/sprites/y_glitch.png" at t21 zorder 1
 show m_unleashed2 as monika at t22 zorder 2
 "Without warning, Yuri's body is broken apart into little pieces that repeatedly revovle around themseleves mid-air."
 "I honestly can't believe what I'm seeing..."
@@ -3318,7 +3310,7 @@ play sound "sfx/s_kill_glitch1.ogg"
 pause 0.25
 stop sound
 hide screen tear
-hide image "mod_assets/sprites/end-glitch2.png"
+hide image "mod_assets/sprites/y_glitch.png"
 hide screen tear
 show bg space_room
 show mask_2

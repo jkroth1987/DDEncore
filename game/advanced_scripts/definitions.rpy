@@ -154,8 +154,8 @@ define audio.e21 = "<loop 0>mod_assets/audio/Poems Are Forever.ogg" #Monika Endi
 define audio.e22 = "<loop 0>mod_assets/audio/Doki Doki Pound.ogg" #Natsuki Ending Music
 define audio.e23 = "<loop 0>mod_assets/audio/Unleashed.ogg" #Monika Unleashed
 define audio.e24 = "<loop 0>mod_assets/audio/The Purple Maiden.ogg" #Yuri Ending Music
-define audio.e25 = "<loop 0>mod_assets/audio/Clear Skies" #Sayori Ending Music
-define audio.e26 = "<loop 0>mod_assets/audio/The Decision" #Decision Making Music
+define audio.e25 = "<loop 0>mod_assets/audio/Clear Skies.ogg" #Sayori Ending Music
+define audio.e26 = "<loop 0>mod_assets/audio/The Decision.ogg" #Decision Making Music
 
 # Backgrounds
 image black = "#000000"
@@ -1601,6 +1601,7 @@ define y_makeup = True #Make up with Yuri?
 define can_date_sayori = False #Player can date Sayori
 define can_date_natsuki = False #Player can date Natsuki
 define can_date_yuri = False #Player can date Yuri
+define audio.credits_song = "<loop 0>mod_assets/audio/Encore.ogg" # Copying e6 as the default value
 
 
 # Instantiating variables for poem appeal. This is how much each character likes the poem for each day.
@@ -1694,6 +1695,9 @@ image cg n_day3_h2 = "mod_assets/cgs/n_day3_h2.png"
 image cg city_cg_monika = "mod_assets/cgs/city_cg_monika.png"
 image cg city_cg_monika2 = "mod_assets/cgs/city_cg_monika2.png"
 image cg yuri_butterfly = "mod_assets/cgs/yuri_butterfly.png"
+image cg m_sorry_mist = "mod_assets/cgs/m_sorry_mist.png"
+image cg m_sorry_alt = "mod_assets/cgs/m_sorry_alt.png"
+
 
 #Encore's New Sprites
 image monika s = "mod_assets/sprites/ms.png"
@@ -1937,6 +1941,7 @@ image y_cry5 = "mod_assets/sprites/y_cry5.png"
 image y_cry6 = "mod_assets/sprites/y_cry6.png"
 image pen = "mod_assets/sprites/pen.png"
 image y_cut = "mod_assets/sprites/y_cut.png"
+image y_glitch = "mod_assets/sprites/y_glitch.png"
 #image yuri u122218 = im.Composite((960, 960), (0, 0), "mod_assets/character_images/yuri/1_uniform/1_body_left/1.png", (0, 0), "mod_assets/character_images/yuri/1_uniform/2_body_right/2.png", (0, 0), "mod_assets/character_images/yuri/2_face/base.png", (0, 0), "mod_assets/character_images/yuri/2_face/1_mouth/2.png", (0, 0), "mod_assets/character_images/yuri/2_face/2_nose/2.png", (0, 0), "mod_assets/character_images/yuri/2_face/3_eyes/1.png", (0, 0), "mod_assets/character_images/yuri/2_face/4_eyebrows/8.png")
 #image yuri u114221 = im.Composite((960, 960), (0, 0), "mod_assets/character_images/yuri/1_uniform/1_body_left/1.png", (0, 0), "mod_assets/character_images/yuri/1_uniform/2_body_right/1.png", (0, 0), "mod_assets/character_images/yuri/2_face/base.png", (0, 0), "mod_assets/character_images/yuri/2_face/1_mouth/4.png", (0, 0), "mod_assets/character_images/yuri/2_face/2_nose/2.png", (0, 0), "mod_assets/character_images/yuri/2_face/3_eyes/2.png", (0, 0), "mod_assets/character_images/yuri/2_face/4_eyebrows/1.png")
 #image yuri u125111 = im.Composite((960, 960), (0, 0), "mod_assets/character_images/yuri/1_uniform/1_body_left/1.png", (0, 0), "mod_assets/character_images/yuri/1_uniform/2_body_right/2.png", (0, 0), "mod_assets/character_images/yuri/2_face/base.png", (0, 0), "mod_assets/character_images/yuri/2_face/1_mouth/5.png", (0, 0), "mod_assets/character_images/yuri/2_face/2_nose/1.png", (0, 0), "mod_assets/character_images/yuri/2_face/3_eyes/1.png", (0, 0), "mod_assets/character_images/yuri/2_face/4_eyebrows/1.png")

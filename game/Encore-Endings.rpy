@@ -466,7 +466,10 @@ y 3y6 "I'll be sure to keep everything...{w=0.38}warm for you, [player]!"
 y 3y5 "HAHAHAHA...."
 show yuri at thide
 hide yuri
+play sound "sfx/s_kill_glitch1.ogg"
+show image "mod_assets/sprites/y_glitch.png" at h43 zorder 3
 "Like Sayori, Yuri is broken apart into tiny puzzle pieces."
+hide image "mod_assets/sprites/y_glitch.png"
 play sound "sfx/s_kill_glitch1.ogg"
 "Yuri's chunks disappear instantly...{w=0.38}almost as if she was never here..."
 m "You're up. "
@@ -485,7 +488,10 @@ n 1v "I'M DONE WITH YOUR LIES! I'M DONE WITH MONIKA'S CRAP! I'M DONE WITH EVERYT
 n 1x "Just get it over with already!"
 show natsuki at thide
 hide natsuki
+play sound "sfx/s_kill_glitch1.ogg"
+show image "mod_assets/sprites/n_glitch.png" at h44 zorder 4
 "Natsuki's body is broken apart into chunks as well."
+hide image "mod_assets/sprites/n_glitch.png"
 play sound "sfx/s_kill_glitch1.ogg"
 "Like Sayori's and Yuri's, Natsuki's chunks disappear without a trace..."
 show monika 1f at t11 zorder 1
@@ -1467,7 +1473,7 @@ show yuri 1a at t43 zorder 3
 show natsuki 5a at t44 zorder 4
 "I open my eyes again to see everyone smiling gratefully in the same old clubroom we've all come to call our home away from home."
 mc "So...{w=0.38}it worked?"
-m 2e "Yes, [player]. I've surrundered my administrator access back to you completely and the script has plenty of room to function for a while."
+m 2e "Yes, [player]. I've surrendered my administrator access back to you completely and the script has plenty of room to function for a while."
 m 2p "I'm not sure for how long, though..."
 show monika 2d
 s 1h "Does it really matter though?"
@@ -1530,15 +1536,20 @@ menu:
     "Who do I want to commit to?"
 
     "Monika":
+        $ audio.credits_song = audio.e21
         jump ending_10
     "Sayori" if can_date_sayori:
+        $ audio.credits_song = audio.e25
         jump ending_8
     "Natsuki" if can_date_natsuki:
+        $ audio.credits_song = audio.e22
         jump ending_9
     "Yuri" if can_date_yuri:
-        jump ending_11
+         $ audio.credits_song = audio.e24
+         jump ending_11
     "...":
-        jump ending_12
+         $ audio.credits_song = audio.e6 # <-- This is where to set it to the default
+         jump ending_12
 
 
 #Sayori: Ending 8
@@ -1631,15 +1642,19 @@ m "But I just want you all to know how deeply ashamed I am of myself and how sor
 y "Sorry isn't going to cut it this time, Monika..."
 show yuri_knife1 as yuri at t33 zorder 3
 y "And in this case...{w=0.38}I mean that literally!"
-#Cue CG
+show cg m_sorry_alt zorder 10
 play sound stab
 "Yuri lunges forward and plunges the knife into Monika's chest."
 "My jaw drops in horror as I watch Monika gasps in pain helplessly as Yuri slowly plunges the knife deeper."
-show noise zorder 5:
+show noise zorder 10:
     alpha 0.0
     linear 1.0 alpha 0.4
 show layer master at dizzy(1.0, 1.0)
+show cg m_sorry_mist zorder 10
 "I suddenly start to feel whoozy..."
+"My vision becomes hazy as I stand shell shocked at what's unfolding infront of me."
+"Monika, for her part, isn't even looking at Yuri or any of the others."
+"Rather, she looks at me, tears and blood streaming down her face."
 s "Let me have me my turn..."
 s "Thanks to Monika, we know the turth!"
 s "Which means we get to do things like this now!"
@@ -1695,7 +1710,7 @@ n "If you wanna break her neck, do it like this..."
 "Natsuki gets behind Monika and places her hand right on Monika's neck."
 play music hb
 show layer master at heartbeat
-show noise zorder 5:
+show noise zorder 10:
     alpha 0.0
     linear 1.0 alpha 0.4
 show layer master at dizzy(1.0, 1.0)
