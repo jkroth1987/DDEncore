@@ -809,6 +809,7 @@ This is a placeholder for Sayori's breakup poem.\
     text = """\
 This is a placeholder for Sayori's poem to end her friendship with the player.\
 """
+    )
 
 #These are the images used to show a poem
 image paper =  "images/bg/poem.jpg"
