@@ -794,6 +794,21 @@ But perhaps she had done nothing wrong. Perhaps instead, the problem was that th
 
 She called out to him with the only voice she knew how to comfortably use."""
     )
+    
+    poem_s_breakup = Poem(
+    author = "sayori",
+    title = "The End",
+    text = """\
+This is a placeholder for Sayori's breakup poem.\
+"""
+    )
+    
+    poem_s_unfriendzone = Poem(
+    author = "sayori",
+    title = "Grow Up",
+    text = """\
+This is a placeholder for Sayori's poem to end her friendship with the player.\
+"""
 
 #These are the images used to show a poem
 image paper =  "images/bg/poem.jpg"
