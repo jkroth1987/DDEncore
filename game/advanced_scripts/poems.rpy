@@ -795,7 +795,7 @@ But perhaps she had done nothing wrong. Perhaps instead, the problem was that th
 She called out to him with the only voice she knew how to comfortably use."""
     )
 
-    #poem_s_breakup = Poem(
+    poem_s_breakup = Poem(
     author = "sayori",
     title = "The End",
     text = """\
@@ -821,12 +821,12 @@ Bittersweet perhaps, but without a bite.
 Maybe it's best if we can be grateful
 For the day that came before the night.
 
-Of course, even if the story is good, 
+Of course, even if the story is good,
 Not every ending is a good one.\
 """
-#    )
+    )
 
-    #poem_s_unfriendzone = Poem(
+    poem_s_unfriendzone = Poem(
     author = "sayori",
     title = "Grow Up",
     text = """\
@@ -859,7 +859,7 @@ As I watch the rising sun.
 There's no room for anger, or hate, or spite,
 You just have to know when to be {u}done{/u}.
 """
-    )
+   )
 
 #These are the images used to show a poem
 image paper =  "images/bg/poem.jpg"

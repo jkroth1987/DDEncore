@@ -30,6 +30,7 @@ General Contributions: Nep, Rezzy
 Image Editing: POBAW, TheD0ctor, Agent Gold, Andrew J. Striedl
 Image Editing Contributor: AjTheYandere
 Sound Contributor: DeNomaly
+Poem Writer: Agent Gold
 Writing Contributors: Lucy CN, Jacob Smallman"""
 
     # 3
