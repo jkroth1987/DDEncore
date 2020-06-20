@@ -350,11 +350,11 @@ play sound page_turn
 
 if encore_sayoriquestion_1 == True:
     #letter1
-    call showpoem(poem=poem_s_breakup, music=False, track=None, revert_music=False)
+    call showpoem(poem=poem_s_breakup, music=False, track=None, revert_music=False, paper="blue_paper")
 
 if encore_sayoriquestion_1 == False:
     #letter2
-    call showpoem(poem=poem_s_unfriendzone, music=False, track=None, revert_music=False)
+    call showpoem(poem=poem_s_unfriendzone, music=False, track=None, revert_music=False, paper="blue_paper")
 
 "..."
 "Oh no..."

@@ -865,6 +865,7 @@ You just have to know when to be {u}done{/u}.
 image paper =  "images/bg/poem.jpg"
 image purple_paper = "mod_assets/bgs/purple_poem.jpg"
 image pink_paper = "mod_assets/bgs/pink_poem.jpg"
+image blue_paper = "mod_assets/bgs/blue_poem.png"
 
 #This is the glitchy paper
 image paper_glitch = LiveComposite((1280, 720), (0, 0), "paper_glitch1", (0, 0), "paper_glitch2")
