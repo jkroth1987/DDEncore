@@ -675,35 +675,35 @@ that I feel such fulfillment because of it
 
 I never want to be apart."""
     )
-    
+
     poem_n_love = Poem(
     author = "natsuki",
     title = "My Day With You",
     text = """\
-My day with you, 
+My day with you,
 Was perfect, it's true.
-You and I, 
+You and I,
 Preparing sweets.
 Who could've known,
 I'd be swept off my feet?
 
-Baking with you, 
+Baking with you,
 Broke down my walls,
-I just hope, 
+I just hope,
 I wasn't the only one to fall.
 
 Ever since that day,
 I've felt a connection.
 I can't hide anymore,
 This is my confession.
-I love you, 
+I love you,
 More than words can say.
 All thanks to our special day.
 
 Love
 ~Natsuki"""
     )
-    
+
     poem_n_like = Poem(
     author = "natsuki",
     title = "The Mouse Wants To Play",
@@ -733,7 +733,7 @@ If she does, will you take time to play with her one day?
 
 Will you play with me?"""
     )
-    
+
     poem_y_love = Poem(
     author = "yuri",
     title = "Caligraphy",
@@ -767,7 +767,7 @@ For the two of them to create together.
 With all of my love,
 ~Yuri"""
     )
-    
+
     poem_y_like = Poem(
     author = "yuri",
     title = "Purple Lily",
@@ -794,16 +794,16 @@ But perhaps she had done nothing wrong. Perhaps instead, the problem was that th
 
 She called out to him with the only voice she knew how to comfortably use."""
     )
-    
-    poem_s_breakup = Poem(
+
+    #poem_s_breakup = Poem(
     author = "sayori",
     title = "The End",
     text = """\
 This is a placeholder for Sayori's breakup poem.\
 """
-    )
-    
-    poem_s_unfriendzone = Poem(
+#    )
+
+    #poem_s_unfriendzone = Poem(
     author = "sayori",
     title = "Grow Up",
     text = """\
