@@ -799,7 +799,30 @@ She called out to him with the only voice she knew how to comfortably use."""
     author = "sayori",
     title = "The End",
     text = """\
-This is a placeholder for Sayori's breakup poem.\
+Every good story must come to an end.
+
+Snow that was so pretty will melt in spring.
+Flowers blooming strong will wither before long.
+The tastiest meal only lasts as long as you make it.
+
+No story ever started went forever,
+The final words must be penned.
+Even if it's unfinished, you can never
+Get away from your story's end.
+
+Seasons change, sunrise leads to sunset,
+And even the most beautiful relationship
+Between the best of friends
+Can end suddenly
+If she decides she's had enough.
+
+But an ending doesn't have to be harsh, or hateful.
+Bittersweet perhaps, but without a bite.
+Maybe it's best if we can be grateful
+For the day that came before the night.
+
+Of course, even if the story is good, 
+Not every ending is a good one.\
 """
 #    )
 
@@ -807,8 +830,36 @@ This is a placeholder for Sayori's breakup poem.\
     author = "sayori",
     title = "Grow Up",
     text = """\
-This is a placeholder for Sayori's poem to end her friendship with the player.\
+Sometimes I wish I could be a kid forever.
+I long for the days when things were simpler,
+When my toughest problem was wanting a toy I couldn't have,
+and staying up late was exciting.
+
+But I outgrew the toys and games from back then,
+And I wear bigger clothing now too.
+I've left behind most of my childhood den.
+Turns out I outgrew you.
+
+I could never forget what my childhood was like.
+Watching fireflies on a summer evening.
+Wrapping up together under a blanket in the cold
+Watching our favorite movie
+With hot chocolate
+And marshmallows.
+Trying out a new game, seeing who could make it farther.
+I could never forget that.
+
+So how much would it take for me to say,
+Forget you?
+
+I wish I didn't know.
+
+My older self will remember fondly
+As I watch the rising sun.
+There's no room for anger, or hate, or spite,
+You just have to know when to be {u}done{/u}.
 """
+    )
 
 #These are the images used to show a poem
 image paper =  "images/bg/poem.jpg"

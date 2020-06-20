@@ -794,6 +794,7 @@ show monika 1h
 "Ok...{w=0.38}what do we enter in here?"
 #Typable Console
 window hide
+$ renpy.choice_for_skipping()
 $ console_choice = ""
 $renpy.call_screen("final_console", "Input your command", ok_action=Jump("process_console_message"))
 
