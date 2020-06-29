@@ -25,7 +25,7 @@ with wipeleft_scene
 "It's something the club's never gone through..."
 "But, maybe it was bound to happen at some point."
 "Four different girls...{w=0.38}with such different personalities..."
-"Throw a guy like me into the mix, and it's a recipie for drama..."
+"Throw a guy like me into the mix, and it's a recipe for drama..."
 "Well, I guess I got what I asked for..."
 "But...{w=0.38}was it worth it?"
 "..."
@@ -95,11 +95,11 @@ if hangout3 == "Sayori":
 
 
         else:
-            "I dobut she even wants to talk to me right now, let alone see me!"
+            "I doubt she even wants to talk to me right now, let alone see me!"
             "I should've taken her up on the chance to talk things through..."
             "Who knows what kind of state of mind she's in?"
             "Well, hopefully she's feeling better about everything now..."
-            "I just hope I didn't struck too bad of a nerve..."
+            "I just hope I didn't strike too bad of a nerve..."
             jump day5_walk3
             #Cold Shoulder Sequence
 
@@ -268,12 +268,12 @@ mc "But, going back is our only way to fix this..."
 show sayori 1f
 mc "Maybe..."
 show sayori 1k
-"Sayori nervously looks off again in the direction of the school again."
-"Though I can tell she's just not thinking about the club meeting today."
+"Sayori nervously looks off again in the direction of the school."
+"Though I can tell she's not just thinking about the club meeting today."
 mc "What's wrong?"
 show sayori 1l
-"Sayori nerously laughs."
-"Well that's not exactly an optimistc sign..."
+"Sayori nervously laughs."
+"Well that's not exactly an optimistic sign..."
 s 1h "[player], I've been thinking about something..."
 show sayori 1g
 mc "Yeah?"
@@ -287,13 +287,13 @@ show sayori 1g
 mc "Are you sure, Sayori?"
 s 1h "[player]..."
 s 1g "Look..."
-"Sayori brushes up against me and takes my hand in her's."
+"Sayori brushes up against me and takes my hand in hers."
 s 2h "If for whaetever reason things don't work out, it's fine..."
 s 2k "I'd hate to lose them as friends, but..."
 s 2t "I'll always have you..."
 
 if encore_sayoriquestion_1 == True:
-    s "I'm glad that I'm you're girlfriend..."
+    s "I'm glad that I'm your girlfriend..."
 
 if encore_sayoriquestion_1 == False:
     s "I'm glad that you're my friend..."
@@ -303,14 +303,14 @@ s 2d "Your real friends are the ones who stick by you in the end..."
 s 2t "Like how you're here for me now, always taking care of me..."
 mc "I just know I could've done a better job, Sayori..."
 mc "This is all my fault."
-s 2k "I bare some responsbility too, [player]..."
+s 2k "I bare some responsibility too, [player]..."
 s 2h "They clearly have a misunderstanding with me, and well, I need to sort it out."
 mc "We're really doing this together then, huh?"
 s 2q "Yep!"
 mc "I guess I wouldn't have it any other way."
 show sayori 1d
-"Sayori realses my hand and glances up at me with a hopeful, optimistic look in her eyes I haven't seen before..."
-"Leave it to her to end up doing the inspriring for me..."
+"Sayori releases my hand and glances up at me with a hopeful, optimistic look in her eyes I haven't seen before..."
+"Leave it to her to end up doing the inspiring for me..."
 "Well, let's put this energy to good use."
 "After a brief nod to each other, we begin our walk to school, ready to face down whatever might come our way..."
 show sayori at thide
@@ -319,11 +319,11 @@ scene bg corridor
 with wipeleft_scene
 "As soon as we walked through the front doors, I felt a rather unsettling feeling hanging in the air."
 show sayori 1k at t11 zorder 1
-"At first, i wasn't sure if it was just me, but when I turned to Sayori I knew she felt it too."
+"At first, I wasn't sure if it was just me, but when I turned to Sayori I knew she felt it as well."
 "Maybe it was just all in our heads, maybe it was something we ate..."
 "But I can't say I've ever felt like this before..."
 show sayori 1f
-"Sayori turns to me, starting wearingly."
+"Sayori turns to me, staring wearingly."
 show sayori 1d
 "I force a smile and that seems to be enough to reassure her that we're doing the right thing."
 "As we're walking to Sayori's class, the hallways become increasingly crowded as students make their way to their first class."
@@ -331,7 +331,7 @@ show sayori 1k
 "But even that feels off."
 "Hardly anybody's talking to each other, and aside from the occasional sound of somebody opening or closing their locker or walking past us, there's hardly an audible sound throughout the hallway."
 show sayori 1f
-"Sayori and I share an uncomfortable look before we just decide to just wave each other good-bye as I make my way to my own class."
+"Sayori and I share an uncomfortable look before we just decide to wave each other good-bye as I make my way to my own class."
 show sayori at thide
 hide sayori
 jump day5_confront
@@ -339,7 +339,7 @@ jump day5_confront
 label day5_walk2:
 scene bg residential_day
 with wipeleft_scene
-"I walk out the front door and look around to see that Sayori is no where to be seen."
+"I walk out the front door and look around to see that Sayori is nowhere to be seen."
 "As I'm pulling out my phone to text her, I notice out of the corner of my eye something hanging on my door."
 "I fully turn myself around to find a piece of paper taped to my door."
 "That wasn't there before..."
@@ -358,7 +358,7 @@ if encore_sayoriquestion_1 == False:
 
 "..."
 "Oh no..."
-"I crumble up the paper in my hand as I feel my eyes starting to water and anger course through my veins."
+"I crumble up the paper in my hand as I feel my eyes staring to water and anger course through my veins."
 "I fucked up..."
 "I fucked it all up..."
 "How..."
@@ -381,7 +381,7 @@ if encore_sayoriquestion_1 == True:
     "She's my girlfriend! How could've I been so stupid to throw away what we had?!?"
 
 if encore_sayoriquestion_1 == False:
-    "She was my best friend! How could've I forgotten that she was still sensitive around me and that I needed to be careful?!?!"
+    "She was my best friend! How could have I forgotten that she was still sensitive around me and that I needed to be careful?!?!"
 
 
 "It doesn't matter now..."
@@ -471,12 +471,12 @@ if hangout3 == "Natsuki" or "Monika" or "Yuri":
 s 1k "So, whatever you decide, just get it over with."
 mc "I will."
 show sayori 1k
-"Sayori nervously looks off again in the direction of the school again."
-"Though I can tell she's just not thinking about the club meeting today."
+"Sayori nervously looks off again in the direction of the school."
+"Though I can tell she's not just thinking about the club meeting today."
 mc "What's wrong?"
 show sayori 1l
-"Sayori nerously laughs."
-"Well that's not exactly an optimistc sign..."
+"Sayori nervously laughs."
+"Well that's not exactly an optimistic sign..."
 s 1h "[player], I've been thinking about something else..."
 show sayori 1g
 mc "Yeah?"
@@ -494,7 +494,7 @@ s 1l "Well it's either that or things are just going to keep happening again and
 s 1k "And as Vice President, I need to do everything that I can to ensure that it doesn't."
 mc "I 100 percent agree with you, Sayori."
 mc "I'll be right there to support you. You can count on it."
-"Sayori glances at me with uncertainty before letting out another sigh and begining our walk to school."
+"Sayori glances at me with uncertainty before letting out another sigh and beginning our walk to school."
 show sayori at thide
 hide sayori
 scene bg corridor
@@ -513,16 +513,16 @@ if encore_sayoriquestion_1 == False:
 "After today, it honestly wouldn't surprise me if Sayori and I end up splitting after this is all resolved..."
 show sayori 1k
 "She hasn't exactly been giving me encouraging signs either..."
-"Well whatever happens, I need to face the consquences..."
+"Well whatever happens, I need to face the consequences..."
 "Whatever happens, I deserve it."
 "But hopefully, I can avoid a worst case scenario..."
 "As we're walking to Sayori's class, the hallways become increasingly crowded as students make their way to their first class."
 "But even that feels off."
 "Hardly anybody's talking to each other, and aside from the occasional sound of somebody opening or closing their locker or walking past us, there's hardly an audible sound throughout the hallway."
-"After several minutes of increasingly uncomofrtable silence, we finally reach Sayori's classroom."
+"After several minutes of increasingly uncomfortable silence, we finally reach Sayori's classroom."
 show sayori 1f
 "Sayori and I just simply stare at each other, unsure of what's the best thing to say to break the ice without breaking each other further..."
-"I let out a sigh and try to say the most diploamtic thing that comes to mind..."
+"I let out a sigh and try to say the most diplomatic thing that comes to mind..."
 mc "I'll see you later at the club, okay?"
 mc "We'll get through this, together."
 s 1k "Alright, [player]."
@@ -539,30 +539,30 @@ label day5_confront:
 scene bg class_day
 with wipeleft_scene
 "For the rest of the day, it almost seems like time has stopped entirely."
-"It feels like I'm just simply trapped in an empty room with no one else around me, starting blankly ahead at an empty board."
+"It feels like I'm just simply trapped in an empty room with no one else around me, staring blankly ahead at an empty board."
 "Even though that's not the case, I'm really just not paying attention. Not that I ever do."
-"But for once maybe I should, that would help wash down the dread I've been feeling since I woke up this morning, but the mateiral is just so boring!"
-"I just simply lean back in my seat and nod occassionally to whatever the teacher is saying, and silently praying that he doesn't call on me to answer one of his questions."
+"But for once maybe I should, that would help wash down the dread I've been feeling since I woke up this morning, but the material is just so boring!"
+"I just simply lean back in my seat and nod occasionally to whatever the teacher is saying, and silently pray that he doesn't call on me to answer one of his questions."
 "Still, this has to eventually end, right?"
-"I look over at the clock and see that there's about a half hor left before class is over and I can face my fears in the literature club."
-"Oh well, if there's one thing I know how to do:{w=0.38}it's kill time."
+"I look over at the clock and see that there's about a half hour left before class is over and I can face my fears in the literature club."
+"Oh well, if there's one thing I know how to do, it's kill time."
 "I decided to map out on paper some of the possible scenarios of what could happen in the club, trying to account for the good, the bad and the ugly..."
 "Thankfully it still looks like I'm paying attention as everyone else around me is writing down notes on what the teacher's saying."
-"Being the dilligent student as always..."
+"Being the diligent student as always..."
 scene black
 with close_eyes
 scene bg class_day
 with open_eyes
 $ renpy.pause(delay=0.2, hard=True)
 play sound school
-"At long last, the school bell finally rings. Though I can't say if it was for or better or worse that it finally rang..."
+"At long last, the school bell finally rings. Though I can't say if it was for better or worse that class is over..."
 "I stand up and slide the books off my desk and into my bookbag as I start the inevitable walk to the literature club."
 scene bg corridor
 with wipeleft_scene
 "I'm sure to take my time getting to the Literature Club."
 "Usually, I'd be in a rush to get there. But today's different..."
 "As I'm walking, the anxiety I've been feeling all day only gets worse and I begin to question the whole point of this."
-"What if we really all are able to come to terms with what happened and move on?"
+"What if we are able to come to terms with what happened and move on?"
 "Will things ever truly be the same?"
 "What if they don’t show up?"
 "What if we have another repeat of yesterday, or worse..."
@@ -624,7 +624,7 @@ if hangout3 == "Sayori" or hangout3 == "Monika":
         "She opens her book but she quickly puts it down and faces me again."
         y 2t "Y-{w=0.38}you don’t hate me...{w=0.38}do you [player]?"
         show yuri 2o
-        "I struggle to find the right words to articulate my feelings torwards Yuri at the present moment."
+        "I struggle to find the right words to articulate my feelings towards Yuri at the present moment."
         "I want to avoid upsetting Yuri..."
         show yuri
         mc "I don’t hate you, Yuri."
@@ -687,7 +687,7 @@ if hangout3 == "Sayori" or hangout3 == "Monika":
         show natsuki 1n
         "Now I see what Sayori meant. She didn’t want me to have these malicious and vengeful thoughts about the others."
         show natsuki 5m
-        n "I know you're probably the last person you want to here from right now, but..."
+        n "I know you're probably the last person you want to hear from right now, but..."
         show natsuki 5r
         "Natsuki struggles to keep going. Her face lights up in embarrassment as I see tears start to form in her beautiful, pink eyes."
         "I'll lend her a hand here..."
@@ -699,7 +699,7 @@ if hangout3 == "Sayori" or hangout3 == "Monika":
         "Natsuki walks to the back of the room and sets her stuff down, but not before turning to face me one last time."
         n 5m "Y-{w=0.38}you don’t hate me...{w=0.38}right?"
         show natsuki 4n
-        "I struggle to find the right words to articulate my feelings torwards Natsuki at the present moment."
+        "I struggle to find the right words to articulate my feelings towards Natsuki at the present moment."
         "I want to avoid upsetting her..."
         show natsuki 5n
         mc "I don’t hate you, Natsuki."
@@ -893,10 +893,10 @@ if hangout3 == "Natsuki":
             "Natsuki nervously grimaces."
             mc "What's wrong?"
             show natsuki 5u
-            "Natsuki lets out a shakey breath before proceeding."
+            "Natsuki lets out a shaky breath before proceeding."
             n 5m "Y-{w=0.38}you don’t hate me...{w=0.38}right?"
             show natsuki 4n
-            "I struggle to find the right words to articulate my feelings torwards Natsuki at the present moment."
+            "I struggle to find the right words to articulate my feelings towards Natsuki at the present moment."
             "I want to avoid upsetting her..."
             show natsuki 5n
             mc "I don’t hate you, Natsuki."
@@ -917,7 +917,7 @@ if hangout3 == "Natsuki":
             show natsuki 5n
             mc "I know you will."
             show natsuki 5a
-            "I force a smile to alieviate Natsuki's anxiety, something which she seems to take kindly to."
+            "I force a smile to alleviate Natsuki's anxiety, something which she seems to take kindly to."
             n 5t "Hey, you know something? Maybe we'll finally get everything settled and we can go back to the way things were before all this..."
             n "I really miss reading manga with you..."
             mc "I do too, Natsuki."
@@ -968,23 +968,23 @@ if hangout3 == "Yuri":
     show yuri 3e
     mc "I can't say I have either."
     y 3h "I mean who would've thought that the club would be brought to this point?"
-    y 1o "I know I share some of the resposnbility, but maybe if I didn't act out, maybe things would be better..."
+    y 1o "I know I share some of the responsibility, but maybe if I didn't act out, maybe things would be better..."
     show yuri 1e
     mc "Yuri..."
     mc "This is mostly my fault. I wouldn't blame yourself."
     mc "But hopefully, we can make things right again here."
     show yuri 1o
     y "Yeah, me too..."
-    "Yuri's voice trails off as she anixiously stares at the floor."
+    "Yuri's voice trails off as she anxiously stares at the floor."
     mc "What's wrong?"
     y 3p "What? Nothing! Nothing!"
     y 2q "Nothing's wrong..."
     show yuri 1n
     mc "Yuri..."
     "How do I put this delicately?"
-    mc "Look, I'm not holding you soley resposnible for what happened. I think we all deserve some of the blame."
+    mc "Look, I'm not holding you solely responsible for what happened. I think we all deserve some of the blame."
     show yuri 3v
-    mc "You said some things that obvioulsy shouldn't have been said, and I shouldn't have walked out on you guys."
+    mc "You said some things that obviously shouldn't have been said, and I shouldn't have walked out on you guys."
     mc "But I'm hopeful we'll be able to reconcile everyone's differences..."
     show yuri 3w
     "Yuri lets out a sigh."
@@ -1020,8 +1020,8 @@ if hangout3 == "Yuri":
             mc "Me too..."
             show yuri 3q
             "Yuri tries to shoot me an optimistic smile but she can tell I'm not really in the mood to return the favor."
-            y "Well, I can't blame you for not seeing any upside to our present situation. Truthfully, there probably isn't much other then the understanding we reached."
-            y 3l "The last 24 hours have been rather nightmareish..."
+            y "Well, I can't blame you for not seeing any upside to our present situation. Truthfully, there probably isn't much other than the understanding we reached."
+            y 3l "The last 24 hours have been rather nightmarish..."
             show yuri 3e
             mc "And I'm really the one to blame for all that."
             mc "This is all my fault."
@@ -1054,7 +1054,7 @@ if hangout3 == "Yuri":
             mc "That's true..."
             show yuri 3q
             "Yuri tries to shoot me an optimistic smile but she can tell I'm not really in the mood to return the favor."
-            y "Well, I can't blame you for not seeing any upside to our present situation. Truthfully, there probably isn't much other then the understanding we reached."
+            y "Well, I can't blame you for not seeing any upside to our present situation. Truthfully, there probably isn't much other than the understanding we reached."
             y 3l "It's all just really unfortunate..."
             show yuri 3e
             mc "No one did."
@@ -1103,7 +1103,7 @@ if hangout3 == "Yuri":
 
     if y_makeup == False:
         if n_love == False:
-            y 3v "Well, I'm not entirley sure if I really do trust you, [player]..."
+            y 3v "Well, I'm not entirely sure if I really do trust you, [player]..."
             show yuri 3q
             "Yuri nervously laughs and grimaces."
             mc "What's wrong?"
@@ -1112,9 +1112,9 @@ if hangout3 == "Yuri":
             show yuri 4c
             "Yuri nervously turns herself away from me."
             mc "Yuri, you can tell me. Don't worry."
-            "Yuri let's out a shakey breath before meekly turning around."
+            "Yuri let's out a shaky breath before meekly turning around."
             y  "Y-{w=0.38}you don’t hate me...{w=0.38}right?"
-            "I struggle to find the right words to articulate my feelings torwards Natsuki at the present moment."
+            "I struggle to find the right words to articulate my feelings towards Natsuki at the present moment."
             "I want to avoid upsetting her..."
             show yuri 4a
             mc "I don’t hate you, Yuri."
@@ -1136,7 +1136,7 @@ if hangout3 == "Yuri":
             y 3w "I just hope everyone can forgive each other."
             mc "I'm sure things will be back to normal in time."
             show yuri 1s
-            "I force a smile to alieviate Yuri's anxiety, something which she seems to take kindly to."
+            "I force a smile to alleviate Yuri's anxiety, something which she seems to take kindly to."
             y 2u "Hopefully once everything has calmed down, we can go back to reading..."
             y 2j "I really do miss reading with you..."
             show yuri 1a
@@ -1176,7 +1176,7 @@ show sayori 1k at t22 zorder 2
 "After a few more minutes of waiting, Monika arrives in with Sayori."
 "I’m a little surprised to see them walk in together."
 "I guess that’s what was keeping them."
-"Maybe Sayori made ammends with Monika already. At least that'd make things a little easier..."
+"Maybe Sayori made amends with Monika already. At least that'd make things a little easier..."
 show monika at thide
 hide monika
 show sayori 1g at t11 zorder 1
@@ -1204,7 +1204,7 @@ show monika 3r
 "She says that far less enthusiastically than she normally does."
 show monika 3q
 "I detect a hint of sadness in Monika’s voice."
-"Looks like she really wasn’t looking forward today either..."
+"Looks like she really wasn’t looking forward to today either..."
 show monika 3q at t41 zorder 1
 show sayori 1k at t42 zorder 2
 show yuri 1o at t43 zorder 3
@@ -1222,16 +1222,16 @@ show monika 1r
 m 3q "What happened yesterday..."
 m 1i "Can never happen again in this club."
 "I somehow manage to feel even more unsettled by Monika's words."
-"For whatever reason, my anxiety keeps spiking everytime she talks..."
+"For whatever reason, my anxiety keeps spiking every time she talks..."
 "Maybe it's just the guilt..."
 "I glance at the others who are all looking down at the floor in shame."
 m 1h "Something...{w=0.38}must be done about this."
-"Monika then stops pacing and ia now directly in front of me. The room is dead quiet."
+"Monika then stops pacing and is now directly in front of me. The room is dead quiet."
 show monika 5a
 "She forms her signature smile at me. But rather than feel welcomed or reassured, I only continue to feel more anxious..."
 show monika smirk
 m "So, I think it’s important that we’re all on the same page going forward."
-m "Given that we we’re all arguing about [player] yesterday, and our bickering made him walk out on us..."
+m "Given that we were all arguing about [player] yesterday, and our bickering made him walk out on us..."
 show monika 5a
 show sayori 1g
 show yuri 1n
@@ -1268,20 +1268,20 @@ if encore_sayoriquestion_1 == True:
     show monika 1h
     show sayori 1t
     show yuri 3v
-    "One by one the girls shoot either and irritated or dejected look at me, but Sayori only smiles as she holds back tears."
+    "One by one the girls shoot either an irritated or dejected look at me, but Sayori only smiles as she holds back tears."
     mc "I really don’t think that there’s anything that’s going to change that."
     mc "I chose to be in this relationship with her not to spite any of you..."
     "My voice starts to break."
     show monika 2h
     show natsuki 4n
     mc "But...{w=0.38}because I’ve come to realize lately..."
-    mc "I love her...{w=0.38}and she needs me more now than ever..."
+    mc "I love her...{w=0.38}and she needs me now more than ever..."
 
     if s_makeup == False:
         mc "I've caused enough drama to our relationship, and I just want to get us back to where we were before all this happened."
         mc "Those are my true feelings."
 
-    if else:
+    else:
         pass
 
 if encore_sayoriquestion_1 == False:
@@ -1291,7 +1291,7 @@ if encore_sayoriquestion_1 == False:
     show monika 1h
     show sayori 1t
     show yuri 3v
-    "One by one the girls shoot either and irritated or dejected look at me, but Sayori only smiles as she holds back tears."
+    "One by one the girls shoot either an irritated or dejected look at me, but Sayori only smiles as she holds back tears."
     mc "I don't want anyone to ruin the friendship I have with her."
     mc "But I don't want to upset any of you either. That was never my intention and I'm sorry that it came across like that."
     mc "I have a lot of my mind and I don't know who I'm really settled on."
@@ -1303,7 +1303,7 @@ if encore_sayoriquestion_1 == False:
         mc "I've messed up our friendship enough, and I just want to get us back to where we were before all this happened."
         mc "That's how I really feel about all this..."
 
-    if else:
+    else:
         pass
 
 
@@ -1322,7 +1322,7 @@ s "E-{w=0.38}everyone...{w=0.38}the...{w=0.38}thing...{w=0.38}thing is..."
 show natsuki 5n
 "Sayori looks at Monika, then to me, Natsuki and finally to Yuri."
 show monika 1m
-"Monika manages an uneasy grin as Natsuki and Yuri countine to look on at Sayori."
+"Monika manages an uneasy grin as Natsuki and Yuri continue to look on at Sayori."
 "I didn’t realize how hard this would be for Sayori to come out about her depression."
 "Maybe we should've had a dry run..."
 s 2v  "I..."
@@ -1344,7 +1344,7 @@ mc "Let me go after her! Please!"
 show monika 1r
 "Monika sighs."
 m 1q "Go for it."
-"Monika says irritability."
+"Monika says irritably."
 "What the hell is up with her?"
 "Oh well, I’ll deal with it later."
 show monika at thide
@@ -1384,7 +1384,7 @@ if poem_giver == "Natsuki":
     show n_shock as natsuki at thide
     hide n_shock as natsuki
     scene bg corridor
-    "Just as I exit the room, I hear her cry out out to me."
+    "Just as I exit the room, I hear her cry out to me."
     n "[player], wait!"
     n "Let me-"
     jump day5_sayoricomfort
@@ -1422,7 +1422,7 @@ if poem_giver == "Yuri":
     show y_cry1 as yuri at t11 zorder 1
     "Yuri breaks down into a hysterical sob. Before she's able to properly speak again, I'm already out the door."
     scene bg corridor
-    "Just as I exit the room, I hear her cry out out to me."
+    "Just as I exit the room, I hear her cry out to me."
     y "[player], wait!"
     y "I should-"
     jump day5_sayoricomfort
@@ -1516,7 +1516,7 @@ mc "The entire time, I waited on the other side...{w=0.38}not knowing how you fe
 mc "But you did do it. You got up onto the top of the fence pretty easily at least."
 s 1l "Yeah...{w=0.38}I remember now..."
 mc "You remember how you got stuck up there."
-mc "You were afraid too afraid of falling and hurting yourself."
+mc "You were afraid of falling and hurting yourself."
 mc "But I promised that I’d catch you if it came to that."
 show sayori 1v
 "Sayori’s eyes continue to tear up as she remembers the story with me."
@@ -1531,14 +1531,14 @@ show sayori 1t
 mc "Yes."
 show sayori 2t
 "I smile warmly at her as I put my hands on her cheeks."
-"Our eyes lock onto each other. Our faces barley a few inches apart."
+"Our eyes lock onto each other. Our faces barely a few inches apart."
 mc "Just to even try to climb that fence...{w=0.38}all by yourself...{w=0.38}to me, that was so brave of you to do, Sayori."
 mc "I was proud of you then, just like I am now."
 mc "And I...{w=0.38}guess I caught you again, didn't I?"
 mc "You'll be fine, and we'll get to enjoy all these crazy adventures again..."
 mc "I wouldn't want to do it with anyone. That spot's reserved for my one true love."
 "Sayori's face is now totally red from both crying and blushing."
-"It's a mircale that I haven't cracked a tear yet myself, but it's definitely getting there..."
+"It's a miracle that I haven't cracked a tear yet myself, but it's definitely getting there..."
 "Hopefully I can hang on for a few more minutes..."
 mc "Sayori...{w=0.38}I don’t know what it was that made you like this."
 mc "But...{w=0.38}maybe I’ve been where you have."
@@ -1555,7 +1555,7 @@ stop music fadeout 2.0
 show sayori 1t at t11 zorder 1
 "I help Sayori stand up, our eyes continuing to lock on to each other."
 "I've never seen her this happy before..."
-"After everything that's happend in the last 24 hours or so, it's hard to believe we finally got to this point..."
+"After everything that's happened in the last 24 hours or so, it's hard to believe we finally got to this point..."
 "It's not over yet though..."
 mc "Come on, let's get back."
 show sayori 4o
@@ -1605,7 +1605,7 @@ show white zorder 4:
     alpha 0.6
     linear 0.25 alpha 0.0
 play audio thunder
-"Out of no where, a thunder storm rolls up on us."
+"Out of nowhere, a thunderstorm rolls up on us."
 "What the hell? Wasn't it sunny just a minute ago?"
 window show(None)
 show screen tear(20, 0.1, 0.1, 0, 40)
@@ -1616,7 +1616,7 @@ hide screen tear
 scene bg club_nothing
 show monika 1q at t21 zorder 1
 show sayori 4m at t22 zorder 2
-"The next thing I know, it's night time, and all the stuff in the classroom has vanished."
+"The next thing I know, it's nighttime, and all the stuff in the classroom has vanished."
 "Not only that, but we're all standing in different spots..."
 s 4w "Guys, what's going on?!?!"
 s 4v "I'm scared..."
@@ -1626,7 +1626,7 @@ mc "Monika?"
 "She doesn't respond."
 mc "Monika?"
 "I say loudly."
-"I reach to my hand out to put on Monika's shoulder."
+"I reach my hand out to put on Monika's shoulder."
 mc "Monika, are you alright?"
 show sayori at thide
 hide sayori
@@ -1658,13 +1658,13 @@ show sayori 2w at t42 zorder 2
 show m_unleashed2 as monika at s32 zorder 1
 show sayori 2w at s42 zorder 2
 play sound "sfx/fall.ogg"
-"Sayori again yells in pain as she forced to her knees by Monika."
+"Sayori again yells in pain as she is forced to her knees by Monika."
 "Meanwhile, I find myself at the back of the room, unable to get up or speak."
 "What the hell is going on?!?!"
 "What is this?!?!"
 "Sayori tries to fight to get Monika off of her, but she too seems to be frozen in place."
 $ style.say_dialogue = style.edited
-m "I've waited along time for this..."
+m "I've waited a long time for this..."
 $ style.say_dialogue = style.normal
 show sayori at thide
 hide sayori
@@ -1677,7 +1677,7 @@ play sound "sfx/s_kill_glitch1.ogg"
 hide image "mod_assets/sprites/end-glitch1.png"
 show image "mod_assets/sprites/end-glitch2.png" at t21 zorder 1
 show m_unleashed2 as monika at t22 zorder 2
-"Without warning, Sayori's body is broken apart into little pieces that repeatedly revovle around themseleves mid-air."
+"Without warning, Sayori's body is broken apart into little pieces that repeatedly revolve around themselves mid-air."
 "I honestly can't believe what I'm seeing..."
 "This can't be real!"
 "This has to be another dream!"
@@ -1719,14 +1719,14 @@ show image Solid("ff0000") as i1 onlayer front:
     additive 1.0
 show image Solid("#440000") as i2 onlayer front:
     additive 0.4
-"I turn around and I see Monika slowly walking torwards me."
+"I turn around and I see Monika slowly walking towards me."
 "I begin pounding on the door, screaming for Natsuki, Yuri or anyone to help me."
 "The closer Monika gets to me, the more lightheaded I become..."
 "I can't see straight...."
-"My breathing becomes ragged as I feel splitting pain in my head.."
+"My breathing becomes ragged as I feel splitting pain in my head..."
 "I think there's blood in my eyes..."
 show m_unleashed1 as monika at face
-"Monika tower over me, the emerald light glowing in the place of her eyes."
+"Monika towers over me, the emerald light glowing in the place of her eyes."
 show m_unleashed2 as monika at face
 "She slowly outstretches her hand to me."
 mc "No! Stop! Get away from me!"
@@ -1739,7 +1739,7 @@ mc "GET AWAY!"
 "I can't even feel my arms and legs..."
 "My head is spinning at a million miles an hour, it feels totally weightless..."
 "My vision is filled red with blood..."
-"I try to look to see if there's anything I can use to defend myself against Monika, but they won't stop looking at Monika's glowing emerald eyes..."
+"I try to look to see if there's anything I can use to defend myself, but my eyes won't stop looking at Monika's..."
 "I can't feel my arms and legs, they've gone completely numb..."
 "It's no use..."
 "I can't do anything..."
@@ -1774,8 +1774,8 @@ show sayori 1v
 mc "I'll...{w=0.38}wait outside..."
 mc "Come out when you're ready to talk."
 show sayori 4u
-"Sayori stiffly nods as she goes back to burrying her face in her hands."
-"As soon I exit out the door, I hear her soft sobs resume."
+"Sayori stiffly nods as she goes back to burying her face in her hands."
+"As soon as I exit out the door, I hear her soft sobs resume."
 stop music fadeout 2.0
 show sayori at thide
 hide sayori
@@ -1818,8 +1818,8 @@ show image Solid("ff0000") as i1 onlayer front:
     additive 1.0
 show image Solid("#440000") as i2 onlayer front:
     additive 0.4
-"Without warning, Monika's eyes suddenly glow a bright emerald green as she clasps onto my shoulders."
-"I'm barley able to choke out a cry of pain as I feel my energy being drained out."
+"Without warning, Monika's eyes suddenly glow a bright emerald green as she grabs onto my shoulders."
+"I'm barely able to choke out a cry of pain as I feel my energy being drained out."
 "I try to push Monika off, but no matter what I do, I'm unable to escape Monika's grasp."
 "My eyes keep staring into Monika's as if they're frozen in place..."
 "My vision is filled red with blood..."
@@ -1829,7 +1829,7 @@ show image Solid("#440000") as i2 onlayer front:
 "I hear nothing but ringing in my ears..."
 "My head feels as if it's about to crack into two..."
 "I feel entirely weightless..."
-"My body is sending so many signals to my brain that I can barley process what's going on."
+"My body is sending so many signals to my brain that I can barely process what's going on."
 "I can't even defend myself..."
 "Surely enough, I begin to lose consciousness."
 "Or is it death's embrace?"
@@ -1864,7 +1864,7 @@ show monika 1h
 show sayori 1g
 show yuri 3v
 show natsuki_sweet as natsuki at t44 zorder 4
-"One by one the girls shoot either and irritated or dejected look at me, but Natsuki only smiles as she holds back tears."
+"One by one the girls shoot either an irritated or dejected look at me, but Natsuki only smiles as she holds back tears."
 mc "I really don’t think that there’s anything that’s going to change that."
 mc "I want to be in a relationship with her not to spite any of you..."
 "My voice starts to break."
@@ -1908,7 +1908,7 @@ n "E-{w=0.38}everyone...{w=0.38}the...{w=0.38}thing...{w=0.38}thing is..."
 show natsuki 12a
 "Natsuki looks at Monika, then to me, Sayori and finally to Yuri."
 show monika 1m
-"Monika manages an uneasy grin as Sayori and Yuri countine to look on at Natsuki."
+"Monika manages an uneasy grin as Sayori and Yuri continue to look on at Natsuki."
 show natsuki 12d
 "I didn’t realize how hard this would be for Natsuki to come out about her home life."
 "Maybe we should've had a dry run..."
@@ -1933,7 +1933,7 @@ mc "Let me go after her! Please!"
 show monika 1r
 "Monika sighs."
 m 1q "Go for it."
-"Monika says irritability."
+"Monika says irritably."
 "What the hell is up with her?"
 "Oh well, I’ll deal with it later."
 show monika at thide
@@ -1975,7 +1975,7 @@ mc "I’m not the one you need to apologize to right now."
 show y_cry1 as yuri at t11 zorder 1
 "Yuri breaks down into a hysterical sob. Before she's able to properly speak again, I'm already out the door."
 scene bg corridor
-"Just as I exit the room, I hear her cry out out to me."
+"Just as I exit the room, I hear her cry out to me."
 y "[player], wait!"
 y "I should-"
 jump day5_natsukicomfort
@@ -2015,9 +2015,9 @@ play music e19 fadein 1.0
 "Natsuki stares at me with her glossy eyes."
 n 12h "Eh?"
 mc "Why don't you want me to see you like this?"
-n 12f "Because I said so! Becuase I'm weak and pathetic! I barley own up to anything!"
+n 12f "Because I said so! Because I'm weak and pathetic! I barely own up to anything!"
 n 12h "I'm not strong enough to do this, [player]! There's nothing you can do to help me!"
-mc "That's where you're wrong, natsuki."
+mc "That's where you're wrong, Natsuki."
 n 12i "H-{w=0.38}how?"
 show natsuki 12h
 "Natsuki's voice shakes uncontrollably as tears continue to stream down her face and fall onto the floor."
@@ -2037,7 +2037,7 @@ show natsuki 12f
 n 12g "And that's not the worst part!"
 n 12i "My dad...{w=0.38}he..."
 n 42g "He insults me in every way imaginable..."
-n 42h "He's...{w=0.38}even hits me..."
+n 42h "He...{w=0.38}even hits me..."
 n 42d "And anytime I fight back, it gets worse..."
 n 12f "No matter what I do...{w=0.38}I just can't win!"
 "Natsuki breaks down again and resumes her sobbing."
@@ -2091,7 +2091,7 @@ mc "It's because I..."
 "Is it too soon?"
 n "What?"
 n 12b "That you pity me?"
-n 12c "I get it, I'm a short, helpess little girl who needs a big strong man to help fight her battles."
+n 12c "I get it, I'm a short, helpless little girl who needs a big strong man to help fight her battles."
 n 12d "I've heard it a hundred times now. It's getting old."
 n 12c "I need to do this alone..."
 n "Somehow..."
@@ -2117,7 +2117,7 @@ mc "And I'm prepared to do whatever it takes to make you happy, starting by fixi
 mc "I know you, Natsuki, and I love every single part of you, whether it's your strengths or imperfections..."
 show natsuki_sweet as natsuki at t11 zorder 1
 "Natsuki's tear stained face finally manages to form a bright smile."
-"For a few moments, she's completelty silent, just simply standing there looking at the floor in total bliss."
+"For a few moments, she's completely silent, just simply standing there looking at the floor in total bliss."
 "I think I might've overdone it..."
 "Natsuki starts to sniffle as I see tears start to surface in her eyes again."
 "Though these aren't tears of sadness..."
@@ -2134,7 +2134,7 @@ stop music fadeout 2.0
 show natsuki_sweet as natsuki at t11 zorder 1
 "I help Natsuki stand up, but she quickly looks away as she grins uncontrollably from ear to ear."
 "I've never seen her this happy before..."
-"After everything that's happend in the last 24 hours or so, it's hard to believe we finally got to this point..."
+"After everything that's happened in the last 24 hours or so, it's hard to believe we finally got to this point..."
 "It's not over yet though..."
 mc "Come on, let's get back."
 show natsuki 5k
@@ -2185,7 +2185,7 @@ show white zorder 4:
     alpha 0.6
     linear 0.25 alpha 0.0
 play audio thunder
-"Out of no where, a thunder storm rolls up on us."
+"Out of nowhere, a thunderstorm rolls up on us."
 "What the hell? Wasn't it sunny just a minute ago?"
 window show(None)
 show screen tear(20, 0.1, 0.1, 0, 40)
@@ -2196,7 +2196,7 @@ hide screen tear
 scene bg club_nothing
 show monika 1q at t21 zorder 1
 show natsuki 1p at t22 zorder 2
-"The next thing I know, it's night time, and all the stuff in the classroom has vanished."
+"The next thing I know, it's nighttime, and all the stuff in the classroom has vanished."
 "Not only that, but we're all standing in different spots..."
 n "Guys, what's going on?!?!"
 n "T-{w=0.38}this has to be a dream, right?"
@@ -2206,7 +2206,7 @@ mc "Monika?"
 "She doesn't respond."
 mc "Monika?"
 "I say loudly."
-"I reach to my hand out to put on Monika's shoulder."
+"I reach my hand out to put on Monika's shoulder."
 mc "Monika, are you alright?"
 show natsuki at thide
 hide natsuki
@@ -2238,13 +2238,13 @@ show natsuki 1o  at t42 zorder 2
 show m_unleashed2 as monika at s32 zorder 1
 show natsuki 1v at s42 zorder 2
 play sound "sfx/fall.ogg"
-"Natsuki again yells in pain as she forced to her knees by Monika."
+"Natsuki again yells in pain as she is forced to her knees by Monika."
 "Meanwhile, I find myself at the back of the room, unable to get up or speak."
 "What the hell is going on?!?!"
 "What is this?!?!"
 "Natsuki tries to fight to get Monika off of her, but she too seems to be frozen in place."
 $ style.say_dialogue = style.edited
-m "I've waited along time for this..."
+m "I've waited a long time for this..."
 $ style.say_dialogue = style.normal
 show natsuki at thide
 hide natsuki
@@ -2253,7 +2253,7 @@ window show(None)
 play sound "sfx/s_kill_glitch1.ogg"
 show image "mod_assets/sprites/n_glitch.png" at t21 zorder 1
 show m_unleashed2 as monika at t22 zorder 2
-"Without warning, Natsuki's body is broken apart into little pieces that repeatedly revovle around themseleves mid-air."
+"Without warning, Natsuki's body is broken apart into little pieces that repeatedly revolve around themselves mid-air."
 "I honestly can't believe what I'm seeing..."
 "This can't be real!"
 "This has to be another dream!"
@@ -2295,14 +2295,14 @@ show image Solid("ff0000") as i1 onlayer front:
     additive 1.0
 show image Solid("#440000") as i2 onlayer front:
     additive 0.4
-"I turn around and I see Monika slowly walking torwards me."
+"I turn around and I see Monika slowly walking towards me."
 "I begin pounding on the door, screaming for Sayori, Yuri or anyone to help me."
 "The closer Monika gets to me, the more lightheaded I become..."
 "I can't see straight...."
-"My breathing becomes ragged as I feel splitting pain in my head.."
+"My breathing becomes ragged as I feel splitting pain in my head..."
 "I think there's blood in my eyes..."
 show m_unleashed1 as monika at face
-"Monika tower over me, the emerald light glowing in the place of her eyes."
+"Monika towers over me, the emerald light glowing in the place of her eyes."
 show m_unleashed2 as monika at face
 "She slowly outstretches her hand to me."
 mc "No! Stop! Get away from me!"
@@ -2315,7 +2315,7 @@ mc "GET AWAY!"
 "I can't even feel my arms and legs..."
 "My head is spinning at a million miles an hour, it feels totally weightless..."
 "My vision is filled red with blood..."
-"I try to look to see if there's anything I can use to defend myself against Monika, but they won't stop looking at Monika's glowing emerald eyes..."
+"I try to look to see if there's anything I can use to defend myself, but my eyes won't stop looking at Monika's..."
 "I can't feel my arms and legs, they've gone completely numb..."
 "It's no use..."
 "I can't do anything..."
@@ -2352,8 +2352,8 @@ show natsuki 12g
 mc "I'll...{w=0.38}wait outside..."
 mc "Come out when you're ready to talk."
 show natsuki 12f
-"Natsuki stiffly nods as she goes back to burrying her face in her hands."
-"As soon I exit out the door, I hear her soft sobs resume."
+"Natsuki stiffly nods as she goes back to burying her face in her hands."
+"As soon as I exit out the door, I hear her soft sobs resume."
 stop music fadeout 2.0
 show natsuki at thide
 hide natsuki
@@ -2397,8 +2397,8 @@ show image Solid("ff0000") as i1 onlayer front:
     additive 1.0
 show image Solid("#440000") as i2 onlayer front:
     additive 0.4
-"Without warning, Monika's eyes suddenly glow a bright emerald green as she clasps onto my shoulders."
-"I'm barley able to choke out a cry of pain as I feel my energy being drained out."
+"Without warning, Monika's eyes suddenly glow a bright emerald green as she grabs onto my shoulders."
+"I'm barely able to choke out a cry of pain as I feel my energy being drained out."
 "I try to push Monika off, but no matter what I do, I'm unable to escape Monika's grasp."
 "My eyes keep staring into Monika's as if they're frozen in place..."
 "My vision is filled red with blood..."
@@ -2408,7 +2408,7 @@ show image Solid("#440000") as i2 onlayer front:
 "I hear nothing but ringing in my ears..."
 "My head feels as if it's about to crack into two..."
 "I feel entirely weightless..."
-"My body is sending so many signals to my brain that I can barley process what's going on."
+"My body is sending so many signals to my brain that I can barely process what's going on."
 "I can't even defend myself..."
 "Surely enough, I begin to lose consciousness."
 "Or is it death's embrace?"
@@ -2442,7 +2442,7 @@ mc "I've always wanted to spend some time around her, and well, I've had a lot o
 show monika 1m
 show sayori 1g
 show yuri 3v
-"One by one the girls shoot either and irritated or dejected look at me, but Monika only smiles."
+"One by one the girls shoot either an irritated or dejected look at me, but Monika only smiles."
 mc "I really don’t think that there’s anything that’s going to change that."
 mc "I want to be in a relationship with her not to spite any of you..."
 show monika 1e
@@ -2478,7 +2478,7 @@ m 3n "Right..."
 show monika 1m at t41 zorder 1
 show sayori 1f
 show yuri 1e
-"Monika clears her throat and adopts a more humble posture."
+"Monika clears her throat and adopts a humbler posture."
 show yuri 1g
 m 3r "So I know how...{w=0.38}unprofessional this may look on my part, but it's true that [player] and I have been spending sometime outside of the club recently."
 m 3m "I don't believe there's anything inherently wrong with that, I see it as my duty as club president to ensure that we all get to know each other and grow closer together."
@@ -2487,7 +2487,7 @@ show sayori 1i
 m 1m "I didn't expect that [player] and I would hit it off so well, and I do like him back..."
 m 1n "I'll also admit that I knew that everybody in the club was interested in him. So, I made my move."
 show natsuki 5o
-m 3m "I'm sorry that I didn't talk it over with any of you first, but I was done waiting to waiting for my chance to talk to [player]."
+m 3m "I'm sorry that I didn't talk to any of you first, but I was done waiting for my chance to talk to [player]."
 m 3r "I didn't mean to divide the club like this. I never wanted to hurt anyone. That was never my intention..."
 m 5a "But, I see no real reason why [player] and I shouldn't be allowed to be together."
 m "If that's what he so chooses."
@@ -2566,7 +2566,7 @@ mc "Monika?!?"
 mc "Where are you?"
 "Damn it! Where could she be?"
 "I wander up and down the halls aimlessly, looking for any sign of her."
-"I spend the next few minutes peering into nearly every classroom on this floor. Though, I eventually come to the conclusion that Monika has gone elsewhere."
+"I spend the next few minutes peering into nearly every classroom on this floor. Though, I eventually conclude that Monika has gone elsewhere."
 mc "Where could she possibly be?"
 "I wonder aloud."
 "I lean on a nearby locker as I rattle off possible ideas as to where Monika could've gone."
@@ -2585,13 +2585,13 @@ show monika 3q at t11 zorder 1
 "Surely enough, it turns out to be Monika."
 mc "Monika?"
 show monika 1d
-"Monika turns around stratled."
+"Monika turns around startled."
 m 2l "Oh! Hey, [player]!"
 m 1m "Didn't see you there..."
 mc "Sorry, didn't mean to sneak up on you."
 mc "You doing okay?"
 show monika 1n
-"Monika forces out an awkard laugh."
+"Monika forces out an awkward laugh."
 show monika 1m
 mc "Yeah...{w=0.38}I feel the same way about this too."
 show monika 1o
@@ -2621,7 +2621,7 @@ m 1r "I want to work things out with everyone!"
 m 2p "But what happened yesterday...{w=0.38}and with how they reacted to my apology, I don't think the club can be saved, [player]."
 mc "Monika..."
 m 1g "[player], look. I know you like me, and honestly, I feel the same way about you too. We've established that."
-m 2r "If the others aren't going to accept this and let us be together, then I see no reason why we should continue to assoicate ourselves with them."
+m 2r "If the others aren't going to accept this and let us be together, then I see no reason why we should continue to associate ourselves with them."
 m 1q "This whole meeting was a waste of time. I should've just reported [poem_giver] to the principal's office and be done with her."
 m 3p "It was hard enough to hide what happened from my parents..."
 show monika 2f
@@ -2641,7 +2641,7 @@ show monika 1j
 "This is golden opportunity for us!"
 show monika 1f
 "But...{w=0.38}I don't want to see the club fall apart because of petty differences...{w=0.38}or because of me..."
-"I'm not sure it's really worth the trade off..."
+"I'm not sure it's really worth the tradeoff..."
 "And I did start today with the hope that we can put everything behind us, but this isn't exactly what I had in mind..."
 show monika 1o
 
@@ -2708,8 +2708,8 @@ show image Solid("ff0000") as i1 onlayer front:
     additive 1.0
 show image Solid("#440000") as i2 onlayer front:
     additive 0.4
-"Without warning, Monika's eyes suddenly glow a bright emerald green as she clasps onto my shoulders."
-"I'm barley able to choke out a cry of pain as I feel my energy being drained out."
+"Without warning, Monika's eyes suddenly glow a bright emerald green as she grabs onto my shoulders."
+"I'm barely able to choke out a cry of pain as I feel my energy being drained out."
 "I try to push Monika off, but no matter what I do, I'm unable to escape Monika's grasp."
 "My eyes keep staring into Monika's as if they're frozen in place..."
 "My vision is filled red with blood..."
@@ -2719,7 +2719,7 @@ show image Solid("#440000") as i2 onlayer front:
 "I hear nothing but ringing in my ears..."
 "My head feels as if it's about to crack into two..."
 "I feel entirely weightless..."
-"My body is sending so many signals to my brain that I can barley process what's going on."
+"My body is sending so many signals to my brain that I can barely process what's going on."
 "I can't even defend myself..."
 "Surely enough, I begin to lose consciousness."
 "Or is it death's embrace?"
@@ -2785,8 +2785,8 @@ show image Solid("ff0000") as i1 onlayer front:
     additive 1.0
 show image Solid("#440000") as i2 onlayer front:
     additive 0.4
-"Without warning, Monika's eyes suddenly glow a bright emerald green as she clasps onto my shoulders."
-"I'm barley able to choke out a cry of pain as I feel my energy being drained out."
+"Without warning, Monika's eyes suddenly glow a bright emerald green as she grabs onto my shoulders."
+"I'm barely able to choke out a cry of pain as I feel my energy being drained out."
 "I try to push Monika off, but no matter what I do, I'm unable to escape Monika's grasp."
 "My eyes keep staring into Monika's as if they're frozen in place..."
 "My vision is filled red with blood..."
@@ -2796,7 +2796,7 @@ show image Solid("#440000") as i2 onlayer front:
 "I hear nothing but ringing in my ears..."
 "My head feels as if it's about to crack into two..."
 "I feel entirely weightless..."
-"My body is sending so many signals to my brain that I can barley process what's going on."
+"My body is sending so many signals to my brain that I can barely process what's going on."
 "I can't even defend myself..."
 "Surely enough, I begin to lose consciousness."
 "Or is it death's embrace?"
@@ -2831,7 +2831,7 @@ mc "I've been spending quite a bit of time around her recently, and well, I like
 show monika 1h
 show sayori 1g
 show yuri 3u
-"One by one the girls shoot either and irritated or dejected look at me, but Yuri only smiles as she holds back tears."
+"One by one the girls shoot either an irritated or dejected look at me, but Yuri only smiles as she holds back tears."
 mc "I really don’t think that there’s anything that’s going to change that."
 mc "I want to be in a relationship with her not to spite any of you..."
 show yuri 1e
@@ -2876,7 +2876,7 @@ y "E-{w=0.38}everyone...{w=0.38}the...{w=0.38}thing...{w=0.38}thing is..."
 show yuri 3n
 "Natsuki looks at Monika, then to me, Sayori and finally to Yuri."
 show monika 1m
-"Monika manages an uneasy grin as Sayori and Natsuki countine to look on at Natsuki."
+"Monika manages an uneasy grin as Sayori and Natsuki continue to look on at Natsuki."
 show yuri
 "I didn’t realize how hard this would be for Yuri to come out about whatever it is she's about tell us."
 "Though I have a sinking feeling we already know what it is..."
@@ -2903,7 +2903,7 @@ mc "Let me go after her! Please!"
 show monika 1r
 "Monika sighs."
 m 1q "Go for it."
-"Monika says irritability."
+"Monika says irritably."
 "What the hell is up with her?"
 "Oh well, I’ll deal with it later."
 show monika at thide
@@ -2941,7 +2941,7 @@ show n_shock as natsuki at t11 zorder 1
 show n_shock as natsuki at thide
 hide n_shock as natsuki
 scene bg corridor
-"Just as I exit the room, I hear her cry out out to me."
+"Just as I exit the room, I hear her cry out to me."
 n "[player], wait!"
 n "Let me-"
 jump day5_yuricomfort
@@ -2991,16 +2991,16 @@ show y_cry1 as yuri
 mc "What do you mean? What're you talking about?"
 show yuri 3o
 "Yuri stops sobbing and pauses."
-"For a full minute, Yuri is completely silent, aside from her occassional sniffle."
+"For a full minute, Yuri is completely silent, aside from her occasional sniffle."
 "Her face is frozen in fear and uncertainty. I'm honestly not sure what I'm supposed to do."
 show yuri 3w
 "Before I could react, Yuri lets out a pained sigh."
 y 3v "I figured I was going to have to show you eventually..."
-y 3w "Either you accidentially see it, or I show you. At least this way it's on my own terms..."
+y 3w "Either you accidentally see it, or I show you. At least this way it's on my own terms..."
 mc "Yuri...?"
 show y_cut as yuri at t11 zorder 1
 "With tears strolling down her face again, Yuri stands up and pulls up her sleeve, revealing numerous scars running up and down her forearm."
-"Some of scars are more faded than others, while some appear to be more recent."
+"Some of the scars are more faded than others, while some appear to be more recent."
 "I feel increasingly light-headed the longer I look at Yuri's arm."
 "My stomach feels like it's about to cave in and collapse on itself..."
 y "It's...{w=0.38}like that on the other arm too..."
@@ -3025,7 +3025,7 @@ show y_cry3 as yuri
 y "I-{w=0.38}I can't fathom being apart from you!"
 y "I wouldn't...{w=0.38}be able to tolerate not being able to enjoy the club anymore!"
 show y_cry1 as yuri
-y "But...{w=0.38}it's over now, isn't it? You're going to tell someone of authority about this and I'm going to be committed to an insitution for who knows how long!"
+y "But...{w=0.38}it's over now, isn't it? You're going to tell someone of authority about this and I'm going to be committed to an institution for who knows how long!"
 y "It was...{w=0.38}good while it lasted..."
 y "I ruined everything...{w=0.38}for you...{w=0.38}our friendship and club are gone!"
 "Yuri breaks down again and continues her sobbing."
@@ -3059,7 +3059,7 @@ mc "I can't possibly imagine having to deal with what you've been going through 
 mc "You're a strong person for doing so. But we both know that you can't overcome this problem by yourself."
 show y_cry2 as yuri
 mc "But you're right that we can't keep something like this just between us...{w=0.38}this is bad."
-mc "I don't think anybody's going to commit you to some asylum or anything like that. I dobut that'll happen."
+mc "I don't think anybody's going to commit you to some asylum or anything like that. I doubt that'll happen."
 show y_cry1 as yuri
 mc "I know it may not seem like it now, but everyone at the club cares about you. They want to help you and fix the club."
 mc "If they didn't care or weren't willing to give you a chance, do you think that they would've showed up at all?"
@@ -3077,7 +3077,7 @@ show y_cry2 as yuri
 y "You remember the story about my middle school friend?"
 mc "Yeah...{w=0.38}you guys were close and then one day she just skipped town and nobody knows what happened to her."
 show y_cry1 as yuri
-y "Percisely..."
+y "Precisely..."
 y "I was never the same person after that..."
 show y_cry5 as yuri
 y "I was completely broken inside. My parents weren't around enough to offer me any significant help, but I was able to fake it enough so that they didn't send me away."
@@ -3092,15 +3092,15 @@ y "I got the idea of cutting because I read about it in a story that happens to 
 mc "What was the name of the story?"
 y 3w "The Eternal Urge."
 mc "I think I've heard of that title before. I heard it's very tragic..."
-y 3v "It's certainly not for the feint of heart."
-y 3q "In hindsight, a young, impressionable teeanger like myself at the time probably shouldn't have been reading such a dark book. Especially at that point in my life..."
+y 3v "It's certainly not for the faint of heart."
+y 3q "In hindsight, a young, impressionable teenager like myself at the time probably shouldn't have been reading such a dark book. Especially at that point in my life..."
 y 1n "But the main character was going through similar issues that I was. To help cope with her problems, she resorted to cutting..."
 show y_cry1 as yuri
 y "So, I tried it..."
 show y_cry3 as yuri
 y "And...{w=0.38}it worked."
 show y_cry1 as yuri
-y "I got addicted to cutting the more I did it. It became almost habitual for me whenver I got angry or depressed enough."
+y "I got addicted to cutting the more I did it. It became almost habitual for me whenever I got angry or depressed enough."
 y "It'd make me feel better, for a time. Then the regret would set in. Which would inevitably, lead to more cutting..."
 mc "So it's a never ending cycle?"
 show y_cry3 as yuri
@@ -3126,7 +3126,7 @@ y 1w "But, I just can't. I'm stuck in this loop and I can't escape."
 y 1h "Sometimes I even ask myself if I can be helped..."
 mc "Do you believe that you can be helped, Yuri?"
 show yuri 1o
-"Yuri's face fidgets as tightly grabs her wrist behind her back."
+"Yuri's face fidgets as she tightly grabs her wrist behind her back."
 y "I...{w=0.38}I don't know, [player]..."
 y 1w "I just don't want to be locked up like some animal!"
 mc "Yuri, I don't think you will be."
@@ -3139,7 +3139,7 @@ mc "But you have to trust me on this...{w=0.38}you need to go back to the club w
 mc "Please come back with me, Yuri. I'll do everything I can to protect you."
 "There's a long silence before Yuri responds."
 y "I want to trust you, [player]..."
-y "But...{w=0.38}how can I know that I trust you with what you're saying?"
+y "But...{w=0.38}how do I know that I can trust you with what you're saying?"
 mc "I..."
 show yuri 3n
 "I stop myself short."
@@ -3151,7 +3151,7 @@ show yuri 3t
 "I take a deep breath as I begin to lay out my thoughts."
 mc "I mean what I said back there. I like you. I really do."
 show yuri 1u
-mc "You're always such a deep and intresting person. Honestly I feel like I've only just begun to get to know you, and I've only liked what I've seen so far."
+mc "You're always such a deep and interesting person. Honestly I feel like I've only just begun to get to know you, and I've only liked what I've seen so far."
 mc "I feel like that we really do have a meaningful connection with each other. I really do."
 mc "You're unbelievably gorgeous and incredibly smart. You'd have to be an idiot not to see what an incredible and thoughtful person you are."
 mc "I know you're a strong person at heart too. You don't need to continue to fight this battle by yourself. Let us help you, Yuri. We all care about you."
@@ -3161,7 +3161,7 @@ mc "I...{w=0.38}I wouldn't be able to forgive myself..."
 "I take in a big breath of air to compose myself."
 show yuri 1q
 "Yuri, on the other hand, nervously fidgets and is staring at the floor."
-"For a few moments, she's completelty silent, just simply standing there looking at the floor in total bliss."
+"For a few moments, she's completely silent, just simply standing there looking at the floor in total bliss."
 "I think I might've overdone it..."
 show yuri 1s
 "Yuri starts to sniffle as I see tears start to surface in her eyes again as she turns to face me."
@@ -3179,14 +3179,14 @@ stop music fadeout 2.0
 show yuri 1s at t11 zorder 1
 "I help Yuri stand up, but she quickly looks away as she grins uncontrollably from ear to ear."
 "I've never seen her this happy before..."
-"After everything that's happend in the last 24 hours or so, it's hard to believe we finally got to this point..."
+"After everything that's happened in the last 24 hours or so, it's hard to believe we finally got to this point..."
 "It's not over yet though..."
 mc "Come on, let's get back."
 show yuri 1e
 play sound "sfx/closet-open.ogg"
 "I hear the door swing open."
 "Maybe it's Natsuki."
-"I think she wanted to go looking for Natsuki with me."
+"I think she wanted to go looking for Yuri with me."
 "Hell, probably everyone's looking for us now."
 "How long have we been gone for?"
 mc "It’s alright, Natsuki...{w=0.38}I found her."
@@ -3230,7 +3230,7 @@ show white zorder 4:
     alpha 0.6
     linear 0.25 alpha 0.0
 play audio thunder
-"Out of no where, a thunder storm rolls up on us."
+"Out of nowhere, a thunderstorm rolls up on us."
 "What the hell? Wasn't it sunny just a minute ago?"
 window show(None)
 show screen tear(20, 0.1, 0.1, 0, 40)
@@ -3241,7 +3241,7 @@ hide screen tear
 scene bg club_nothing
 show monika 1q at t21 zorder 1
 show yuri 3p at t22 zorder 2
-"The next thing I know, it's night time, and all the stuff in the classroom has vanished."
+"The next thing I know, it's nighttime, and all the stuff in the classroom has vanished."
 "Not only that, but we're all standing in different spots..."
 y "What is this?!?!"
 y "What's going on?!?"
@@ -3251,7 +3251,7 @@ mc "Monika?"
 "She doesn't respond."
 mc "Monika?"
 "I say loudly."
-"I reach to my hand out to put on Monika's shoulder."
+"I reach my hand out to put on Monika's shoulder."
 mc "Monika, are you alright?"
 show yuri at thide
 hide yuri
@@ -3283,13 +3283,13 @@ show yuri 1p at t42 zorder 2
 show m_unleashed2 as monika at s32 zorder 1
 show yuri 1p at s42 zorder 2
 play sound "sfx/fall.ogg"
-"Yuri again yells in pain as she forced to her knees by Monika's harsh pull."
+"Yuri again yells in pain as she is forced to her knees by Monika's harsh pull."
 "Meanwhile, I find myself at the back of the room, unable to get up or speak."
 "What the hell is going on?!?!"
 "What is this?!?!"
 "Yuri tries to fight to get Monika off of her, but she too seems to be frozen in place."
 $ style.say_dialogue = style.edited
-m "I've waited along time for this..."
+m "I've waited a long time for this..."
 $ style.say_dialogue = style.normal
 show yuri at thide
 hide yuri
@@ -3298,7 +3298,7 @@ window show(None)
 play sound "sfx/s_kill_glitch1.ogg"
 show image "mod_assets/sprites/y_glitch.png" at t21 zorder 1
 show m_unleashed2 as monika at t22 zorder 2
-"Without warning, Yuri's body is broken apart into little pieces that repeatedly revovle around themseleves mid-air."
+"Without warning, Yuri's body is broken apart into little pieces that repeatedly revolve around themselves mid-air."
 "I honestly can't believe what I'm seeing..."
 "This can't be real!"
 "This has to be another dream!"
@@ -3340,14 +3340,14 @@ show image Solid("ff0000") as i1 onlayer front:
     additive 1.0
 show image Solid("#440000") as i2 onlayer front:
     additive 0.4
-"I turn around and I see Monika slowly walking torwards me."
+"I turn around and I see Monika slowly walking towards me."
 "I begin pounding on the door, screaming for Natsuki, Sayori or anyone to help me."
 "The closer Monika gets to me, the more lightheaded I become..."
 "I can't see straight...."
-"My breathing becomes ragged as I feel splitting pain in my head.."
+"My breathing becomes ragged as I feel splitting pain in my head..."
 "I think there's blood in my eyes..."
 show m_unleashed1 as monika at face
-"Monika tower over me, the emerald light glowing in the place of her eyes."
+"Monika towers over me, the emerald light glowing in the place of her eyes."
 show m_unleashed2 as monika
 "She slowly outstretches her hand to me."
 mc "No! Stop! Get away from me!"
@@ -3360,7 +3360,7 @@ mc "GET AWAY!"
 "I can't even feel my arms and legs..."
 "My head is spinning at a million miles an hour, it feels totally weightless..."
 "My vision is filled red with blood..."
-"I try to look to see if there's anything I can use to defend myself against Monika, but they won't stop looking at Monika's glowing emerald eyes..."
+"I try to look to see if there's anything I can use to defend myself, but my eyes won't stop looking at Monika's..."
 "I can't feel my arms and legs, they've gone completely numb..."
 "It's no use..."
 "I can't do anything..."
@@ -3397,8 +3397,8 @@ show y_cry2 as yuri
 mc "I'll...{w=0.38}wait outside..."
 mc "Come out when you're ready to talk."
 show y_cry1 as yuri
-"Yuri stiffly nods as she goes back to burrying her face in her hands."
-"As soon I exit out the door, I hear her soft sobs resume."
+"Yuri stiffly nods as she goes back to burying her face in her hands."
+"As soon as I exit out the door, I hear her soft sobs resume."
 stop music fadeout 2.0
 show yuri at thide
 hide yuri
@@ -3441,8 +3441,8 @@ show image Solid("ff0000") as i1 onlayer front:
     additive 1.0
 show image Solid("#440000") as i2 onlayer front:
     additive 0.4
-"Without warning, Monika's eyes suddenly glow a bright emerald green as she clasps onto my shoulders."
-"I'm barley able to choke out a cry of pain as I feel my energy being drained out."
+"Without warning, Monika's eyes suddenly glow a bright emerald green as she grabs onto my shoulders."
+"I'm barely able to choke out a cry of pain as I feel my energy being drained out."
 "I try to push Monika off, but no matter what I do, I'm unable to escape Monika's grasp."
 "My eyes keep staring into Monika's as if they're frozen in place..."
 "My vision is filled red with blood..."
@@ -3452,7 +3452,7 @@ show image Solid("#440000") as i2 onlayer front:
 "I hear nothing but ringing in my ears..."
 "My head feels as if it's about to crack into two..."
 "I feel entirely weightless..."
-"My body is sending so many signals to my brain that I can barley process what's going on."
+"My body is sending so many signals to my brain that I can barely process what's going on."
 "I can't even defend myself..."
 "Surely enough, I begin to lose consciousness."
 "Or is it death's embrace?"

@@ -50,7 +50,7 @@ label day4_start:
     if hangout3 == "Monika":
         "I would go back to sleep but I'd rather not listen to any more that voice's creepy ramblings..."
 
-    "I simply stare at the celling through my hazy vision as I attempt to process my experience."
+    "I simply stare at the ceiling through my hazy vision as I attempt to process my experience."
     "These nightmares are just getting stranger..."
     "I don't see it stopping anytime soon..."
     "Along with these side-effects..."
@@ -65,7 +65,7 @@ label day4_start:
         "I should tell Sayori about this too..."
         "Maybe I need to just get this off my chest rather than have it lingering inside of me..."
 
-    "I simply let out a sigh and stare at my celling, waiting for my headache to dissipate."
+    "I simply let out a sigh and stare at my ceiling, waiting for my headache to dissipate."
     "As I try to pass the time before I need to get out of the bed, it still hits me that I'm still nowhere close to deciding on what to say to [poem_giver]."
     "Though, I don't really expect her to talk to me given how yesterday went..."
 
@@ -183,7 +183,7 @@ label day4_start:
     "I ended up getting ready a few minutes earlier than I normally do, so I decided to take the time to wait outside for Sayori outside."
 
     if hangout3 == "Yuri":
-        "Though I suppose I subconciously rushed through breakfast out of fear that Yuri was somehow hiding in the kitchen again..."
+        "Though I suppose I subconsciously rushed through breakfast out of fear that Yuri was somehow hiding in the kitchen again..."
 
     else:
         pass
@@ -194,12 +194,12 @@ label day4_start:
         "I don't understand why I'm supposedly not allowed to spend time with [hangout3]..."
         "I'm a person with free will, I can choose who I want to spend my time with freely!"
         "But I don't understand how this voice can be jealous of me spending time with [hangout3]..."
-        "Unless my subconcious is trying to tell me something..."
+        "Unless my subconscious is trying to tell me something..."
 
     if hangout3 == "Monika":
         "It seems like the voice likes it when I'm around Monika for some reason..."
         "But I don't know why that would be..."
-        "Unless my subconcious is trying to get me to man up..."
+        "Unless my subconscious is trying to get me to man up..."
         "Which I guess isn't really a bad thing..."
 
     s "Hey, [player]!"
@@ -223,9 +223,9 @@ label day4_start:
         play sound fall
         "Sayori suddenly steps forwards and brings me into an embrace."
         "I slowly reciprocate, feeling the warmth of Sayori's body radiating on to me."
-        "Despite the tramuatic experience of last night, I already feel somewhat better..."
+        "Despite the traumatic experience of last night, I already feel somewhat better..."
         s "I'm sorry you're having nightmares again..."
-        s "I just wish there was something I could to help..."
+        s "I just wish there was something I could do to help..."
         mc "You can't, and I don't know what will to be honest..."
         show sayori 1f at t11 zorder 1
         "Sayori and I break our embrace, her warmth quickly being brushed off by the cool morning breeze."
@@ -239,6 +239,7 @@ label day4_start:
         s "Eh? How come?"
         s 1l "Not that I'm opposed to going with you or anything, but..."
         s 1h "I thought it wasn't that bad..."
+        show sayori 1g
         mc "It's not about that..."
         show sayori 1e
         mc "It's about your rainclouds..."
@@ -274,7 +275,7 @@ label day4_start:
                 mc "Well..."
                 mc "I don't think just me being around you is going to make your rainclouds go away..."
                 mc "There needs to be a long term solution to this..."
-                mc "So, I'm going to head to the doctors this weekened..."
+                mc "So, I'm going to head to the doctors this weekend..."
                 mc "Why don't you come with me?"
                 show sayori 1k
                 "Sayori uncomfortably gazes off into the distance."
@@ -302,7 +303,7 @@ label day4_start:
             mc "Well..."
             mc "I don't think just me being around you is going to make your rainclouds go away..."
             mc "There needs to be a long term solution to this..."
-            mc "So, I'm going to head to the doctors this weekened..."
+            mc "So, I'm going to head to the doctors this weekend..."
             mc "Why don't you come with me?"
             show sayori 1k
             "Sayori uncomfortably gazes off into the distance."
@@ -330,7 +331,7 @@ label day4_start:
         show sayori 1g
         mc "It's nothing too concerning..."
         mc "I've just been having some bad nightmares the past few days..."
-        mc "I'm noy entirley sure why I'm having them, but I'm sure it'll blow over soon."
+        mc "I'm not entirely sure why I'm having them, but I'm sure it'll blow over soon."
         s 2h "Why didn't you tell me?"
         "I feel a returning sense of guilt course through me as I reflect on why I decided to keep this from Sayori."
 
@@ -339,18 +340,18 @@ label day4_start:
             "She should be one of the first people to know if something's bothering me..."
 
         if encore_sayoriquestion_1 == False:
-            "We've always been honest with each other about things that have been troubling us, and I feel kind of bad now for telling her about this sooner."
+            "We've always been honest with each other about things that have been troubling us, and I feel kind of bad now for not telling her about this sooner."
 
         mc "I...just didn't want to worry you."
         mc "You got enough going on yourself..."
         s 4g "[player]..."
         s 4h "No matter what I'm dealing with or going through, I'm always going to make time for you."
         s 1h "Don't ever forget that, okay?"
-        s 1g "I don't care how I feeling or whatever I'm going through..."
+        s 1g "I don't care how I'm feeling or whatever I'm going through..."
         s "You're what matters to me the most!"
-        "I feel a sudden rush of blood to my face as Sayri says that."
+        "I feel a sudden rush of blood to my face as Sayori says that."
         "As much as I'm touched by what she's saying, I know she's right too..."
-        "I knew I should've told her about these nightmares, just like how I should tell her about eveyrthing else that's going on..."
+        "I knew I should've told her about these nightmares, just like how I should tell her about everything else that's going on..."
         "But maybe there's a time and place for that..."
         show sayori 1e
         mc "I...{w=0.38}t-{w=0.38}thank you, Sayori..."
@@ -372,7 +373,7 @@ label day4_start:
 label day4_school:
 scene bg corridor
 with wipeleft_scene
-"The walk to school was a rather silent."
+"The walk to school was rather silent..."
 
 if hangout3 == "Sayori":
     "I ended up telling Sayori some of the details about my nightmare."
@@ -396,7 +397,7 @@ if hangout3 == "Monika":
 
 "I also explained to Sayori what the other two dreams were like as well to the best of my memory."
 "We tried to make sense of everything as best we could, but we couldn't reach any solid conclusion for why I could possibly be having these nightmares."
-"I haven't been watching any horror movies lately, and I haven't experienced anything tramuatic since the festival..."
+"I haven't been watching any horror movies lately, and I haven't experienced anything traumatic since the festival..."
 "Maybe it's just some sort of weird phase I'm going through."
 show sayori 1g at t11 zorder 1
 "Ultimately, we decided to stop talking about it as we got closer to Sayori's class."
@@ -408,7 +409,7 @@ mc "Just more disturbed than anything else..."
 s 1g "Well let me know if something happens."
 mc "I'll be sure to."
 s 1q "Good."
-"Sayori flashes me her biggest smile that I've seen all day, which helps calms my nerves a bit."
+"Sayori flashes me her biggest smile that I've seen all day, which helps calm my nerves a bit."
 
 if hangout1 != "Sayori":
     if hangout2 != "Sayori":
@@ -440,9 +441,9 @@ s "I'll...{w=0.38}see you later, [player]!"
 mc "Y-{w=0.38}yeah! See you!"
 show sayori at thide
 hide sayori
-"Sayori quickly scrams into her classroom, her face flush with embrassment."
+"Sayori quickly scrams into her classroom, her face flush with embarrassment."
 "Even I can feel my own face running hot."
-"In an effort to not draw attention to myself, I speedwalk to my classroom."
+"In an effort to not draw attention to myself, I speed walk to my classroom."
 scene bg class_day
 with wipeleft_scene
 play music t3 fadein 1.0
@@ -472,15 +473,15 @@ label s_text:
 "Not to mention we just saw each other..."
 s "You feeling okay?"
 "I feel a smile creep across my face as I read that."
-"Still, I was a little worried before that Sayori would overeact that something was wrong with me."
+"Still, I was a little worried before that Sayori would overreact knowing something was wrong with me."
 "I really do appreciate her concern though."
 mc "Yes, I'm feeling fine. You don't need to worry."
 
 if encore_sayoriquestion_1 == True:
-    "I add a heart emoji to the text for good measure as I send the text."
+    "I add a heart emoji to the text for good measure."
     "Sayori responds about a half minute later."
     s "Okay...just wanted to make sure!"
-    "I then get a kissing face emoji from her."
+    "I then receive a kissing face emoji from her."
     "I try to hide my grin from my classmates as I send one back to Sayori as well."
     "As I finish getting ready for class my phone rings once again."
     "I look over to read the text."
@@ -537,7 +538,7 @@ if encore_sayoriquestion_1 == False:
             "I have spent a fair amount of time around her lately..."
             "Even though I did upset her on Tuesday when I was with [hangout2]..."
             "But spending more time with Sayori would probably continue to smooth things over..."
-            "After all, we're both trying to move past everything that's happened betweem us..."
+            "After all, we're both trying to move past everything that's happened between us..."
 
 
     if hangout1 != "Sayori":
@@ -602,7 +603,7 @@ if hangout1 == "Natsuki":
 if hangout1 != "Natsuki":
     if hangout2 != "Natsuki":
         "We haven't gotten the chance to spend much time together lately."
-        "If I want to get closer to Natsuki, I should take ths opportunity..."
+        "If I want to get closer to Natsuki, I should take this opportunity..."
 
 mc "Yeah sure! I'd love to read it with you!"
 n "That's awesome! I'm telling you: you're really going to like it!"
@@ -636,7 +637,7 @@ m "I had the chance to write some more lyrics for my song, so it shouldn't be to
 mc "That's great! Can't wait to hear it again!"
 m "Well I'm glad you mentioned that! I'd love to hear your opinion on what I have for the second verse!"
 m "I'm not entirely sure if I'm sold on the way it rhymes."
-m "If you want before the club offically starts we can head off back to the music room together."
+m "If you want before the club officially starts we can head off back to the music room together."
 "I contemplate my response."
 
 if hangout1 == "Monika":
@@ -694,7 +695,7 @@ y "Hello..."
 "I can certainly feel Yuri's shyness through the screen."
 "I just need to play it cool..."
 mc "Hey! What's up?"
-"I see the notification that Yuri's typing, so I give her a few moment as I finish getting my things out for class."
+"I see the notification that Yuri's typing, so I give her a few moments as I finish getting my things out for class."
 "Sure enough, just as I finish getting everything ready, my phone goes off with a text notification."
 "I look over to read what Yuri sent me."
 y "Oh, I'm doing alright! I was just reading some Portrait of Markov and it suddenly dawned on me how close we are to the end!"
@@ -731,7 +732,7 @@ mc "I really can't wait for us to get to the last chapter!"
 y "Me too! I'll see you in the club later! Good-bye!"
 mc "Bye!"
 "I put my phone back in my pocket as a large smile comes across my face."
-"I'm going get to spend more time with Yuri! This is great!"
+"I'm going to get to spend more time with Yuri! This is great!"
 "I wonder what else we'll be able to do today..."
 jump day4_club
 
@@ -747,7 +748,7 @@ scene bg class_day
 with open_eyes
 "The rest of the school day goes by rather quickly, and I was able to get through it without much incident."
 "I occasionally got a headache and every now and then the same mysterious sense of dread washed over me, but it never lasted more than a few minutes."
-"I also tried to use my time during lunch period to try to work out my feelings towards [poem_giver]."
+"I also tried to use my time during lunch period to work out my feelings towards [poem_giver]."
 "Trying to settle on my exact feelings for her was hard, but I think I've generally worked out what I could say to her..."
 "Though I'm doubtful that she'll ask me about it today."
 "Maybe by Friday at the latest..."
@@ -771,10 +772,11 @@ show sayori 1r
 s 1x "Well hey, it's a pretty good skill to have in this school!"
 show sayori 1a
 mc "Yeah, I know what you mean! They really should get these hallways enlarged."
-mc "Not that'll ever happen..."
+mc "Not that it would ever happen..."
 "We wait for a few minutes for the hallways to thin out a little so we can get to the stairs without a hassle."
 "While we're waiting, Sayori turns to me."
 s 1c "So, how was your day?"
+show sayori 1b
 mc "It was alright..."
 s 1h "Are you feeling any better?"
 show sayori 1g
@@ -832,7 +834,7 @@ mc "I would've helped you study..."
 s 1l "I didn't remember until after I got home..."
 "I once again shake my head in disappointment."
 show sayori 1e
-mc "Sayori, you got to do better than that..."
+mc "Sayori, you have to do better than that..."
 mc "If you don't pay attention to your grades, you're going to fall behind again..."
 s 1h "It's just one test, [player]..."
 s 1l "I think I've done alright on all the others..."
@@ -856,13 +858,13 @@ s 1l "I saw you walk off with [hangout3] and I didn't want to disturb you guys..
 mc "We just hungout, Sayori..."
 
 if natsuki_hangout == True:
-    mc "Natsuki and I went to the bookstore to pick up the latest edition of Parafit girls..."
+    mc "Natsuki and I went to the bookstore to pick up the latest edition of Parfait Girls..."
 
 if monika_hangout == True:
     mc "Monika and I just took a walk together..."
 
 if yuri_hangout == True:
-    mc "Yuri and I went to check out this new nature perserve that just opened..."
+    mc "Yuri and I went to check out this new nature preserve that just opened..."
 
 s 1d "I believe you..."
 mc "You would've been welcome tag along, we wouldn't have mind..."
@@ -938,7 +940,7 @@ jump merge_1
 label merge_1:
 
 show sayori 1e
-"Sayori stares at me as the air between us suddenly becomes unusally heavy."
+"Sayori stares at me as the air between us suddenly becomes unusually heavy."
 "I'm confused for a moment until the full weight of what I just said hits me like a freight train."
 "Oh..."
 mc "I didn't mean it like that!"
@@ -980,7 +982,7 @@ show monika at thide
 hide monika
 "Without a word, Monika returns to the teacher's desk as I gingerly put my stuff on a desk in the middle of the room."
 show sayori 1k at t11 zorder 1
-"I look over to Sayori, whose still staring blankly at the wall."
+"I look over to Sayori, who's still staring blankly at the wall."
 "I let out a sigh and walk over to her."
 mc "Sayori?"
 s 1i "I’m fine, [player]."
@@ -1006,7 +1008,7 @@ if encore_sayoriquestion_1 == True:
 if encore_sayoriquestion_1 == False:
     "I suck at being a friend to her..."
 
-"Through my internal self-deprication, I begin to space out."
+"Through my internal self-deprecation, I begin to space out."
 "..."
 "..."
 "..."
@@ -1052,7 +1054,7 @@ if poem_giver == "Natsuki":
         m 3i "I don't want you two to wander off just right when we're about to start."
         n 5e "You two disappeared yesterday! Why can't I get my time with him?"
 
-    mc "Laides, ladies!"
+    mc "Ladies, ladies!"
     show monika 1d at h21 zorder 1
     show natsuki 1c at h22 zorder 2
     "I raise my hands calmly in an attempt to diffuse the argument."
@@ -1063,13 +1065,13 @@ if poem_giver == "Natsuki":
     m 3q "Fine. I'll give you guys two minutes."
     mc "Thank you, Monika."
     show monika 1h
-    "Monika angrily stares at Natsuki for her to say the same, but she mantains her eye contact with the floor."
+    "Monika angrily stares at Natsuki for her to say the same, but she maintains her eye contact with the floor."
     show monika at thide
     hide monika
     show natsuki 1s at t11 zorder 1
     "Monika then brushes past us and goes back to the teacher's desk."
     n 1q "Come on..."
-    "Natsuki mutters as she opens the door and walk out into the hallway."
+    "Natsuki mutters as she opens the door and walks out into the hallway."
     show natsuki at thide
     hide natsuki
 
@@ -1115,7 +1117,7 @@ if poem_giver == "Yuri":
         m 3i "I don't want you two to wander off just right when we're about to start."
         y 3r "Pardon me, Monika, but didn't you two disappear yesterday? That's a double standard, don't you think?"
 
-    mc "Laides, ladies!"
+    mc "Ladies, ladies!"
     show monika 1d at h21 zorder 1
     show yuri 3n at h22 zorder 2
     "I raise my hands calmly in an attempt to diffuse the argument."
@@ -1132,7 +1134,7 @@ if poem_giver == "Yuri":
     show yuri 4c at t11 zorder 1
     "Monika then brushes past us and goes back to the teacher's desk."
     y "I guess we can go now..."
-    "Yuri mutters as she opens the door and walk out into the hallway."
+    "Yuri mutters as she opens the door and walks out into the hallway."
     show yuri at thide
     hide yuri
 
@@ -1153,8 +1155,8 @@ label n_confession:
 
 show natsuki 5u at t11 zorder 1
 "Natsuki and I are standing in the middle of the hallway, with not a single person in sight."
-"The air is becoming increasingly fraught with tension as we both struggle to mantain eye contact."
-"A pit forms in my stomach as my brace for what I always thought to be the inevitable..."
+"The air is becoming increasingly fraught with tension as we both struggle to maintain eye contact."
+"A pit forms in my stomach as I brace for what I always thought to be the inevitable..."
 "Fortunately, it seems Natsuki's just as nervous about this as I am..."
 show natsuki 1n
 "Part of me hopes that this entire thing is some sort of joke or it was complete misunderstanding..."
@@ -1165,13 +1167,13 @@ show natsuki 1s
 "I've always been attracted to her to a degree..."
 "And if this is what I think it's about, then this would be the perfect opportunity to explore something that could always still be..."
 "I finally grow tired of waiting and decide to start the conversation."
-mc "So...{w=0.38}why did you want to talk about?"
+mc "So...{w=0.38}what did you want to talk about?"
 n 5q "I think we both know the answer to that..."
 mc "Eh?"
 play music e19 fadein 1.0
 n 1m "[player]..."
 show natsuki 1n
-"Natsuki looks me directly in the eyes as she slowly starts scootching herself torwards me."
+"Natsuki looks me directly in the eyes as she slowly starts scooching herself towards me."
 n 1m "I...{w=0.38}I really haven't done this kind of thing before..."
 n 1q "I never really got the chance to tell a boy how much I liked them..."
 n 1m "Or how much they mean to me..."
@@ -1191,7 +1193,7 @@ n "I'm not finished yet!"
 "A couple of sniffs later, Natsuki continues on."
 n 12a "To tell you the truth...{w=0.38}I've had my eye on you for quite a while..."
 n 12b "Ever since you first joined actually..."
-n 12c "I tried acting cold as possible around you because I was afraid to catch feelings..."
+n 12c "I tried acting as cold as possible around you because I was afraid to catch feelings..."
 n 12b "I didn't want to get hurt again..."
 
 
@@ -1208,15 +1210,15 @@ if encore_sayoriquestion_1 == True:
 
         if hangout1 == "Natsuki":
             if hangout2 == "Natsuki":
-                n 5q "As we've hungout more, I just couldn't stop thinking about you..."
+                n 5q "The more we hung out, I just couldn't stop thinking about you..."
                 n 5n "I even started writing poems about you!"
                 n 12a "It was pretty much then when I realized that I loved you..."
                 n 5y "And...{w=0.38}as much as I tried to control my feelings, I kinda let it slip on Tuesday just to see how you'd react..."
-                n 1l "It made me really happy that you didn't completetly freak out..."
+                n 1l "It made me really happy that you didn't completely freak out..."
                 n 5m "All this time, you've made feel safe and accepted...{w=0.38}it's not something I'm really used to..."
                 n 5u "I was still too scared to tell you directly how I felt, so I decided to give you that special letter..."
                 n 5n "My confession letter."
-                n 5m "I figured you must have read it. I heard of how you were kind of acting like a manaic yesterday morning..."
+                n 5m "I figured you must have read it. I heard of how you were kind of acting like a maniac yesterday morning..."
                 n 5q "And how awkward you've been acting around me lately..."
                 n 3t "So I figured:{w=0.38 }well there's no turning back now..."
                 n 1u "I should just give it to you straight...."
@@ -1231,11 +1233,11 @@ if encore_sayoriquestion_1 == True:
                 n "I even started writing poems about how I felt...{w=0.38}and then I pretty much realized that I had real feelings for you..."
                 n 5m "But...{w=0.38}you came back..."
                 n 5y "And...{w=0.38}as much as I tried to control my feelings, I kinda let it slip on Tuesday just to see how you'd react..."
-                n 1l "It made me really happy that you didn't completetly freak out..."
+                n 1l "It made me really happy that you didn't completely freak out..."
                 n 5m "Being your arms...{w=0.38}helped remind me how safe and accepted I felt around you..."
                 n 5u "I was still too scared to tell you directly how I felt, so I decided to give you that special letter..."
                 n 5n "My confession letter."
-                n 5m "I figured you must have read it. I heard of how you were kind of acting like a manaic yesterday morning..."
+                n 5m "I figured you must have read it. I heard of how you were kind of acting like a maniac yesterday morning..."
                 n 5q "And how awkward you've been acting around me lately..."
                 n 3t "So I figured:{w=0.38 }well there's no turning back now..."
                 n 1u "I should just give it to you straight...."
@@ -1244,14 +1246,14 @@ if encore_sayoriquestion_1 == True:
 
         if hangout1 == "Natsuki":
             if hangout2 != "Natsuki":
-                n 5q "As we've hungout more, I just couldn't stop thinking about you..."
+                n 5q "The more we hung out, I just couldn't stop thinking about you..."
                 n "And after Monday, I started to kind of...{w=0.38}miss you..."
                 n 5u "And seeing you wit [hangout2] on Tuesday...{w=0.38}hurt me..."
                 n 5n "I started writing poems about how I felt...{w=0.38}and then I pretty much realized that I had real feelings for you..."
                 n 5m "You made me feel safe and accepted for once..."
                 n 5u "I was still too scared to tell you directly how I felt, so I decided to give you that special letter..."
                 n 5n "My confession letter."
-                n 5m "I figured you must have read it. I heard of how you were kind of acting like a manaic yesterday morning..."
+                n 5m "I figured you must have read it. I heard of how you were kind of acting like a maniac yesterday morning..."
                 n 5q "And how awkward you've been acting around me lately..."
                 n 3t "So I figured:{w=0.38} well there's no turning back now..."
                 n 1u "I should just give it to you straight...."
@@ -1265,25 +1267,25 @@ if encore_sayoriquestion_1 == True:
                 n 12a "I became worried that I was going to be left behind and ignored again..."
                 n 12b "So, I started writing poems to help map out my feelings..."
                 n 12a "It was pretty much then how much you meant to me."
-                n 5m "How safe I delt in your arms..."
+                n 5m "How safe I felt in your arms..."
                 n 5n "How you treated me like I mattered..."
                 n "And I missed spending time around you! Even if we really only ever hungout once!"
                 n 5u "I was too scared to tell you directly how I felt, so I decided to give you that special letter..."
                 n 5n "My confession letter."
-                n 5m "I figured you must have read it. I heard of how you were kind of acting like a manaic yesterday morning..."
+                n 5m "I figured you must have read it. I heard of how you were kind of acting like a maniac yesterday morning..."
                 n 5q "And how awkward you've been acting around me lately..."
-                n 3t "So I figured:{w=0.38 }well there's no turning back now..."
+                n 3t "So I figured:{w=0.38} well there's no turning back now..."
                 n 1u "I should just give it to you straight...."
                 jump n_confession_choice
 
 
 
     if encore_festivalquestion_2 == "Yuri":
-        n 5m "I know that we really haven't spend a whole lot of time around each other when you first joined..."
+        n 5m "I know that we really haven't spent a whole lot of time around each other when you first joined..."
         n 1n "You were always around Sayori..."
         n 12b "And I think that's my fault..."
-        n 12a "Why would you want to spend your time around someone whose always bitching about everything?"
-        n 5n "Whose always mean?"
+        n 12a "Why would you want to spend your time around someone who's always bitching about everything?"
+        n 5n "Who's always mean?"
         n "When someone like Sayori is the complete opposite!"
         n 1q "I put up a wall up around myself because I didn't want to get hurt..."
         n 12a "I was afraid of catching feelings..."
@@ -1300,7 +1302,7 @@ if encore_sayoriquestion_1 == True:
                 n 12b "And it was pretty much then when I realized that I needed to tell you how I felt..."
                 n 5u "I was still too scared to tell you directly how I felt, so I decided to give you that special letter..."
                 n 5n "My confession letter."
-                n 5m "I figured you must have read it. I heard of how you were kind of acting like a manaic yesterday morning..."
+                n 5m "I figured you must have read it. I heard of how you were kind of acting like a maniac yesterday morning..."
                 n 5q "And how awkward you've been acting around me lately..."
                 n 3t "So I figured:{w=0.38} well there's no turning back now..."
                 n 1u "I should just give it to you straight...."
@@ -1321,7 +1323,7 @@ if encore_sayoriquestion_1 == True:
                 n 5y "As much as I tried to control my feelings, I kinda let it slip on Tuesday just to see how you'd react..."
                 n 5u "But, I was too scared to tell you directly how I really felt at the time, so I decided to give you that special letter..."
                 n 5n "My confession letter."
-                n 5m "I figured you must have read it. I heard of how you were kind of acting like a manaic yesterday morning..."
+                n 5m "I figured you must have read it. I heard of how you were kind of acting like a maniac yesterday morning..."
                 n 5q "And how awkward you've been acting around me lately..."
                 n 3t "So I figured:{w=0.38} well there's no turning back now..."
                 n 1u "I should just give it to you straight...."
@@ -1340,7 +1342,7 @@ if encore_sayoriquestion_1 == True:
                 n 5m "It was pretty much there I figured out that I liked you..."
                 n 5u "But, I was too scared to tell you directly how I really felt at the time, so I decided to give you that special letter..."
                 n 5n "My confession letter."
-                n 5m "I figured you must have read it. I heard of how you were kind of acting like a manaic yesterday morning..."
+                n 5m "I figured you must have read it. I heard of how you were kind of acting like a maniac yesterday morning..."
                 n 5q "And how awkward you've been acting around me lately..."
                 n 3t "So I figured:{w=0.38} well there's no turning back now..."
                 n 1u "I should just give it to you straight...."
@@ -1373,7 +1375,7 @@ if encore_sayoriquestion_1 == False:
                 n 5n "So, I decided to write some poems about how I felt, and it was from there that I decided that I needed to tell you how I felt..."
                 n 5u "I was too scared to tell you directly, so I decided to give you that special letter..."
                 n 5n "My confession letter."
-                n 5m "I figured you must have read it. I heard of how you were kind of acting like a manaic yesterday morning..."
+                n 5m "I figured you must have read it. I heard of how you were kind of acting like a maniac yesterday morning..."
                 n 5q "And how awkward you've been acting around me lately..."
                 n 3t "So I figured:{w=0.38} well there's no turning back now..."
                 n 1u "I should just give it to you straight...."
@@ -1387,11 +1389,11 @@ if encore_sayoriquestion_1 == False:
                 n 5n "I started writing poems about how I felt...{w=0.38}and then I pretty much decided then that I needed to tell you how I felt..."
                 n 5m "But...{w=0.38}you came back..."
                 n 5y "And...{w=0.38}as much as I tried to control my feelings, I kinda let it slip on Tuesday just to see how you'd react..."
-                n 1l "It made me really happy that you didn't completetly freak out..."
+                n 1l "It made me really happy that you didn't completely freak out..."
                 n 5m "Being your arms...{w=0.38}helped remind me how safe and accepted I felt around you..."
                 n 5u "I was still too scared to tell you directly how I felt, so I decided to give you that special letter..."
                 n 5n "My confession letter."
-                n 5m "I figured you must have read it. I heard of how you were kind of acting like a manaic yesterday morning..."
+                n 5m "I figured you must have read it. I heard of how you were kind of acting like a maniac yesterday morning..."
                 n 5q "And how awkward you've been acting around me lately..."
                 n 3t "So I figured:{w=0.38} well there's no turning back now..."
                 n 1u "I should just give it to you straight...."
@@ -1401,14 +1403,14 @@ if encore_sayoriquestion_1 == False:
             if hangout2 != "Natsuki":
                 n 5n "But...{w=0.38}you've been avoiding me this entire week!"
                 n "I've missed you...{w=0.38}a lot..."
-                n 5n "I've missed verything about you...{w=0.38}your laugh...{w=0.38}your smile..."
+                n 5n "I've missed everything about you...{w=0.38}your laugh...{w=0.38}your smile..."
                 n 12a "Even reading manga just wasn't the same without you..."
                 n 12b "And seeing you spend time around the others...{w=0.38}really pissed me off..."
                 n 12a "I couldn't figure out a good way to get your attention without getting too angry..."
                 n 5n "So, I decided to write some poems about how I felt, and it was from there that I decided that I needed to tell you how I felt..."
                 n 5u "I was too scared to tell you directly, so I decided to give you that special letter..."
                 n 5n "My confession letter."
-                n 5m "I figured you must have read it. I heard of how you were kind of acting like a manaic yesterday morning..."
+                n 5m "I figured you must have read it. I heard of how you were kind of acting like a maniac yesterday morning..."
                 n 5q "And how awkward you've been acting around me lately..."
                 n 3t "So I figured:{w=0.38} well there's no turning back now..."
                 n 1u "I should just give it to you straight...."
@@ -1416,11 +1418,11 @@ if encore_sayoriquestion_1 == False:
 
 
     if encore_festivalquestion_2 == "Yuri":
-        n 5m "I know that we really haven't spend a whole lot of time around each other when you first joined..."
+        n 5m "I know that we really haven't spent a whole lot of time around each other when you first joined..."
         n 1n "You were always around Yuri..."
         n 12b "And I think that's my fault..."
-        n 12a "Why would you want to spend your time around someone whose always bitching about everything?"
-        n 5n "Whose always mean?"
+        n 12a "Why would you want to spend your time around someone who's always bitching about everything?"
+        n 5n "Who's always mean?"
         n 1n "Yuri was always kind and gentle around you...{w=0.38}and I wasn't. I sincerely regret that now..."
         n 1q "I put up a wall up around myself because I didn't want to get hurt..."
         n 12a "I was afraid of catching feelings..."
@@ -1438,7 +1440,7 @@ if encore_sayoriquestion_1 == False:
                 n 12b "And it was pretty much then when I realized that I needed to tell you how I felt..."
                 n 5u "I was still too scared to tell you directly how I felt, so I decided to give you that special letter..."
                 n 5n "My confession letter."
-                n 5m "I figured you must have read it. I heard of how you were kind of acting like a manaic yesterday morning..."
+                n 5m "I figured you must have read it. I heard of how you were kind of acting like a maniac yesterday morning..."
                 n 5q "And how awkward you've been acting around me lately..."
                 n 3t "So I figured:{w=0.38} well there's no turning back now..."
                 n 1u "I should just give it to you straight...."
@@ -1460,7 +1462,7 @@ if encore_sayoriquestion_1 == False:
                 n 5y "As much as I tried to control my feelings, I kinda let it slip on Tuesday just to see how you'd react..."
                 n 5u "But, I was too scared to tell you directly how I really felt at the time, so I decided to give you that special letter..."
                 n 5n "My confession letter."
-                n 5m "I figured you must have read it. I heard of how you were kind of acting like a manaic yesterday morning..."
+                n 5m "I figured you must have read it. I heard of how you were kind of acting like a maniac yesterday morning..."
                 n 5q "And how awkward you've been acting around me lately..."
                 n 3t "So I figured:{w=0.38} well there's no turning back now..."
                 n 1u "I should just give it to you straight...."
@@ -1479,7 +1481,7 @@ if encore_sayoriquestion_1 == False:
                 n 5m "It was pretty much there I figured out that I liked you..."
                 n 5u "But, I was too scared to tell you directly how I really felt at the time, so I decided to give you that special letter..."
                 n 5n "My confession letter."
-                n 5m "I figured you must have read it. I heard of how you were kind of acting like a manaic yesterday morning..."
+                n 5m "I figured you must have read it. I heard of how you were kind of acting like a maniac yesterday morning..."
                 n 5q "And how awkward you've been acting around me lately..."
                 n 3t "So I figured:{w=0.38 }well there's no turning back now..."
                 n 1u "I should just give it to you straight...."
@@ -1501,7 +1503,7 @@ if encore_sayoriquestion_1 == False:
                 n 5q "And...{w=0.38}I figured out that I truly liked you..."
                 n 5u "But, I was too scared to tell you directly how I really felt at the time, so I decided to give you that special letter..."
                 n 5n "My confession letter."
-                n 5m "I figured you must have read it. I heard of how you were kind of acting like a manaic yesterday morning..."
+                n 5m "I figured you must have read it. I heard of how you were kind of acting like a maniac yesterday morning..."
                 n 5q "And how awkward you've been acting around me lately..."
                 n 3t "So I figured:{w=0.38} well there's no turning back now..."
                 n 1u "I should just give it to you straight...."
@@ -1529,7 +1531,7 @@ show natsuki 1p
 show natsuki 1u
 "But at the same time, she looks as if the world has been lifted from her shoulders."
 show natsuki 1n
-"Natsuki looks at me, her eyes filled with uncertainty, as she awaits with baited breath for my answer."
+"Natsuki looks at me, her eyes filled with uncertainty, as she awaits with bated breath for my answer."
 "I'm really touched by her confession..."
 "I never realized how much of an impact I've had on Natsuki since I first joined..."
 "And truthfully...{w=0.38}part of me likes her back..."
@@ -1554,7 +1556,7 @@ if encore_sayoriquestion_1 == False:
 
     if hangout1 == "Monika" and hangout2 == "Monika":
         "What would Monika say after I've spent so much time around her?"
-        "She was always the girl I thought I could never get, and I have a really good chance of geting with her now..."
+        "She was always the girl I thought I could never get, and I have a really good chance of getting with her now..."
         jump dialogue_cont1
 
     if hangout1 == "Yuri" and hangout2 == "Yuri":
@@ -1563,7 +1565,7 @@ if encore_sayoriquestion_1 == False:
         jump dialogue_cont1
 
     else:
-        "I've been feeling divded between [hangout1] and [hangout2] lately..."
+        "I've been feeling divided between [hangout1] and [hangout2] lately..."
         "Even now more so since I spent yesterday with [hangout3]..."
         jump dialogue_cont1
 
@@ -1731,7 +1733,7 @@ if encore_sayoriquestion_1 == False:
 
 
     if hangout1 == "Monika" and hangout2 == "Monika":
-            "Monika's going to be comeptlelty pissed, and rightfully so..."
+            "Monika's going to be completely pissed, and rightfully so..."
             "How we've finally started talking and with how close we've gotten..."
 
             if hangout3 == "Monika":
@@ -1771,7 +1773,7 @@ if encore_sayoriquestion_1 == False:
 label day4_pity:
 
 "What's wrong with me?!?!"
-"My train of thought is interupted as I hear screaming from inside the clubroom."
+"My train of thought is interrupted as I hear screaming from inside the clubroom."
 "Oh no..."
 "Part of me wants to simply walk away and never come back to that room."
 "I know I fucked up."
@@ -1857,7 +1859,7 @@ mc "I'm not turning you down because I don't like you..."
 
 if encore_sayoriquestion_1 == True:
     show natsuki 1p
-    mc "It's just that I'm committed to someone else right now..."
+    mc "But, I'm committed to Sayori..."
 
 if encore_sayoriquestion_1 == False:
     show natsuki 1p
@@ -1876,7 +1878,7 @@ show natsuki 12f
 show natsuki at lhide
 hide natsuki
 "Before I could even respond, Natsuki runs back into the clubroom, sobbing loudly."
-"I do my best to nurse by throbbing cheek as I sit myself up and try to make sense of what just happened."
+"I do my best to nurse my throbbing cheek as I sit myself up and try to make sense of what just happened."
 
 if encore_sayoriquestion_1 == True:
     "I hate that it had to play out like that..."
@@ -1944,7 +1946,7 @@ if encore_sayoriquestion_1 == False:
 
 label day4_brace:
 
-"My train of thought is interupted as I hear screaming from inside the clubroom."
+"My train of thought is interrupted as I hear screaming from inside the clubroom."
 "Oh no..."
 "Part of me wants to simply walk away and never come back to that room."
 "This is exactly what I wanted to avoid..."
@@ -1960,8 +1962,8 @@ label y_confession:
 
 show yuri 4c at t11 zorder 1
 "Yuri and I are standing in the middle of the hallway, with not a single person in sight."
-"The air is becoming increasingly fraught with tension as we both struggle to mantain eye contact."
-"A pit forms in my stomach as my brace for what I always thought to be the inevitable..."
+"The air is becoming increasingly fraught with tension as we both struggle to maintain eye contact."
+"A pit forms in my stomach as I brace for what I always thought to be the inevitable..."
 "Fortunately, it seems Yuri's just as nervous about this as I am..."
 show yuri 4a
 "Part of me hopes that this entire thing is some sort of joke or it was complete misunderstanding..."
@@ -1972,7 +1974,7 @@ show yuri 4b
 "I've always been attracted to her to a degree..."
 "And if this is what I think it's about, then this would be the perfect opportunity to explore something that could always still be..."
 "I finally grow tired of waiting and decide to start the conversation."
-mc "So...{w=0.38}why did you want to talk about?"
+mc "So...{w=0.38}what did you want to talk about?"
 y 3q "Well truthfully, I think we both know why I asked you to come out here..."
 mc "Eh, not really..."
 y 3v "Well, first thing's first..."
@@ -2020,7 +2022,7 @@ if encore_sayoriquestion_1 == True:
         y 3v "I always try to make myself as invisible as possible..."
         y 3w "And it makes sense why you chose to spend time with Sayori over me..."
         y 3u "She was always the most outgoing out of all of us, even before you joined..."
-        y 3s "And in retrospect, I understand why you wanted to spend time with Natsuki for the festival preperations too!"
+        y 3s "And in retrospect, I understand why you wanted to spend time with Natsuki for the festival preparations too!"
         y 1u "She never had a problem standing out and grabbing people's attention..."
         y 1v "She was always confident in herself..."
 
@@ -2040,7 +2042,7 @@ if encore_sayoriquestion_1 == True:
                 y 3s "I was worried that I was being too forward at the time, but I sensed you had similar feelings as well..."
                 y 3u "It was from there that I realized that I had serious feelings for you..."
                 y 3s "I thought that we had the potential for us to be something serious..."
-                y 1t "Though I didn't possess the courage the time to tell you directly how I felt, I resolved to give you my confession letter instead."
+                y 1t "Though I didn't possess the courage at the time to tell you directly how I felt, I resolved to give you my confession letter instead."
                 y 3q "I assumed you read it, given how you've been acting around me lately..."
                 y 1s "But, now that you're here, I believe I finally have the courage to say what I've been meaning to tell you..."
                 jump y_confession_choice
@@ -2065,7 +2067,7 @@ if encore_sayoriquestion_1 == True:
                 y 3s "I was worried that I was being too forward at the time, but I sensed you had similar feelings as well..."
                 y 3u "It was from there that I realized that I had serious feelings for you..."
                 y 3s "I thought that we had the potential for us to be something serious..."
-                y 1t "Though I didn't possess the courage the time to tell you directly how I felt, I resolved to give you my confession letter instead."
+                y 1t "Though I didn't possess the courage at the time to tell you directly how I felt, I resolved to give you my confession letter instead."
                 y 3q "I assumed you read it, given how you've been acting around me lately..."
                 y 1s "But, now that you're here, I believe I finally have the courage to say what I've been meaning to tell you..."
                 jump y_confession_choice
@@ -2077,18 +2079,18 @@ if encore_sayoriquestion_1 == True:
                 y 4e "But...{w=0.38}you proved me wrong..."
                 y 2v "That Tuesday, we actually got to spend some time together for once..."
                 y 3c "And it was such a blissful experience!"
-                y 3s "Even if we didn't get to spend as much time as we were hoping for...{w=0.38}I still apppreciated it!"
+                y 3s "Even if we didn't get to spend as much time as we were hoping for...{w=0.38}I still appreciated it!"
                 y 1v "Though I began to worry if that was going to be our only chance to hangout..."
                 y "Especially since with what happened between you and [hangout2] on Tuesday..."
                 y 3w "I was honestly starting to wonder by that point if it was too late, and I'd never get the chance to tell you how I felt..."
-                y 1t "As for quite sometime now, I've been interested in you..."
+                y 1t "As for quite some time now, I've been interested in you..."
                 y 4e "You've always brought a smile to our faces..."
                 y "You've always been kind..."
                 y "And I always did find you to be attractive..."
                 y "So, I decided to start writing poems to get a better understanding of my feelings..."
                 y 3u "It was from there that I realized that I had serious feelings for you..."
                 y 3s "I thought that we had the potential for us to be something serious..."
-                y 1t "Though I didn't possess the courage the time to tell you directly how I felt, I resolved to give you my confession letter instead."
+                y 1t "Though I didn't possess the courage at the time to tell you directly how I felt, I resolved to give you my confession letter instead."
                 y 3q "I assumed you read it, given how you've been acting around me lately..."
                 y 1s "But, now that you're here, I believe I finally have the courage to say what I've been meaning to tell you..."
                 jump y_confession_choice
@@ -2102,7 +2104,7 @@ if encore_sayoriquestion_1 == True:
             y 3v "I always try to make myself as invisible as possible..."
             y 3w "And it makes sense why you chose to spend time with Sayori over me..."
             y 3u "She was always the most outgoing out of all of us, even before you joined..."
-            y 3t "But, I was very surprised when you chose me for the festival preperations..."
+            y 3t "But, I was very surprised when you chose me for the festival preparations..."
             y 2u "I was shocked at first, but I was really grateful that you did..."
 
 
@@ -2112,8 +2114,8 @@ if encore_sayoriquestion_1 == True:
             y 3u "I was worried that after the festival we would stop talking..."
             y 1s "But, thankfully those fears never came to pass..."
             y 4e "You still came back to me..."
-            y "And I finally got to expereince what I've been missing out on..."
-            y 1t "To be completely honest, for quite sometime now, I've been interested in you..."
+            y "And I finally got to experience what I've been missing out on..."
+            y 1t "To be completely honest, for quite some time now, I've been interested in you..."
             y 4e "You've always brought a smile to our faces..."
             y "You've always been kind..."
             y "And I always did find you to be attractive..."
@@ -2126,7 +2128,7 @@ if encore_sayoriquestion_1 == True:
             y 3s "I was worried that I was being too forward at the time, but I sensed you had similar feelings as well..."
             y 3u "It was from there that I realized that I had serious feelings for you..."
             y 3s "I thought that we had the potential for us to be something serious..."
-            y 1t "Though I didn't possess the courage the time to tell you directly how I felt, I resolved to give you my confession letter instead."
+            y 1t "Though I didn't possess the courage at the time to tell you directly how I felt, I resolved to give you my confession letter instead."
             y 3q "I assumed you read it, given how you've been acting around me lately..."
             y 1s "But, now that you're here, I believe I finally have the courage to say what I've been meaning to tell you..."
             jump y_confession_choice
@@ -2134,11 +2136,11 @@ if encore_sayoriquestion_1 == True:
 
     if hangout1 != "Yuri":
         if hangout2 == "Yuri":
-            y 3w "But...{w=0.38}I began to worry if what we experienced on Sunday and during the festival was meerly another fleeting moment in my life..."
+            y 3w "But...{w=0.38}I began to worry if what we experienced on Sunday and during the festival was merely another fleeting moment in my life..."
             y 3v "I was yearning for the next chance to be with you..."
             y 3w "Wondering if we could build upon our relationship..."
             y 4e "And to potentially be something more than just friends..."
-            y 1t "To be completely honest, for quite sometime now, I've been interested in you..."
+            y 1t "To be completely honest, for quite some time now, I've been interested in you..."
             y 4e "You've always brought a smile to our faces..."
             y "You've always been kind..."
             y "And I always did find you to be attractive..."
@@ -2150,7 +2152,7 @@ if encore_sayoriquestion_1 == True:
             y "Especially how we were on Tuesday..."
             y 3s "I was worried that I was being too forward at the time, but I sensed you had similar feelings as well..."
             y 3u "It was from there that I decided that I needed to act on my feelings..."
-            y 1t "Though I didn't possess the courage the time to tell you directly how I felt, I resolved to give you my confession letter instead."
+            y 1t "Though I didn't possess the courage at the time to tell you directly how I felt, I resolved to give you my confession letter instead."
             y 3q "I assumed you read it, given how you've been acting around me lately..."
             y 1s "But, now that you're here, I believe I finally have the courage to say what I've been meaning to tell you..."
             jump y_confession_choice
@@ -2173,7 +2175,7 @@ if encore_sayoriquestion_1 == True:
             y 3u "Even before that moment, I was writing poems to get a better understanding of my feelings..."
             y 3u "It was from there that I realized that I had serious feelings for you..."
             y 3s "I thought that we had the potential for us to be something serious..."
-            y 1t "Though I didn't possess the courage the time to tell you directly how I felt, I resolved to give you my confession letter instead."
+            y 1t "Though I didn't possess the courage at the time to tell you directly how I felt, I resolved to give you my confession letter instead."
             y 3q "I assumed you read it, given how you've been acting around me lately..."
             y 1s "But, now that you're here, I believe I finally have the courage to say what I've been meaning to tell you..."
             jump y_confession_choice
@@ -2187,12 +2189,12 @@ if encore_sayoriquestion_1 == True:
             y 4c "Seeing you with the others...{w=0.38}especially with [hangout2] on Tuesday, felt like the norm in the literature club was returning..."
             y 3r "And I didn't want that!"
             y 1v "As much as I've generally isolated myself in the club, I began to realize how it was affecting my chances of finding someone..."
-            y 1t "And very few have showed me the same level of kidness you have given me..."
-            y 4c "I didn't want what we experienced on that Sunday and during the fesitval to just be another fleeting moment in my life..."
+            y 1t "And very few have showed me the same level of kindness you have given me..."
+            y 4c "I didn't want what we experienced on that Sunday and during the festival to just be another fleeting moment in my life..."
             y "So, I turned to poetry to help map out my feelings and try to decide what I should do next."
             y 3u "It was from there that I realized that I had serious feelings for you..."
             y 3s "I thought that we had the potential for us to be something serious..."
-            y 1t "Though I didn't possess the courage the time to tell you directly how I felt, I resolved to give you my confession letter instead."
+            y 1t "Though I didn't possess the courage at the time to tell you directly how I felt, I resolved to give you my confession letter instead."
             y 3q "I assumed you read it, given how you've been acting around me lately..."
             y 1s "But, now that you're here, I believe I finally have the courage to say what I've been meaning to tell you..."
             jump y_confession_choice
@@ -2208,7 +2210,7 @@ if encore_sayoriquestion_1 == False:
         y 3v "I always try to make myself as invisible as possible..."
         y 3w "And it makes sense why you chose to spend time with Natsuki over me..."
         y 3u "She was always the most outspoken out of all of us, even before you joined..."
-        y 3s "And in retrospect, I understand why you wanted to spend time with Natsuki for the festival preperations too!"
+        y 3s "And in retrospect, I understand why you wanted to spend time with Natsuki for the festival preparations too!"
         y 1u "She never had a problem standing out and grabbing people's attention..."
         y 1v "And when she wants to, she really is a fun person to spend time with..."
 
@@ -2227,7 +2229,7 @@ if encore_sayoriquestion_1 == False:
                 y 3s "I was worried that I was being too forward at the time, but I sensed you had similar feelings as well..."
                 y 3u "It was from there that I realized that I had serious feelings for you..."
                 y 3s "I thought that we had the potential for us to be something serious..."
-                y 1t "Though I didn't possess the courage the time to tell you directly how I felt, I resolved to give you my confession letter instead."
+                y 1t "Though I didn't possess the courage at the time to tell you directly how I felt, I resolved to give you my confession letter instead."
                 y 3q "I assumed you read it, given how you've been acting around me lately..."
                 y 1s "But, now that you're here, I believe I finally have the courage to say what I've been meaning to tell you..."
                 jump y_confession_choice
@@ -2251,7 +2253,7 @@ if encore_sayoriquestion_1 == False:
                 y 3u "Even before that moment, I was writing poems to get a better understanding of my feelings..."
                 y 3u "It was from there that I realized that I had serious feelings for you..."
                 y 3s "I thought that we had the potential for us to be something serious..."
-                y 1t "Though I didn't possess the courage the time to tell you directly how I felt, I resolved to give you my confession letter instead."
+                y 1t "Though I didn't possess the courage at the time to tell you directly how I felt, I resolved to give you my confession letter instead."
                 y 3q "I assumed you read it, given how you've been acting around me lately..."
                 y 1s "But, now that you're here, I believe I finally have the courage to say what I've been meaning to tell you..."
                 jump y_confession_choice
@@ -2278,7 +2280,7 @@ if encore_sayoriquestion_1 == False:
                 y 3s "I was worried that I was being too forward at the time, but I sensed you had similar feelings as well..."
                 y 3u "It was from there that I realized that I had serious feelings for you..."
                 y 3s "I thought that we had the potential for us to be something serious..."
-                y 1t "Though I didn't possess the courage the time to tell you directly how I felt, I resolved to give you my confession letter instead."
+                y 1t "Though I didn't possess the courage at the time to tell you directly how I felt, I resolved to give you my confession letter instead."
                 y 3q "I assumed you read it, given how you've been acting around me lately..."
                 y 1s "But, now that you're here, I believe I finally have the courage to say what I've been meaning to tell you..."
                 jump y_confession_choice
@@ -2288,11 +2290,11 @@ if encore_sayoriquestion_1 == False:
         if hangout1 != "Yuri":
             if hangout2 != "Yuri":
                 y 3w "But, I couldn't help but worry if we were ever going to spend some quality time together..."
-                y 3u "We've only meerly had conversations, and I wanted more..."
+                y 3u "We've only merely had conversations, and I wanted more..."
                 y 4c "Seeing you with the others...{w=0.38}especially with [hangout2] on Tuesday, it felt like the norm in the literature club..."
                 y 3r "And I didn't want it anymore!"
                 y 1v "As much as I've generally isolated myself in the club, I began to realize how it was affecting my chances of finding someone..."
-                y 1t "And very few have showed me the same level of kidness you have given me, even if it was brief..."
+                y 1t "And very few have showed me the same level of kindness you have given me, even if it was brief..."
                 y 4e "To be totally honest with you, I've had my eye on you since we first joined..."
                 y "How you've brought a smile to all our faces..."
                 y "Always being kind..."
@@ -2301,7 +2303,7 @@ if encore_sayoriquestion_1 == False:
                 y "But, it pretty much evolved into something romantic..."
                 y 3u "It was from there that I realized that I had serious feelings for you..."
                 y 3s "I thought that it was worth trying to get something to happen between us..."
-                y 1t "Though I didn't possess the courage the time to tell you directly how I felt, I resolved to give you my confession letter instead."
+                y 1t "Though I didn't possess the courage at the time to tell you directly how I felt, I resolved to give you my confession letter instead."
                 y 3q "I assumed you read it, given how you've been acting around me lately..."
                 y 1s "But, now that you're here, I believe I finally have the courage to say what I've been meaning to tell you..."
                 jump y_confession_choice
@@ -2328,8 +2330,8 @@ if encore_sayoriquestion_1 == False:
                 y 3u "I was worried that after the festival we would stop talking..."
                 y 1s "But, thankfully those fears never came to pass..."
                 y 4e "You still came back to me..."
-                y "And I finally got to expereince what I've been missing out on for so long..."
-                y 1t "To be completely honest, for quite sometime now, I've been interested in you..."
+                y "And I finally got to experience what I've been missing out on for so long..."
+                y 1t "To be completely honest, for quite some time now, I've been interested in you..."
                 y 4e "You've always brought a smile to our faces..."
                 y "You've always been kind..."
                 y "And I always did find you to be attractive..."
@@ -2344,7 +2346,7 @@ if encore_sayoriquestion_1 == False:
                 y 3s "But I sensed you had similar feelings as well..."
                 y 3u "It was from there that I realized that I had serious feelings for you..."
                 y 3s "I thought that we had the potential for us to be something serious..."
-                y 1t "Though I didn't possess the courage the time to tell you directly how I felt, I resolved to give you my confession letter instead."
+                y 1t "Though I didn't possess the courage at the time to tell you directly how I felt, I resolved to give you my confession letter instead."
                 y 3q "I assumed you read it, given how you've been acting around me lately..."
                 y 1s "But, now that you're here, I believe I finally have the courage to say what I've been meaning to tell you..."
                 jump y_confession_choice
@@ -2359,7 +2361,7 @@ if encore_sayoriquestion_1 == False:
                 y 3v "I was yearning for the next chance to be with you..."
                 y 3w "Wondering if we could build upon our relationship..."
                 y 4e "And to potentially be something more than just friends..."
-                y 1t "To be completely honest, for quite sometime now, I've been interested in you..."
+                y 1t "To be completely honest, for quite some time now, I've been interested in you..."
                 y 4e "You've always brought a smile to our faces..."
                 y "You've always been kind..."
                 y "And I always did find you to be attractive..."
@@ -2371,7 +2373,7 @@ if encore_sayoriquestion_1 == False:
                 y "Especially how we were on Tuesday..."
                 y 3s "I was worried that I was being too forward at the time, but I sensed you had similar feelings as well..."
                 y 3u "It was from there that I decided that I needed to act on my feelings..."
-                y 1t "Though I didn't possess the courage the time to tell you directly how I felt, I resolved to give you my confession letter instead."
+                y 1t "Though I didn't possess the courage at the time to tell you directly how I felt, I resolved to give you my confession letter instead."
                 y 3q "I assumed you read it, given how you've been acting around me lately..."
                 y 1s "But, now that you're here, I believe I finally have the courage to say what I've been meaning to tell you..."
                 jump y_confession_choice
@@ -2383,7 +2385,7 @@ if encore_sayoriquestion_1 == False:
                 y 3w "Still, part of me wondered if that was just going to be it for us..."
                 y "I wasn't sure what the next step for us was going to be..."
                 y 3s "I just knew that I wanted to be around you more..."
-                y 1t "Truthfully, for quite sometime now, I've been interested in you..."
+                y 1t "Truthfully, for quite some time now, I've been interested in you..."
                 y 4e "You've always brought a smile to our faces..."
                 y "You've always been kind..."
                 y "And I always did find you to be attractive..."
@@ -2396,7 +2398,7 @@ if encore_sayoriquestion_1 == False:
                 y 3u "Even before that moment, I was writing poems to get a better understanding of my feelings..."
                 y 3u "It was from there that I realized that I had serious feelings for you..."
                 y 3s "I thought that we had the potential for us to be something serious..."
-                y 1t "Though I didn't possess the courage the time to tell you directly how I felt, I resolved to give you my confession letter instead."
+                y 1t "Though I didn't possess the courage at the time to tell you directly how I felt, I resolved to give you my confession letter instead."
                 y 3q "I assumed you read it, given how you've been acting around me lately..."
                 y 1s "But, now that you're here, I believe I finally have the courage to say what I've been meaning to tell you..."
                 jump y_confession_choice
@@ -2419,11 +2421,11 @@ if encore_sayoriquestion_1 == False:
                 y 3q "Seeing you with [hangout2]...{w=0.38}really hurt me inside..."
                 y 3w "I started to worry if I had missed my chance to try to forge a lasting relationship with you..."
                 y "Or that you've moved on from me..."
-                y 4c "I didn't want what we experienced on that Sunday and during the fesitval to just be another fleeting moment in my life..."
+                y 4c "I didn't want what we experienced on that Sunday and during the festival to just be another fleeting moment in my life..."
                 y "Ever since I've had my eye on you, I've turned to poetry to help map out my feelings and try to decide what I should do next."
                 y 3u "It was from there that I realized that I had serious feelings for you..."
                 y 3s "I thought that we had the potential for us to be something serious..."
-                y 1t "Though I didn't possess the courage the time to tell you directly how I felt, I resolved to give you my confession letter instead."
+                y 1t "Though I didn't possess the courage at the time to tell you directly how I felt, I resolved to give you my confession letter instead."
                 y 3q "I assumed you read it, given how you've been acting around me lately..."
                 y 1s "But, now that you're here, I believe I finally have the courage to say what I've been meaning to tell you..."
                 jump y_confession_choice
@@ -2447,7 +2449,7 @@ y 3t "I...{w=0.38}love you..."
 y 3s "I want to make you as happy as possible..."
 y 3u "I want to return the favor for everything you've done for me."
 y 1v "I don't know what I did to deserve your kindness..."
-y 3s "But, I would be honored to make our relationship that much more special by making things between us offical..."
+y 3s "But, I would be honored to make our relationship that much more special by making things between us official..."
 y 3q "I...{w=0.38}I know I've rambled on for quite a while now, but you just mean so much to me..."
 y "And I really couldn't find a good way to condense everything..."
 y 3s "So, that's how I feel about you..."
@@ -2477,7 +2479,7 @@ if encore_sayoriquestion_1 == False:
 
     if hangout1 == "Monika" and hangout2 == "Monika":
             "What would Monika say after I've spent so much time around her?"
-            "She was always the girl I thought I could never get, and I have a really good chance of geting with her now..."
+            "She was always the girl I thought I could never get, and I have a really good chance of getting with her now..."
             jump dialogue_cont2
 
     if hangout1 == "Yuri" and hangout2 == "Yuri":
@@ -2486,7 +2488,7 @@ if encore_sayoriquestion_1 == False:
             jump dialogue_cont2
 
     else:
-        "I've been feeling divded between [hangout1] and [hangout2] lately..."
+        "I've been feeling divided between [hangout1] and [hangout2] lately..."
         "Even now more so since I spent yesterday with [hangout3]..."
         jump dialogue_cont2
 
@@ -2542,7 +2544,7 @@ y 3d "I still can't believe this is actually happening!"
 show yuri 3c
 mc "Yeah...{w=0.38}me neither..."
 show yuri 1a
-mc "This is what it feels like making things offical, huh?"
+mc "This is what it feels like making things official, huh?"
 stop music fadeout 2.0
 y 1s "You've...{w=0.38}made this the best moment of my life!"
 y 1c "We need to tell everyone the good news!"
@@ -2670,7 +2672,7 @@ if encore_sayoriquestion_1 == False:
 
 
     if hangout1 == "Monika" and hangout2 == "Monika":
-            "Monika's going to be comeptlelty pissed, and rightfully so..."
+            "Monika's going to be completely pissed, and rightfully so..."
             "How we've finally started talking and with how close we've gotten..."
 
             if hangout3 == "Monika":
@@ -2777,7 +2779,7 @@ mc "I'm not turning you down because I don't like you..."
 
 if encore_sayoriquestion_1 == True:
     show yuri 3y7
-    mc "It's just that I'm committed to someone else right now..."
+    mc "But, I'm committed to Sayori..."
 
 if encore_sayoriquestion_1 == False:
     show yuri 3y7
@@ -3214,7 +3216,7 @@ n 5w "Well it's not my fault you were too slow, Monika!"
 n 5x "If you two weren't dating, then I don't see what the big deal is..."
 n 1o "And might I add how unethical it'd be for the club president to be dating one of their own club members?"
 m 3i "That's not the point, Natsuki!"
-m 5b "There's something called 'courtsey' in these types of situations..."
+m 5b "There's something called 'courtesy' in these types of situations..."
 m "You knew I was hanging out with him!"
 n 2r "Not like that though..."
 show sayori 1i
@@ -3241,7 +3243,7 @@ show sayori 1k
 show yuri 3o
 m 1i "Yuri, Sayori, calm down Natsuki. I don't want to deal with her right now."
 n 5o "Fuck you too, Monika!"
-"Monika then practically drags me out into the hallway as Natsuki kicks up a harsh triade against her."
+"Monika then practically drags me out into the hallway as Natsuki kicks up a harsh tirade against her."
 show sayori at thide
 hide sayori
 show natsuki at thide
@@ -3267,10 +3269,10 @@ show monika 1d at t43 zorder 3
 show yuri 3r at t44 zorder 4
 "Yuri and Natsuki are in a full-blown argument as Monika and Sayori are doing their best to contain the situation."
 "I should've known this was going to happen..."
-n 5w "Again, Yuri, it's not my problem if you too didn't make it offical!"
+n 5w "Again, Yuri, it's not my problem if you too didn't make it official!"
 n 5x "So if you don't like that we're together now, that ain't my problem!"
 y 3r "You should've at least talked to me about all this beforehand!"
-y 1h "Do you have any common courtsey?"
+y 1h "Do you have any common courtesy?"
 n 1o "Well how was I supposed to know you liked him?"
 y 3r "You could've asked me, you dolt!"
 show sayori 1i
@@ -3315,12 +3317,13 @@ label n_chaos2:
 
 show sayori 1n at t41 zorder 1
 show natsuki 12f at t42 zorder 2
-show monika 1d at t43 zorder 3
+show monika 1c at t43 zorder 3
 show yuri 3o at t44 zorder 4
 "Natsuki is sitting face down on a nearby desk, sobbing uncontrollably."
 "Sayori, Monika and Yuri are all over Natsuki, attempting to calm her down."
-m 1c "Natsuki calm down! What happened?"
+m 1d "Natsuki calm down! What happened?"
 show natsuki 12h
+show monika 1f
 "Natsuki briefly lifts her head up."
 show natsuki 12f
 "As soon as she sees me, she immediately slams her face back into the desk, crying twice as harder and louder than before."
@@ -3423,7 +3426,7 @@ n "PISS OFF!"
 show sayori 1k
 "The room becomes dead quiet as Natsuki finishes her insult."
 "Yuri looks as if she's about to have a full-on panic attack, Monika still looks completely bewildered."
-"Sayori looks as if she's about to break down and cry as Natsuki angrily stears her down.."
+"Sayori looks as if she's about to break down and cry as Natsuki angrily stares her down..."
 s 1l "O-{w=0.38}okay..."
 s 1k "If you want to be like that..."
 show sayori at thide
@@ -3785,10 +3788,10 @@ show natsuki 4n at t44 zorder 4
 "I should've known this was going to happen..."
 show monika 1h
 y 3h "Monika, it's hardly my fault that you failed to make a move on him!"
-y 1l "You two aren't offically dating, so your argument over this is pointless."
+y 1l "You two aren't officially dating, so your argument over this is pointless."
 y 1r "Not to mention, I seriously question the ethical implications of our club President dating one of our own members!"
 m 3i "That's not the point, Yuri!"
-m 5b "There's something called 'courtsey' in these types of situations..."
+m 5b "There's something called 'courtesy' in these types of situations..."
 m "You knew I was hanging out with him!"
 y 1h "I didn't think you guys were serious..."
 show sayori 1i
@@ -3815,7 +3818,7 @@ show sayori 1k
 show natsuki 1n
 m 1i "Natsuki, Sayori, calm down Yuri. I can't deal with her right now."
 y 3r "Screw you, Monika!"
-"Monika then practically drags me out into the hallway as Natsuki kicks up a harsh triade against her."
+"Monika then practically drags me out into the hallway as Natsuki kicks up a harsh tirade against her."
 show sayori at thide
 hide sayori
 show natsuki at thide
@@ -3840,7 +3843,7 @@ show monika 1d at t43 zorder 3
 show natsuki 4o at t44 zorder 4
 "Yuri and Natsuki are in a full-blown argument as Monika and Sayori are doing their best to contain the situation."
 "I should've known this was going to happen..."
-y 3h "As I said Natsuki, it's not my problem if you failed to make things offical with him!"
+y 3h "As I said Natsuki, it's not my problem if you failed to make things official with him!"
 y 3l "So I don't exactly care about your opinion on this subject."
 n 3o "Wow, are you that full of yourself?"
 n 1o "Are you really the kind of person to just swoop in and mess up other people's relationships like that? Are you always so quiet is because you scheme to mess up people's lives?!?"
@@ -3889,11 +3892,12 @@ label y_chaos2:
 
 show sayori 1n at t41 zorder 1
 show y_cry1 as yuri at t42 zorder 2
-show monika 1d at t43 zorder 3
+show monika 1c at t43 zorder 3
 show natsuki 1n at t44 zorder 4
 "Yuri is sitting face down on a nearby desk, sobbing uncontrollably."
 "Sayori, Monika and Natsuki are all over Yuri, attempting to calm her down."
-m 1c "Yuri calm down! What happened?"
+m 1d "Yuri calm down! What happened?"
+show monika 1f
 show y_cry2 as yuri at t42 zorder 2
 "Yuri briefly lifts her head up."
 show y_cry3 as yuri at t42 zorder 2
@@ -3989,7 +3993,7 @@ show sayori 1k
 show y_cry4 as yuri at t42 zorder 2
 "The room becomes dead quiet as Yuri finishes her insult."
 "Natsuki is in total shock, Monika still looks completely bewildered."
-"Sayori looks as if she's about to break down and cry as Natsuki angrily stears her down.."
+"Sayori looks as if she's about to break down and cry as Natsuki angrily stares her down..."
 s 1l "O-{w=0.38}okay..."
 s 1k "If you want to be like that..."
 show sayori at thide
@@ -4117,111 +4121,6 @@ if n_love == True:
         "I've basically played with everyone's hearts at this point..."
         "Everyone is now hurting because of my stupid mistake..."
         jump converge1
-
-
-label converge1:
-
-show monika 3m
-"Monika clears her throat, ending my train of thought."
-m 3n "Well, [player]...{w=0.38}if you want to be with Natsuki, then that's your choice..."
-show monika 1g
-mc "I don't know what I was thinking, okay?"
-show monika 1f
-mc "I screwed up, I shouldn't have said yes!"
-mc "I wanted to sort everything out first..."
-mc "She wasn't supposed to tell so soon!"
-mc "I wasn't ready for this..."
-mc "What am I going to do?!?!"
-show monika 3g
-
-if hangout1 == "Monika":
-    if hangout2 == "Monika":
-        if hangout3 == "Monika":
-
-            if encore_sayoriquestion_1 == True:
-                m "You need to sort out things with Natsuki and Sayori..."
-                m 1p "And we can talk about us when that's taken care of..."
-                jump converge2
-
-
-            if encore_sayoriquestion_1 == False:
-                m "You need to sort out things with Natsuki..."
-                m 1p "And we can talk about us when that's taken care of..."
-                jump converge2
-
-
-if hangout1 == "Natsuki":
-    if hangout2 == "Natsuki":
-        if hangout3 == "Monika" or hangout3 == "Sayori" or hangout3 == "Yuri":
-
-            if encore_sayoriquestion_1 == True:
-
-                if hangout3 == "Monika":
-                    m "You need to sort out things with Natsuki and Sayori..."
-                    m 1p "And we can talk about us when that's taken care of..."
-                    jump converge2
-
-                if hangout3 == "Sayori":
-                    m "You need to sort out things with Natsuki and Sayori..."
-                    jump converge2
-
-                if hangout3 == "Yuri":
-                    m "You need to sort out things with Natsuki and Yuri..."
-                    jump converge2
-
-            if encore_sayoriquestion_1 == False:
-
-                if hangout3 == "Monika":
-                    m "You need to sort out things with Natsuki..."
-                    m 1p "And we can talk about us when that's taken care of..."
-                    jump converge2
-
-                if hangout3 == "Sayori":
-                    m "You need to sort out things with Natsuki and Sayori..."
-                    jump converge2
-
-                if hangout3 == "Yuri":
-                    m "You need to sort out things with Natsuki and Yuri..."
-                    jump converge2
-
-
-
-if hangout1 == "Sayori":
-    if hangout2 == "Sayori":
-        if hangout3 == "Sayori":
-            m "You need to sort out things with Natsuki and Sayori..."
-            jump converge2
-
-
-if hangout1 == "Yuri":
-    if hangout2 == "Yuri":
-        if hangout3 == "Yuri":
-
-            if encore_sayoriquestion_1 == True:
-                m "You need to sort out things with Natsuki, Sayori and Yuri..."
-                jump converge2
-
-            if encore_sayoriquestion_1 == False:
-                m "You need to sort out things with Natsuki and Yuri..."
-                jump converge2
-
-else:
-    m "Well it seems like you need to sort things out with everyone..."
-    m 1p "Just focus on getting everyone calmed down, admit you made a mistake, and we'll go from there..."
-    jump converge2
-
-
-label converge2:
-
-mc "Okay..."
-show monika 1g
-mc "I'm really sorry about causing all this drama, Monika..."
-m 1l "Let's just get through this first and save the apologies for later..."
-show monika 1m
-mc "Alright..."
-jump day4_fight_n
-
-
 
 if n_love == False:
     show monika 1d
@@ -4403,13 +4302,112 @@ if n_love == False:
         jump day4_fight_n
 
 
+label converge1:
+
+show monika 3m
+"Monika clears her throat, ending my train of thought."
+m 3n "Well, [player]...{w=0.38}if you want to be with Natsuki, then that's your choice..."
+show monika 1g
+mc "I don't know what I was thinking, okay?"
+show monika 1f
+mc "I screwed up, I shouldn't have said yes!"
+mc "I wanted to sort everything out first..."
+mc "She wasn't supposed to tell so soon!"
+mc "I wasn't ready for this..."
+mc "What am I going to do?!?!"
+show monika 3g
+
+if hangout1 == "Monika":
+    if hangout2 == "Monika":
+        if hangout3 == "Monika":
+
+            if encore_sayoriquestion_1 == True:
+                m "You need to sort out things with Natsuki and Sayori..."
+                m 1p "And we can talk about us when that's taken care of..."
+                jump converge2
+
+
+            if encore_sayoriquestion_1 == False:
+                m "You need to sort out things with Natsuki..."
+                m 1p "And we can talk about us when that's taken care of..."
+                jump converge2
+
+
+if hangout1 == "Natsuki":
+    if hangout2 == "Natsuki":
+        if hangout3 == "Monika" or hangout3 == "Sayori" or hangout3 == "Yuri":
+
+            if encore_sayoriquestion_1 == True:
+
+                if hangout3 == "Monika":
+                    m "You need to sort out things with Natsuki and Sayori..."
+                    m 1p "And we can talk about us when that's taken care of..."
+                    jump converge2
+
+                if hangout3 == "Sayori":
+                    m "You need to sort out things with Natsuki and Sayori..."
+                    jump converge2
+
+                if hangout3 == "Yuri":
+                    m "You need to sort out things with Natsuki and Yuri..."
+                    jump converge2
+
+            if encore_sayoriquestion_1 == False:
+
+                if hangout3 == "Monika":
+                    m "You need to sort out things with Natsuki..."
+                    m 1p "And we can talk about us when that's taken care of..."
+                    jump converge2
+
+                if hangout3 == "Sayori":
+                    m "You need to sort out things with Natsuki and Sayori..."
+                    jump converge2
+
+                if hangout3 == "Yuri":
+                    m "You need to sort out things with Natsuki and Yuri..."
+                    jump converge2
+
+
+
+if hangout1 == "Sayori":
+    if hangout2 == "Sayori":
+        if hangout3 == "Sayori":
+            m "You need to sort out things with Natsuki and Sayori..."
+            jump converge2
+
+
+if hangout1 == "Yuri":
+    if hangout2 == "Yuri":
+        if hangout3 == "Yuri":
+
+            if encore_sayoriquestion_1 == True:
+                m "You need to sort out things with Natsuki, Sayori and Yuri..."
+                jump converge2
+
+            if encore_sayoriquestion_1 == False:
+                m "You need to sort out things with Natsuki and Yuri..."
+                jump converge2
+
+else:
+    m "Well it seems like you need to sort things out with everyone..."
+    m 1p "Just focus on getting everyone calmed down, admit you made a mistake, and we'll go from there..."
+    jump converge2
+
+
+label converge2:
+mc "Okay..."
+show monika 1g
+mc "I'm really sorry about causing all this drama, Monika..."
+m 1l "Let's just get through this first and save the apologies for later..."
+show monika 1m
+mc "Alright..."
+jump day4_fight_n
 
 
 label y_merge:
 
 m 1i "What happened?"
 show monika 1h
-
 
 
 if y_love == True:
@@ -4492,108 +4490,6 @@ if y_love == True:
         "Everyone is now hurting because of my stupid mistake..."
         jump converge3
 
-
-label converge3:
-
-show monika 3m
-"Monika clears her throat, ending my train of thought."
-m 3n "Well, [player]...{w=0.38}if you want to be with Yuri, then that's your choice..."
-show monika 1g
-mc "I don't know what I was thinking, okay?"
-show monika 1f
-mc "I screwed up, I shouldn't have said yes!"
-mc "I wanted to sort everything out first..."
-mc "She wasn't supposed to tell so soon!"
-mc "I wasn't ready for this..."
-mc "What am I going to do?!?!"
-show monika 3g
-
-if hangout1 == "Monika":
-    if hangout2 == "Monika":
-        if hangout3 == "Monika":
-
-            if encore_sayoriquestion_1 == True:
-                m "You need to sort out things with Yuri and Sayori..."
-                m 1p "And we can talk about us when that's taken care of..."
-                jump converge4
-
-
-            if encore_sayoriquestion_1 == False:
-                m "You need to sort out things with Yuri.."
-                m 1p "And we can talk about us when that's taken care of..."
-                jump converge4
-
-
-if hangout1 == "Yuri":
-    if hangout2 == "Yuri":
-        if hangout3 == "Monika" or hangout3 == "Sayori" or hangout3 == "Natsuki":
-
-            if encore_sayoriquestion_1 == True:
-
-                if hangout3 == "Monika":
-                    m "You need to sort out things with Yuri and Sayori..."
-                    m 1p "And we can talk about us when that's taken care of..."
-                    jump converge4
-
-                if hangout3 == "Sayori":
-                    m "You need to sort out things with Yuri and Sayori..."
-                    jump converge4
-
-                if hangout3 == "Natsuki":
-                    m "You need to sort out things with Yuri and Natsuki..."
-                    jump converge4
-
-            if encore_sayoriquestion_1 == False:
-
-                if hangout3 == "Monika":
-                    m "You need to sort out things with Yuri..."
-                    m 1p "And we can talk about us when that's taken care of..."
-                    jump converge4
-
-                if hangout3 == "Sayori":
-                    m "You need to sort out things with Yuri and Sayori..."
-                    jump converge4
-
-                if hangout3 == "Natsuki":
-                    m "You need to sort out things with Yuri and Natsuki..."
-                    jump converge4
-
-
-
-if hangout1 == "Sayori":
-    if hangout2 == "Sayori":
-        if hangout3 == "Sayori":
-            m "You need to sort out things with Yuri and Sayori..."
-            jump converge4
-
-
-if hangout1 == "Natsuki":
-    if hangout2 == "Natsuki":
-        if hangout3 == "Natsuki":
-
-            if encore_sayoriquestion_1 == True:
-                m "You need to sort out things with Natsuki, Sayori and Yuri..."
-                jump converge4
-
-            if encore_sayoriquestion_1 == False:
-                m "You need to sort out things with Natsuki and Yuri..."
-                jump converge4
-
-else:
-    m "Well it seems like you need to sort things out with everyone..."
-    m 1p "Just focus on getting everyone calmed down, admit you made a mistake, and we'll go from there..."
-    jump converge4
-
-
-label converge4:
-
-mc "Okay..."
-show monika 1g
-mc "I'm really sorry about causing all this drama, Monika..."
-m 1l "Let's just get through this first and save the apologies for later..."
-show monika 1m
-mc "Alright..."
-jump day4_fight_y
 
 
 if y_love == False:
@@ -4780,6 +4676,108 @@ if y_love == False:
         jump day4_fight_y
 
 
+label converge3:
+show monika 3m
+"Monika clears her throat, ending my train of thought."
+m 3n "Well, [player]...{w=0.38}if you want to be with Yuri, then that's your choice..."
+show monika 1g
+mc "I don't know what I was thinking, okay?"
+show monika 1f
+mc "I screwed up, I shouldn't have said yes!"
+mc "I wanted to sort everything out first..."
+mc "She wasn't supposed to tell so soon!"
+mc "I wasn't ready for this..."
+mc "What am I going to do?!?!"
+show monika 3g
+
+if hangout1 == "Monika":
+    if hangout2 == "Monika":
+        if hangout3 == "Monika":
+
+            if encore_sayoriquestion_1 == True:
+                m "You need to sort out things with Yuri and Sayori..."
+                m 1p "And we can talk about us when that's taken care of..."
+                jump converge4
+
+
+            if encore_sayoriquestion_1 == False:
+                m "You need to sort out things with Yuri.."
+                m 1p "And we can talk about us when that's taken care of..."
+                jump converge4
+
+
+if hangout1 == "Yuri":
+    if hangout2 == "Yuri":
+        if hangout3 == "Monika" or hangout3 == "Sayori" or hangout3 == "Natsuki":
+
+            if encore_sayoriquestion_1 == True:
+
+                if hangout3 == "Monika":
+                    m "You need to sort out things with Yuri and Sayori..."
+                    m 1p "And we can talk about us when that's taken care of..."
+                    jump converge4
+
+                if hangout3 == "Sayori":
+                    m "You need to sort out things with Yuri and Sayori..."
+                    jump converge4
+
+                if hangout3 == "Natsuki":
+                    m "You need to sort out things with Yuri and Natsuki..."
+                    jump converge4
+
+            if encore_sayoriquestion_1 == False:
+
+                if hangout3 == "Monika":
+                    m "You need to sort out things with Yuri..."
+                    m 1p "And we can talk about us when that's taken care of..."
+                    jump converge4
+
+                if hangout3 == "Sayori":
+                    m "You need to sort out things with Yuri and Sayori..."
+                    jump converge4
+
+                if hangout3 == "Natsuki":
+                    m "You need to sort out things with Yuri and Natsuki..."
+                    jump converge4
+
+
+
+if hangout1 == "Sayori":
+    if hangout2 == "Sayori":
+        if hangout3 == "Sayori":
+            m "You need to sort out things with Yuri and Sayori..."
+            jump converge4
+
+
+if hangout1 == "Natsuki":
+    if hangout2 == "Natsuki":
+        if hangout3 == "Natsuki":
+
+            if encore_sayoriquestion_1 == True:
+                m "You need to sort out things with Natsuki, Sayori and Yuri..."
+                jump converge4
+
+            if encore_sayoriquestion_1 == False:
+                m "You need to sort out things with Natsuki and Yuri..."
+                jump converge4
+
+else:
+    m "Well it seems like you need to sort things out with everyone..."
+    m 1p "Just focus on getting everyone calmed down, admit you made a mistake, and we'll go from there..."
+    jump converge4
+
+
+label converge4:
+mc "Okay..."
+show monika 1g
+mc "I'm really sorry about causing all this drama, Monika..."
+m 1l "Let's just get through this first and save the apologies for later..."
+show monika 1m
+mc "Alright..."
+jump day4_fight_y
+
+
+
 
 label day4_fight_n:
 
@@ -4808,17 +4806,18 @@ play sound "sfx/fall2.ogg"
 "As soon as she does however, we're forced to duck as a textbook almost immediately flies over our heads."
 show yuri 2j at t21 zorder 1
 show natsuki 1o at t22 zorder 2
+play music e27 fadein 2.0
 y "Wow, Natsuki..."
 y 2i "Great throw...{w=0.38}for a dwarf."
-"Natsuki clenches her fists as she lets out an angrily grunt."
+"Natsuki clenches her fists as she lets out an angry grunt."
 n 1p "Take back what you said right now...{w=0.38}you cutting-obsessed whore!"
 show natsuki 1o
 y 1r "Only after you take back your accusation of me of being a member of a satanic cult, you flat-chested dumpster diver!"
-show natsuki 1v at h21 zorder 1
+show natsuki 1v at h22 zorder 1
 n "Flat chested?!?!? THAT’S IT!"
 show natsuki 1o
-"Natsuki threatingly raises her fist at Yuri."
-"Somehow, everything is even in worse shape..."
+"Natsuki threateningly raises her fist at Yuri."
+"Somehow, everything is in even worse shape..."
 show yuri 1r at t31 zorder 1
 show monika 1h at t32 zorder 2
 show natsuki 1o at t33 zorder 3
@@ -4835,7 +4834,7 @@ m 1h "Just go."
 show yuri 3y7
 "Yuri and Monika coldly stare each other down."
 "Yuri's never been one for confrontation..."
-"I can tell Monika seems rather surprised to, but she seems to be standing her ground for now."
+"I can tell Monika seems rather surprised too, but she seems to be standing her ground for now."
 show monika 2h
 "Yuri continues to coldly stare down Monika with a look I've never seen before from her..."
 "It's as if it's filled with malice..."
@@ -4845,7 +4844,7 @@ show monika at thide
 hide monika
 show yuri at thide
 hide yuri
-"My attention is briefly broken as I hear a sniffle come from the otherside of the room."
+"My attention is briefly broken as I hear a sniffle come from the other side of the room."
 show sayori 1k at t11 zorder 1
 "I look over to see Sayori still sitting in the same spot, almost motionless."
 "I don't even think she saw us come in..."
@@ -4860,14 +4859,33 @@ s "[player]..."
 "I hear her sniffle again."
 mc "It’s okay Sayori, I’m here for you now."
 "Sayori finally looks at me, tears already streaming down her face."
-s 1u "I’m{w=0.38}...I’m sorry{w=0.38}...for a-{w=0.38}all of this..."
-mc "It’s not your fault, Sayori. This is all on me..."
-mc "It's going to be okay..."
-y "I hate to kill the mood between you two over there..."
-show sayori 1k at t31 zorder 1
-show yuri 3r at t32 zorder 2
-show monika 1d at t33 zorder 3
-y "But, it’s not going to be okay."
+
+
+if n_love == True:
+    s 4v "G-{w=0.38}get away from me!"
+    s 1v "I trusted you!"
+    mc "Sayori...!"
+    show sayori 1k
+    mc "Let me explain..."
+    y "I hate to interrupt..."
+    show sayori 1k at t31 zorder 1
+    show yuri 3r at t32 zorder 2
+    show monika 1d at t33 zorder 3
+    y "But, this is more important."
+
+if n_love == False:
+    s 1u "I’m{w=0.38}...I’m sorry{w=0.38}...for a-{w=0.38}all of this..."
+    mc "It’s not your fault, Sayori. This is all on me..."
+    mc "It's going to be okay..."
+    y "I hate to kill the mood between you two over there..."
+    show sayori 1k at t31 zorder 1
+    show yuri 3r at t32 zorder 2
+    show monika 1d at t33 zorder 3
+    y "But, it’s not going to be okay."
+
+
+
+
 y 1h "This needs to be resolved. Now."
 show yuri 1g
 show sayori 1g
@@ -4905,7 +4923,7 @@ m 1h "What the hell are you talking about?"
 m 3i "I'm sending you home because you're creating more problems rather than solving them."
 m 1h "And I'm not putting up with anymore drama today!"
 y 3h "A real Club President would actually hear all sides of the story first, without any pre-mediated motives..."
-y 1r "So you're either taking Natsuki's side without hearing what I have to say, or you're going trying to keep [player] here all to yourself!"
+y 1r "So you're either taking Natsuki's side without hearing what I have to say, or you're going to try to keep [player] here all to yourself!"
 y "You didn't seem to care that your club was tearing itself apart as you were off with him in the hallway doing who knows what!"
 "My jaw drops as Yuri continues to level her accusation."
 "What's gotten into her?"
@@ -4919,7 +4937,7 @@ show pen at t21 zorder 1
 y 2r "Is that what you really want?"
 show yuri 2r at t42 zorder 2
 show pen at t42 zorder 2
-"Yuri proceeds to threatingly tap Monika on the chest with a very familiar looking pen."
+"Yuri proceeds to threateningly tap Monika on the chest with a very familiar looking pen."
 y "Do you want all your club members to hate each other and turn this club into a cesspool?"
 play sound fall
 show yuri 3y7 at t21 zorder 1
@@ -4949,6 +4967,7 @@ show monika 5b at t43 zorder 3
 show natsuki 4f at t44 zorder 4
 "I wince and look at Sayori, but she’s now turned her attention to the drama at the front of the room."
 n 4e "Ohhh, and you wouldn’t have done the same?"
+show natsuki 4f
 "Why is everyone accusing Monika of being into me?"
 
 if hangout1 == "Monika":
@@ -5084,7 +5103,14 @@ show yuri 3n
 "I turn to Sayori, who is on the verge of tears."
 y 3o "I-{w=0.38}I’m sorry, I said too much..."
 s "No, please keep going, Yuri..."
-s 4w "I already know I'm an awful person!"
+
+if n_love == True:
+    s 4w "Clearly I'm not good enough for him!"
+    s 4v "After I tried being the best girlfriend I could..."
+
+if n_love == False:
+    s 4w "I already know I'm an awful person!"
+
 mc "Sayori!"
 show sayori 1v
 n 5q "I always knew you had a thing for [player], Yuri."
@@ -5105,7 +5131,7 @@ if encore_sayoriquestion_1 == False:
 n 5w "At least I didn’t stuff my chest for two weeks to try to get [player]'s attention!"
 n 5x "Like honestly, how gross are you to think he’s that perverted?"
 "At this point I feel as if I should leave, the atmosphere has become unbearable."
-m 5b "You're the one whose called him gross, Natsuki!"
+m 5b "You're the one who's called him gross, Natsuki!"
 show monika 1h
 show natsuki 5g
 s 1j "Maybe if you guys actually spent time with him, instead of acting like jerks, you’d figure out what he likes!"
@@ -5118,7 +5144,7 @@ if encore_sayoriquestion_1 == True:
     if hangout1 == "Sayori":
         if hangout2 == "Sayori":
             if hangout3 == "Sayori":
-                y 1h "Hogging him every moment of everyday..."
+                y 1h "Hogging him every moment of every day..."
 
 
     if hangout1 != "Sayori":
@@ -5141,7 +5167,7 @@ if encore_sayoriquestion_1 == True:
     if hangout1 != "Sayori":
         if hangout2 != "Sayori":
             if hangout3 == "Sayori":
-                y 1h "You were hogged him yesterday!"
+                y 1h "You hogged him yesterday!"
 
 
     if hangout1 == "Sayori":
@@ -5219,11 +5245,12 @@ if encore_sayoriquestion_1 == False:
 
 
 show yuri 1r
-s 1v "I..{w=0.38}I-I’m sorry, I-{w=0.38}I didn’t mean too..."
+s 1v "I..{w=0.38}I-I’m sorry, I-{w=0.38}I didn’t mean to..."
 s 1k "I never really considered that..."
 show monika 1d
 show natsuki 1c
 show sayori 1u
+stop music
 y 1y4 "Have you ever considered killing yourself?"
 y 1y7 "It would be beneficial to society seeing as you’re completely useless and get in the way of everyone!"
 show sayori 4w
@@ -5235,7 +5262,7 @@ show yuri 3g at t32 zorder 2
 show natsuki 1o at t33 zorder 3
 n 1p "What the hell, Yuri!?!"
 show natsuki 1o
-y 3r "You're one to talk considering you called her a basketcase and accused me of cutting myself just five minutes ago!"
+y 3r "You're one to talk considering you called her a basket case and accused me of cutting myself just five minutes ago!"
 m 1i "That's no excuse, Yuri! You don't say that to people!"
 y 1r "Oh yeah, keep talking, Monika! You lost the high ground when you brought up Natsuki's dad!"
 "My blood starts to boil as I clench my fists."
@@ -5245,7 +5272,7 @@ mc "Okay!"
 show natsuki 1c
 show monika 1d
 show yuri 3e
-mc "If you're all going to continue to act like this...{w=0.38}like total monsters...{w=0.38}then I don't want to be apart of this club until you sort yourselves out!"
+mc "If you're all going to continue to act like this...{w=0.38}like total monsters...{w=0.38}then I don't want to be a part of this club until you sort yourselves out!"
 mc "In my eyes, you're all guilty!"
 "I grab my bag and proceed to exit the room, letting the door slam shut behind me before anyone has the chance to stop me."
 show natsuki at thide
@@ -5256,9 +5283,9 @@ show yuri at thide
 hide yuri
 scene bg bedroom
 with wipeleft_scene
-"I ended walking the way home alone, not bothering to wait for Sayori to catch up with me."
+"I ended up walking the way home alone, not bothering to wait for Sayori to catch up with me."
 "I didn't even look behind me once to check if she was there, and if she was, I didn't hear her."
-"As soon I got home, I got changed out of my uniform and hole myself up in my room."
+"As soon as I got home, I got changed out of my uniform and holed myself up in my room."
 "I lay back on my bed, my ears still ringing from all the vicious insults the girls hurled at one another..."
 "I still can't believe what I heard in there..."
 "They treated each other like dirt just so they could try to win me over..."
@@ -5269,7 +5296,7 @@ if n_love == True:
     "The damage is done, thanks to me..."
 
 if n_love == False:
-    "With how brutal they were to each other, I don't think they'll make ammends anytime soon..."
+    "With how brutal they were to each other, I don't think they'll make amends anytime soon..."
 
 "The club’s probably ruined for good. Even if by some miracle we can move past this, they all like me and they’ll probably continue to fight each other whether I’m there or not."
 "I suppose I have an obligation to stick around. I need to do my part for the photoshoot..."
@@ -5315,9 +5342,10 @@ with wipeleft_scene
 "As soon as we enter back into the clubroom, we're greeted by the the sound of Yuri and Natsuki still screaming at each other."
 show natsuki 1o at t21 zorder 1
 show yuri 2j at t22 zorder 2
+play music e27 fadein 2.0
 y "Wow, Natsuki..."
 y 2r "It seems like you can't come up with an original insult other than accusing me of cutting myself!"
-"Natsuki clenches her fists as she lets out an angrily grunt."
+"Natsuki clenches her fists as she lets out an angry grunt."
 n 1p "You literally called me a trap, you whore!"
 show natsuki 1o
 y 1r "And you accused me of being a member of a satanic cult!"
@@ -5325,8 +5353,8 @@ y 3h "Isn't it time for you to scrounge under the vending machines again?"
 show natsuki 1v at h21  zorder 1
 n "THAT’S IT!!!"
 show natsuki 1o
-"Natsuki threatingly raises her fist at Yuri."
-"Somehow, everything is even in worse shape..."
+"Natsuki threateningly raises her fist at Yuri."
+"Somehow, everything is in even worse shape..."
 show natsuki 1o at t31 zorder 1
 show monika 1h at t32 zorder 2
 show yuri 1r at t33 zorder 3
@@ -5349,7 +5377,7 @@ show monika at thide
 hide monika
 show yuri at thide
 hide yuri
-"My attention is briefly broken as I hear a sniffle come from the otherside of the room."
+"My attention is briefly broken as I hear a sniffle come from the other side of the room."
 show sayori 1k at t11 zorder 1
 "I look over to see Sayori still sitting in the same spot, almost motionless."
 "I don't even think she saw us come in..."
@@ -5364,10 +5392,21 @@ s "[player]..."
 "I hear her sniffle again."
 mc "It’s okay Sayori, I’m here for you now."
 "Sayori finally looks at me, tears already streaming down her face."
-s 1u "I’m{w=0.38}...I’m sorry{w=0.38}...for a-{w=0.38}all of this..."
-mc "It’s not your fault, Sayori. This is all on me..."
-mc "It's going to be okay..."
-n "I hate to but in over there..."
+
+if y_love == True:
+    s 4v "G-{w=0.38}get away from me!"
+    s 1v "I trusted you!"
+    mc "Sayori...!"
+    show sayori 1k
+    mc "Let me explain..."
+
+if y_love == False:
+    s 1u "I’m{w=0.38}...I’m sorry{w=0.38}...for a-{w=0.38}all of this..."
+    mc "It’s not your fault, Sayori. This is all on me..."
+    mc "It's going to be okay..."
+
+
+n "I hate to butt in over there..."
 show sayori 1k at t31 zorder 1
 show natsuki 5g at t32 zorder 2
 show monika 1d at t33 zorder 3
@@ -5401,7 +5440,7 @@ m 2i "Don't be hysterical, Natsuki..."
 m 2h "I don't know what's gotten into you, but you're not in the best state of mind to have a civil discussion..."
 n 5g "Oh, shut up!"
 m 2p "There you go again with your toxic attitude..."
-n 2f "There you again trying to maipulate the situation!"
+n 2f "There you go again trying to manipulate the situation!"
 m 1h "What the hell are you talking about?"
 m 3i "I'm sending you home because you're creating more problems rather than solving them."
 m 1h "And I'm not putting up with anymore drama today!"
@@ -5520,7 +5559,7 @@ show monika 1h
 "Monika only clenches her fists."
 "Her knuckles turn white as her flawless face start to give way to shades of crimson."
 y 3h "That's right, we know. It was obvious from the start."
-y 3q "Not to mention you're not exactly the most quiet person when you're with your other friends..."
+y 3q "Not to mention you're not exactly the quietest person when you're with your other friends..."
 y 3m "I overheard quite a lot to put it mildly..."
 show monika 1i
 "Monika grits her teeth."
@@ -5532,7 +5571,7 @@ y 3r "When I was walking around after the festival, I heard you practicing that 
 y 3h "Might I suggest you pick a different title name, Your Re-"
 "Monika finally snaps."
 m 5b "You're one to talk about 'deep, dark secrets', Yuri!"
-m 5a "I think some of your's cut a little deeper than mine~"
+m 5a "I think some of yours cut a little deeper than mine~"
 show yuri 4c
 "Yuri's face immediately goes red as the room goes dead silent."
 "I turn to Sayori, who's clearly as shocked as me at this sudden bombshell."
@@ -5582,7 +5621,15 @@ show yuri 1r
 "I turn to Sayori, who is on the verge of tears."
 n 5q "Well, maybe I shouldn't have said it like that-"
 s "No, please keep going, Natsuki..."
-s 4w "I already know I'm an awful person!"
+
+if y_love == True:
+    s 4w "Clearly I'm not good enough for him!"
+    s 4v "After I tried being the best girlfriend I could..."
+
+if y_love == False:
+    s 4w "I already know I'm an awful person!"
+
+
 mc "Sayori!"
 show sayori 1v
 y 2h "I'm not surprised you had feelings for [player], Natsuki."
@@ -5600,7 +5647,7 @@ if encore_sayoriquestion_1 == False:
 "I have absolutely no idea on what I should do at this point..."
 "Even if I try speaking up, I feel that I’m only going to make things worse between them."
 y 3h "At least I treated him like an actual human being!"
-y 3r "I was as never off-putting as you!"
+y 3r "I was never as off-putting as you!"
 "At this point I feel as if I should leave, the atmosphere has become unbearable."
 m 5b "If he only knew what you wrote about him, you sick freak!"
 show monika 1h
@@ -5719,6 +5766,7 @@ s 1k "I never really considered that..."
 show monika 1d
 show yuri 1e
 show sayori 1u
+stop music
 n 2v "Well consider this!"
 n "Just go away and never come back!"
 n 5o "We don't want you in the way!!!"
@@ -5741,7 +5789,7 @@ mc "Okay."
 show natsuki 1c
 show monika 1d
 show yuri 3e
-mc "If you're all going to continue to act like this...{w=0.38}like total monsters...{w=0.38}then I don't want to be apart of this club until you sort yourselves out."
+mc "If you're all going to continue to act like this...{w=0.38}like total monsters...{w=0.38}then I don't want to be a part of this club until you sort yourselves out."
 mc "In my eyes, you're all guilty."
 "I grab my bag and proceed to exit the room, letting the door slam shut behind me before anyone has the chance to stop me."
 show natsuki at thide
@@ -5752,20 +5800,20 @@ show yuri at thide
 hide yuri
 scene bg bedroom
 with wipeleft_scene
-"I ended walking the way home alone, not bothering to wait for Sayori to catch up with me."
+"I ended up walking the way home alone, not bothering to wait for Sayori to catch up with me."
 "I didn't even look behind me once to check if she was there, and if she was, I didn't hear her."
-"As soon I got home, I got changed out of my uniform and hole myself up in my room."
+"As soon as I got home, I got changed out of my uniform and holed myself up in my room."
 "I lay back on my bed, my ears still ringing from all the vicious insults the girls hurled at one another..."
 "I still can't believe what I heard in there..."
 "They treated each other like dirt just so they could try to win me over..."
 "What am I going to do?"
-"I don’t even know if I should even come back..."
+"I don’t even know if I should come back..."
 
 if y_love == True:
     "The damage is done, thanks to me..."
 
 if y_love == False:
-    "With how brutal they were to each other, I don't think they'll make ammends anytime soon..."
+    "With how brutal they were to each other, I don't think they'll make amends anytime soon..."
 
 "The club’s probably ruined for good. Even if by some miracle we can move past this, they all like me and they’ll probably continue to fight each other whether I’m there or not."
 "I suppose I have an obligation to stick around. I need to do my part for the photoshoot..."
@@ -5895,7 +5943,7 @@ if encore_sayoriquestion_1 == True:
     if n_love == False or y_love == False:
         "For one, she really didn't do anything to instigate the fight..."
         "Hell, she was one of the biggest victims..."
-        "But I know if she comes over, she's just going to blame herself for everything, and I'm particularly sure if I'm for dealing with that, or anything else..."
+        "But I know if she comes over, she's just going to blame herself for everything, and I'm not particularly sure if I'm up for dealing with that, or anything else..."
 
 if encore_sayoriquestion_1 == False:
 
@@ -5908,7 +5956,7 @@ if encore_sayoriquestion_1 == False:
     if n_love == False or y_love == False:
         "For one, she really didn't do anything to instigate the fight..."
         "Hell, she was one of the biggest victims..."
-        "But I know if she comes over, she's just going to blame herself for everything, and I'm not particularly sure if I want tp deal with that, or anything else..."
+        "But I know if she comes over, she's just going to blame herself for everything, and I'm not particularly sure if I want to deal with that, or anything else..."
 
 
 menu:
@@ -5989,7 +6037,7 @@ if encore_sayoriquestion_1 == False:
 
     if n_love == False or y_love == False:
         "Considering how Monika behaved earlier, I'm not sure if I want to be around her right now..."
-        "She acted like a comeptlelty different person...{w=0.38}it was kind of terrifying..."
+        "She acted like a completely different person...{w=0.38}it was kind of terrifying..."
         "But, maybe she just wants to apologize for her behavior..."
         "And maybe I should see her just to make sure she's doing okay..."
 
@@ -6055,7 +6103,7 @@ with wipeleft
 "And why would she want to talk to me now anyways?"
 "Keeping my distance for the day was probably for the best..."
 "Well, tomorrow's going to be so much fun..."
-"It's best to try not think about it too much and just save up my energy..."
+"It's best to try not to think about it too much and just save up my energy..."
 "It's going to be eventful and stressful no matter how it goes down..."
 "Hopefully there's no more stupid nightmares too..."
 "With my prayer complete, I finally drift off to sleep."
@@ -6066,14 +6114,14 @@ label day4_night_m2:
 scene bg bedroom_night
 with wipeleft
 "I crash onto my bed as soon as I finish laminating."
-"Even though it wasn't exactly the most time consuming process, I defintley dragged it out by re-reading Monika's poems at least a hundred times..."
+"Even though it wasn't exactly the most time consuming process, I definitely dragged it out by re-reading Monika's poems at least a hundred times..."
 "Even if I never really understood them, I understand why they meant so much to her..."
 "It allowed her be expressive and creative with whatever she was feeling..."
-"And now, I put all that into jeaporady by destroying the club..."
+"And now, I put all that into jeopardy by destroying the club..."
 "How can I possibly come to forgive myself now?"
 "Will she even forgive me?"
 "I should've taken her up on her offer to talk things through..."
-"I dobut she or anyone else at the club will want to be around me now..."
+"I doubt she or anyone else at the club will want to be around me now..."
 "I'm a coward..."
 "Is it even worth showing up to the club tomorrow?"
 "..."
@@ -6083,7 +6131,7 @@ with wipeleft
 "If I make things worse, I'll never show my face there again..."
 "But, if I can set things right between Monika and I, and somehow restore basic civility to the club, I'll take that as a win."
 "Regardless of how everything plays out tomorrow, it's certainly going to be stressful..."
-"It's best to try not think about it too much and just save up my energy..."
+"It's best to try not to think about it too much and just save up my energy..."
 "Hopefully there's no more stupid nightmares too..."
 "With my prayer complete, I finally drift off to sleep."
 jump day4_nightmare
@@ -6109,7 +6157,7 @@ with wipeleft
 "Ah, like she'd agree to that..."
 "Maybe I can still pitch it to her tomorrow..."
 "That's going to be so much fun..."
-"It's best to try not think about it too much and just save up my energy..."
+"It's best to try not to think about it too much and just save up my energy..."
 "It's going to be eventful and stressful no matter how it goes down..."
 "Hopefully there's no more stupid nightmares too..."
 "With my prayer complete, I finally drift off to sleep."
@@ -6119,13 +6167,13 @@ label day4_night_n2:
 scene bg bedroom_night
 with wipeleft
 "I crash onto my bed as soon as I finish laminating."
-"Even though it wasn't exactly the most time consuming process, I defintley dragged it out by re-reading Natsuki's poems at least a hundred times..."
-"My heart would sink everyime I'd finish one of her poems..."
-"Knowing how happy I made her and how I put all that into jeaporady..."
+"Even though it wasn't exactly the most time consuming process, I definitely dragged it out by re-reading Natsuki's poems at least a hundred times..."
+"My heart would sink every time I'd finish one of her poems..."
+"Knowing how happy I made her and how I put all that into jeopardy..."
 "How can I possibly come to forgive myself now?"
 "I know she's not going to forgive me easily..."
 "I should've taken her up on her offer to talk things through..."
-"I dobut she or anyone else at the club will want to be around me now..."
+"I doubt she or anyone else at the club will want to be around me now..."
 "I probably look like a coward..."
 "Is it even worth showing up to the club tomorrow?"
 "..."
@@ -6135,7 +6183,7 @@ with wipeleft
 "If I make things worse, I'll never show my face there again..."
 "But, if I can set things right between Natsuki and I, and restore at least basic civility to the club, I'll take that as a win."
 "Regardless of how everything plays out tomorrow, it's certainly going to be stressful..."
-"It's best to try not think about it too much and just save up my energy..."
+"It's best to try not to think about it too much and just save up my energy..."
 "Hopefully there's no more stupid nightmares too..."
 "With my prayer complete, I finally drift off to sleep."
 jump day4_nightmare
@@ -6155,7 +6203,7 @@ with wipeleft
 "Heck, how am I going to convince everyone to accept my relationship with Sayori?"
 "Oh well, I can't do anything about it right now..."
 "Regardless of how everything plays out tomorrow, it's certainly going to be stressful..."
-"It's best to try not think about it too much and just save up my energy..."
+"It's best to try not to think about it too much and just save up my energy..."
 "Hopefully there's no more stupid nightmares too..."
 "With my prayer complete, I finally drift off to sleep."
 jump day4_nightmare
@@ -6165,13 +6213,13 @@ label day4_night_s2:
 scene bg bedroom_night
 with wipeleft
 "I crash onto my bed as soon as I finish laminating."
-"Even though it wasn't exactly the most time consuming process, I defintley dragged it out by re-reading Sayori's poems at least a hundred times..."
+"Even though it wasn't exactly the most time consuming process, I definitely dragged it out by re-reading Sayori's poems at least a hundred times..."
 "My heart would sink everyime I'd finish one of her poems..."
-"Knowing how I happy it made her and how I put all that into jeaporady..."
+"Knowing how I happy it made her and how I put all that into jeopardy..."
 "How can I possibly come to forgive myself now?"
 "How is she even going to forgive me this time?"
 "I should've taken her up on her offer to talk things through..."
-"I dobut she or anyone else at the club will want to be around me now..."
+"I doubt she or anyone else at the club will want to be around me now..."
 "I probably like a coward..."
 "Is it even worth showing up to the club tomorrow?"
 "..."
@@ -6181,7 +6229,7 @@ with wipeleft
 "If I make things worse, I'll never show my face there again..."
 "But, if I can set things right between Sayori and I, and restore at least basic civility to the club, I'll take that as a win."
 "Regardless of how everything plays out tomorrow, it's certainly going to be stressful..."
-"It's best to try not think about it too much and just save up my energy..."
+"It's best to try not to think about it too much and just save up my energy..."
 "Hopefully there's no more stupid nightmares too..."
 "With my prayer complete, I finally drift off to sleep."
 jump day4_nightmare
@@ -6209,7 +6257,7 @@ with wipeleft
 "Asking about it earlier likely wouldn't have gone very well..."
 "And well, I suppose I should really be solving one problem at a time..."
 "Tomorrow's going to be so much fun..."
-"It's best to try not think about it too much and just save up my energy..."
+"It's best to try not to think about it too much and just save up my energy..."
 "It's going to be eventful and stressful no matter how it goes down..."
 "Hopefully there's no more stupid nightmares too..."
 "With my prayer complete, I finally drift off to sleep."
@@ -6219,13 +6267,13 @@ label day4_night_y2:
 scene bg bedroom_night
 with wipeleft
 "I crash onto my bed as soon as I finish laminating."
-"Even though it wasn't exactly the most time consuming process, I defintley dragged it out by re-reading Yuri's poems at least a hundred times..."
+"Even though it wasn't exactly the most time consuming process, I definitely dragged it out by re-reading Yuri's poems at least a hundred times..."
 "My heart would sink everyime I'd finish one of her poems..."
-"Knowing how I helped express herself and how I put all that into jeaporady..."
+"Knowing how I helped express herself and how I put all that into jeopardy..."
 "How can I possibly come to forgive myself now?"
 "I don't even expect her to forgive me..."
 "I should've taken her up on her offer to talk things through..."
-"I dobut she or anyone else at the club will want to be around me now..."
+"I doubt she or anyone else at the club will want to be around me now..."
 "I probably like a coward..."
 "Is it even worth showing up to the club tomorrow?"
 "..."
@@ -6235,7 +6283,7 @@ with wipeleft
 "If I make things worse, I'll never show my face there again..."
 "But, if I can set things right between Yuri and I, and restore at least basic civility to the club, I'll take that as a win."
 "Regardless of how everything plays out tomorrow, it's certainly going to be stressful..."
-"It's best to try not think about it too much and just save up my energy..."
+"It's best to try not to think about it too much and just save up my energy..."
 "Hopefully there's no more stupid nightmares too..."
 "With my prayer complete, I finally drift off to sleep."
 jump day4_nightmare
@@ -6255,8 +6303,8 @@ m "As for you..."
 if hangout3 == "Monika":
 
     if m_makeup == True:
-        m "You've played your part beauitfully, my love..."
-        m "We'll be together very soon, I just need to tiddy up a few things..."
+        m "You've played your part beautifully, my love..."
+        m "We'll be together very soon, I just need to tidy up a few things..."
         jump day5_intro
 
     if m_makeup == False:
@@ -6269,14 +6317,14 @@ if hangout3 == "Monika":
 if hangout3 == "Sayori":
 
     if s_makeup == True:
-        m "I seriously wish you didn't try to make ammends with Sayori, but that hopefully won't matter much to my calculations..."
+        m "I seriously wish you didn't try to make amends with Sayori, but that hopefully won't matter much to my calculations..."
         jump day5_intro
 
     if s_makeup == False:
 
         if n_love == True or y_love == True:
             m "You did amazing today, by the way!"
-            m "Breaking off your rleationship with Sayori is the most important step for us being together..."
+            m "Breaking off your relationship with Sayori is the most important step for us being together..."
             m "And now that it's actually happening...{w=0.38}gosh, I'm so excited!"
             jump day5_intro
 
@@ -6289,7 +6337,7 @@ if hangout3 == "Sayori":
 if hangout3 == "Natsuki":
 
     if n_makeup == True:
-        m "I seriously wish you didn't try to make ammends with Natsuki, but that hopefully won't matter much to my calculations..."
+        m "I seriously wish you didn't try to make amends with Natsuki, but that hopefully won't matter much to my calculations..."
         jump day5_intro
 
     if n_makeup == False:
@@ -6301,7 +6349,7 @@ if hangout3 == "Natsuki":
 if hangout3 == "Yuri":
 
     if y_makeup == True:
-        m "I seriously wish you didn't try to make ammends with Yuri, but that hopefully won't matter much to my calculations..."
+        m "I seriously wish you didn't try to make amends with Yuri, but that hopefully won't matter much to my calculations..."
 
     if y_makeup == False:
         m "You did well by avoiding Yuri today..."

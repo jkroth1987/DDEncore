@@ -156,6 +156,7 @@ define audio.e23 = "<loop 0>mod_assets/audio/Unleashed.ogg" #Monika Unleashed
 define audio.e24 = "<loop 0>mod_assets/audio/The Purple Maiden.ogg" #Yuri Ending Music
 define audio.e25 = "<loop 0>mod_assets/audio/Clear Skies.ogg" #Sayori Ending Music
 define audio.e26 = "<loop 0>mod_assets/audio/The Decision.ogg" #Decision Making Music
+define audio.e27 = "<loop 0>mod_assets/audio/Club Undone.ogg" #Drama Music
 
 # Backgrounds
 image black = "#000000"
@@ -207,7 +208,7 @@ image bg residential_dusk = "mod_assets/bgs/residential_dusk.png"
 image bg void_2 = "mod_assets/bgs/void_2.png"
 image bg cafeteria = "mod_assets/bgs/cafeteria.png"
 image bg school_rooftop = "mod_assets/bgs/school_rooftop.png"
-image bg thank_you = "bandicam 2019-03-18-09-10-05-743.png"
+image bg thank_you = "mod_assets/bgs/bandicam 2019-03-18 09-10-05-743.png"
 image bg music_room = "mod_assets/bgs/music_room.png"
 image bg fountain = "mod_assets/bgs/fountain_bg.png"
 image bg monika_walk1 = "mod_assets/bgs/Monika Walk 1.png"

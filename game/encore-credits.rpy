@@ -50,7 +50,7 @@ Ploxmaster708, SaturnGamer72, Ronald McOnePuch, SlightlySimple,
 Spaghetto, Sir Swampert
 
 
-Life Saver: Agent Gold"""
+Life Savers: Agent Gold, kyoryii and DeNomaly"""
 
     # 5
     # 29 lines, +1400 pixels
@@ -82,7 +82,27 @@ hmm#1049
 GGamer
 Iuwb#7392
 Travesty
-Drifty"""
+Drifty
+ZockerBro
+CatLinus(CatOnABench)
+Gabe A
+Aaron S
+Joshua G.
+Sir Swampert
+NPbus
+Soccer1156#5209, YT: ReT Soccer
+ZockerBro#7571
+Sean#5720
+Alice_Angel_Fan#5617
+Sophie Twilight
+BlazeKill666#0278
+Mroczny Obserwator#5633
+Dazuh#2299
+No Name#3607
+Grusader#5814
+Merdok Mer#5444
+NCR Veteran Ranger#4666
+NUTELLA_BERT_8#8306"""
 
 
 
@@ -555,7 +575,8 @@ The MC as """ + player
     pause 9.5
 
     scene black with Dissolve(1.0)
-
+    play sound "sfx/pageflip.ogg"
+    show bg thank_you
 
     call screen dialog(message="Restart required.\nThe game will now exit.", ok_action=Quit(confirm=False))
 #    hide e_end_letter with Dissolve(1)
