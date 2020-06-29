@@ -23,7 +23,7 @@ init python:
         "Sayori sees your cookies.",
         "Natsuki wants your cupcakes.",
         "Yuri likes reading with you.",
-        "The last 4 messages will help you later on..."
+        "The last 4 messages will help you later on...",
         "Subscribe to Pewdiepie!",
         "Justice for Spartanboi.",
         "Your choices matter more than you think.",
