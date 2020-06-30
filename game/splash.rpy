@@ -16,9 +16,9 @@ init python:
         "Every good story deserves an encore!",
         "This game is an unofficial fan work, unaffiliated with Team Salvato.",
         "Please support Doki Doki Literature Club.",
-        "Please check out DDLCMods.Com!"
-        "Please check out goldencrabstudios.com!"
-        "12 Characters."
+        "Please check out DDLCMods.Com!",
+        "Please check out goldencrabstudios.com!",
+        "12 Characters.",
         "Monika is watching you code.",
         "Sayori sees your cookies.",
         "Natsuki wants your cupcakes.",
