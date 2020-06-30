@@ -1599,7 +1599,7 @@ if encore_sayoriquestion_1 == True:
         m "But for you and Sayori...{w=0.38}maybe you just need to sit down and talk to her..."
         show monika 2bp  at t11 zorder 1
         m "If you believe that's still an option at this point..."
-        show monika 2c
+        show monika 2bc
         mc "I don't know..."
         mc "She's just trying to put up with me at this stage..."
         mc "But sooner or later, I suppose we'll have that talk..."

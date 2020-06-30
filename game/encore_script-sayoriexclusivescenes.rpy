@@ -559,6 +559,7 @@ if encore_sayoriquestion_1 == True:
             s "[player]..."
             s 1h "She's going to tell all of us, you know!"
             s "It's not nice to be nosy..."
+            show sayori 1g
             mc "Haha...{w=0.38}I know, I know..."
             show sayori 1q
             s "That's so like you though!"
