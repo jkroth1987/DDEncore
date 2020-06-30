@@ -4809,7 +4809,7 @@ if encore_sayoriquestion_1 == True:
         if hangout2 != "Sayori":
             s 4bl "Hey, [player]..."
             "Sayori nervously smiles at me."
-            show sayori 1k
+            show sayori 1bk
             "I try to return a smile back but she instead awkwardly looks off."
             "I hoped that by spending some time around Sayori today, I would've put what happened between me and [hangout2] behind us..."
             "Though I guess it's going take some more time than I thought..."
@@ -4826,7 +4826,7 @@ if encore_sayoriquestion_1 == True:
         if hangout2 != "Sayori":
             s 4bk "Hey, [player]..."
             "Sayori stares off into the horizon."
-            show sayori 1k
+            show sayori 1bk
             "I try to return a smile back but she ignores it."
             "I hoped that by spending some time around Sayori today, I would've made up for the lack of time I've spent around her recently..."
             "Though I guess it's going take a lot of time before we're back where we were originally..."
@@ -4904,7 +4904,7 @@ if encore_sayoriquestion_1 == False:
         if hangout2 != "Sayori":
             s 4bl "Hey, [player]..."
             "Sayori nervously smiles at me."
-            show sayori 1k
+            show sayori 1bk
             "I try to return a smile back but she instead awkwardly looks off."
             "I hoped that by spending some time around Sayori today, she would've gotten over what happened between me and [hangout2] behind us..."
             "I mean, I'm just trying to fufil my promise to spend more time around her..."
@@ -4927,7 +4927,7 @@ if encore_sayoriquestion_1 == False:
     if hangout1 != "Sayori":
         if hangout2 != "Sayori":
             s 4bk "Hey, [player]..."
-            show sayori 1k
+            show sayori 1bk
             "I try to return a smile back but she ignores it."
             "I hoped that by spending some time around Sayori today, I would've made up for the lack of time I've spent around her recently..."
             "I mean, I'm just trying to fufil my promise to spend more time around her..."
