@@ -46,7 +46,7 @@ The MC as [player]""" # This will be re-defined lower down--if adjustments are n
     c_text_4 = """Special Thanks: Afrozer0 & Monika, Agent Gold, American Eagle, Astranova,
 Blaze Bringer, BronzeBrawn, Bug, huser Entertainment,
 Jacob Smallman, Kuudere Ghost, MrZeratheMant, Lucy CN, POBAW, Noa_AT, Orber,
-Ploxmaster708, SaturnGamer72, Ronald McOnePuch, SlightlySimple,
+Ploxmaster708, SaturnGamer72, Ronald McOnePunch, SlightlySimple,
 Spaghetto, Sir Swampert
 
 

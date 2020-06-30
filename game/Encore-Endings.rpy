@@ -865,7 +865,7 @@ show monika 1h
 "Monika's the type of person to plan for contingencies, she's had a long time to prepare for this..."
 "Maybe the code could have something to do with the girls or the club..."
 "That's all Monika has ever known..."
-"Looks I'm going to have to guess here..."
+"Looks like I'm going to have to guess here..."
 "I erase Monika's pre-written command so the console is now completely empty."
 "Ok...{w=0.38}what do we enter in here?"
 #Typable Console
