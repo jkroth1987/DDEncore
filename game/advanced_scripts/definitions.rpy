@@ -7,7 +7,7 @@
 #If you plan on adding new content, pop them over down there and mimic the appropriate lines!
 define persistent.demo = False
 define persistent.steam = False
-define config.developer = True #Change this flag to True to enable dev tools
+define config.developer = False #Change this flag to True to enable dev tools
 
 #python early:
 #    import singleton
@@ -208,7 +208,7 @@ image bg residential_dusk = "mod_assets/bgs/residential_dusk.png"
 image bg void_2 = "mod_assets/bgs/void_2.png"
 image bg cafeteria = "mod_assets/bgs/cafeteria.png"
 image bg school_rooftop = "mod_assets/bgs/school_rooftop.png"
-image bg thank_you = "mod_assets/bgs/bandicam 2019-03-18 09-10-05-743.png"
+image bg thank_you = "mod_assets/bgs/bandicam 2020-06-29 12-00-09-599.png"
 image bg music_room = "mod_assets/bgs/music_room.png"
 image bg fountain = "mod_assets/bgs/fountain_bg.png"
 image bg monika_walk1 = "mod_assets/bgs/Monika Walk 1.png"
