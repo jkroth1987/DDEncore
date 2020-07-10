@@ -288,7 +288,7 @@ mc "Are you sure, Sayori?"
 s 1h "[player]..."
 s 1g "Look..."
 "Sayori brushes up against me and takes my hand in hers."
-s 2h "If for whaetever reason things don't work out, it's fine..."
+s 2h "If for whatever reason things don't work out, it's fine..."
 s 2k "I'd hate to lose them as friends, but..."
 s 2t "I'll always have you..."
 
@@ -3111,7 +3111,7 @@ y "It reminds me too much of the behavior I've struggled to avoid for so long. I
 mc "Yuri..."
 mc "You've tried other methods of coping before, right?"
 show y_cry3 as yuri
-y "Yes...{w=0.38}For the longest time, the only thing that was sometimes enough to keep my mind off cutting was reading books. Though, it's not full-proof."
+y "Yes...{w=0.38}For the longest time, the only thing that was sometimes enough to keep my mind off cutting was reading books. Though, it's not foolproof."
 y 3v "But...{w=0.38}that changed not too long ago..."
 mc "How so?"
 y 3t "I met you."

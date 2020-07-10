@@ -689,6 +689,7 @@ hide monika
 "Soon after the discussion disperses, we all resume our respective activities."
 "Since I have really nothing better to do, I decided to see what everyone else was doing."
 
+label day1_choice: 
 menu:
         "Who should I hang out with?"
         "Sayori":

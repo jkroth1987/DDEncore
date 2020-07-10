@@ -1629,6 +1629,7 @@ if encore_sayoriquestion_1 == True:
         "Oh no..."
         mc "H-{w=0.38}hey Sayo-"
         s 1j "What was that about, [player]?"
+        show sayori 1i
         "Sayori sternly looks at me, a mix of pain and anger building up in her eyes."
         mc "Uh..."
         "How do I explain this to her?"

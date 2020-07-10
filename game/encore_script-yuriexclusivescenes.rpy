@@ -1812,6 +1812,7 @@ if encore_sayoriquestion_1 == False:
         "Oh no..."
         mc "H-{w=0.38}hey Sayo-"
         s 1j "What was that about, [player]?"
+        show sayori 1i
         "Sayori sternly looks at me, a mix of pain and anger building up in her eyes."
         mc "Uh..."
         "How do I explain this to her?"
@@ -2987,7 +2988,7 @@ mc "How come?"
 y "Uhh...{w=0.38}well..."
 play sound train
 show yuri 3bn at face
-"Suddenly the train kicks into motion, causing Yuri to slide into me, which in turn, makes slide into the rail."
+"Suddenly the train kicks into motion, causing Yuri to slide into me, which in turn, makes us slide into the rail."
 play sound train_journey loop
 mc "Agh!"
 y "I-{w=0.38}I'm so sorry, [player]! Are you hurt?"
@@ -3785,7 +3786,7 @@ y "She was the only one I ever trusted enough to turn to help when I couldn't ha
 y "And...{w=0.38}when she suddenly disappeared from my life without any explanation..."
 y 4d "I just shut myself off from the world around me."
 y 4c "I always had an interest in literature, so I turned to that more and more as a way to cope."
-y "But, it's not full-proof..."
+y "But, it's not foolproof..."
 y 4d "Sometimes, my emotions spill out into the open, despite my best efforts to control them..."
 y 4e "But you made me feel comfortable around you..."
 y "You're the first person in a long time that I can truly talk to on a deeply personal level..."

@@ -1952,79 +1952,95 @@ show sayori 1g
 "I completely screwed up..."
 "I shouldn't have gotten so close to [hangout2] like that..."
 
-if apologize_sn == True:
-    show sayori 1g
-    "Even though I apologized to her for getting so close to Natsuki, I still feel incredibly guilty..."
-    show sayori 1f
-    "It's not like I intended for any of that to happen..."
-    show sayori 1k
-    "And I still feel like Sayori didn't really accept my apology either..."
-    "I really need to fix this before things between us get worse..."
 
-if apologize_sn == False:
-    show sayori 1k
-    "And I feel even worse for lying to her about it..."
-    show sayori 1g
-    "I'm not even sure if she really believed me..."
-    show sayori 1u
-    "For all I know, Sayori might even be thinking right now that I'm about to ditch her for Natsuki..."
-    "Knowing how she feels right now, I just probably made things worse for her...."
-    show sayori 1k
-    "Maybe I can still fix this..."
+if hangout2 == "Natsuki":
 
+    if apologize_sn == True:
+        show sayori 1g
+        "Even though I already apologized to Sayori for getting too close to Natsuki, I still feel incredibly guilty..."
+        show sayori 1f
+        "It's not like I intended for any of that to happen..."
+        show sayori 1k
+        "And I still feel like Sayori didn't really accept my apology either..."
+        "I really need to fix this before things between us get worse..."
+        jump day3_converge
 
-if apologize_sy == True:
-    show sayori 1g
-    "Even though I apologized to her for getting so close to Yuri, I still feel incredibly guilty..."
-    show sayori 1f
-    "It's not like I intended for any of that to happen..."
-    show sayori 1k
-    "And I still feel like Sayori didn't really accept my apology either..."
-    "I really need to fix this before things between us get worse..."
+    if apologize_sn == False:
+        show sayori 1k
+        "I feel even worse for lying to Sayori about it..."
+        show sayori 1g
+        "I'm not even sure if she really believed me..."
+        show sayori 1u
+        "For all I know, Sayori might even be thinking right now that I'm about to ditch her for Natsuki..."
+        "Knowing how she feels right now, I just probably made things worse for her...."
+        show sayori 1k
+        "Maybe I can still fix this..."
+        jump day3_converge
 
-if apologize_sy == False:
-    show sayori 1k
-    "And I feel even worse for lying to her about it..."
-    show sayori 1g
-    "I'm not even sure if she really believed me..."
-    show sayori 1u
-    "For all I know, Sayori might even be thinking right now that I'm about to ditch her for Yuri..."
-    "Knowing how she is right now, I just probably made things worse for her...."
-    show sayori 1k
-    "Maybe I can still fix this..."
+if hangout2 == "Yuri":
 
+    if apologize_sy == True:
+        show sayori 1g
+        "Even though I already apologized to Sayori for getting too close to Yuri, I still feel incredibly guilty..."
+        show sayori 1f
+        "It's not like I intended for any of that to happen..."
+        show sayori 1k
+        "And I still feel like Sayori didn't really accept my apology either..."
+        "I really need to fix this before things between us get worse..."
+        jump day3_converge
 
-
-if apologize_sm == True:
-    show sayori 1g
-    "Even though I apologized to her for getting so close to Monika, I still feel incredibly guilty..."
-    show sayori 1f
-    "It's not like I intended for any of that to happen..."
-    show sayori 1k
-    "And I still feel like Sayori didn't really accept my apology either..."
-    "I really need to fix this before things between us get worse..."
-
-if apologize_sm == False:
-    show sayori 1k
-    "And I feel even worse for lying to her about it..."
-    show sayori 1g
-    "I'm not even sure if she really believed me..."
-    show sayori 1u
-    "For all I know, Sayori might even be thinking right now that I'm about to ditch her for Monika..."
-    "Knowing how she is right now, I just probably made things worse for her...."
-    show sayori 1k
-    "Maybe I can still fix this..."
+    if apologize_sy == False:
+        show sayori 1k
+        "I feel even worse for lying to Sayori about it..."
+        show sayori 1g
+        "I'm not even sure if she really believed me..."
+        show sayori 1u
+        "For all I know, Sayori might even be thinking right now that I'm about to ditch her for Yuri..."
+        "Knowing how she is right now, I just probably made things worse for her...."
+        show sayori 1k
+        "Maybe I can still fix this..."
+        jump day3_converge
 
 
+
+if hangout2 == "Monika":
+
+    if apologize_sm == True:
+        show sayori 1g
+        "Even though I already apologized to Sayori for getting too close to Monika, I still feel incredibly guilty..."
+        show sayori 1f
+        "It's not like I intended for any of that to happen..."
+        show sayori 1k
+        "And I still feel like Sayori didn't really accept my apology either..."
+        "I really need to fix this before things between us get worse..."
+        jump day3_converge
+
+
+    if apologize_sm == False:
+        show sayori 1k
+        "I feel even worse for lying to Sayori about it..."
+        show sayori 1g
+        "I'm not even sure if she really believed me..."
+        show sayori 1u
+        "For all I know, Sayori might even be thinking right now that I'm about to ditch her for Monika..."
+        "Knowing how she is right now, I just probably made things worse for her...."
+        show sayori 1k
+        "Maybe I can still fix this..."
+        jump day3_converge
+
+
+label day3_converge:
 scene bg residential_day
 with wipeleft_scene
 play music t8 fadein 2.0
 show sayori 3l at t11 zorder 1
 s "Hey, [player]..."
+show sayori 3k
 mc "Y-{w=0.38}yeah?"
 "I'm half expecting her to bring up what happened."
 show sayori 3c
 s "I think I know where my poems are, so if you want I can stop by later."
+show sayori 3b
 "In my constant state of worriedness since the club, I almost forgot about the poems."
 mc "Oh, yeah...{w=0.38}that'll be fine!"
 mc "I'll see you later then, right?"
@@ -2032,6 +2048,7 @@ show sayori 1k
 $ renpy.pause(delay=0.8, hard=True)
 show sayori 1l
 s "Y-{w=0.38}yeah, sure..."
+show sayori 1k
 mc "Alright..."
 show sayori 1x
 s "I'll see you in a bit."

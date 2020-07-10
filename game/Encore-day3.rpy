@@ -2823,7 +2823,7 @@ if hangout1 == "Natsuki":
 
         if encore_festivalquestion_2 == "Natsuki":
             show monika 2f
-            mc "I mean to tell you the truth, I didn't even really knew that Yuri liked me..."
+            mc "I mean to tell you the truth, I didn't even really know that Yuri liked me..."
             mc "In fact I think she thought I hated her at some point because I was spending so much time around Natsuki..."
             mc "So I'm surprised that she'd give me this..."
             m 2p "Maybe this is her attempt at reaching out to you..."
@@ -3036,7 +3036,7 @@ if hangout1 == "Yuri":
 
         if encore_festivalquestion_2 == "Yuri":
             show monika 2f
-            mc "I mean to tell you the truth, I didn't even really knew that Natsuki liked me..."
+            mc "I mean to tell you the truth, I didn't even really know that Natsuki liked me..."
             mc "In fact I think she thought I hated her at some point because I was spending so much time around Yuri..."
             mc "So I'm surprised that she'd give me this..."
             m 2p "Maybe this is her attempt at reaching out to you..."
