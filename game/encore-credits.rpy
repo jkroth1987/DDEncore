@@ -53,8 +53,8 @@ Spaghetto, Sir Swampert
 Life Savers: Agent Gold, kyoryii and DeNomaly"""
 
     # 5
-    # 29 lines, +1400 pixels
-    # 1620, -900, 33.6
+    # 48 lines, +2350 pixels
+    # 2120, -1400, 46.2666667, round to 46.3
     c_text_5 = """Playtesters:
 
 Boris Johnson
@@ -536,10 +536,10 @@ The MC as """ + player
 
     pause 2.0
 
-    # 1620, -900, 33.6
-    show credits_text c_text_5 at e_credits_text_scroll_middle(y = 1620, t = 33.5, end = -900) as credits_text_1
+    # 2120, -1400, 46.2666667, round to 46.3
+    show credits_text c_text_5 at e_credits_text_scroll_middle(y = 2120, t = 46.3, end = -1400) as credits_text_1
 
-    pause 24.5
+    pause 38.3
 
     show e_credits_cg6 at e_credits_scroll_middle as credits_image_2
 
@@ -576,7 +576,11 @@ The MC as """ + player
 
     scene black with Dissolve(1.0)
     play sound "sfx/pageflip.ogg"
-    show bg thank_you
+    show bg thank_you:
+        truecenter
+        alpha 0.0
+        linear 0.5 alpha 1.0
+    pause
 
     call screen dialog(message="Restart required.\nThe game will now exit.", ok_action=Quit(confirm=False))
 #    hide e_end_letter with Dissolve(1)
